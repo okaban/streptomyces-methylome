@@ -1,0 +1,37 @@
+=== NCBI BioProject — New submission への貼り付け用（2026-09-23 生成） ===
+すべての値は deposition/biosample_attributes.tsv と sra_metadata.tsv の実測に一致。
+
+[General]
+  Project data type : Raw sequence reads
+  Sample scope      : Monoisolate
+  Release date      : 論文 acceptance まで hold（"Release on specified date" を選び先の日付、
+                      または "when published" を選択）
+
+[Target]
+  Organism name     : Streptomyces coelicolor A3(2)
+  Strain            : M145
+
+[Project title]  ← そのまま貼る
+Dual 4mC/6mA methylome and strand-specific transcriptome of Streptomyces coelicolor A3(2) M145 across a metabolic transition
+
+[Public description]  ← そのまま貼る
+Nanopore direct sequencing of genomic DNA and matched strand-specific Illumina RNA-seq
+from Streptomyces coelicolor A3(2) M145. Samples were taken at three points of an R5
+liquid culture (12, 24 and 50 h), with three biological replicates per timepoint;
+genomic DNA and total RNA were extracted from the same harvested culture for each
+sample. The Nanopore runs (MinION) carry per-read base-modification calls for
+N4-methylcytosine, 5-methylcytosine and N6-methyladenine, aligned to the
+GCF_000203835.1 reference assembly. The Illumina runs (NovaSeq X Plus, rRNA-depleted,
+directional) give strand-resolved transcript coverage for the same cultures. Together
+the data support base-resolution mapping of the 4mC and 6mA methylome and its
+integration with the transcriptome across the metabolic transition.
+
+[Relevance]
+  Environmental  （または Other → "bacterial epigenetics" と記入）
+
+=== 提出後 ===
+BioProject の accession（PRJNAxxxxxx）が出たら私に伝えてください。
+  python deposition/apply_manuscript_updates.py --accessions PRJNAxxxxxx --write
+で本文の Data availability を埋め、.zenodo.json に related identifier を追加します。
+BioSample（9 行）と SRA（18 run）は biosample_attributes.tsv / sra_metadata.tsv を
+そのままアップロードするだけです。
