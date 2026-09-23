@@ -59,7 +59,9 @@ BioProject（1 件）
 - ONT run の `library_strategy` は OTHER / `library_selection` RANDOM / `library_layout` single
 - BAM の Reference assembly 欄は `GCF_000203835.1`（NCBI assembly なので fasta 添付不要）
 - replicate 番号は元のまま（T1: 1,2,3 / T2: 1,3,4 / T3: 2,3,4）。振り直さない
-- アクセッションが出たら:
-  `python deposition/apply_manuscript_updates.py --accessions PRJNAxxxxxx --doi 10.5281/zenodo.xxxxxxx --write`
-  → `make_bootstrap.py` 再実行 → PASS 確認。
+- **BioProject は 2026-09-23 に取得済み: `PRJNA1533939`**（`SUB16507616`、公開は論文公開時 /
+  2027-12-31 のいずれか早い方）。本文 EN/JP の Data availability と Zenodo レコードには反映済み。
+  BioSample / SRA の提出時はこの accession を指定する。
+- （旧記載の `apply_manuscript_updates.py` は**存在しなかった**。差し替えは 1 文なので直接編集した。
+  次に accession が増えたときも同様に EN/JP 対で直接編集し、`make_bootstrap.py` で PASS を確認する。）
   `.zenodo.json` の related_identifiers に BioProject も追加してリリースを更新
