@@ -49,7 +49,11 @@ BioProject（1 件）
    - ONT BAM 9 件: `ont_bam_md5.tsv` のパス列（6.18 GB）
    - Illumina FASTQ 18 件: `raw_checksum_report.tsv` のファイル名。実体は
      `~/Library/CloudStorage/Dropbox-SFC-CNS/Takeda Tomoki/my_projects/2026/M145_RNA-seq/data/RH250715199/01_RawData/`（8.13 GB）
-6. 転送後、SRA 側の md5 と手元（`ont_bam_md5.tsv`、`raw_checksum_report.tsv`）を照合
+6. 転送後、SRA 側の md5 と手元を照合。**2 つのファイルの性質が違うので注意**:
+   - `raw_checksum_report.tsv` は Illumina FASTQ 18 本を**受託先の `md5.txt` と照合した結果**
+     （2026-09-23、18/18 一致）。独立した基準がある。
+   - `ont_bam_md5.tsv` は BAM 9 本から**手元で計算した値**。ONT 側に照合先の manifest が無いため
+     **まだ検証されていない**。転送後に SRA 側の md5 と一致することを確認して初めて検証される。
 7. 査読者に見せる場合: 提出完了後 SRA から **reviewer link** を発行できる
 
 ## 3. 注意点

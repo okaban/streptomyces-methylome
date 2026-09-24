@@ -32,7 +32,12 @@ import pandas as pd
 ANALYSIS = Path(__file__).resolve().parent.parent
 CANONICAL_CSV = ANALYSIS / "01_integration" / "high_confidence_sites_weighted.csv"
 REF_FA = Path("/Users/okaban/bioinfo/methyl/260102_M145/data/ref.fa")
-CORE_LO, CORE_HI = 1_500_000, 7_170_000      # manuscript core (Methods)
+# Core boundary: use the value the figure scripts use (77_reviewer_figures ARM_RIGHT),
+# not a re-rounded 7_170_000 — a second hardcoded boundary in the loader meant to
+# unify them defeats the purpose. Measured 2026-09-23: zero sites in
+# high_confidence_sites_weighted.csv fall in the 2,493 bp between the two values,
+# so no published number changes; this is consistency, not a correction.
+CORE_LO, CORE_HI = 1_500_000, 7_167_507      # manuscript core 1.5-7.17 Mb (Methods)
 
 _REF = None
 
