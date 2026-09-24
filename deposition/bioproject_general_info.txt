@@ -1,0 +1,5 @@
+[Project title]
+Dual 4mC/6mA methylome and strand-specific transcriptome of Streptomyces coelicolor A3(2) M145 across a metabolic transition
+
+[Public description]
+Nanopore direct sequencing of genomic DNA and matched strand-specific Illumina RNA-seq from Streptomyces coelicolor A3(2) M145. Samples were taken at three points of an R5 liquid culture (12, 24 and 50 h), with three biological replicates per timepoint; genomic DNA and total RNA were extracted from the same harvested culture for each sample. The Nanopore runs (MinION) carry per-read base-modification calls for N4-methylcytosine, 5-methylcytosine and N6-methyladenine, aligned to the GCF_000203835.1 reference assembly. The Illumina runs (NovaSeq X Plus, rRNA-depleted, directional) give strand-resolved transcript coverage for the same cultures. Together the data support base-resolution mapping of the 4mC and 6mA methylome and its integration with the transcriptome across the metabolic transition.
