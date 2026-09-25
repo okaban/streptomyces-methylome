@@ -1,0 +1,10 @@
+measurement	comparison	p_tukey	anova_F	anova_p
+dry_cell_weight_g_L	T1_vs_T2	1.33e-07	199.04	3.55e-08
+dry_cell_weight_g_L	T2_vs_T3	0.343	199.04	3.55e-08
+dry_cell_weight_g_L	T1_vs_T3	6.27e-08	199.04	3.55e-08
+actinorhodin_mg_L	T1_vs_T2	0.994	192.79	4.09e-08
+actinorhodin_mg_L	T2_vs_T3	1.04e-07	192.79	4.09e-08
+actinorhodin_mg_L	T1_vs_T3	9.92e-08	192.79	4.09e-08
+undecylprodigiosin_mg_L	T1_vs_T2	0.528	227.08	1.99e-08
+undecylprodigiosin_mg_L	T2_vs_T3	6.59e-08	227.08	1.99e-08
+undecylprodigiosin_mg_L	T1_vs_T3	3.87e-08	227.08	1.99e-08
