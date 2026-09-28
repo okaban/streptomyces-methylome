@@ -94,3 +94,13 @@ Writing/draft_pisciotta_reinterpretation.md
 # ローカル絶対パス、md5 表、NCBI との往復、採取日を含み、読者の再現性には不要。
 # 生成は deposition/build_submission_metadata.py（手元で実行）。
 deposition/
+
+# 第三者の著作物・第三者の連絡先（公開リポには置かない。いずれも一次配布元から再取得可能）
+# - 出版社 PDF: 再配布可否がライセンス次第。解析の再現には不要
+# - NCBI assembly_data_report.jsonl: 投稿者の個人メールアドレス 6 件を含む
+**/literature/
+reference/
+**/assembly_data_report.jsonl
+**/pnas.*.sapp.pdf
+**/sapp.txt
+Rplots.pdf
