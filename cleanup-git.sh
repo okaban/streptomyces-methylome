@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# epi-trans / rna-seq-sco リポジトリ整理 (v3)
+# epi-trans / streptomyces-methylome リポジトリ整理 (v3)
 # 通常実行: cd /Users/okaban/bioinfo/rna-seq && bash cleanup-git.sh   (未コミットありはスキップ＋内訳表示)
 # 強制実行: FORCE=1 bash cleanup-git.sh                                (未コミットも捨てて全削除)
 set -u

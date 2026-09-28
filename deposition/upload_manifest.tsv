@@ -1,0 +1,28 @@
+library_ID	filename	local_path	size_bytes	size_gb	md5
+M145_1_1_ONT	1-1_mapped.bam	/Users/okaban/bioinfo/methyl/260102_M145/analysis/1-1_mapped.bam	719853821	0.67	3838045ea15944650d82cc07d087792e
+M145_1_2_ONT	1-2_mapped.bam	/Users/okaban/bioinfo/methyl/260102_M145/analysis/1-2_mapped.bam	675155806	0.629	d8e8538f69556bbf7d6f0b8a13c6223f
+M145_1_3_ONT	1-3_mapped.bam	/Users/okaban/bioinfo/methyl/260102_M145/analysis/1-3_mapped.bam	1025691563	0.955	c799fe6b79890d988ec560e22b39e0ff
+M145_2_1_ONT	2-1_mapped.bam	/Users/okaban/bioinfo/methyl/260102_M145/analysis/2-1_mapped.bam	834721416	0.777	57bbb746dc091ffcaf9e498feb0151b3
+M145_2_3_ONT	2-3_mapped.bam	/Users/okaban/bioinfo/methyl/260102_M145/analysis/2-3_mapped.bam	768465705	0.716	b85ab4445b190064155a989c53503319
+M145_2_4_ONT	2-4_mapped.bam	/Users/okaban/bioinfo/methyl/260102_M145/analysis/2-4_mapped.bam	732518415	0.682	03d6991c9dd89203b6821239a98e2a1b
+M145_3_2_ONT	3-2_mapped.bam	/Users/okaban/bioinfo/methyl/260102_M145/analysis/3-2_mapped.bam	551651172	0.514	65f7a630100dfbe168f5383cfcef3371
+M145_3_3_ONT	3-3_mapped.bam	/Users/okaban/bioinfo/methyl/260102_M145/analysis/3-3_mapped.bam	688945176	0.642	59441447d606c0ab411c06225646430a
+M145_3_4_ONT	3-4_mapped.bam	/Users/okaban/bioinfo/methyl/260102_M145/analysis/3-4_mapped.bam	633710415	0.59	31555140c91b5af7b34ccf4d1e92b486
+M145_1_1_RNA	M145_1_1_1.fastq.gz	/Users/okaban/Library/CloudStorage/Dropbox-SFC-CNS/Takeda Tomoki/my_projects/2026/M145_RNA-seq/data/RH250715199/01_RawData/M145_1_1_1.fastq.gz	492549855	0.459	2db423eee7d19477757a2cb3b9f320a3
+M145_1_1_RNA	M145_1_1_2.fastq.gz	/Users/okaban/Library/CloudStorage/Dropbox-SFC-CNS/Takeda Tomoki/my_projects/2026/M145_RNA-seq/data/RH250715199/01_RawData/M145_1_1_2.fastq.gz	491282475	0.458	2d0cb26ca981e635ee434ac7eb662b0d
+M145_1_2_RNA	M145_1_2_1.fastq.gz	/Users/okaban/Library/CloudStorage/Dropbox-SFC-CNS/Takeda Tomoki/my_projects/2026/M145_RNA-seq/data/RH250715199/01_RawData/M145_1_2_1.fastq.gz	469542888	0.437	3f3d27be16dfda22d59e4c8fb658d598
+M145_1_2_RNA	M145_1_2_2.fastq.gz	/Users/okaban/Library/CloudStorage/Dropbox-SFC-CNS/Takeda Tomoki/my_projects/2026/M145_RNA-seq/data/RH250715199/01_RawData/M145_1_2_2.fastq.gz	466882618	0.435	f6ca9335181e97d77c2b8d307b7ac09a
+M145_1_3_RNA	M145_1_3_1.fastq.gz	/Users/okaban/Library/CloudStorage/Dropbox-SFC-CNS/Takeda Tomoki/my_projects/2026/M145_RNA-seq/data/RH250715199/01_RawData/M145_1_3_1.fastq.gz	605481392	0.564	872945f469be65b4e03d2732b912e5be
+M145_1_3_RNA	M145_1_3_2.fastq.gz	/Users/okaban/Library/CloudStorage/Dropbox-SFC-CNS/Takeda Tomoki/my_projects/2026/M145_RNA-seq/data/RH250715199/01_RawData/M145_1_3_2.fastq.gz	600253380	0.559	0153dbde76cae70a7b4afb38a0cd618e
+M145_2_1_RNA	M145_2_1_1.fastq.gz	/Users/okaban/Library/CloudStorage/Dropbox-SFC-CNS/Takeda Tomoki/my_projects/2026/M145_RNA-seq/data/RH250715199/01_RawData/M145_2_1_1.fastq.gz	488071422	0.455	377075b49bd34c6a98764dd0d0315988
+M145_2_1_RNA	M145_2_1_2.fastq.gz	/Users/okaban/Library/CloudStorage/Dropbox-SFC-CNS/Takeda Tomoki/my_projects/2026/M145_RNA-seq/data/RH250715199/01_RawData/M145_2_1_2.fastq.gz	484628254	0.451	f0bcfb413d5255fbe593c8362a720e09
+M145_2_3_RNA	M145_2_3_1.fastq.gz	/Users/okaban/Library/CloudStorage/Dropbox-SFC-CNS/Takeda Tomoki/my_projects/2026/M145_RNA-seq/data/RH250715199/01_RawData/M145_2_3_1.fastq.gz	447258178	0.417	40faba54c738d5b553b6978136563af4
+M145_2_3_RNA	M145_2_3_2.fastq.gz	/Users/okaban/Library/CloudStorage/Dropbox-SFC-CNS/Takeda Tomoki/my_projects/2026/M145_RNA-seq/data/RH250715199/01_RawData/M145_2_3_2.fastq.gz	444387453	0.414	db4ba42dd577f21207f19ee9cfba979e
+M145_2_4_RNA	M145_2_4_1.fastq.gz	/Users/okaban/Library/CloudStorage/Dropbox-SFC-CNS/Takeda Tomoki/my_projects/2026/M145_RNA-seq/data/RH250715199/01_RawData/M145_2_4_1.fastq.gz	485388381	0.452	f68ea16bfa2c7e35fef1cbdb46f148ae
+M145_2_4_RNA	M145_2_4_2.fastq.gz	/Users/okaban/Library/CloudStorage/Dropbox-SFC-CNS/Takeda Tomoki/my_projects/2026/M145_RNA-seq/data/RH250715199/01_RawData/M145_2_4_2.fastq.gz	481945315	0.449	2c43cabea0a1f832ac749b5d0e0cd991
+M145_3_2_RNA	M145_3_2_1.fastq.gz	/Users/okaban/Library/CloudStorage/Dropbox-SFC-CNS/Takeda Tomoki/my_projects/2026/M145_RNA-seq/data/RH250715199/01_RawData/M145_3_2_1.fastq.gz	495564519	0.462	c65f365bcba1c5ed7c41297205d26355
+M145_3_2_RNA	M145_3_2_2.fastq.gz	/Users/okaban/Library/CloudStorage/Dropbox-SFC-CNS/Takeda Tomoki/my_projects/2026/M145_RNA-seq/data/RH250715199/01_RawData/M145_3_2_2.fastq.gz	494012453	0.46	64fb31e4b1235481c6c7a52a7a0ad49c
+M145_3_3_RNA	M145_3_3_1.fastq.gz	/Users/okaban/Library/CloudStorage/Dropbox-SFC-CNS/Takeda Tomoki/my_projects/2026/M145_RNA-seq/data/RH250715199/01_RawData/M145_3_3_1.fastq.gz	448505456	0.418	3adf57abac300f3d94e44e201117a09c
+M145_3_3_RNA	M145_3_3_2.fastq.gz	/Users/okaban/Library/CloudStorage/Dropbox-SFC-CNS/Takeda Tomoki/my_projects/2026/M145_RNA-seq/data/RH250715199/01_RawData/M145_3_3_2.fastq.gz	446404451	0.416	e0877d7b7fd91c6791cfe1079f75e4e8
+M145_3_4_RNA	M145_3_4_1.fastq.gz	/Users/okaban/Library/CloudStorage/Dropbox-SFC-CNS/Takeda Tomoki/my_projects/2026/M145_RNA-seq/data/RH250715199/01_RawData/M145_3_4_1.fastq.gz	443789176	0.413	a9a31ecfe70082194e41e9272520cee2
+M145_3_4_RNA	M145_3_4_2.fastq.gz	/Users/okaban/Library/CloudStorage/Dropbox-SFC-CNS/Takeda Tomoki/my_projects/2026/M145_RNA-seq/data/RH250715199/01_RawData/M145_3_4_2.fastq.gz	441916180	0.412	2a09059f727c54586b0f9b6d7ce6a77c

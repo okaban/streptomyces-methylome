@@ -1,7 +1,7 @@
 {
   "upload_type": "software",
   "title": "Analysis code: DNA methylation is spatially organised around, but does not instruct, the regulatory genome of Streptomyces coelicolor — a 4mC/6mA methylome with a same-strand AAGCCCG dual modification",
-  "description": "<p>Analysis code accompanying the manuscript <em>DNA methylation is spatially organised around, but does not instruct, the regulatory genome of Streptomyces coelicolor: a 4mC/6mA methylome with a same-strand AAGCCCG dual modification</em> (submitted to Nucleic Acids Research).</p><p>Nine biological samples of <em>S. coelicolor</em> A3(2) M145 across three developmental time points (12, 24 and 50 h; R5 liquid culture). Genomic DNA and total RNA were extracted from the same harvested culture per sample. Methylome: Oxford Nanopore MinION (FLO-MIN114 / SQK-RBK114-96), modification-tagged alignments to NC_003888.3 (6mA, 4mC, 5mC). Transcriptome: Illumina NovaSeq X Plus, strand-specific RNA-seq (Ribo-Zero Plus, NEBNext Ultra II Directional).</p><p>Sequencing data are deposited separately in the NCBI Sequence Read Archive (BioProject accession to be added). This record contains code, per-stage conda environment exports, result tables and figure-generation scripts only. Scripts hard-code absolute paths under the original author's home directory and must be adapted before running elsewhere; see README.</p>",
+  "description": "<p>Analysis code accompanying the manuscript <em>DNA methylation is spatially organised around, but does not instruct, the regulatory genome of Streptomyces coelicolor: a 4mC/6mA methylome with a same-strand AAGCCCG dual modification</em> (submitted to Nucleic Acids Research).</p><p>Nine biological samples of <em>S. coelicolor</em> A3(2) M145 across three developmental time points (12, 24 and 50 h; R5 liquid culture). Genomic DNA and total RNA were extracted from the same harvested culture per sample. Methylome: Oxford Nanopore MinION (FLO-MIN114 / SQK-RBK114-96), modification-tagged alignments to NC_003888.3 (6mA, 4mC, 5mC). Transcriptome: Illumina NovaSeq X Plus, strand-specific RNA-seq (Ribo-Zero Plus, NEBNext Ultra II Directional).</p><p>Sequencing data are deposited separately in the NCBI Sequence Read Archive under BioProject PRJNA1533939 (released on publication). This record contains code, per-stage conda environment exports, result tables and figure-generation scripts only. Scripts hard-code absolute paths under the original author's home directory and must be adapted before running elsewhere; see README.</p>",
   "creators": [
     {
       "name": "Takeda, Tomoki",
@@ -32,7 +32,7 @@
   ],
   "related_identifiers": [
     {
-      "identifier": "https://github.com/okaban/rna-seq-sco",
+      "identifier": "https://github.com/okaban/streptomyces-methylome",
       "relation": "isSupplementTo",
       "resource_type": "software",
       "scheme": "url"

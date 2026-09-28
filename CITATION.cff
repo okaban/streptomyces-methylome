@@ -5,13 +5,30 @@ type: software
 authors:
   - family-names: "Takeda"
     given-names: "Tomoki"
-repository-code: "https://github.com/okaban/rna-seq-sco"
+    affiliation: "Institute for Advanced Biosciences / Graduate School of Media and Governance, Keio University, Japan"
+  - family-names: "Asamizu"
+    given-names: "Shumpei"
+    affiliation: "Engineering Biology Research Center, Kobe University, Japan"
+    orcid: "https://orcid.org/0000-0002-7178-5410"
+  - family-names: "Yuzawa"
+    given-names: "Satoshi"
+    affiliation: "Institute for Advanced Biosciences / Graduate School of Media and Governance, Keio University, Japan"
+    orcid: "https://orcid.org/0000-0001-8358-2787"
+repository-code: "https://github.com/okaban/streptomyces-methylome"
 license: MIT
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22877587"
+    description: "Concept DOI — resolves to the latest archived version of this code"
 preferred-citation:
   type: article
-  title: "A dual N4-methylcytosine/N6-methyladenine methylome of Streptomyces coelicolor: base-resolution reassignment of a cytosine mark and a same-strand AAGCCCG duplication"
-  journal: "Nucleic Acids Research"
+  title: "DNA methylation is spatially organised around, but does not instruct, the regulatory genome of Streptomyces coelicolor: a 4mC/6mA methylome with a same-strand AAGCCCG dual modification"
   status: submitted
   year: 2026
   authors:
-    - name: "TODO — add author list before publishing"
+    - family-names: "Takeda"
+      given-names: "Tomoki"
+    - family-names: "Asamizu"
+      given-names: "Shumpei"
+    - family-names: "Yuzawa"
+      given-names: "Satoshi"

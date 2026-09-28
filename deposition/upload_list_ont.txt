@@ -1,0 +1,9 @@
+/Users/okaban/bioinfo/methyl/260102_M145/analysis/1-1_mapped.bam
+/Users/okaban/bioinfo/methyl/260102_M145/analysis/1-2_mapped.bam
+/Users/okaban/bioinfo/methyl/260102_M145/analysis/1-3_mapped.bam
+/Users/okaban/bioinfo/methyl/260102_M145/analysis/2-1_mapped.bam
+/Users/okaban/bioinfo/methyl/260102_M145/analysis/2-3_mapped.bam
+/Users/okaban/bioinfo/methyl/260102_M145/analysis/2-4_mapped.bam
+/Users/okaban/bioinfo/methyl/260102_M145/analysis/3-2_mapped.bam
+/Users/okaban/bioinfo/methyl/260102_M145/analysis/3-3_mapped.bam
+/Users/okaban/bioinfo/methyl/260102_M145/analysis/3-4_mapped.bam
