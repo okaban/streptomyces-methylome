@@ -235,7 +235,7 @@ def main():
     for i, tp in enumerate(("T1", "T2", "T3")):
         pos = np.array([p for p, _ in S[(tp, "4mC", "GCCGGC")]])
         h, _ = np.histogram(pos, bins=edges)
-        b1.plot(edges[:-1] / 1e6, h, lw=0.9, color=su.BAR_RAMP[i],
+        b1.plot(edges[:-1] / 1e6, h, lw=1.1, color=su.TIME_RAMP[i], ls=su.TIME_STYLE[i],
                 label=su.TP_LABELS[i], zorder=2 + i)
     b1.axvspan(CORE[0] / 1e6, CORE[1] / 1e6, color=su.COL_GRAY, alpha=0.18, zorder=1)
     b1.set_xlim(0, GENOME_LEN / 1e6)
@@ -258,7 +258,13 @@ def main():
     b2.bar(xs, core_n, color=su.COL_CORE, width=0.66, label="core", zorder=2)
     b2.bar(xs, arm_n, bottom=core_n, color=su.COL_ARM, width=0.66, label="arm", zorder=2)
     b2.set_xticks(xs); b2.set_xticklabels(order)
-    b2.set_xlabel("detected at T1/T2/T3 (1 = detected)")
+    # 2026-09-26: the raw pattern keys ("111", "110") were unreadable. Spell out
+    # which timepoints the group was detected at.
+    LAB = {"111": "all three", "110": "T1+T2", "011": "T2+T3", "101": "T1+T3",
+           "100": "T1 only", "010": "T2 only", "001": "T3 only"}
+    b2.set_xticks(xs)
+    b2.set_xticklabels([LAB.get(k, k) for k in order], rotation=30, ha="right")
+    b2.set_xlabel("timepoints at which the site was detected")
     b2.set_ylabel("distinct GCCGGC 4mC sites")
     b2.set_title(f"{core_n[0] + arm_n[0]:,} of {sum(core_n) + sum(arm_n):,} sites are seen\n"
                  f"at all three timepoints", loc="left")

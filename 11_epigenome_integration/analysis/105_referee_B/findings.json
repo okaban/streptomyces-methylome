@@ -1,0 +1,250 @@
+{
+ "summary": "Domain and statistical read of the EN manuscript by a Streptomyces molecular biologist. The central thesis - methylation is spatially organised around the regulatory genome without instructing it - is supported by the data I could check, and the paper's statistical practice is well above average for the field (equivalence testing with a stated margin, pre-specified falsification criteria, spatial-autocorrelation-preserving permutations, a voluntary refusal to report a circular classifier AUC, and a marketable Hi-C-predictor claim withdrawn on internal evidence). Twenty-three findings: one blocking (the promoter protection ratios attributed to GCCGGC and to AAGCCCG are not motif-stratified; the series labelled AAGCCCG is the all-6mA series, ~78% of which is the unassigned 6mA the paper says it excludes, and the stated reason for the retired series differing is contradicted by the producing code), fourteen serious and eight minor. The serious set clusters in three places: (i) negative claims stated more strongly than the paper's own tables support - 'no directional expression response' is contradicted by the one Exposed-vs-Shielded metric that differs at FDR 0.05, and 'marginally deeper protection at 50 h' is a p = 0.80 contrast on 30 versus 37 sites with intervals that overlap 1; (ii) developmental vocabulary imported into a liquid-culture experiment - 'the transition to aerial growth' in the Discussion's first sentence, MI->MII and whiA/whiG/whiI-dependent HupS asserted for timepoints where no morphology was scored; (iii) two verified spatial statistics that do not survive re-derivation - the Clark-Evans clustering of the dual mark is produced entirely by 61 duplicated coordinates (R = 0.882, p = 0.018 as published; R = 1.044, p = 0.41 on distinct positions), and the deposited 1,051-gene classification table still carries retired first-appearance T2/T3 distances that flatly contradict the paper's central stability claim. None of this touches the thesis; all of it is fixable without new data.",
+ "overall_assessment": "Revision, not rejection - but the revision is not cosmetic. The science holds: the 4mC reassignment is bounded correctly (orthogonal confirmation declared pending, with a genuine matched-context in-silico control and an honest statement that no internal test discriminates 4mC from 5mC directly), the dual AAGCCCG mark rests on the right controls (the near/far k-mer cross-talk test across 2.1 million non-motif 6mA calls is the convincing one), the geography confound is policed properly, and the permissive conclusion survives every check I made. Two things must change before submission. First, the motif labelling of the protection-zone series: as computed, two numbers in the paper are attributed to motifs that were never used to select the sites, and one of them carries an interpretive claim about modification-type-specific dynamics. Second, the negative claims need to be stated at the strength the data support - the paper has done the hard statistical work and then described the results more absolutely than its own tables allow, which is the fastest way to lose a referee's trust on a null result. The Streptomyces vocabulary also needs a pass: a referee who works on this organism will stop at 'aerial growth' in a submerged R5 culture and at HupS as a candidate nucleoid protein in a non-sporulating culture, and will then read the rest of the paper less generously. Everything I flagged is fixable from data in hand. I would send it back with a short list and expect to accept it.",
+ "findings": [
+  {
+   "id": "RB-01",
+   "area": "statistics",
+   "severity": "blocking",
+   "location": "Results R2 (para 1 and para 4); Methods 'Epigenome-transcriptome integration' (AAGCCCG protection ratios 0.927/0.732/0.764)",
+   "issue": "The protection ratios attributed to a specific motif are not motif-stratified. The producing script applies no motif filter, so the series labelled 'AAGCCCG' is the all-6mA series and the T1 value labelled 'GCCGGC 4mC protection ratio' is the all-4mC series. The interpretive claim built on it ('modification-type-specific temporal dynamics of promoter exclusion') therefore has no motif-specific basis, and it is carried mostly by the 6mA calls the paper elsewhere excludes from analysis.",
+   "evidence": "64_timepoint_TSS/scripts/timepoint_TSS_methylation.py subsets only on timepoint and mod_type ('4mC'/'6mA'); grep for GCCGGC/AAGCCCG/motif in that script returns nothing, and its input 01_integration/high_confidence_sites_weighted.csv has no motif column (columns: chrom,position,strand,mod_type,timepoint,n_reps,total_coverage,weighted_mod_freq,unweighted_mod_freq). The 6mA rows of 64_timepoint_TSS/tables/C2_protection_zone_metrics.tsv (Regulatory: 0.92735, 0.73203, 0.76364) are therefore computed over 1,934/2,120/2,295 all-6mA sites, of which only 418/451/443 are AAGCCCG (90_per_timepoint_census_audit/tables/per_timepoint_census.tsv) - i.e. ~78% of the signal is the 6mA fraction the manuscript states is 'not analysed positionally here' (R6). The 4mC 'Regulatory' rows (0.83918, 0.84397, 1.04598) likewise pool 1,987/2,446/1,647 all-4mC sites, not the 1,289/1,595/1,073 GCCGGC sites. Secondary error in the same passage: R2 states the retired 0.839/0.844/1.046 series was computed 'on the first-appearance site set', but the script reads the canonical per-timepoint file, so the stated cause of the discrepancy is not the actual one (the actual differences are motif scope and window).",
+   "what_would_settle_it": "Recompute the promoter-zone ratio per timepoint separately for GCCGGC 4mC and for AAGCCCG 6mA (motif-matched site sets, same window as the canonical GCCGGC series), with counts and intervals. If the AAGCCCG-only series does not reproduce a T2 minimum, the 'modification-type-specific dynamics' sentence must go.",
+   "proposed_fix": "Either produce a genuinely AAGCCCG-restricted 6mA protection series or delete the AAGCCCG trajectory sentence and the 0.839 value, and correct the Methods statement about why the retired series differs."
+  },
+  {
+   "id": "RB-02",
+   "area": "statistics",
+   "severity": "serious",
+   "location": "Results R2, final paragraph ('0.743 at T1, 0.709 at T2 and 0.684 at T3 ... Protection is therefore maintained, and marginally deeper, at 50 h')",
+   "issue": "The three regulatory-gene protection ratios are reported without uncertainty and are statistically indistinguishable; 'marginally deeper at 50 h' is not supported, and at T1 the ratio is not distinguishable from no protection at all. The robust version of this result is the all-TSS series, not the regulatory-gene series.",
+   "evidence": "Recomputed from the numerator/denominator counts in 90_per_timepoint_census_audit/tables/protection_zone_ratio_by_timepoint.tsv (regulatory_n1051: n_sites_in_pz 37/46/30, n_far 427/556/376). Exact Poisson-ratio 95% CIs: T1 0.743 [0.516, 1.040]; T2 0.709 [0.513, 0.959]; T3 0.684 [0.455, 0.993]. T1 vs T3 contrast on the same counts: Fisher p = 0.80 (OR 1.09); T1 vs T2 p = 0.91. The all-TSS series is much better determined: 0.764 [0.645, 0.898], 0.759 [0.648, 0.885], 0.791 [0.658, 0.945] (n_pz 159/179/134 over 3,570 TSSs).",
+   "what_would_settle_it": "Report each ratio with its interval and a formal test of the T1-T3 contrast.",
+   "proposed_fix": "State the regulatory-gene protection ratio as flat across the time course (no detectable change), drop 'marginally deeper', and lead this paragraph with the all-TSS series, which is where the statistical support actually is."
+  },
+  {
+   "id": "RB-03",
+   "area": "statistics",
+   "severity": "serious",
+   "location": "Methods 'Spatial statistics and independence testing' (Clark-Evans R = 0.882, z = -2.38, p = 0.018, 'weakly clustered')",
+   "issue": "The nearest-neighbour statistic treats 406 pair records as 406 independent points, but they occupy only 345 distinct genomic coordinates: 61 instances contribute both an A0-C4 and an A1-C4 pair at the same 4mC position, so the same coordinate is entered twice and contributes a nearest-neighbour distance of zero. The reported clustering is produced entirely by these duplicates. The motif-conditioned null compounds the problem because it draws without replacement from unique instance positions, so it cannot contain duplicates and the observed set is guaranteed to look more clustered. Separately, the expectation used is the circular-chromosome form on an organism with a linear chromosome (stated as linear in the Introduction).",
+   "evidence": "Recomputed from 79_comod_full_denominator/site_census_AAGCCCG_pairs.tsv (rule = same_instance): pooled scope has 406 pair rows at 345 unique pos_4mC values and 345 unique instances; 122 of the 406 nearest-neighbour distances are exactly 0 bp. As published (duplicates kept) R = 0.882, z = -2.38, p = 0.018; on deduplicated positions R = 1.044, z = 0.82, p = 0.41. T1 alone: 214 rows at 194 unique positions, 40 zero distances; as published R = 0.882, p = 0.085, deduplicated R = 0.950, p = 0.49. The script (88_occupancy_series_and_CE/occupancy_series_and_CE.py, clark_evans()) documents 'circular gaps' and exp = L/(2n), and its null uses rng.choice(inst_c4, n, replace=False).",
+   "what_would_settle_it": "Re-run the statistic on the 345 (and 194) distinct instance coordinates against the motif-conditioned null, with a linear-chromosome (no wrap-around) expectation.",
+   "proposed_fix": "Report the dual-modified instances as not detectably clustered, or remove the spatial-statistics paragraph. Nothing else in the paper depends on it, so removal is cheap; leaving it invites a referee to find the duplicate-coordinate artefact."
+  },
+  {
+   "id": "RB-04",
+   "area": "interpretation",
+   "severity": "serious",
+   "location": "Title of Results R4; Abstract ('retain their marks without a directional expression response'); Results R4 body",
+   "issue": "The strongest negative statement in the paper is made about direction, but the only Exposed-vs-Shielded metric that differs at FDR 0.05 is the signed fold-change, i.e. direction. The equivalence test that carries the permissive claim is computed on |log2FC|, so by construction it cannot be falsified by a directional effect, and the pre-specified falsification criterion is stated on the absolute value as well. The substance of the permissive model survives (the directional bias is small and largely geographic), but 'no directional expression response' contradicts the paper's own table and its own r = -0.09.",
+   "evidence": "82_exposed_shielded_metric_scan/tables/exposed_vs_shielded_metric_scan.tsv: signed_LFC_T2vsT1 Cliff d = -0.193, median -0.56 (Exposed, n = 59) vs -0.12 (Shielded, n = 960), p_raw 1.28e-02, p_BH 4.10e-02, sig_FDR0.05 = YES; abs_LFC_T2vsT1 Cliff d = -0.010, p 0.894. Recomputed from 52_shielded_exposed_boundary/tables/SuppTable_regulatory_gene_classification_n1051.tsv: among genes with |log2FC| >= 1 the direction split is 7 up / 20 down for Exposed versus 203 up / 233 down for Shielded (Fisher OR 0.40, p = 0.046; within-Exposed binomial p = 0.019). Stratifying by region, the signed contrast is not significant within the core (medians -0.58 vs -0.325, Mann-Whitney p = 0.106, n = 51 vs 594) or within the arms (p = 0.43, n = 8), consistent with the paper's geography argument.",
+   "what_would_settle_it": "A signed-fold-change contrast reported with the same geography control as the r = -0.09 analysis, and an equivalence bound stated on the signed quantity rather than the absolute one.",
+   "proposed_fix": "Reword to what the data support: promoter methylation does not predict the magnitude of the response and the directional bias it does show is weak and largely explained by chromosomal position (median -0.56 vs -0.12 unstratified; p = 0.11 within the core; geography-controlled r = -0.09). Change the R4 heading and the Abstract clause accordingly. In R4 the '7 up versus 20 down' sentence should not be offered as evidence that direction is unconstrained - on its own that split is nominally significant (p = 0.019)."
+  },
+  {
+   "id": "RB-05",
+   "area": "streptomyces_biology",
+   "severity": "serious",
+   "location": "Discussion, first sentence ('remains largely in place across the transition to aerial growth')",
+   "issue": "There is no aerial growth in this experiment. The cultures are submerged R5 liquid, which does not raise aerial hyphae, and the paper's own framing decision is that this is a metabolic and not a developmental transition with no morphology scored. This is the first sentence a Streptomyces referee reads in the Discussion.",
+   "evidence": "Methods 'Bacterial strains and growth conditions': 25 mL R5 liquid medium in a 100 mL non-baffled flask, 30 C, 200 rpm, harvested at 12/24/50 h. Introduction: 'we did not perform morphological scoring'. Discussion opening: 'remains largely in place across the transition to aerial growth'.",
+   "proposed_fix": "Replace with 'across the metabolic transition', the phrase used everywhere else."
+  },
+  {
+   "id": "RB-06",
+   "area": "streptomyces_biology",
+   "severity": "serious",
+   "location": "Methods 'Bacterial strains'; Results R0b; Discussion 'A largely stable methylome' ('The ~24 h timepoint coincides with the MI->MII transition, BldD-regulon derepression and the onset of antibiotic production (14-16), and with whiA/whiG/whiI-dependent expression of the nucleoid-associated protein HupS (17)'); Limitations, mechanism (i)",
+   "issue": "Developmental/cytological states are asserted as established facts about these timepoints, but none of them was measured, and one of them is not available in this culture system. MI->MII is defined cytologically (compartmentalisation and programmed cell death) and requires microscopy or viability staining; in the submerged cultures of the cited work the first mycelium dies and MII is established well before 24 h, so both the 12 h = 'vegetative MI' and the 24 h = 'MI->MII' assignments are stronger than the cited literature supports for R5 at these times. HupS is the sporulation-specific HU paralogue expressed in aerial hyphae under whiA/whiG/whiI control; in a non-sporulating liquid culture it is not a candidate for a T2 change in nucleoid-protein occupancy. The Introduction disclaims the state labels as 'convenient shorthand', but the Discussion and Limitations then use them as premises.",
+   "evidence": "Cited refs 14 (Manteca 2008), 15 (Rioseras 2014), 16 (den Hengst 2010), 17 (Salerno 2009) versus the Methods (R5 liquid, no microscopy) and the Introduction's explicit statement that morphology was not scored.",
+   "what_would_settle_it": "Either cytological staging of the archived samples (not new sequencing) or removal of the cytological premises.",
+   "proposed_fix": "Keep the timepoints described by what was measured (dry cell weight, actinorhodin, undecylprodigiosin). Drop 'MI->MII' from Methods and R0b or mark it as a nominal label at every occurrence, delete the HupS/whi sentence, and in Limitations mechanism (i) keep HupA and Lsr2 and drop HupS."
+  },
+  {
+   "id": "RB-07",
+   "area": "streptomyces_biology",
+   "severity": "serious",
+   "location": "Methods 'Epigenome-transcriptome integration' (core = central 1.5-7.17 Mb, 'excluding the ~1.5 Mb recombinogenic subtelomeric arm on each end'); Results R1; Figures 1b, 2a",
+   "issue": "The core/arm boundary is imposed symmetrically, but this chromosome's arms are not symmetric: the conventional partition of AL645882.2 places a ~1.5 Mb left arm and a ~2.3 Mb right arm around a ~4.9 Mb central core. A symmetric +/-1.5 Mb rule therefore assigns roughly 0.8 Mb of the right arm to the 'core'. Because core/arm is the covariate that carries the paper's central argument, the reader needs to know the geography conclusions do not depend on this choice. The Compartment-A alternative (2.3-6.2 Mb) does not test it, because it trims both ends rather than the right end only.",
+   "evidence": "Methods define the core as 1.5-7.17 Mb of an 8.67 Mb chromosome (i.e. 8.67 - 1.5 on the right); Methods also state the two partitions 'differ only in the 1.5-2.3 Mb and 6.2-7.17 Mb transition zones'.",
+   "what_would_settle_it": "Repeat the core-enrichment permutation, the Simpson's-paradox stratification and the partial correlation with the literature boundary (left arm to ~1.5 Mb, right arm from ~6.4 Mb) and report that the conclusions are unchanged.",
+   "proposed_fix": "One sentence in Methods justifying the symmetric rule and reporting the asymmetric-boundary sensitivity result."
+  },
+  {
+   "id": "RB-08",
+   "area": "presentation",
+   "severity": "serious",
+   "location": "Methods 'Epigenome-transcriptome integration', two consecutive paragraphs",
+   "issue": "The Methods contradict themselves about which covariate produced the headline partial correlation. One paragraph says the partial-correlation values in Results were computed on the Compartment-A boundary (2.3-6.2 Mb); the next says the canonical r = -0.090 conditions on the core/arm binary (1.5-7.17 Mb). These are different covariates and cannot both be right.",
+   "evidence": "Methods: 'the partial-correlation values reported in Results were computed using the Compartment-A boundary (ii)' versus 'The canonical r = -0.090 conditions on a single binary covariate, chromosomal compartment (core, 1.5-7.17 Mb, vs arm)'. The project's own analysis index records the canonical r = -0.090 as conditioning on the core/arm binary (80_partial_corr_covariates).",
+   "what_would_settle_it": "Confirm from 80_partial_corr_covariates which boundary the deposited code used and delete the other sentence.",
+   "proposed_fix": "Keep one statement of the covariate definition and report the alternative boundary only in the sensitivity list."
+  },
+  {
+   "id": "RB-09",
+   "area": "presentation",
+   "severity": "serious",
+   "location": "Methods 'Epigenome-transcriptome integration' ('the T3 ratio is a measured value rather than an artefact of low site number, and it indicates that promoter-proximal depletion is no longer detected by this metric at 50 h')",
+   "issue": "A sentence surviving from the retired narrative states the opposite of the Results. Results R2 concludes protection is maintained and marginally deeper at T3 (0.684); Methods, two paragraphs later, says depletion is no longer detected at 50 h.",
+   "evidence": "Methods sentence quoted above versus Results R2 'Protection is therefore maintained, and marginally deeper, at 50 h' and 90_per_timepoint_census_audit/tables/protection_zone_ratio_by_timepoint.tsv (regulatory_n1051, T3 protection_ratio 0.6839).",
+   "proposed_fix": "Delete the clause after 'rather than an artefact of low site number'."
+  },
+  {
+   "id": "RB-10",
+   "area": "presentation",
+   "severity": "serious",
+   "location": "Supplementary Table 1b (legend: 'nearest GCCGGC distance at each timepoint' for all 1,051 regulatory genes); Results R4 ('56 of the 62 ... retained a site within 293 bp at T2, and 45 at T3')",
+   "issue": "The deposited table that Supplementary Table 1b is generated from still carries the retired first-appearance nearest-site columns for T2 and T3, and it contradicts the central stability claim of the paper. Supplementary Table 1 (the 62-gene version) was patched; the 1,051-gene version was not. A referee cross-checking the deposit would conclude the retention result is false.",
+   "evidence": "52_shielded_exposed_boundary/tables/SuppTable_regulatory_gene_classification_n1051.tsv, recomputed here: of the 62 Exposed genes, 62 are within 293 bp at T1 but 0 at T2 and 1 at T3, with Exposed median nearest distance 172 bp (T1), 57,884.5 bp (T2), 196,230.5 bp (T3) - the first-appearance signature. The canonical values are in 90_per_timepoint_census_audit/tables/exposed62_promoter_methylation_by_timepoint.tsv (source = canonical: 62/56/45 within 293 bp, medians 172/181/184 bp), and 90_per_timepoint_census_audit/fix_supptable1_distances.py patches only SuppTable1_Exposed62_identity.tsv. The Supplementary Table 1 legend says 'T2 and T3 columns from the canonical per-timepoint file'; the Table 1b legend makes no such statement.",
+   "what_would_settle_it": "Run the same recomputation against the n1051 table and confirm the Exposed rows reproduce 62/56/45 within 293 bp.",
+   "proposed_fix": "Re-point fix_supptable1_distances.py at SuppTable_regulatory_gene_classification_n1051.tsv before the deposit is frozen, and add the same provenance note to the Table 1b legend. Supplementary Table 12 is unaffected - the metric scan reads only class, region_label, tss, tf_family, baseMean and the two log2FC columns."
+  },
+  {
+   "id": "RB-11",
+   "area": "interpretation",
+   "severity": "serious",
+   "location": "Abstract ('a configuration not catalogued among known restriction-modification systems'); R0b; Discussion 'AAGCCCG Dual Modification'; Supplementary Table 10",
+   "issue": "The REBASE scan does not test the claim the paper is making. The scan looks for single enzymes annotated with combined 4mC and 6mA specificity, but the paper's own data say the two marks are deposited independently (site OR 1.04, p 0.81; per-read OR 1.04), i.e. by two separate activities. REBASE catalogues enzymes and their recognition sequences, not the coincidence of two independent methyltransferases' targets on one motif, so the absence of a same-strand dual-specificity enzyme is not evidence that same-strand dual modification of one motif is unreported. The motif-level statement ('AAGCCCG itself is absent from REBASE entirely') is sound; the configuration-level statement is not bounded by the evidence offered for it.",
+   "evidence": "R0b: 'none of the 51 systems annotated with dual 4mC/6mA specificity places both marks on the same strand of a short contiguous motif'; Discussion: 'same-strand dual modification of a short contiguous motif is catalogued for no motif in any genus'. Against the same paper's independence result (194 of 1,334 instances with both at T1 versus 191.5 expected, OR 1.04, Fisher p = 0.81) and its own preferred mechanism ('two methyltransferase activities converging on a single motif').",
+   "what_would_settle_it": "A search for pairs of REBASE entries in the same organism whose recognition sequences overlap such that a 4mC and a 6mA target fall on the same strand 3-4 bp apart. That is the configuration actually observed, and it is what would have to be absent.",
+   "proposed_fix": "Bound the novelty to what was tested: no catalogued enzyme deposits both marks on the same strand of a short contiguous motif, and AAGCCCG is absent from REBASE. Then state the observation as a co-occurrence of two independent activities on one motif, noting explicitly that overlapping targets of independent methyltransferases are not indexed in REBASE and so cannot be excluded."
+  },
+  {
+   "id": "RB-12",
+   "area": "statistics",
+   "severity": "serious",
+   "location": "Results R5 (siderophore group biosynthesis, sco00975, 5 of 7 pathway genes, OR = 39.5, FDR = 8.7e-4); Figure 5 legend",
+   "issue": "The enrichment test treats genes as independent draws, but the gene sets are defined by genomic proximity to methylation sites and the pathway in question is a single contiguous operon. Five of the seven annotated genes of the desferrioxamine pathway lie in one cluster, so a single methylation neighbourhood produces all five hits; that is one event, not five. The same objection applies more weakly to the two large sets (the GCCGGC-proximal set covers 3,106 of 7,374 background genes, 42%, where a 1.45-fold KEGG excess is close to what genomic composition alone would give).",
+   "evidence": "R5 reports n = 3,106 / 438 / 443 against a 7,374-gene background, and itself notes that the enriched siderophore sites are CDS-internal and adjacent (SC_RS15995 GCCGGC at +1,457 bp; SC_RS16000 AAGCCCG at +1,037 bp) - i.e. neighbouring genes of one cluster.",
+   "what_would_settle_it": "A null that permutes site positions along the chromosome (or block-permutes gene labels in runs) instead of shuffling gene labels independently, which preserves the operonic structure of the gene sets.",
+   "proposed_fix": "Report the number of independent genomic neighbourhoods behind each enriched pathway alongside the gene count, and recompute the FDR against a position-permutation null. The spatial-deployment interpretation the section already gives survives either way; only the p-values change."
+  },
+  {
+   "id": "RB-13",
+   "area": "streptomyces_biology",
+   "severity": "serious",
+   "location": "Results R5 heading ('quorum sensing (GCCGGC-proximal)'); R5 body; Figure 5 legend",
+   "issue": "Calling the GCCGGC-proximal enrichment 'quorum sensing' will read as an overreach to anyone who works on this organism. Quorum sensing in S. coelicolor is the gamma-butyrolactone ScbA/ScbR system; the KEGG sco02024 map is populated largely by generic transport and two-component signalling genes and does not represent that system. The paper's own negative control shows the genuine quorum-sensing locus carries no methylation, so the section heading and the paper's own Discussion point in opposite directions.",
+   "evidence": "R5: 'significantly enriched for the Quorum sensing pathway (sco02024; 55 of 90 pathway genes, enrichment = 1.45, OR = 2.18; FDR = 2.4e-2)'. Discussion: 'scbR and scbA ... are classified as non-Exposed: no GCCGGC methylation sites are detectable within 2 kb of either locus at any timepoint'.",
+   "proposed_fix": "Retitle the section by what the enrichment actually is (signal-transduction and transport gene neighbourhoods), keep the KEGG term as the annotation label in the figure, and add one clause noting that the organism's gamma-butyrolactone quorum-sensing locus is not among the marked genes."
+  },
+  {
+   "id": "RB-14",
+   "area": "interpretation",
+   "severity": "serious",
+   "location": "Discussion 'AAGCCCG Dual Modification' ('dual sites are over-represented in the gene-dense chromosomal core (57.7% vs 34.1% for single sites; Fisher p = 2.8e-5)')",
+   "issue": "These figures are inconsistent with the canonical motif-conditioned analysis the paper cites as Supplementary Table 13, and with Results R1. Both quoted core fractions fall below the AAGCCCG motif's own genomic core fraction of 69.7%, and 34.1% for single sites contradicts R1's statement that AAGCCCG 6mA sits at the motif null (0.70-0.71) at every timepoint. The canonical table also shows that the dual sites' core bias is inherited from the 4mC component and is present only at T1, which changes the interpretation offered in this paragraph.",
+   "evidence": "103_aagcccg_core_enrichment/tables/aagcccg_core_enrichment.tsv (= Supplementary Table 13): motif-conditioned null 930/1334 = 0.6972; T1 dual ('both') 170/194 = 0.8763 (1.257x, p = 1e-4), T1 4mC 0.8911 (1.278x), T1 6mA 0.7049 (1.011x, p = 0.76); T2 dual 0.7056 (1.012x, p = 0.79); T3 dual 0.7544 (1.082x, p = 0.09). Results R1: 'AAGCCCG 6mA shows no core enrichment at any timepoint (core fraction 0.70-0.71 ... permutation p >= 0.45)'.",
+   "what_would_settle_it": "Confirm the provenance of 57.7%/34.1% - it does not appear in the canonical table - and replace it with the Supplementary Table 13 values.",
+   "proposed_fix": "Restate with the canonical numbers and against the motif-conditioned null: dual-modified instances are core-biased at T1 (87.6% vs a 69.7% motif null) but at the null by T2 (70.6%), and the bias tracks the 4mC arm (89.1% at T1) while the 6mA arm sits at the null throughout. That supports the paragraph's 'consequence of local 4mC density rather than a combinatorial code' reading better than the current numbers do."
+  },
+  {
+   "id": "RB-15",
+   "area": "statistics",
+   "severity": "minor",
+   "location": "Results R0 (dry cell weight F(2,7) = 199.04; actinorhodin F(2,7) = 192.79); Methods 'Dry cell weight and antibiotic quantification' ('n = 4 biological replicates per timepoint')",
+   "issue": "The reported degrees of freedom are inconsistent with the stated design. Three groups of four replicates give F(2,9); F(2,7) implies ten observations, i.e. two missing values that are not declared.",
+   "evidence": "Methods: 'four independent biological replicates per timepoint'; R0: 'one-way ANOVA F(2,7) = 199.04 ... n = 4 biological replicates'. Same df on the actinorhodin ANOVA.",
+   "what_would_settle_it": "The per-timepoint n actually entering each ANOVA.",
+   "proposed_fix": "State the realised n per group and the reason for any exclusions, or correct the df."
+  },
+  {
+   "id": "RB-16",
+   "area": "statistics",
+   "severity": "minor",
+   "location": "Results R0 (undecylprodigiosin, Welch W(2, 4.3) = 1133.84)",
+   "issue": "The test statistic is inflated by including a group at the detection floor. The paper says a T1-referenced fold change cannot be quoted because the T1 signal is at the detection limit, then includes that same group in the ANOVA, where its near-zero variance produces an F of four figures. The statistic is not interpretable as a measure of the effect.",
+   "evidence": "R0: 'rose from near the detection limit at T1 ... (Welch's ANOVA W(2, 4.3) = 1133.84, p < 0.001; a T1-referenced fold is not quoted because T1 signal is at the detection floor)'.",
+   "proposed_fix": "Report the T2-vs-T3 contrast (the ~17-fold change already quoted) with its interval and describe T1 as below the detection limit, rather than carrying an omnibus F that the floor group dominates."
+  },
+  {
+   "id": "RB-17",
+   "area": "statistics",
+   "severity": "minor",
+   "location": "Results R2 ('FIMO-predicted TFBSs showed no significant methylation depletion (flat metagene profile; permutation p = 0.12-0.96 across four methylation classes at T1), and GCCGGC sites were in fact enriched within predicted TFBSs (fold = 1.157, p = 0.006), ruling out individual TFBS occupancy')",
+   "issue": "Two problems in one sentence. The 1.157-fold enrichment inside FIMO hits needs a composition-matched null: in a 72.1% GC genome, motifs scanned at p < 1e-4 are GC-biased and an all-G/C hexamer will co-localise with them for compositional reasons alone, so a 16% excess is not evidence of preferential methylation of binding sites. And a mechanism is ruled out from non-significant permutation p-values without an equivalence bound - the same inference the paper handles correctly with TOST in R4.",
+   "evidence": "R2 as quoted; Methods report the FIMO threshold as p < 1e-4 scanned genome-wide with the regulatory-gene PWM set. The paper's own gene-body analysis shows GCCGGC density is composition-sensitive (fold depletion 0.74-0.76 in gene bodies, p < 3e-7).",
+   "what_would_settle_it": "Repeat the TFBS enrichment against GC- and dinucleotide-matched shuffled sites, and state the smallest depletion the TFBS metagene could have detected.",
+   "proposed_fix": "Soften 'ruling out' to 'no depletion detected, with the profile bounded away from the TSS-scale effect', and either control the 1.157-fold value for composition or drop it."
+  },
+  {
+   "id": "RB-18",
+   "area": "presentation",
+   "severity": "minor",
+   "location": "Figure 4 legend versus Results R4 (equivalence margin and DEG denominators)",
+   "issue": "Three small inconsistencies in the numbers that carry the equivalence claim: the TOST margin is +/-0.5 log2FC in the text and +/-0.33 in the Figure 4b legend; the Cliff's delta interval upper bound is +0.15 in the text and +0.14 in the legend; and the Shielded DEG numerator is 435 in Figure 4a but 436 in the canonical classification table.",
+   "evidence": "R4: 'a two-one-sided-tests (TOST) procedure rejected a difference exceeding a +/-0.5 log2-fold-change margin (p = 0.01)' and 'Cliff's delta ... -0.010 (95% CI [-0.16, +0.15])'. Figure 4b legend: 'a two-one-sided-tests procedure rejects a difference exceeding +/-0.33' and 'Cliff's delta = -0.010 (95% CI [-0.16, +0.14])'. Figure 4a legend: '435 of 960'; recomputed from SuppTable_regulatory_gene_classification_n1051.tsv, |log2FC_T2vsT1| >= 1 gives 436 of 960 Shielded (27 of 59 Exposed reproduces exactly; Supplementary Table 12 also reports 436/989 on the full denominator).",
+   "proposed_fix": "Fix the margin to whichever was computed, reconcile the two Cliff's delta intervals, and reconcile 435 versus 436 between the two source tables. None of this changes the conclusion, but a referee who spots one will re-check everything."
+  },
+  {
+   "id": "RB-19",
+   "area": "presentation",
+   "severity": "minor",
+   "location": "Results R6 ('n = 1,659 GCCGGC-context sites (1,313 4mC and 346 6mA ...)')",
+   "issue": "GCCGGC contains no adenine, so '346 6mA sites in GCCGGC context' cannot mean a 6mA call at a motif position. The assignment rule ('each site to a single motif with GCCGGC taking precedence') does not define what window makes a 6mA call a GCCGGC-context site, and the reader cannot reconstruct the denominator.",
+   "evidence": "R6 as quoted; the same paragraph explains only that the totals 'differ from the motif- and modification-specific counts used elsewhere (e.g. 1,289 GCCGGC 4mC sites at T1)'.",
+   "proposed_fix": "One clause giving the context window in bp and the precedence rule, or drop the 6mA column from this positional analysis, since the section's conclusion rests on the CDS fraction of 4mC sites."
+  },
+  {
+   "id": "RB-20",
+   "area": "streptomyces_biology",
+   "severity": "minor",
+   "location": "Results R3, final paragraph (two-component systems, 7/7, exact binomial p = 0.0078)",
+   "issue": "This is presented as a 'structural regularity' but it is a post-hoc conditional test inside a family that the paper's own systematic scan finds not to be enriched, and it is not included in the multiple-testing scope of the 16-metric comparison. Biologically the result also depends entirely on TSS assignment within operons: histidine kinase and cognate response regulator are frequently co-transcribed in this genus, so whether the mark falls 'on the sensor kinase' rather than on a shared promoter is a statement about which internal TSS the annotation assigns, not necessarily about which gene is marked.",
+   "evidence": "Supplementary Table 12 (82_exposed_shielded_metric_scan): family_Sensor_kinase OR = 1.81, 8/62 versus 75/989, p_raw 0.142, p_BH 0.284, sig_FDR0.05 = no. R3 nonetheless reports the 7/7 sensor-kinase asymmetry with p = 0.0078.",
+   "what_would_settle_it": "For each of the seven pairs, the genomic arrangement (operonic versus divergent) and the distance from the marked site to each partner's TSS.",
+   "proposed_fix": "Present it as an observation about the eight Exposed sensor kinases rather than as a significant structural regularity, note that the family is not itself over-represented, and state the operon caveat."
+  },
+  {
+   "id": "RB-21",
+   "area": "presentation",
+   "severity": "minor",
+   "location": "Data Availability ('the transcription start site atlas used for promoter assignment (12)')",
+   "issue": "Wrong reference. The TSS atlas is reference 11 (Jeong et al. 2016), which is what Methods cites; reference 12 (Castro-Melchor et al. 2010) is the curated regulatory-network annotation used to compile the regulator list.",
+   "evidence": "Methods 'Epigenome-transcriptome integration': 'TSSs were derived from published S. coelicolor A3(2) M145 transcriptome data (11)'; Methods regulator compilation: 'flagged as a regulator in curated S. coelicolor regulatory-network annotations (12)'. The TSS file used by the analysis code is 18_tss_analyses/jeong2016_all_tss.csv.",
+   "proposed_fix": "Cite (11) for the TSS atlas in Data Availability."
+  },
+  {
+   "id": "RB-22",
+   "area": "statistics",
+   "severity": "minor",
+   "location": "Results R1 ('was core-concentrated at every timepoint: 83%, 66% and 69%'); Abstract ('the GCCGGC methylome is concentrated in the chromosomal core and largely stable')",
+   "issue": "Two different magnitudes are described with the same word. At T1 the core fraction is 1.32x the motif null and the description is apt; at T2 and T3 it is 1.05x and 1.09x, statistically above the null but not what a reader will understand by 'concentrated'. The Abstract's single clause therefore reads as stronger than the T2/T3 data.",
+   "evidence": "90_per_timepoint_census_audit/tables/per_timepoint_census.tsv: GCCGGC 4mC core_fraction 0.830 / 0.660 / 0.687 against a 63% motif null (permutation p = 0.0002, 0.016, 0.0002 per R1). The same drop is what the paper attributes to the T2 coverage shift.",
+   "proposed_fix": "Quantify the enrichment as a fold over the null at each timepoint (1.32x, 1.05x, 1.09x) rather than repeating 'core-concentrated', and in the Abstract scope the word to the vegetative timepoint."
+  },
+  {
+   "id": "RB-23",
+   "area": "statistics",
+   "severity": "serious",
+   "location": "Results R1 (Jaccard 0.700, 407 new sites at T2, 101 lost); R4 (56 of 62 at T2, 45 at T3); Figure 2b",
+   "issue": "The cross-timepoint set comparisons are not coverage-matched, although the paper establishes that coverage differs substantially between timepoints and that this changes detection power. The dynamic-site analysis is restricted to the 855 sites with adequate depth at all three timepoints, which is the right universe; the Jaccard, the gain/loss decomposition and the Exposed-retention counts are computed on the unrestricted per-timepoint site sets, where the same detection-power argument that explains the 407 arm-ward gains at T2 must also generate apparent losses at T3 (1,073 sites versus 1,595).",
+   "evidence": "R1: 'This arm-ward expansion coincides with the fall of the core/arm sequencing-coverage ratio from 2.26 at T1 to 1.13 at T2 ... and therefore cannot be separated from a change in detection power on the arms.' Methods 'Copy-number control' gives the ratios 2.26/1.13/1.19. Limitations addresses replicate-level confidence (>=3-replicate sites) but not per-timepoint depth matching. Note that the Exposed retention falls more slowly than the genome-wide census (45/56 = 0.80 versus 1,073/1,595 = 0.67), which is evidence for the retention claim rather than against it.",
+   "what_would_settle_it": "Recompute the Jaccard, the gain/loss split and the Exposed 62/56/45 counts on the depth-matched universe (the 855-site set, or a per-timepoint down-sampled-to-common-depth set) and report both.",
+   "proposed_fix": "Report the stability statistics on the coverage-matched universe as the primary numbers, with the unrestricted values alongside. The conclusion is likely to strengthen, given the retention/census comparison above."
+  }
+ ],
+ "strengths": [
+  "The permissive claim is tested the way it should be: an equivalence procedure with a stated margin and a pre-specified falsification criterion, effect sizes with bootstrap intervals rather than p-values alone, and an explicit refusal to report a distance-based classifier AUC because the Exposed label is itself a function of distance. That last decision is the correct one and is unusual to see made voluntarily.",
+  "The MerR/LysR enrichment among Exposed regulators is not a geography artefact - I checked this because it is the paper's one positive structural claim about the Exposed set and the paper's own argument is that Exposed status is largely a proxy for core localisation. Stratifying by core/arm and pooling (Cochran-Mantel-Haenszel) gives MerR OR 4.78, p = 0.0021 and LysR OR 4.45, p = 0.0016, against unstratified Fisher OR 4.71/3.47. LysR is in fact core-depleted among regulators as a whole (20/42 = 47.6% core versus 61.8% for all 1,051), so geography works against the enrichment rather than producing it. The manuscript should report the stratified version, since it strengthens the claim.",
+  "The AAGCCCG core-enrichment analysis uses a motif-conditioned null (the core fraction of all 1,334 genomic instances, 0.697) rather than a uniform genomic null. That is the right null for a mark that can only occur where the motif is, and it is what allows the paper to say the apparent core concentration of the 6mA arm is entirely positional. Supplementary Table 13 reproduces exactly.",
+  "The genome-wide (all-TSS) promoter protection zone is solid where the regulatory-gene version is not: recomputing intervals from the canonical counts gives 0.764 [0.645, 0.898], 0.759 [0.648, 0.885] and 0.791 [0.658, 0.945] at T1/T2/T3, all excluding 1 and mutually consistent. Framing the protection zone as a genome-wide promoter feature only modestly stronger at regulatory genes is well supported.",
+  "The Exposed-promoter retention numbers reproduce from the canonical per-timepoint file: 62/56/45 within 293 bp with median nearest-site distances 172/181/184 bp (90_per_timepoint_census_audit). So does the whole 16-metric comparison (Supplementary Table 12), the 27/59 and 59/960 denominators, and Cliff's delta = -0.010 for |log2FC|.",
+  "The BGC enrichment is handled the way a sceptical reader would want: the site excess is matched against the excess of the underlying TGGCCGGC DNA motif (x1.40 DNA versus x1.45 methylation), per-site occupancy inside clusters is compared with the genome, the BGC site census is tracked against the genome-wide census, and density is tested against activation magnitude. Concluding that the enrichment is a consequence of GC-rich coding sequence rather than regulation is the right call and is unusually well controlled.",
+  "The FIRE/Hi-C comparison is deflated rather than oversold. The paper walks its own attractive claim back - that methylation density could nominate high-interaction integration sites - by showing the correlation rises with coarser binning and vanishes within the core, and explicitly declines to propose a Hi-C-free predictor. It also flags the autocorrelation problem and re-tests under circular-shift permutation. Withdrawing a marketable claim on internal evidence is the strongest signal of good faith in the manuscript.",
+  "The saturated odds ratio for the site-level co-modification contrast is confined to a supplementary table and explicitly labelled uninformative as an effect size, with the claim resting on the permutation test and the motif-specificity contrast instead. The k-mer cross-talk control (near/far ratio 1.09 across 2.1 million non-motif 6mA calls) is the right control and is the single most convincing piece of evidence for the dual mark being real.",
+  "The 4mC reassignment is bounded correctly. Title, Abstract and Limitations all say orthogonal chemical confirmation is pending; the in-silico misassignment control on ONT validation constructs is a genuine matched-context test (0 of 334 genuine 5mC observations called 4mC in the CCGG context); and the Limitations paragraph states plainly that none of the three internal lines of evidence discriminates 4mC from 5mC directly, and that a whole-genome-amplified control could not settle it either. That is the correct epistemic position for a sequencing-only study.",
+  "Retired numbers are genuinely gone from the main text where I checked for them - no 0.908/0.917 classifier AUC, no '57 Exposed', no 138,440 or 4.84 odds ratio, no 19/82 REBASE misreading, no 853/855 dynamic-site count, and the 5mC = 0.0014% figure is consistently described as a basecaller specificity floor rather than a biological claim."
+ ],
+ "questions_for_authors": [
+  "Which motif-restricted site set produced the AAGCCCG promoter protection ratios 0.927/0.732/0.764? The table cited in Methods (64_timepoint_TSS) applies no motif filter, so as computed those values are all-6mA. If no AAGCCCG-restricted series exists, is the 'modification-type-specific temporal dynamics' sentence withdrawn?",
+  "Was the canonical partial Spearman r = -0.090 conditioned on the core/arm binary (1.5-7.17 Mb) or on the Compartment-A boundary (2.3-6.2 Mb)? The two Methods paragraphs say different things.",
+  "What is the realised n per timepoint in the dry-cell-weight and actinorhodin ANOVAs? F(2,7) is not compatible with the stated four replicates per group.",
+  "Where do the dual-versus-single core fractions of 57.7% and 34.1% come from? They do not appear in the canonical motif-conditioned table (Supplementary Table 13), and 34.1% conflicts with the 0.70-0.71 core fraction reported for AAGCCCG 6mA in R1.",
+  "Will the 1,051-gene classification table (Supplementary Table 1b) be regenerated with canonical T2/T3 nearest-site distances before the deposit is frozen? As it stands it reports 0 of 62 Exposed promoters within 293 bp at T2, against 56 of 62 in the main text.",
+  "For the 293 bp window and the Exposed/Shielded partition: was the 12 h timepoint verified to be pre-MII by any cytological measure, or is 'vegetative' purely a time label? The Exposed class is defined on T1 methylation, so the interpretation of the class depends on what physiological state T1 is.",
+  "Do the core-enrichment permutation, the Simpson's-paradox stratification and the partial correlation hold under the conventional asymmetric arm boundaries for this chromosome (left arm to ~1.5 Mb, right arm from ~6.4 Mb) rather than the symmetric +/-1.5 Mb rule?",
+  "For the seven two-component pairs in which the sensor kinase is Exposed: are the kinase and the response regulator co-transcribed, and how far is the methylation site from each partner's annotated TSS?"
+ ]
+}

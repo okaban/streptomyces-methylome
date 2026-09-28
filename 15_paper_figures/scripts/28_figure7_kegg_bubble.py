@@ -39,7 +39,7 @@ MOTIF_CFG = [
     # 2026-09-22: was COL_6mA, but blue denotes the 6mA mark elsewhere and this
     # column is a GENE SET (near both motifs), not a modification. Neutral dark.
     ('Dual-\ntargeted', 'Dual-targeted',
-     COL_BAR_DARK, 'E1_KEGG_enrichment_Dual-targeted.tsv'),
+     COL_DUAL_SET, 'E1_KEGG_enrichment_Dual-targeted.tsv'),
 ]
 
 FDR_CUT = 0.10

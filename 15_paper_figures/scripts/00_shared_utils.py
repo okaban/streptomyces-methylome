@@ -53,10 +53,19 @@ TABLE_SUP_DIR = BASE / '15_paper_figures' / 'tables' / 'supplementary'
 # at 1.21 / 0.053 -- never use them as opposing categories in the SAME panel.
 COL_4mC = '#8A3D37'   # deep muted red   — 4mC modification mark      (L 0.09)
 COL_6mA = '#68849D'   # mid muted blue   — 6mA modification mark      (L 0.22)
-COL_BOTH = '#B5AEC5'  # light lavender   — dual 4mC+6mA co-modification (L 0.44)
+COL_BOTH = '#68849D'  # mid muted blue   — AAGCCCG, the dual 4mC+6mA motif (L 0.22)
+#   2026-09-26 author decision: AAGCCCG is BLUE and GCCGGC is RED across every figure.
+#   The lavender used since 09-22 read as grey on screen. 6mA-as-a-mark shares this blue,
+#   which is safe because AAGCCCG is the only 6mA-carrying motif shown anywhere.
 # superseded v1, kept so old outputs can be identified: 4mC #A64B44, 6mA #3A6B8C,
 # dual #6E5495, core #3E7256, arm #C0803A
 COL_DUAL = COL_BOTH   # alias
+
+# 2026-09-26 author decision: the DUAL-TARGETED gene set is purple — red (GCCGGC)
+# plus blue (AAGCCCG) mixing to purple is the mnemonic. It replaces the neutral
+# dark grey used since 09-22. Hue sits between the two mark colours; luminance is
+# spaced away from both so the three columns stay separable in greyscale.
+COL_DUAL_SET = '#6E4B8E'   # medium purple — genes near BOTH motifs (a gene set)
 
 # Grayscale bar ramp (SuppFig15 reference: bar #293039, grid #EAEAEA)
 COL_BAR_DARK = '#293039'   # T3 / late / single-category bars
@@ -64,6 +73,15 @@ COL_BAR_MID = '#6B7783'    # T2 / mid
 COL_BAR_LIGHT = '#AAB3BB'  # T1 / early
 COL_GRID = '#EAEAEA'       # gridlines
 BAR_RAMP = [COL_BAR_LIGHT, COL_BAR_MID, COL_BAR_DARK]  # T1→T2→T3
+
+# 2026-09-26: the three timepoint TRACKS in Figure 2a were drawn with BAR_RAMP,
+# three greys that are hard to tell apart as overlaid lines. Bars can carry a grey
+# ramp (they are separated in space); lines cannot. TIME_RAMP is a single-hue
+# sequential blue with wide luminance spacing, paired with distinct linestyles so
+# the tracks survive greyscale printing too. Blue is free here: this panel plots
+# GCCGGC only, so it cannot be confused with the 6mA mark colour.
+TIME_RAMP = ['#9FC3E0', '#4C86B8', '#1F3E5A']   # T1 → T2 → T3 (lines)
+TIME_STYLE = ['-', '--', '-']
 
 COL_GRAY = '#9AA7B0'  # neutral grey (Shielded / unassigned)
 COL_DARK = '#22282E'  # axis / text near-black
