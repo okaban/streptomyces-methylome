@@ -89,3 +89,8 @@ Writing/draft_pisciotta_reinterpretation.md
 **/figure_plan_storyB*
 **/Figure5_gatekeeper_model.*
 **/Figure2c_shielded_exposed.*
+
+# 寄託の内部事務（ローカル保持・公開しない）
+# ローカル絶対パス、md5 表、NCBI との往復、採取日を含み、読者の再現性には不要。
+# 生成は deposition/build_submission_metadata.py（手元で実行）。
+deposition/
