@@ -1,0 +1,182 @@
+[
+ {
+  "acc": "Q8CJM2",
+  "gene": "pglX",
+  "len": 1210,
+  "plddt": 90.06,
+  "version": 6,
+  "pdb": "https://alphafold.ebi.ac.uk/files/AF-Q8CJM2-F1-model_v6.pdb",
+  "cif": "https://alphafold.ebi.ac.uk/files/AF-Q8CJM2-F1-model_v6.cif"
+ },
+ {
+  "acc": "Q9XAH1",
+  "gene": "SCO5331",
+  "len": 1200,
+  "plddt": 88.31,
+  "version": 6,
+  "pdb": "https://alphafold.ebi.ac.uk/files/AF-Q9XAH1-F1-model_v6.pdb",
+  "cif": "https://alphafold.ebi.ac.uk/files/AF-Q9XAH1-F1-model_v6.cif"
+ },
+ {
+  "acc": "Q9F2P6",
+  "gene": "SCO3104",
+  "len": 679,
+  "plddt": 87.12,
+  "version": 6,
+  "pdb": "https://alphafold.ebi.ac.uk/files/AF-Q9F2P6-F1-model_v6.pdb",
+  "cif": "https://alphafold.ebi.ac.uk/files/AF-Q9F2P6-F1-model_v6.cif"
+ },
+ {
+  "acc": "Q9WX17",
+  "gene": "SCO3317",
+  "len": 565,
+  "plddt": 85.81,
+  "version": 6,
+  "pdb": "https://alphafold.ebi.ac.uk/files/AF-Q9WX17-F1-model_v6.pdb",
+  "cif": "https://alphafold.ebi.ac.uk/files/AF-Q9WX17-F1-model_v6.cif"
+ },
+ {
+  "acc": "Q9L0Y7",
+  "gene": "SCO1472",
+  "len": 475,
+  "plddt": 93.12,
+  "version": 6,
+  "pdb": "https://alphafold.ebi.ac.uk/files/AF-Q9L0Y7-F1-model_v6.pdb",
+  "cif": "https://alphafold.ebi.ac.uk/files/AF-Q9L0Y7-F1-model_v6.cif"
+ },
+ {
+  "acc": "Q9K4E0",
+  "gene": "glyA",
+  "len": 418,
+  "plddt": 95.56,
+  "version": 6,
+  "pdb": "https://alphafold.ebi.ac.uk/files/AF-Q9K4E0-F1-model_v6.pdb",
+  "cif": "https://alphafold.ebi.ac.uk/files/AF-Q9K4E0-F1-model_v6.cif"
+ },
+ {
+  "acc": "Q9K3L9",
+  "gene": "rlmG",
+  "len": 377,
+  "plddt": 94.25,
+  "version": 6,
+  "pdb": "https://alphafold.ebi.ac.uk/files/AF-Q9K3L9-F1-model_v6.pdb",
+  "cif": "https://alphafold.ebi.ac.uk/files/AF-Q9K3L9-F1-model_v6.cif"
+ },
+ {
+  "acc": "Q9X852",
+  "gene": "SCO3391",
+  "len": 362,
+  "plddt": 88.0,
+  "version": 6,
+  "pdb": "https://alphafold.ebi.ac.uk/files/AF-Q9X852-F1-model_v6.pdb",
+  "cif": "https://alphafold.ebi.ac.uk/files/AF-Q9X852-F1-model_v6.cif"
+ },
+ {
+  "acc": "Q9L0Q5",
+  "gene": "SCO4236",
+  "len": 314,
+  "plddt": 84.81,
+  "version": 6,
+  "pdb": "https://alphafold.ebi.ac.uk/files/AF-Q9L0Q5-F1-model_v6.pdb",
+  "cif": "https://alphafold.ebi.ac.uk/files/AF-Q9L0Q5-F1-model_v6.cif"
+ },
+ {
+  "acc": "Q9K4E3",
+  "gene": "prmC",
+  "len": 281,
+  "plddt": 95.44,
+  "version": 6,
+  "pdb": "https://alphafold.ebi.ac.uk/files/AF-Q9K4E3-F1-model_v6.pdb",
+  "cif": "https://alphafold.ebi.ac.uk/files/AF-Q9K4E3-F1-model_v6.cif"
+ },
+ {
+  "acc": "Q9L0M2",
+  "gene": "SCO4638",
+  "len": 274,
+  "plddt": 88.19,
+  "version": 6,
+  "pdb": "https://alphafold.ebi.ac.uk/files/AF-Q9L0M2-F1-model_v6.pdb",
+  "cif": "https://alphafold.ebi.ac.uk/files/AF-Q9L0M2-F1-model_v6.cif"
+ },
+ {
+  "acc": "Q9L1N0",
+  "gene": "SCO6885",
+  "len": 251,
+  "plddt": 84.31,
+  "version": 6,
+  "pdb": "https://alphafold.ebi.ac.uk/files/AF-Q9L1N0-F1-model_v6.pdb",
+  "cif": "https://alphafold.ebi.ac.uk/files/AF-Q9L1N0-F1-model_v6.cif"
+ },
+ {
+  "acc": "Q9X866",
+  "gene": "SCO3510",
+  "len": 248,
+  "plddt": 82.94,
+  "version": 6,
+  "pdb": "https://alphafold.ebi.ac.uk/files/AF-Q9X866-F1-model_v6.pdb",
+  "cif": "https://alphafold.ebi.ac.uk/files/AF-Q9X866-F1-model_v6.cif"
+ },
+ {
+  "acc": "Q9FBX8",
+  "gene": "SCO7806",
+  "len": 243,
+  "plddt": 94.0,
+  "version": 6,
+  "pdb": "https://alphafold.ebi.ac.uk/files/AF-Q9FBX8-F1-model_v6.pdb",
+  "cif": "https://alphafold.ebi.ac.uk/files/AF-Q9FBX8-F1-model_v6.cif"
+ },
+ {
+  "acc": "Q9FC29",
+  "gene": "SCO7055",
+  "len": 241,
+  "plddt": 92.19,
+  "version": 6,
+  "pdb": "https://alphafold.ebi.ac.uk/files/AF-Q9FC29-F1-model_v6.pdb",
+  "cif": "https://alphafold.ebi.ac.uk/files/AF-Q9FC29-F1-model_v6.cif"
+ },
+ {
+  "acc": "Q9S2R2",
+  "gene": "SCO2174",
+  "len": 256,
+  "plddt": 80.0,
+  "version": 6,
+  "pdb": "https://alphafold.ebi.ac.uk/files/AF-Q9S2R2-F1-model_v6.pdb",
+  "cif": "https://alphafold.ebi.ac.uk/files/AF-Q9S2R2-F1-model_v6.cif"
+ },
+ {
+  "acc": "Q9KXI2",
+  "gene": "SCO2338",
+  "len": 223,
+  "plddt": 97.44,
+  "version": 6,
+  "pdb": "https://alphafold.ebi.ac.uk/files/AF-Q9KXI2-F1-model_v6.pdb",
+  "cif": "https://alphafold.ebi.ac.uk/files/AF-Q9KXI2-F1-model_v6.cif"
+ },
+ {
+  "acc": "Q9XA90",
+  "gene": "SCO0835",
+  "len": 215,
+  "plddt": 92.31,
+  "version": 6,
+  "pdb": "https://alphafold.ebi.ac.uk/files/AF-Q9XA90-F1-model_v6.pdb",
+  "cif": "https://alphafold.ebi.ac.uk/files/AF-Q9XA90-F1-model_v6.cif"
+ },
+ {
+  "acc": "Q9RJD2",
+  "gene": "SCO0760",
+  "len": 220,
+  "plddt": 90.88,
+  "version": 6,
+  "pdb": "https://alphafold.ebi.ac.uk/files/AF-Q9RJD2-F1-model_v6.pdb",
+  "cif": "https://alphafold.ebi.ac.uk/files/AF-Q9RJD2-F1-model_v6.cif"
+ },
+ {
+  "acc": "Q9ZBR2",
+  "gene": "SCO5567",
+  "len": 195,
+  "plddt": 91.19,
+  "version": 6,
+  "pdb": "https://alphafold.ebi.ac.uk/files/AF-Q9ZBR2-F1-model_v6.pdb",
+  "cif": "https://alphafold.ebi.ac.uk/files/AF-Q9ZBR2-F1-model_v6.cif"
+ }
+]

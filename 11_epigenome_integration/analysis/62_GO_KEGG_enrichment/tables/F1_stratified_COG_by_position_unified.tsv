@@ -1,0 +1,33 @@
+motif	category	n_sites	n_genes	COG_category	COG_description	OR	padj
+GCCGGC 4mC	promoter	121	115	T	Signal transduction	1.741	0.5698
+GCCGGC 4mC	promoter			E	Amino acid metabolism	1.734	0.5698
+GCCGGC 4mC	promoter			R	General function	1.229	0.5698
+GCCGGC 4mC	promoter			K	Transcription	1.367	0.5698
+GCCGGC 4mC	promoter			D	Cell division	5.497	0.5698
+GCCGGC 4mC	5UTR_approx	14	13	F	Nucleotide metabolism	18.525	0.5231
+GCCGGC 4mC	5UTR_approx			P	Inorganic ion transport	2.89	0.5231
+GCCGGC 4mC	5UTR_approx			V	Defense	4.8	0.5231
+GCCGGC 4mC	5UTR_approx			U	Secretion	4.6	0.5231
+GCCGGC 4mC	5UTR_approx			K	Transcription	1.65	0.6063
+GCCGGC 4mC	CDS_internal	1436	1177	T	Signal transduction	1.791	0.0004
+GCCGGC 4mC	CDS_internal			E	Amino acid metabolism	1.807	0.0004
+GCCGGC 4mC	CDS_internal			G	Carbohydrate metabolism	1.941	0.0017
+GCCGGC 4mC	CDS_internal			L	Replication/Repair	1.636	0.0503
+GCCGGC 4mC	CDS_internal			C	Energy production	1.219	0.2261
+GCCGGC 4mC	intergenic	88	0	(遺伝子数不足)	-	-	-
+AAGCCCG 6mA	promoter	99	76	U	Secretion	3.967	0.1371
+AAGCCCG 6mA	promoter			K	Transcription	1.71	0.4161
+AAGCCCG 6mA	promoter			O	Protein modification	2.329	0.4161
+AAGCCCG 6mA	promoter			M	Cell envelope	2.124	0.7529
+AAGCCCG 6mA	promoter			V	Defense	1.556	0.7894
+AAGCCCG 6mA	5UTR_approx	25	18	E	Amino acid metabolism	3.327	0.6514
+AAGCCCG 6mA	5UTR_approx			J	Translation	3.095	0.6514
+AAGCCCG 6mA	5UTR_approx			L	Replication/Repair	3.075	0.6514
+AAGCCCG 6mA	5UTR_approx			C	Energy production	1.952	0.6514
+AAGCCCG 6mA	5UTR_approx			G	Carbohydrate metabolism	2.67	0.6514
+AAGCCCG 6mA	CDS_internal	878	605	J	Translation	2.138	0.0257
+AAGCCCG 6mA	CDS_internal			C	Energy production	1.555	0.0257
+AAGCCCG 6mA	CDS_internal			O	Protein modification	1.902	0.0257
+AAGCCCG 6mA	CDS_internal			G	Carbohydrate metabolism	1.806	0.0522
+AAGCCCG 6mA	CDS_internal			L	Replication/Repair	1.674	0.1253
+AAGCCCG 6mA	intergenic	76	0	(遺伝子数不足)	-	-	-

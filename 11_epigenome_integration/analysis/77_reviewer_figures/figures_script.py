@@ -51,7 +51,9 @@ fig.tight_layout(); fig.savefig(OUT/"Figure2cd_distance_variability.pdf"); fig.s
 print(f"Fig2c/d: Exposed={len(E)} Shielded={len(S)} ; distance MWU p={p:.2e}")
 
 # ===== Occupancy pie charts (by genomic feature) =====
-cls = pd.read_csv(B/"62_GO_KEGG_enrichment/tables/F1_classified_meth_sites.tsv", sep="\t")
+# unified region definition: experimental TSS, 300 bp promoter, precedence
+# promoter > 5'-UTR > CDS > intergenic, painted per base (mutually exclusive)
+cls = pd.read_csv(B/"62_GO_KEGG_enrichment/tables/F1_classified_meth_sites_unified.tsv", sep="\t")
 order = ['promoter','5UTR_approx','CDS_internal','intergenic']
 lbls = ['Promoter','5′UTR','CDS','Intergenic']
 colors = ['#A64B44','#C0803A','#3A6B8C','#3E7256']  # unified calm qualitative

@@ -1,0 +1,29 @@
+motif	category	n_sites	n_genes	pathway	OR	padj
+GCCGGC 4mC	promoter	121	115	Flagellar assembly - Streptomyces coelicolor	71.57	0.2806
+GCCGGC 4mC	promoter			Glutathione metabolism - Streptomyces coelicolor	8.478	0.2806
+GCCGGC 4mC	promoter			Lysine biosynthesis - Streptomyces coelicolor	8.478	0.2806
+GCCGGC 4mC	promoter			Aminoacyl-tRNA biosynthesis - Streptomyces coelicolor	5.14	0.4056
+GCCGGC 4mC	promoter			Folate transport and metabolism - Streptomyces coelicolor	17.886	0.4056
+GCCGGC 4mC	5UTR_approx	14	13	Galactose metabolism - Streptomyces coelicolor	20.78	0.0522
+GCCGGC 4mC	CDS_internal	1436	1177	Glyoxylate and dicarboxylate metabolism - Streptomyces coelicolor	3.131	0.0115
+GCCGGC 4mC	CDS_internal			Citrate cycle (TCA cycle) - Streptomyces coelicolor	3.872	0.0115
+GCCGGC 4mC	CDS_internal			RNA polymerase - Streptomyces coelicolor	inf	0.0648
+GCCGGC 4mC	CDS_internal			Cysteine and methionine metabolism - Streptomyces coelicolor	3.036	0.0648
+GCCGGC 4mC	CDS_internal			Pyruvate metabolism - Streptomyces coelicolor	2.494	0.0648
+GCCGGC 4mC	intergenic	88	0	(遺伝子数不足)	-	-
+AAGCCCG 6mA	promoter	99	76	Pyrimidine metabolism - Streptomyces coelicolor	10.169	0.1069
+AAGCCCG 6mA	promoter			Carbon fixation by Calvin cycle - Streptomyces coelicolor	11.636	0.1952
+AAGCCCG 6mA	promoter			RNA polymerase - Streptomyces coelicolor	54.647	0.2275
+AAGCCCG 6mA	promoter			Folate transport and metabolism - Streptomyces coelicolor	27.317	0.2459
+AAGCCCG 6mA	promoter			Pentose phosphate pathway - Streptomyces coelicolor	5.962	0.2459
+AAGCCCG 6mA	5UTR_approx	25	18	Arabinogalactan biosynthesis - Mycobacterium - Streptomyces coelicolor	242.794	0.039
+AAGCCCG 6mA	5UTR_approx			Teichoic acid biosynthesis - Streptomyces coelicolor	97.082	0.039
+AAGCCCG 6mA	5UTR_approx			Biosynthesis of type II polyketide products - Streptomyces coelicolor	53.908	0.0431
+AAGCCCG 6mA	5UTR_approx			Folate biosynthesis - Streptomyces coelicolor	25.505	0.064
+AAGCCCG 6mA	5UTR_approx			Glycine, serine and threonine metabolism - Streptomyces coelicolor	11.506	0.1075
+AAGCCCG 6mA	CDS_internal	878	605	Aminoacyl-tRNA biosynthesis - Streptomyces coelicolor	5.5	0.0179
+AAGCCCG 6mA	CDS_internal			Glycine, serine and threonine metabolism - Streptomyces coelicolor	3.391	0.1322
+AAGCCCG 6mA	CDS_internal			Purine metabolism - Streptomyces coelicolor	2.656	0.1322
+AAGCCCG 6mA	CDS_internal			Glyoxylate and dicarboxylate metabolism - Streptomyces coelicolor	2.786	0.1475
+AAGCCCG 6mA	CDS_internal			C5-Branched dibasic acid metabolism - Streptomyces coelicolor	6.374	0.1475
+AAGCCCG 6mA	intergenic	76	0	(遺伝子数不足)	-	-

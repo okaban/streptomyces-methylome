@@ -1,0 +1,8 @@
+# 監査記録（撤回前の値を含むのが正しい）
+
+- 生成日: 2026-09-29
+- このディレクトリは監査・レビュー記録です。撤回前の値を引用しているのは記録として正当なので、
+  **修正せず 2026-09-29 時点で凍結**します。ここの数値を新しい原稿・図・要旨に転記しないでください。
+- 検証記録: `s23_hit_verification.csv`
+
+対象ファイル: `canonical_value_presence.tsv`, `citation_sequence_check.tsv`, `findings.tsv`, `number_token_diff_by_section.tsv`, `retired_vocabulary_grep.tsv`
