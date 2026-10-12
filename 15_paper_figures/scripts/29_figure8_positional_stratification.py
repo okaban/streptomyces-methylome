@@ -46,7 +46,10 @@ MOTIFS = [
 
 def panel_a(ax):
     """Stacked bar: position categories per motif (Unassigned 6mA dropped)."""
-    df = pd.read_csv(KEGG_DIR / 'F1_classified_meth_sites.tsv', sep='\t')
+    # Unified region definition (experimental TSS, 300 bp promoter, precedence
+    # promoter > 5'-UTR > CDS > intergenic, painted per base so the categories
+    # are mutually exclusive). See region_scheme_reconciliation.csv.
+    df = pd.read_csv(KEGG_DIR / 'F1_classified_meth_sites_unified.tsv', sep='\t')
     print(f'  classified sites: {len(df)} '
           f'(motifs: {df["motif"].value_counts().to_dict()})')
 
@@ -93,7 +96,7 @@ def panel_a(ax):
 
 def panel_b(ax):
     """Position-stratified KEGG enrichment heatmap (significant entries only)."""
-    df = pd.read_csv(KEGG_DIR / 'F1_stratified_KEGG_by_position_v2.tsv',
+    df = pd.read_csv(KEGG_DIR / 'F1_stratified_KEGG_by_position_v2_unified.tsv',
                      sep='\t')
 
     # Numeric-coerce padj/OR

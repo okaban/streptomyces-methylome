@@ -34,6 +34,7 @@ CENSUS_6mA = EPIGENOME / '23_expanded_motif_search' / '6mA_final_census_v1.csv'
 GFF_PATH = Path('/Users/okaban/SFC-CNS Dropbox/Takeda Tomoki/my_projects/2026/M145_RNA-seq/data/RH250715199/02_M145-ref/ncbi_dataset/data/GCF_000203835.1/genomic.gff')
 GENE_ANN_PATH = BASE / '05_annotation/analysis/05_annotation_260128_v1/tables/gene_annotation_basic.tsv'
 TSS_PATH = EPIGENOME / '18_tss_analyses' / 'comprehensive_tss_table.csv'
+JEONG_TSS_PATH = EPIGENOME / '18_tss_analyses' / 'jeong2016_all_tss.csv'
 CHROM = 'NC_003888.3'
 CHROM_LEN = 8_667_507
 
@@ -53,7 +54,7 @@ REGION_COLORS = {
     'Intergenic':  '#B0BEC5',
 }
 REGION_CODE = {r: i for i, r in enumerate(REGION_ORDER)}
-PROMOTER_UP = 500  # bp upstream of TSS
+PROMOTER_UP = 300  # bp upstream of an experimental TSS (unified definition)
 
 GROUP_COLORS = {
     'AAGCCCG-only':  COL_BOTH,
@@ -186,43 +187,60 @@ def panel_b(ax, c4, c6):
 def build_region_array(gene_ann, tss_df):
     """Build a per-position region code array for CHROM.
 
-    Priority (highest overwrites): CDS > 5'-UTR > Promoter > Intergenic (default).
+    Unified region definition, shared with Figure 8 and Supp Fig 21
+    (region_scheme_reconciliation.csv):
+
+      TSS      : experimental only (Jeong et al. 2016 dRNA-seq). Genes without
+                 an experimental TSS contribute a CDS interval and nothing else
+                 — no annotated-boundary proxy, because the boundary proxy was
+                 shown to behave as a negative control for TSS-proximal signal.
+      Priority (highest overwrites): Promoter > 5'-UTR > CDS > Intergenic.
+                 The promoter-first direction is the claim-adverse one: it
+                 maximises the promoter share, so the paper's "methylation is
+                 not concentrated at promoters" reading cannot be an artefact
+                 of the category precedence.
+
+    Painting a per-base array makes the four categories mutually exclusive by
+    construction; sites that are both promoter-proximal and inside a CDS are
+    resolved to Promoter and their count is reported in the legend.
     Returns int8 array of length CHROM_LEN+2 where value = REGION_CODE[region_name].
     """
     arr = np.full(CHROM_LEN + 2, REGION_CODE['Intergenic'], dtype=np.int8)
 
     g = gene_ann[gene_ann['contig'] == CHROM].copy().reset_index(drop=True)
-    tss_map = tss_df[tss_df['tss_source'] == 'Jeong2016_dRNA-seq'].set_index('gene_id')['tss'].to_dict()
+    # Only PRIMARY ('P') and SECONDARY ('S') TSSs define a gene's promoter.
+    # Antisense ('A') TSSs lie on the opposite strand (246/246) and inside the
+    # gene body (98.8%); internal ('I') TSSs are inside the gene body (98.7%),
+    # so neither one's upstream window is that gene's promoter. Genes with
+    # alternative promoters contribute one window per TSS.
+    jeong = pd.read_csv(JEONG_TSS_PATH)
+    jeong = jeong[jeong['gene_id'].notna() & jeong['category'].isin(('P', 'S'))]
+    gidx = {gid: i for i, gid in enumerate(g['gene_id'])}
+    starts, ends, strands = g['start'].values, g['end'].values, g['strand'].values
+    tss_rows = [(gidx[r.gene_id], int(r.tss_position), strands[gidx[r.gene_id]])
+                for r in jeong.itertuples() if r.gene_id in gidx]
+    g['has_exp_tss'] = g['gene_id'].isin({r.gene_id for r in jeong.itertuples()})
 
-    g['tss_pos'] = g.apply(
-        lambda r: int(tss_map[r['gene_id']]) if r['gene_id'] in tss_map
-                  else (r['start'] if r['strand'] == '+' else r['end']),
-        axis=1,
-    ).astype(int)
-    g['has_exp_tss'] = g['gene_id'].isin(tss_map)
-
-    # 1. Promoter (lowest priority — filled first, overwritten by higher)
+    # 1. CDS (lowest priority — filled first, overwritten by higher)
     for _, r in g.iterrows():
-        tss = int(r['tss_pos'])
-        if r['strand'] == '+':
+        arr[int(r['start']):int(r['end']) + 1] = REGION_CODE['CDS']
+
+    # 2. 5'-UTR (between experimental TSS and CDS start)
+    for i, tss, strand in tss_rows:
+        if strand == '+' and tss < starts[i]:
+            arr[tss:int(starts[i])] = REGION_CODE["5'-UTR"]
+        elif strand == '-' and tss > ends[i]:
+            arr[int(ends[i]) + 1:tss + 1] = REGION_CODE["5'-UTR"]
+
+    # 3. Promoter (highest priority)
+    for i, tss, strand in tss_rows:
+        if strand == '+':
             a = max(0, tss - PROMOTER_UP)
             b = tss          # exclusive: [a, tss)
         else:
             a = tss + 1
             b = min(CHROM_LEN + 1, tss + PROMOTER_UP + 1)
         arr[a:b] = REGION_CODE['Promoter']
-
-    # 2. 5'-UTR (between experimental TSS and CDS start)
-    for _, r in g[g['has_exp_tss']].iterrows():
-        tss = int(r['tss_pos'])
-        if r['strand'] == '+' and tss < r['start']:
-            arr[tss:r['start']] = REGION_CODE["5'-UTR"]
-        elif r['strand'] == '-' and tss > r['end']:
-            arr[r['end'] + 1:tss + 1] = REGION_CODE["5'-UTR"]
-
-    # 3. CDS (highest priority)
-    for _, r in g.iterrows():
-        arr[int(r['start']):int(r['end']) + 1] = REGION_CODE['CDS']
 
     return arr
 
