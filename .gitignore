@@ -104,3 +104,24 @@ reference/
 **/pnas.*.sapp.pdf
 **/sapp.txt
 Rplots.pdf
+.tmp_fig.py
+
+# ---------------------------------------------------------------------------
+# Structure-search databases and model downloads (107_MTase_candidate_triage).
+# 6.0 GB of third-party data, re-fetchable from its primary source; the single
+# largest file (PDB_seq_ca.1, 2.09 GB) exceeds GitHub's 100 MB per-file limit.
+#   - data/fsdb/     : foldseek PDB database  (foldseek databases PDB <out> <tmp>)
+#   - data/af_models/: AlphaFold/RCSB structures (URLs recorded in data/af_urls.json)
+# The derived evidence that the manuscript rests on -- foldseek_hits.tsv,
+# the elimination table and the report -- IS tracked.
+# ---------------------------------------------------------------------------
+**/data/fsdb/
+**/data/af_models/
+
+# Index of an ignored FASTA (samtools faidx regenerates it)
+*.fna.fai
+
+# Pipeline smoke-test scratch
+**/data/test_query.faa
+**/data/test_hits.tsv
+**/logs/test_*.err
