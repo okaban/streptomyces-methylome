@@ -23,7 +23,7 @@ identifiers:
     description: "Concept DOI — resolves to the latest archived version of this code"
 preferred-citation:
   type: article
-  title: "DNA methylation is spatially organised around, but does not instruct, the regulatory genome of Streptomyces coelicolor: a 4mC/6mA methylome with a same-strand AAGCCCG dual modification"
+  title: "A 4mC/6mA methylome of Streptomyces coelicolor with a same-strand AAGCCCG dual modification: methylation occupancy follows recognition-sequence availability and does not instruct transcription"
   status: submitted
   year: 2026
   authors:
