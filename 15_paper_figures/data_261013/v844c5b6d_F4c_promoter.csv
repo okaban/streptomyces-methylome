@@ -1,0 +1,5 @@
+variant,ratio,ci_lo,ci_hi
+"filtered, unmatched",0.8052,,
+"filtered, GC-matched",0.8945,,
+"all reads, unmatched",0.8475,,
+"all reads, GC-matched",0.9212,0.9086,0.9337

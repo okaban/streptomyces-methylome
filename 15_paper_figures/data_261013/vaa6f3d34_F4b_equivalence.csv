@@ -1,0 +1,2 @@
+statistic,value,equivalence_margin_low,equivalence_margin_high,comparison
+Cliff delta,-0.01,-0.33,0.33,promoter-proximal occupancy vs log2FC (T2 vs T1)
