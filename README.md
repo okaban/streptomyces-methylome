@@ -2,10 +2,10 @@
 
 Analysis code for the manuscript
 
-> *A dual N4-methylcytosine/N6-methyladenine methylome of Streptomyces coelicolor:
-> base-resolution reassignment of a cytosine mark and a same-strand AAGCCCG duplication*
+> *Two recognition sequences in the Streptomyces coelicolor M145 methylome,
+> one carrying 4mC and 6mA on the same DNA strand, with no transcriptome link*
 
-(under revision at *Nucleic Acids Research*).
+(manuscript in review).
 
 Nine biological samples across three time points of the developmental cycle
 (T1 = 12 h, T2 = 24 h, T3 = 50 h; sample IDs `1-1 1-2 1-3 / 2-1 2-3 2-4 /
@@ -15,12 +15,17 @@ methylome and the transcriptome derive from one biological specimen.
 
 ## Data availability
 
-Sequencing data are deposited under BioProject `TODO_ACCESSION` (SRA):
+Sequencing data are deposited in the NCBI Sequence Read Archive under BioProject
+[PRJNA1533939](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1533939)
+(study SRP743765). Per-sample run accessions are listed in Supplementary Table 24.
 
 | assay | platform | n | files |
 |---|---|---|---|
-| methylome | Oxford Nanopore MinION, FLO-MIN114 (R10.4.1), SQK-RBK114-96 | 9 | modification-tagged BAM (MM/ML: 6mA, 4mC, 5mC) aligned to `NC_003888.3`, plus raw pod5 signal |
+| methylome | Oxford Nanopore MinION, FLO-MIN114 (R10.4.1), SQK-RBK114-96 | 9 | modification-tagged BAM (MM/ML: 6mA, 4mC, 5mC) aligned to `NC_003888.3` |
 | transcriptome | Illumina NovaSeq X Plus, PE150 | 9 | raw FASTQ (Ribo-Zero Plus depletion, NEBNext Ultra II Directional) |
+
+Raw Nanopore signal (POD5) is not accepted by the SRA and is not deposited; it is
+retained by the authors and available on request.
 
 Sequencing data are **not** in this repository. Reference genome:
 `GCF_000203835.1` / `NC_003888.3`.
@@ -33,11 +38,10 @@ Numbered directories follow the order of the analysis. Each holds
 | | |
 |---|---|
 | `01_qc` – `04_deseq2` | RNA-seq: fastp QC, HISAT2 alignment, featureCounts, DESeq2 |
-| `05_annotation` – `10_SARP_motif_scan` | annotation, BGC dynamics, regulator networks, motif scans |
+| `05_annotation` | genome annotation |
 | `11_epigenome_integration` | methylome × transcriptome integration — the core of the paper |
-| `12_supplementary_figures`, `15_paper_figures` | figure generation |
-| `13_TF_binding-site`, `14_DMG_functional_enrichment` | binding sites, enrichment |
-| `reports/` | per-analysis narrative reports |
+| `15_paper_figures` | current figure and supplementary-table generators, and the tables they emit |
+| `13_TF_binding-site` | transcription-factor binding-site provenance |
 
 ## Reproducing
 
@@ -58,15 +62,18 @@ Large regenerable artifacts are excluded by `.gitignore` — sequencing data,
 BLAST/aligner indexes, downloaded NCBI genomes, per-read co-modification
 tables. All are reproducible from the deposited data with the scripts here.
 
-## Retracted analysis
+## Scope of this archive
 
-`15_paper_figures/scripts/27_figure4_shielded_exposed.py` is **disabled by a
-guard and must not be run.** It computed a circular ROC — scoring
-`y_true = is_exposed` against the predictor `nearest_methyl_distance`, where
-`is_exposed` is itself defined by thresholding that same distance at 293 bp, so
-the classifier recovered its own labelling rule. The resulting AUC values
-(0.908, 0.917) were withdrawn from the manuscript. The file is retained with
-its history and the reason stated in its docstring.
+This archive holds the code, the per-stage conda environment exports and the
+derived tables that the current manuscript rests on. Two classes of material are
+deliberately absent: large intermediates that are regenerable from the deposited
+BAM and FASTQ files, and the analysis lines that were withdrawn during revision.
+
+An earlier version of this work partitioned regulatory genes into two classes by
+their distance to the nearest methylated site, and then scored a classifier whose
+labels were derived from that same distance. The analysis was circular; its
+results were withdrawn from the manuscript and its scripts and outputs are not
+part of this archive. They remain in the project history and with the authors.
 
 ## License
 

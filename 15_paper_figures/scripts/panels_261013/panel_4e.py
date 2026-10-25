@@ -1,3 +1,14 @@
+# [FIG18] このスクリプトの出力は 40_main_figures_261013.py の TILES に含まれない。
+# SUPERSEDED 2026-10-15: 候補酵素パネルは補足図 17 として独立し、生成元は
+# scripts/supp_261014/suppfigure17_mtase_expression.py。本スクリプトは HAAGCCCG 565 分母の
+# 占有率（しかも T3 は旧値 46.02）を 'HAAGCCCG' のラベル付きで描くため、走らせると
+# DECIDED.6mA.DENOMINATOR.261015 に反する図が出る。実行を止めてある。
+import sys
+raise SystemExit(
+    "SUPERSEDED 2026-10-15: panel_4e.py は使われていません。"
+    "候補酵素の図は scripts/supp_261014/suppfigure17_mtase_expression.py で生成してください。"
+)
+
 """Figure 4 panel e — candidate 6mA MTase transcript vs HAAGCCCG occupancy.
 
 Standalone generator for the Fig. 4e tile (2125 x 519 px, transparent PNG).
@@ -5,6 +16,10 @@ Run in the `epi-rna` environment; the composer stamps the panel letter, so no
 U.add_panel_label() call here.
 """
 import sys, importlib
+from pathlib import Path
+
+# [FIG18] タイルを再生成できるよう、artifact マーカーをローカルの入力表に解決しておく。
+_DATA_DIR = Path(__file__).resolve().parents[2] / 'data_261013'
 sys.path.insert(0, '/Users/okaban/bioinfo/rna-seq/15_paper_figures/scripts')
 import pandas as pd
 import matplotlib as mpl
@@ -19,7 +34,7 @@ U.apply_unified_style()
 mpl.rcParams['savefig.bbox'] = None   # the style helper sets 'tight', which resizes the canvas
 
 # ── data ────────────────────────────────────────────────────────────────────
-CSV = '{{artifact:11136318-70d0-473e-a86f-0d3fae450b6c}}'   # F4e_enzyme.csv
+CSV = str(_DATA_DIR / "v11136318_F4e_enzyme.csv")   # F4e_enzyme.csv
 if CSV.startswith('{{'):   # marker left unresolved (plain `python panel_4e.py`)
     CSV = host.artifact_path('11136318-70d0-473e-a86f-0d3fae450b6c')
 df = pd.read_csv(CSV)
@@ -109,7 +124,7 @@ fig.text(x0, 0.945, rest, fontsize=FS_T, color=U.COL_DARK, ha='left',
 
 # ── checks, then save at exactly 2125 x 519 px ──────────────────────────────
 U.assert_no_text_collisions(fig, 'Fig4e')
-OUT = 'panel_e.png'
+OUT = str(Path(__file__).with_suffix('.png'))
 fig.savefig(OUT, dpi=300, transparent=True, bbox_inches=None, pad_inches=0)
 
 from PIL import Image

@@ -1,0 +1,13 @@
+timepoint	mod	rule	n_sites	assigned_to_recognition_seq	pct_unassigned	median_Nvalid	ori_ter_200kb
+T1	6mA	current (no ref-base filter)	7297	416	94.3	2.0	9.48
+T1	6mA	corrected (ref base must match)	1947	416	78.63	90.0	1.01
+T1	4mC	current (no ref-base filter)	2917	2909	0.27	41.0	1.15
+T1	4mC	corrected (ref base must match)	2909	2909	0.0	41.0	1.14
+T2	6mA	current (no ref-base filter)	4883	450	90.78	6.0	1.79
+T2	6mA	corrected (ref base must match)	2150	450	79.07	96.0	1.19
+T2	4mC	current (no ref-base filter)	2869	2869	0.0	43.0	1.11
+T2	4mC	corrected (ref base must match)	2869	2869	0.0	43.0	1.11
+T3	6mA	current (no ref-base filter)	3818	453	88.14	58.0	1.61
+T3	6mA	corrected (ref base must match)	2308	453	80.37	72.0	1.14
+T3	4mC	current (no ref-base filter)	2840	2839	0.04	33.0	1.13
+T3	4mC	corrected (ref base must match)	2840	2839	0.04	33.0	1.13

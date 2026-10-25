@@ -1,0 +1,7 @@
+timepoint	orientation	n_instances	n_genes	median_per_gene	mean_per_gene	max_per_gene	genes_with_1	genes_with_2	genes_with_3plus
+T1	coding_strand	708	629	1.0	1.1256	5	566	52	11
+T1	template_strand	448	432	1.0	1.037	3	417	14	1
+T2	coding_strand	710	631	1.0	1.1252	5	568	52	11
+T2	template_strand	448	432	1.0	1.037	3	417	14	1
+T3	coding_strand	709	630	1.0	1.1254	5	567	52	11
+T3	template_strand	448	432	1.0	1.037	3	417	14	1

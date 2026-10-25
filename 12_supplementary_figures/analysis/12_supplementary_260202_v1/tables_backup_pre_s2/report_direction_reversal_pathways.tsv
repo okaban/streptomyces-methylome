@@ -1,3 +1,0 @@
-Pathway	T2vsT1_Direction	T2vsT1_GeneCount	T2vsT1_FE	T2vsT1_pvalue	T3vsT1_Direction	T3vsT1_GeneCount	T3vsT1_FE	T3vsT1_pvalue	Interpretation
-Metabolic pathways	Up	302	1.16	1.1e-3	Down	408	1.50	4.8e-23	一次代謝は一時的に活性化後、後期で大幅抑制
-Biosynthesis of secondary metabolites	Up	170	1.35	4.0e-6	Down	202	1.53	1.4e-12	二次代謝全般はT2で誘導開始、T3では特定BGCに分化

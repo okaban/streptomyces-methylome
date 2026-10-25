@@ -1,5 +1,9 @@
 """Figure 4 panel c — 6mA deficit at transcription start sites, variant ladder."""
 import sys, importlib
+from pathlib import Path
+
+# [FIG18] タイルを再生成できるよう、artifact マーカーをローカルの入力表に解決しておく。
+_DATA_DIR = Path(__file__).resolve().parents[2] / 'data_261013'
 sys.path.insert(0, '/Users/okaban/bioinfo/rna-seq/15_paper_figures/scripts')
 U = importlib.import_module('00_shared_utils')
 U.apply_unified_style()
@@ -13,7 +17,7 @@ from matplotlib.colors import to_rgba
 import pandas as pd
 
 # data artifact marker (resolved to a local path when this source is run as a cell)
-DATA = "{{artifact:844c5b6d-22a4-436c-bd32-e6f07e59f11f}}"
+DATA = str(_DATA_DIR / "v844c5b6d_F4c_promoter.csv")
 df = pd.read_csv(DATA).set_index('variant')
 
 # progression: both biases present -> filter bias removed -> composition matched -> both removed
@@ -65,19 +69,26 @@ ax.tick_params(axis='y', length=0)
 
 ax.set_xlabel('6mA level near TSS, relative to genome average',
               fontsize=U.FONT['axis_label'], color=U.COL_DARK)
-ax.set_title('A 7.9% 6mA deficit at transcription start sites',
+ax.set_title('',
              fontsize=U.FONT['panel_title'], color=U.COL_DARK,
              loc='left', pad=5)
 
 # identity label for the reference line
 ax.text(0.997, 3.45, 'no deficit', ha='right', va='center',
         fontsize=U.FONT['annot'], color=U.COL_GRAY)
-# the one value the text quotes
-ax.text(d.loc[focal, 'ratio'], 0.30, '0.921', ha='center', va='bottom',
+# The one value the text quotes, and the p that goes with it, are READ FROM THE
+# INPUT TABLE rather than typed here: both were hardcoded until 2026-10-22, when
+# the coordinate-convention fix moved the ratio and the label did not follow.
+# build_F4c_promoter_input.py derives that row from SuppTable22b.
+_focal_ratio = d.loc[focal, 'ratio']
+_focal_p = float(d.loc[focal, 'p_value'])
+_p_mant, _p_exp = f'{_focal_p:.1e}'.split('e')
+ax.text(_focal_ratio, 0.30, f'{_focal_ratio:.4f}', ha='center', va='bottom',
         fontsize=U.FONT['annot'], color=U.COL_6mA)
 # narrative statistics, outside the data area
 stats = fig.text(0.985, 0.006,
-                 'n = 9 culture units, p = 1.7 \u00d7 10$^{-6}$; '
+                 f'n = 9 culture units, p = {_p_mant} \u00d7 '
+                 f'10$^{{{int(_p_exp)}}}$; '
                  'per-TSS median ratio 0.844 across 117 TSSs',
                  ha='right', va='bottom', fontsize=U.FONT['annot'],
                  color=U.COL_GRAY)
@@ -97,11 +108,11 @@ assert _ticks_bottom - _stats_top > _h, 'no room for the axis label'
 ax.xaxis.set_label_coords(0.5, (_top - _ax_bb.y0) / _ax_bb.height)
 
 U.assert_no_text_collisions(fig, 'Fig4 panel c')
-fig.savefig('panel_c.png', dpi=300, transparent=True,
+fig.savefig(str(Path(__file__).with_name('panel_F4b.png')), dpi=300, transparent=True,
             bbox_inches=None, pad_inches=0)
 
 from PIL import Image
-sz = Image.open('panel_c.png').size
+sz = Image.open(str(Path(__file__).with_name('panel_F4b.png'))).size
 assert sz == (1039, 590), sz
 r = fig.canvas.get_renderer()
 ax_bb = ax.get_window_extent(r)

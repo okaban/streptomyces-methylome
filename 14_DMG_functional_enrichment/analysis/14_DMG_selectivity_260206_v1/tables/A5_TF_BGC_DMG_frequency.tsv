@@ -1,7 +1,0 @@
-comparison	gene_class	n_class	n_DMG_in_class	DMG_rate_class	n_non_class	n_DMG_in_non_class	DMG_rate_non_class	odds_ratio	pvalue	significant
-T2vsT1	TF	863	56	6.5	7220	510	7.1	0.913	0.5726448544049854	False
-T2vsT1	BGC	99	5	5.1	7984	561	7.0	0.704	0.5547998588391523	False
-T3vsT1	TF	863	66	7.6	7220	553	7.7	0.998	1.0	False
-T3vsT1	BGC	99	5	5.1	7984	614	7.7	0.638	0.44521713985984146	False
-T3vsT2	TF	863	67	7.8	7220	581	8.0	0.962	0.8422541127256855	False
-T3vsT2	BGC	99	4	4.0	7984	644	8.1	0.48	0.1894954590654886	False

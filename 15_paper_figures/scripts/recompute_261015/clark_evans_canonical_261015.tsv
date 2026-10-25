@@ -1,0 +1,4 @@
+timepoint	n_instances	n_events	R_instance	R_event	null_mean	null_sd	p_two_sided
+T1	288	324	1.0016	0.9068	0.9901	0.0478	0.822
+T2	296	337	0.9834	0.8602	0.9917	0.0484	0.852
+T3	289	332	0.9342	0.8326	0.9912	0.0481	0.227

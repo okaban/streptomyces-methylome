@@ -1,0 +1,7 @@
+timepoint	locus	n_measurable_A	n_called_6mA	per_100k	level_of_called
+T1	interior	313790	194	61.82	0.5735
+T1	flank	614709	383	62.31	0.5842
+T2	interior	313790	192	61.19	0.5725
+T2	flank	614710	458	74.51	0.5791
+T3	interior	313790	221	70.43	0.5743
+T3	flank	614710	474	77.11	0.5778

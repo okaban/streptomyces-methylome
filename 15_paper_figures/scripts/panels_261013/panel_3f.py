@@ -1,7 +1,7 @@
 """Figure 3, panel f — sequence context of the AAGCCCG 6mA mark.
 
 LEFT  : 6mA occupancy by the base immediately 5' of AAGCCCG.
-RIGHT : TGGCCGGC 4mC vs HAAGCCCG 6mA occupancy across local GC quintiles
+RIGHT : TGGCCGGC 4mC vs 6mA (5-prime base not G) occupancy across local GC quintiles
         (T1 solid, T2/T3 pale behind).
 
 Renders a composer tile at exactly 2125 x 566 px, transparent background.
@@ -9,6 +9,10 @@ Colour means the CHEMISTRY (project rule F2): 4mC -> U.COL_4mC, 6mA -> U.COL_6mA
 Run in the `epi-rna` environment.
 """
 import sys, importlib
+from pathlib import Path
+
+# [FIG18] タイルを再生成できるよう、artifact マーカーをローカルの入力表に解決しておく。
+_DATA_DIR = Path(__file__).resolve().parents[2] / 'data_261013'
 import pandas as pd, numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
@@ -25,11 +29,11 @@ PRIME = '\u2032'
 ARROW = '\u2192'
 TIMES = '\u00d7'
 
-OUT_PNG = 'panel_f.png'
+OUT_PNG = str(Path(__file__).with_suffix('.png'))
 
 # ---- data -------------------------------------------------------------------
-FLANK_CSV = "{{artifact:2d0505cc-85d5-410b-9ca6-fc214da8966c}}"   # flank_base, occ_6mA_pct
-GC_CSV = "{{artifact:10a64b2d-1d05-439d-bb2c-914ac27421c1}}"      # timepoint, mark, gc_quintile, n, gc_median, meth_pct
+FLANK_CSV = str(_DATA_DIR / "v2d0505cc_F3f1_flank.csv")   # flank_base, occ_6mA_pct
+GC_CSV = str(_DATA_DIR / "va4cc78a0_gc_quintile_both_marks_261008.csv")      # timepoint, mark, gc_quintile, n, gc_median, meth_pct
 
 flank = pd.read_csv(FLANK_CSV)
 gc = pd.read_csv(GC_CSV)
@@ -55,7 +59,6 @@ axL.set_ylim(0, 58)
 axL.set_yticks([0, 20, 40])
 axL.set_ylabel('6mA occupancy (%)')
 axL.set_xlabel(f'Base 5{PRIME} of AAGCCCG')
-axL.set_title(f'A 5{PRIME} G suppresses 6mA', loc='left', pad=4)
 U.style_axes(axL)
 
 # headline value on the mark that carries the claim
@@ -64,18 +67,28 @@ axL.text(xs[-1], vals[-1] + 2.4, '8.3', ha='center', va='bottom',
 
 # narrative annotation -> whitespace between the two sub-plots
 fig.text(0.262, TOP - 0.035,
-         f'5{PRIME}C : 5{PRIME}G ratio\n'
+         # 2026-10-24: ラベルが対比を取り違えていた（整合性監査 CA08）。この 3 値は
+         # 5′ が G でないもの（H = A/C/T）対 5′ が G の対比であって、5′C 対 5′G ではない。
+         # 本文 R4 は「HAAGCCCG occupancy exceeds GAAGCCCG 5.55-fold」と書いており、
+         # 46.17 / 8.32 = 5.549 もレジストリもその読みを支持する。
+         f'5{PRIME} non-G : 5{PRIME}G ratio\n'
          f'  in motif       5.55{TIMES}\n'
          f'  non-motif      3.00{TIMES}\n'
          f'  residual       1.85{TIMES}',
          ha='left', va='top', fontsize=6.5, color=U.COL_DARK, linespacing=1.8)
 
 # ============================ RIGHT: GC quintiles ===========================
-series = [('TGGCCGGC 4mC', U.COL_4mC, f'93.4 {ARROW} 84.9%', f'\u03b2 = {MINUS}6.4'),
-          ('HAAGCCCG 6mA', U.COL_6mA, f'25.1 {ARROW} 83.3%', '\u03b2 = +13.4')]
+# 第 1 要素は入力表 'mark' 列との照合キー（変更不可）、第 2 要素が図に出す表示名。
+# 2026-10-15: 6mA 側の表示名を 'HAAGCCCG 6mA' から層の名前に変えた。認識配列は AAGCCCG
+# 一本に統一した（DECIDED.6mA.DENOMINATOR.261015）ため、図に第 2 のモチーフ名を出さない。
+# 層別自体は撤去できない: 5' の G はそれ自体が GC なので、両クラスを混ぜると局所 GC と
+# 5' 塩基が交絡する。本文はこの勾配が 5' 塩基で調整しても残ることを述べている。
+series = [('TGGCCGGC 4mC', 'TGGCCGGC 4mC', U.COL_4mC, f'93.4 {ARROW} 84.9%', f'\u03b2 = {MINUS}6.4'),
+          ('HAAGCCCG 6mA', f'6mA, 5{PRIME} base not G', U.COL_6mA, f'25.1 {ARROW} 83.3%', '\u03b2 = +13.4')]
 q = np.arange(1, 6)
-for name, col, rng, beta in series:
-    sub = gc[gc['mark'] == name]
+for key, label, col, rng, beta in series:
+    sub = gc[gc['mark'] == key]
+    assert len(sub), f"GC 五分位表に mark='{key}' が無い。入力表のラベル変更の取り残し"
     for tp in ('T2', 'T3'):                      # pale replicates behind
         y = sub[sub.timepoint == tp].sort_values('gc_quintile')['meth_pct'].to_numpy()
         axR.plot(q, y, '-', color=to_rgba(col, 0.30), lw=2.4, zorder=2,
@@ -91,20 +104,20 @@ axR.set_ylim(0, 104)
 axR.set_yticks([0, 25, 50, 75, 100])
 axR.set_ylabel('Occupancy (%)')
 axR.set_xlabel(f'Local GC quintile, motif excluded  (low {ARROW} high)')
-axR.set_title('Rising GC lifts 6mA toward the 4mC level, which falls',
+axR.set_title('',
               loc='left', pad=4)
 U.style_axes(axR)
 
 # direct labels in the right margin, one short leader each
 LBLX = 5.62
-for (name, col, rng, beta), (yend, ylab) in zip(series, [(84.88, 97.0), (83.33, 48.0)]):
+for (key, label, col, rng, beta), (yend, ylab) in zip(series, [(84.88, 97.0), (83.33, 48.0)]):
     # leader carries no text of its own, so it cannot become a text-collision finding
     axR.annotate('', xy=(5.04, yend), xytext=(LBLX - 0.06, ylab),
                  annotation_clip=False,
                  arrowprops=dict(arrowstyle='-', color=to_rgba(col, 0.55),
                                  lw=0.7, shrinkA=2, shrinkB=2,
                                  connectionstyle='arc3,rad=0'))
-    axR.text(LBLX, ylab, f'{name}\n{rng}\n{beta}',
+    axR.text(LBLX, ylab, f'{label}\n{rng}\n{beta}',
              ha='left', va='center', fontsize=6.5, color=col,
              linespacing=1.6, clip_on=False)
 

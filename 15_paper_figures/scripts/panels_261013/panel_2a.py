@@ -8,6 +8,11 @@ Data: window_mb, sites_4mC_per_100kb, sites_6mA_per_100kb (100-kb windows, n = 8
 
 Run in the `epi-rna` environment.
 """
+from pathlib import Path
+
+# [FIG18] タイルを再生成できるよう、artifact マーカーをローカルの入力表に解決しておく。
+_DATA_DIR = Path(__file__).resolve().parents[2] / 'data_261013'
+
 import sys
 import importlib
 
@@ -29,8 +34,8 @@ U.apply_unified_style()              # PROJECT style wins
 mpl.rcParams['savefig.bbox'] = None  # the style helpers set 'tight', which resizes
 
 # ── data ─────────────────────────────────────────────────────────────────────
-CSV = "{{artifact:1c1184c7-bb30-4a1e-a001-0779aedc78ba}}"
-OUT = 'panel_a.png'
+CSV = str(_DATA_DIR / "v1c1184c7_F2a_density.csv")
+OUT = str(Path(__file__).with_suffix('.png'))
 
 df = pd.read_csv(CSV)
 x = df['window_mb'].values
@@ -68,9 +73,9 @@ ax.set_xlim(-0.08, XMAX)
 ax.set_ylim(0, YMAX)
 ax.set_xticks([0, 2, 4, 6, 8])
 ax.set_yticks([0, 10, 20, 30, 40, 50])
-ax.set_xlabel('position along chromosome (Mb)', labelpad=2)
-ax.set_ylabel('sites per 100 kb', labelpad=2)
-ax.set_title('Both marks are spread along the whole chromosome, arms as well as core',
+ax.set_xlabel('Position along chromosome (Mb)', labelpad=2)
+ax.set_ylabel('Sites per 100 kb', labelpad=2)
+ax.set_title('',
              loc='left', x=0.035, pad=3)
 U.style_axes(ax)
 ax.tick_params(axis='both', pad=1.5, length=2.5, width=0.8)

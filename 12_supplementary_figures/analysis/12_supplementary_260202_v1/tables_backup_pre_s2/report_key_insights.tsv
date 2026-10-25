@@ -1,7 +1,0 @@
-ID	Insight	Supporting_Figure	Related_Section
-1	T2が転写リプログラミングのピーク: リボソーム抑制はT2で最大（3.34倍）、T3では緩和（2.76倍）	KEGG_bubble_T2vsT1_down.pdf, KEGG_bubble_T3vsT1_down.pdf	§2
-2	Prodigiosin生合成の早期誘導: T2で既に強く誘導（2.83倍）、T3では維持（1.83倍）	KEGG_bubble_T2vsT1_up.pdf, coverage_track_red.pdf	§2, §5
-3	約1,000遺伝子がコア応答遺伝子: 3比較すべてで変動する遺伝子群が存在	venn_all_DEGs.pdf	§1
-4	成長-二次代謝トレードオフ: 翻訳カテゴリUp:Down = 1:6、二次代謝は上昇のみ	COG_barplot_T3vsT1.pdf	§4
-5	BGCクラスター間の誘導タイミング差異: red（早期）→ cda（中期）→ act/cpk（後期）	coverage_tracks_all_BGC.pdf	§5
-6	栄養枯渇への適応応答: ABC輸送体108遺伝子、シデロフォア合成の発現上昇	KEGG_bubble_T3vsT1_up.pdf, GO_bubble_T3vsT1_up.pdf	§2, §3

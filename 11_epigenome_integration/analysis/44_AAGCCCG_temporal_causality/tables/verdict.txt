@@ -1,2 +1,0 @@
-VERDICT: PARTIAL
-EVIDENCE: AAGCCCG loss shows directionally correct de-repression (Lost median=-0.0193 vs Never median=-0.0233, diff=+0.0041) but not significant after Bonferroni correction (p_bonf=1.00e+00). Limited power due to small sample size (836 Lost genes) may explain non-significance.

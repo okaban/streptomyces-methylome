@@ -1,0 +1,4 @@
+timepoint	n_paired	occ_6mA	occ_4mC	ci6	ci4	diff_pp	diff_ci	discordant_6mA_only	discordant_4mC_only	mcnemar_p
+T1	85	78.82	82.35	69.4–87.1	74.1–90.6	-3.53	-16.5–9.4	14	17	0.72
+T2	85	80.0	80.0	70.6–88.2	71.8–88.2	0.0	-12.9–12.9	15	15	1.0
+T3	85	77.65	83.53	68.2–85.9	75.3–90.6	-5.88	-17.6–7.1	12	17	0.458

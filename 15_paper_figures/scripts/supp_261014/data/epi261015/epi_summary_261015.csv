@@ -1,0 +1,3 @@
+set,instances,mean_reads,median_excess,mean_obs,mean_null,frac_above_control_p95
+AAGCCCG instances,647,140.9614,0.1363,0.1733,0.0269,38.6
+non-motif control,800,147.3288,0.036,0.0589,0.0056,5.0

@@ -1,8 +1,0 @@
-test	description	test_statistic	observed	expected	p_value	direction	effect_size	correction
-Genomic clustering permutation	Exposed TFs closer than random 62/1055?	z=0.267	55073 bp	51785 bp	0.386	not significant	z=0.267	permutation (n=1000)
-E-E vs E-S co-expression	Exposed-exposed correlations higher than exposed-shielded?	U=9444591	median rho=0.0667	median rho=-0.0833	0.006665433596942362	higher	rank-biserial r=0.5191	none (one-sided MWU)
-E-E vs S-S co-expression	Exposed-exposed correlations higher than shielded-shielded?	U=15279240	median rho=0.0667	median rho=0.1000	0.9941250373040529	not significant	rank-biserial r=0.4811	none (one-sided MWU)
-Coordination type vs cluster membership (chi2)	Association between coordination_T3 and genomic cluster	N/A	contingency table	independence		not significant	N/A	none
-Within-type vs between-type co-expression	Same coordination type = higher co-expression?	N/A	within median=0.0667	N/A		not significant	N/A	none (one-sided MWU)
-Operon pair enrichment	More exposed-exposed operonic pairs than random?	observed=0	0 pairs	median=0.0	1.0	not significant	fold=0.00	permutation (n=1000)
-TCS methylation asymmetry (binomial)	Is methylation consistently on SK or RR?	SK=4, RR=3	4/7	0.5	1.0	not significant	SK:RR ratio=4:3	exact binomial

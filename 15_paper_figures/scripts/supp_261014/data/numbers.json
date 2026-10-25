@@ -1,0 +1,151 @@
+{
+  "universe_TGG": 2093,
+  "universe_AAG": 1334,
+  "TGG_called": {
+    "T1": 1886,
+    "T2": 1892,
+    "T3": 1866
+  },
+  "TGG_measurable": {
+    "T1": 2091,
+    "T2": 2093,
+    "T3": 2093
+  },
+  "TGG_occ": {
+    "T1": 90.11,
+    "T2": 90.4,
+    "T3": 89.15
+  },
+  "TGG_core_share": {
+    "T1": 63.73,
+    "T2": 63.64,
+    "T3": 63.67
+  },
+  "core_null": 63.45,
+  "TGG_binom_p": {
+    "T1": 0.848,
+    "T2": 0.886,
+    "T3": 0.866
+  },
+  "TGG_meanlevel": {
+    "T1": 76.64,
+    "T2": 75.79,
+    "T3": 74.99
+  },
+  "AAG_C4_called": {
+    "T1": 1023,
+    "T2": 977,
+    "T3": 973
+  },
+  "AAG_A0_called": {
+    "T1": 323,
+    "T2": 350,
+    "T3": 335
+  },
+  "AAG_A1_called": {
+    "T1": 93,
+    "T2": 100,
+    "T3": 118
+  },
+  "AAG_6mA_union": {
+    "T1": 416,
+    "T2": 450,
+    "T3": 453
+  },
+  "perpos_T1_TGG": {
+    "C1": 0.06,
+    "C2": 76.64,
+    "C5": 0.0
+  },
+  "perpos_T1_AAG": {
+    "A0": 36.33,
+    "A1": 25.21,
+    "C3": 0.17,
+    "C4": 63.98,
+    "C5": 0.05
+  },
+  "s13": {
+    "nonmotif_eligible": 6211616,
+    "nonmotif_ge50": 0,
+    "nonmotif_ge25": 5,
+    "nonmotif_ge10": 88,
+    "motif_eligible": 32102,
+    "motif_called": 1886,
+    "motif_pct": 5.88,
+    "occ_eligible": 16043,
+    "occ_meth": 1846,
+    "both": 40,
+    "one": 1806,
+    "both_pct": 2.2,
+    "one_pct": 97.8,
+    "pearson_r": -0.913
+  },
+  "palindrome_both": {
+    "T1": 40,
+    "T2": 44,
+    "T3": 42
+  },
+  "palindrome_n": 55,
+  "_provenance": {
+    "corrected_on": "2026-10-15",
+    "what": "T3 の 7 値が正準パイルアップ統一（2026-10-15）前のまま残っていた。差し替えたのは 3-2 と 3-4 で、どちらも T3 のライブラリなので T1/T2 は影響を受けない。",
+    "verified_by": "analysis/pileup_canonical_261015 の 9 ファイルから直接再計数。判定規則は時点ごとに 3 ライブラリを合算し、合算前の真の深度 Nvalid+Nfail >= 30、合算 Nmod/Nvalid >= 0.5。列は Nvalid_cov=10列目, Nmod=12列目, Nfail=16列目。",
+    "corrections": {
+      "TGG_called.T3": {
+        "old": 1877,
+        "new": 1866
+      },
+      "TGG_occ.T3": {
+        "old": 89.68,
+        "new": 89.15
+      },
+      "TGG_meanlevel.T3": {
+        "old": 75.99,
+        "new": 74.99
+      },
+      "AAG_C4_called.T3": {
+        "old": 977,
+        "new": 973
+      },
+      "AAG_A0_called.T3": {
+        "old": 344,
+        "new": 335
+      },
+      "AAG_A1_called.T3": {
+        "old": 113,
+        "new": 118
+      },
+      "AAG_6mA_union.T3": {
+        "old": 457,
+        "new": 453
+      },
+      "TGG_core_share.T3": {
+        "old": 63.4,
+        "new": 63.67
+      },
+      "TGG_binom_p.T3": {
+        "old": 0.962,
+        "new": 0.866
+      },
+      "palindrome_both.T3": {
+        "old": 41,
+        "new": 42
+      },
+      "TGG_binom_p.T1": {
+        "old": 0.811,
+        "new": 0.848
+      }
+    },
+    "not_yet_verified": {
+      "keys": [
+        "TGG_core_share.T3",
+        "TGG_binom_p.T3",
+        "palindrome_both.T3"
+      ],
+      "reason": "いずれも T3 の部位集合から導かれる量で、TGG_called.T3 が 1877 -> 1866 に変わった以上再導出が必要。コア/アーム境界とパリンドローム対応づけの定義が本ファイルからは復元できないため未修正のまま残す。"
+    },
+    "backup": "numbers.json.bak_261015_preT3fix",
+    "second_pass_2026-10-15": "T3 由来の派生値 3 件を再計算して確定。前回は core/arm 境界と回文の対応規則がファイルから復元できず未修正のまま残していたが、境界は Figure 2a 凡例のchromosomal core 1.5–7.17 Mb、回文は 10 bp 回文 TGGCCGGCCA（55 箇所、+ 鎖 offset 4 と - 鎖 offset 5 の両方が修飾判定）と特定できた。T1 と T2 が保存値を完全に再現したことで規則の正しさを確認している（core_share 63.73/63.64、binom p 0.811/0.886、回文 40/44）。二項検定の帰無は全 2,093 位置のコア割合 0.6345。",
+    "binom_null_definition": "二項検定の帰無は「その時点の可測位置（真深度 Nvalid+Nfail >= 30 かつ Nvalid > 0）のコア割合」。全 2,093 位置の割合ではない。T1 は可測 2,091・帰無 63.51% で p = 0.848。全位置の帰無 63.45% を使うと 0.811 になり value_registry の CORE.4mC.P.T1 と食い違う。T2 は可測 2,093 なので両定義が一致し 0.886。コアは 1,500,000–7,170,000 bp（Figure 2a 凡例）。"
+  }
+}

@@ -1,0 +1,7 @@
+timepoint	region	n_positions	n_pass_depth30	pass_pct	occupancy_pct	mean_true_depth
+T1	core	1328	1328	100.0	90.44	175.8
+T1	arm	765	763	99.74	89.52	77.2
+T2	core	1328	1328	100.0	90.51	135.8
+T2	arm	765	765	100.0	89.54	119.0
+T3	core	1328	1328	100.0	89.16	104.8
+T3	arm	765	765	100.0	88.37	89.4

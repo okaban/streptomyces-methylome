@@ -1,7 +1,0 @@
-id	name	organism	role	ref	length
-P27245	MarR	E. coli K-12	Multiple antibiotic resistance repressor (MarR family); classic Dam/methylation context	Alekshun & Levy 1997; Casadesús & Low 2006 (Microbiol Mol Biol Rev)	144
-P0ACQ4	OxyR	E. coli K-12	agn43 Dam-methylation-sensitive transcription factor (LysR-family); methylation memory switch	Wallecha et al. 2002 (J Bacteriol); Casadesús & Low 2006	305
-P0ACJ0	Lrp	E. coli K-12	Leucine-responsive regulatory protein; pap pyelonephritis-associated pilus GATC switch	Braaten et al. 1994 (Cell); Casadesús & Low 2006	164
-O25617	HP1021	H. pylori 26695	m4C/m5C-context-coupled iron/redox regulator (RR-like)	Kumar et al. 2018 (Nucleic Acids Res); Estibariz et al. 2019 (NAR)	363
-P9WGI1	SigB	M. tuberculosis H37Rv	Stress-response sigma factor; m6A enriched near sigma-binding boxes	Shell et al. 2013 (PLoS Genet)	528
-Q9XAP2	RamR	S. coelicolor	Positive control / same gene as SCO6685 (response regulator of ramCSAB cluster)	Keijser et al. 2002; Nguyen et al. 2002 (Mol Microbiol)	399

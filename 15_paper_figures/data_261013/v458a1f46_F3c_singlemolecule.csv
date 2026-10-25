@@ -1,4 +1,4 @@
-timepoint,observations,both,only_4mC,only_6mA,neither,pct_both,odds_ratio
-T1,84047,23825,23785,15018,21419,28.35,1.429
-T2,79313,22288,21352,14675,20998,28.1,1.494
-T3,60651,16811,16579,11127,16134,27.72,1.47
+timepoint,observations,both,only_4mC,only_6mA,neither,pct_both,odds_ratio,fisher_p,superseded,rule
+T1,80227,23825,23094,14633,18675,29.7,1.3166,6.5e-82,"T1 39,799/12,082/30.36%/OR 1.257（＋鎖 285 インスタンス限定。Methods の both strands 宣言と不整合、D023 で撤回）","canonical per-read extraction 2026-10-15 (111_perread_canonical_261015); HAAGCCCG BOTH strands, 565 instances; 6mA at position 1 (offset 0), 4mC at position 5 (offset 4); call probability >= 0.5"
+T2,75463,22288,20661,14252,18262,29.54,1.3823,4.2e-107,"T2 36,840/11,191/30.38%/OR 1.364（＋鎖 285 インスタンス限定。Methods の both strands 宣言と不整合、D023 で撤回）","canonical per-read extraction 2026-10-15 (111_perread_canonical_261015); HAAGCCCG BOTH strands, 565 instances; 6mA at position 1 (offset 0), 4mC at position 5 (offset 4); call probability >= 0.5"
+T3,57777,16811,16064,10837,14065,29.1,1.3582,5.5e-74,"T3 28,181/8,397/29.8%/OR 1.351（＋鎖 285 インスタンス限定。Methods の both strands 宣言と不整合、D023 で撤回）","canonical per-read extraction 2026-10-15 (111_perread_canonical_261015); HAAGCCCG BOTH strands, 565 instances; 6mA at position 1 (offset 0), 4mC at position 5 (offset 4); call probability >= 0.5"

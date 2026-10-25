@@ -13,7 +13,12 @@ Run this as a `python` tool cell (environment: epi-rna) so the {{artifact:...}}
 marker on the CSV path resolves to a local file path.
 """
 
-import sys, importlib, csv
+import csv
+import sys, importlib
+from pathlib import Path
+
+# [FIG18] タイルを再生成できるよう、artifact マーカーをローカルの入力表に解決しておく。
+_DATA_DIR = Path(__file__).resolve().parents[2] / 'data_261013'
 
 sys.path.insert(0, '/Users/okaban/bioinfo/rna-seq/15_paper_figures/scripts')
 U = importlib.import_module('00_shared_utils')
@@ -25,7 +30,7 @@ mpl.rcParams['savefig.bbox'] = None          # the style helper sets 'tight',
 import matplotlib.pyplot as plt
 
 # ── data ──────────────────────────────────────────────────────────────────────
-CSV = "{{artifact:9ce87d3e-5538-4019-95bf-7501ed3fecf4}}"
+CSV = str(_DATA_DIR / "v9ce87d3e_F3d_rebase.csv")
 rows = list(csv.DictReader(open(CSV)))
 stages = [r['stage'] for r in rows]
 counts = [int(r['n']) for r in rows]
@@ -68,16 +73,16 @@ ax.xaxis.labelpad = 1.5
 
 # takeaway title, kept clear of the composer's top-left letter zone
 fig.text(0.205, 0.985,
-         'No reported dual-mark system\nplaces both marks on one strand',
-         ha='left', va='top', fontsize=F['panel_title'],
-         color=U.COL_DARK, linespacing=1.22)
+'',
+ha='left', va='top', fontsize=F['panel_title'],
+color=U.COL_DARK, linespacing=1.22)
 
 # ── save (collision assert first, then an exact-size check) ───────────────────
 U.assert_no_text_collisions(fig, 'Fig3d funnel')
-fig.savefig('panel_d.png', dpi=300, transparent=True,
+fig.savefig(str(Path(__file__).with_suffix('.png')), dpi=300, transparent=True,
             bbox_inches=None, pad_inches=0)
 
 from PIL import Image
-sz = Image.open('panel_d.png').size
+sz = Image.open(str(Path(__file__).with_suffix('.png'))).size
 assert sz == (677, 614), sz
 print('size', sz)

@@ -1,7 +1,0 @@
-model	n_features	mean_AUC	std_AUC	min_AUC	max_AUC
-Single: nearest_methyl_distance	1	0.9166	0.0188	0.8905	0.9462
-Logistic (all)	8	0.9091	0.0266	0.8704	0.9402
-Decision Tree (d=3)	7	0.8717	0.0284	0.8412	0.9228
-Single: n_methyl_sites_2kb	1	0.6694	0.1011	0.5087	0.7853
-Logistic (4 feat)	4	0.6042	0.072	0.5323	0.7365
-Single: baseMean	1	0.5468	0.0581	0.4908	0.6318

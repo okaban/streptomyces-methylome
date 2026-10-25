@@ -1,9 +1,0 @@
-quantity	value	source
-CTAG_loci_in_NC_003888.3	1408	regex on data/NC_003888.3.fna (8,667,507 bp)
-CTAG_O/E_mononucleotide	0.0643	observed/expected from base composition; genome GC 72.1%
-4mC_calls_at_CTAG_T1T2T3	0	01_integration/high_confidence_sites_weighted.csv, 0-based strand-aware
-6mA_calls_at_CTAG	1	single locus pos 7,308,944 (+), T1 52.10% / T3 51.78%
-T1_4mC_sites_total	1987	canonical file, timepoint T1
-T1_4mC_at_GCCGGC_C3(0-based idx2)	1289	strand-aware matcher
-T1_4mC_at_AAGCCCG_C4	698	strand-aware matcher
-T1_4mC_unassigned	0	1289+698=1987

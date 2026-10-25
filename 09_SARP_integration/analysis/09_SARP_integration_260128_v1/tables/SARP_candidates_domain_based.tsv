@@ -1,9 +1,0 @@
-protein_id	gene_id	old_locus_tag	gene_name	product	protein_len	has_DBD	has_BTAD	has_NB_ARC	has_TPR	domains_list	best_DBD_evalue	best_BTAD_evalue
-WP_003973893.1	SC_RS27585	SCO5085	NA	AfsR/SARP family transcriptional regulator	255	TRUE	TRUE	FALSE	FALSE	BTAD;Trans_reg_C	6.8e-9	5.2e-51
-WP_011027426.1	SC_RS06435	SCO0898	NA	AfsR/SARP family transcriptional regulator	660	TRUE	TRUE	FALSE	FALSE	BTAD;Trans_reg_C	1.9e-8	2.7e-43
-WP_011028835.1	SC_RS18200	SCO3217	NA	AfsR/SARP family transcriptional regulator	638	TRUE	TRUE	TRUE	FALSE	BTAD;NB-ARC;Trans_reg_C	2.6e-9	2.8e-45
-WP_011029645.1	SC_RS24295	SCO4426	afsR	transcriptional regulator AfsR	993	TRUE	TRUE	TRUE	TRUE	BTAD;NB-ARC;TPR_12;Trans_reg_C	1.9e-8	4.1e-47
-WP_016327461.1	SC_RS31630	SCO5877	NA	AfsR/SARP family transcriptional regulator	268	TRUE	TRUE	FALSE	FALSE	BTAD;Trans_reg_C	3.5e-6	1.6999999999999998e-44
-WP_016327685.1	SC_RS33690	SCO6288	NA	AfsR/SARP family transcriptional regulator	281	TRUE	TRUE	FALSE	FALSE	BTAD;Trans_reg_C	6.8e-9	9.1e-50
-WP_161270138.1	SC_RS22750	SCO4116	NA	BTAD domain-containing putative transcriptional regulator	1102	TRUE	TRUE	FALSE	FALSE	BTAD;Trans_reg_C	2.9e-8	5.0999999999999995e-44
-WP_238363725.1	SC_RS13320	SCO2259	NA	BTAD domain-containing putative transcriptional regulator	1322	TRUE	TRUE	FALSE	FALSE	BTAD;Trans_reg_C	7.8e-7	6.7e-42

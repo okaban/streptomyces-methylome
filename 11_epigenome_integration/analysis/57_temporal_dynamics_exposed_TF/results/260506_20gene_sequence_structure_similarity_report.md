@@ -1,1 +1,0 @@
-/Users/okaban/bioinfo/rna-seq/reports/260506_20gene_sequence_structure_similarity_report.md

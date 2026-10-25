@@ -1,8 +1,0 @@
-Pattern	Observation	Interpretation
-方向反転	Metabolic pathways: T2 Up → T3 Down	T2は代謝の移行期。一次・二次代謝が一時的に共活性化
-方向反転	Secondary metabolites: T2 Up → T3 Down	T3では特定BGCのみ活性、全般的な二次代謝は抑制
-T2 > T3 抑制	Ribosome: FE 3.34 → 2.76	T2が転写リプログラミングのピーク
-T2 > T3 誘導	Prodigiosin: FE 2.83 → 1.83	red BGCは早期誘導型
-T3のみUp	ABC/Quorum sensing/Type II PKS	栄養枯渇応答・後期BGCは後期に顕在化
-T3のみDown (28)	アミノ酸合成、エネルギー代謝等	一次代謝の抑制は後期で大幅拡大
-T2のみDown = 0	全T2 Downが T3でも持続	成長抑制は不可逆的

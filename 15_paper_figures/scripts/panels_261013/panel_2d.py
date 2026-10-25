@@ -2,7 +2,8 @@
 
 Single 100%-stacked bar over the 572 cytosine contexts that earlier work reported
 as 5mC in this organism, split into the sequence space of the two motifs we
-identify (GCCGGC/GGCCGG family, GCCCG-containing) and everything else.
+identify (the GCCGGC hexamer family, which includes the nested GGCCGG; and
+GCCCG-containing, the 3′ half of AAGCCCG) and everything else.
 
 Renders a TILE for the Figure 2 composer: exactly 677 x 661 px, transparent
 background, no tight/constrained layout, top-left 10 x 6 mm left clear for the
@@ -11,6 +12,11 @@ composer's panel letter.
 Run with environment `epi-rna`:
     python panel_2d.py
 """
+from pathlib import Path
+
+# [FIG18] タイルを再生成できるよう、artifact マーカーをローカルの入力表に解決しておく。
+_DATA_DIR = Path(__file__).resolve().parents[2] / 'data_261013'
+
 import sys
 import importlib
 
@@ -30,8 +36,8 @@ U.apply_unified_style()
 mpl.rcParams['savefig.bbox'] = None
 
 # ── data ────────────────────────────────────────────────────────────────────
-DATA_CSV = "{{artifact:45b56046-0596-4fcf-904e-ac5c204efe55}}"
-OUT_PNG = 'panel_d.png'
+DATA_CSV = str(_DATA_DIR / "v45b56046_F2d_pisciotta.csv")
+OUT_PNG = str(Path(__file__).with_suffix('.png'))
 
 df = pd.read_csv(DATA_CSV)
 counts = dict(zip(df['class'], df['n']))
@@ -58,7 +64,10 @@ fig.subplots_adjust(left=0.175, right=0.995, bottom=0.085, top=0.845)
 
 XC, BW = 0.0, 0.76
 segs = [
-    (pf, U.COL_4mC, 'GCCGGC /\nGGCCGG family', 'white'),
+    # 表示ラベルのみ。counts[] の添字は入力表の照合キーなので変えない。
+    # 2026-10-15 著者決定: 合成ラベル（複数配列の併記）は不可、GCCGGC は hexamer 明記が必須。
+    # GGCCGG を含むという分類規則は図の凡例本文で述べる。
+    (pf, U.COL_4mC, 'GCCGGC hexamer\nfamily', 'white'),
     (pg, PALE_6mA, 'GCCCG-containing', U.COL_DARK),
     (po, U.COL_GRAY, 'other', U.COL_DARK),
 ]
@@ -89,7 +98,7 @@ ax.set_xticks([XC])
 ax.set_xticklabels([f'n = {TOT}'])
 ax.tick_params(axis='x', length=0)
 ax.set_ylabel('% of reported 5mC sites', labelpad=2)
-ax.set_title('85% of previously reported\n5mC sites lie in our motifs',
+ax.set_title('',
              loc='left', x=0.075, linespacing=1.2)
 U.style_axes(ax)
 

@@ -30,6 +30,7 @@ Input (read_id-sorted, one row per read x position):
   65_per_read_comod/1-1_modonly.tsv  (T1 replicate 1)   cols: read_id, ref_position, call_prob, call_code, fail
 Reference: /Users/okaban/bioinfo/methyl/260102_M145/data/ref.fa
 """
+# DATA_PATH_EXEMPT: 65_per_read_comod は 2026-09-21 に superseded 宣言されているが、その理由は methylation_site_sequences.csv の sequence 窓経由でオフセットを求めると 1 bp ずれる点にある。このスクリプトは位置集合を参照ゲノムから re.finditer で直接構築しており、その欠陥を継承しない。modonly.tsv からは ref_position / call_prob / call_code の生の列しか読まない。2026-10-15 に再計算で検証: AAGCCCG near/far 365.0、非モチーフ near/far 1.0915、モチーフ/非モチーフ 435.2（出所表 429.7 との 1.3% 差は参照塩基照合の有無で説明され、非モチーフ n も同率ずれる）。
 import os, re, sys
 from collections import defaultdict
 import numpy as np

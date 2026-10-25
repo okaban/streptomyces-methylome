@@ -1,148 +1,325 @@
-"""Figure 3, panel a — schematic: two recognition sequences and the marks they carry.
+"""Figure 3, panel a — sequence logos of the high-confidence 4mC and 6mA positions.
 
-Message: TGGCCGGC carries 4mC at position 5; AAGCCCG carries 6mA at position 1 and
-4mC at position 5 on the SAME strand, 4 bp apart.
+Message: each recognition sequence, shown as the base composition around its own
+mark rather than asserted as a drawing.
 
-DATA INPUT: none.  This panel is a schematic — there is no data CSV and no artifact
-marker to read.  The sequences, the mark positions and the four occupancy numbers
-printed as annotations are literals, carried over from the motif/occupancy analysis
-upstream of this figure:
-    TGGCCGGC : 2,093 positions, 90.1% occupied
-    AAGCCCG  : 1,334 instances; 4mC 76.7%, 6mA 45.8% (HAAGCCCG subset, n = 565)
-If these numbers are revised, edit the DUPLEX table below — nothing else depends on them.
+The two rows are drawn on DIFFERENT site sets, and the difference is the point:
+  4mC  - every high-confidence position.  4mC calling is confined to the two
+         recognition sequences (3,067 of 3,068), so the unconditioned set is
+         informative; it is a 64:36 MIXTURE of TGGCCGGC and AAGCCCG, which is why
+         offsets -4, -3 and +1 carry two letters at about 1 bit.  Those offsets
+         are two-state because two sequences are pooled, NOT because either
+         sequence is degenerate.
+  6mA  - only the AAGCCCG-context positions (rebuilt 2026-10-22 on author
+         instruction).  On every high-confidence 6mA position the logo resolves
+         nothing: 82% of that set is the unassigned adenine fraction, so the logo
+         reports this genome's base composition (0.16-0.53 bits per flanking
+         offset) and MEME on the same set returns a degenerate GC-rich 9-mer with
+         no AAGCCCG.  Conditioning on the recognition sequence is therefore a
+         PRESENTATION of the assignment, not evidence for it; the evidence is the
+         rate contrast (15.59% of AAGCCCG adenine positions modified at T1 vs
+         0.0634% of motif-external reference adenines, 246-fold), which the legend
+         carries.  The conditioning and its denominator are printed in the panel.
+
+DATA INPUT (recomputed at render time, nothing hard-coded):
+  recompute_261015/canonical_sites_genomewide_261015.tsv  — the canonical site
+      list (timepoint / pos / strand / mod).  `pos` is a 0-based genome index,
+      the convention Writing/check_pileup_refbase.py enforces.
+  11_epigenome_integration/data/NC_003888.3.fna           — the reference.
+The site set is OPTION A as approved by the author on 2026-10-20: every
+high-confidence position of each chemistry, pooled over T1-T3 (not split by
+timepoint) and not filtered on occupancy.  Flanks are taken strand-aware: a
+minus-strand site contributes the reverse complement of its window, so offset 0
+is the modified base and offsets increase 5'->3' along the modified strand.
+
+Letter heights are the standard sequence-logo definition with Schneider's
+small-sample correction: R_i = 2 - H_i - e_n with e_n = 3 / (2 ln2 n), and the
+height of base b at position i is f_b,i * R_i.  Heights are written to
+data_261013/fig3a_logo_261022.tsv so the registry can cite them.
 
 Tile for the composer's 12-column grid: EXACT 1039 x 685 px, transparent, and no
 bbox_inches='tight' (tight re-crops the canvas and breaks the grid).  Colour comes
 only from 00_shared_utils constants and encodes the CHEMISTRY, not the motif
-(4mC -> U.COL_4mC, 6mA -> U.COL_6mA).
+(4mC -> U.COL_4mC, 6mA -> U.COL_6mA); base identity is carried by the glyph.
 
 Run:  python panel_3a.py        (conda env: epi-rna)
-Out:  panel_a.png
+Out:  panel_3a.png
 """
-import sys, importlib
+import csv
+import importlib
+import math
+import sys
+from collections import Counter
+from pathlib import Path
 
 sys.path.insert(0, '/Users/okaban/bioinfo/rna-seq/15_paper_figures/scripts')
 U = importlib.import_module('00_shared_utils')   # module name starts with a digit
 
+import logomaker
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-from matplotlib.patches import Circle, Rectangle
+import pandas as pd
 from PIL import Image
 
 U.apply_unified_style()
 mpl.rcParams['savefig.bbox'] = None   # the style helper sets 'tight', which resizes
 
+# ------------------------------------------------------------------- input paths
+ROOT = Path('/Users/okaban/bioinfo/rna-seq')
+SITES = ROOT / '15_paper_figures/scripts/recompute_261015/canonical_sites_genomewide_261015.tsv'
+GENOME = ROOT / '11_epigenome_integration/data/NC_003888.3.fna'
+TABLE_OUT = ROOT / '15_paper_figures/data_261013/fig3a_logo_261022.tsv'
+
+LO, HI = -6, 6                 # offsets about the modified base, inclusive
+BASES = ('A', 'C', 'G', 'T')
+COMP = str.maketrans('ACGT', 'TGCA')
+# Where the modified base sits inside its recognition sequence (LOCKED CANON).
+# 2026-10-24: 6mA 行は offset 0 と +1 の両方にマーカーを置くようになったので、
+# パネル内ラベルも「position 1」から両位置を名指す表記へ改める。パネルが 2 位置を
+# 示しているのにラベルが 1 位置しか名指さない状態は、著者が指摘した不整合と同型。
+MARK_POSITION = {'4mC': 'position 5', '6mA': 'positions 1 and 2'}
+
+
+def reference():
+    with open(GENOME) as fh:
+        g = ''.join(l.strip() for l in fh if not l.startswith('>')).upper()
+    assert len(g) == 8667507, len(g)
+    return g
+
+
+def windows(genome):
+    """Strand-oriented flanks of every high-confidence position, by chemistry.
+
+    The reference base is re-checked here rather than trusted: a 4mC call must
+    sit on C (+) or G (-) and a 6mA call on A (+) or T (-).  A pileup can carry
+    a call to a position whose reference base is neither (the 2026-10-15 defect),
+    and such a window would contribute a bogus centre letter to the logo.
+    """
+    expect = {'4mC': ('C', 'G'), '6mA': ('A', 'T')}
+    seen, out = set(), {'4mC': [], '6mA': []}
+    with open(SITES) as fh:
+        for r in csv.DictReader(fh, delimiter='\t'):
+            p, s, m = int(r['pos']), r['strand'], r['mod']
+            if (p, s, m) in seen:          # pooled over T1-T3: count each position once
+                continue
+            seen.add((p, s, m))
+            assert genome[p] == (expect[m][0] if s == '+' else expect[m][1]), (p, s, m)
+            if p + LO < 0 or p + HI >= len(genome):
+                continue
+            w = genome[p + LO: p + HI + 1]
+            if s == '-':
+                w = w.translate(COMP)[::-1]
+            if 'N' in w:
+                continue
+            out[m].append(w)
+    return out
+
+
+def heights(wins):
+    """Sequence-logo letter heights, small-sample corrected."""
+    n = len(wins)
+    e_n = 3.0 / (2.0 * math.log(2) * n)
+    rows = {}
+    for j, off in enumerate(range(LO, HI + 1)):
+        c = Counter(w[j] for w in wins)
+        f = {b: c.get(b, 0) / n for b in BASES}
+        H = -sum(p * math.log2(p) for p in f.values() if p > 0)
+        R = max(0.0, 2.0 - H - e_n)
+        rows[off] = {b: f[b] * R for b in BASES}
+    return pd.DataFrame.from_dict(rows, orient='index')[list(BASES)], n
+
+
+def context_of(w, mod):
+    """Which recognition sequence this window's modified base sits in.
+
+    4mC sits at position 5 of BOTH recognition sequences, so its site set is a
+    mixture; 6mA sits at A1 (position 1) or A2 (position 2) of AAGCCCG.
+    """
+    sl = lambda lo, hi: w[lo - LO: hi - LO + 1]
+    if mod == '4mC':
+        return ('TGGCCGGC' if sl(-4, 3) == 'TGGCCGGC'
+                else 'AAGCCCG' if sl(-4, 2) == 'AAGCCCG' else 'unassigned')
+    return ('AAGCCCG' if sl(0, 6) == 'AAGCCCG' or sl(-1, 5) == 'AAGCCCG'
+            else 'unassigned')
+
+
 # ---------------------------------------------------------------------- canvas
 W, H = 1039, 685                  # px, the composer's tile size for this slot
-FS_BASE = U.FONT['panel_title']   # 8    - title
-FS_SEQ = 12                       # 12   - sequence letters + mark identity (hero glyphs)
-FS_ANN = U.FONT['annot']          # 6.5  - stats annotations, polarity, bracket
+FS_ANN = U.FONT['annot']          # 6.5 - in-panel identity block
+FS_TICK = U.FONT['tick']          # 7   - tick labels
+FS_LAB = U.FONT['axis_label']     # 7.5 - axis labels
+YMAX = 2.45                       # 2 bits of logo plus headroom for the mark symbol
 
 # +0.3 px of slack: matplotlib floors the canvas, and the tile must be EXACT
 fig = plt.figure(figsize=((W + 0.3) / 300, (H + 0.3) / 300), dpi=300)
-ax = fig.add_axes([0, 0, 1, 1])
-U.style_axes(ax)
-ax.set_xlim(0, W)
-ax.set_ylim(0, H)                 # 1 data unit == 1 px, so circles stay round
-ax.set_xticks([]); ax.set_yticks([])          # schematic: no scale, no tick Texts
-for sp in ax.spines.values():
-    sp.set_visible(False)
 
-# ----------------------------------------------------------------- layout grid
-X0, DX = 80, 60        # x of column 1, column pitch (px)
-PRIME_PAD = 42         # gap from the terminal base to its 5'/3' label
-ANN_X = 610            # left edge of the stats annotations
+GEN = reference()
+WINS = windows(GEN)
 
-# Marks are keyed by 0-based column index; positions in prose are 1-based from the
-# 5' end (column index 4 == position 5, the cytosine of both motifs).
-DUPLEX = [
-    dict(top='TGGCCGGC', bot='ACCGGCCG', y_top=518, y_bot=436,
-         marks={4: ('4mC', U.COL_4mC)},
-         stats='2,093 positions\n90.1% occupied', bracket=None),
-    dict(top='AAGCCCG', bot='TTCGGGC', y_top=252, y_bot=170,
-         marks={0: ('6mA', U.COL_6mA), 4: ('4mC', U.COL_4mC)},
-         stats='1,334 instances\n4mC 76.7%, 6mA 45.8%\n(HAAGCCCG, n = 565)',
-         bracket=(0, 4, '4 bp')),
-]
+# Rows: 4mC above, 6mA below.  Row 1 stops at y = 0.885 so the top-left
+# 118 x 71 px stays clear for the panel letter the composer places there.
+#
+# `subset` is the site set each row is drawn on, and the two rows differ:
+#   4mC  - every high-confidence position (option A).  4mC calling is confined to
+#          the two recognition sequences (3,067 of 3,068 positions), so the whole
+#          set is informative even though it is a mixture of the two.
+#   6mA  - only the AAGCCCG-context positions.  Drawn on every high-confidence 6mA
+#          position the logo resolves nothing, because 82% of that set is the
+#          unassigned adenine fraction and the logo then reports this genome's
+#          base composition.  Conditioning on the recognition sequence is NOT the
+#          evidence that AAGCCCG is the recognition sequence -- that rests on the
+#          rate contrast quoted in the legend -- so the conditioning and its
+#          denominator are printed inside the panel where a reader cannot miss
+#          them.  `anchor` puts each identity block over its own logo's empty
+#          flank: the 4mC logo decays to the 3' side, the conditioned 6mA logo
+#          to the 5' side.
+ROWS = [('4mC', U.COL_4mC, [0.150, 0.635, 0.835, 0.240], None, 'right'),
+        ('6mA', U.COL_6mA, [0.150, 0.270, 0.835, 0.240], 'AAGCCCG', 'left')]
 
-# ------------------------------------------------------------------- the title
-# Left-shifted so the top-left 118 x 71 px stays clear for the composer's letter.
-fig.text(126 / W, 676 / H,
-         'Only AAGCCCG carries 4mC and 6mA on the same strand',
-         ha='left', va='top', fontsize=FS_BASE, color=U.COL_DARK,
-         linespacing=1.4)
+axes, counts, matrices, drawn = [], {}, {}, {}
+for mod, colour, box, subset, anchor in ROWS:
+    counts[mod] = len(WINS[mod])
+    use = ([w for w in WINS[mod] if context_of(w, mod) == subset]
+           if subset else WINS[mod])
+    mat, n = heights(use)
+    drawn[mod], matrices[mod] = n, mat
+    ax = fig.add_axes(box)
+    axes.append(ax)
+    logomaker.Logo(mat, ax=ax, color_scheme=colour, font_name='Arial',
+                   stack_order='big_on_top', vpad=0.02, show_spines=False)
+    U.style_axes(ax)
+    ax.set_xlim(LO - 0.6, HI + 0.6)
+    ax.set_ylim(0, YMAX)
+    ax.set_yticks([0, 1, 2])
+    ax.set_xticks(range(LO, HI + 1))
+    ax.set_xticklabels([f'{o:+d}'.replace('+0', '0') for o in range(LO, HI + 1)],
+                       fontsize=FS_TICK)
+    ax.tick_params(labelsize=FS_TICK, length=2, width=0.6, pad=1.5)
 
-# --------------------------------------------------- strands, polarity, stats
-letter_art = {}          # (duplex index, 'top'/'bot', column) -> Text
-for d, spec in enumerate(DUPLEX):
-    for strand, seq, y, col in (('top', spec['top'], spec['y_top'], U.COL_DARK),
-                                ('bot', spec['bot'], spec['y_bot'], U.COL_GRAY)):
-        for i, ch in enumerate(seq):
-            marked = strand == 'top' and i in spec['marks']
-            letter_art[(d, strand, i)] = ax.text(
-                X0 + i * DX, y, ch, ha='center', va='center',
-                fontsize=FS_SEQ,
-                color=spec['marks'][i][1] if marked else col,
-                fontweight='bold' if marked else 'normal', zorder=4)
-    xr = X0 + (len(spec['top']) - 1) * DX
-    for lab, x, y in (("5′", X0 - PRIME_PAD, spec['y_top']),
-                      ("3′", xr + PRIME_PAD, spec['y_top']),
-                      ("3′", X0 - PRIME_PAD, spec['y_bot']),
-                      ("5′", xr + PRIME_PAD, spec['y_bot'])):
-        ax.text(x, y, lab, ha='center', va='center', fontsize=FS_ANN,
-                color=U.COL_GRAY, zorder=4)
-    ax.text(ANN_X, (spec['y_top'] + spec['y_bot']) / 2, spec['stats'],
-            ha='left', va='center', fontsize=FS_ANN, color=U.COL_DARK,
-            linespacing=1.6, zorder=4)
+    # The modified base, marked where it is rather than named in prose: a filled
+    # triangle over offset 0, in the colour that encodes the chemistry.
+    ax.plot([0], [YMAX - 0.12], marker='v', markersize=3.6, color=colour,
+            clip_on=False, zorder=5)
 
-# Every mark and rung below is placed from the MEASURED extent of the letter it
-# belongs to, so no glyph can ever collide with a drawn mark.
-fig.canvas.draw()
-r = fig.canvas.get_renderer()
-bb = lambda key: letter_art[key].get_window_extent(r)
+    # 2026-10-24: 6mA の行は offset +1（AAGCCCG の 2 番目の A）にも開いた三角を置く。
+    # 著者の指摘で判明した不整合への対応。本文 R3 は「position 2 carrying 6mA in
+    # 6.97%, 7.50% and 8.85% as fallback」と報告し、Figure 3b の凡例は
+    # 「A1 by 5' base, A2」、補足図 2c の凡例は「6mA at A1/A2」と書いているのに、
+    # このロゴだけが offset 0 にしかマーカーを置いていなかった。塗りつぶしの三角が
+    # 主たる修飾位置、開いた三角が 5' G に塞がれたときのフォールバック位置を表す。
+    if mod == '6mA':
+        ax.plot([1], [YMAX - 0.12], marker='v', markersize=3.0, markerfacecolor='none',
+                markeredgecolor=colour, markeredgewidth=0.7, clip_on=False, zorder=5)
 
-# base-pair rungs: start below the top letter, stop above the bottom one
-for d, spec in enumerate(DUPLEX):
-    for i in range(len(spec['top'])):
-        y1, y0 = bb((d, 'top', i)).y0 - 4, bb((d, 'bot', i)).y1 + 4
-        ax.add_patch(Rectangle((X0 + i * DX - 0.9, y0), 1.8, y1 - y0,
-                               facecolor=U.COL_GRAY, edgecolor='none', zorder=1))
+    # Identity block over the uninformative flank of this row's own logo, where
+    # no letter reaches; placement is checked by assert_no_text_collisions below.
+    # For a conditioned row the block states the conditioning AND its denominator,
+    # so the selection cannot be read as a result.
+    if subset:
+        # 2026-10-24: 位置の表記が「positions 1 and 2」に伸びたぶんを行分割で吸収する。
+        # 1 行に残すと標準の figsize で assert_no_text_collisions が落ち、パネル単体の
+        # 再生成ができなくなる（合成図は幅が広いので通ってしまい、事故が隠れる）。
+        label = (f'{mod} at {subset}\n{MARK_POSITION[mod]}\n'
+                 f'n = {n:,} of {counts[mod]:,} ({100 * n / counts[mod]:.2f}%)')
+    else:
+        label = f'{mod}, {MARK_POSITION[mod]}\nn = {n:,} positions'
+    ax.text(LO - 0.45 if anchor == 'left' else HI + 0.45, YMAX - 0.04, label,
+            ha=anchor, va='top', fontsize=FS_ANN, color=colour,
+            linespacing=1.45, zorder=4)
 
-# methyl marks: filled circle on the modified base, stem to the base, direct label
-R = 11
-for d, spec in enumerate(DUPLEX):
-    for i, (name, colour) in spec['marks'].items():
-        x = X0 + i * DX
-        ystem = bb((d, 'top', i)).y1 + 3
-        ycirc = ystem + 10 + R
-        ax.add_patch(Rectangle((x - 0.9, ystem), 1.8, ycirc - R - ystem,
-                               facecolor=colour, edgecolor='none', zorder=2))
-        ax.add_patch(Circle((x, ycirc), R, facecolor=colour, edgecolor='none',
-                            zorder=3))
-        ax.text(x, ycirc + R + 4, name, ha='center', va='bottom',
-                fontsize=FS_SEQ, color=colour, fontweight='bold', zorder=4)
+axes[-1].set_xlabel('Offset from the modified base (bp)', fontsize=FS_LAB,
+                    labelpad=2)
 
-# measured bracket for the 4 bp spacing between the two marks on AAGCCCG
-for d, spec in enumerate(DUPLEX):
-    if spec['bracket'] is None:
-        continue
-    i, j, lab = spec['bracket']
-    xa, xb = X0 + i * DX, X0 + j * DX
-    ytop = min(bb((d, 'bot', k)).y0 for k in range(len(spec['bot']))) - 14
-    ybar = ytop - 11
-    ax.add_patch(Rectangle((xa, ybar), xb - xa, 1.6, facecolor=U.COL_GRAY,
-                           edgecolor='none', zorder=2))
-    for xe in (xa, xb):
-        ax.add_patch(Rectangle((xe - 0.8, ybar), 1.6, ytop - ybar,
-                               facecolor=U.COL_GRAY, edgecolor='none', zorder=2))
-    ax.text((xa + xb) / 2, ybar - 6, lab, ha='center', va='top',
-            fontsize=FS_ANN, color=U.COL_DARK, zorder=4)
+# The conditioning of the lower row, spelled out under the axes so it is read as
+# a property of the site set rather than as a result. The in-panel block already
+# carries n and the percentage; this line names the denominator in words.
+_sub, _n, _N = ROWS[1][3], drawn['6mA'], counts['6mA']
+_note = (f'Lower row is conditioned on {_sub} context: {_n:,} of {_N:,} '
+         f'high-confidence 6mA positions ({100 * _n / _N:.2f}%). The '
+         f'conditioning presents the assignment; the legend gives the evidence.')
 
-# ----------------------------------------------------- checks, then write PNG
+
+def wrap_to_canvas(text, x0, fontsize):
+    """Greedy wrap measured against the real canvas, not a guessed character count.
+
+    Two earlier drafts of this note ran off the tile and were caught only by the
+    collision guard; measuring here makes the overflow impossible rather than
+    detected, and keeps the note correct if the numbers change width.
+    """
+    rend = fig.canvas.get_renderer()
+    limit = W * (1 - x0) - 4
+
+    def px(s):
+        t = fig.text(0, 0, s, fontsize=fontsize)
+        w = t.get_window_extent(rend).width
+        t.remove()
+        return w
+
+    lines, cur = [], ''
+    for word in text.split():
+        trial = f'{cur} {word}'.strip()
+        if cur and px(trial) > limit:
+            lines.append(cur)
+            cur = word
+        else:
+            cur = trial
+    lines.append(cur)
+    assert all(px(l) <= limit for l in lines), [l for l in lines if px(l) > limit]
+    return '\n'.join(lines)
+
+
+fig.text(0.038, 0.022, wrap_to_canvas(_note, 0.038, FS_ANN),
+         ha='left', va='bottom', fontsize=FS_ANN, color=U.COL_GRAY,
+         linespacing=1.45)
+# One y-label for both rows: two per-axes labels at this tile height overlap each
+# other across the row gap, and the quantity is the same in both.
+fig.text(0.038, (ROWS[0][2][1] + ROWS[0][2][3] + ROWS[1][2][1]) / 2,
+         'Information content (bits)', rotation=90, ha='left', va='center',
+         fontsize=FS_LAB, color=U.COL_DARK)
+
+# ---------------------------------------------- recognition-context breakdown
+# Written for BOTH chemistries whatever each row is drawn on, because the two
+# numbers a reader needs are exactly these: the 4mC row is a MIXTURE of the two
+# recognition sequences, and the 6mA row is conditioned because the unconditioned
+# set is dominated by the mark's unassigned fraction.
+CTX = {mod: Counter(context_of(w, mod) for w in WINS[mod])
+       for mod, *_ in ROWS}
+
+# ------------------------------------------------- provenance table, then PNG
+TABLE_OUT.parent.mkdir(parents=True, exist_ok=True)
+with open(TABLE_OUT, 'w', newline='') as fh:
+    wr = csv.writer(fh, delimiter='\t')
+    wr.writerow(['block', 'mod', 'n_available', 'n_drawn', 'key', 'value']
+                + [f'height_{b}' for b in BASES])
+    for mod, _c, _b, subset, _a in ROWS:
+        wr.writerow(['site_set', mod, counts[mod], drawn[mod],
+                     'subset', subset or 'all high-confidence positions']
+                    + [''] * len(BASES))
+        for off in range(LO, HI + 1):
+            row = matrices[mod].loc[off]
+            wr.writerow(['logo_heights', mod, counts[mod], drawn[mod],
+                         f'offset_{off:+d}', f'{row.sum():.4f}']
+                        + [f'{row[b]:.4f}' for b in BASES])
+        for k, v in CTX[mod].most_common():
+            wr.writerow(['context_counts', mod, counts[mod], drawn[mod], k,
+                         f'{v} ({100 * v / counts[mod]:.2f}%)'] + [''] * len(BASES))
+
 U.assert_no_text_collisions(fig, 'Fig3 panel a')
-out = 'panel_a.png'
+out = str(Path(__file__).with_suffix('.png'))
 fig.savefig(out, dpi=300, transparent=True, bbox_inches=None, pad_inches=0)
 
 sz = Image.open(out).size
 assert sz == (W, H), sz
 print('saved', out, sz)
+print('site sets (available -> drawn):')
+for mod, _c, _b, subset, _a in ROWS:
+    print(f'   {mod}: {counts[mod]:,} -> {drawn[mod]:,}'
+          f'  [{subset or "all high-confidence positions"}]')
+print('consensus per offset (bits on the DRAWN set):')
+for mod, *_ in ROWS:
+    m = matrices[mod]
+    print('  ', mod, ' '.join(f'{o:+d}:{m.loc[o].idxmax()}{m.loc[o].sum():.2f}'
+                              for o in range(LO, HI + 1)))
+print('recognition context of the AVAILABLE set:')
+for mod, *_ in ROWS:
+    print('  ', mod, dict(CTX[mod]))

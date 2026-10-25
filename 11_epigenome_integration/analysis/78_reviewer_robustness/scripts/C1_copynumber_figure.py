@@ -11,7 +11,7 @@ import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 B = "/Users/okaban/bioinfo/rna-seq/11_epigenome_integration/analysis"
-PILE = "/Users/okaban/bioinfo/methyl/260102_M145/analysis/cursor_results/pileup/1-1_pileup.bed"
+PILE = "/Users/okaban/bioinfo/methyl/260102_M145/analysis/pileup_canonical_261015/1-1_pileup.bed"
 OUT = f"{B}/78_reviewer_robustness"
 SITES = f"{B}/37_defense_island_GCCGGC/tables/GCCGGC_sites_by_timepoint.tsv"
 strat = pd.read_csv(f"{OUT}/tables/C1_coverage_stratified.tsv", sep="\t")

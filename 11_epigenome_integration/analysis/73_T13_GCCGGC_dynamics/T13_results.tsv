@@ -1,5 +1,0 @@
-test	comparison	n_T1	n_T2	n_T3	median_T1	median_T2	median_T3	statistic	raw_p	bonferroni_p	effect_size	effect_size_label
-Kruskal-Wallis	T1 vs T2 vs T3	1289	407	21	86.38	80.01	65.41	95.5094	1.82135e-21	1.82135e-21		
-Mann-Whitney U (two-sided)	T1 vs T2	1289	407		86.38	80.01		337688	2.11224e-18	6.33671e-18	-0.287357	rank-biserial r
-Mann-Whitney U (two-sided)	T1 vs T3	1289		21	86.38		65.41	21723	1.92266e-06	5.76799e-06	-0.605009	rank-biserial r
-Mann-Whitney U (two-sided)	T2 vs T3		407	21		80.01	65.41	6087	0.0010386	0.00311581	-0.424359	rank-biserial r

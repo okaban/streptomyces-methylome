@@ -1,3 +1,12 @@
+# SUPERSEDED 2026-10-15: 撤回済みの Exposed/Shielded 区分（本文は「認識配列の有無の言い換え」
+# として否定結果に移した）に依存し、旧世代の入力 all_genes_features_unified_n57.tsv ／
+# 退避版 TF 結合部位表を参照する。現行のサイト集合では Exposed 85 / Shielded 966 であり
+# 一致しない。figure_manifest.tsv に出荷図の産出元として登録されていない（2026-10-15 確認）。
+# 内容を再利用する場合は現行サイト集合で再計算し、産出元として登録してから解除すること。
+raise SystemExit(
+    "SUPERSEDED 2026-10-15: 04_figure4_tf_bs_depletion.py は撤回済み区分に依存するため実行を止めています。"
+)
+
 #!/usr/bin/env python3
 """
 Figure 4: TF Binding Site Methylation Depletion

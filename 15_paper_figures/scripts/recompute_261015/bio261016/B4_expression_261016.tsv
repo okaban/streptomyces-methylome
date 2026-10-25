@@ -1,0 +1,4 @@
+test	stat	p
+MWU logTPM has_site vs not		1.7447585947312642e-07
+Spearman dens_site~logTPM (raw)	-0.057280884633393495	3.721746304384631e-07
+partial (gene GC, oriC dist, gene density, length)	-0.013678819348689699	0.22520113814542111

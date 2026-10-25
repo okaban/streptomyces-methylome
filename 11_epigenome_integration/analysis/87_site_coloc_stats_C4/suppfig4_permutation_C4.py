@@ -14,8 +14,15 @@ import numpy as np, pandas as pd, matplotlib as mpl, matplotlib.pyplot as plt
 from pathlib import Path
 import sys; sys.path.insert(0, str(Path.home()/".claude-science"))
 H = Path(__file__).resolve().parent
-t = pd.read_csv(H/"tables/site_coloc_2x2_C4.tsv", sep="\t").set_index("scope")
-FIG = "/Users/okaban/obsidian/Research/rna-seq/Writing/fig_images/SuppFigure4.png"
+# 2026-10-15: 部位定義を正典規則（3 ライブラリ合算・真深度 >= 30・合算 Nmod/Nvalid >= 0.5）に
+# 置き換えた表に切り替えた。旧 tables/site_coloc_2x2_C4.tsv は撤回済みの
+# per-replicate depth >= 10 規則で作られており、同ファイルは記録として残す。
+t = pd.read_csv("/Users/okaban/bioinfo/rna-seq/15_paper_figures/scripts/recompute_261015/site_coloc_2x2_canonical_261015.tsv", sep="\t").set_index("scope")
+# 2026-10-15: 補足図の番号が振り直された。このスクリプトが描くのは現行の
+# **補足図 1**（共修飾ペアのモチーフ特異性）であり、現行の補足図 4（コア占有率、
+# supp_261014/suppfigure4_core_share.py が生成）ではない。旧番号のまま実行すると
+# 別の図を破壊するため出力先を修正した。
+FIG = "/Users/okaban/obsidian/Research/rna-seq/Writing/fig_images/SuppFigure1.png"
 
 rng = np.random.default_rng(42); N = 10_000
 panels = []
@@ -40,7 +47,15 @@ for ax, (label, null, obs, exp) in zip(axes, panels):
     ax.tick_params(labelsize=7, direction="in", which="both")
     ax.margins(0.04)
 axes[0].set_ylabel("Permutation replicates", fontsize=8)
-fig.suptitle("No permutation replicate reaches 2 % of the observed count (null maxima 5 of 406; 4 of 214)", fontsize=9, y=1.02)
+# 表題は表から導出する。旧版は "5 of 406; 4 of 214" をハードコードしており、
+# 部位定義を変えたときに図の棒だけ動いて表題が取り残された。
+_pm, _t1 = t.loc["pooled"], t.loc["T1"]
+_worst = max(_pm.perm_null_max_in_comod / _pm.in_comod,
+             _t1.perm_null_max_in_comod / _t1.in_comod)
+fig.suptitle(
+    f"No permutation replicate reaches {_worst * 100:.0f} % of the observed count "
+    f"(null maxima {int(_pm.perm_null_max_in_comod)} of {int(_pm.in_comod)}; "
+    f"{int(_t1.perm_null_max_in_comod)} of {int(_t1.in_comod)})", fontsize=9, y=1.02)
 fig.tight_layout()
 fig.savefig(FIG, dpi=300, bbox_inches="tight")
 r = fig.canvas.get_renderer()

@@ -1,0 +1,13 @@
+feature	called_pct	notcalled_pct	odds_ratio	p	n_called
+promoter	13.52	18.18	0.704	1.06e-06	207
+in_cds	83.47	87.97	0.691	2.44e-07	1278
+intergenic	11.37	6.5	1.845	1.68e-12	174
+rna_gene	0.0	0.58	0.0	0.000278	0
+mge	0.78	1.47	0.531	0.0247	12
+homopolymer	3.27	0.86	3.913	4.35e-15	50
+repeat	3.14	2.04	1.552	0.00483	48
+gc50 (median)	0.7843	0.7059		0	1531
+depth (median)	122.0	131.0		0.000821	1531
+Nvalid (median)	88.0	118.0		4.92e-93	1531
+kmer21_occ (median)	1.0	1.0		0.00211	1531
+d_tss (median)	1349.0	1123.0		1.61e-09	1531

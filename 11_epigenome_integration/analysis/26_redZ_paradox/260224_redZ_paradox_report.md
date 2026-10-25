@@ -1,1 +1,0 @@
-/Users/okaban/bioinfo/rna-seq/reports/260224_redZ_paradox_report.md

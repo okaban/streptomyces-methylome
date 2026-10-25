@@ -1,0 +1,16 @@
+timepoint	tier	definition	n	called	occupancy_pct
+T1	1	AAGCCCG (all)	1330	323	24.29
+T1	2	HAAGCCCG	561	259	46.17
+T1	3	+ -3=G	246	158	64.23
+T1	4	+ -5=C & -3=G	85	67	78.82
+T1	ref	(ref) same-instance 4mC C5	1330	1023	76.92
+T2	1	AAGCCCG (all)	1332	350	26.28
+T2	2	HAAGCCCG	563	270	47.96
+T2	3	+ -3=G	248	168	67.74
+T2	4	+ -5=C & -3=G	85	68	80.0
+T2	ref	(ref) same-instance 4mC C5	1332	977	73.35
+T3	1	AAGCCCG (all)	1331	335	25.17
+T3	2	HAAGCCCG	562	254	45.2
+T3	3	+ -3=G	247	162	65.59
+T3	4	+ -5=C & -3=G	85	66	77.65
+T3	ref	(ref) same-instance 4mC C5	1331	973	73.1

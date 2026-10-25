@@ -1,4 +1,0 @@
-comparison	DMG_6mA_hyper	DMG_6mA_hypo	DMG_4mC_hyper	DMG_4mC_hypo	DMG_combined	DEG_up	DEG_down	KEGG_DMG_sig	KEGG_DEG_sig	GO_DMG_sig	GO_DEG_sig	COG_DMG_sig	COG_DEG_sig
-T2vsT1	159	144	188	96	566	2003	1845	0	1	0	4	0	3
-T3vsT1	208	153	79	211	619	2766	2075	0	3	1	3	0	5
-T3vsT2	198	148	56	275	648	2014	1493	0	2	1	6	0	7

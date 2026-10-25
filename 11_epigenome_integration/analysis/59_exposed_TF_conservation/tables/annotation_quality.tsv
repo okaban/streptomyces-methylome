@@ -1,5 +1,0 @@
-feature	exposed_count	exposed_total	exposed_pct	shielded_count	shielded_total	shielded_pct	odds_ratio	p_value	test
-Has gene name	0	11	0.0	0	353	0.0		1.0	Fisher exact
-Has SCO locus tag	0	11	0.0	0	353	0.0		1.0	Fisher exact
-Named product (non-hypothetical)	11	11	100.0	353	353	100.0		1.0	Fisher exact
-Has protein_id (WP_)	11	11	100.0	353	353	100.0		1.0	Fisher exact

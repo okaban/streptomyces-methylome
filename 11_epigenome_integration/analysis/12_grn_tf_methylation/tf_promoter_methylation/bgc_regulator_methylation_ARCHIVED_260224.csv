@@ -1,8 +1,0 @@
-regulator,bgc,locus_tag,tier,T1_sites,T2_sites,T3_sites,methyl_status,log2FC_T2vsT1,corr_act,corr_red
-actII-ORF4,act,SC_RS27570,3,0.0,0.0,0.0,Unmethylated,-0.8299871201264029,0.9535598964902904,
-afsR,act,SC_RS24295,1,1.0,1.0,1.0,Stable methylation,-0.2613866005478055,-0.8251885195379717,
-afsS,act,SC_RS22980,1,1.0,1.0,0.0,Stable methylation,-0.0261795784401953,-0.8089210694650282,
-absA1,act,SC_RS02965,2,0.0,0.0,0.0,Unmethylated,2.900028857681269,0.5733551727138825,
-absA2,act,SC_RS02970,2,0.0,0.0,0.0,Unmethylated,6.294033238583641,0.6125643727459487,
-redD,red,SC_RS27225,3,0.0,0.0,0.0,Unmethylated,4.765825121668314,,
-redZ,red,SC_RS27300,3,2.0,2.0,0.0,Stable methylation,-2.2543700120671244,,

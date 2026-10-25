@@ -1,0 +1,16 @@
+window	position_set	n_genes	n_eligible	pct_eligible	pct_ineligible
+TSS +/- 100 bp	GCCGGC hexamer cytosine (offset 2, both strands)	1051	230	21.9	78.1
+TSS +/- 100 bp	TGGCCGGC 4mC position 5 (recognition sequence)	1051	20	1.9	98.1
+TSS +/- 100 bp	AAGCCCG 6mA positions A1/A2 (offsets 0,1)	1051	33	3.1	96.9
+TSS +/- 100 bp	AAGCCCG 4mC position 5 (offset 4)	1051	33	3.1	96.9
+TSS +/- 100 bp	Either recognition sequence (TGGCCGGC 4mC or any AAGCCCG position)	1051	52	4.9	95.1
+TSS upstream 293 bp (-293..-1)	GCCGGC hexamer cytosine (offset 2, both strands)	1051	322	30.6	69.4
+TSS upstream 293 bp (-293..-1)	TGGCCGGC 4mC position 5 (recognition sequence)	1051	44	4.2	95.8
+TSS upstream 293 bp (-293..-1)	AAGCCCG 6mA positions A1/A2 (offsets 0,1)	1051	44	4.2	95.8
+TSS upstream 293 bp (-293..-1)	AAGCCCG 4mC position 5 (offset 4)	1051	44	4.2	95.8
+TSS upstream 293 bp (-293..-1)	Either recognition sequence (TGGCCGGC 4mC or any AAGCCCG position)	1051	85	8.1	91.9
+TSS +/- 2 kb	GCCGGC hexamer cytosine (offset 2, both strands)	1051	1051	100.0	0.0
+TSS +/- 2 kb	TGGCCGGC 4mC position 5 (recognition sequence)	1051	615	58.5	41.5
+TSS +/- 2 kb	AAGCCCG 6mA positions A1/A2 (offsets 0,1)	1051	449	42.7	57.3
+TSS +/- 2 kb	AAGCCCG 4mC position 5 (offset 4)	1051	449	42.7	57.3
+TSS +/- 2 kb	Either recognition sequence (TGGCCGGC 4mC or any AAGCCCG position)	1051	806	76.7	23.3

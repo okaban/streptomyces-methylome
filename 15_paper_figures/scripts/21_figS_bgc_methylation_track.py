@@ -1,3 +1,11 @@
+# SUPERSEDED 2026-10-15: 旧世代の図生成スクリプト。現行の出荷図は
+# panels_261013/ と supp_261014/ が産出し、figure_manifest.tsv に登録してある。
+# 本スクリプトは撤回済みの入力（Exposed/Shielded 区分、退避版テーブル）を参照するため
+# 実行を止めてある。再利用する場合は現行サイト集合で再計算し、産出元として登録してから解除すること。
+raise SystemExit(
+    "SUPERSEDED 2026-10-15: 21_figS_bgc_methylation_track.py は旧世代のため実行を止めています。"
+)
+
 #!/usr/bin/env python3
 """
 FigS_BGC_Track: BGC Cluster Methylation Coverage Tracks

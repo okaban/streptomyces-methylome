@@ -1,9 +1,0 @@
-test	n_pos	n_neg	AUC	note
-coordinated_label_pooled	57	994	0.9079	-
-coordinated_label_10foldCV	57	994	0.9081	+/-0.037
-permutation_null_mean	57	994	0.5001	95%[0.423,0.581]
-expression_only_label(|LFC|>=1)	656	395	0.4825	distance predicts expression-switch?
-
-# permutation p-value (AUC>=observed 0.908): 0.0004998
-# median nearest distance (bp): Exposed57=120, DEG-not-Exposed=833, non-DEG=617
-# INTERPRETATION: distance strongly predicts the methylation-coordinated label (0.908) but NOT the expression-only label (0.482); expression-defined switch genes are NOT TSS-proximal-methylated. The 0.908 is substantially driven by selection-on-methylation (partial circularity).

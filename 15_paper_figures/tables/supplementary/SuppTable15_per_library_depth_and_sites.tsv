@@ -1,0 +1,10 @@
+library	timepoint	median_true_depth_x	TGGCCGGC_4mC_sites_called	top_up_flow_cells
+1-1	T1	37	1182	no
+1-2	T1	35	1117	no
+1-3	T1	53	1644	no
+2-1	T2	47	1815	no
+2-3	T2	43	1759	no
+2-4	T2	41	1693	no
+3-2	T3	25	463	yes (62.8% of reads from the 2026-02 flow cells)
+3-3	T3	38	1549	no
+3-4	T3	36	1417	yes (16.7%)

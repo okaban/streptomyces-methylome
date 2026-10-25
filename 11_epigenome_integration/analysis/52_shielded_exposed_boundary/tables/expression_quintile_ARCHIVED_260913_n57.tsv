@@ -1,6 +1,0 @@
-quintile	n_genes	n_exposed	frac_exposed	mean_baseMean	median_baseMean	mean_nearest_methyl_distance	median_nearest_methyl_distance	mean_n_methyl_sites_2kb
-1	204	12	0.0588	33.0	34.1	899.0	716.5	2.59
-2	203	16	0.0788	71.8	71.5	871.0	636.0	2.62
-3	203	8	0.0394	127.5	124.3	886.5	638.0	2.51
-4	203	9	0.0443	266.0	241.2	989.1	674.0	2.5
-5	204	12	0.0588	1737.7	994.9	1068.3	846.0	2.47

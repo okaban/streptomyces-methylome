@@ -1,1 +1,0 @@
-/Users/okaban/bioinfo/rna-seq/reports/260226_H28_exposed_regulators_characteristics_report.md

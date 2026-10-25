@@ -1,6 +1,0 @@
-feature	direction	AUC	optimal_threshold	n_exposed	n_shielded
-nearest_methyl_distance	higher_exposed	0.9225	52.0	15	434
-n_methyl_sites_2kb	higher_exposed	0.692	2.0	15	434
-gene_length	higher_exposed	0.5806	900.0	15	434
-baseMean	higher_exposed	0.5607	473.0	15	434
-log2_baseMean_p1	higher_exposed	0.5607	8.9	15	434

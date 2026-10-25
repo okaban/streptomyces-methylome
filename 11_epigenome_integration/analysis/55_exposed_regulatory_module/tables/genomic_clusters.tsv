@@ -1,4 +1,0 @@
-cluster_id	n_members	span_bp	region	locus_tags	old_locus_tags	tf_families	start	end	member_midpoints
-6	2	19611.0	left_arm	SC_RS06310, SC_RS06430	SCO0877, SCO0897	HTH (other), Other regulatory	922247	943408	923580; 943191
-35	2	1373.5	core	SC_RS29350, SC_RS29355	SCO5433, SCO5434	Other regulatory, Response regulator	5905174	5908036	5906316; 5907690
-43	2	17628.5	right_arm	SC_RS35525, SC_RS35610	SCO6668, SCO6685	Sensor kinase, Response regulator	7408463	7427004	7409072; 7426700

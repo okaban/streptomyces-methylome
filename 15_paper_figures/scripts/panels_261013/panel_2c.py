@@ -1,3 +1,8 @@
+
+from pathlib import Path
+
+# [FIG18] タイルを再生成できるよう、artifact マーカーをローカルの入力表に解決しておく。
+_DATA_DIR = Path(__file__).resolve().parents[2] / 'data_261013'
 #!/usr/bin/env python3
 """Figure 2, panel c — site counts passing the calling rule, by series and timepoint.
 
@@ -27,8 +32,8 @@ import pandas as pd
 sys.path.insert(0, '/Users/okaban/bioinfo/rna-seq/15_paper_figures/scripts')
 U = importlib.import_module('00_shared_utils')
 
-CSV = "{{artifact:22031ca8-89ff-4199-9bcd-c9cf0fb149b1}}"
-OUT = "panel_c.png"
+CSV = str(_DATA_DIR / "v22031ca8_F2c_counts.csv")
+OUT = str(Path(__file__).with_suffix('.png'))
 PX = (677, 661)          # tile size handed down by the composer
 DPI = 300
 
@@ -43,7 +48,10 @@ def shade(col, f):
 df = pd.read_csv(CSV)
 counts = df.set_index('series')[['T1', 'T2', 'T3']].values
 
-LBL = ["TGGCCGGC 4mC", "AAGCCCG 4mC", "HAAGCCCG 6mA", "5mC, any motif position"]
+# 表示ラベル。入力表の series 列は set_index 後に位置で読まれるため、表の行名と
+# ここの表示名は独立（行の順序だけが意味を持つ）。
+# 2026-10-15: 6mA 系列を HAAGCCCG 565 分母から AAGCCCG 1,334 分母（位置 1）に変更。
+LBL = ["TGGCCGGC 4mC", "AAGCCCG 4mC", "AAGCCCG 6mA", "5mC, any motif position"]
 COLS = [U.COL_4mC, U.COL_4mC, U.COL_6mA, U.COL_GRAY]
 F = [0.45, 0.72, 1.0]    # T1 -> T3 tint of the series' chemistry colour
 XMAX = 2300
@@ -88,7 +96,7 @@ ax.set_yticks([])
 ax.spines['left'].set_visible(False)
 ax.set_xticks([0, 500, 1000, 1500, 2000])
 ax.set_xlabel("Sites (depth \u2265 30, level \u2265 50%)", labelpad=2)
-ax.set_title("No 5mC site passes the rule\nthat calls 1,886 4mC sites",
+ax.set_title("",
              loc='left', x=0.153, pad=4)   # x offset keeps the composer's letter corner clear
 
 # ---------------------------------------------------------------- annotations

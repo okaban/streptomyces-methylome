@@ -1,6 +1,0 @@
-GO_term	Gene_Count	Fold_Enrichment	Function
-GO:0008643	58	2.33	carbohydrate transport
-GO:0055085	153	1.44	transmembrane transport
-GO:0042626	122	1.50	ATPase-coupled transport
-GO:0016491	129	1.47	oxidoreductase activity
-GO:0004553	32	1.97	hydrolase activity (glycosyl)

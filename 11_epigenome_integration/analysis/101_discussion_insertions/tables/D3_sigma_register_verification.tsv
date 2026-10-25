@@ -1,9 +1,0 @@
-quantity	value	source
-genes_with_assignable_-10_box	1948	18_tss_analyses/D1_sigma_motifs.csv (motif_type==-10_box, unique gene_id)
-genes_with_4mC_inside_-10_box	0	18_tss_analyses/D1_sigma_methylation_overlap.csv (mod_type=4mC & overlap_type=within)
-genes_with_6mA_inside_-10_box	6	same file, overlap_type=within (T1 3, T2 5, T3 5; union 6)
-pct_genes_with_any_mod_inside_-10_box	0.308	6/1948
-genes_with_4mC_flanking_-10_box	1	SC_RS22810 only, methyl_rel_pos -5 vs box -13
-Exposed62_with_assignable_-10_box	25	52_shielded_exposed_boundary/tables/SuppTable1_Exposed62_identity.tsv x D1_sigma_motifs.csv
-Exposed62_with_any_-10_overlap	0	intersection empty
-sites_source_of_D1	 01_integration/high_confidence_sites_weighted.csv	scripts/tss_analyses.py line 31 METHYL_SITES

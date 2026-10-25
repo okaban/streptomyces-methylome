@@ -1,7 +1,0 @@
-motif	mod	sites	m145_oe	rebase	rebase_novel	candidate_mtase	status	rebase_conservation_pct	rebase_ci_low	rebase_ci_high	rebase_n_match	rebase_n_total
-CCGG/GGCCGG/TGGCCGGC	4mC	2034 (75.9%)	1.03	18/82 (22%)	No	SC_RS19770/SC_RS36410	ESTABLISHED					
-AAGCCCG	4mC+6mA	973+360 (DUAL)	0.65 (avoidance)	0/82 (0%)	YES	SC_RS17645	*** NOVEL DUAL ***	0.0	0.0	4.47521947400794	0.0	82.0
-CCGKCA	6mA	153 (4.8%)	1.306	Not in REBASE	YES	SC_RS28835/SC_RS35335 (BREX-2)	*** NEW CANDIDATE ***					
-GATC	6mA	37 (1.2%)	1.99 (maintained)	11/82 (13.4%)	No	Unknown	ESTABLISHED	13.414634146341465	7.658612768827224	22.445206358495668	11.0	82.0
-CGGCAACC	6mA	57 (1.8%)	1.213	Not in REBASE	YES	Unknown orphan	NEW CANDIDATE					
-GAACCGG	6mA	61 (1.9%)	1.614	Not in REBASE	YES	Unknown orphan	NEW CANDIDATE					

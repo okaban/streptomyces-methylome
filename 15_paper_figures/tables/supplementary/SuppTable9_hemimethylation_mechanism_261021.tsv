@@ -1,0 +1,5 @@
+test	stratum	n	plus	frac_plus	p_two_sided	odds_ratio
+plus-strand share by replichore	left of oriC	761	391	0.5138	0.468	
+plus-strand share by replichore	right of oriC	753	419	0.5564	0.00218	
+replichore x dominant strand	left vs right of oriC	1514	810	0.535	0.0994	0.842
+sense vs antisense (regulatory genes, |d|<=5 kb)	nearest regulatory gene	999	515	0.5155	0.343	

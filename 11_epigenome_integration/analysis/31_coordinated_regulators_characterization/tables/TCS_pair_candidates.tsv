@@ -1,8 +1,0 @@
-sensor_kinase	sk_old_locus	sk_start	sk_end	sk_strand	sk_coordination_T2	sk_coordination_T3	response_regulator	rr_old_locus	rr_start	rr_end	rr_strand	rr_coordination_T2	rr_coordination_T3	distance_bp	both_in_62
-SC_RS35525	SCO6668	7408463	7409680	-	concordant_derepression	concordant_derepression	SC_RS35520	SCO6667	7407798	7408466	-	no_methyl_change	no_methyl_change	3	False
-SC_RS37675	SCO7089	7876048	7877241	-	methyl_change_no_expr_change	discordant_gain_up	SC_RS37670	SCO7088	7875374	7876051	-	no_methyl_change	no_methyl_change	3	False
-SC_RS29360	SCO5435	5908033	5909691	-	no_methyl_change	no_methyl_change	SC_RS29355	SCO5434	5907344	5908036	-	ambiguous	concordant_repression	3	False
-SC_RS40740	SCO7711	8546786	8548315	+	discordant_gain_up	ambiguous	SC_RS40745	SCO7712	8548323	8549003	+	no_methyl_change	no_methyl_change	8	False
-SC_RS40440	SCO7649	8476050	8477246	-	no_methyl_change	no_methyl_change	SC_RS40435	SCO7648	8475216	8475908	-	ambiguous	concordant_derepression	142	False
-SC_RS31365	SCO5824	6373869	6375023	+	methyl_change_no_expr_change	methyl_change_no_expr_change	SC_RS31385	SCO5828	6377983	6378663	-	concordant_derepression	concordant_derepression	2960	False
-SC_RS34060	SCO6369	7030354	7031664	+	ambiguous	discordant_gain_up	SC_RS34035	SCO6364	7024745	7025473	-	no_methyl_change	no_methyl_change	4881	False

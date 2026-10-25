@@ -1,1 +1,0 @@
-/Users/okaban/bioinfo/rna-seq/reports/260226_H27_coordinated_regulators_protection_report.md

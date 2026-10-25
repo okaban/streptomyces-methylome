@@ -1,0 +1,13 @@
+timepoint	five_prime_base	motif_instances	sites_6mA_position1	occupancy_6mA_pct	sites_4mC_position5	occupancy_4mC_pct
+T1	A	73	25	34.25	52	71.23
+T1	C	476	227	47.69	401	84.24
+T1	G	769	64	8.32	557	72.43
+T1	T	16	7	43.75	13	81.25
+T2	A	73	27	36.99	56	76.71
+T2	C	476	235	49.37	382	80.25
+T2	G	769	80	10.4	527	68.53
+T2	T	16	8	50.0	12	75.0
+T3	A	73	26	35.62	53	72.6
+T3	C	476	219	46.01	385	80.88
+T3	G	769	81	10.53	523	68.01
+T3	T	16	9	56.25	12	75.0

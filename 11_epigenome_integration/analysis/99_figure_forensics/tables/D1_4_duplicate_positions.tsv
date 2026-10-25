@@ -1,7 +1,0 @@
-position	motif	category	gene_id	dist_from_tss	mod_type	strand
-3384808	GCCGGC	CDS_internal	SC_RS17575	2478.0	6mA	+
-3384808	GCCGGC	CDS_internal	SC_RS17575	2478.0	4mC	+
-3488743	GCCGGC	CDS_internal	SC_RS18035	2406.0	6mA	+
-3488743	GCCGGC	CDS_internal	SC_RS18035	2406.0	4mC	+
-4337264	GCCGGC	CDS_internal	SC_RS21850	433.0	6mA	+
-4337264	GCCGGC	CDS_internal	SC_RS21850	433.0	4mC	+

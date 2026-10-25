@@ -1,0 +1,5 @@
+motif,set,n_sense,n_anti,med_sense,med_anti,ratio,p,set_en
+TGGCCGGC,修飾部位のみ,942,388,10.62,7.23,1.47,0.2294982289358964,modified sites only
+TGGCCGGC,全可測位置,1033,411,9.66,7.68,1.26,0.6683717611296396,all measurable positions
+AAGCCCG,修飾部位のみ,481,307,15.24,8.89,1.71,0.0233673931115008,modified sites only
+AAGCCCG,全可測位置,584,390,15.83,8.69,1.82,0.0024220148708711,all measurable positions

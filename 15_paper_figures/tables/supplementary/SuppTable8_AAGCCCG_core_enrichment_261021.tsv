@@ -1,0 +1,11 @@
+scope	timepoint	mark	n	n_core	core_fraction	fold_vs_null	p_two_sided
+motif-conditioned null	-	AAGCCCG instances	1334	930	0.6972	-	-
+observed	T1	6mA	366	258	0.7049	1.011	0.7618
+observed	T1	4mC	698	622	0.8911	1.278	0.0001
+observed	T1	both	194	170	0.8763	1.257	0.0001
+observed	T2	6mA	387	276	0.7132	1.023	0.4482
+observed	T2	4mC	851	598	0.7027	1.008	0.5762
+observed	T2	both	248	175	0.7056	1.012	0.7936
+observed	T3	6mA	375	264	0.704	1.01	0.7724
+observed	T3	4mC	574	431	0.7509	1.077	0.0004
+observed	T3	both	171	129	0.7544	1.082	0.0912

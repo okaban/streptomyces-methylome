@@ -1,5 +1,0 @@
-definition	n	pct_of_1530
-methylated >=50% in >=3 of 8 pileups (eligible)	1530	100.0
-same methylated-strand label in every library (literal legend wording)	1526	99.74
-never methylated on opposite strand in any library	1505	98.37
-higher-frequency strand identical in every library (reproduces 98.95%)	1514	98.95

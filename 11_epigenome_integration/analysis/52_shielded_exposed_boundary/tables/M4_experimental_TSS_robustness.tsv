@@ -1,8 +1,0 @@
-tss_set	n_exposed	n_shielded	AUC	AUC_95CI
-predicted_TSS	57	994	0.9079	[0.886, 0.929]
-experimental_TSS	11	353	0.9233	[0.878, 0.960]
-
-# canonical Exposed (predicted TSS): 57
-# canonical Exposed covered by experimental-TSS set (364 genes): 9
-# of covered, retained Exposed under experimental TSS: 9/9
-# experimental-TSS-only Exposed (not in canonical 57): ['SC_RS37910', 'SC_RS39260']

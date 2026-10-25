@@ -1,0 +1,52 @@
+enzyme	organism	motif	mods	strand
+BseRI	Bacillus species R	GAGGAG	m4C+m6A	opposite-strand
+M.BseRI	Bacillus species R	GAGGAG	m4C+m6A	opposite-strand
+M.BssSI	Bacillus stearothermophilus 27S	CACGAG	m4C+m6A	opposite-strand
+M1.Ecl65II	Enterobacter cloacae AR_0065	CTCTTC	m4C+m6A	opposite-strand
+M2.Ecl65II	Enterobacter cloacae AR_0065	CTCTTC	m4C+m6A	opposite-strand
+M1.EclF77I	Enterobacter cloacae complex bacterium FDAARGOS_77	CTCTTC	m4C+m6A	opposite-strand
+M2.EclF77I	Enterobacter cloacae complex bacterium FDAARGOS_77	CTCTTC	m4C+m6A	opposite-strand
+M1.Hmu12714I	Helicobacter muridarum NCTC12714	GAAGA	m4C+m6A	opposite-strand
+M2.Hmu12714I	Helicobacter muridarum NCTC12714	GAAGA	m4C+m6A	opposite-strand
+M1.Hpy12823VI	Helicobacter pylori NCTC12823	GAAGA	m4C+m6A	opposite-strand
+M2.Hpy12823VI	Helicobacter pylori NCTC12823	GAAGA	m4C+m6A	opposite-strand
+M1.HpyAs006V	Helicobacter pylori ASHA-006	GAAGA	m4C+m6A	opposite-strand
+M2.HpyAs006V	Helicobacter pylori ASHA-006	GAAGA	m4C+m6A	opposite-strand
+M1.HpyG272II	Helicobacter pylori G272	GAAGA	m4C+m6A	opposite-strand
+M2.HpyG272II	Helicobacter pylori G272	GAAGA	m4C+m6A	opposite-strand
+M1.HpyH1VI	Helicobacter pylori BCS100H1	GAAGA	m4C+m6A	opposite-strand
+M2.HpyH1VI	Helicobacter pylori BCS100H1	GAAGA	m4C+m6A	opposite-strand
+M1.HpyLIM2VI	Helicobacter pylori LIM-002	GAAGA	m4C+m6A	opposite-strand
+M2.HpyLIM2VI	Helicobacter pylori LIM-002	GAAGA	m4C+m6A	opposite-strand
+M1.HpyLIM6IV	Helicobacter pylori LIM-006	GAAGA	m4C+m6A	opposite-strand
+M2.HpyLIM6IV	Helicobacter pylori LIM-006	GAAGA	m4C+m6A	opposite-strand
+M1.HpyLIM7V	Helicobacter pylori LIM-007	GAAGA	m4C+m6A	opposite-strand
+M2.HpyLIM7V	Helicobacter pylori LIM-007	GAAGA	m4C+m6A	opposite-strand
+M1.HpyMT5125VIII	Helicobacter pylori MT5125	GAAGA	m4C+m6A	opposite-strand
+M2.HpyMT5125VIII	Helicobacter pylori MT5125	GAAGA	m4C+m6A	opposite-strand
+M1.HpyPU003VII	Helicobacter pylori PUNO-003	GAAGA	m4C+m6A	opposite-strand
+M2.HpyPU003VII	Helicobacter pylori PUNO-003	GAAGA	m4C+m6A	opposite-strand
+M1.HpyPU006VII	Helicobacter pylori PUNO-006	GAAGA	m4C+m6A	opposite-strand
+M2.HpyPU006VII	Helicobacter pylori PUNO-006	GAAGA	m4C+m6A	opposite-strand
+M1.HpyPU009VII	Helicobacter pylori PUNO-009	GAAGA	m4C+m6A	opposite-strand
+M2.HpyPU009VII	Helicobacter pylori PUNO-009	GAAGA	m4C+m6A	opposite-strand
+M1.HpySH002VI	Helicobacter pylori SHIM-002	GAAGA	m4C+m6A	opposite-strand
+M2.HpySH002VI	Helicobacter pylori SHIM-002	GAAGA	m4C+m6A	opposite-strand
+M1.HpySH010VI	Helicobacter pylori SHIM-010	GAAGA	m4C+m6A	opposite-strand
+M2.HpySH010VI	Helicobacter pylori SHIM-010	GAAGA	m4C+m6A	opposite-strand
+M2.Msp273VII	Methanospirillum species J.3.6.1-F.2.7.3	GCAGNNNNNGGC	m4C+m6A	opposite-strand
+M2.Pae95I	Pseudomonas aeruginosa AR_0095	CCCNNNNNGTAG	m4C+m6A	same-strand
+M1.PaqY4I	Pseudemcibacter aquimaris Y4	TACNNNNNGGG	m4C+m6A	opposite-strand
+M2.PaqY4I	Pseudemcibacter aquimaris Y4	TACNNNNNGGG	m4C+m6A	opposite-strand
+PcaZM1I	Pectobacterium carotovorum ZM1	GAGGAG	m4C+m6A	opposite-strand
+M1.PcaZM1I	Pectobacterium carotovorum ZM1	GAGGAG	m4C+m6A	opposite-strand
+M2.PcaZM1I	Pectobacterium carotovorum ZM1	GAGGAG	m4C+m6A	opposite-strand
+M1.SapI	Saccharopolyspora species	GCTCTTC	m4C+m6A	opposite-strand
+M2.SapI	Saccharopolyspora species	GCTCTTC	m4C+m6A	opposite-strand
+M1.Sgr13350III	Streptomyces griseus subsp. griseus NBRC 13350	GCTCTTC	m4C+m6A	opposite-strand
+M2.Sgr13350III	Streptomyces griseus subsp. griseus NBRC 13350	GCTCTTC	m4C+m6A	opposite-strand
+M1.Ssa355II	Staphylococcus saprophyticus FDAARGOS_355	CAAGG	m4C+m6A	opposite-strand
+M2.Ssa355II	Staphylococcus saprophyticus FDAARGOS_355	CAAGG	m4C+m6A	opposite-strand
+M1.Ssa13634I	Staphylococcus saprophyticus subsp. saprophyticus NCTC13634	CAAGG	m4C+m6A	opposite-strand
+M2.Ssa13634I	Staphylococcus saprophyticus subsp. saprophyticus NCTC13634	CAAGG	m4C+m6A	opposite-strand
+M.TdeII	Treponema denticola ATCC 35405	CTCTTC	m4C+m6A	opposite-strand

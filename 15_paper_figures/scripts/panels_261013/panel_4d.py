@@ -4,6 +4,10 @@ Standalone generator for the panel-d tile of Figure 4.
 Environment: epi-rna.  Output: panel_d.png, exactly 1039 x 590 px, transparent.
 """
 import sys, importlib
+from pathlib import Path
+
+# [FIG18] タイルを再生成できるよう、artifact マーカーをローカルの入力表に解決しておく。
+_DATA_DIR = Path(__file__).resolve().parents[2] / 'data_261013'
 
 # project style module (name starts with a digit -> import by string)
 sys.path.insert(0, '/Users/okaban/bioinfo/rna-seq/15_paper_figures/scripts')
@@ -16,8 +20,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # stage, n  (129, 128, 21, 12, 5, 3) — resolved from the artifact marker
-DATA = "{{artifact:7295f465-86eb-4c1c-9e6d-2874fb07097d}}"
-OUT = 'panel_d.png'
+DATA = str(_DATA_DIR / "v7295f465_F4d_funnel.csv")
+OUT = str(Path(__file__).with_name('panel_F4c.png'))
 
 df = pd.read_csv(DATA)
 stages = df['stage'].tolist()
@@ -57,16 +61,20 @@ ax.set_yticks([])
 
 # narrative block — who survived, and what did not (empty lower-right quadrant)
 AX = 82.0
-ax.text(AX, 3.95, '6mA candidates: SC_RS17645 (679 aa)', ha='left', va='center',
+ax.text(AX, 3.78, 'Three 6mA candidates survive:', ha='left', va='center',
         fontsize=U.FONT['annot'], color=U.COL_6mA)
-ax.text(AX, 4.44, 'plus two BREX-2 PglX proteins', ha='left', va='center',
+ax.text(AX, 4.20, 'one 679 aa protein and two BREX-2 PglX', ha='left', va='center',
         fontsize=U.FONT['annot'], color=U.COL_DARK)
-ax.text(AX, 4.93, 'No 4mC candidate remains', ha='left', va='center',
+ax.text(AX, 4.62, 'The two DPPY proteins the floor removes', ha='left',
+        va='center', fontsize=U.FONT['annot'], color=U.COL_GRAY)
+ax.text(AX, 5.04, 'are below the all-gene median TPM', ha='left',
+        va='center', fontsize=U.FONT['annot'], color=U.COL_GRAY)
+ax.text(AX, 5.46, 'No 4mC candidate remains', ha='left', va='center',
         fontsize=U.FONT['annot'], color=U.COL_GRAY)
 
 # title starts at x=0.122 so the composer's panel letter keeps a clear 10x6 mm
-fig.text(0.122, 0.955, 'Five filters reduce 129 MTases to three 6mA candidates',
-         ha='left', va='top', fontsize=U.FONT['panel_title'], color=U.COL_DARK)
+fig.text(0.122, 0.955, '',
+ha='left', va='top', fontsize=U.FONT['panel_title'], color=U.COL_DARK)
 
 U.assert_no_text_collisions(fig, 'Fig4 panel d')
 fig.savefig(OUT, dpi=300, transparent=True, bbox_inches=None, pad_inches=0)

@@ -1,3 +1,8 @@
+
+from pathlib import Path
+
+# [FIG18] タイルを再生成できるよう、artifact マーカーをローカルの入力表に解決しておく。
+_DATA_DIR = Path(__file__).resolve().parents[2] / 'data_261013'
 #!/usr/bin/env python
 """Figure 1, panel c — replication gradient along the S. coelicolor M145 chromosome.
 
@@ -32,7 +37,7 @@ mpl.rcParams.update({'mathtext.fontset': 'custom', 'mathtext.rm': 'Arial',
                      'mathtext.it': 'Arial:italic', 'mathtext.default': 'regular'})
 
 # --- data ---------------------------------------------------------------------
-CSV = "{{artifact:8e9a3013-8732-40bd-9eb0-ade6bf75e363}}"
+CSV = str(_DATA_DIR / "v8e9a3013_REPL_depth_profile_200kb_261013.csv")
 df = pd.read_csv(CSV)
 
 piv = df.pivot(index='window_start_bp', columns='timepoint', values='mean_true_depth')
@@ -43,7 +48,24 @@ x_mb = (piv.index.values + WIN / 2) / 1e6                 # window midpoints, Mb
 
 # --- constants ----------------------------------------------------------------
 ORI = 4.27                                                # oriC, Mb
-RATIOS = {'T1': '4.01', 'T2': '1.07', 'T3': '1.35'}       # oriC window / shallower terminal window
+# ori/ter は描画時に CSV から算出する（ハードコード禁止・2026-10-15 正準統一）
+def _ori_ter(csv_path, oric_bp=4_269_000):
+    import csv as _csv
+    from collections import defaultdict
+    d = defaultdict(dict)
+    with open(csv_path) as fh:
+        for r in _csv.DictReader(fh):
+            d[r['timepoint']][int(r['window_start_bp'])] = float(r['mean_true_depth'])
+    out = {}
+    for tp, w in d.items():
+        W = int(next(iter(w))) or 200_000
+        sizes = sorted(w)
+        W = sizes[1] - sizes[0] if len(sizes) > 1 else 200_000
+        ow = (oric_bp // W) * W
+        ter = min(w[min(w)], w[max(w)])
+        out[tp] = f'{w[ow] / ter:.2f}'
+    return out
+RATIOS = _ori_ter(CSV)       # oriC window / shallower terminal window
 TPS = ['T1', 'T2', 'T3']
 LW = {'T1': 2.0, 'T2': 1.1, 'T3': 1.1}                    # focal series dominates by weight, not hue
 XL, XR = -0.20, 8.95
@@ -88,11 +110,6 @@ for i, tp in enumerate(TPS):
 
 ax.text(ORI + 0.10, 1.22, 'oriC', ha='left', va='center', fontsize=6.5, color=U.COL_DARK)
 
-TITLE = ('T1 carries a steep replication gradient peaking at oriC; '
-         'T2 and T3 are nearly flat')
-# placed right of the 118 x 71 px top-left area the composer keeps for the panel letter
-fig.text(148 / W_PX, 1 - 19 / H_PX, TITLE, ha='left', va='center',
-         fontsize=8, color=U.COL_DARK)
 
 # pin the axis labels inside the canvas without shrinking the data box below 75 %
 ax.xaxis.set_label_coords(0.5, (36 - 80) / (513.135 - 80))
@@ -101,6 +118,6 @@ ax.yaxis.set_label_coords((39.4 - 120.1) / 1999.6, 0.5)
 # --- verify, then save --------------------------------------------------------
 fig.canvas.draw()
 U.assert_no_text_collisions(fig, 'Fig1c')
-OUT = 'panel_c.png'
+OUT = str(Path(__file__).with_suffix('.png'))
 fig.savefig(OUT, dpi=300, transparent=True, bbox_inches=None, pad_inches=0)
 assert Image.open(OUT).size == (W_PX, H_PX), Image.open(OUT).size

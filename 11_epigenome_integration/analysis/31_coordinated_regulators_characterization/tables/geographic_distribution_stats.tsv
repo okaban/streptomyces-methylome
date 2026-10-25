@@ -1,4 +1,0 @@
-group	n_arm	n_core	n_total	pct_arm	comparison
-62 Coordinated	32	30	62	51.61290322580645	vs genome: OR=1.322, p=1.66e-01
-1,055 All regulators	475	580	1055	45.023696682464454	vs genome: OR=1.015, p=4.25e-01
-Genome-wide	3696	4579	8275	44.664652567975835	reference

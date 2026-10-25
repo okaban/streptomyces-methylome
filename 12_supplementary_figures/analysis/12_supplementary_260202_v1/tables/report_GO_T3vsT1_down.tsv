@@ -1,7 +1,0 @@
-GO_term	Gene_Count	Fold_Enrichment	Function
-GO:0006412	60	3.10	translation
-GO:0003735	54	3.11	structural constituent of ribosome
-GO:0005840	30	2.85	ribosome
-GO:0003723	29	2.62	RNA binding
-GO:0009252	21	2.46	peptidoglycan biosynthesis
-GO:0006260	17	2.39	DNA replication

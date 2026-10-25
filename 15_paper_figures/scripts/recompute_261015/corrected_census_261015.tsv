@@ -1,0 +1,13 @@
+timepoint	mod	rule	n_sites	in_recognition_sequence	unassigned	unassigned_pct	unassigned_near_TSS	median_Nvalid	unassigned_near_TSS_pct
+T1	6mA	current	7297	416	6881	94.3	1277	2.0	18.56
+T1	6mA	corrected	1947	416	1531	78.63	207	90.0	13.52
+T1	4mC	current	2917	2909	8	0.27	3	41.0	37.5
+T1	4mC	corrected	2909	2909	0	0.0	0	41.0	
+T2	6mA	current	4883	450	4433	90.78	747	6.0	16.85
+T2	6mA	corrected	2150	450	1700	79.07	229	96.0	13.47
+T2	4mC	current	2869	2869	0	0.0	0	43.0	
+T2	4mC	corrected	2869	2869	0	0.0	0	43.0	
+T3	6mA	current	3818	453	3365	88.14	508	58.0	15.1
+T3	6mA	corrected	2308	453	1855	80.37	257	72.0	13.85
+T3	4mC	current	2840	2839	1	0.04	0	33.0	0.0
+T3	4mC	corrected	2840	2839	1	0.04	0	33.0	0.0

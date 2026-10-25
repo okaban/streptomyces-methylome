@@ -1,7 +1,0 @@
-test	description	statistic	p_value	effect_size	n1	n2	interpretation
-cross_bloc_exclusivity_rho0.8	Fisher exact: act_pos vs rep_pos overlap at rho>0.8	OR=0.0000	1.0	Jaccard=0.0000	28	131	exclusive
-cross_bloc_exclusivity_rho0.7	Fisher exact: act_pos vs rep_pos overlap at rho>0.7	OR=0.0000	1.0	Jaccard=0.0000	28	131	exclusive
-eigengene_cross_correlation	Spearman: rho_activation vs rho_repression genome-wide	rho=-0.9947	0.0	rho=-0.9947	7646	7646	anti-correlated
-regulon_size_bloc_comparison	MWU: regulon size activation vs repression (rho>0.8)	U=432	0.742544485372941	act_median=11, rep_median=14	35	26	not_different
-permutation_activation_bloc	Permutation (1000x): random 35 reg genes	real=28, perm_mean=13.1	0.12287712287712288	Z=0.57	35	1000	not_significant
-permutation_repression_bloc	Permutation (1000x): random 26 reg genes	real=131, perm_mean=11.3	0.002997002997002997	Z=5.42	26	1000	significant

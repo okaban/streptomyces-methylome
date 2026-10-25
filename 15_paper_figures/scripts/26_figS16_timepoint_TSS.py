@@ -1,3 +1,13 @@
+# SUPERSEDED 2026-10-15: このスクリプトは figure_manifest.tsv に SuppFigure16.png の産出元として
+# 記録されていないのに SuppFigure16.png を書き出す（現行の出荷図を上書きする）。
+# 同型の事故を 2026-10-15 に 1 件起こしている（候補図が既存の補足図を上書きし、
+# md5 照合のうえバックアップから復元した）。実行を止めてある。
+# 内容を再利用する場合は figure_manifest.tsv に産出元として登録してから解除すること。
+raise SystemExit(
+    "SUPERSEDED 2026-10-15: 26_figS16_timepoint_TSS.py は産出元として登録されていないため実行を止めています。"
+    "SuppFigure16.png の現行の産出元は figure_manifest.tsv を参照してください。"
+)
+
 """SUPERSEDED 2026-09-23 — DO NOT SHIP THIS FIGURE.
 
 This script plots the regulatory-gene protection ratio over time from

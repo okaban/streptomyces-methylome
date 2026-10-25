@@ -1,9 +1,0 @@
-gene_id	old_locus_tag	product	T2vsT1_log2FC	T2vsT1_padj	T2vsT1_DEG	T3vsT1_log2FC	T3vsT1_padj	T3vsT1_DEG	T3vsT2_log2FC	T3vsT2_padj	T3vsT2_DEG
-SC_RS04810	SCO0577	sugar phosphate isomerase/epimerase family protein	-0.17	0.7290907993775292	False	1.306	0.0023247766731882	True	1.505	0.0010802617810044	True
-SC_RS04820	SCO0579	ribose-5-phosphate isomerase	0.713	0.1671759107581868	False	1.678	0.0010356996837459	True	0.817	0.0824649701214108	False
-SC_RS11045	SCO1804	S-adenosylmethionine:tRNA ribosyltransferase-isomerase	0.028	0.9581349232109058	False	5.691	1.6443250309046332e-38	True	5.647	2.4622518485553873e-33	True
-SC_RS15835	SCO2750	sugar phosphate isomerase/epimerase family protein	-1.46	4.07674666278071e-06	True	-0.378	0.1662285326687762	False	1.059	0.0007967026875578	True
-SC_RS15855	SCO2754	sugar phosphate isomerase/epimerase family protein	-0.817	0.0003019448729561	False	-1.343	1.110443910644972e-09	True	-0.506	0.0317158339782324	False
-SC_RS18320	SCO3241	sugar phosphate isomerase/epimerase family protein	8.925	4.968727152308286e-52	True	8.661	3.982270618923395e-49	True	-0.25	0.2659540100448622	False
-SC_RS18855	SCO3347	sugar phosphate isomerase/epimerase family protein	1.52	1.8124551629615205e-18	True	-0.313	0.0828017777079074	False	-1.842	3.4581465606692484e-26	True
-SC_RS35070	SCO6575	sugar phosphate isomerase/epimerase family protein	1.084	0.0458160422400173	True	4.104	8.736034453396555e-14	True	2.774	3.813915527513224e-09	True

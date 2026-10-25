@@ -1,0 +1,26 @@
+block	quantity	value	unit	note
+input	FIMO TFBS hits	56338	sites	NC_003888.3; median width 18 bp
+input	merged TFBS intervals	38237	intervals	+/-10 bp flank; 18.9% of the genome
+S1_validation	expected overlap at n=1289 (retracted site count)	322.35	TFBS	published value 322.35 — implementation reproduces it
+S2_sequence	TGGCCGGC 4mC: all motif positions, fold	1.187	obs/exp	n=2093, obs=620, exp=522.48, p=2.94e-05
+S2_methylated	TGGCCGGC 4mC: called sites, fold	1.134	obs/exp	n=1886, obs=534, exp=471.02, p=0.00411
+S2_specific	TGGCCGGC 4mC: methylation-specific component	0.955	ratio of folds	called-site fold divided by sequence fold
+S2_sequence	AAGCCCG 4mC pos5: all motif positions, fold	0.791	obs/exp	n=1334, obs=264, exp=333.57, p=8.52e-05
+S2_methylated	AAGCCCG 4mC pos5: called sites, fold	0.77	obs/exp	n=1023, obs=197, exp=255.98, p=0.000148
+S2_specific	AAGCCCG 4mC pos5: methylation-specific component	0.972	ratio of folds	called-site fold divided by sequence fold
+S2_sequence	AAGCCCG 6mA pos1+2: all motif positions, fold	0.425	obs/exp	n=2668, obs=283, exp=665.17, p=2.41e-63
+S2_methylated	AAGCCCG 6mA pos1+2: called sites, fold	0.556	obs/exp	n=416, obs=58, exp=104.23, p=1.11e-06
+S2_specific	AAGCCCG 6mA pos1+2: methylation-specific component	1.308	ratio of folds	called-site fold divided by sequence fold
+S3_called_rate	TGGCCGGC 4mC: called rate inside TFBS	85.7	%	outside 91.5%; OR 0.554; Fisher p=0.000226; motif positions in/out 510/1583
+S3_level	TGGCCGGC 4mC: level inside TFBS	0.7295	fraction	outside 0.7783; difference -0.0488; Mann-Whitney p=1.71e-06; measurable positions in/out 510/1581
+S3_level_gcmatched	TGGCCGGC 4mC: level difference, GC-matched	-0.0487	fraction	local GC +/-150 bp in five quantiles, n-weighted
+S3_called_rate	AAGCCCG 4mC pos5: called rate inside TFBS	73.5	%	outside 77.3%; OR 0.818; Fisher p=0.244; motif positions in/out 204/1130
+S3_level	AAGCCCG 4mC pos5: level inside TFBS	0.6255	fraction	outside 0.6424; difference -0.0168; Mann-Whitney p=0.309; measurable positions in/out 204/1126
+S3_level_gcmatched	AAGCCCG 4mC pos5: level difference, GC-matched	-0.0154	fraction	local GC +/-150 bp in five quantiles, n-weighted
+S3_called_rate	AAGCCCG 6mA pos1+2: called rate inside TFBS	12.7	%	outside 16.1%; OR 0.753; Fisher p=0.0762; motif positions in/out 411/2257
+S3_level	AAGCCCG 6mA pos1+2: level inside TFBS	0.2874	fraction	outside 0.3114; difference -0.0240; Mann-Whitney p=0.0235; measurable positions in/out 411/2249
+S3_level_gcmatched	AAGCCCG 6mA pos1+2: level difference, GC-matched	-0.0261	fraction	local GC +/-150 bp in five quantiles, n-weighted
+S4_input	TSS used	3030	TSS	Jeong 2016, category P or S with a non-empty gene_id
+S4_collinearity	TSS-proximal share inside TFBS	17.3	%	outside 16.8%; enrichment 1.03x; genome sampled every 97 bp (n=89356); TSS window +/-300 bp
+S4_collinearity	TGGCCGGC motif positions: TSS-proximal share inside TFBS	12.2	%	outside 12.3%; 510/2093 positions inside TFBS
+S4_collinearity	AAGCCCG motif positions: TSS-proximal share inside TFBS	18.5	%	outside 18.5%; 411/2668 positions inside TFBS

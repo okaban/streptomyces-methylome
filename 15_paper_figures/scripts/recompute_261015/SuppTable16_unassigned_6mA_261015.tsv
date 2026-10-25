@@ -1,0 +1,4 @@
+timepoint	sites_4mC	sites_6mA	mC_in_recognition_sequence	mC_unassigned	mC_unassigned_pct	mA_in_AAGCCCG	mA_unassigned	mA_unassigned_pct	mA_unassigned_near_TSS	mA_unassigned_near_TSS_pct
+T1	2909	1947	2909	0	0.0	416	1531	78.63	207	13.52
+T2	2869	2150	2869	0	0.0	450	1700	79.07	229	13.47
+T3	2840	2308	2839	1	0.04	453	1855	80.37	257	13.85

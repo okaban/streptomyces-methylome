@@ -1,0 +1,46 @@
+timepoint	stage	n	OR	CI_low	CI_high	p	optimiser_converged	published_OR	matches_published	note
+T1	published IH10 spec, reproduced	1181.0	2.641437	1.4084	4.9538	0.0024663676245915	True	2.641	True	y ~ ms + ml + pl + gc500 + ldep + in_core + C(codon_phase) + C(u6..u1) + C(d1..d3); population = meas6 & intragenic & finite host log2(TPM+1)
+T2	published IH10 spec, reproduced	1183.0	1.809444	0.9919	3.3008	0.0531725496912133	True	1.809	True	y ~ ms + ml + pl + gc500 + ldep + in_core + C(codon_phase) + C(u6..u1) + C(d1..d3); population = meas6 & intragenic & finite host log2(TPM+1)
+T3	published IH10 spec, reproduced	1182.0	2.834796	1.5695	5.1201	0.0005515321935168	True	2.835	True	y ~ ms + ml + pl + gc500 + ldep + in_core + C(codon_phase) + C(u6..u1) + C(d1..d3); population = meas6 & intragenic & finite host log2(TPM+1)
+T1	term drop: published FULL	1181.0	2.6414			0.0024663676245915	True	2.641	True	same population; covariate removed
+T2	term drop: published FULL	1183.0	1.8094			0.0531725496912133	True	1.809	True	same population; covariate removed
+T3	term drop: published FULL	1182.0	2.8348			0.0005515321935168	True	2.835	True	same population; covariate removed
+T1	term drop: drop ldep	1181.0	2.61			0.0027182967290291	True	2.641	False	same population; covariate removed
+T2	term drop: drop ldep	1183.0	1.823			0.0484880504589607	True	1.809	False	same population; covariate removed
+T3	term drop: drop ldep	1182.0	2.7484			0.000759064039828	True	2.835	False	same population; covariate removed
+T1	term drop: drop pl	1181.0	2.6226			0.0026452230399299	True	2.641	False	same population; covariate removed
+T2	term drop: drop pl	1183.0	1.8131			0.0522877958694899	True	1.809	False	same population; covariate removed
+T3	term drop: drop pl	1182.0	2.8522			0.0005065560024052	True	2.835	False	same population; covariate removed
+T1	term drop: drop ml	1181.0	2.6548			0.0023964880059886	True	2.641	False	same population; covariate removed
+T2	term drop: drop ml	1183.0	1.8213			0.0509752574389451	True	1.809	False	same population; covariate removed
+T3	term drop: drop ml	1182.0	2.8711			0.0004769887300909	True	2.835	False	same population; covariate removed
+T1	term drop: drop in_core	1181.0	2.6162			0.0026714348507175	True	2.641	False	same population; covariate removed
+T2	term drop: drop in_core	1183.0	1.8552			0.0417522237527884	True	1.809	False	same population; covariate removed
+T3	term drop: drop in_core	1182.0	2.8626			0.0004552612987673	True	2.835	False	same population; covariate removed
+T1	term drop: drop gc500	1181.0	2.129			0.0137108569314569	True	2.641	False	same population; covariate removed
+T2	term drop: drop gc500	1183.0	1.6311			0.1009713396910876	True	1.809	False	same population; covariate removed
+T3	term drop: drop gc500	1182.0	2.6205			0.0011346760684875	True	2.835	False	same population; covariate removed
+T1	term drop: drop codon	1181.0	2.0524			0.0025967875956046	True	2.641	False	same population; covariate removed
+T2	term drop: drop codon	1183.0	1.8054			0.0078230116446333	True	1.809	False	same population; covariate removed
+T3	term drop: drop codon	1182.0	2.0422			0.0015752016818755	True	2.835	False	same population; covariate removed
+T1	term drop: drop all 4 extra (ml,pl,ldep,in_core)	1181.0	2.6461			0.0022651798579099	True	2.641	False	same population; covariate removed
+T2	term drop: drop all 4 extra (ml,pl,ldep,in_core)	1183.0	1.8627			0.0400265932857146	True	1.809	False	same population; covariate removed
+T3	term drop: drop all 4 extra (ml,pl,ldep,in_core)	1182.0	2.8171			0.0005360026563721	True	2.835	False	same population; covariate removed
+T1	term drop: crude (ms only)	1181.0	4.7091			1.6006474005108614e-19	True	2.641	False	same population; covariate removed
+T2	term drop: crude (ms only)	1183.0	4.2887			2.825466046000362e-19	True	1.809	False	same population; covariate removed
+T3	term drop: crude (ms only)	1182.0	4.1878			3.259025590499963e-18	True	2.835	False	same population; covariate removed
+T1	population: published (as-is)	1181.0	2.641	1.41	4.95	0.0024663676245915	True	2.641	True	as published; host gene drawn from all GFF contigs including SCP1/SCP2
+T1	population: plasmid-assigned removed	1156.0	2.684	1.38	5.22	0.003671650334557	True	2.641	False	SCP1/SCP2-assigned instances removed (n=25)
+T2	population: published (as-is)	1183.0	1.809	0.99	3.3	0.0531725496912133	True	1.809	True	as published; host gene drawn from all GFF contigs including SCP1/SCP2
+T2	population: plasmid-assigned removed	1157.0	1.873	0.99	3.54	0.0529959096101428	True	1.809	False	SCP1/SCP2-assigned instances removed (n=26)
+T3	population: published (as-is)	1182.0	2.835	1.57	5.12	0.0005515321935168	True	2.835	True	as published; host gene drawn from all GFF contigs including SCP1/SCP2
+T3	population: plasmid-assigned removed	1156.0	3.215	1.72	6.02	0.0002619125558058	True	2.835	False	SCP1/SCP2-assigned instances removed (n=26)
+T1	common formula, dataset: IH10 full		2.646					2.641	False	y ~ ms + C(codon_phase) + GC + C(u6..u1) + C(d1..d3), lateral window (6,3)
+T2	common formula, dataset: IH10 full		1.863					1.809	False	y ~ ms + C(codon_phase) + GC + C(u6..u1) + C(d1..d3), lateral window (6,3)
+T3	common formula, dataset: IH10 full		2.817					2.835	False	y ~ ms + C(codon_phase) + GC + C(u6..u1) + C(d1..d3), lateral window (6,3)
+T1	common formula, dataset: IH10 minus plasmid		2.697					2.641	False	y ~ ms + C(codon_phase) + GC + C(u6..u1) + C(d1..d3), lateral window (6,3)
+T2	common formula, dataset: IH10 minus plasmid		1.918					1.809	False	y ~ ms + C(codon_phase) + GC + C(u6..u1) + C(d1..d3), lateral window (6,3)
+T3	common formula, dataset: IH10 minus plasmid		3.211					2.835	False	y ~ ms + C(codon_phase) + GC + C(u6..u1) + C(d1..d3), lateral window (6,3)
+T1	common formula, dataset: recompute set		2.494					2.641	False	y ~ ms + C(codon_phase) + GC + C(u6..u1) + C(d1..d3), lateral window (6,3)
+T2	common formula, dataset: recompute set		2.42					1.809	False	y ~ ms + C(codon_phase) + GC + C(u6..u1) + C(d1..d3), lateral window (6,3)
+T3	common formula, dataset: recompute set		3.567					2.835	False	y ~ ms + C(codon_phase) + GC + C(u6..u1) + C(d1..d3), lateral window (6,3)

@@ -1,0 +1,56 @@
+REGISTERED PREDICTIONS — written 2026-10-16 BEFORE any measurement in this session.
+Question: why is 6mA occupancy at AAGCCCG low (~25 %) while 4mC on the same instances is ~75 %?
+
+H1 longer recognition sequence / extra determinants
+  Universe: the 565 strand-oriented HAAGCCCG target instances (canon). Split by site-level
+  6mA occupancy of A0 at a fixed pooled rule, into METHYLATED vs UNMETHYLATED.
+  Prediction P1a: at >=1 position outside the 8-bp motif (scan -10..-2 and +1..+10, i.e. 19
+  positions x 4 bases) the base composition differs between the two groups.
+  Rule: Fisher exact per position x base, 19*4 = 76 tests, BH at 5 %. SUPPORTED if >=1 test
+  survives AND the same position survives independently at T1, T2 and T3.
+  Prediction P1b: the site-level occupancy distribution over the 565 is bimodal.
+  Rule: Hartigan dip test p < 0.05 at >=2 of 3 timepoints AND dip statistic > 0.01.
+  NOT SUPPORTED otherwise. A unimodal graded distribution with no flanking determinant
+  is itself the answer to (a) and must be reported as such.
+
+H2 hemimethylation / post-replicative lag  (re-confirmation only; refuted earlier as H10)
+  Prediction P2a: at duplexes carrying a target context on BOTH strands, the two strands are
+  negatively associated (OR < 1). Rule: Fisher on the 2x2 of strand-A methylated x strand-B
+  methylated. SUPPORTED only if OR < 1 with p < 0.05.
+  Prediction P2b: occupancy depends on distance to oriC (~4.27 Mb) after depth and local-GC
+  adjustment. Rule: logistic regression of methylated ~ |d_oriC| + depth + localGC;
+  SUPPORTED if the oriC coefficient p < 0.05 with the predicted sign (occupancy falls with
+  distance from oriC, i.e. later-replicated DNA less remethylated).
+
+H3 steric interference from 4mC on the same instance  (close out)
+  Prediction P3: negative association between the A0 6mA call and the C4 4mC call on the same
+  instance, at site level. Rule: Fisher 2x2 on the 1,334 instances. SUPPORTED only if OR < 1,
+  p < 0.05. Canon already records per-read OR 1.257/1.364/1.351 and site OR 1.04 (p 0.81),
+  so the expected outcome is NOT SUPPORTED.
+
+H4 enzyme is limiting
+  Prediction P4a: SC_RS17645 (the 6mA candidate) TPM is much lower than the 4mC enzyme's.
+  Rule: descriptive; SUPPORTED if >=5x lower at the timepoint of lowest 6mA occupancy.
+  Prediction P4b: the T1->T2->T3 change in occupancy moves in the same direction as the
+  T1->T2->T3 change in enzyme TPM. Rule: sign agreement on both transitions. With n=3
+  timepoints no p value is available; report as sign agreement only, never as a test.
+
+H5 two-state cell population (phase variation)
+  Prediction P5: the distribution of the NUMBER of modified target instances per molecule
+  (reads covering >=3 target instances) is overdispersed relative to a binomial with the same
+  per-instance mean, and bimodal.
+  Rule: variance ratio observed/binomial > 1.5 AND a two-component beta-binomial mixture
+  beats a single beta-binomial by BIC with the two components separated by > 0.3 in mean.
+  SUPPORTED only if both hold. Canon-adjacent prior: within-molecule excess concordance
+  0.171 vs 0.470 expected for a clean two-state system — expected outcome NOT SUPPORTED
+  at the level required for phase variation, possibly supported as mild overdispersion.
+
+H6 detection sensitivity  (close out)
+  Prediction P6: unfiltered occupancy is much higher than filtered. Rule: already measured
+  (46.19 % unfiltered, 58.94 % at threshold 0.90). SUPPORTED as an explanation only if the
+  unfiltered site-level occupancy of HAAGCCCG reaches the 4mC value (~75 %) — otherwise the
+  sensitivity gap is a partial, quantified contributor, not the explanation.
+
+Global: no motif may be drawn from the called sites. Every comparison is methylated vs
+unmethylated INSIDE a fixed, sequence-defined instance set. Denominator = positions meeting
+the same depth rule that were not called. Negative results stay negative.

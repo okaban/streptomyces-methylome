@@ -1,7 +1,0 @@
-Pathway	Gene_Count	Fold_Enrichment	p_value	Significance
-ABC transporters	108	1.66	1.0e-10	栄養枯渇に対する輸送能力の増強
-Quorum sensing	60	1.77	8.5e-8	細胞密度依存的な調節の活性化
-Nitrogen cycle	12	2.74	1.9e-5	窒素代謝の調整
-Type II polyketide products	10	2.70	1.4e-4	ポリケタイド系抗生物質生合成
-Type II polyketide backbone	6	2.97	1.4e-3	PKS骨格合成の誘導
-Prodigiosin biosynthesis	16	1.83	3.2e-3	赤色色素（undecylprodigiosin）生合成

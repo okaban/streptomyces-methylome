@@ -1,0 +1,3 @@
+scope	n_instances_with_comod_pair	in_comod	in_notcomod	out_comod	out_notcomod	n_candidate_pairs	n_in_motif_pairs	in_comod_spacing4_A0C4	in_comod_spacing3_A1C4	OR	OR_CI95_lower	OR_CI95_upper	haldane_corrected	fisher_p_greater	expected_in_comod_H0	fold_over_expectation	perm_p	perm_null_max_in_comod	rate_in	rate_out	rate_ratio
+pooled	401	475	2193	0	1693612	1696280	2668	363	112	734272	45844.2	1.17606e+07	True	0	0.747105	635.787	< 1.0e-04	5	0.178036	0	inf
+T1	288	324	2344	0	1693612	1696280	2668	262	62	468823	29251.6	7.51393e+06	True	0	0.509605	635.787	< 1.0e-04	5	0.121439	0	inf

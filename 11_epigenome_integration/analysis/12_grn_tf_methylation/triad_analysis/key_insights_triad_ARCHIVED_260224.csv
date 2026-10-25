@@ -1,4 +1,0 @@
-number,insight,evidence,figure,significance
-1,redZはメチル化-発現協調変動を示す唯一のGRN TF,6mA Lost + expression DOWN (log2FC=-2.25),triad_network_visualization.png,Red BGCへのエピジェネティック制御の直接的証拠
-2,SC_RS17645 (N-6 MTase) 発現低下がredZメチル化消失と一致,MTase log2FC=-2.19 (T2vsT1),regulatory_cascade_methylation.png,AAGCCCGモチーフのメチル化機構解明
-3,redDはredZ発現低下にもかかわらず高発現,"redZ: -2.25, redD: +4.77 (log2FC)",bgc_expression_summary.png,AbsA2抑制解除の影響が支配的

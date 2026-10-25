@@ -1,7 +1,0 @@
-Pathway	Gene_Count	Fold_Enrichment	p_value	Significance
-Ribosome	55	2.76	1.1e-25	タンパク質合成能力の低下（成長減速）
-Metabolic pathways	408	1.50	4.8e-23	一次代謝全般の抑制
-Biosynthesis of cofactors	91	2.17	1.8e-16	補因子合成の調整
-Biosynthesis of amino acids	79	2.09	3.1e-13	アミノ酸合成の抑制
-Nucleotide metabolism	35	2.79	2.0e-11	DNA/RNA合成の減速
-Pyrimidine metabolism	29	3.06	2.4e-11	ピリミジン合成の大幅抑制

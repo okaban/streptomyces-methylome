@@ -1,9 +1,0 @@
-motif	category	n	motif_total	pct_of_motif
-AAGCCCG	5UTR_approx	70	1078	6.49
-AAGCCCG	CDS_internal	880	1078	81.63
-AAGCCCG	intergenic	37	1078	3.43
-AAGCCCG	promoter	91	1078	8.44
-GCCGGC	5UTR_approx	113	1659	6.81
-GCCGGC	CDS_internal	1413	1659	85.17
-GCCGGC	intergenic	52	1659	3.13
-GCCGGC	promoter	81	1659	4.88

@@ -1,6 +1,0 @@
-metric	activation_bloc	repression_bloc	test_statistic	p_value	effect_size
-regulon_pos_0.8	median=11, mean=20.6	median=14, mean=37.0	U=432	0.742544485372941	r=0.051
-regulon_neg_0.8	median=13, mean=17.7	median=14, mean=20.5	U=398	0.40936192373924485	r=0.125
-regulon_total_0.8	median=25, mean=38.3	median=28, mean=57.5	U=402	0.4392690357716248	r=0.118
-regulon_pos_0.7	median=11, mean=20.6	median=14, mean=37.0	U=432	0.742544485372941	r=0.051
-regulon_total_0.7	median=25, mean=38.3	median=28, mean=57.5	U=402	0.4392690357716248	r=0.118

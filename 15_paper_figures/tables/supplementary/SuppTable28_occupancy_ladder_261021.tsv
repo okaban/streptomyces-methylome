@@ -1,0 +1,13 @@
+timepoint	tier	n_measurable	called_6mA_pos1	occupancy_6mA_pct	called_4mC_pos5	occupancy_4mC_pct	difference_6mA_minus_4mC_pp
+T1	AAGCCCG (all instances)	1330	323	24.29	1023	76.92	-52.63
+T1	HAAGCCCG (5' base not G)	561	259	46.17	466	83.07	-36.9
+T1	+ G at -3	246	158	64.23	214	86.99	-22.76
+T1	+ C at -5 and G at -3	85	67	78.82	70	82.35	-3.53
+T2	AAGCCCG (all instances)	1332	350	26.28	977	73.35	-47.07
+T2	HAAGCCCG (5' base not G)	563	270	47.96	450	79.93	-31.97
+T2	+ G at -3	248	168	67.74	212	85.48	-17.74
+T2	+ C at -5 and G at -3	85	68	80.0	68	80.0	0.0
+T3	AAGCCCG (all instances)	1331	335	25.17	973	73.1	-47.93
+T3	HAAGCCCG (5' base not G)	562	254	45.2	450	80.07	-34.88
+T3	+ G at -3	247	162	65.59	212	85.83	-20.24
+T3	+ C at -5 and G at -3	85	66	77.65	71	83.53	-5.88

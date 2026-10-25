@@ -23,7 +23,7 @@ from matplotlib.gridspec import GridSpec
 
 
 def classify_4mC_motifs(df):
-    """Group 4mC motifs: CCGG family (CCGG/GGCCGG/TGGCCGGC) + AAGCCCG."""
+    """Group 4mC motifs: CCGG family (TGGCCGGC) + AAGCCCG."""
     df_uniq = df.drop_duplicates(subset=['position']).copy()
     ccgg_family = ['TGGCCGGC', 'GGCCGG', 'CCGG (other)', 'CCGG']
     df_uniq['motif_group'] = df_uniq['final_motif'].apply(

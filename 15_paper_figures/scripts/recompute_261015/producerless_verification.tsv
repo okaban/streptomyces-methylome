@@ -1,0 +1,51 @@
+figure	quantity	claimed	recomputed	status	source
+SuppFig 1	observed co-modified pairs, all timepoints pooled	406	406	OK	11_epigenome_integration/analysis/87_site_coloc_stats_C4/tables/site_coloc_2x2_C4.tsv
+SuppFig 1	null expectation, all timepoints pooled	0.64	0.639	OK	11_epigenome_integration/analysis/87_site_coloc_stats_C4/tables/site_coloc_2x2_C4.tsv
+SuppFig 1	null maximum, all timepoints pooled	5	5	OK	11_epigenome_integration/analysis/87_site_coloc_stats_C4/tables/site_coloc_2x2_C4.tsv
+SuppFig 1	observed co-modified pairs, T1 only	214	214	OK	11_epigenome_integration/analysis/87_site_coloc_stats_C4/tables/site_coloc_2x2_C4.tsv
+SuppFig 1	null expectation, T1 only	0.34	0.337	OK	11_epigenome_integration/analysis/87_site_coloc_stats_C4/tables/site_coloc_2x2_C4.tsv
+SuppFig 1	null maximum, T1 only	4	4	OK	11_epigenome_integration/analysis/87_site_coloc_stats_C4/tables/site_coloc_2x2_C4.tsv
+SuppFig 1	candidate same-strand A/C pairs at 3-4 bp	1696280	1696280	OK	11_epigenome_integration/analysis/87_site_coloc_stats_C4/tables/site_coloc_2x2_C4.tsv
+SuppFig 1	Haldane-corrected odds ratio	6.1e5	6.09e+05	OK	11_epigenome_integration/analysis/87_site_coloc_stats_C4/tables/site_coloc_2x2_C4.tsv
+SuppFig 9	non-motif 6mA calls scanned	2.1e6	2,101,211	OK	11_epigenome_integration/analysis/78_reviewer_robustness/tables/P1_1_crosstalk_rates.tsv
+SuppFig 9	near/far at non-motif 6mA	1.09	1.09	OK	11_epigenome_integration/analysis/78_reviewer_robustness/tables/P1_1_crosstalk_rates.tsv
+SuppFig 9	near-offset co-call rate at AAGCCCG	0.0474	0.0474	OK	11_epigenome_integration/analysis/78_reviewer_robustness/tables/P1_1_crosstalk_rates.tsv
+SuppFig 9	near-offset co-call rate at non-motif 6mA	0.00011	0.00011	OK	11_epigenome_integration/analysis/78_reviewer_robustness/tables/P1_1_crosstalk_rates.tsv
+SuppFig 9	within-motif near/far ratio	365	365	OK	11_epigenome_integration/analysis/78_reviewer_robustness/tables/P1_1_crosstalk_rates.tsv
+SuppFig 9	motif / non-motif near-rate ratio	430	430	OK	11_epigenome_integration/analysis/78_reviewer_robustness/tables/P1_1_crosstalk_rates.tsv
+SuppFig 11	methylation enrichment within TFBS (fold)	1.157	1.157	OK	11_epigenome_integration/analysis/49_TF_BS_methylation_protection/tables/statistical_tests.tsv
+SuppFig 11	methylation enrichment within TFBS (p)	0.006	0.0057	OK	11_epigenome_integration/analysis/49_TF_BS_methylation_protection/tables/statistical_tests.tsv
+SuppFig 11	Jonckheere-Terpstra p across expression quintiles	0.818	0.8183	OK	11_epigenome_integration/analysis/52_shielded_exposed_boundary/tables/expression_quintile_JT_n62.tsv
+SuppFig 11	outcome variable behind the quintile test	proximity to a TGGCCGGC site within 293 bp	is_exposed_canonical(62)	STALE	11_epigenome_integration/analysis/52_shielded_exposed_boundary/tables/expression_quintile_JT_n62.tsv
+SuppFig 11	n behind the quintile test	1,051 (canonical with TSS)	1,017	STALE	11_epigenome_integration/analysis/52_shielded_exposed_boundary/tables/expression_quintile_JT_n62.tsv
+SuppFig 10	core/arm coverage ratio, T1 (1-1)	2.26	2.31	MISMATCH	pileup_canonical_261015 (per-library bed)
+SuppFig 10	ori/ter depth ratio, T1, 200 kb windows	4.09	3.95	NOT_REPRODUCIBLE	pileup_canonical_261015 (per-library bed)
+SuppFig 10	ori/ter depth ratio, T1, 100 kb windows	4.12	3.82	NOT_REPRODUCIBLE	pileup_canonical_261015 (per-library bed)
+SuppFig 10	ori/ter depth ratio, T1, 500 kb windows	3.93	3.92	OK	pileup_canonical_261015 (per-library bed)
+SuppFig 10	core/arm coverage ratio, T2 (2-1)	1.13	1.14	OK	pileup_canonical_261015 (per-library bed)
+SuppFig 10	ori/ter depth ratio, T2, 200 kb windows	1.08	0.9	NOT_REPRODUCIBLE	pileup_canonical_261015 (per-library bed)
+SuppFig 10	ori/ter depth ratio, T2, 100 kb windows	0.98	0.91	NOT_REPRODUCIBLE	pileup_canonical_261015 (per-library bed)
+SuppFig 10	ori/ter depth ratio, T2, 500 kb windows	1.16	1.0	NOT_REPRODUCIBLE	pileup_canonical_261015 (per-library bed)
+SuppFig 10	core/arm coverage ratio, T3 (3-2)	1.19	1.23	MISMATCH	pileup_canonical_261015 (per-library bed)
+SuppFig 10	ori/ter depth ratio, T3, 200 kb windows	1.33	0.94	NOT_REPRODUCIBLE	pileup_canonical_261015 (per-library bed)
+SuppFig 10	ori/ter depth ratio, T3, 100 kb windows	1.18	1.1	NOT_REPRODUCIBLE	pileup_canonical_261015 (per-library bed)
+SuppFig 10	ori/ter depth ratio, T3, 500 kb windows	1.33	1.14	NOT_REPRODUCIBLE	pileup_canonical_261015 (per-library bed)
+SuppFig 10	method recovery: variants tried 2026-10-15	"legend says ""computed from the modkit pileups"""	depth as Nvalid_cov+Nfail and as Nvalid_cov alone; canonical pileups (pileup_canonical_261015) and superseded pileups (analysis/pileup); terminus as the mean of both telomeres. None reproduces the T2/T3 ori/ter values; T1 core/arm differs on both pileup generations (canonical 2.31, superseded 1.75, claimed 2.26).	NOT_REPRODUCIBLE	see recompute_261015/README.md
+SuppFig 12	GCCGGC hexamer: observed	2539	2539	OK	recomputed from NC_003888.3.fna + jeong2016_all_tss.csv
+SuppFig 12	GCCGGC hexamer: GC-matched expected	2883.8	2883.8	OK	recomputed from NC_003888.3.fna + jeong2016_all_tss.csv
+SuppFig 12	GCCGGC hexamer: ratio	0.8804	0.8804	OK	recomputed from NC_003888.3.fna + jeong2016_all_tss.csv
+SuppFig 12	GCCGGC hexamer: unmatched ratio	0.7525	0.7525	OK	recomputed from NC_003888.3.fna + jeong2016_all_tss.csv
+SuppFig 12	GCCGGC hexamer: 95% interval	0.8478-0.9160	0.8468-0.9148	METHOD	recomputed from NC_003888.3.fna + jeong2016_all_tss.csv (window bootstrap, 2000 reps, seed 42)
+SuppFig 12	AAGCCCG both strands: observed	305	305	OK	recomputed from NC_003888.3.fna + jeong2016_all_tss.csv
+SuppFig 12	AAGCCCG both strands: GC-matched expected	322.0	322.0	OK	recomputed from NC_003888.3.fna + jeong2016_all_tss.csv
+SuppFig 12	AAGCCCG both strands: ratio	0.9471	0.9471	OK	recomputed from NC_003888.3.fna + jeong2016_all_tss.csv
+SuppFig 12	AAGCCCG both strands: unmatched ratio	1.0898	1.0898	OK	recomputed from NC_003888.3.fna + jeong2016_all_tss.csv
+SuppFig 12	AAGCCCG both strands: 95% interval	0.8424-1.0601	0.8391-1.0548	METHOD	recomputed from NC_003888.3.fna + jeong2016_all_tss.csv (window bootstrap, 2000 reps, seed 42)
+SuppFig 12	GGC or GCC trinucleotide: observed	142109	142109	OK	recomputed from NC_003888.3.fna + jeong2016_all_tss.csv
+SuppFig 12	GGC or GCC trinucleotide: GC-matched expected	146618.7	146618.7	OK	recomputed from NC_003888.3.fna + jeong2016_all_tss.csv
+SuppFig 12	GGC or GCC trinucleotide: ratio	0.9692	0.9692	OK	recomputed from NC_003888.3.fna + jeong2016_all_tss.csv
+SuppFig 12	GGC or GCC trinucleotide: unmatched ratio	0.8675	0.8675	OK	recomputed from NC_003888.3.fna + jeong2016_all_tss.csv
+SuppFig 12	GGC or GCC trinucleotide: 95% interval	0.9646-0.9739	0.9647-0.9739	METHOD	recomputed from NC_003888.3.fna + jeong2016_all_tss.csv (window bootstrap, 2000 reps, seed 42)
+SuppFig 12	GC content, TSS +/-300 bp (%)	69.54	69.54	OK	recomputed from NC_003888.3.fna + jeong2016_all_tss.csv
+SuppFig 12	genome GC content (%)	72.12	72.12	OK	recomputed from NC_003888.3.fna + jeong2016_all_tss.csv
+SuppFig 12	TSS windows used	3030	3030	OK	recomputed from NC_003888.3.fna + jeong2016_all_tss.csv

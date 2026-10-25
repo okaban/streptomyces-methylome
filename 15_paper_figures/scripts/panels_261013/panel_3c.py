@@ -7,7 +7,12 @@ printed inside the bottom segment and the within-molecule odds ratio above each 
 Environment: epi-rna.  Renders exactly 1039 x 685 px for the Figure 3 composer grid;
 no panel letter is drawn (the composer stamps it) and bbox_inches must stay None.
 """
-import sys, importlib, csv
+import csv
+import sys, importlib
+from pathlib import Path
+
+# [FIG18] タイルを再生成できるよう、artifact マーカーをローカルの入力表に解決しておく。
+_DATA_DIR = Path(__file__).resolve().parents[2] / 'data_261013'
 
 sys.path.insert(0, '/Users/okaban/bioinfo/rna-seq/15_paper_figures/scripts')
 U = importlib.import_module('00_shared_utils')
@@ -16,7 +21,7 @@ import matplotlib as mpl
 mpl.rcParams['savefig.bbox'] = None          # the style helper sets 'tight', which resizes the canvas
 import matplotlib.pyplot as plt
 
-CSV_PATH = "{{artifact:458a1f46-dc23-4a9b-80f1-b237b8db510f}}"
+CSV_PATH = str(_DATA_DIR / "v458a1f46_F3c_singlemolecule.csv")
 
 rows = list(csv.DictReader(open(CSV_PATH)))
 tp = [r['timepoint'] for r in rows]
@@ -70,14 +75,15 @@ ax.set_xticklabels(U.TP_LABELS)
 ax.spines['bottom'].set_bounds(-0.42, 2.37)
 ax.spines['left'].set_bounds(0, 100)
 ax.set_ylabel('Observations (%)')
-ax.set_xlabel('n = 84,047 / 79,313 / 60,651 read \u00d7 instance pairs')
+ax.set_xlabel('n = ' + ' / '.join(f'{v:,}' for v in N)
+              + ' read \u00d7 instance pairs')
 
 # takeaway title, kept clear of the composer's top-left panel-letter reserve (~10 x 6 mm)
-fig.text(0.145, 0.99, 'Both marks co-occur on one molecule more than chance',
-         ha='left', va='top', fontsize=8, color=U.COL_DARK)
+fig.text(0.145, 0.99, '',
+ha='left', va='top', fontsize=8, color=U.COL_DARK)
 
 U.assert_no_text_collisions(fig, 'Fig3 panel c', allow_over_data=tuple(value_labels))
-fig.savefig('panel_c.png', dpi=300, transparent=True, bbox_inches=None, pad_inches=0)
+fig.savefig(str(Path(__file__).with_suffix('.png')), dpi=300, transparent=True, bbox_inches=None, pad_inches=0)
 
 from PIL import Image
-assert Image.open('panel_c.png').size == (1039, 685)
+assert Image.open(str(Path(__file__).with_suffix('.png'))).size == (1039, 685)

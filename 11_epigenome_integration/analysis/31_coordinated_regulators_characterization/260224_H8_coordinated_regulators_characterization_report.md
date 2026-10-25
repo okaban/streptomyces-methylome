@@ -1,1 +1,0 @@
-/Users/okaban/bioinfo/rna-seq/reports/260224_H8_coordinated_regulators_characterization_report.md

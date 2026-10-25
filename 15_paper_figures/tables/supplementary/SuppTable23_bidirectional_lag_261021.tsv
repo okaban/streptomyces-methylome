@@ -1,0 +1,17 @@
+stratum	mark	comparison	n	rho	p	passes_family
+all genes	4mC	synchronous T1→T2	1619	0.024	0.341	no
+all genes	4mC	synchronous T2→T3	1619	0.003	0.918	no
+all genes	4mC	expression precedes methylation	1619	-0.01	0.682	no
+all genes	4mC	methylation precedes expression	1619	0.012	0.634	no
+all genes	6mA	synchronous T1→T2	1043	-0.016	0.611	no
+all genes	6mA	synchronous T2→T3	1043	-0.045	0.147	no
+all genes	6mA	expression precedes methylation	1043	0.011	0.724	no
+all genes	6mA	methylation precedes expression	1043	0.019	0.537	no
+antiSMASH regions	4mC	synchronous T1→T2	28	-0.051	0.795	no
+antiSMASH regions	4mC	synchronous T2→T3	28	0.041	0.838	no
+antiSMASH regions	4mC	expression precedes methylation	28	0.153	0.436	no
+antiSMASH regions	4mC	methylation precedes expression	28	0.026	0.894	no
+antiSMASH regions	6mA	synchronous T1→T2	26	0.048	0.818	no
+antiSMASH regions	6mA	synchronous T2→T3	26	0.268	0.185	no
+antiSMASH regions	6mA	expression precedes methylation	26	0.165	0.42	no
+antiSMASH regions	6mA	methylation precedes expression	26	-0.009	0.964	no

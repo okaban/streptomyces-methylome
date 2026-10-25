@@ -1,1 +1,0 @@
-/Users/okaban/bioinfo/rna-seq/reports/260226_H24_BGC_methylation_geographic_test_report.md

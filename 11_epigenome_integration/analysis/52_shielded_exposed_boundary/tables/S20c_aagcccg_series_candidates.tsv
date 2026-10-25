@@ -1,5 +1,0 @@
-series	class_def	n_class	metric	T1	T2	T3
-retired_figure_metric_GCCGGC_dist_on_36_class	36_ T1 mapping, gene-boundary distance<=293 (23_ census)	22	fraction with GCCGGC 4mC site <=293 bp of TSS (canonical)	9.1	13.6	13.6
-36_class_canonical_AAGCCCG_6mA_TSS	36_ T1 mapping (n=22)	22	fraction with canonical AAGCCCG 6mA (A0/A1) site <=293 bp of TSS	36.4	31.8	27.3
-canonical_tss	regulators with canonical AAGCCCG 6mA site <=293 bp of TSS at T1	21	fraction with canonical AAGCCCG 6mA (A0/A1) site <=293 bp of TSS	100.0	85.7	81.0
-GCCGGC_Exposed_drawn	Exposed-62 (GCCGGC <=293 bp of TSS at T1)	62	fraction with canonical GCCGGC 4mC site <=293 bp of TSS	100.0	90.3	72.6

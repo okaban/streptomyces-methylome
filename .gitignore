@@ -130,3 +130,266 @@ Rplots.pdf
 # 再現性に寄与せず、撤回済みの主張を現役として記述しているため 2026-10-15 に除外した。
 # ローカルには残してある。
 out_nar_revision_260716/
+
+# ---------------------------------------------------------------------------
+# 投稿用アーカイブの範囲外（2026-10-24、decisions.tsv D065 / D076、
+# repository_policy_261024.tsv D8 の決定にもとづく）。
+# 撤回した解析系統・探索レポート・中間データ・寄託作業用スクリプト。
+# ファイルは著者のディスクに残してあり、git の追跡から外しただけである。
+# 判定の根拠は repo_scope_261024.tsv（単位 177 件）と
+# repo_scope_fileexceptions_261024.tsv（ファイル単位の例外 67 件）。
+# ---------------------------------------------------------------------------
+
+# 単位ごと範囲外（69 単位）
+/06_BGC_dynamics/
+/07_regulator_network/
+/08_candidate_TF_prioritization/
+/09_SARP_integration/
+/10_SARP_motif_scan/
+/11_epigenome_integration/analysis/08_coordinated_enrichment/
+/11_epigenome_integration/analysis/100_opportunity_feasibility/
+/11_epigenome_integration/analysis/101_discussion_insertions/
+/11_epigenome_integration/analysis/102_post_edit_parity/
+/11_epigenome_integration/analysis/105_referee_B/
+/11_epigenome_integration/analysis/107_G07_G10_audit_261008/
+/11_epigenome_integration/analysis/12_grn_tf_methylation/
+/11_epigenome_integration/analysis/15_act_bgc_epigenetic/
+/11_epigenome_integration/analysis/16_t3_coordinated/
+/11_epigenome_integration/analysis/17_paper_figures/
+/11_epigenome_integration/analysis/19_bgc_regulator_overview/
+/11_epigenome_integration/analysis/260227_gatekeeper_model_v3_synthesis_report.md/
+/11_epigenome_integration/analysis/26_redZ_paradox/
+/11_epigenome_integration/analysis/27_TF_methylation_rescreen/
+/11_epigenome_integration/analysis/29_genomewide_TF_screen/
+/11_epigenome_integration/analysis/31_coordinated_regulators_characterization/
+/11_epigenome_integration/analysis/34_gatekeeper_model_v2/
+/11_epigenome_integration/analysis/44_AAGCCCG_temporal_causality/
+/11_epigenome_integration/analysis/47_BGC_methylation_geographic_test/
+/11_epigenome_integration/analysis/50_coordinated_regulators_protection/
+/11_epigenome_integration/analysis/51_exposed_regulators_characteristics/
+/11_epigenome_integration/analysis/53_TSS_sequence_determinants/
+/11_epigenome_integration/analysis/54_exposed_TF_downstream_network/
+/11_epigenome_integration/analysis/55_exposed_regulatory_module/
+/11_epigenome_integration/analysis/56_exposed_TF_neighborhood/
+/11_epigenome_integration/analysis/57_temporal_dynamics_exposed_TF/
+/11_epigenome_integration/analysis/58_AAGCCCG_exposed_TF_causal/
+/11_epigenome_integration/analysis/58_exposed_TF_functional_prediction/
+/11_epigenome_integration/analysis/58b_exposed_TF_functional_prediction/
+/11_epigenome_integration/analysis/59_exposed_TF_conservation/
+/11_epigenome_integration/analysis/60_coexpression_regulon_prediction/
+/11_epigenome_integration/analysis/62_GO_KEGG_enrichment/
+/11_epigenome_integration/analysis/65_per_read_comod/
+/11_epigenome_integration/analysis/68_or_permutation/
+/11_epigenome_integration/analysis/69_boundary_sensitivity/
+/11_epigenome_integration/analysis/71_exposed_tf_heatmap/
+/11_epigenome_integration/analysis/73_T13_GCCGGC_dynamics/
+/11_epigenome_integration/analysis/73_comod_threshold_ROC/
+/11_epigenome_integration/analysis/73_g2_correction_qc/
+/11_epigenome_integration/analysis/73_layer_overlap/
+/11_epigenome_integration/analysis/77_reviewer_figures/
+/11_epigenome_integration/analysis/79_C4_region_by_timepoint/
+/11_epigenome_integration/analysis/81_D1_integration_inventory/
+/11_epigenome_integration/analysis/82_exposed_shielded_metric_scan/
+/11_epigenome_integration/analysis/85_deng_integration_gap_analysis/
+/11_epigenome_integration/analysis/93_enjp_parity_audit_260921/
+/11_epigenome_integration/analysis/94_figure_restructure_260921/
+/11_epigenome_integration/analysis/95_enjp_parity_round2/
+/11_epigenome_integration/analysis/95_main_figures/
+/11_epigenome_integration/analysis/96_supp_legend_vs_data/
+/11_epigenome_integration/analysis/97_opportunity_scan/
+/11_epigenome_integration/analysis/98_public_data_scan/
+/11_epigenome_integration/analysis/99_figure_forensics/
+/11_epigenome_integration/analysis/archive/
+/11_epigenome_integration/analysis/out_nar_revision_260716/
+/12_supplementary_figures/
+/14_DMG_functional_enrichment/
+/15_paper_figures/Writing/
+/15_paper_figures/figures/main/
+/15_paper_figures/figures/supp/
+/15_paper_figures/figures/supplementary/
+/15_paper_figures/manuscript/
+/15_paper_figures/tables/main/
+/reports/
+
+# 11_epigenome_integration/analysis/48_TSS_methylation_gradient
+#   単位としては範囲外だが、現行の成果物を作る／現行生成器が読む 6 件は残す。
+#   範囲外にするのは次の 28 件のみ。
+/11_epigenome_integration/analysis/48_TSS_methylation_gradient/260226_H25_TSS_methylation_gradient_report.md
+/11_epigenome_integration/analysis/48_TSS_methylation_gradient/_RETRACTED_VALUES.md
+/11_epigenome_integration/analysis/48_TSS_methylation_gradient/figures/H25_comprehensive_summary.pdf
+/11_epigenome_integration/analysis/48_TSS_methylation_gradient/figures/H25_comprehensive_summary.svg
+/11_epigenome_integration/analysis/48_TSS_methylation_gradient/figures/TSS_methylation_profile.pdf
+/11_epigenome_integration/analysis/48_TSS_methylation_gradient/figures/TSS_methylation_profile.svg
+/11_epigenome_integration/analysis/48_TSS_methylation_gradient/figures/core_arm_profiles.pdf
+/11_epigenome_integration/analysis/48_TSS_methylation_gradient/figures/core_arm_profiles.svg
+/11_epigenome_integration/analysis/48_TSS_methylation_gradient/figures/motif_specific_profiles.pdf
+/11_epigenome_integration/analysis/48_TSS_methylation_gradient/figures/motif_specific_profiles.svg
+/11_epigenome_integration/analysis/48_TSS_methylation_gradient/figures/protection_zone_heatmap.pdf
+/11_epigenome_integration/analysis/48_TSS_methylation_gradient/figures/protection_zone_heatmap.svg
+/11_epigenome_integration/analysis/48_TSS_methylation_gradient/figures/subcategory_profiles.pdf
+/11_epigenome_integration/analysis/48_TSS_methylation_gradient/figures/subcategory_profiles.svg
+/11_epigenome_integration/analysis/48_TSS_methylation_gradient/figures/temporal_comparison.pdf
+/11_epigenome_integration/analysis/48_TSS_methylation_gradient/figures/temporal_comparison.svg
+/11_epigenome_integration/analysis/48_TSS_methylation_gradient/scripts/H25_improved_figures.py
+/11_epigenome_integration/analysis/48_TSS_methylation_gradient/scripts/H25_tss_methylation_gradient.py
+/11_epigenome_integration/analysis/48_TSS_methylation_gradient/tables/archive_ARCHIVED_260312/permutation_test_results_ARCHIVED_260312.tsv
+/11_epigenome_integration/analysis/48_TSS_methylation_gradient/tables/archive_ARCHIVED_260312/protection_zone_metrics_ARCHIVED_260312.tsv
+/11_epigenome_integration/analysis/48_TSS_methylation_gradient/tables/archive_ARCHIVED_260312/region_stratified_profiles_ARCHIVED_260312.tsv
+/11_epigenome_integration/analysis/48_TSS_methylation_gradient/tables/archive_ARCHIVED_260312/spatial_profile_data_ARCHIVED_260312.tsv
+/11_epigenome_integration/analysis/48_TSS_methylation_gradient/tables/archive_ARCHIVED_260312/subcategory_profiles_ARCHIVED_260312.tsv
+/11_epigenome_integration/analysis/48_TSS_methylation_gradient/tables/permutation_test_results.tsv
+/11_epigenome_integration/analysis/48_TSS_methylation_gradient/tables/protection_zone_metrics.tsv
+/11_epigenome_integration/analysis/48_TSS_methylation_gradient/tables/region_stratified_profiles.tsv
+/11_epigenome_integration/analysis/48_TSS_methylation_gradient/tables/spatial_profile_data.tsv
+/11_epigenome_integration/analysis/48_TSS_methylation_gradient/tables/subcategory_profiles.tsv
+
+# 11_epigenome_integration/analysis/49_TF_BS_methylation_protection
+#   単位としては範囲外だが、現行の成果物を作る／現行生成器が読む 1 件は残す。
+#   範囲外にするのは次の 14 件のみ。
+/11_epigenome_integration/analysis/49_TF_BS_methylation_protection/260226_H26_TFBS_methylation_protection_report.md
+/11_epigenome_integration/analysis/49_TF_BS_methylation_protection/_RETRACTED_VALUES.md
+/11_epigenome_integration/analysis/49_TF_BS_methylation_protection/figures/H26_comprehensive_summary.pdf
+/11_epigenome_integration/analysis/49_TF_BS_methylation_protection/figures/H26_comprehensive_summary.svg
+/11_epigenome_integration/analysis/49_TF_BS_methylation_protection/figures/TFBS_methylation_profile.pdf
+/11_epigenome_integration/analysis/49_TF_BS_methylation_protection/figures/TFBS_methylation_profile.svg
+/11_epigenome_integration/analysis/49_TF_BS_methylation_protection/figures/overlap_by_context.pdf
+/11_epigenome_integration/analysis/49_TF_BS_methylation_protection/figures/overlap_by_context.svg
+/11_epigenome_integration/analysis/49_TF_BS_methylation_protection/figures/regulatory_vs_nonreg_TFBS.pdf
+/11_epigenome_integration/analysis/49_TF_BS_methylation_protection/figures/regulatory_vs_nonreg_TFBS.svg
+/11_epigenome_integration/analysis/49_TF_BS_methylation_protection/scripts/H26_TFBS_methylation_protection.py
+/11_epigenome_integration/analysis/49_TF_BS_methylation_protection/tables/TFBS_methylation_overlap.tsv
+/11_epigenome_integration/analysis/49_TF_BS_methylation_protection/tables/context_analysis.tsv
+/11_epigenome_integration/analysis/49_TF_BS_methylation_protection/tables/spatial_profile_data.tsv
+
+# 11_epigenome_integration/analysis/52_shielded_exposed_boundary
+#   単位としては範囲外だが、現行の成果物を作る／現行生成器が読む 2 件は残す。
+#   範囲外にするのは次の 59 件のみ。
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/260226_H29_shielded_exposed_boundary_report.md
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/260506_HiC_FIRE_HupS_HupA_integration_report.md
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/_RETRACTED_VALUES.md
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/figures/A3_circularity.pdf
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/figures/A3_circularity.png
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/figures/A3_circularity.svg
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/figures/Figure4_two_system_marking.pdf
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/figures/Figure4_two_system_marking.png
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/figures/Figure5_synchronized_demethylation.pdf
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/figures/Figure5_synchronized_demethylation.png
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/figures/H29_comprehensive_summary.pdf
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/figures/H29_comprehensive_summary.svg
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/figures/M1_stratified_ROC.pdf
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/figures/M1_stratified_ROC.png
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/figures/M4_experimental_TSS_robustness.pdf
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/figures/M4_experimental_TSS_robustness.png
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/figures/M4_experimental_TSS_robustness.svg
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/figures/ROC_curves.pdf
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/figures/ROC_curves.svg
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/figures/decision_tree.pdf
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/figures/decision_tree.svg
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/figures/expression_quintile_analysis.pdf
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/figures/expression_quintile_analysis.svg
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/figures/expression_vs_distance_scatter.pdf
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/figures/expression_vs_distance_scatter.svg
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/figures/feature_importance.pdf
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/figures/feature_importance.svg
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/scripts/A3_circularity_nested_cv.py
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/scripts/Exposed_dynamicA_define_and_verify.py
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/scripts/F4_F5_reframe_figures.py
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/scripts/H29_shielded_exposed_boundary.py
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/scripts/H29b_reanalyze_jeong2016_tss.py
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/scripts/H29c_pfam_regulatory_gene_selection.py
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/scripts/M1_geographic_robustness.py
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/scripts/M4_experimental_TSS_robustness.py
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/scripts/boundary_modality_audit.py
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/scripts/effect_size.py
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/scripts/recompute_expression_quintile_n62.py
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/tables/A3_circularity_summary.tsv
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/tables/Exposed_dynamicA_T1promoter.tsv
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/tables/M1_geographic_robustness.tsv
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/tables/M4_experimental_TSS_robustness.tsv
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/tables/ROC_analysis.tsv
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/tables/ROC_analysis_ARCHIVED_260312.tsv
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/tables/ROC_analysis_ARCHIVED_260318.tsv
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/tables/S20c_aagcccg_series_candidates.tsv
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/tables/SuppTable1_Exposed62_identity.tsv
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/tables/SuppTable1_Exposed62_identity.tsv.superseded_260921
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/tables/SuppTable_regulatory_gene_classification_n1051.tsv
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/tables/_RETRACTED_VALUES.md
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/tables/all_genes_features.tsv
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/tables/all_genes_features_ARCHIVED_260312.tsv
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/tables/all_genes_features_ARCHIVED_260318.tsv
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/tables/all_genes_features_unified_n57_ARCHIVED_260613.tsv
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/tables/all_genes_features_unified_n57_ARCHIVED_260701_stale_is_exposed.tsv
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/tables/cross_validation.tsv
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/tables/expression_quintile.tsv
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/tables/expression_quintile_ARCHIVED_260913_n57.tsv
+/11_epigenome_integration/analysis/52_shielded_exposed_boundary/tables/logistic_regression.tsv
+
+# 15_paper_figures/tables/supplementary
+#   単位としては範囲外だが、現行の成果物を作る／現行生成器が読む 33 件は残す。
+#   範囲外にするのは次の 12 件のみ。
+/15_paper_figures/tables/supplementary/ST1_methylation_sites.tsv
+/15_paper_figures/tables/supplementary/ST2_motif_summary.tsv
+/15_paper_figures/tables/supplementary/ST3_mtase_genes.tsv
+/15_paper_figures/tables/supplementary/ST4_BS_methylation_overlaps.tsv
+/15_paper_figures/tables/supplementary/ST4_regulatory_genes_classification.tsv
+/15_paper_figures/tables/supplementary/ST5_exposed_TFs_full_annotation.tsv
+/15_paper_figures/tables/supplementary/ST5_exposed_TFs_full_n57.tsv
+/15_paper_figures/tables/supplementary/ST5_temporal_classification.tsv
+/15_paper_figures/tables/supplementary/ST6_TCS_pair_analysis.tsv
+/15_paper_figures/tables/supplementary/ST6_TSS_promoter_methylation.tsv
+/15_paper_figures/tables/supplementary/ST7_simpsons_paradox_statistics.tsv
+/15_paper_figures/tables/supplementary/ST8_hypothesis_ledger.tsv
+
+# ファイル単位の範囲外（38 件）
+/04_deseq2/analysis/04_deseq2_260128_v1/deseq2_report_M145.md
+/05_annotation/05_annotation_M145_prompt.md
+/05_annotation/analysis/05_annotation_260128_v1/annotation_report_M145.md
+/05_annotation/analysis/05_annotation_260128_v1/tables/gene_master_with_BGC_regulators_ARCHIVED_260224.tsv
+/11_epigenome_integration/analysis/107_MTase_candidate_triage/MTase_candidate_report.md
+/11_epigenome_integration/analysis/41_GCCGGC_dose_response/scripts/H18_dose_response_analysis.py
+/11_epigenome_integration/analysis/78_reviewer_robustness/analysis-report.md
+/11_epigenome_integration/analysis/78_reviewer_robustness/scripts/C1_copynumber_coverage_matched.py
+/11_epigenome_integration/analysis/78_reviewer_robustness/stats-appendix.md
+/11_epigenome_integration/analysis/80_partial_corr_covariates/partial_corr_covariates.py
+/11_epigenome_integration/analysis/86_geneset_counts_B10/geneset_counts_B10.py
+/11_epigenome_integration/analysis/90_per_timepoint_census_audit/tables/figure_regeneration_260921.tsv
+/11_epigenome_integration/data/rebase/bairoch.txt
+/11_epigenome_integration/scripts/build_grn_hierarchy.py
+/11_epigenome_integration/scripts/coordinated_genes_enrichment.py
+/11_epigenome_integration/scripts/tss_analyses.py
+/13_TF_binding-site/analysis/01_master_TF_list_260206_v1/master_TF_list_M145_ARCHIVED_260224.tsv
+/13_TF_binding-site/analysis/01_master_TF_list_260206_v1/master_TF_list_M145_with_BS_ARCHIVED_260224.tsv
+/13_TF_binding-site/analysis/01_master_TF_list_260206_v1/scripts/03_create_sigma_factor_list.py
+/15_paper_figures/data_261013/vaa6f3d34_F4b_equivalence.csv
+/15_paper_figures/scripts/02b_figure2_RM_redistribution.py
+/15_paper_figures/scripts/02d_figure2c_shielded_exposed_redesign.py
+/15_paper_figures/scripts/05_figure5_gatekeeper_model.py
+/15_paper_figures/scripts/10_new_figure1_overview.py
+/15_paper_figures/scripts/11_new_figure2_protection.py
+/15_paper_figures/scripts/12_new_figure3_exposed_TFs.py
+/15_paper_figures/scripts/14_new_figure5_switch_model.py
+/15_paper_figures/scripts/15_new_supplementary_figures.py
+/15_paper_figures/scripts/16_new_supplementary_tables.py
+/15_paper_figures/scripts/27_figure4_shielded_exposed.py
+/15_paper_figures/scripts/28_figure7_kegg_bubble.py
+/15_paper_figures/scripts/29_figure8_positional_stratification.py
+/15_paper_figures/scripts/30_figure6_spatial_organizer.py
+/15_paper_figures/scripts/30_table_exposed_TFs_main.py
+/15_paper_figures/scripts/make_fig4_png.py
+/15_paper_figures/scripts/panels_261013/panel_4b.py
+/15_paper_figures/scripts/run_figure5_n57.py
+
+
+# analysis/ 直下の単体ファイル（単位ディレクトリに属さない撤回系統の成果物）
+/11_epigenome_integration/analysis/260227_gatekeeper_model_v3_synthesis_report.md
+/11_epigenome_integration/analysis/58_exposed_TF_functional_prediction
+
+
+# 残す単位の中に残っていた *_ARCHIVED_* 2 件。pre-commit フック（hooks/pre-commit）と
+# 正典の「証拠として使わない」規則にそろえてアーカイブから外す。ディスクには残してある。
+/05_annotation/analysis/05_annotation_260128_v1/tables/BGC_definition_manual_ARCHIVED_260224.tsv
+/13_TF_binding-site/analysis/01_master_TF_list_260206_v1/master_TF_binding_sites_M145_ARCHIVED_260224.tsv
+
+# Zenodo 連携メタデータ（D067）。タグ打ちで Zenodo レコードが自動生成されるため
+# アーカイブから外す。ファイルはディスクに残してある。
+/.zenodo.json

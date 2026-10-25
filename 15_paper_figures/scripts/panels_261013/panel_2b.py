@@ -11,6 +11,10 @@ is rewritten to the CSV's local path before execution. Outside the harness,
 pass the CSV path as argv[1].
 """
 import sys, importlib
+from pathlib import Path
+
+# [FIG18] タイルを再生成できるよう、artifact マーカーをローカルの入力表に解決しておく。
+_DATA_DIR = Path(__file__).resolve().parents[2] / 'data_261013'
 import numpy as np, pandas as pd
 import matplotlib as mpl
 import matplotlib.pyplot as plt
@@ -22,10 +26,10 @@ U.apply_unified_style()
 mpl.rcParams['savefig.bbox'] = None   # the style helper sets 'tight', which resizes the canvas
 
 # site-level channel levels: level_4mC_channel_pct, level_5mC_channel_pct (n = 2,091)
-CSV = "{{artifact:1bc294f3-dd77-4616-8326-9d0e54718441}}"
+CSV = str(_DATA_DIR / "v1bc294f3_F2b_channels.csv")
 if len(sys.argv) > 1:
     CSV = sys.argv[1]
-OUT = 'panel_b.png'
+OUT = str(Path(__file__).with_suffix('.png'))
 
 df = pd.read_csv(CSV)
 a = df['level_4mC_channel_pct'].to_numpy(float)
@@ -79,7 +83,6 @@ ax.set_ylim(-0.05, 1.40)
 ax.set_xticks([0, 25, 50, 75, 100])
 ax.set_yticks([])
 ax.set_xlabel('Methylated reads per TGGCCGGC site (%)')
-ax.set_title('Only the 4mC channel is methylated', loc='left', pad=5)
 U.style_axes(ax)
 ax.spines['left'].set_visible(False)   # categorical rows: no y axis
 ax.tick_params(axis='y', length=0)

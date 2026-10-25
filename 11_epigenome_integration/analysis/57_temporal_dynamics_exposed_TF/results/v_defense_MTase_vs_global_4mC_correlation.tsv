@@ -1,2 +1,0 @@
-metric	n	pearson_r	pearson_p	spearman_r	spearman_p	note
-mean_log2_mtase_expression vs density_ge50pct	3	-0.269837099073159	0.8260602941076676	-0.5	0.6666666666666666	n=3 timepoints; descriptive only
