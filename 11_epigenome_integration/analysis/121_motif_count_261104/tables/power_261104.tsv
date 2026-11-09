@@ -1,0 +1,26 @@
+unit	n	k_covariates	analysis	min_detectable_rho_power80	min_detectable_rho_power50
+gene	7863	0	naive	0.0316	0.0221
+gene	7863	2	partial_len_GC	0.0316	0.0221
+gene	7863	3	partial_len_GC_pos	0.0316	0.0221
+transcription_unit	5631	0	naive	0.0373	0.0261
+transcription_unit	5631	2	partial_len_GC	0.0373	0.0261
+transcription_unit	5631	3	partial_len_GC_pos	0.0373	0.0261
+tile_20kb	434	0	naive	0.1341	0.0941
+tile_20kb	434	2	partial_len_GC	0.1344	0.0943
+tile_20kb	434	3	partial_len_GC_pos	0.1346	0.0945
+gene_stratified	7863	0	stratified_n_AAGCCCG_4mC_gene	0.0316	
+gene_stratified	7863	0	stratified_nmod_AAGCCCG_4mC_gene_T1	0.0316	
+gene_stratified	7863	0	stratified_n_AAGCCCG_4mC_prom	0.0316	
+gene_stratified	7863	0	stratified_nmod_AAGCCCG_4mC_prom_T1	0.0316	
+gene_stratified	7863	0	stratified_n_AAGCCCG_6mA_gene	0.0316	
+gene_stratified	7663	0	stratified_nmod_AAGCCCG_6mA_gene_T1	0.032	
+gene_stratified	7863	0	stratified_n_AAGCCCG_6mA_prom	0.0316	
+gene_stratified	7554	0	stratified_nmod_AAGCCCG_6mA_prom_T1	0.0322	
+gene_stratified	7863	0	stratified_n_ANY_gene	0.0316	
+gene_stratified	7863	0	stratified_nmod_ANY_gene_T1	0.0316	
+gene_stratified	7863	0	stratified_n_ANY_prom	0.0316	
+gene_stratified	7863	0	stratified_nmod_ANY_prom_T1	0.0316	
+gene_stratified	7863	0	stratified_n_TGGCCGGC_4mC_gene	0.0316	
+gene_stratified	7863	0	stratified_nmod_TGGCCGGC_4mC_gene_T1	0.0316	
+gene_stratified	7863	0	stratified_n_TGGCCGGC_4mC_prom	0.0316	
+gene_stratified	7863	0	stratified_nmod_TGGCCGGC_4mC_prom_T1	0.0316	

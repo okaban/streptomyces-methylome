@@ -1,0 +1,11 @@
+dataset	platform	gene_set	n_tests	n_genes_median	max_abs_rho_raw	at_raw	max_abs_rho_partial	at_partial	rho_floor_raw	rho_floor_partial	exceeds_0088
+GSE132487	RNA-seq	all_chromosomal_genes	180	7532	0.120264	6mA T1 meanlevel 41h	0.0863475	6mA T1 meanlevel 41h	0.0322763	0.0322849	True
+GSE158810	RNA-seq	all_chromosomal_genes	36	7439	0.128131	6mA T1 meanlevel 50h	0.0930454	6mA T1 meanlevel 50h	0.0324774	0.0324861	True
+GSE174192	RNA-seq	all_chromosomal_genes	162	7492	0.120394	6mA T1 meanlevel 168h	0.104436	6mA T1 meanlevel 168h	0.0323624	0.032371	True
+GSE58666	two-colour microarray	all_chromosomal_genes	108	7530	0.116202	6mA T1 meanlevel 66h	0.124619	6mA T1 meanlevel 66h	0.0322806	0.0322892	True
+THIS_STUDY	RNA-seq	all_chromosomal_genes	72	7395	0.13407	6mA T1 meanlevel T3	0.100292	6mA T1 meanlevel T3	0.0325739	0.0325827	True
+GSE132487	RNA-seq	regulatory_n1051	180	1003	0.254457	6mA T1 meanlevel 45h	0.179368	6mA T1 meanlevel 45h	0.0883628	0.0885392	True
+GSE158810	RNA-seq	regulatory_n1051	36	999	0.240157	6mA T1 meanlevel 50h	0.187552	6mA T1 meanlevel 50h	0.0885392	0.0887166	True
+GSE174192	RNA-seq	regulatory_n1051	162	1003	0.138683	4mC T2 meanlevel 144h	0.156737	4mC T2 meanlevel 144h	0.0883628	0.0885392	True
+GSE58666	two-colour microarray	regulatory_n1051	108	1003	0.219304	6mA T1 meanlevel 49h	0.195764	6mA T1 meanlevel 49h	0.0883628	0.0885392	True
+THIS_STUDY	RNA-seq	regulatory_n1051	72	994	0.226533	6mA T1 meanlevel T3	0.146625	6mA T1 meanlevel T3	0.0887611	0.0889398	True

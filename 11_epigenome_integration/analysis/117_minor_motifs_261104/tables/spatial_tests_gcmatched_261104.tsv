@@ -1,0 +1,73 @@
+site_set	test	n_sites	observed	null_mean	p_matched	note	q_BH
+unassigned6mA_repro	window50kb_overdispersion	1492	312.8	646.7	1.0	GC+depth matched MC, one-sided	1.0
+unassigned6mA_repro	core	1492	992.0	715.07	0.0009995002498750624	two-sided MC; unmatched expectation 978.80	0.005140286999357464
+unassigned6mA_repro	overlap:antiSMASH_29_regions	1492	172.0	232.6	0.0009995002498750624	two-sided MC; unmatched expectation 193.99	0.005140286999357464
+unassigned6mA_repro	overlap:IslandPath_DIMOB_islands	1492	42.0	36.02	0.3498250874562719	two-sided MC; unmatched expectation 84.14	0.8685312516155717
+unassigned6mA_repro	overlap:rRNA_operons	1492	2.0	0.94	0.48875562218890556	two-sided MC; unmatched expectation 10.56	1.0
+unassigned6mA_repro	KS_coordinate	1492	0.0498	0.1241	1.0	GC+depth matched MC (200 draws), one-sided	1.0
+unassigned6mA_any	window50kb_overdispersion	2675	440.1	1080.6	1.0	GC+depth matched MC, one-sided	1.0
+unassigned6mA_any	core	2675	1745.0	1257.2	0.0009995002498750624	two-sided MC; unmatched expectation 1753.98	0.005140286999357464
+unassigned6mA_any	overlap:antiSMASH_29_regions	2675	333.0	417.29	0.0009995002498750624	two-sided MC; unmatched expectation 347.76	0.005140286999357464
+unassigned6mA_any	overlap:IslandPath_DIMOB_islands	2675	83.0	63.78	0.01999000499750125	two-sided MC; unmatched expectation 150.98	0.08995502248875563
+unassigned6mA_any	overlap:rRNA_operons	2675	2.0	1.61	0.9725137431284357	two-sided MC; unmatched expectation 18.93	1.0
+unassigned6mA_any	KS_coordinate	2675	0.0377	0.1274	1.0	GC+depth matched MC (200 draws), one-sided	1.0
+motif:CAACC@3	window50kb_overdispersion	146	209.4	245.0	0.927536231884058	GC+depth matched MC, one-sided	1.0
+motif:CAACC@3	core	146	80.0	61.92	0.0009995002498750624	two-sided MC; unmatched expectation 95.87	0.005140286999357464
+motif:CAACC@3	overlap:antiSMASH_29_regions	146	22.0	21.86	1.0	two-sided MC; unmatched expectation 18.91	1.0
+motif:CAACC@3	overlap:IslandPath_DIMOB_islands	146	3.0	3.98	0.848575712143928	two-sided MC; unmatched expectation 9.74	1.0
+motif:CAACC@3	overlap:rRNA_operons	146	0.0	0.02	1.0	two-sided MC; unmatched expectation 2.23	1.0
+motif:CAACC@3	KS_coordinate	146	0.0958	0.1806	1.0	GC+depth matched MC (200 draws), one-sided	1.0
+motif:AACC@2	window50kb_overdispersion	200	211.2	261.0	0.984007996001999	GC+depth matched MC, one-sided	1.0
+motif:AACC@2	core	200	125.0	87.95	0.0009995002498750624	two-sided MC; unmatched expectation 130.37	0.005140286999357464
+motif:AACC@2	overlap:antiSMASH_29_regions	200	27.0	31.61	0.4047976011994003	two-sided MC; unmatched expectation 26.11	0.9467766116941528
+motif:AACC@2	overlap:IslandPath_DIMOB_islands	200	3.0	5.0	0.5247376311844077	two-sided MC; unmatched expectation 12.80	1.0
+motif:AACC@2	overlap:rRNA_operons	200	0.0	0.05	1.0	two-sided MC; unmatched expectation 2.85	1.0
+motif:AACC@2	KS_coordinate	200	0.0755	0.1646	1.0	GC+depth matched MC (200 draws), one-sided	1.0
+motif:CAAC@3	window50kb_overdispersion	214	228.9	261.1	0.9020489755122438	GC+depth matched MC, one-sided	1.0
+motif:CAAC@3	core	214	125.0	94.16	0.0009995002498750624	two-sided MC; unmatched expectation 139.35	0.005140286999357464
+motif:CAAC@3	overlap:antiSMASH_29_regions	214	31.0	32.89	0.800599700149925	two-sided MC; unmatched expectation 27.53	1.0
+motif:CAAC@3	overlap:IslandPath_DIMOB_islands	214	3.0	5.79	0.31384307846076964	two-sided MC; unmatched expectation 13.81	0.8369148758953857
+motif:CAAC@3	overlap:rRNA_operons	214	0.0	0.04	1.0	two-sided MC; unmatched expectation 2.14	1.0
+motif:CAAC@3	KS_coordinate	214	0.0736	0.1613	1.0	GC+depth matched MC (200 draws), one-sided	1.0
+motif:GTCAC@4	window50kb_overdispersion	170	168.5	202.6	0.9645177411294353	GC+depth matched MC, one-sided	1.0
+motif:GTCAC@4	core	170	114.0	88.43	0.0009995002498750624	two-sided MC; unmatched expectation 109.09	0.005140286999357464
+motif:GTCAC@4	overlap:antiSMASH_29_regions	170	20.0	26.32	0.20589705147426288	two-sided MC; unmatched expectation 22.90	0.6601916433087804
+motif:GTCAC@4	overlap:IslandPath_DIMOB_islands	170	5.0	3.91	0.7006496751624188	two-sided MC; unmatched expectation 8.22	1.0
+motif:GTCAC@4	overlap:rRNA_operons	170	1.0	0.18	0.33683158420789605	two-sided MC; unmatched expectation 0.86	0.8661383593917327
+motif:GTCAC@4	KS_coordinate	170	0.0583	0.1204	1.0	GC+depth matched MC (200 draws), one-sided	1.0
+motif:GCAA@4	window50kb_overdispersion	176	200.7	252.2	0.9835082458770614	GC+depth matched MC, one-sided	1.0
+motif:GCAA@4	core	176	110.0	83.88	0.0009995002498750624	two-sided MC; unmatched expectation 117.66	0.005140286999357464
+motif:GCAA@4	overlap:antiSMASH_29_regions	176	24.0	26.02	0.769615192403798	two-sided MC; unmatched expectation 21.61	1.0
+motif:GCAA@4	overlap:IslandPath_DIMOB_islands	176	1.0	6.1	0.03298350824587706	two-sided MC; unmatched expectation 13.36	0.13193403298350825
+motif:GCAA@4	overlap:rRNA_operons	176	0.0	0.15	1.0	two-sided MC; unmatched expectation 1.62	1.0
+motif:GCAA@4	KS_coordinate	176	0.0644	0.16	1.0	GC+depth matched MC (200 draws), one-sided	1.0
+motif:TCACC@3	window50kb_overdispersion	200	166.5	206.2	0.9765117441279361	GC+depth matched MC, one-sided	1.0
+motif:TCACC@3	core	200	136.0	103.51	0.0009995002498750624	two-sided MC; unmatched expectation 128.19	0.005140286999357464
+motif:TCACC@3	overlap:antiSMASH_29_regions	200	17.0	30.44	0.013993003498250875	two-sided MC; unmatched expectation 27.02	0.0671664167916042
+motif:TCACC@3	overlap:IslandPath_DIMOB_islands	200	8.0	4.75	0.2108945527236382	two-sided MC; unmatched expectation 9.48	0.6601916433087804
+motif:TCACC@3	overlap:rRNA_operons	200	1.0	0.12	0.23588205897051473	two-sided MC; unmatched expectation 0.93	0.7076461769115442
+motif:TCACC@3	KS_coordinate	200	0.0413	0.1174	1.0	GC+depth matched MC (200 draws), one-sided	1.0
+motif:CACC@2	window50kb_overdispersion	380	196.2	238.7	0.9805097451274363	GC+depth matched MC, one-sided	1.0
+motif:CACC@2	core	380	265.0	197.4	0.0009995002498750624	two-sided MC; unmatched expectation 243.60	0.005140286999357464
+motif:CACC@2	overlap:antiSMASH_29_regions	380	41.0	56.35	0.025987006496751622	two-sided MC; unmatched expectation 50.83	0.11006261575094804
+motif:CACC@2	overlap:IslandPath_DIMOB_islands	380	15.0	9.27	0.09695152423788106	two-sided MC; unmatched expectation 17.67	0.3673952497435493
+motif:CACC@2	overlap:rRNA_operons	380	1.0	0.14	0.25987006496751625	two-sided MC; unmatched expectation 1.43	0.7484257871064467
+motif:CACC@2	KS_coordinate	380	0.0461	0.1064	1.0	GC+depth matched MC (200 draws), one-sided	1.0
+motif:ACCC@1	window50kb_overdispersion	271	197.9	232.4	0.9435282358820589	GC+depth matched MC, one-sided	1.0
+motif:ACCC@1	core	271	184.0	135.59	0.0009995002498750624	two-sided MC; unmatched expectation 177.01	0.005140286999357464
+motif:ACCC@1	overlap:antiSMASH_29_regions	271	36.0	41.33	0.4207896051974013	two-sided MC; unmatched expectation 35.65	0.9467766116941528
+motif:ACCC@1	overlap:IslandPath_DIMOB_islands	271	6.0	6.51	1.0	two-sided MC; unmatched expectation 12.92	1.0
+motif:ACCC@1	overlap:rRNA_operons	271	0.0	0.11	1.0	two-sided MC; unmatched expectation 1.75	1.0
+motif:ACCC@1	KS_coordinate	271	0.0614	0.1227	1.0	GC+depth matched MC (200 draws), one-sided	1.0
+motif:GGAAC@3	window50kb_overdispersion	118	181.6	192.9	0.6876561719140429	GC+depth matched MC, one-sided	1.0
+motif:GGAAC@3	core	118	77.0	61.6	0.0009995002498750624	two-sided MC; unmatched expectation 73.69	0.005140286999357464
+motif:GGAAC@3	overlap:antiSMASH_29_regions	118	16.0	19.9	0.4107946026986507	two-sided MC; unmatched expectation 17.03	0.9467766116941528
+motif:GGAAC@3	overlap:IslandPath_DIMOB_islands	118	6.0	2.9	0.13493253373313344	two-sided MC; unmatched expectation 6.22	0.4857571214392804
+motif:GGAAC@3	overlap:rRNA_operons	118	0.0	0.14	1.0	two-sided MC; unmatched expectation 0.75	1.0
+motif:GGAAC@3	KS_coordinate	118	0.076	0.1279	1.0	GC+depth matched MC (200 draws), one-sided	1.0
+motif:ACCGG@1	window50kb_overdispersion	150	206.3	196.5	0.303848075962019	GC+depth matched MC, one-sided	0.8369148758953857
+motif:ACCGG@1	core	150	103.0	77.49	0.0009995002498750624	two-sided MC; unmatched expectation 95.66	0.005140286999357464
+motif:ACCGG@1	overlap:antiSMASH_29_regions	150	20.0	23.41	0.5327336331834083	two-sided MC; unmatched expectation 20.48	1.0
+motif:ACCGG@1	overlap:IslandPath_DIMOB_islands	150	6.0	3.09	0.19790104947526238	two-sided MC; unmatched expectation 6.32	0.6601916433087804
+motif:ACCGG@1	overlap:rRNA_operons	150	0.0	0.03	1.0	two-sided MC; unmatched expectation 0.57	1.0
+motif:ACCGG@1	KS_coordinate	150	0.0765	0.1287	0.9950248756218906	GC+depth matched MC (200 draws), one-sided	1.0

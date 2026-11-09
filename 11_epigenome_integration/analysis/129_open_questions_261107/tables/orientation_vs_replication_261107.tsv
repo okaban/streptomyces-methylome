@@ -1,0 +1,7 @@
+tp	term	OR	lo	hi	p	n	model
+T1	coding	1.98	1.292	3.034	0.001704429375636976	1157	logit: coding + leading + 5prime base + GC250 + log depth
+T1	leading	1.142	0.834	1.563	0.4081662664340181	1157	logit: coding + leading + 5prime base + GC250 + log depth
+T2	coding	2.143	1.439	3.192	0.00017584936546101055	1159	logit: coding + leading + 5prime base + GC250 + log depth
+T2	leading	1.222	0.903	1.653	0.19479625016907665	1159	logit: coding + leading + 5prime base + GC250 + log depth
+T3	coding	2.198	1.472	3.281	0.00011789790446988301	1158	logit: coding + leading + 5prime base + GC250 + log depth
+T3	leading	1.25	0.925	1.69	0.14703443851371045	1158	logit: coding + leading + 5prime base + GC250 + log depth

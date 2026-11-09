@@ -1,0 +1,5 @@
+timepoint	motif	site_set	n_genes_coding_strand_only	n_genes_antisense_only	median_TPM_coding_strand_only	median_TPM_antisense_only	ratio_coding_over_antisense	p_mannwhitney
+T1	TGGCCGGC	modified sites only	942	388	10.62	7.23	1.47	0.2294982289358964
+T1	TGGCCGGC	all measurable positions	1033	411	9.66	7.68	1.26	0.6683717611296396
+T1	AAGCCCG	modified sites only	481	307	15.24	8.89	1.71	0.0233673931115008
+T1	AAGCCCG	all measurable positions	584	390	15.83	8.69	1.82	0.0024220148708711

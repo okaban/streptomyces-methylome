@@ -1,0 +1,8 @@
+space	status	enumeration_size	criterion	max_occupancy_pct	max_occ_word
+contiguous k=4-8, every offset	covered earlier (117_)	669,696 words / 167,424 tested cells	BH q<0.05	7.629	GGCAACCC@5 (28/367)
+bipartite 3-4 bp blocks, spacer N1-N10; contiguous k=9-11	covered earlier (125_)	15,543,296 words / 149 architectures	permutation FWER -log10p>5.98	26.923	GGGAACCGCGC@3 (7/26)
+contiguous k=12-16, every offset	NEW (126_)	70 architectures / 1.50e10 words	permutation FWER -log10p>8.258	32.258	AGGGGCGCGGGGAA@12 (10/31)
+bipartite 3-4 bp blocks, spacer N11-N20	NEW (126_)	280 architectures / 1.15e7 words	permutation FWER -log10p>8.258	6.522	GGGGGCCA@4 (gap N13) (6/92)
+three-block 3-N(1-10)-3-N(1-10)-3	NEW (126_)	900 architectures / 2.36e8 words	permutation FWER -log10p>8.258	25.0	GGGACCGAC (g1=1,g2=4) (6/24)
+IUPAC-degenerate contiguous k=4-8, <=3 degenerate letters from RYSWKMBDHVN, every offset	NEW (126_)	852,803,616 patterns / 22,045,565 tested cells	Bonferroni -log10p>8.644 (conservative)	7.629	GGCAACCC@5 (28/367); no degenerate pattern beats the concrete 8-mer
+PWM / position-weight models (STREME 15, MEME 5, 2 in-house PWMs)	NEW (126_)	22 models x both orientations x every anchor covering the A x 60 score cuts	occupancy maximised post hoc (generous, not a test)	29.63	STREME-3 CGGGCTTCTTCSC (8/27); best E-value model reaches 18.0% (9/50)

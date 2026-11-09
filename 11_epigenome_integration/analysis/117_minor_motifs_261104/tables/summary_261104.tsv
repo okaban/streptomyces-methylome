@@ -1,0 +1,24 @@
+quantity	value	source
+unassigned 4mC sites (canonical matcher, T1/T2/T3)	0 / 0 / 0	tables/site_census_261104.tsv
+unassigned 6mA sites per timepoint	1,516 / 1,669 / 1,852	tables/site_census_261104.tsv
+unassigned 6mA unique (position,strand) pooled T1-T3	2,681	tables/site_and_callable_counts_261104.tsv
+of these, called at >=2 timepoints (primary set)	1,499 (1,492 inside the callable background)	tables/site_and_callable_counts_261104.tsv
+callable adenine background (per-replicate Nvalid>=10, >=2 TP, AAGCCCG A1/A2 removed)	2,412,468	tables/site_and_callable_counts_261104.tsv
+k-mer tests (k=4..8, every offset covering the modified A)	167,424	tables/kmer_enrichment_261104.tsv
+k-mer cells at BH q<0.05 (reproducible set)	912	tables/kmer_enrichment_261104.tsv
+non-redundant candidate minor motifs (reproducible / any set)	68 / 93	tables/candidate_minor_motifs_261104.tsv
+strongest enrichment (O/E), reproducible set	GGCAACCC A5: O/E 123.4, 28/367 callable occurrences	tables/kmer_enrichment_261104.tsv
+highest occupancy of any enriched k-mer	GGCAACCC A5: 7.63% (28/367)	tables/kmer_enrichment_261104.tsv
+highest occupancy of a non-redundant candidate	AAGAAGCC A1: 2.80% (9/321) in the reproducible set; 3.73% (12/322) in the pooled set	tables/candidate_minor_motifs_261104.tsv
+CGGCAACC (the candidate already named in Supplementary Table S1c)	5.88% (53/902 callable occurrences); S1c reports 49/902 = 5.43%	tables/kmer_enrichment_261104.tsv
+comparator: AAGCCCG A1/A2 occupancy, same rule and denominator	16.40% (436/2,658)	canonical_sites.load_canonical + callable background
+KS, site coordinate vs callable coordinate	D=0.0498, p=1.19e-03 (callable null); matched-null p=1.00	tables/spatial_tests_261104.tsv, spatial_tests_gcmatched_261104.tsv
+50 kb window overdispersion	chi2=312.8 (df=173), p=4.03e-10 (callable null); matched-null p=1.00 (observed 312.8 vs null mean 646.7)	same
+core (1.50-7.167 Mb) vs arms	OR 1.040, p=0.479 (callable null); GC-matched p=0.489; depth-matched p=0.001	tables/core_arm_matching_decomposition_261104.tsv
+antiSMASH 29 regions	OR 0.872, p=0.098 (callable null); matched-null p=0.001 (same depth artefact as core/arm)	tables/spatial_tests_*_261104.tsv
+IslandPath-DIMOB islands (16 islands)	OR 0.485, p=2.83e-07 (callable null); GC+depth matched p=0.350	same
+rRNA operons (+-1 kb)	OR 0.188, p=3.01e-03 (callable null); GC+depth matched p=0.489; 0 sites inside any rRNA or tRNA gene body	same
+expression: genes with >=1 unassigned 6mA site in the Jeong-TSS promoter (-300..TSS)	108; 33 pass the 114_ depth floor and TPM>=1	tables/expression_association_261104.tsv
+expression: per-gene Spearman over 9 cultures, unassigned set	mean rho -0.0155, KS vs circular-shift null p=0.822, 0 genes at BH q<0.05	same
+expression: detectable effect size at n=9 cultures	|rho| >= 0.9167 for FDR 5% at n=33 genes (min attainable two-sided p = 5.51e-06)	same
+expression: 10 strongest minor motifs, all callable occurrences	n = 425-2,615 genes; KS p 0.168-0.988; 1 gene at BH q<0.05 across all ten sets (GTCAC@4, SC_RS31905, rho=0.9791, q=0.045) - within the circular-shift null behaviour of 114_ (n_fdr5_null_max 1-3)	same

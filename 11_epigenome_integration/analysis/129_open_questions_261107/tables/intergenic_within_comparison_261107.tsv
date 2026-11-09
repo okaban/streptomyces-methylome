@@ -1,0 +1,10 @@
+tp	comparison	strata	n	n_site	MH_OR	lo	hi
+T1	convergent_vs_divergent	GC x depth x gap-length x dist-to-gene-edge (4 quartiles each)	151102	109	3.146	2.05	4.829
+T1	convergent_vs_tandem	GC x depth x gap-length x dist-to-gene-edge (4 quartiles each)	210736	238	1.375	1.028	1.839
+T1	tandem_vs_divergent	GC x depth x gap-length x dist-to-gene-edge (4 quartiles each)	282736	215	2.255	1.588	3.201
+T2	convergent_vs_divergent	GC x depth x gap-length x dist-to-gene-edge (4 quartiles each)	151103	123	3.198	2.131	4.799
+T2	convergent_vs_tandem	GC x depth x gap-length x dist-to-gene-edge (4 quartiles each)	210786	255	1.508	1.148	1.98
+T2	tandem_vs_divergent	GC x depth x gap-length x dist-to-gene-edge (4 quartiles each)	282787	220	2.11	1.502	2.964
+T3	convergent_vs_divergent	GC x depth x gap-length x dist-to-gene-edge (4 quartiles each)	151103	143	2.907	2.011	4.203
+T3	convergent_vs_tandem	GC x depth x gap-length x dist-to-gene-edge (4 quartiles each)	210781	275	1.635	1.258	2.126
+T3	tandem_vs_divergent	GC x depth x gap-length x dist-to-gene-edge (4 quartiles each)	282782	242	1.968	1.445	2.679

@@ -1,0 +1,7 @@
+motif	stratifier	n_strata_used	n_near_used	ratio	p_perm	mean_residual_GC_diff
+4mC_TGGCCGGC	win_excl ±25 bp, EXACT GC value	14	83	0.9979	0.91504	0.0
+4mC_TGGCCGGC	win_excl ±250 bp, GC decile	9	84	1.006	0.7911	-0.00209
+4mC_AAGCCCG	win_excl ±25 bp, EXACT GC value	18	115	0.8926	0.0005	0.0
+4mC_AAGCCCG	win_excl ±250 bp, GC decile	10	115	0.9084	0.0005	-0.0004
+6mA_AAGCCCG	win_excl ±25 bp, EXACT GC value	16	117	0.9051	0.0075	0.0
+6mA_AAGCCCG	win_excl ±250 bp, GC decile	10	117	0.8805	0.001	-0.0007

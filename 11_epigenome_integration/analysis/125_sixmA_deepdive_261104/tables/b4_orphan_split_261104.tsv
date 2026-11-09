@@ -1,0 +1,4 @@
+threshold	catalogue_n	paired_with_nuclease	orphan	orphan_pct
++-3 genes and <=10,000 bp edge-to-edge, nuclease domain at any tier	129	28	101	78.3
+immediate neighbour (offset +-1) only, nuclease domain at any tier	129	12	117	90.7
++-3 genes / <=10,000 bp, nuclease domain at Pfam gathering threshold	129	10	119	92.2

@@ -1,0 +1,4 @@
+anchor	window	universe_n	genes_zero	pct_zero	genes_ge1
+annotated gene start	promoter -300..TSS	8275	7545	91.18	730
+annotated gene start	-300..+50	8275	7417	89.63	858
+Jeong 2016 experimental TSS	promoter -300..TSS	3570	3225	90.34	345

@@ -1,0 +1,7 @@
+region_set	region_label	mark	genes_with_position	genes_depth_ok	median_n_positions	median_icc_timepoint	frac_icc_gt_0p5	median_within_tp_sd	median_binomial_sd	median_between_tp_range
+prom_jeongtss	promoter -300..TSS, Jeong experimental TSS	4mC	244	87	1	0.0	0.1149	0.0597	0.0624	0.0669
+prom_jeongtss	promoter -300..TSS, Jeong experimental TSS	6mA	124	114	2	0.0	0.0351	0.0564	0.0461	0.0518
+prom_genestart	promoter -300..TSS, annotated gene start	4mC	726	200	1	0.0	0.07	0.0616	0.0621	0.0611
+prom_genestart	promoter -300..TSS, annotated gene start	6mA	348	308	2	0.0	0.0682	0.0542	0.0478	0.0591
+body	gene body	4mC	2383	881	1	0.0	0.0897	0.0548	0.0562	0.0544
+body	gene body	6mA	1042	941	2	0.0	0.101	0.0555	0.0486	0.0566

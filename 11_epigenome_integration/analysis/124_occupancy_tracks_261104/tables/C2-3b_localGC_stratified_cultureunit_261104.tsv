@@ -1,0 +1,11 @@
+motif	gc_window	n_bins	unit	ratio	ci_lo	ci_hi	p
+4mC_TGGCCGGC	±25 win_excl	5	culture (n=9)	0.9994	0.988	1.0108	8.99e-01
+4mC_TGGCCGGC	±250 win_excl	5	culture (n=9)	1.0082	0.9963	1.0201	1.51e-01
+4mC_AAGCCCG	±25 win_excl	5	culture (n=9)	0.9049	0.8941	0.9158	5.56e-08
+4mC_AAGCCCG	±250 win_excl	5	culture (n=9)	0.9101	0.8994	0.921	8.28e-08
+6mA_AAGCCCG	±25 win_excl	5	culture (n=9)	0.8898	0.8754	0.9043	1.79e-07
+6mA_AAGCCCG	±250 win_excl	5	culture (n=9)	0.8809	0.8679	0.8942	4.69e-08
+6mA_AAGCCCG	±25 win_excl	10	culture (n=9)	0.9028	0.8886	0.9172	4.04e-07
+6mA_AAGCCCG	±250 win_excl	10	culture (n=9)	0.8812	0.8681	0.8945	5.17e-08
+4mC_AAGCCCG	±25 win_excl	10	culture (n=9)	0.9003	0.8893	0.9116	4.90e-08
+4mC_AAGCCCG	±250 win_excl	10	culture (n=9)	0.9077	0.8967	0.9187	7.71e-08

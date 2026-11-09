@@ -1,0 +1,13 @@
+tp	cls	n	n_site	rate_per_1e5	mean_gc	mean_dep
+T1	genic	2091563	1343	64.21	0.718	146.0
+T1	intergenic_divergent	111551	43	38.547	0.6887	143.9
+T1	intergenic_convergent	39551	66	166.873	0.7145	142.5
+T1	intergenic_tandem	171185	172	100.476	0.7016	146.7
+T2	genic	2092835	1501	71.721	0.718	136.4
+T2	intergenic_divergent	111552	44	39.443	0.6887	141.3
+T2	intergenic_convergent	39551	79	199.742	0.7145	147.0
+T2	intergenic_tandem	171235	176	102.783	0.7016	143.2
+T3	genic	2092710	1643	78.511	0.718	105.1
+T3	intergenic_divergent	111552	55	49.304	0.6887	108.5
+T3	intergenic_convergent	39551	88	222.498	0.7145	112.8
+T3	intergenic_tandem	171230	187	109.21	0.7016	111.1

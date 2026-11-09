@@ -1,0 +1,21 @@
+scope	dataset	external	platform	gene_set	n_tests	n_genes	max_abs_rho_raw	n_raw_over_thr	max_abs_rho_partial	n_partial_over_thr	min_p_partial	rho_floor_raw	rho_floor_partial	power_at_least_as_good
+full sweep (3 exposures x every sample group)	THIS_STUDY	False	RNA-seq	all_chromosomal_genes	72	7395	0.13407	9	0.100292	1	0.000415805	0.0325739	0.0325827	True
+full sweep (3 exposures x every sample group)	GSE132487	True	RNA-seq	all_chromosomal_genes	180	7532	0.120264	43	0.0863475	1	0.00228388	0.0322763	0.0322849	True
+full sweep (3 exposures x every sample group)	GSE158810	True	RNA-seq	all_chromosomal_genes	36	7439	0.128131	2	0.0930454	2	0.00107172	0.0324774	0.0324861	True
+full sweep (3 exposures x every sample group)	GSE174192	True	RNA-seq	all_chromosomal_genes	162	7492	0.120394	9	0.104436	6	0.000225678	0.0323624	0.032371	True
+full sweep (3 exposures x every sample group)	GSE58666	True	two-colour microarray	all_chromosomal_genes	108	7530	0.116202	6	0.124619	6	1.02571e-05	0.0322806	0.0322892	True
+full sweep (3 exposures x every sample group)	THIS_STUDY	False	RNA-seq	regulatory_n1051	72	994	0.226533	5	0.146625	9	0.0946898	0.0887611	0.0889398	True
+full sweep (3 exposures x every sample group)	GSE132487	True	RNA-seq	regulatory_n1051	180	1003	0.254457	21	0.179368	29	0.0403698	0.0883628	0.0885392	True
+full sweep (3 exposures x every sample group)	GSE158810	True	RNA-seq	regulatory_n1051	36	999	0.240157	4	0.187552	4	0.0319428	0.0885392	0.0887166	True
+full sweep (3 exposures x every sample group)	GSE174192	True	RNA-seq	regulatory_n1051	162	1003	0.138683	56	0.156737	6	0.0321748	0.0883628	0.0885392	True
+full sweep (3 exposures x every sample group)	GSE58666	True	two-colour microarray	regulatory_n1051	108	1003	0.219304	7	0.195764	7	0.0250345	0.0883628	0.0885392	True
+pre-specified primary (level per kb, all samples pooled)	THIS_STUDY	False	RNA-seq	all_chromosomal_genes	6	7395	0.0844528	0	0.0366707	0	0.0016105	0.0325739	0.0325827	True
+pre-specified primary (level per kb, all samples pooled)	GSE132487	True	RNA-seq	all_chromosomal_genes	6	7532	0.0899888	2	0.0200999	0	0.0811069	0.0322763	0.0322849	True
+pre-specified primary (level per kb, all samples pooled)	GSE158810	True	RNA-seq	all_chromosomal_genes	6	7439	0.0610038	0	0.0151707	0	0.190765	0.0324774	0.0324861	True
+pre-specified primary (level per kb, all samples pooled)	GSE174192	True	RNA-seq	all_chromosomal_genes	6	7492	0.0493225	0	0.0233145	0	0.0435963	0.0323624	0.032371	True
+pre-specified primary (level per kb, all samples pooled)	GSE58666	True	two-colour microarray	all_chromosomal_genes	6	7530	0.0700476	0	0.0367712	0	0.0014159	0.0322806	0.0322892	True
+pre-specified primary (level per kb, all samples pooled)	THIS_STUDY	False	RNA-seq	regulatory_n1051	6	994	0.0392613	0	0.0223852	0	0.480837	0.0887611	0.0889398	True
+pre-specified primary (level per kb, all samples pooled)	GSE132487	True	RNA-seq	regulatory_n1051	6	1003	0.0613401	0	0.0145805	0	0.644643	0.0883628	0.0885392	True
+pre-specified primary (level per kb, all samples pooled)	GSE158810	True	RNA-seq	regulatory_n1051	6	999	0.0779367	0	0.0286961	0	0.364911	0.0885392	0.0887166	True
+pre-specified primary (level per kb, all samples pooled)	GSE174192	True	RNA-seq	regulatory_n1051	6	1003	0.116312	3	0.0452777	0	0.151886	0.0883628	0.0885392	True
+pre-specified primary (level per kb, all samples pooled)	GSE58666	True	two-colour microarray	regulatory_n1051	6	1003	0.0273934	0	0.0467819	0	0.138726	0.0883628	0.0885392	True

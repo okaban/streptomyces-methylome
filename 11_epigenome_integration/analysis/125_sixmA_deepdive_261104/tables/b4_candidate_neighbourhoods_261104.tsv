@@ -1,0 +1,8 @@
+mtase_locus_tag	mtase_old_locus_tag	mtase_aa	partner_locus_tag	partner_old_locus_tag	partner_aa	nuclease_class	domain_evidence_tier	gene_offset	intervening_bp	orientation
+SC_RS17645	SCO3104	679	SC_RS17650	SCO3105	165		none	1	204	divergent
+SC_RS17645	SCO3104	679	SC_RS17660	SCO3107	258	HNH;HNH/His-Me;other nuclease/restriction signature	Pfam-GA+InterPro	3	1718	tandem
+SC_RS28835	SCO5331	1200	SC_RS28825	SCO5329	565	HNH/His-Me;other nuclease/restriction family;other nuclease/restriction signature	Pfam-GA+InterPro	-2	1527	convergent
+SC_RS28835	SCO5331	1200	SC_RS28830	SCO5330	300	HNH	Pfam-relaxed(i-E<1)	-1	162	convergent
+SC_RS28835	SCO5331	1200	SC_RS28840	SCO5332	446	Mrr-like	Pfam-relaxed(i-E<1)	1	393	divergent
+SC_RS28835	SCO5331	1200	SC_RS28845	SCO5333	301	HNH;PUA;SRA/YDG	Pfam-GA+InterPro	2	1819	tandem
+SC_RS35335	SCO6627	1210	SC_RS35330	SCO6626	1557	PD-(D/E)xK;other nuclease/restriction signature	Pfam-GA+InterPro	-1	-4	tandem

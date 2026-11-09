@@ -1,0 +1,10 @@
+pattern	a_index	note	n_fg	n_bg	occ_pct
+AAGCCCG	0	major motif, A1	0	0	
+AAGCCCG	1	major motif, A2	0	0	
+AACCCG	0	near-cognate, A1	13	4620	0.28
+AACCCG	1	near-cognate, A2	61	4618	1.32
+CGGCAACCCG	5	top contiguous 10-mer hit	23	137	16.79
+AANCCCG	0	A1, N at +2	5	1690	0.3
+AASCCCG	0	A1, S at +2	5	1057	0.47
+AAGCCC	0	major motif minus 3' G	0	2235	0.0
+HAAGCCCG	1	HAAGCCCG A1 (manuscript 45.84%)	0	0	

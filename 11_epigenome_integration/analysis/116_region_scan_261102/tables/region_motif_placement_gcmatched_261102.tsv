@@ -1,0 +1,25 @@
+precedence	series	region	motif_n_total	region_bp	region_pct_of_genome	observed	pct_observed	expected_gcmatched	pct_expected	O_over_E	p_value	mde80_abs_dev_from_1	recorded_261004_pct	recorded_261004_pct_expected	recorded_261004_ratio	recorded_261004_p	matches_record
+canonical_261101 (promoter > 5'UTR > CDS)	4mC, TGGCCGGC C5	promoter	2093	773278	8.922	159	7.597	168.8	8.065	0.942	0.47	0.207	1.43	2.25	0.64	0.02	False
+canonical_261101 (promoter > 5'UTR > CDS)	4mC, TGGCCGGC C5	utr5	2093	173948	2.007	24	1.147	30.68	1.466	0.782	0.274	0.502					
+canonical_261101 (promoter > 5'UTR > CDS)	4mC, TGGCCGGC C5	cds	2093	7087448	81.77	1835	87.673	1755.01	83.851	1.046	1.07e-06	0.027	93.69	89.97	1.04		False
+canonical_261101 (promoter > 5'UTR > CDS)	4mC, TGGCCGGC C5	other	2093	632833	7.301	75	3.583	138.51	6.618	0.541	1.88e-09	0.23	3.11	5.4	0.58	<0.005	False
+canonical_261101 (promoter > 5'UTR > CDS)	4mC, AAGCCCG C5	promoter	1334	773278	8.922	132	9.895	126.42	9.477	1.044	0.607	0.237					
+canonical_261101 (promoter > 5'UTR > CDS)	4mC, AAGCCCG C5	utr5	1334	173948	2.007	39	2.924	31.41	2.354	1.242	0.175	0.494					
+canonical_261101 (promoter > 5'UTR > CDS)	4mC, AAGCCCG C5	cds	1334	7087448	81.77	1064	79.76	1073.81	80.495	0.991	0.49	0.038					
+canonical_261101 (promoter > 5'UTR > CDS)	4mC, AAGCCCG C5	other	1334	632833	7.301	99	7.421	102.37	7.674	0.967	0.797	0.266					
+canonical_261101 (promoter > 5'UTR > CDS)	6mA, AAGCCCG A1/A2	promoter	2668	773278	8.922	264	9.895	251.38	9.422	1.05	0.407	0.168					
+canonical_261101 (promoter > 5'UTR > CDS)	6mA, AAGCCCG A1/A2	utr5	2668	173948	2.007	76	2.849	61.84	2.318	1.229	0.0714	0.352					
+canonical_261101 (promoter > 5'UTR > CDS)	6mA, AAGCCCG A1/A2	cds	2668	7087448	81.77	2134	79.985	2151.37	80.636	0.992	0.391	0.027					
+canonical_261101 (promoter > 5'UTR > CDS)	6mA, AAGCCCG A1/A2	other	2668	632833	7.301	194	7.271	203.42	7.624	0.954	0.512	0.189					
+cds_first (CDS > promoter > 5'UTR)	4mC, TGGCCGGC C5	promoter	2093	270715	3.123	27	1.29	51.82	2.476	0.521	0.000183	0.384					
+cds_first (CDS > promoter > 5'UTR)	4mC, TGGCCGGC C5	utr5	2093	89023	1.027	8	0.382	15.1	0.721	0.53	0.0694	0.718					
+cds_first (CDS > promoter > 5'UTR)	4mC, TGGCCGGC C5	cds	2093	7674936	88.548	1983	94.744	1887.57	90.185	1.051	3.72e-14	0.02					
+cds_first (CDS > promoter > 5'UTR)	4mC, TGGCCGGC C5	other	2093	632833	7.301	75	3.583	138.51	6.618	0.541	1.88e-09	0.23					
+cds_first (CDS > promoter > 5'UTR)	4mC, AAGCCCG C5	promoter	1334	270715	3.123	45	3.373	47.08	3.529	0.956	0.824	0.401					
+cds_first (CDS > promoter > 5'UTR)	4mC, AAGCCCG C5	utr5	1334	89023	1.027	22	1.649	16.23	1.217	1.355	0.167	0.691					
+cds_first (CDS > promoter > 5'UTR)	4mC, AAGCCCG C5	cds	1334	7674936	88.548	1168	87.556	1168.32	87.58	1.0	0.967	0.029					
+cds_first (CDS > promoter > 5'UTR)	4mC, AAGCCCG C5	other	1334	632833	7.301	99	7.421	102.37	7.674	0.967	0.797	0.266					
+cds_first (CDS > promoter > 5'UTR)	6mA, AAGCCCG A1/A2	promoter	2668	270715	3.123	86	3.223	93.0	3.486	0.925	0.493	0.285					
+cds_first (CDS > promoter > 5'UTR)	6mA, AAGCCCG A1/A2	utr5	2668	89023	1.027	44	1.649	31.9	1.196	1.379	0.0397	0.493					
+cds_first (CDS > promoter > 5'UTR)	6mA, AAGCCCG A1/A2	cds	2668	7674936	88.548	2344	87.856	2339.68	87.694	1.002	0.837	0.02					
+cds_first (CDS > promoter > 5'UTR)	6mA, AAGCCCG A1/A2	other	2668	632833	7.301	194	7.271	203.42	7.624	0.954	0.512	0.189					

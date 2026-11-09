@@ -1,0 +1,5 @@
+stratification	prom_4mC	prom_6mA	body_4mC	body_6mA	bodycall_4mC	bodycall_6mA
+none	0	0	17.0	9.0	17.0	8.0
+GC_only	0	0	14.0	6.0	20.0	7.0
+length_only	0	0	0.0	0.0	0.0	1.0
+GC_x_length	0	0				

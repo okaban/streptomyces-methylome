@@ -1,0 +1,33 @@
+control	cls	definition	axis	level	D	n_hypo	OR	p	n_sites_retained	k_hypo	p_BH
+MH_depth_quintile	TGGCCGGC_C5_4mC	hypo_strict	region_class	core		3	0.143057543070374	0.7104288916935864			0.9940265013576101
+MH_depth_quintile	TGGCCGGC_C5_4mC	hypo_strict	locus_class	promoter		3	35.14091413874771	0.0097673194391744			0.3125542220535808
+MH_depth_quintile	TGGCCGGC_C5_4mC	hypo_strict	locus_class	gene_body		3	0.053352813343449	0.0422103529771382			0.3376828238171056
+MH_depth_quintile	TGGCCGGC_C5_4mC	hypo_strict	in_island	True		3	0.0	0.2944220793524584			0.856500594479879
+MH_depth_quintile	TGGCCGGC_C5_4mC	hypo_relaxed	region_class	core		16	1.1976062542242163	0.9192449797824584			0.9940265013576101
+MH_depth_quintile	TGGCCGGC_C5_4mC	hypo_relaxed	locus_class	promoter		16	4.170405841182134	0.0357551816446305			0.3376828238171056
+MH_depth_quintile	TGGCCGGC_C5_4mC	hypo_relaxed	locus_class	gene_body		16	0.3836050056223902	0.1987509784610572			0.6360031310753831
+MH_depth_quintile	TGGCCGGC_C5_4mC	hypo_relaxed	in_island	True		16	0.0	0.8357169080207196			0.9940265013576101
+MH_depth_quintile	AAGCCCG_C5_4mC	hypo_strict	region_class	core		5	1.143417694488167	0.6396046236320008			0.9940265013576101
+MH_depth_quintile	AAGCCCG_C5_4mC	hypo_strict	locus_class	promoter		5	1.7910740395848777	0.8639407845603229			0.9940265013576101
+MH_depth_quintile	AAGCCCG_C5_4mC	hypo_strict	locus_class	gene_body		5	0.3643701217510826	0.5626486490202318			0.9940265013576101
+MH_depth_quintile	AAGCCCG_C5_4mC	hypo_strict	in_island	True		5	0.0	0.7108857893529309			0.9940265013576101
+MH_depth_quintile	AAGCCCG_C5_4mC	hypo_relaxed	region_class	core		21	0.4964773318813165	0.5066014887231097			0.9940265013576101
+MH_depth_quintile	AAGCCCG_C5_4mC	hypo_relaxed	locus_class	promoter		21	1.1073533641852074	0.864417215095911			0.9940265013576101
+MH_depth_quintile	AAGCCCG_C5_4mC	hypo_relaxed	locus_class	gene_body		21	0.6685318248592983	0.567834321281872			0.9940265013576101
+MH_depth_quintile	AAGCCCG_C5_4mC	hypo_relaxed	in_island	True		21	0.622056299703996	0.9629631731901848			0.9940265013576101
+MH_depth_quintile	AAGCCCG_A1_6mA	hypo_strict	region_class	core		8					1.0
+MH_depth_quintile	AAGCCCG_A1_6mA	hypo_strict	locus_class	promoter		8	1.6755121759683418	0.8675172698633677			0.9940265013576101
+MH_depth_quintile	AAGCCCG_A1_6mA	hypo_strict	locus_class	gene_body		8	0.5545966205915843	0.6638501277418012			0.9940265013576101
+MH_depth_quintile	AAGCCCG_A1_6mA	hypo_strict	in_island	True		8	0.0	0.729253676122583			0.9940265013576101
+MH_depth_quintile	AAGCCCG_A1_6mA	hypo_relaxed	region_class	core		54	0.7836030573282287	0.9095364175084316			0.9940265013576101
+MH_depth_quintile	AAGCCCG_A1_6mA	hypo_relaxed	locus_class	promoter		54	1.7000567601291452	0.1631422635970543			0.5800613816784153
+MH_depth_quintile	AAGCCCG_A1_6mA	hypo_relaxed	locus_class	gene_body		54	0.5686610094874325	0.0771659518500912			0.4115517432004864
+MH_depth_quintile	AAGCCCG_A1_6mA	hypo_relaxed	in_island	True		54	1.371000643461309	0.6572209546456518			0.9940265013576101
+MH_depth_quintile	ALL_4mC	hypo_strict	region_class	core		8	0.6872656373699058	0.9044642335860216			0.9940265013576101
+MH_depth_quintile	ALL_4mC	hypo_strict	locus_class	promoter		8	5.416289145188618	0.0583397262302543			0.37337424787362755
+MH_depth_quintile	ALL_4mC	hypo_strict	locus_class	gene_body		8	0.1767436093863982	0.0330441603004752			0.3376828238171056
+MH_depth_quintile	ALL_4mC	hypo_strict	in_island	True		8	0.0	0.952582753540578			0.9940265013576101
+MH_depth_quintile	ALL_4mC	hypo_relaxed	region_class	core		37	0.721748496040309	0.656784998444032			0.9940265013576101
+MH_depth_quintile	ALL_4mC	hypo_relaxed	locus_class	promoter		37	2.0779964035954346	0.1457473428719033			0.5800613816784153
+MH_depth_quintile	ALL_4mC	hypo_relaxed	locus_class	gene_body		37	0.4906993085050197	0.0949005005736677			0.43383085976533803
+MH_depth_quintile	ALL_4mC	hypo_relaxed	in_island	True		37	0.4521169006972142	0.6597627331198419			0.9940265013576101

@@ -1,0 +1,7 @@
+mod	timepoint	n_called_sites	n_explained_canonical	pct_explained_canonical	pct_unassigned	pct_explained_all_candidates	pct_explained_occ_ge_canonical
+6mA	T1	1934	418	21.61	78.39	92.92	24.87
+4mC	T1	1987	1987	100.0	0.0	100.0	100.0
+6mA	T2	2120	451	21.27	78.73	92.36	24.15
+4mC	T2	2446	2446	100.0	0.0	100.0	100.0
+6mA	T3	2295	443	19.3	80.7	91.2	22.27
+4mC	T3	1647	1647	100.0	0.0	100.0	100.0

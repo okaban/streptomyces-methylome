@@ -1,0 +1,25 @@
+tp	cls	n_expo	n_site_expo	crude_OR	MH_OR	lo	hi	mark
+T1	divergent	111551	43	0.6	1.049	0.772	1.427	6mA_nonmotif
+T1	convergent	39551	66	2.602	2.568	2.004	3.29	6mA_nonmotif
+T1	tandem	171185	172	1.565	2.043	1.741	2.398	6mA_nonmotif
+T1	all_intergenic	322287	281	1.358	1.87	1.642	2.131	6mA_nonmotif
+T2	divergent	111552	44	0.55	0.972	0.718	1.315	6mA_nonmotif
+T2	convergent	39551	79	2.789	2.832	2.257	3.554	6mA_nonmotif
+T2	tandem	171235	176	1.434	1.893	1.618	2.215	6mA_nonmotif
+T2	all_intergenic	322338	299	1.294	1.812	1.599	2.054	6mA_nonmotif
+T3	divergent	111552	55	0.628	1.09	0.831	1.432	6mA_nonmotif
+T3	convergent	39551	88	2.838	2.892	2.333	3.587	6mA_nonmotif
+T3	tandem	171230	187	1.391	1.847	1.586	2.151	6mA_nonmotif
+T3	all_intergenic	322333	330	1.304	1.819	1.614	2.051	6mA_nonmotif
+T1	divergent	228964	0					4mC_nonmotif
+T1	convergent	118116	0					4mC_nonmotif
+T1	tandem	403948	0					4mC_nonmotif
+T1	all_intergenic	751028	0					4mC_nonmotif
+T2	divergent	228966	0					4mC_nonmotif
+T2	convergent	118116	0					4mC_nonmotif
+T2	tandem	404041	0					4mC_nonmotif
+T2	all_intergenic	751123	0					4mC_nonmotif
+T3	divergent	228962	0		0.0			4mC_nonmotif
+T3	convergent	118114	0		0.0			4mC_nonmotif
+T3	tandem	404025	0		0.0			4mC_nonmotif
+T3	all_intergenic	751101	0		0.0			4mC_nonmotif

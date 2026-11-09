@@ -1,0 +1,5 @@
+universe	gc_window	n_bins	n_near	n_far	ratio	ci_lo	ci_hi	p
+both_A (A1+A2)	win_excl ±25 bp	5	235	2433	0.8859	0.873	0.899	5.95e-08
+both_A (A1+A2)	win_excl ±25 bp	10	235	2433	0.9002	0.8869	0.9138	2.12e-07
+both_A (A1+A2)	win_excl ±250 bp	5	235	2433	0.8788	0.8665	0.8912	2.60e-08
+both_A (A1+A2)	win_excl ±250 bp	10	235	2433	0.8797	0.8668	0.8928	4.03e-08

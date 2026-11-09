@@ -1,0 +1,91 @@
+part	series	orientation	length_stratum	n_regions	region_bp	median_region_bp	motif_n_total	observed	expected_gcmatched	O_over_E	pct_observed	pct_expected	p_value	mde80_abs_dev_from_1	contrast	sd_log_ratio	mde80_ratio	universe_n	n_near	n_distal	n_cultures	mean_level_near	mean_level_distal	ratio	ci95_lo	ci95_hi	timepoint	n_measurable	n_modified	pct_modified	n_measurable_all	pct_modified_all
+2a_motif_placement	4mC, TGGCCGGC C5	tandem	all	3820.0	508282.0	96.0	2093.0	65.0	108.27	0.6	3.106	5.173	6.58e-06	0.262																		
+2a_motif_placement	4mC, TGGCCGGC C5	divergent	all	1427.0	322045.0	183.0	2093.0	27.0	60.08	0.449	1.29	2.871	2.12e-06	0.356																		
+2a_motif_placement	4mC, TGGCCGGC C5	convergent	all	1258.0	126707.0	59.0	2093.0	18.0	31.99	0.563	0.86	1.528	0.00957	0.492																		
+2a_motif_placement	4mC, TGGCCGGC C5	tandem	short	1389.0	42185.0		2093.0	3.0	9.35	0.321			0.0317																			
+2a_motif_placement	4mC, TGGCCGGC C5	tandem	mid	1364.0	146848.0		2093.0	15.0	31.54	0.476			0.00159																			
+2a_motif_placement	4mC, TGGCCGGC C5	tandem	long	1067.0	319249.0		2093.0	47.0	67.38	0.698			0.0109																			
+2a_motif_placement	4mC, TGGCCGGC C5	divergent	short	81.0	3850.0		2093.0	0.0	0.72	0.0			1																			
+2a_motif_placement	4mC, TGGCCGGC C5	divergent	mid	479.0	55227.0		2093.0	2.0	9.51	0.21			0.00832																			
+2a_motif_placement	4mC, TGGCCGGC C5	divergent	long	867.0	262968.0		2093.0	25.0	49.85	0.502			0.000134																			
+2a_motif_placement	4mC, TGGCCGGC C5	convergent	short	698.0	21926.0		2093.0	3.0	6.01	0.5			0.303																			
+2a_motif_placement	4mC, TGGCCGGC C5	convergent	mid	340.0	34131.0		2093.0	4.0	9.0	0.444			0.128																			
+2a_motif_placement	4mC, TGGCCGGC C5	convergent	long	220.0	70650.0		2093.0	11.0	16.98	0.648			0.178																			
+2a_motif_placement	4mC, AAGCCCG C5	tandem	all	3820.0	508282.0	96.0	1334.0	90.0	83.97	1.072	6.747	6.295	0.498	0.296																		
+2a_motif_placement	4mC, AAGCCCG C5	divergent	all	1427.0	322045.0	183.0	1334.0	48.0	56.45	0.85	3.598	4.232	0.276	0.365																		
+2a_motif_placement	4mC, AAGCCCG C5	convergent	all	1258.0	126707.0	59.0	1334.0	18.0	18.56	0.97	1.349	1.391	1	0.646																		
+2a_motif_placement	4mC, AAGCCCG C5	tandem	short	1389.0	42185.0		1334.0	5.0	6.92	0.723			0.7																			
+2a_motif_placement	4mC, AAGCCCG C5	tandem	mid	1364.0	146848.0		1334.0	30.0	24.38	1.231			0.259																			
+2a_motif_placement	4mC, AAGCCCG C5	tandem	long	1067.0	319249.0		1334.0	55.0	52.67	1.044			0.725																			
+2a_motif_placement	4mC, AAGCCCG C5	divergent	short	81.0	3850.0		1334.0	0.0	0.68	0.0			1																			
+2a_motif_placement	4mC, AAGCCCG C5	divergent	mid	479.0	55227.0		1334.0	7.0	9.98	0.701			0.427																			
+2a_motif_placement	4mC, AAGCCCG C5	divergent	long	867.0	262968.0		1334.0	41.0	45.79	0.895			0.547																			
+2a_motif_placement	4mC, AAGCCCG C5	convergent	short	698.0	21926.0		1334.0	3.0	3.02	0.994			1																			
+2a_motif_placement	4mC, AAGCCCG C5	convergent	mid	340.0	34131.0		1334.0	4.0	4.87	0.821			1																			
+2a_motif_placement	4mC, AAGCCCG C5	convergent	long	220.0	70650.0		1334.0	11.0	10.67	1.031			0.877																			
+2a_motif_placement	6mA, AAGCCCG A1/A2	tandem	all	3820.0	508282.0	96.0	2668.0	173.0	166.72	1.038	6.484	6.249	0.603	0.21																		
+2a_motif_placement	6mA, AAGCCCG A1/A2	divergent	all	1427.0	322045.0	183.0	2668.0	96.0	111.34	0.862	3.598	4.173	0.146	0.26																		
+2a_motif_placement	6mA, AAGCCCG A1/A2	convergent	all	1258.0	126707.0	59.0	2668.0	35.0	37.19	0.941	1.312	1.394	0.804	0.456																		
+2a_motif_placement	6mA, AAGCCCG A1/A2	tandem	short	1389.0	42185.0		2668.0	7.0	13.78	0.508			0.0768																			
+2a_motif_placement	6mA, AAGCCCG A1/A2	tandem	mid	1364.0	146848.0		2668.0	57.0	48.45	1.176			0.217																			
+2a_motif_placement	6mA, AAGCCCG A1/A2	tandem	long	1067.0	319249.0		2668.0	109.0	104.49	1.043			0.653																			
+2a_motif_placement	6mA, AAGCCCG A1/A2	divergent	short	81.0	3850.0		2668.0	0.0	1.34	0.0			0.649																			
+2a_motif_placement	6mA, AAGCCCG A1/A2	divergent	mid	479.0	55227.0		2668.0	14.0	19.63	0.713			0.255																			
+2a_motif_placement	6mA, AAGCCCG A1/A2	divergent	long	867.0	262968.0		2668.0	82.0	90.37	0.907			0.392																			
+2a_motif_placement	6mA, AAGCCCG A1/A2	convergent	short	698.0	21926.0		2668.0	5.0	6.08	0.822			0.839																			
+2a_motif_placement	6mA, AAGCCCG A1/A2	convergent	mid	340.0	34131.0		2668.0	8.0	9.78	0.818			0.747																			
+2a_motif_placement	6mA, AAGCCCG A1/A2	convergent	long	220.0	70650.0		2668.0	22.0	21.33	1.032			0.828																			
+2b_level_ratio	6mA, AAGCCCG A1/A2	tandem	all										0.00245		class vs rest of universe	0.02267	1.0244	2664.0	173.0	2491.0	9.0	0.323289	0.348907	0.9677	0.9509	0.9847						
+2b_level_ratio	6mA, AAGCCCG A1/A2	divergent	all										0.0712		class vs rest of universe	0.02564	1.0277	2664.0	96.0	2568.0	9.0	0.321499	0.348205	1.0179	0.9981	1.0382						
+2b_level_ratio	6mA, AAGCCCG A1/A2	convergent	all										0.483		class vs rest of universe	0.06018	1.0662	2664.0	35.0	2629.0	9.0	0.342722	0.347303	0.9853	0.9408	1.032						
+2b_level_ratio	6mA, AAGCCCG A1/A2	any_intergenic	all										0.0608		class vs rest of universe	0.02194	1.0236	2664.0	304.0	2360.0	9.0	0.324961	0.350113	0.9842	0.9677	1.0009						
+2b_level_ratio	6mA, AAGCCCG A1/A2	divergent	all										0.0154		divergent vs tandem spacers, GC quintile matched	0.03699	1.0402	269.0	96.0	173.0	9.0	0.321499	0.323289	1.0386	1.0095	1.0685						
+2b_level_ratio	6mA, AAGCCCG A1/A2	divergent	all										0.189		divergent vs tandem spacers, GC quintile x length tertile matched	0.04308	1.0469	269.0	96.0	173.0	9.0	0.321499	0.323289	1.0208	0.9876	1.0552						
+2b_level_ratio	4mC, TGGCCGGC C5	tandem	all										9.1e-05		class vs rest of universe	0.01227	1.0132	2093.0	65.0	2028.0	9.0	0.62349	0.640239	0.9709	0.9618	0.9801						
+2b_level_ratio	4mC, TGGCCGGC C5	divergent	all										0.795		class vs rest of universe	0.01529	1.0164	2093.0	27.0	2066.0	9.0	0.643596	0.639669	0.9986	0.987	1.0104						
+2b_level_ratio	4mC, TGGCCGGC C5	convergent	all												NOT TESTED: n_near < 20				18.0													
+2b_level_ratio	4mC, TGGCCGGC C5	any_intergenic	all										0.0056		class vs rest of universe	0.01145	1.0123	2093.0	110.0	1983.0	9.0	0.632844	0.640101	0.9858	0.9771	0.9945						
+2b_level_ratio	4mC, TGGCCGGC C5	divergent	all										0.000723		divergent vs tandem spacers, GC quintile matched	0.01945	1.0209	92.0	27.0	65.0	9.0	0.643596	0.62349	1.035	1.0196	1.0506						
+2b_level_ratio	4mC, TGGCCGGC C5	divergent	all										0.000871		divergent vs tandem spacers, GC quintile x length tertile matched	0.02252	1.0243	92.0	27.0	65.0	9.0	0.643596	0.62349	1.0394	1.0216	1.0576						
+2b_level_ratio	4mC, AAGCCCG C5	tandem	all										1.16e-07		class vs rest of universe	0.01167	1.0125	1332.0	90.0	1242.0	9.0	0.516017	0.544361	0.9342	0.9259	0.9426						
+2b_level_ratio	4mC, AAGCCCG C5	divergent	all										4.33e-06		class vs rest of universe	0.02842	1.0307	1332.0	48.0	1284.0	9.0	0.49946	0.544052	0.9016	0.8821	0.9215						
+2b_level_ratio	4mC, AAGCCCG C5	convergent	all												NOT TESTED: n_near < 20				18.0													
+2b_level_ratio	4mC, AAGCCCG C5	any_intergenic	all										4.93e-07		class vs rest of universe	0.01645	1.0177	1332.0	156.0	1176.0	9.0	0.512537	0.546413	0.9234	0.9118	0.9352						
+2b_level_ratio	4mC, AAGCCCG C5	divergent	all										0.00522		divergent vs tandem spacers, GC quintile matched	0.02905	1.0314	138.0	48.0	90.0	9.0	0.49946	0.516017	0.9639	0.9426	0.9856						
+2b_level_ratio	4mC, AAGCCCG C5	divergent	all										1.44e-05		divergent vs tandem spacers, GC quintile x length tertile matched	0.03163	1.0343	138.0	48.0	90.0	9.0	0.49946	0.516017	0.9065	0.8847	0.9288						
+2c_census_fraction	4mC, TGGCCGGC C5	tandem																									T1	65.0	56.0	86.15	2091.0	90.2
+2c_census_fraction	4mC, TGGCCGGC C5	divergent																									T1	27.0	24.0	88.89	2091.0	90.2
+2c_census_fraction	4mC, TGGCCGGC C5	convergent																									T1	18.0	17.0	94.44	2091.0	90.2
+2c_census_fraction	4mC, TGGCCGGC C5	any_intergenic																									T1	110.0	97.0	88.18	2091.0	90.2
+2c_census_fraction	4mC, AAGCCCG C5	tandem																									T1	90.0	62.0	68.89	1330.0	76.92
+2c_census_fraction	4mC, AAGCCCG C5	divergent																									T1	48.0	30.0	62.5	1330.0	76.92
+2c_census_fraction	4mC, AAGCCCG C5	convergent																									T1	18.0	14.0	77.78	1330.0	76.92
+2c_census_fraction	4mC, AAGCCCG C5	any_intergenic																									T1	156.0	106.0	67.95	1330.0	76.92
+2c_census_fraction	6mA, AAGCCCG A1/A2	tandem																									T1	173.0	20.0	11.56	2660.0	15.64
+2c_census_fraction	6mA, AAGCCCG A1/A2	divergent																									T1	96.0	8.0	8.33	2660.0	15.64
+2c_census_fraction	6mA, AAGCCCG A1/A2	convergent																									T1	35.0	5.0	14.29	2660.0	15.64
+2c_census_fraction	6mA, AAGCCCG A1/A2	any_intergenic																									T1	304.0	33.0	10.86	2660.0	15.64
+2c_census_fraction	4mC, TGGCCGGC C5	tandem																									T2	65.0	59.0	90.77	2093.0	90.4
+2c_census_fraction	4mC, TGGCCGGC C5	divergent																									T2	27.0	24.0	88.89	2093.0	90.4
+2c_census_fraction	4mC, TGGCCGGC C5	convergent																									T2	18.0	17.0	94.44	2093.0	90.4
+2c_census_fraction	4mC, TGGCCGGC C5	any_intergenic																									T2	110.0	100.0	90.91	2093.0	90.4
+2c_census_fraction	4mC, AAGCCCG C5	tandem																									T2	90.0	55.0	61.11	1332.0	73.35
+2c_census_fraction	4mC, AAGCCCG C5	divergent																									T2	48.0	30.0	62.5	1332.0	73.35
+2c_census_fraction	4mC, AAGCCCG C5	convergent																									T2	18.0	11.0	61.11	1332.0	73.35
+2c_census_fraction	4mC, AAGCCCG C5	any_intergenic																									T2	156.0	96.0	61.54	1332.0	73.35
+2c_census_fraction	6mA, AAGCCCG A1/A2	tandem																									T2	173.0	22.0	12.72	2664.0	16.89
+2c_census_fraction	6mA, AAGCCCG A1/A2	divergent																									T2	96.0	6.0	6.25	2664.0	16.89
+2c_census_fraction	6mA, AAGCCCG A1/A2	convergent																									T2	35.0	9.0	25.71	2664.0	16.89
+2c_census_fraction	6mA, AAGCCCG A1/A2	any_intergenic																									T2	304.0	37.0	12.17	2664.0	16.89
+2c_census_fraction	4mC, TGGCCGGC C5	tandem																									T3	65.0	54.0	83.08	2093.0	89.15
+2c_census_fraction	4mC, TGGCCGGC C5	divergent																									T3	27.0	24.0	88.89	2093.0	89.15
+2c_census_fraction	4mC, TGGCCGGC C5	convergent																									T3	18.0	16.0	88.89	2093.0	89.15
+2c_census_fraction	4mC, TGGCCGGC C5	any_intergenic																									T3	110.0	94.0	85.45	2093.0	89.15
+2c_census_fraction	4mC, AAGCCCG C5	tandem																									T3	90.0	58.0	64.44	1331.0	73.1
+2c_census_fraction	4mC, AAGCCCG C5	divergent																									T3	48.0	26.0	54.17	1331.0	73.1
+2c_census_fraction	4mC, AAGCCCG C5	convergent																									T3	18.0	14.0	77.78	1331.0	73.1
+2c_census_fraction	4mC, AAGCCCG C5	any_intergenic																									T3	156.0	98.0	62.82	1331.0	73.1
+2c_census_fraction	6mA, AAGCCCG A1/A2	tandem																									T3	173.0	24.0	13.87	2662.0	17.02
+2c_census_fraction	6mA, AAGCCCG A1/A2	divergent																									T3	96.0	11.0	11.46	2662.0	17.02
+2c_census_fraction	6mA, AAGCCCG A1/A2	convergent																									T3	35.0	7.0	20.0	2662.0	17.02
+2c_census_fraction	6mA, AAGCCCG A1/A2	any_intergenic																									T3	304.0	42.0	13.82	2662.0	17.02

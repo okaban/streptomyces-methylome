@@ -1,0 +1,6 @@
+locus_id	sco	gname	region	base	ref_len	n_reads	n_controls	G_per_read	ctl_null_median	ctl_null_p95	p_empirical	min_detectable_f_minus1	min_detectable_f_plus1
+cand_C7_5169963	SCO4758		gene_body	C	7	902	23	0.11944	0.12352	0.29243	0.5417	0.24	0.17
+cand_C7_5804339	SCO5331	pglX	gene_body	C	7	1209	23	0.06457	0.12352	0.29243	0.8333	0.24	0.17
+cand_C7_7347663	SCO6624|SCO6625		promoter_TSS	C	7	693	23	0.06826	0.12352	0.29243	0.8333	0.24	0.17
+cand_G7_5805837	SCO5331	pglX	promoter_TSS	G	7	1169	24	0.23603	0.09626	0.3133	0.12	0.29	0.18
+cand_G8_7353983	SCO6627	pglX	gene_body	G	8	756	9	0.2209	0.15093	0.38319	0.4	0.45	0.29

@@ -1,0 +1,8 @@
+# Exhaustive tests of chromosome three-dimensional structure against methylation.
+# Hi-C contact matrices are the L-phase and M-phase data of Deng et al. 2023 (NCBI BioProject PRJNA891940); methylation is this study, canonical site rule.
+# Analysis directory 11_epigenome_integration/analysis/130_hic_6mA_261108, run 2026-11-08.
+axis	n_tests	what_was_tested	result
+Partial correlation of structural index with methylation density	270	insulation / directionality / contact coverage / compartment PC1, against 4mC, total 6mA and unassigned 6mA, at T1-T3, in 5, 10, 20 and 50 kb bins, in the L and M phases	Six survive Bonferroni, all of them 4mC against contact coverage at 5 kb. None for unassigned 6mA.
+Sequence control (AAGCCCG occurrence count)	30	the same structural indices against sequence composition alone	Correlation at least as strong as for 4mC (rho 0.198-0.218 against 0.172-0.200), so the signal tracks sequence composition, not modification.
+Three-dimensional co-localisation	36	long-range observed/expected contact between the top-decile bins of each mark, permutation (2,000) stratified on a 5 x 5 GC by contact-coverage grid	None survives Bonferroni (0.00139). All 6mA |z| < 1.8. The largest, 4mC at T3 in 10 kb bins in the M phase (z = 3.08, p = 0.003), does not reproduce in the L phase (p = 0.48).
+Distance to the nearest boundary, and L-to-M structural change	28	continuous distance to the nearest insulation boundary; change in insulation from L to M against change in site count from T1 to T3	All p > 0.17 and all |rho| < 0.07.

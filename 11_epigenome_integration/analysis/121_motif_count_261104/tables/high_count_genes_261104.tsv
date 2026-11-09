@@ -1,0 +1,20 @@
+gene_id	old_locus_tag	glen	n_AAGCCCG_4mC_gene	tpm_T1	product
+SC_RS30745	SCO5706	3102	3	1561.3875242299791	translation initiation factor IF-2
+SC_RS28590	SCO5281	3819	3	558.0832832683137	multifunctional oxoglutarate decarboxylase/oxoglutarate dehydrogenase thiamine pyrophosphate-binding subunit/dihydrolipoyllysine-residue succinyltransferase subunit
+SC_RS31265	SCO5805	2904	3	326.9291167651281	vitamin B12-dependent ribonucleotide reductase
+SC_RS34450	SCO6451	1629	3	218.6620175309407	ABC transporter substrate-binding protein
+SC_RS13005	SCO2194	954	3	189.38430464927444	lipoyl synthase
+SC_RS17840	SCO3146	1806	3	180.42832874315957	outer membrane protein assembly factor BamB family protein
+SC_RS27800	SCO5128	2328	4	136.5240306301636	hypothetical protein
+SC_RS27915	SCO5150	486	4	112.8264338703306	sec-independent translocase
+SC_RS04965	SCO0608	879	4	59.17479681750834	gamma-butyrolactone-binding regulator SlbR
+SC_RS12360	SCO2064	3540	3	37.54120773916784	DNA polymerase III subunit alpha
+SC_RS24310	SCO4429	2604	3	35.81445750757256	bifunctional FO biosynthesis protein CofGH
+SC_RS20935	SCO3763	2085	3	26.290035622664202	TerD family protein
+SC_RS14915	SCO2573	1611	3	4.765743425400164	NADH-quinone oxidoreductase subunit NuoF family protein
+SC_RS24995	SCO4568	2532	3	1.0670092050095976	NADH-quinone oxidoreductase subunit G
+SC_RS23910	SCO4348	2172	3	1.0487580137958201	integrase
+SC_RS30370	SCO5629	2661	5	1.0173317166533202	FxSxx-COOH system tetratricopeptide repeat protein
+SC_RS33050	SCO6160	2388	3	0.7851700605514532	protein translocase subunit SecD
+SC_RS30290	SCO5614	216	3	0.5373564737702988	helix-turn-helix transcriptional regulator
+SC_RS40865	SCO7736	2262	3	0.2310159274410044	FUSC family protein

@@ -1,0 +1,7 @@
+timepoint	set	n_canonical	n_with_3lib_depth	called_1of3	called_2of3	called_3of3	pct_2plus	pct_3of3
+T1	unassigned	1624	1620	141	684	795	91.3	49.1
+T1	assigned	323	322	15	92	215	95.3	66.8
+T2	unassigned	1800	1800	143	783	874	92.1	48.6
+T2	assigned	350	350	14	116	220	96.0	62.9
+T3	unassigned	1973	1969	191	892	886	90.3	45.0
+T3	assigned	335	334	15	101	218	95.5	65.3

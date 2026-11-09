@@ -1,0 +1,18 @@
+GEO	ENA_BioProject	protein	organism_strain	assay	condition	processed_data_available	coordinate_system	n_tracks_built	status
+GSE165795	PRJNA697922	Gbn (SCO1839), nucleoid-associated protein	S. coelicolor M145	ChIP-seq (BGISEQ-500)	25 h and 48 h liquid culture	MACS2 peak table (per sample)	NC_003888.3 (native)	2 (+1 union)	used in C2-2
+GSE337352	PRJNA1483500	11 FLAG-tagged TFs: SCO1145, SCO1186, SCO1262, SCO2243, SCO3320, SCO3632, SCO3668, SCO3696, SCO3699, SCO4158, SCO5231	S. coelicolor M145	ChIP-seq (DNBSEQ-G400)	M145 liquid culture	narrowPeak (per sample)	AL645882 — md5-identical to NC_003888.3	11 (+1 union); 6 testable	used in C2-2
+GSE234438	PRJNA981425	RokL6 (SCO1447)	S. coelicolor M145	ChIP-seq (NovaSeq 6000)	mannitol / mannitol+GlcN, 24 h & 48 h	MACS2 peak table	NC_003888.3 (native)	4 (1 testable)	used in C2-2
+GSE64903	PRJNA272447	ScbR, ScbR2	S. coelicolor M145	ChIP-seq (HiSeq 2000)	30 h (ScbR), 42 h (ScbR2)	MACS1 peak table w/ gene annotation	NC_003888.3 (gi|32141095 header)	2	used in C2-2
+GSE59010	PRJNA254102	NdgR	S. coelicolor	ChIP-seq (GAIIx)	single condition	per-base GFF signal profile, no peak calls	NC_003888 (no version)	0	not used — signal only; peak calling would require our own threshold
+GSE225370	PRJNA935355	CutR (and S. venezuelae CutR ortholog)	S. coelicolor M145	ChIP-seq (NovaSeq 6000)	+/- glucose, 2 reps	bedGraph coverage only	contig renamed 'sco'; no peak calls	0	not used — no peak calls, contig name not resolvable to a versioned accession
+GSE136166/GSE136168	PRJNA561422	WblC (WhiB7)	S. coelicolor A3(2)	ChIP-seq (HiSeq 4000)	tetracycline	none (raw only)	—	0	not used — raw FASTQ only
+GSE23401	—	BldD	S. coelicolor M600	ChIP-chip (two-colour array)	WT vs bldD null	per-channel probe intensities	array probe IDs; needs platform mapping; M600 not M145	0	not used — probe-level, different strain
+GSE28908	—	BldC	S. coelicolor M600	ChIP-chip	WT vs bldC null	per-channel probe intensities	array probe IDs	0	not used — probe-level, different strain
+GSE33593	—	SigR	S. coelicolor A3(2)	ChIP-chip (NimbleGen .pair)	SigR regulon	raw .pair files	array probe IDs	0	not used — probe-level
+GSE95760	—	Zur	S. coelicolor	ChIP-chip (NimbleGen)	WT vs delta-zur	vsn-normalised probe ratios (GFF)	NC_003888 (no version), probe-level	0	not used — probe ratios, no peak calls
+GSE311144	PRJNA1368754	ParB1 (SCP1 partitioning)	S. coelicolor A3(2)	ChIP-seq (NextSeq 500)	parB1-3xFLAG vs untagged	per-contig RPBPPM coverage csv	separate chr/SCP1/SCP2 csv	0	not used — coverage only; SCP1-focused and M145 lacks SCP1
+GSE263222	PRJNA1096301	ParT / ParABS	S. coelicolor A3(2)	ChIP-seq (NextSeq 500)	plasmid partitioning	coverage csv	—	0	not used — coverage only
+— (E-MTAB-11369)	PRJEB50438	HupA, nucleoid-associated protein	S. coelicolor A3(2) HupA-FLAG	ChIP-seq (HiSeq 3000, PE)	normal (thio0) x3, TopA-depleted (thio2) x3, untagged PS04 x2	none (raw FASTQ only, 19.5 GB)	—	0	identified; see I2 note on processing
+—	PRJEB27299	HrdB (principal sigma)	S. coelicolor A3(2)	ChIP-seq (HiSeq 4000)	5 runs	none (raw only)	—	0	not used — raw FASTQ only
+—	PRJEB31880 / PRJEB47709	SigE	S. coelicolor M600 / A3(2)	ChIP-seq	+/- EtOH stress	none (raw only)	—	0	not used — raw FASTQ only; M600 for PRJEB31880
+—	PRJNA838444	AtrA	S. coelicolor A3(2)	ChIP-seq	AtrA regulon, 3 runs	none (raw only)	—	0	not used — raw FASTQ only

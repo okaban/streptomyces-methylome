@@ -1,0 +1,5 @@
+mark	n_TU	alpha_label	alpha	F_crit	min_detectable_shift_pp
+4mC	898	nominal 5%	0.05	5.143	11.68
+4mC	898	BH rank-1 (0.05/n)	5.5679287305122496e-05	75.564	44.77
+6mA	851	nominal 5%	0.05	5.143	11.97
+6mA	851	BH rank-1 (0.05/n)	5.875440658049354e-05	74.169	45.47

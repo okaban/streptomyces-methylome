@@ -1,0 +1,6 @@
+dataset	platform	strain	design	value	n_genes_matched
+GSE132487	RNA-seq	M145	3 biological replicate cultures (F516/F517/F518) x 9 times (21-57 h)	submitter quantile-normalised gene-level expression, log2(x+1)	7532
+GSE174192	RNA-seq	M145	3 biological replicates x 8 times (24-192 h), ISP2 medium	submitter gene-level read counts, log2(x+1)	7492
+GSE158810	RNA-seq	M145	3 biological replicates, 50 h, untreated control arm only (the cAMP-supplemented arm is excluded)	submitter gene-level read counts, log2(x+1)	7439
+GSE58666	two-colour microarray	M145	M145 wild-type arm only: 5 culture times (32-66 h) x 3 biological replicates; the DargR arm is excluded	submitter VALUE = log2(cDNA / genomic-DNA common reference), probes averaged per ORF	7530
+THIS_STUDY	RNA-seq	M145	this study: 3 biological replicates x 3 times (12/24/50 h), R5 medium	DESeq2 size-factor-normalised counts, log2(x+1)	7533

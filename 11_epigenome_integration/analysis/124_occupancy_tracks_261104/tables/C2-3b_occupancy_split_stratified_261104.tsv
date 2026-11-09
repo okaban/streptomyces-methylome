@@ -1,0 +1,25 @@
+motif	subset	reference	gc_window	n_near	n_far	n_strata	ratio	p_perm
+4mC_AAGCCCG	near OCCUPIED	all far sites	±25 win_excl	38	1219	5	0.9328	0.09945
+4mC_AAGCCCG	near OCCUPIED	all far sites	±250 win_excl	38	1219	4	0.9354	0.11294
+4mC_AAGCCCG	near OCCUPIED	far sites of same occupancy status	±25 win_excl	38	325	5	0.9394	0.14393
+4mC_AAGCCCG	near OCCUPIED	far sites of same occupancy status	±250 win_excl	38	325	4	0.9438	0.18291
+4mC_AAGCCCG	near UNOCCUPIED	all far sites	±25 win_excl	77	1219	5	0.8921	0.0005
+4mC_AAGCCCG	near UNOCCUPIED	all far sites	±250 win_excl	77	1219	5	0.9019	0.003
+4mC_AAGCCCG	near UNOCCUPIED	far sites of same occupancy status	±25 win_excl	77	894	5	0.8885	0.001
+4mC_AAGCCCG	near UNOCCUPIED	far sites of same occupancy status	±250 win_excl	77	894	5	0.8972	0.0025
+6mA_AAGCCCG	near OCCUPIED	all far sites	±25 win_excl	38	1217	5	0.9396	0.33633
+6mA_AAGCCCG	near OCCUPIED	all far sites	±250 win_excl	38	1217	4	0.9426	0.3973
+6mA_AAGCCCG	near OCCUPIED	far sites of same occupancy status	±25 win_excl	38	327	5	0.9418	0.37031
+6mA_AAGCCCG	near OCCUPIED	far sites of same occupancy status	±250 win_excl	38	327	4	0.9237	0.25737
+6mA_AAGCCCG	near UNOCCUPIED	all far sites	±25 win_excl	79	1217	5	0.8645	0.002
+6mA_AAGCCCG	near UNOCCUPIED	all far sites	±250 win_excl	79	1217	5	0.8526	0.0005
+6mA_AAGCCCG	near UNOCCUPIED	far sites of same occupancy status	±25 win_excl	79	890	5	0.8629	0.0015
+6mA_AAGCCCG	near UNOCCUPIED	far sites of same occupancy status	±250 win_excl	79	890	5	0.8607	0.0025
+4mC_TGGCCGGC	near OCCUPIED	all far sites	±25 win_excl	25	2009	5	1.053	0.18441
+4mC_TGGCCGGC	near OCCUPIED	all far sites	±250 win_excl	25	2009	4	1.0617	0.14243
+4mC_TGGCCGGC	near OCCUPIED	far sites of same occupancy status	±25 win_excl	25	392	5	1.0692	0.10445
+4mC_TGGCCGGC	near OCCUPIED	far sites of same occupancy status	±250 win_excl	25	392	4	1.0781	0.05597
+4mC_TGGCCGGC	near UNOCCUPIED	all far sites	±25 win_excl	59	2009	5	0.9776	0.35082
+4mC_TGGCCGGC	near UNOCCUPIED	all far sites	±250 win_excl	59	2009	5	0.9868	0.6062
+4mC_TGGCCGGC	near UNOCCUPIED	far sites of same occupancy status	±25 win_excl	59	1617	5	0.9727	0.26737
+4mC_TGGCCGGC	near UNOCCUPIED	far sites of same occupancy status	±250 win_excl	59	1617	5	0.9787	0.3913

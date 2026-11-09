@@ -1,0 +1,223 @@
+== part 1  TU 3' end vs TSS ==
+            series              anchor  n_near  ratio  ci95_lo  ci95_hi  p_value  mde80_ratio
+6mA, AAGCCCG A1/A2 TSS_jeong_reference     235 0.9105   0.8955   0.9257 1.12e-06       1.0232
+6mA, AAGCCCG A1/A2           TU_3prime     291 0.9459   0.9327   0.9593 1.65e-05       1.0196
+6mA, AAGCCCG A1/A2           TU_5prime     339 0.9805   0.9646   0.9966   0.0238       1.0229
+6mA, AAGCCCG A1/A2 TU_3prime_minus_TSS     245 0.9597   0.9441   0.9756 0.000414       1.0230
+6mA, AAGCCCG A1/A2 TU_3prime_minus_TU5     226 0.9334   0.9169   0.9502 2.01e-05       1.0250
+6mA, AAGCCCG A1/A2  TU_3prime_isolated     198 0.9430   0.9241   0.9623 0.000155       1.0284
+6mA, AAGCCCG A1/A2    TU_3prime_inside     167 0.9738   0.9600   0.9878  0.00269       1.0200
+6mA, AAGCCCG A1/A2    TU_3prime_beyond     124 0.9146   0.8956   0.9339  9.7e-06       1.0295
+  4mC, TGGCCGGC C5 TSS_jeong_reference      84 1.0054   0.9934   1.0174    0.332       1.0167
+  4mC, TGGCCGGC C5           TU_3prime     194 0.9740   0.9697   0.9783 7.93e-07       1.0062
+  4mC, TGGCCGGC C5           TU_5prime     166 0.9849   0.9822   0.9877 1.54e-06       1.0039
+  4mC, TGGCCGGC C5 TU_3prime_minus_TSS     175 0.9769   0.9734   0.9805 4.06e-07       1.0050
+  4mC, TGGCCGGC C5 TU_3prime_minus_TU5     172 0.9681   0.9633   0.9728 3.39e-07       1.0068
+  4mC, TGGCCGGC C5  TU_3prime_isolated     159 0.9729   0.9683   0.9776 9.98e-07       1.0066
+  4mC, TGGCCGGC C5    TU_3prime_inside     137 0.9789   0.9713   0.9865 0.000225       1.0108
+  4mC, TGGCCGGC C5    TU_3prime_beyond      57 0.9651   0.9475   0.9829  0.00208       1.0257
+   4mC, AAGCCCG C5 TSS_jeong_reference     115 0.9050   0.8942   0.9159 5.57e-08       1.0167
+   4mC, AAGCCCG C5           TU_3prime     144 0.9618   0.9496   0.9741 0.000108       1.0178
+   4mC, AAGCCCG C5           TU_5prime     165 0.9598   0.9500   0.9697 1.54e-05       1.0143
+   4mC, AAGCCCG C5 TU_3prime_minus_TSS     120 0.9891   0.9769   1.0015   0.0763       1.0174
+   4mC, AAGCCCG C5 TU_3prime_minus_TU5     115 0.9806   0.9664   0.9950   0.0147       1.0204
+   4mC, AAGCCCG C5  TU_3prime_isolated      99 0.9969   0.9817   1.0124    0.658       1.0215
+   4mC, AAGCCCG C5    TU_3prime_inside      80 0.9680   0.9522   0.9840  0.00185       1.0231
+   4mC, AAGCCCG C5    TU_3prime_beyond      64 0.9579   0.9446   0.9714 0.000104       1.0196
+
+== part 2a  intergenic motif O/E (all lengths) ==
+            series orientation  observed  expected_gcmatched  O_over_E  p_value
+  4mC, TGGCCGGC C5      tandem      65.0              108.27     0.600 6.58e-06
+  4mC, TGGCCGGC C5   divergent      27.0               60.08     0.449 2.12e-06
+  4mC, TGGCCGGC C5  convergent      18.0               31.99     0.563  0.00957
+   4mC, AAGCCCG C5      tandem      90.0               83.97     1.072    0.498
+   4mC, AAGCCCG C5   divergent      48.0               56.45     0.850    0.276
+   4mC, AAGCCCG C5  convergent      18.0               18.56     0.970        1
+6mA, AAGCCCG A1/A2      tandem     173.0              166.72     1.038    0.603
+6mA, AAGCCCG A1/A2   divergent      96.0              111.34     0.862    0.146
+6mA, AAGCCCG A1/A2  convergent      35.0               37.19     0.941    0.804
+
+== part 2b  level ratios ==
+            series    orientation                                                          contrast  n_near  ratio  ci95_lo  ci95_hi  p_value  mde80_ratio
+6mA, AAGCCCG A1/A2         tandem                                         class vs rest of universe   173.0 0.9677   0.9509   0.9847  0.00245       1.0244
+6mA, AAGCCCG A1/A2      divergent                                         class vs rest of universe    96.0 1.0179   0.9981   1.0382   0.0712       1.0277
+6mA, AAGCCCG A1/A2     convergent                                         class vs rest of universe    35.0 0.9853   0.9408   1.0320    0.483       1.0662
+6mA, AAGCCCG A1/A2 any_intergenic                                         class vs rest of universe   304.0 0.9842   0.9677   1.0009   0.0608       1.0236
+6mA, AAGCCCG A1/A2      divergent                  divergent vs tandem spacers, GC quintile matched    96.0 1.0386   1.0095   1.0685   0.0154       1.0402
+6mA, AAGCCCG A1/A2      divergent divergent vs tandem spacers, GC quintile x length tertile matched    96.0 1.0208   0.9876   1.0552    0.189       1.0469
+  4mC, TGGCCGGC C5         tandem                                         class vs rest of universe    65.0 0.9709   0.9618   0.9801  9.1e-05       1.0132
+  4mC, TGGCCGGC C5      divergent                                         class vs rest of universe    27.0 0.9986   0.9870   1.0104    0.795       1.0164
+  4mC, TGGCCGGC C5     convergent                                           NOT TESTED: n_near < 20    18.0    NaN      NaN      NaN      NaN          NaN
+  4mC, TGGCCGGC C5 any_intergenic                                         class vs rest of universe   110.0 0.9858   0.9771   0.9945   0.0056       1.0123
+  4mC, TGGCCGGC C5      divergent                  divergent vs tandem spacers, GC quintile matched    27.0 1.0350   1.0196   1.0506 0.000723       1.0209
+  4mC, TGGCCGGC C5      divergent divergent vs tandem spacers, GC quintile x length tertile matched    27.0 1.0394   1.0216   1.0576 0.000871       1.0243
+   4mC, AAGCCCG C5         tandem                                         class vs rest of universe    90.0 0.9342   0.9259   0.9426 1.16e-07       1.0125
+   4mC, AAGCCCG C5      divergent                                         class vs rest of universe    48.0 0.9016   0.8821   0.9215 4.33e-06       1.0307
+   4mC, AAGCCCG C5     convergent                                           NOT TESTED: n_near < 20    18.0    NaN      NaN      NaN      NaN          NaN
+   4mC, AAGCCCG C5 any_intergenic                                         class vs rest of universe   156.0 0.9234   0.9118   0.9352 4.93e-07       1.0177
+   4mC, AAGCCCG C5      divergent                  divergent vs tandem spacers, GC quintile matched    48.0 0.9639   0.9426   0.9856  0.00522       1.0314
+   4mC, AAGCCCG C5      divergent divergent vs tandem spacers, GC quintile x length tertile matched    48.0 0.9065   0.8847   0.9288 1.44e-05       1.0343
+
+== part 3  mobile elements ==
+                  part               region             series  n_near  n_genes_with_positions  observed  expected_gcmatched  O_over_E  ratio  ci95_lo  ci95_hi  p_value  jackknife_min_ratio  jackknife_max_ratio  gc_quantiles near_positions_per_gc_quintile  mean_local_gc_near  mean_local_gc_distal
+    3a_motif_placement          mobile_body   4mC, TGGCCGGC C5     NaN                     NaN      21.0               19.28     1.089    NaN      NaN      NaN    0.647                  NaN                  NaN           NaN                            NaN                 NaN                   NaN
+    3a_motif_placement          mobile_body    4mC, AAGCCCG C5     NaN                     NaN      22.0               17.71     1.242    NaN      NaN      NaN    0.281                  NaN                  NaN           NaN                            NaN                 NaN                   NaN
+    3a_motif_placement          mobile_body 6mA, AAGCCCG A1/A2     NaN                     NaN      44.0               35.01     1.257    NaN      NaN      NaN    0.125                  NaN                  NaN           NaN                            NaN                 NaN                   NaN
+        3b_level_ratio          mobile_body 6mA, AAGCCCG A1/A2    44.0                    19.0       NaN                 NaN       NaN 1.4311   1.3928   1.4705 1.47e-09               1.3812               1.5095           NaN                            NaN                 NaN                   NaN
+3d_gcmatch_sensitivity          mobile_body 6mA, AAGCCCG A1/A2    44.0                     NaN       NaN                 NaN       NaN 1.4614   1.4169   1.5074 2.66e-09                  NaN                  NaN          10.0                     32,2,8,0,2              0.6625                0.7137
+3d_gcmatch_sensitivity          mobile_body 6mA, AAGCCCG A1/A2    44.0                     NaN       NaN                 NaN       NaN 1.4867   1.4403   1.5346 2.25e-09                  NaN                  NaN          20.0                     32,2,8,0,2              0.6625                0.7137
+        3b_level_ratio          mobile_body   4mC, TGGCCGGC C5    21.0                    20.0       NaN                 NaN       NaN 1.0347   1.0163   1.0534  0.00235               1.0193               1.0488           NaN                            NaN                 NaN                   NaN
+3d_gcmatch_sensitivity          mobile_body   4mC, TGGCCGGC C5    21.0                     NaN       NaN                 NaN       NaN 1.0333   1.0157   1.0512  0.00231                  NaN                  NaN          10.0                     13,2,2,1,3              0.7110                0.7341
+3d_gcmatch_sensitivity          mobile_body   4mC, TGGCCGGC C5    21.0                     NaN       NaN                 NaN       NaN 1.0342   1.0168   1.0519  0.00183                  NaN                  NaN          20.0                     13,2,2,1,3              0.7110                0.7341
+        3b_level_ratio          mobile_body    4mC, AAGCCCG C5    22.0                    19.0       NaN                 NaN       NaN 0.9773   0.9667   0.9879   0.0012               0.9642               1.0034           NaN                            NaN                 NaN                   NaN
+3d_gcmatch_sensitivity          mobile_body    4mC, AAGCCCG C5    22.0                     NaN       NaN                 NaN       NaN 0.9706   0.9584   0.9831 0.000648                  NaN                  NaN          10.0                     16,4,1,0,1              0.6619                0.7137
+3d_gcmatch_sensitivity          mobile_body    4mC, AAGCCCG C5    22.0                     NaN       NaN                 NaN       NaN 0.9675   0.9557   0.9794 0.000257                  NaN                  NaN          20.0                     16,4,1,0,1              0.6619                0.7137
+    3a_motif_placement mobile_body_flank2kb   4mC, TGGCCGGC C5     NaN                     NaN      84.0               75.59     1.111    NaN      NaN      NaN    0.319                  NaN                  NaN           NaN                            NaN                 NaN                   NaN
+    3a_motif_placement mobile_body_flank2kb    4mC, AAGCCCG C5     NaN                     NaN      70.0               65.54     1.068    NaN      NaN      NaN    0.568                  NaN                  NaN           NaN                            NaN                 NaN                   NaN
+    3a_motif_placement mobile_body_flank2kb 6mA, AAGCCCG A1/A2     NaN                     NaN     142.0              129.71     1.095    NaN      NaN      NaN    0.261                  NaN                  NaN           NaN                            NaN                 NaN                   NaN
+        3b_level_ratio mobile_body_flank2kb 6mA, AAGCCCG A1/A2   142.0                    49.0       NaN                 NaN       NaN 1.1462   1.1290   1.1637    3e-08               1.1092               1.1654           NaN                            NaN                 NaN                   NaN
+3d_gcmatch_sensitivity mobile_body_flank2kb 6mA, AAGCCCG A1/A2   142.0                     NaN       NaN                 NaN       NaN 1.1532   1.1334   1.1732 6.05e-08                  NaN                  NaN          10.0                 76,22,22,11,11              0.6789                0.7148
+3d_gcmatch_sensitivity mobile_body_flank2kb 6mA, AAGCCCG A1/A2   142.0                     NaN       NaN                 NaN       NaN 1.1550   1.1342   1.1762 8.36e-08                  NaN                  NaN          20.0                 76,22,22,11,11              0.6789                0.7148
+        3b_level_ratio mobile_body_flank2kb   4mC, TGGCCGGC C5    84.0                    48.0       NaN                 NaN       NaN 0.9755   0.9639   0.9872  0.00139               0.9682               0.9817           NaN                            NaN                 NaN                   NaN
+3d_gcmatch_sensitivity mobile_body_flank2kb   4mC, TGGCCGGC C5    84.0                     NaN       NaN                 NaN       NaN 0.9742   0.9627   0.9859 0.000959                  NaN                  NaN          10.0                  41,12,11,13,7              0.7087                0.7350
+3d_gcmatch_sensitivity mobile_body_flank2kb   4mC, TGGCCGGC C5    84.0                     NaN       NaN                 NaN       NaN 0.9747   0.9632   0.9863  0.00106                  NaN                  NaN          20.0                  41,12,11,13,7              0.7087                0.7350
+        3b_level_ratio mobile_body_flank2kb    4mC, AAGCCCG C5    70.0                    49.0       NaN                 NaN       NaN 0.9810   0.9714   0.9908  0.00214               0.9719               0.9907           NaN                            NaN                 NaN                   NaN
+3d_gcmatch_sensitivity mobile_body_flank2kb    4mC, AAGCCCG C5    70.0                     NaN       NaN                 NaN       NaN 0.9791   0.9696   0.9887  0.00105                  NaN                  NaN          10.0                    38,13,8,6,5              0.6777                0.7148
+3d_gcmatch_sensitivity mobile_body_flank2kb    4mC, AAGCCCG C5    70.0                     NaN       NaN                 NaN       NaN 0.9756   0.9662   0.9851 0.000368                  NaN                  NaN          20.0                    38,13,8,6,5              0.6777                0.7148
+
+== part 4  motif placement vs GC-matched expectation ==
+                               precedence             series   region  region_pct_of_genome  pct_observed  pct_expected  O_over_E  p_value recorded_261004_pct recorded_261004_pct_expected recorded_261004_ratio matches_record
+canonical_261101 (promoter > 5'UTR > CDS)   4mC, TGGCCGGC C5 promoter                 8.922         7.597         8.065     0.942     0.47                1.43                         2.25                  0.64          False
+canonical_261101 (promoter > 5'UTR > CDS)   4mC, TGGCCGGC C5     utr5                 2.007         1.147         1.466     0.782    0.274                                                                                      
+canonical_261101 (promoter > 5'UTR > CDS)   4mC, TGGCCGGC C5      cds                81.770        87.673        83.851     1.046 1.07e-06               93.69                        89.97                  1.04          False
+canonical_261101 (promoter > 5'UTR > CDS)   4mC, TGGCCGGC C5    other                 7.301         3.583         6.618     0.541 1.88e-09                3.11                          5.4                  0.58          False
+canonical_261101 (promoter > 5'UTR > CDS)    4mC, AAGCCCG C5 promoter                 8.922         9.895         9.477     1.044    0.607                                                                                      
+canonical_261101 (promoter > 5'UTR > CDS)    4mC, AAGCCCG C5     utr5                 2.007         2.924         2.354     1.242    0.175                                                                                      
+canonical_261101 (promoter > 5'UTR > CDS)    4mC, AAGCCCG C5      cds                81.770        79.760        80.495     0.991     0.49                                                                                      
+canonical_261101 (promoter > 5'UTR > CDS)    4mC, AAGCCCG C5    other                 7.301         7.421         7.674     0.967    0.797                                                                                      
+canonical_261101 (promoter > 5'UTR > CDS) 6mA, AAGCCCG A1/A2 promoter                 8.922         9.895         9.422     1.050    0.407                                                                                      
+canonical_261101 (promoter > 5'UTR > CDS) 6mA, AAGCCCG A1/A2     utr5                 2.007         2.849         2.318     1.229   0.0714                                                                                      
+canonical_261101 (promoter > 5'UTR > CDS) 6mA, AAGCCCG A1/A2      cds                81.770        79.985        80.636     0.992    0.391                                                                                      
+canonical_261101 (promoter > 5'UTR > CDS) 6mA, AAGCCCG A1/A2    other                 7.301         7.271         7.624     0.954    0.512                                                                                      
+       cds_first (CDS > promoter > 5'UTR)   4mC, TGGCCGGC C5 promoter                 3.123         1.290         2.476     0.521 0.000183                                                                                      
+       cds_first (CDS > promoter > 5'UTR)   4mC, TGGCCGGC C5     utr5                 1.027         0.382         0.721     0.530   0.0694                                                                                      
+       cds_first (CDS > promoter > 5'UTR)   4mC, TGGCCGGC C5      cds                88.548        94.744        90.185     1.051 3.72e-14                                                                                      
+       cds_first (CDS > promoter > 5'UTR)   4mC, TGGCCGGC C5    other                 7.301         3.583         6.618     0.541 1.88e-09                                                                                      
+       cds_first (CDS > promoter > 5'UTR)    4mC, AAGCCCG C5 promoter                 3.123         3.373         3.529     0.956    0.824                                                                                      
+       cds_first (CDS > promoter > 5'UTR)    4mC, AAGCCCG C5     utr5                 1.027         1.649         1.217     1.355    0.167                                                                                      
+       cds_first (CDS > promoter > 5'UTR)    4mC, AAGCCCG C5      cds                88.548        87.556        87.580     1.000    0.967                                                                                      
+       cds_first (CDS > promoter > 5'UTR)    4mC, AAGCCCG C5    other                 7.301         7.421         7.674     0.967    0.797                                                                                      
+       cds_first (CDS > promoter > 5'UTR) 6mA, AAGCCCG A1/A2 promoter                 3.123         3.223         3.486     0.925    0.493                                                                                      
+       cds_first (CDS > promoter > 5'UTR) 6mA, AAGCCCG A1/A2     utr5                 1.027         1.649         1.196     1.379   0.0397                                                                                      
+       cds_first (CDS > promoter > 5'UTR) 6mA, AAGCCCG A1/A2      cds                88.548        87.856        87.694     1.002    0.837                                                                                      
+       cds_first (CDS > promoter > 5'UTR) 6mA, AAGCCCG A1/A2    other                 7.301         7.271         7.624     0.954    0.512                                                                                      
+
+== part 5  legacy-rule collation with the lost 2026-10-04 table ==
+timepoint             series       region  n_called_sites  pct_observed  pct_expected  O_over_E  p_value recorded_261004_pct recorded_261004_pct_expected recorded_261004_ratio delta_pct_vs_record delta_ratio_vs_record
+       T1   4mC, TGGCCGGC C5     promoter            1886          1.64          2.75     0.597  0.00237                1.43                         2.25                  0.64                0.21                -0.043
+       T1   4mC, TGGCCGGC C5         utr5            1886          1.91          2.47     0.772    0.119                                                                                                                 
+       T1   4mC, TGGCCGGC C5 cds_internal            1886         93.16         88.49     1.053 1.27e-11               93.69                        89.97                  1.04               -0.53                 0.013
+       T1   4mC, TGGCCGGC C5   intergenic            1886          3.29          6.28     0.523 6.11e-09                3.11                          5.4                  0.58                0.18                -0.057
+       T1    4mC, AAGCCCG C5     promoter            1023          3.52          3.91     0.899    0.573                                                                                                                 
+       T1    4mC, AAGCCCG C5         utr5            1023          3.81          3.95     0.966    0.936                                                                                                                 
+       T1    4mC, AAGCCCG C5 cds_internal            1023         85.92         84.85     1.013     0.36                                                                                                                 
+       T1    4mC, AAGCCCG C5   intergenic            1023          6.74          7.29     0.925    0.548                                                                                                                 
+       T1 6mA, AAGCCCG A1/A2     promoter             416          1.92          3.05     0.631     0.25                                                                                                                 
+       T1 6mA, AAGCCCG A1/A2         utr5             416          2.64          2.87     0.921        1                                                                                                                 
+       T1 6mA, AAGCCCG A1/A2 cds_internal             416         90.62         87.56     1.035   0.0629                                                                                                                 
+       T1 6mA, AAGCCCG A1/A2   intergenic             416          4.81          6.52     0.737    0.195                                                                                                                 
+       T2   4mC, TGGCCGGC C5     promoter            1892          1.74          2.75     0.633  0.00599                1.43                         2.25                  0.64                0.31                -0.007
+       T2   4mC, TGGCCGGC C5         utr5            1892          1.96          2.48     0.789    0.159                                                                                                                 
+       T2   4mC, TGGCCGGC C5 cds_internal            1892         92.97         88.48     1.051 9.73e-11               93.69                        89.97                  1.04               -0.72                 0.011
+       T2   4mC, TGGCCGGC C5   intergenic            1892          3.33          6.28     0.530 1.11e-08                3.11                          5.4                  0.58                0.22                 -0.05
+       T2    4mC, AAGCCCG C5     promoter             977          2.97          3.92     0.756    0.137                                                                                                                 
+       T2    4mC, AAGCCCG C5         utr5             977          3.68          3.95     0.932    0.743                                                                                                                 
+       T2    4mC, AAGCCCG C5 cds_internal             977         86.59         84.83     1.021    0.129                                                                                                                 
+       T2    4mC, AAGCCCG C5   intergenic             977          6.76          7.30     0.926     0.58                                                                                                                 
+       T2 6mA, AAGCCCG A1/A2     promoter             450          1.56          3.02     0.514   0.0723                                                                                                                 
+       T2 6mA, AAGCCCG A1/A2         utr5             450          2.44          2.81     0.869    0.775                                                                                                                 
+       T2 6mA, AAGCCCG A1/A2 cds_internal             450         90.89         87.62     1.037   0.0376                                                                                                                 
+       T2 6mA, AAGCCCG A1/A2   intergenic             450          5.11          6.55     0.781    0.252                                                                                                                 
+       T3   4mC, TGGCCGGC C5     promoter            1866          1.71          2.74     0.626  0.00553                1.43                         2.25                  0.64                0.28                -0.014
+       T3   4mC, TGGCCGGC C5         utr5            1866          1.88          2.46     0.763    0.116                                                                                                                 
+       T3   4mC, TGGCCGGC C5 cds_internal            1866         93.25         88.52     1.053 9.13e-12               93.69                        89.97                  1.04               -0.44                 0.013
+       T3   4mC, TGGCCGGC C5   intergenic            1866          3.16          6.28     0.503 1.52e-09                3.11                          5.4                  0.58                0.05                -0.077
+       T3    4mC, AAGCCCG C5     promoter             973          3.39          3.93     0.862    0.457                                                                                                                 
+       T3    4mC, AAGCCCG C5         utr5             973          3.39          3.98     0.852    0.411                                                                                                                 
+       T3    4mC, AAGCCCG C5 cds_internal             973         86.33         84.80     1.018    0.195                                                                                                                 
+       T3    4mC, AAGCCCG C5   intergenic             973          6.89          7.29     0.945    0.666                                                                                                                 
+       T3 6mA, AAGCCCG A1/A2     promoter             453          2.65          3.06     0.867    0.784                                                                                                                 
+       T3 6mA, AAGCCCG A1/A2         utr5             453          1.77          2.89     0.610    0.204                                                                                                                 
+       T3 6mA, AAGCCCG A1/A2 cds_internal             453         89.40         87.53     1.021    0.255                                                                                                                 
+       T3 6mA, AAGCCCG A1/A2   intergenic             453          6.18          6.51     0.949    0.849                                                                                                                 
+
+== census fractions ==
+              part timepoint             series                  grp  n_measurable  n_modified  pct_modified  n_measurable_all  pct_modified_all
+2c_census_fraction        T1   4mC, TGGCCGGC C5               tandem          65.0        56.0         86.15            2091.0             90.20
+2c_census_fraction        T1   4mC, TGGCCGGC C5            divergent          27.0        24.0         88.89            2091.0             90.20
+2c_census_fraction        T1   4mC, TGGCCGGC C5           convergent          18.0        17.0         94.44            2091.0             90.20
+2c_census_fraction        T1   4mC, TGGCCGGC C5       any_intergenic         110.0        97.0         88.18            2091.0             90.20
+2c_census_fraction        T1    4mC, AAGCCCG C5               tandem          90.0        62.0         68.89            1330.0             76.92
+2c_census_fraction        T1    4mC, AAGCCCG C5            divergent          48.0        30.0         62.50            1330.0             76.92
+2c_census_fraction        T1    4mC, AAGCCCG C5           convergent          18.0        14.0         77.78            1330.0             76.92
+2c_census_fraction        T1    4mC, AAGCCCG C5       any_intergenic         156.0       106.0         67.95            1330.0             76.92
+2c_census_fraction        T1 6mA, AAGCCCG A1/A2               tandem         173.0        20.0         11.56            2660.0             15.64
+2c_census_fraction        T1 6mA, AAGCCCG A1/A2            divergent          96.0         8.0          8.33            2660.0             15.64
+2c_census_fraction        T1 6mA, AAGCCCG A1/A2           convergent          35.0         5.0         14.29            2660.0             15.64
+2c_census_fraction        T1 6mA, AAGCCCG A1/A2       any_intergenic         304.0        33.0         10.86            2660.0             15.64
+2c_census_fraction        T2   4mC, TGGCCGGC C5               tandem          65.0        59.0         90.77            2093.0             90.40
+2c_census_fraction        T2   4mC, TGGCCGGC C5            divergent          27.0        24.0         88.89            2093.0             90.40
+2c_census_fraction        T2   4mC, TGGCCGGC C5           convergent          18.0        17.0         94.44            2093.0             90.40
+2c_census_fraction        T2   4mC, TGGCCGGC C5       any_intergenic         110.0       100.0         90.91            2093.0             90.40
+2c_census_fraction        T2    4mC, AAGCCCG C5               tandem          90.0        55.0         61.11            1332.0             73.35
+2c_census_fraction        T2    4mC, AAGCCCG C5            divergent          48.0        30.0         62.50            1332.0             73.35
+2c_census_fraction        T2    4mC, AAGCCCG C5           convergent          18.0        11.0         61.11            1332.0             73.35
+2c_census_fraction        T2    4mC, AAGCCCG C5       any_intergenic         156.0        96.0         61.54            1332.0             73.35
+2c_census_fraction        T2 6mA, AAGCCCG A1/A2               tandem         173.0        22.0         12.72            2664.0             16.89
+2c_census_fraction        T2 6mA, AAGCCCG A1/A2            divergent          96.0         6.0          6.25            2664.0             16.89
+2c_census_fraction        T2 6mA, AAGCCCG A1/A2           convergent          35.0         9.0         25.71            2664.0             16.89
+2c_census_fraction        T2 6mA, AAGCCCG A1/A2       any_intergenic         304.0        37.0         12.17            2664.0             16.89
+2c_census_fraction        T3   4mC, TGGCCGGC C5               tandem          65.0        54.0         83.08            2093.0             89.15
+2c_census_fraction        T3   4mC, TGGCCGGC C5            divergent          27.0        24.0         88.89            2093.0             89.15
+2c_census_fraction        T3   4mC, TGGCCGGC C5           convergent          18.0        16.0         88.89            2093.0             89.15
+2c_census_fraction        T3   4mC, TGGCCGGC C5       any_intergenic         110.0        94.0         85.45            2093.0             89.15
+2c_census_fraction        T3    4mC, AAGCCCG C5               tandem          90.0        58.0         64.44            1331.0             73.10
+2c_census_fraction        T3    4mC, AAGCCCG C5            divergent          48.0        26.0         54.17            1331.0             73.10
+2c_census_fraction        T3    4mC, AAGCCCG C5           convergent          18.0        14.0         77.78            1331.0             73.10
+2c_census_fraction        T3    4mC, AAGCCCG C5       any_intergenic         156.0        98.0         62.82            1331.0             73.10
+2c_census_fraction        T3 6mA, AAGCCCG A1/A2               tandem         173.0        24.0         13.87            2662.0             17.02
+2c_census_fraction        T3 6mA, AAGCCCG A1/A2            divergent          96.0        11.0         11.46            2662.0             17.02
+2c_census_fraction        T3 6mA, AAGCCCG A1/A2           convergent          35.0         7.0         20.00            2662.0             17.02
+2c_census_fraction        T3 6mA, AAGCCCG A1/A2       any_intergenic         304.0        42.0         13.82            2662.0             17.02
+3c_census_fraction        T1   4mC, TGGCCGGC C5          mobile_body          21.0        20.0         95.24            2091.0             90.20
+3c_census_fraction        T1   4mC, TGGCCGGC C5 mobile_body_flank2kb          82.0        71.0         86.59            2091.0             90.20
+3c_census_fraction        T1    4mC, AAGCCCG C5          mobile_body          22.0        17.0         77.27            1330.0             76.92
+3c_census_fraction        T1    4mC, AAGCCCG C5 mobile_body_flank2kb          70.0        56.0         80.00            1330.0             76.92
+3c_census_fraction        T1 6mA, AAGCCCG A1/A2          mobile_body          44.0        17.0         38.64            2660.0             15.64
+3c_census_fraction        T1 6mA, AAGCCCG A1/A2 mobile_body_flank2kb         142.0        30.0         21.13            2660.0             15.64
+3c_census_fraction        T2   4mC, TGGCCGGC C5          mobile_body          21.0        21.0        100.00            2093.0             90.40
+3c_census_fraction        T2   4mC, TGGCCGGC C5 mobile_body_flank2kb          84.0        74.0         88.10            2093.0             90.40
+3c_census_fraction        T2    4mC, AAGCCCG C5          mobile_body          22.0        13.0         59.09            1332.0             73.35
+3c_census_fraction        T2    4mC, AAGCCCG C5 mobile_body_flank2kb          70.0        48.0         68.57            1332.0             73.35
+3c_census_fraction        T2 6mA, AAGCCCG A1/A2          mobile_body          44.0        15.0         34.09            2664.0             16.89
+3c_census_fraction        T2 6mA, AAGCCCG A1/A2 mobile_body_flank2kb         142.0        33.0         23.24            2664.0             16.89
+3c_census_fraction        T3   4mC, TGGCCGGC C5          mobile_body          21.0        21.0        100.00            2093.0             89.15
+3c_census_fraction        T3   4mC, TGGCCGGC C5 mobile_body_flank2kb          84.0        72.0         85.71            2093.0             89.15
+3c_census_fraction        T3    4mC, AAGCCCG C5          mobile_body          22.0        17.0         77.27            1331.0             73.10
+3c_census_fraction        T3    4mC, AAGCCCG C5 mobile_body_flank2kb          70.0        52.0         74.29            1331.0             73.10
+3c_census_fraction        T3 6mA, AAGCCCG A1/A2          mobile_body          44.0        17.0         38.64            2662.0             17.02
+3c_census_fraction        T3 6mA, AAGCCCG A1/A2 mobile_body_flank2kb         142.0        33.0         23.24            2662.0             17.02
+
+== intergenic region inventory ==
+                n      bp  median_bp     mean_bp
+orientation                                     
+convergent   1258  126707       59.0  100.720986
+divergent    1427  322045      183.0  225.679748
+tandem       3820  508282       96.5  133.058115
+
+== mobile gene inventory ==
+mobile_by_product  mobile_by_pfam
+False              False             7758
+                   True                 4
+True               False               45
+                   True                56

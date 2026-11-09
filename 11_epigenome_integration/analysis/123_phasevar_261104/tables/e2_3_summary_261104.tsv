@@ -1,0 +1,12 @@
+metric	value
+loci_with_depth_ge30	148
+candidates_tested	5
+controls_tested	143
+median_depth_candidates	902
+median_depth_controls	713
+control_f_mode_median	0.883
+control_f_second_median	0.069
+control_f_second_max	0.320
+control_dip_p_lt0.05_fraction	0.476
+control_mode_eq_ref_fraction	1.000
+n_multimodal_candidates	0

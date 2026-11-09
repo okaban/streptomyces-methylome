@@ -1,0 +1,31 @@
+route	threshold_neglog10p	motif_instances_n_bg	min_detectable_n_fg	min_detectable_occupancy_pct	note
+126 architecture (contiguous 12-16, bipartite N11-N20, three-block)	8.258	20	4	20.0	1,000-draw GC x depth matched permutation max, same construction and seed as 125_
+126 architecture (contiguous 12-16, bipartite N11-N20, three-block)	8.258	50	5	10.0	1,000-draw GC x depth matched permutation max, same construction and seed as 125_
+126 architecture (contiguous 12-16, bipartite N11-N20, three-block)	8.258	100	6	6.0	1,000-draw GC x depth matched permutation max, same construction and seed as 125_
+126 architecture (contiguous 12-16, bipartite N11-N20, three-block)	8.258	200	6	3.0	1,000-draw GC x depth matched permutation max, same construction and seed as 125_
+126 architecture (contiguous 12-16, bipartite N11-N20, three-block)	8.258	500	8	1.6	1,000-draw GC x depth matched permutation max, same construction and seed as 125_
+126 architecture (contiguous 12-16, bipartite N11-N20, three-block)	8.258	1000	10	1.0	1,000-draw GC x depth matched permutation max, same construction and seed as 125_
+126 architecture (contiguous 12-16, bipartite N11-N20, three-block)	8.258	2000	13	0.65	1,000-draw GC x depth matched permutation max, same construction and seed as 125_
+126 architecture (contiguous 12-16, bipartite N11-N20, three-block)	8.258	2658	14	0.527	1,000-draw GC x depth matched permutation max, same construction and seed as 125_
+126 architecture (contiguous 12-16, bipartite N11-N20, three-block)	8.258	5000	18	0.36	1,000-draw GC x depth matched permutation max, same construction and seed as 125_
+126 architecture (contiguous 12-16, bipartite N11-N20, three-block)	8.258	20000	38	0.19	1,000-draw GC x depth matched permutation max, same construction and seed as 125_
+126 IUPAC k=4-8, <=3 degenerate letters	8.644	20	4	20.0	Bonferroni over 22,045,565 tested cells; conservative vs a permutation FWER
+126 IUPAC k=4-8, <=3 degenerate letters	8.644	50	5	10.0	Bonferroni over 22,045,565 tested cells; conservative vs a permutation FWER
+126 IUPAC k=4-8, <=3 degenerate letters	8.644	100	6	6.0	Bonferroni over 22,045,565 tested cells; conservative vs a permutation FWER
+126 IUPAC k=4-8, <=3 degenerate letters	8.644	200	7	3.5	Bonferroni over 22,045,565 tested cells; conservative vs a permutation FWER
+126 IUPAC k=4-8, <=3 degenerate letters	8.644	500	8	1.6	Bonferroni over 22,045,565 tested cells; conservative vs a permutation FWER
+126 IUPAC k=4-8, <=3 degenerate letters	8.644	1000	10	1.0	Bonferroni over 22,045,565 tested cells; conservative vs a permutation FWER
+126 IUPAC k=4-8, <=3 degenerate letters	8.644	2000	13	0.65	Bonferroni over 22,045,565 tested cells; conservative vs a permutation FWER
+126 IUPAC k=4-8, <=3 degenerate letters	8.644	2658	15	0.564	Bonferroni over 22,045,565 tested cells; conservative vs a permutation FWER
+126 IUPAC k=4-8, <=3 degenerate letters	8.644	5000	19	0.38	Bonferroni over 22,045,565 tested cells; conservative vs a permutation FWER
+126 IUPAC k=4-8, <=3 degenerate letters	8.644	20000	39	0.195	Bonferroni over 22,045,565 tested cells; conservative vs a permutation FWER
+125 reference (bipartite N1-N10, contiguous 9-11)	5.984	20	3	15.0	reproduced from 125_ cache for comparison
+125 reference (bipartite N1-N10, contiguous 9-11)	5.984	50	4	8.0	reproduced from 125_ cache for comparison
+125 reference (bipartite N1-N10, contiguous 9-11)	5.984	100	4	4.0	reproduced from 125_ cache for comparison
+125 reference (bipartite N1-N10, contiguous 9-11)	5.984	200	5	2.5	reproduced from 125_ cache for comparison
+125 reference (bipartite N1-N10, contiguous 9-11)	5.984	500	6	1.2	reproduced from 125_ cache for comparison
+125 reference (bipartite N1-N10, contiguous 9-11)	5.984	1000	8	0.8	reproduced from 125_ cache for comparison
+125 reference (bipartite N1-N10, contiguous 9-11)	5.984	2000	10	0.5	reproduced from 125_ cache for comparison
+125 reference (bipartite N1-N10, contiguous 9-11)	5.984	2658	12	0.451	reproduced from 125_ cache for comparison
+125 reference (bipartite N1-N10, contiguous 9-11)	5.984	5000	15	0.3	reproduced from 125_ cache for comparison
+125 reference (bipartite N1-N10, contiguous 9-11)	5.984	20000	33	0.165	reproduced from 125_ cache for comparison

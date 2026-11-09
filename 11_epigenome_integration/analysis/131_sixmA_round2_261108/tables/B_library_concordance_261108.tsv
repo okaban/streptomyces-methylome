@@ -1,0 +1,7 @@
+timepoint	universe	n_positions	per_lib_call_rate	obs_1of3	obs_2of3	obs_3of3	exp_1of3	exp_2of3	exp_3of3	ratio_3of3	ratio_2plus
+T1	non-motif(unassigned universe)	2407166	0.00107	3223	1061	795	7713.5	8.3	0.0	269280.2	224.5
+T1	AAGCCCG motif	1326	0.26546	163	124	215	569.8	205.9	24.81	8.7	1.5
+T2	non-motif(unassigned universe)	2415096	0.001109	3070	1171	874	8016.2	8.9	0.0	265429.1	229.7
+T2	AAGCCCG motif	1332	0.284284	150	163	220	581.9	231.1	30.6	7.2	1.5
+T3	non-motif(unassigned universe)	2408915	0.001532	5556	1428	886	11036.1	16.9	0.01	102328.7	136.6
+T3	AAGCCCG motif	1329	0.284926	192	145	218	580.9	231.5	30.74	7.1	1.4

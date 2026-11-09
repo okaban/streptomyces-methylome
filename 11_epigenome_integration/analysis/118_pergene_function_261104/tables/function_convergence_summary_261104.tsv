@@ -1,0 +1,11 @@
+region_set	mark	annotation	n_universe	n_hits	n_categories	sig_overrep	null_overrep_median	null_overrep_p	sig_rankrho	null_rankrho_median	null_rankrho_p
+body	4mC	KEGG	873	50	61	0	0.0	1.0	0	0.0	1.0
+body	4mC	COG	873	50	17	0	0.0	1.0	0	0.0	1.0
+body	6mA	KEGG	932	48	68	0	0.0	1.0	0	0.0	1.0
+body	6mA	COG	932	48	17	0	0.0	1.0	0	0.0	1.0
+prom_genestart	4mC	KEGG	196	5	7	0	0.0	1.0	0	0.0	1.0
+prom_genestart	4mC	COG	196	5	11	0	0.0	1.0	0	0.0	1.0
+prom_genestart	6mA	KEGG	308	15	9	0	0.0	1.0	0	0.0	1.0
+prom_genestart	6mA	COG	308	15	13	0	0.0	1.0	0	0.0	1.0
+prom_jeongtss	4mC	COG	87	3	4	0	0.0	1.0	0	0.0	1.0
+prom_jeongtss	6mA	COG	114	2	6	0	0.0	1.0	0	0.0	1.0

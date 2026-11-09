@@ -1,0 +1,106 @@
+gene_id	start	end	strand	product	mobile_by_product	mobile_by_pfam
+SC_RS02085	6346	7173	+	TnsA-like heteromeric transposase endonuclease subunit	True	False
+SC_RS02090	7154	9307	+	Mu transposase C-terminal domain-containing protein	True	False
+SC_RS02155	19971	21620	+	ISL3 family transposase	True	True
+SC_RS02280	40223	41065	-	IS5 family transposase	True	False
+SC_RS02285	41354	42174	+	IS5 family transposase	True	True
+SC_RS02395	65943	66104	-	transposase	True	False
+SC_RS02400	66104	66418	-	transposase	True	False
+SC_RS02415	68914	69676	-	IS5 family transposase	True	False
+SC_RS02420	69799	70647	+	IS5 family transposase	True	True
+SC_RS02460	76985	77200	-	IS5/IS1182 family transposase	True	False
+SC_RS02465	77315	78271	+	IS481-like element IS1649 family transposase	True	True
+SC_RS02475	78845	80690	-	IS481 family transposase	True	False
+SC_RS02485	81602	82441	-	IS5-like element ISSco3 family transposase	True	True
+SC_RS02490	82716	83500	+	IS5 family transposase	True	False
+SC_RS02515	89073	89465	+	IS5 family transposase	True	False
+SC_RS02545	93593	94087	-	IS5 family transposase	True	False
+SC_RS03050	213892	214542	-	transposase	True	False
+SC_RS03555	329342	330174	+	IS5-like element IS1650 family transposase	True	True
+SC_RS03750	373045	374001	+	IS481-like element IS1649 family transposase	True	True
+SC_RS04755	609517	610356	+	IS5-like element ISSco3 family transposase	True	True
+SC_RS06815	1024039	1024383	+	transposase	True	False
+SC_RS06960	1055883	1056995	-	tyrosine-type recombinase/integrase	True	True
+SC_RS06985	1060181	1061398	+	IS110-like element IS110 family transposase	True	True
+SC_RS06990	1061694	1061786	-	IS5/IS1182 family transposase	True	False
+SC_RS09330	1570995	1571951	+	IS481-like element IS1649 family transposase	True	True
+SC_RS10030	1713855	1715099	+	IS110-like element IS117 family transposase	True	True
+SC_RS13585	2481918	2483546	+	IS200/IS605 family element transposase accessory protein TnpB	True	False
+SC_RS15080	2823656	2825212	+	recombinase family protein	True	True
+SC_RS15235	2858981	2859937	+	IS481-like element IS1649 family transposase	True	True
+SC_RS15880	3006815	3008032	-	IS110-like element IS110 family transposase	True	True
+SC_RS16745	3180504	3181553	-	RNA-guided endonuclease InsQ/TnpB family protein	False	True
+SC_RS18370	3602753	3603907	-	tyrosine-type recombinase/integrase	True	True
+SC_RS19455	3825371	3826210	+	IS5-like element ISSco3 family transposase	True	True
+SC_RS19460	3826473	3827312	+	IS5-like element ISSco3 family transposase	True	True
+SC_RS19465	3827427	3828962	+	ISL3-like element IS469 family transposase	True	True
+SC_RS19470	3829043	3830584	-	ISL3-like element IS466 family transposase	True	True
+SC_RS19475	3830698	3831525	-	IS5-like element IS470 family transposase	True	True
+SC_RS19485	3832988	3833278	-	transposase	True	True
+SC_RS19565	3854847	3855298	+	transposase	True	False
+SC_RS19570	3855405	3856946	+	ISL3-like element IS466 family transposase	True	True
+SC_RS19805	3904526	3904624	+	IS5/IS1182 family transposase	True	False
+SC_RS19825	3907269	3908108	+	IS5-like element ISSco3 family transposase	True	True
+SC_RS20440	4038637	4040280	-	recombinase family protein	True	True
+SC_RS20705	4089285	4090508	-	RNA-guided endonuclease InsQ/TnpB family protein	False	True
+SC_RS21090	4171712	4171855	-	IS481 family transposase	True	False
+SC_RS21540	4270778	4272748	-	chromosomal replication initiator protein DnaA	False	True
+SC_RS21830	4332160	4333725	-	recombinase family protein	True	True
+SC_RS22090	4388129	4389009	-	IS5-like element IS1648 family transposase	True	True
+SC_RS22105	4390861	4392009	+	tyrosine-type recombinase/integrase	True	True
+SC_RS22430	4452748	4453492	+	transposase	True	False
+SC_RS22440	4454564	4455793	-	IS701 family transposase	True	True
+SC_RS23100	4592459	4593415	-	IS481-like element IS1649 family transposase	True	True
+SC_RS23240	4619432	4620040	-	tyrosine-type recombinase/integrase	True	False
+SC_RS23880	4754366	4756015	+	recombinase family protein	True	True
+SC_RS23890	4757436	4758557	-	IS630 family transposase	True	False
+SC_RS23910	4761670	4763841	-	integrase	True	False
+SC_RS23920	4765553	4766905	-	tyrosine-type recombinase/integrase	True	False
+SC_RS23925	4766995	4767627	+	recombinase family protein	True	True
+SC_RS24020	4785501	4786457	+	IS481-like element IS1649 family transposase	True	True
+SC_RS25235	5038758	5040125	-	tyrosine-type recombinase/integrase	True	False
+SC_RS25650	5122899	5123855	+	IS481-like element IS1649 family transposase	True	True
+SC_RS26020	5184449	5185669	+	RNA-guided endonuclease InsQ/TnpB family protein	False	True
+SC_RS28670	5770678	5771510	+	IS5-like element IS1650 family transposase	True	True
+SC_RS28815	5796730	5797479	+	transposase family protein	True	True
+SC_RS28820	5797829	5798573	-	transposase	True	False
+SC_RS28920	5816598	5817971	+	tyrosine-type recombinase/integrase	True	False
+SC_RS29235	5881074	5882489	-	recombinase family protein	True	True
+SC_RS30320	6118406	6120229	+	recombinase family protein	True	False
+SC_RS30325	6120371	6120760	+	recombinase family protein	True	False
+SC_RS30375	6131534	6132414	-	IS5-like element IS1648 family transposase	True	True
+SC_RS30385	6133491	6134711	-	tyrosine-type recombinase/integrase	True	True
+SC_RS30425	6139887	6140843	-	IS481-like element IS1649 family transposase	True	True
+SC_RS31760	6469741	6469851	+	transposase	True	False
+SC_RS32320	6599193	6600001	+	IS5-like element IS1647 family transposase	True	True
+SC_RS33905	6995104	6995605	+	transposase	True	False
+SC_RS33910	6996518	6997698	-	IS3 family transposase	True	False
+SC_RS34130	7047960	7048069	+	ISAzo13-like element transposase-related protein	True	False
+SC_RS34170	7057809	7059026	+	IS110-like element IS110 family transposase	True	True
+SC_RS34175	7059104	7060183	-	IS110 family RNA-guided transposase	True	True
+SC_RS34180	7060486	7061838	+	IS21 family transposase	True	True
+SC_RS34185	7061835	7062605	+	IS21-like element helper ATPase IstB	True	True
+SC_RS34190	7063063	7063575	+	IS110 family transposase	True	False
+SC_RS34195	7063621	7064501	+	IS5-like element IS1648 family transposase	True	True
+SC_RS34200	7064517	7065221	+	transposase	True	False
+SC_RS34210	7066309	7067553	+	IS110-like element IS117 family transposase	True	True
+SC_RS34220	7069508	7071526	+	recombinase family protein	True	True
+SC_RS36215	7566130	7567347	-	tyrosine-type recombinase/integrase	True	True
+SC_RS36750	7675634	7676473	-	IS5-like element ISSco3 family transposase	True	True
+SC_RS36755	7676742	7677550	+	IS5-like element IS1647 family transposase	True	True
+SC_RS37600	7863173	7863367	+	IS5/IS1182 family transposase	True	False
+SC_RS37625	7868759	7869114	-	transposase	True	False
+SC_RS37630	7869233	7869613	+	transposase	True	False
+SC_RS37635	7869683	7870595	-	transposase	True	False
+SC_RS37645	7872694	7872789	-	IS5 family transposase	True	False
+SC_RS40885	8575522	8575674	-	IS110 family transposase	True	False
+SC_RS40905	8578547	8579414	-	IS5 family transposase	True	False
+SC_RS40955	8588247	8589079	-	IS5-like element IS1650 family transposase	True	True
+SC_RS41070	8609130	8610347	+	IS110-like element IS110 family transposase	True	True
+SC_RS41075	8610407	8610638	+	ISL3 family transposase	True	False
+SC_RS41145	8620339	8621174	-	IS5 family transposase	True	False
+SC_RS41160	8623230	8624186	+	IS481-like element IS1649 family transposase	True	True
+SC_RS41205	8630427	8631482	-	transposase	True	True
+SC_RS41280	8645888	8647537	-	ISL3 family transposase	True	True
+SC_RS41345	8658201	8660354	-	Mu transposase C-terminal domain-containing protein	True	False
+SC_RS41350	8660335	8661162	-	TnsA-like heteromeric transposase endonuclease subunit	True	False

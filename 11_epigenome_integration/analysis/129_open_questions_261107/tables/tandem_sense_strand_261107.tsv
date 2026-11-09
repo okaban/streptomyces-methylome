@@ -1,0 +1,4 @@
+tp	test	n	n_site	rate_sense	rate_anti	MH_OR	lo	hi
+T1	tandem gap: sense strand (= flanking genes) vs antisense	171185	172	106.19	94.22	1.109	0.82	1.499
+T2	tandem gap: sense strand (= flanking genes) vs antisense	171235	176	110.6	94.22	1.157	0.858	1.559
+T3	tandem gap: sense strand (= flanking genes) vs antisense	171230	187	125.13	91.77	1.332	0.995	1.785

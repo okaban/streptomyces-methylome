@@ -1,0 +1,520 @@
+unassigned 4mC sites (all timepoints): 0
+{'unassigned6mA_any': 2681, 'unassigned6mA_repro': 1499}
+loading canonical genome-wide adenine pileup ...
+  1-1: 2,817,247 adenine positions
+  1-2: 2,827,016 adenine positions
+  1-3: 2,992,097 adenine positions
+  2-1: 2,939,332 adenine positions
+  2-3: 2,928,210 adenine positions
+  2-4: 2,896,774 adenine positions
+  3-2: 2,858,485 adenine positions
+  3-3: 2,879,777 adenine positions
+  3-4: 2,822,857 adenine positions
+  pileup rows 5,298,188; adenine on own strand 2,416,593
+  AAGCCCG A1/A2 positions in pileup: 2,668
+           site_set  n_sites  n_not_in_pileup  n_sites_major_motif  n_foreground  n_callable_background  pct_fg_in_background
+  unassigned6mA_any     2681                6                    0          2675                2413744                100.00
+unassigned6mA_repro     1499                0                    0          1499                2412468                 99.53
+stage 1 (sites + callable) done
+building strand-oriented contexts ...
+unassigned6mA_repro: foreground 1,492 / callable 2,412,468
+  k=4 done
+  k=5 done
+  k=6 done
+  k=7 done
+  k=8 done
+unassigned6mA_any: foreground 2,675 / callable 2,413,744
+  k=4 done
+  k=5 done
+  k=6 done
+  k=7 done
+  k=8 done
+k-mer cells reported: 2603, q<0.05: 2341
+distinct candidate motifs: {'unassigned6mA_any': 93, 'unassigned6mA_repro': 68}
+features: {"antiSMASH_29_regions": [29, 1128306], "IslandPath_DIMOB_islands": [16, 438235], "rRNA_operons": [6, 42802]}
+           site_set                             test  n_sites  statistic            p         q_BH
+unassigned6mA_repro        KS_coordinate_vs_callable     1492     0.0498 1.192110e-03 5.563179e-02
+unassigned6mA_repro     window50kb_overdispersion_MC     1492   312.8000 4.997501e-04 3.498251e-02
+unassigned6mA_repro                      core_vs_arm     1492     1.0402 4.786256e-01 1.000000e+00
+unassigned6mA_repro     overlap:antiSMASH_29_regions     1492     0.8719 9.765366e-02 8.370314e-01
+unassigned6mA_repro overlap:IslandPath_DIMOB_islands     1492     0.4847 2.830954e-07 5.945003e-05
+unassigned6mA_repro             overlap:rRNA_operons     1492     0.1883 3.014185e-03 1.054965e-01
+  unassigned6mA_any        KS_coordinate_vs_callable     2675     0.0377 9.904979e-04 5.200114e-02
+  unassigned6mA_any     window50kb_overdispersion_MC     2675   440.1000 4.997501e-04 3.498251e-02
+  unassigned6mA_any                      core_vs_arm     2675     0.9853 7.140769e-01 1.000000e+00
+  unassigned6mA_any     overlap:antiSMASH_29_regions     2675     0.9515 4.205514e-01 1.000000e+00
+  unassigned6mA_any overlap:IslandPath_DIMOB_islands     2675     0.5353 7.984305e-10 3.353408e-07
+  unassigned6mA_any             overlap:rRNA_operons     2675     0.1050 2.370236e-06 3.318330e-04
+      motif:CAACC@3        KS_coordinate_vs_callable      146     0.0958 1.328782e-01 8.782355e-01
+      motif:CAACC@3     window50kb_overdispersion_MC      146   209.4000 3.998001e-02 5.877317e-01
+      motif:CAACC@3                      core_vs_arm      146     0.6338 8.311031e-03 2.327089e-01
+      motif:CAACC@3     overlap:antiSMASH_29_regions      146     1.1921 4.563044e-01 1.000000e+00
+      motif:CAACC@3 overlap:IslandPath_DIMOB_islands      146     0.2935 1.854385e-02 4.092954e-01
+      motif:CAACC@3             overlap:rRNA_operons      146     0.0000 1.771248e-01 9.658281e-01
+       motif:AACC@2        KS_coordinate_vs_callable      200     0.0755 1.964807e-01 9.658281e-01
+       motif:AACC@2     window50kb_overdispersion_MC      200   211.2000 2.898551e-02 4.869565e-01
+       motif:AACC@2                      core_vs_arm      200     0.8901 4.566414e-01 1.000000e+00
+       motif:AACC@2     overlap:antiSMASH_29_regions      200     1.0395 8.332349e-01 1.000000e+00
+       motif:AACC@2 overlap:IslandPath_DIMOB_islands      200     0.2227 1.959953e-03 7.483459e-02
+       motif:AACC@2             overlap:rRNA_operons      200     0.0000 1.231114e-01 8.782355e-01
+       motif:CAAC@3        KS_coordinate_vs_callable      214     0.0736 1.894752e-01 9.658281e-01
+       motif:CAAC@3     window50kb_overdispersion_MC      214   228.9000 5.497251e-03 1.649175e-01
+       motif:CAAC@3                      core_vs_arm      214     0.7524 4.398777e-02 5.877317e-01
+       motif:CAAC@3     overlap:antiSMASH_29_regions      214     1.1472 4.735534e-01 1.000000e+00
+       motif:CAAC@3 overlap:IslandPath_DIMOB_islands      214     0.2062 7.028659e-04 4.217195e-02
+       motif:CAAC@3             overlap:rRNA_operons      214     0.0000 2.822589e-01 9.926203e-01
+      motif:GTCAC@4        KS_coordinate_vs_callable      170     0.0583 5.924486e-01 1.000000e+00
+      motif:GTCAC@4     window50kb_overdispersion_MC      170   168.5000 5.672164e-01 1.000000e+00
+      motif:GTCAC@4                      core_vs_arm      170     1.1366 4.703084e-01 1.000000e+00
+      motif:GTCAC@4     overlap:antiSMASH_29_regions      170     0.8566 5.739816e-01 1.000000e+00
+      motif:GTCAC@4 overlap:IslandPath_DIMOB_islands      170     0.5962 3.649427e-01 1.000000e+00
+      motif:GTCAC@4             overlap:rRNA_operons      170     1.1642 5.794176e-01 1.000000e+00
+       motif:GCAA@4        KS_coordinate_vs_callable      176     0.0644 4.437476e-01 1.000000e+00
+       motif:GCAA@4     window50kb_overdispersion_MC      176   200.7000 7.496252e-02 7.871064e-01
+       motif:GCAA@4                      core_vs_arm      176     0.8264 2.286234e-01 9.889970e-01
+       motif:GCAA@4     overlap:antiSMASH_29_regions      176     1.1283 5.645966e-01 1.000000e+00
+       motif:GCAA@4 overlap:IslandPath_DIMOB_islands      176     0.0696 3.622902e-05 3.804047e-03
+       motif:GCAA@4             overlap:rRNA_operons      176     0.0000 4.157575e-01 1.000000e+00
+      motif:TCACC@3        KS_coordinate_vs_callable      200     0.0413 8.722025e-01 1.000000e+00
+      motif:TCACC@3     window50kb_overdispersion_MC      200   166.5000 6.231884e-01 1.000000e+00
+      motif:TCACC@3                      core_vs_arm      200     1.1903 2.680006e-01 9.889970e-01
+      motif:TCACC@3     overlap:antiSMASH_29_regions      200     0.5946 3.758782e-02 5.877317e-01
+      motif:TCACC@3 overlap:IslandPath_DIMOB_islands      200     0.8374 7.397598e-01 1.000000e+00
+      motif:TCACC@3             overlap:rRNA_operons      200     1.0728 6.083795e-01 1.000000e+00
+       motif:CACC@2        KS_coordinate_vs_callable      380     0.0461 3.845756e-01 1.000000e+00
+       motif:CACC@2     window50kb_overdispersion_MC      380   196.2000 1.054473e-01 8.516895e-01
+       motif:CACC@2                      core_vs_arm      380     1.2903 2.439805e-02 4.654195e-01
+       motif:CACC@2     overlap:antiSMASH_29_regions      380     0.7832 1.514821e-01 9.181643e-01
+       motif:CACC@2 overlap:IslandPath_DIMOB_islands      380     0.8428 6.248987e-01 1.000000e+00
+       motif:CACC@2             overlap:rRNA_operons      380     0.7004 1.000000e+00 1.000000e+00
+       motif:ACCC@1        KS_coordinate_vs_callable      271     0.0614 2.509119e-01 9.889970e-01
+       motif:ACCC@1     window50kb_overdispersion_MC      271   197.9000 8.395802e-02 8.200551e-01
+       motif:ACCC@1                      core_vs_arm      271     1.1229 4.060752e-01 1.000000e+00
+       motif:ACCC@1     overlap:antiSMASH_29_regions      271     1.0115 9.282919e-01 1.000000e+00
+       motif:ACCC@1 overlap:IslandPath_DIMOB_islands      271     0.4524 4.500193e-02 5.877317e-01
+       motif:ACCC@1             overlap:rRNA_operons      271     0.0000 4.272495e-01 1.000000e+00
+      motif:GGAAC@3        KS_coordinate_vs_callable      118     0.0760 4.849848e-01 1.000000e+00
+      motif:GGAAC@3     window50kb_overdispersion_MC      118   181.6000 3.108446e-01 1.000000e+00
+      motif:GGAAC@3                      core_vs_arm      118     1.1291 5.680725e-01 1.000000e+00
+      motif:GGAAC@3     overlap:antiSMASH_29_regions      118     0.9303 8.956161e-01 1.000000e+00
+      motif:GGAAC@3 overlap:IslandPath_DIMOB_islands      118     0.9634 1.000000e+00 1.000000e+00
+      motif:GGAAC@3             overlap:rRNA_operons      118     0.0000 1.000000e+00 1.000000e+00
+      motif:ACCGG@1        KS_coordinate_vs_callable      150     0.0765 3.270232e-01 1.000000e+00
+      motif:ACCGG@1     window50kb_overdispersion_MC      150   206.3000 4.447776e-02 5.877317e-01
+      motif:ACCGG@1                      core_vs_arm      150     1.2450 2.339520e-01 9.889970e-01
+      motif:ACCGG@1     overlap:antiSMASH_29_regions      150     0.9727 1.000000e+00 1.000000e+00
+      motif:ACCGG@1 overlap:IslandPath_DIMOB_islands      150     0.9478 1.000000e+00 1.000000e+00
+      motif:ACCGG@1             overlap:rRNA_operons      150     0.0000 1.000000e+00 1.000000e+00
+       motif:ACCG@1        KS_coordinate_vs_callable      265     0.0613 2.610789e-01 9.889970e-01
+       motif:ACCG@1     window50kb_overdispersion_MC      265   203.3000 6.296852e-02 6.984229e-01
+       motif:ACCG@1                      core_vs_arm      265     1.1847 2.231718e-01 9.889970e-01
+       motif:ACCG@1     overlap:antiSMASH_29_regions      265     0.8477 4.193697e-01 1.000000e+00
+       motif:ACCG@1 overlap:IslandPath_DIMOB_islands      265     0.7317 4.605270e-01 1.000000e+00
+       motif:ACCG@1             overlap:rRNA_operons      265     0.0000 6.321119e-01 1.000000e+00
+     motif:CGGCAC@5        KS_coordinate_vs_callable       87     0.0891 4.677591e-01 1.000000e+00
+     motif:CGGCAC@5     window50kb_overdispersion_MC       87   214.6000 2.548726e-02 4.654195e-01
+     motif:CGGCAC@5                      core_vs_arm       87     1.5185 9.188580e-02 8.332328e-01
+     motif:CGGCAC@5     overlap:antiSMASH_29_regions       87     0.8316 7.525702e-01 1.000000e+00
+     motif:CGGCAC@5 overlap:IslandPath_DIMOB_islands       87     1.3951 4.164156e-01 1.000000e+00
+     motif:CGGCAC@5             overlap:rRNA_operons       87     0.0000 1.000000e+00 1.000000e+00
+      motif:GGCAC@4        KS_coordinate_vs_callable      109     0.0819 4.342438e-01 1.000000e+00
+      motif:GGCAC@4     window50kb_overdispersion_MC      109   213.4000 2.748626e-02 4.810095e-01
+      motif:GGCAC@4                      core_vs_arm      109     1.4325 9.085638e-02 8.332328e-01
+      motif:GGCAC@4     overlap:antiSMASH_29_regions      109     0.8726 7.782931e-01 1.000000e+00
+      motif:GGCAC@4 overlap:IslandPath_DIMOB_islands      109     1.4310 3.521613e-01 1.000000e+00
+      motif:GGCAC@4             overlap:rRNA_operons      109     0.0000 1.000000e+00 1.000000e+00
+     motif:CCGGGA@6        KS_coordinate_vs_callable       66     0.1156 3.160935e-01 1.000000e+00
+     motif:CCGGGA@6     window50kb_overdispersion_MC       66   180.8000 3.208396e-01 1.000000e+00
+     motif:CCGGGA@6                      core_vs_arm       66     0.6207 5.404933e-02 6.305755e-01
+     motif:CCGGGA@6     overlap:antiSMASH_29_regions       66     1.2519 4.743492e-01 1.000000e+00
+     motif:CCGGGA@6 overlap:IslandPath_DIMOB_islands       66     0.0000 1.159669e-01 8.782355e-01
+     motif:CCGGGA@6             overlap:rRNA_operons       66     0.0000 1.000000e+00 1.000000e+00
+      motif:CGGGA@5        KS_coordinate_vs_callable       95     0.1191 1.246804e-01 8.782355e-01
+      motif:CGGGA@5     window50kb_overdispersion_MC       95   182.3000 2.718641e-01 9.889970e-01
+      motif:CGGGA@5                      core_vs_arm       95     0.7252 1.327659e-01 8.782355e-01
+      motif:CGGGA@5     overlap:antiSMASH_29_regions       95     1.2087 4.540414e-01 1.000000e+00
+      motif:CGGGA@5 overlap:IslandPath_DIMOB_islands       95     0.2227 1.338264e-01 8.782355e-01
+      motif:CGGGA@5             overlap:rRNA_operons       95     0.0000 1.000000e+00 1.000000e+00
+      motif:CGGCA@5        KS_coordinate_vs_callable      118     0.0795 4.236355e-01 1.000000e+00
+      motif:CGGCA@5     window50kb_overdispersion_MC      118   215.3000 1.799100e-02 4.092954e-01
+      motif:CGGCA@5                      core_vs_arm      118     1.4445 8.177046e-02 8.177046e-01
+      motif:CGGCA@5     overlap:antiSMASH_29_regions      118     0.8803 7.856230e-01 1.000000e+00
+      motif:CGGCA@5 overlap:IslandPath_DIMOB_islands      118     1.0354 8.312629e-01 1.000000e+00
+      motif:CGGCA@5             overlap:rRNA_operons      118     0.0000 1.000000e+00 1.000000e+00
+      motif:CCGAA@5        KS_coordinate_vs_callable       67     0.0976 5.143434e-01 1.000000e+00
+      motif:CCGAA@5     window50kb_overdispersion_MC       67   161.8000 7.016492e-01 1.000000e+00
+      motif:CCGAA@5                      core_vs_arm       67     1.4456 1.996410e-01 9.658281e-01
+      motif:CCGAA@5     overlap:antiSMASH_29_regions       67     0.6647 4.632265e-01 1.000000e+00
+      motif:CCGAA@5 overlap:IslandPath_DIMOB_islands       67     0.2543 1.844627e-01 9.658281e-01
+      motif:CCGAA@5             overlap:rRNA_operons       67     0.0000 1.000000e+00 1.000000e+00
+       motif:GGGA@4        KS_coordinate_vs_callable      137     0.0843 2.686882e-01 9.889970e-01
+       motif:GGGA@4     window50kb_overdispersion_MC      137   167.1000 5.987006e-01 1.000000e+00
+       motif:GGGA@4                      core_vs_arm      137     0.8305 2.838878e-01 9.926203e-01
+       motif:GGGA@4     overlap:antiSMASH_29_regions      137     1.1345 6.114142e-01 1.000000e+00
+       motif:GGGA@4 overlap:IslandPath_DIMOB_islands      137     0.4227 1.672352e-01 9.491730e-01
+       motif:GGGA@4             overlap:rRNA_operons      137     0.0000 6.304419e-01 1.000000e+00
+     motif:CGGTCA@6        KS_coordinate_vs_callable       52     0.0997 6.426177e-01 1.000000e+00
+     motif:CGGTCA@6     window50kb_overdispersion_MC       52   160.7000 7.341329e-01 1.000000e+00
+     motif:CGGTCA@6                      core_vs_arm       52     1.1289 7.720528e-01 1.000000e+00
+     motif:CGGTCA@6     overlap:antiSMASH_29_regions       52     1.6608 1.560752e-01 9.181643e-01
+     motif:CGGTCA@6 overlap:IslandPath_DIMOB_islands       52     0.0000 1.737382e-01 9.658281e-01
+     motif:CGGTCA@6             overlap:rRNA_operons       52     6.8720 1.411723e-01 8.983693e-01
+       motif:TCAA@4        KS_coordinate_vs_callable       66     0.1649 4.897764e-02 5.877317e-01
+       motif:TCAA@4     window50kb_overdispersion_MC       66   183.3000 2.773613e-01 9.889970e-01
+       motif:TCAA@4                      core_vs_arm       66     0.7850 3.572481e-01 1.000000e+00
+       motif:TCAA@4     overlap:antiSMASH_29_regions       66     1.2836 4.506130e-01 1.000000e+00
+       motif:TCAA@4 overlap:IslandPath_DIMOB_islands       66     0.3904 2.375662e-01 9.889970e-01
+       motif:TCAA@4             overlap:rRNA_operons       66     0.0000 1.000000e+00 1.000000e+00
+    motif:GCCGTCA@7        KS_coordinate_vs_callable       31     0.1969 1.578972e-01 9.181643e-01
+    motif:GCCGTCA@7     window50kb_overdispersion_MC       31   181.7000 2.738631e-01 9.889970e-01
+    motif:GCCGTCA@7                      core_vs_arm       31     0.6766 3.467426e-01 1.000000e+00
+    motif:GCCGTCA@7     overlap:antiSMASH_29_regions       31     1.3510 5.808630e-01 1.000000e+00
+    motif:GCCGTCA@7 overlap:IslandPath_DIMOB_islands       31     0.0000 4.074932e-01 1.000000e+00
+    motif:GCCGTCA@7             overlap:rRNA_operons       31     0.0000 1.000000e+00 1.000000e+00
+       motif:GGCA@4        KS_coordinate_vs_callable      156     0.0676 4.542377e-01 1.000000e+00
+       motif:GGCA@4     window50kb_overdispersion_MC      156   206.7000 4.747626e-02 5.877317e-01
+       motif:GGCA@4                      core_vs_arm      156     1.2218 2.774823e-01 9.889970e-01
+       motif:GGCA@4     overlap:antiSMASH_29_regions      156     0.9629 1.000000e+00 1.000000e+00
+       motif:GGCA@4 overlap:IslandPath_DIMOB_islands      156     1.1915 5.931710e-01 1.000000e+00
+       motif:GGCA@4             overlap:rRNA_operons      156     0.0000 1.000000e+00 1.000000e+00
+       motif:AAGA@2        KS_coordinate_vs_callable       62     0.1936 1.643344e-02 4.060025e-01
+       motif:AAGA@2     window50kb_overdispersion_MC       62   160.1000 7.381309e-01 1.000000e+00
+       motif:AAGA@2                      core_vs_arm       62     0.9787 1.000000e+00 1.000000e+00
+       motif:AAGA@2     overlap:antiSMASH_29_regions       62     0.3647 8.048583e-02 8.177046e-01
+       motif:AAGA@2 overlap:IslandPath_DIMOB_islands       62     0.6811 8.001844e-01 1.000000e+00
+       motif:AAGA@2             overlap:rRNA_operons       62     0.0000 1.000000e+00 1.000000e+00
+      motif:GGAGC@3        KS_coordinate_vs_callable       68     0.1022 4.473865e-01 1.000000e+00
+      motif:GGAGC@3     window50kb_overdispersion_MC       68   194.3000 1.274363e-01 8.782355e-01
+      motif:GGAGC@3                      core_vs_arm       68     1.0185 1.000000e+00 1.000000e+00
+      motif:GGAGC@3     overlap:antiSMASH_29_regions       68     1.1393 7.182612e-01 1.000000e+00
+      motif:GGAGC@3 overlap:IslandPath_DIMOB_islands       68     0.3051 3.782900e-01 1.000000e+00
+      motif:GGAGC@3             overlap:rRNA_operons       68     0.0000 1.000000e+00 1.000000e+00
+     motif:GCGTCA@6        KS_coordinate_vs_callable       26     0.1006 9.314450e-01 1.000000e+00
+     motif:GCGTCA@6     window50kb_overdispersion_MC       26   155.0000 8.290855e-01 1.000000e+00
+     motif:GCGTCA@6                      core_vs_arm       26     1.4084 5.367645e-01 1.000000e+00
+     motif:GCGTCA@6     overlap:antiSMASH_29_regions       26     0.0000 4.052052e-02 5.877317e-01
+     motif:GCGTCA@6 overlap:IslandPath_DIMOB_islands       26     1.3795 6.580651e-01 1.000000e+00
+     motif:GCGTCA@6             overlap:rRNA_operons       26     0.0000 1.000000e+00 1.000000e+00
+    motif:CGGCCAC@6        KS_coordinate_vs_callable       29     0.1082 8.502431e-01 1.000000e+00
+    motif:CGGCCAC@6     window50kb_overdispersion_MC       29   147.2000 9.445277e-01 1.000000e+00
+    motif:CGGCCAC@6                      core_vs_arm       29     0.8131 5.685570e-01 1.000000e+00
+    motif:CGGCCAC@6     overlap:antiSMASH_29_regions       29     1.6798 2.699254e-01 9.889970e-01
+    motif:CGGCCAC@6 overlap:IslandPath_DIMOB_islands       29     0.0000 6.388807e-01 1.000000e+00
+    motif:CGGCCAC@6             overlap:rRNA_operons       29     0.0000 1.000000e+00 1.000000e+00
+       motif:CGAA@4        KS_coordinate_vs_callable       93     0.0762 6.248529e-01 1.000000e+00
+       motif:CGAA@4     window50kb_overdispersion_MC       93   177.8000 3.618191e-01 1.000000e+00
+       motif:CGAA@4                      core_vs_arm       93     1.3132 2.763125e-01 9.889970e-01
+       motif:CGAA@4     overlap:antiSMASH_29_regions       93     0.7811 5.433037e-01 1.000000e+00
+       motif:CGAA@4 overlap:IslandPath_DIMOB_islands       93     0.1790 6.755502e-02 7.275156e-01
+       motif:CGAA@4             overlap:rRNA_operons       93     0.0000 1.000000e+00 1.000000e+00
+     motif:CCGGAA@5        KS_coordinate_vs_callable       24     0.1749 4.079044e-01 1.000000e+00
+     motif:CCGGAA@5     window50kb_overdispersion_MC       24   162.7000 6.611694e-01 1.000000e+00
+     motif:CCGGAA@5                      core_vs_arm       24     1.1472 8.343110e-01 1.000000e+00
+     motif:CCGGAA@5     overlap:antiSMASH_29_regions       24     1.5898 3.738613e-01 1.000000e+00
+     motif:CCGGAA@5 overlap:IslandPath_DIMOB_islands       24     0.6749 1.000000e+00 1.000000e+00
+     motif:CCGGAA@5             overlap:rRNA_operons       24     0.0000 1.000000e+00 1.000000e+00
+   motif:AAGAAGCC@1        KS_coordinate_vs_callable        9     0.2825 3.951744e-01 1.000000e+00
+   motif:AAGAAGCC@1     window50kb_overdispersion_MC        9   151.2000 3.203398e-01 1.000000e+00
+   motif:AAGAAGCC@1                      core_vs_arm        9     1.3013 1.000000e+00 1.000000e+00
+   motif:AAGAAGCC@1     overlap:antiSMASH_29_regions        9     0.0000 3.641537e-01 1.000000e+00
+   motif:AAGAAGCC@1 overlap:IslandPath_DIMOB_islands        9     0.0000 1.000000e+00 1.000000e+00
+   motif:AAGAAGCC@1             overlap:rRNA_operons        9        NaN 1.000000e+00 1.000000e+00
+       motif:CAAG@3        KS_coordinate_vs_callable       64     0.0930 6.035860e-01 1.000000e+00
+       motif:CAAG@3     window50kb_overdispersion_MC       64   165.7000 6.096952e-01 1.000000e+00
+       motif:CAAG@3                      core_vs_arm       64     1.3273 4.077971e-01 1.000000e+00
+       motif:CAAG@3     overlap:antiSMASH_29_regions       64     0.5113 2.393513e-01 9.889970e-01
+       motif:CAAG@3 overlap:IslandPath_DIMOB_islands       64     0.4213 3.257303e-01 1.000000e+00
+       motif:CAAG@3             overlap:rRNA_operons       64     0.0000 1.000000e+00 1.000000e+00
+    motif:AGCCGGA@1        KS_coordinate_vs_callable       17     0.1246 9.254477e-01 1.000000e+00
+    motif:AGCCGGA@1     window50kb_overdispersion_MC       17   168.1000 5.357321e-01 1.000000e+00
+    motif:AGCCGGA@1                      core_vs_arm       17     0.7663 6.147737e-01 1.000000e+00
+    motif:AGCCGGA@1     overlap:antiSMASH_29_regions       17     1.3949 4.874750e-01 1.000000e+00
+    motif:AGCCGGA@1 overlap:IslandPath_DIMOB_islands       17     1.4528 5.130949e-01 1.000000e+00
+    motif:AGCCGGA@1             overlap:rRNA_operons       17     0.0000 1.000000e+00 1.000000e+00
+      motif:GCCAC@4        KS_coordinate_vs_callable       60     0.1155 3.718499e-01 1.000000e+00
+      motif:GCCAC@4     window50kb_overdispersion_MC       60   178.5000 3.698151e-01 1.000000e+00
+      motif:GCCAC@4                      core_vs_arm       60     0.7837 3.489990e-01 1.000000e+00
+      motif:GCCAC@4     overlap:antiSMASH_29_regions       60     1.2778 4.506166e-01 1.000000e+00
+      motif:GCCAC@4 overlap:IslandPath_DIMOB_islands       60     0.6518 7.699778e-01 1.000000e+00
+      motif:GCCAC@4             overlap:rRNA_operons       60     0.0000 1.000000e+00 1.000000e+00
+     motif:CGGCCA@6        KS_coordinate_vs_callable       41     0.1190 5.665478e-01 1.000000e+00
+     motif:CGGCCA@6     window50kb_overdispersion_MC       41   156.4000 8.125937e-01 1.000000e+00
+     motif:CGGCCA@6                      core_vs_arm       41     0.8718 7.447147e-01 1.000000e+00
+     motif:CGGCCA@6     overlap:antiSMASH_29_regions       41     1.3716 4.824320e-01 1.000000e+00
+     motif:CGGCCA@6 overlap:IslandPath_DIMOB_islands       41     0.5009 1.000000e+00 1.000000e+00
+     motif:CGGCCA@6             overlap:rRNA_operons       41     0.0000 1.000000e+00 1.000000e+00
+     motif:AAGGAC@2        KS_coordinate_vs_callable       18     0.1900 4.768746e-01 1.000000e+00
+     motif:AAGGAC@2     window50kb_overdispersion_MC       18   144.9000 9.320340e-01 1.000000e+00
+     motif:AAGGAC@2                      core_vs_arm       18     0.6664 4.403080e-01 1.000000e+00
+     motif:AAGGAC@2     overlap:antiSMASH_29_regions       18     0.9277 1.000000e+00 1.000000e+00
+     motif:AAGGAC@2 overlap:IslandPath_DIMOB_islands       18     0.0000 6.224124e-01 1.000000e+00
+     motif:AAGGAC@2             overlap:rRNA_operons       18     0.0000 1.000000e+00 1.000000e+00
+   motif:GACCGTCA@8        KS_coordinate_vs_callable        8     0.4129 9.526034e-02 8.335280e-01
+   motif:GACCGTCA@8     window50kb_overdispersion_MC        8   152.0000 6.161919e-01 1.000000e+00
+   motif:GACCGTCA@8                      core_vs_arm        8     0.8202 7.234741e-01 1.000000e+00
+   motif:GACCGTCA@8     overlap:antiSMASH_29_regions        8     1.0471 1.000000e+00 1.000000e+00
+   motif:GACCGTCA@8 overlap:IslandPath_DIMOB_islands        8     1.9804 4.316819e-01 1.000000e+00
+   motif:GACCGTCA@8             overlap:rRNA_operons        8     0.0000 1.000000e+00 1.000000e+00
+    motif:CACGGAC@2        KS_coordinate_vs_callable       13     0.3112 1.289870e-01 8.782355e-01
+    motif:CACGGAC@2     window50kb_overdispersion_MC       13   171.7000 4.192904e-01 1.000000e+00
+    motif:CACGGAC@2                      core_vs_arm       13     0.9132 1.000000e+00 1.000000e+00
+    motif:CACGGAC@2     overlap:antiSMASH_29_regions       13     1.9223 4.034239e-01 1.000000e+00
+    motif:CACGGAC@2 overlap:IslandPath_DIMOB_islands       13     0.0000 1.000000e+00 1.000000e+00
+    motif:CACGGAC@2             overlap:rRNA_operons       13     0.0000 1.000000e+00 1.000000e+00
+   motif:CGTCGTCA@8        KS_coordinate_vs_callable        9     0.3407 1.956543e-01 9.658281e-01
+   motif:CGTCGTCA@8     window50kb_overdispersion_MC        9   171.9000 4.257871e-01 1.000000e+00
+   motif:CGTCGTCA@8                      core_vs_arm        9     3.8220 2.859692e-01 9.926203e-01
+   motif:CGTCGTCA@8     overlap:antiSMASH_29_regions        9     0.0000 6.109678e-01 1.000000e+00
+   motif:CGTCGTCA@8 overlap:IslandPath_DIMOB_islands        9     2.4194 3.681006e-01 1.000000e+00
+   motif:CGTCGTCA@8             overlap:rRNA_operons        9        NaN 1.000000e+00 1.000000e+00
+      motif:GAGCC@2        KS_coordinate_vs_callable       44     0.1478 2.646069e-01 9.889970e-01
+      motif:GAGCC@2     window50kb_overdispersion_MC       44   164.7000 6.566717e-01 1.000000e+00
+      motif:GAGCC@2                      core_vs_arm       44     1.0425 1.000000e+00 1.000000e+00
+      motif:GAGCC@2     overlap:antiSMASH_29_regions       44     1.2345 6.543622e-01 1.000000e+00
+      motif:GAGCC@2 overlap:IslandPath_DIMOB_islands       44     0.4370 7.261092e-01 1.000000e+00
+      motif:GAGCC@2             overlap:rRNA_operons       44     0.0000 1.000000e+00 1.000000e+00
+       motif:GAAG@3        KS_coordinate_vs_callable       85     0.0766 6.713044e-01 1.000000e+00
+       motif:GAAG@3     window50kb_overdispersion_MC       85   141.1000 9.710145e-01 1.000000e+00
+       motif:GAAG@3                      core_vs_arm       85     1.0959 7.300451e-01 1.000000e+00
+       motif:GAAG@3     overlap:antiSMASH_29_regions       85     0.6087 2.555578e-01 9.889970e-01
+       motif:GAAG@3 overlap:IslandPath_DIMOB_islands       85     0.2005 9.324272e-02 8.332328e-01
+       motif:GAAG@3             overlap:rRNA_operons       85     0.0000 1.000000e+00 1.000000e+00
+       motif:AACG@2        KS_coordinate_vs_callable       54     0.1322 2.768259e-01 9.889970e-01
+       motif:AACG@2     window50kb_overdispersion_MC       54   206.9000 4.747626e-02 5.877317e-01
+       motif:AACG@2                      core_vs_arm       54     0.9394 8.870585e-01 1.000000e+00
+       motif:AACG@2     overlap:antiSMASH_29_regions       54     1.5183 2.246504e-01 9.889970e-01
+       motif:AACG@2 overlap:IslandPath_DIMOB_islands       54     0.0000 4.892890e-02 5.877317e-01
+       motif:AACG@2             overlap:rRNA_operons       54     0.0000 1.000000e+00 1.000000e+00
+    motif:AGGACCG@1        KS_coordinate_vs_callable       12     0.2269 4.965535e-01 1.000000e+00
+    motif:AGGACCG@1     window50kb_overdispersion_MC       12   177.7000 3.388306e-01 1.000000e+00
+    motif:AGGACCG@1                      core_vs_arm       12     0.3960 1.311545e-01 8.782355e-01
+    motif:AGGACCG@1     overlap:antiSMASH_29_regions       12     0.5457 1.000000e+00 1.000000e+00
+    motif:AGGACCG@1 overlap:IslandPath_DIMOB_islands       12     1.8607 4.375262e-01 1.000000e+00
+    motif:AGGACCG@1             overlap:rRNA_operons       12     0.0000 1.000000e+00 1.000000e+00
+    motif:GAGTCCG@2        KS_coordinate_vs_callable       11     0.2810 2.920835e-01 1.000000e+00
+    motif:GAGTCCG@2     window50kb_overdispersion_MC       11   187.5000 2.103948e-01 9.889970e-01
+    motif:GAGTCCG@2                      core_vs_arm       11     0.8999 1.000000e+00 1.000000e+00
+    motif:GAGTCCG@2     overlap:antiSMASH_29_regions       11     1.4210 6.519900e-01 1.000000e+00
+    motif:GAGTCCG@2 overlap:IslandPath_DIMOB_islands       11     0.0000 1.000000e+00 1.000000e+00
+    motif:GAGTCCG@2             overlap:rRNA_operons       11     0.0000 1.000000e+00 1.000000e+00
+       motif:CCAC@3        KS_coordinate_vs_callable      110     0.1084 1.402847e-01 8.983693e-01
+       motif:CCAC@3     window50kb_overdispersion_MC      110   170.1000 5.587206e-01 1.000000e+00
+       motif:CCAC@3                      core_vs_arm      110     1.1523 5.510291e-01 1.000000e+00
+       motif:CCAC@3     overlap:antiSMASH_29_regions      110     0.9481 1.000000e+00 1.000000e+00
+       motif:CCAC@3 overlap:IslandPath_DIMOB_islands      110     0.8807 1.000000e+00 1.000000e+00
+       motif:CCAC@3             overlap:rRNA_operons      110     0.0000 1.000000e+00 1.000000e+00
+     motif:CACGGG@2        KS_coordinate_vs_callable       19     0.4140 1.840658e-03 7.483459e-02
+     motif:CACGGG@2     window50kb_overdispersion_MC       19   183.2000 2.538731e-01 9.889970e-01
+     motif:CACGGG@2                      core_vs_arm       19    10.1174 3.357414e-03 1.084703e-01
+     motif:CACGGG@2     overlap:antiSMASH_29_regions       19     0.7783 1.000000e+00 1.000000e+00
+     motif:CACGGG@2 overlap:IslandPath_DIMOB_islands       19     2.4219 2.200216e-01 9.889970e-01
+     motif:CACGGG@2             overlap:rRNA_operons       19     0.0000 1.000000e+00 1.000000e+00
+    motif:AGCCCGC@1        KS_coordinate_vs_callable       11     0.1854 7.806853e-01 1.000000e+00
+    motif:AGCCCGC@1     window50kb_overdispersion_MC       11   153.8000 7.941029e-01 1.000000e+00
+    motif:AGCCCGC@1                      core_vs_arm       11     1.5261 7.556755e-01 1.000000e+00
+    motif:AGCCCGC@1     overlap:antiSMASH_29_regions       11     1.4159 6.526043e-01 1.000000e+00
+    motif:AGCCCGC@1 overlap:IslandPath_DIMOB_islands       11     0.0000 1.000000e+00 1.000000e+00
+    motif:AGCCCGC@1             overlap:rRNA_operons       11     0.0000 1.000000e+00 1.000000e+00
+     motif:ACCAGC@1        KS_coordinate_vs_callable       23     0.2309 1.466367e-01 9.181643e-01
+     motif:ACCAGC@1     window50kb_overdispersion_MC       23   158.5000 7.626187e-01 1.000000e+00
+     motif:ACCAGC@1                      core_vs_arm       23     0.5769 1.927426e-01 9.658281e-01
+     motif:ACCAGC@1     overlap:antiSMASH_29_regions       23     0.3052 3.502561e-01 1.000000e+00
+     motif:ACCAGC@1 overlap:IslandPath_DIMOB_islands       23     0.0000 6.269146e-01 1.000000e+00
+     motif:ACCAGC@1             overlap:rRNA_operons       23     0.0000 1.000000e+00 1.000000e+00
+      motif:ACCAG@1        KS_coordinate_vs_callable       41     0.1792 1.266897e-01 8.782355e-01
+      motif:ACCAG@1     window50kb_overdispersion_MC       41   172.7000 4.652674e-01 1.000000e+00
+      motif:ACCAG@1                      core_vs_arm       41     0.9212 8.698107e-01 1.000000e+00
+      motif:ACCAG@1     overlap:antiSMASH_29_regions       41     0.7124 6.483665e-01 1.000000e+00
+      motif:ACCAG@1 overlap:IslandPath_DIMOB_islands       41     0.0000 2.694160e-01 9.889970e-01
+      motif:ACCAG@1             overlap:rRNA_operons       41     0.0000 1.000000e+00 1.000000e+00
+      motif:AGCCC@1        KS_coordinate_vs_callable       33     0.1158 7.246323e-01 1.000000e+00
+      motif:AGCCC@1     window50kb_overdispersion_MC       33   151.2000 8.865567e-01 1.000000e+00
+      motif:AGCCC@1                      core_vs_arm       33     1.3966 4.657490e-01 1.000000e+00
+      motif:AGCCC@1     overlap:antiSMASH_29_regions       33     1.2164 6.050998e-01 1.000000e+00
+      motif:AGCCC@1 overlap:IslandPath_DIMOB_islands       33     0.0000 4.187540e-01 1.000000e+00
+      motif:AGCCC@1             overlap:rRNA_operons       33     0.0000 1.000000e+00 1.000000e+00
+    motif:GTCAGGA@4        KS_coordinate_vs_callable        7     0.2826 5.390610e-01 1.000000e+00
+    motif:GTCAGGA@4     window50kb_overdispersion_MC        7   133.8000 8.945527e-01 1.000000e+00
+    motif:GTCAGGA@4                      core_vs_arm        7     0.2175 1.043010e-01 8.516895e-01
+    motif:GTCAGGA@4     overlap:antiSMASH_29_regions        7     1.0329 1.000000e+00 1.000000e+00
+    motif:GTCAGGA@4 overlap:IslandPath_DIMOB_islands        7     2.6029 3.556004e-01 1.000000e+00
+    motif:GTCAGGA@4             overlap:rRNA_operons        7     0.0000 1.000000e+00 1.000000e+00
+       motif:AGCC@1        KS_coordinate_vs_callable       83     0.0905 4.769938e-01 1.000000e+00
+       motif:AGCC@1     window50kb_overdispersion_MC       83   171.9000 4.902549e-01 1.000000e+00
+       motif:AGCC@1                      core_vs_arm       83     1.1271 6.472529e-01 1.000000e+00
+       motif:AGCC@1     overlap:antiSMASH_29_regions       83     1.2285 5.137689e-01 1.000000e+00
+       motif:AGCC@1 overlap:IslandPath_DIMOB_islands       83     0.4153 3.328336e-01 1.000000e+00
+       motif:AGCC@1             overlap:rRNA_operons       83     0.0000 1.000000e+00 1.000000e+00
+    motif:CGTCAGG@5        KS_coordinate_vs_callable        8     0.2972 4.016533e-01 1.000000e+00
+    motif:CGTCAGG@5     window50kb_overdispersion_MC        8   183.4000 2.778611e-01 9.889970e-01
+    motif:CGTCAGG@5                      core_vs_arm        8     0.3467 1.522903e-01 9.181643e-01
+    motif:CGTCAGG@5     overlap:antiSMASH_29_regions        8     0.7911 1.000000e+00 1.000000e+00
+    motif:CGTCAGG@5 overlap:IslandPath_DIMOB_islands        8     2.8626 3.253792e-01 1.000000e+00
+    motif:CGTCAGG@5             overlap:rRNA_operons        8     0.0000 1.000000e+00 1.000000e+00
+     motif:CGTCAG@5        KS_coordinate_vs_callable       14     0.1983 5.734876e-01 1.000000e+00
+     motif:CGTCAG@5     window50kb_overdispersion_MC       14   170.3000 4.557721e-01 1.000000e+00
+     motif:CGTCAG@5                      core_vs_arm       14     0.4178 1.595857e-01 9.181643e-01
+     motif:CGTCAG@5     overlap:antiSMASH_29_regions       14     0.4816 7.080266e-01 1.000000e+00
+     motif:CGTCAG@5 overlap:IslandPath_DIMOB_islands       14     2.6823 1.969216e-01 9.658281e-01
+     motif:CGTCAG@5             overlap:rRNA_operons       14     0.0000 1.000000e+00 1.000000e+00
+   motif:GTCAGCTC@4        KS_coordinate_vs_callable        6     0.4219 1.754780e-01 9.658281e-01
+   motif:GTCAGCTC@4     window50kb_overdispersion_MC        6   179.7000 3.458271e-01 1.000000e+00
+   motif:GTCAGCTC@4                      core_vs_arm        6     0.2030 6.319064e-02 6.984229e-01
+   motif:GTCAGCTC@4     overlap:antiSMASH_29_regions        6     0.0000 1.000000e+00 1.000000e+00
+   motif:GTCAGCTC@4 overlap:IslandPath_DIMOB_islands        6     3.9220 2.625806e-01 9.889970e-01
+   motif:GTCAGCTC@4             overlap:rRNA_operons        6     0.0000 1.000000e+00 1.000000e+00
+   motif:GCAGCTCC@3        KS_coordinate_vs_callable        7     0.1886 9.273037e-01 1.000000e+00
+   motif:GCAGCTCC@3     window50kb_overdispersion_MC        7   145.8000 7.981009e-01 1.000000e+00
+   motif:GCAGCTCC@3                      core_vs_arm        7     1.1145 1.000000e+00 1.000000e+00
+   motif:GCAGCTCC@3     overlap:antiSMASH_29_regions        7     1.1429 1.000000e+00 1.000000e+00
+   motif:GCAGCTCC@3 overlap:IslandPath_DIMOB_islands        7     0.0000 1.000000e+00 1.000000e+00
+   motif:GCAGCTCC@3             overlap:rRNA_operons        7        NaN 1.000000e+00 1.000000e+00
+   motif:CAGCTCCG@2        KS_coordinate_vs_callable        7     0.4435 9.022049e-02 8.332328e-01
+   motif:CAGCTCCG@2     window50kb_overdispersion_MC        7   137.0000 8.655672e-01 1.000000e+00
+   motif:CAGCTCCG@2                      core_vs_arm        7     0.3818 2.357813e-01 9.889970e-01
+   motif:CAGCTCCG@2     overlap:antiSMASH_29_regions        7     1.0061 1.000000e+00 1.000000e+00
+   motif:CAGCTCCG@2 overlap:IslandPath_DIMOB_islands        7     0.0000 1.000000e+00 1.000000e+00
+   motif:CAGCTCCG@2             overlap:rRNA_operons        7     0.0000 1.000000e+00 1.000000e+00
+      motif:GTCAG@4        KS_coordinate_vs_callable       26     0.1528 5.285214e-01 1.000000e+00
+      motif:GTCAG@4     window50kb_overdispersion_MC       26   158.4000 7.771114e-01 1.000000e+00
+      motif:GTCAG@4                      core_vs_arm       26     0.5659 1.552022e-01 9.181643e-01
+      motif:GTCAG@4     overlap:antiSMASH_29_regions       26     0.8168 1.000000e+00 1.000000e+00
+      motif:GTCAG@4 overlap:IslandPath_DIMOB_islands       26     1.3410 6.629853e-01 1.000000e+00
+      motif:GTCAG@4             overlap:rRNA_operons       26     0.0000 1.000000e+00 1.000000e+00
+    motif:CGTCGAG@6        KS_coordinate_vs_callable       17     0.1398 8.497150e-01 1.000000e+00
+    motif:CGTCGAG@6     window50kb_overdispersion_MC       17   171.1000 4.637681e-01 1.000000e+00
+    motif:CGTCGAG@6                      core_vs_arm       17     0.9236 1.000000e+00 1.000000e+00
+    motif:CGTCGAG@6     overlap:antiSMASH_29_regions       17     0.3936 4.973670e-01 1.000000e+00
+    motif:CGTCGAG@6 overlap:IslandPath_DIMOB_islands       17     0.0000 1.000000e+00 1.000000e+00
+    motif:CGTCGAG@6             overlap:rRNA_operons       17    52.0250 2.217914e-02 4.435828e-01
+     motif:GGGAAA@5        KS_coordinate_vs_callable        6     0.2325 8.364816e-01 1.000000e+00
+     motif:GGGAAA@5     window50kb_overdispersion_MC        6   187.1000 2.633683e-01 9.889970e-01
+     motif:GGGAAA@5                      core_vs_arm        6     0.2881 2.000644e-01 9.658281e-01
+     motif:GGGAAA@5     overlap:antiSMASH_29_regions        6     3.3359 1.807505e-01 9.658281e-01
+     motif:GGGAAA@5 overlap:IslandPath_DIMOB_islands        6     0.0000 1.000000e+00 1.000000e+00
+     motif:GGGAAA@5             overlap:rRNA_operons        6     0.0000 1.000000e+00 1.000000e+00
+       motif:CAAT@3        KS_coordinate_vs_callable       11     0.2122 6.317865e-01 1.000000e+00
+       motif:CAAT@3     window50kb_overdispersion_MC       11   149.2000 7.661169e-01 1.000000e+00
+       motif:CAAT@3                      core_vs_arm       11     0.4380 2.045266e-01 9.761495e-01
+       motif:CAAT@3     overlap:antiSMASH_29_regions       11     0.7067 1.000000e+00 1.000000e+00
+       motif:CAAT@3 overlap:IslandPath_DIMOB_islands       11     0.0000 3.790338e-01 1.000000e+00
+       motif:CAAT@3             overlap:rRNA_operons       11     0.0000 1.000000e+00 1.000000e+00
+    motif:TCAGCTC@3        KS_coordinate_vs_callable        8     0.2952 4.097136e-01 1.000000e+00
+    motif:TCAGCTC@3     window50kb_overdispersion_MC        8   181.8000 2.958521e-01 1.000000e+00
+    motif:TCAGCTC@3                      core_vs_arm        8     0.4276 2.513718e-01 9.889970e-01
+    motif:TCAGCTC@3     overlap:antiSMASH_29_regions        8     0.0000 6.065698e-01 1.000000e+00
+    motif:TCAGCTC@3 overlap:IslandPath_DIMOB_islands        8     2.9621 3.160893e-01 1.000000e+00
+    motif:TCAGCTC@3             overlap:rRNA_operons        8     0.0000 1.000000e+00 1.000000e+00
+    motif:AGACGCC@1        KS_coordinate_vs_callable        7     0.2673 6.075150e-01 1.000000e+00
+    motif:AGACGCC@1     window50kb_overdispersion_MC        7   131.7000 9.680160e-01 1.000000e+00
+    motif:AGACGCC@1                      core_vs_arm        7     0.6235 6.864112e-01 1.000000e+00
+    motif:AGACGCC@1     overlap:antiSMASH_29_regions        7     0.0000 6.036155e-01 1.000000e+00
+    motif:AGACGCC@1 overlap:IslandPath_DIMOB_islands        7     0.0000 1.000000e+00 1.000000e+00
+    motif:AGACGCC@1             overlap:rRNA_operons        7     0.0000 1.000000e+00 1.000000e+00
+    motif:CGGGTAC@6        KS_coordinate_vs_callable        8     0.2160 7.779866e-01 1.000000e+00
+    motif:CGGGTAC@6     window50kb_overdispersion_MC        8   144.4000 9.030485e-01 1.000000e+00
+    motif:CGGGTAC@6                      core_vs_arm        8     1.6000 7.215566e-01 1.000000e+00
+    motif:CGGGTAC@6     overlap:antiSMASH_29_regions        8     0.0000 6.066491e-01 1.000000e+00
+    motif:CGGGTAC@6 overlap:IslandPath_DIMOB_islands        8     0.0000 1.000000e+00 1.000000e+00
+    motif:CGGGTAC@6             overlap:rRNA_operons        8     0.0000 1.000000e+00 1.000000e+00
+      motif:AGGAC@1        KS_coordinate_vs_callable       37     0.1441 3.885832e-01 1.000000e+00
+      motif:AGGAC@1     window50kb_overdispersion_MC       37   164.9000 6.281859e-01 1.000000e+00
+      motif:AGGAC@1                      core_vs_arm       37     0.5856 1.159519e-01 8.782355e-01
+      motif:AGGAC@1     overlap:antiSMASH_29_regions       37     0.5974 6.202212e-01 1.000000e+00
+      motif:AGGAC@1 overlap:IslandPath_DIMOB_islands       37     0.5768 1.000000e+00 1.000000e+00
+      motif:AGGAC@1             overlap:rRNA_operons       37     0.0000 1.000000e+00 1.000000e+00
+       motif:CCAA@4        KS_coordinate_vs_callable       30     0.1458 5.007457e-01 1.000000e+00
+       motif:CCAA@4     window50kb_overdispersion_MC       30   154.0000 8.395802e-01 1.000000e+00
+       motif:CCAA@4                      core_vs_arm       30     0.7983 5.587062e-01 1.000000e+00
+       motif:CCAA@4     overlap:antiSMASH_29_regions       30     0.7767 1.000000e+00 1.000000e+00
+       motif:CCAA@4 overlap:IslandPath_DIMOB_islands       30     0.8982 1.000000e+00 1.000000e+00
+       motif:CCAA@4             overlap:rRNA_operons       30     0.0000 1.000000e+00 1.000000e+00
+    motif:AACTCGC@2        KS_coordinate_vs_callable        6     0.6179 9.763009e-03 2.562790e-01
+    motif:AACTCGC@2     window50kb_overdispersion_MC        6   152.1000 7.006497e-01 1.000000e+00
+    motif:AACTCGC@2                      core_vs_arm        6     0.2605 1.897310e-01 9.658281e-01
+    motif:AACTCGC@2     overlap:antiSMASH_29_regions        6     1.1886 1.000000e+00 1.000000e+00
+    motif:AACTCGC@2 overlap:IslandPath_DIMOB_islands        6     0.0000 1.000000e+00 1.000000e+00
+    motif:AACTCGC@2             overlap:rRNA_operons        6     0.0000 1.000000e+00 1.000000e+00
+    motif:CAGCTCC@2        KS_coordinate_vs_callable       11     0.2904 2.576337e-01 9.889970e-01
+    motif:CAGCTCC@2     window50kb_overdispersion_MC       11   156.6000 7.456272e-01 1.000000e+00
+    motif:CAGCTCC@2                      core_vs_arm       11     0.3771 1.086609e-01 8.610867e-01
+    motif:CAGCTCC@2     overlap:antiSMASH_29_regions       11     0.6565 1.000000e+00 1.000000e+00
+    motif:CAGCTCC@2 overlap:IslandPath_DIMOB_islands       11     0.0000 1.000000e+00 1.000000e+00
+    motif:CAGCTCC@2             overlap:rRNA_operons       11     0.0000 1.000000e+00 1.000000e+00
+       motif:ACAA@4        KS_coordinate_vs_callable       23     0.1963 2.973320e-01 1.000000e+00
+       motif:ACAA@4     window50kb_overdispersion_MC       23   226.7000 1.949025e-02 4.092954e-01
+       motif:ACAA@4                      core_vs_arm       23     0.5843 2.576614e-01 9.889970e-01
+       motif:ACAA@4     overlap:antiSMASH_29_regions       23     0.0000 1.018109e-01 8.516895e-01
+       motif:ACAA@4 overlap:IslandPath_DIMOB_islands       23     0.0000 4.002694e-01 1.000000e+00
+       motif:ACAA@4             overlap:rRNA_operons       23     0.0000 1.000000e+00 1.000000e+00
+   motif:CAGGTGCC@2        KS_coordinate_vs_callable        5     0.3153 6.037226e-01 1.000000e+00
+   motif:CAGGTGCC@2     window50kb_overdispersion_MC        5   185.3000 3.148426e-01 1.000000e+00
+   motif:CAGGTGCC@2                      core_vs_arm        5     2.7173 6.534695e-01 1.000000e+00
+   motif:CAGGTGCC@2     overlap:antiSMASH_29_regions        5     0.0000 1.000000e+00 1.000000e+00
+   motif:CAGGTGCC@2 overlap:IslandPath_DIMOB_islands        5     0.0000 1.000000e+00 1.000000e+00
+   motif:CAGGTGCC@2             overlap:rRNA_operons        5     0.0000 1.000000e+00 1.000000e+00
+  matched null done: unassigned6mA_repro
+  matched null done: unassigned6mA_any
+  matched null done: motif:CAACC@3
+  matched null done: motif:AACC@2
+  matched null done: motif:CAAC@3
+  matched null done: motif:GTCAC@4
+  matched null done: motif:GCAA@4
+  matched null done: motif:TCACC@3
+  matched null done: motif:CACC@2
+  matched null done: motif:ACCC@1
+  matched null done: motif:GGAAC@3
+  matched null done: motif:ACCGG@1
+           site_set                             test  n_sites  observed  null_mean  p_matched                                        note     q_BH
+unassigned6mA_repro        window50kb_overdispersion     1492  312.8000   646.7000   1.000000              GC+depth matched MC, one-sided 1.000000
+unassigned6mA_repro                             core     1492  992.0000   715.0700   0.001000  two-sided MC; unmatched expectation 978.80 0.005140
+unassigned6mA_repro     overlap:antiSMASH_29_regions     1492  172.0000   232.6000   0.001000  two-sided MC; unmatched expectation 193.99 0.005140
+unassigned6mA_repro overlap:IslandPath_DIMOB_islands     1492   42.0000    36.0200   0.349825   two-sided MC; unmatched expectation 84.14 0.868531
+unassigned6mA_repro             overlap:rRNA_operons     1492    2.0000     0.9400   0.488756   two-sided MC; unmatched expectation 10.56 1.000000
+unassigned6mA_repro                    KS_coordinate     1492    0.0498     0.1241   1.000000  GC+depth matched MC (200 draws), one-sided 1.000000
+  unassigned6mA_any        window50kb_overdispersion     2675  440.1000  1080.6000   1.000000              GC+depth matched MC, one-sided 1.000000
+  unassigned6mA_any                             core     2675 1745.0000  1257.2000   0.001000 two-sided MC; unmatched expectation 1753.98 0.005140
+  unassigned6mA_any     overlap:antiSMASH_29_regions     2675  333.0000   417.2900   0.001000  two-sided MC; unmatched expectation 347.76 0.005140
+  unassigned6mA_any overlap:IslandPath_DIMOB_islands     2675   83.0000    63.7800   0.019990  two-sided MC; unmatched expectation 150.98 0.089955
+  unassigned6mA_any             overlap:rRNA_operons     2675    2.0000     1.6100   0.972514   two-sided MC; unmatched expectation 18.93 1.000000
+  unassigned6mA_any                    KS_coordinate     2675    0.0377     0.1274   1.000000  GC+depth matched MC (200 draws), one-sided 1.000000
+  decomposition unassigned6mA_repro / none: 992 vs 978.8
+  decomposition unassigned6mA_repro / local_GC_only: 992 vs 979.6
+  decomposition unassigned6mA_repro / mean_depth_only: 992 vs 585.4
+  decomposition unassigned6mA_repro / GC_x_depth: 992 vs 715.4
+  decomposition unassigned6mA_any / none: 1745 vs 1754.0
+  decomposition unassigned6mA_any / local_GC_only: 1745 vs 1755.9
+  decomposition unassigned6mA_any / mean_depth_only: 1745 vs 1015.7
+  decomposition unassigned6mA_any / GC_x_depth: 1745 vs 1256.8
+           site_set      matched_on  n_sites  observed_core  expected_core  obs_pct  exp_pct        p
+unassigned6mA_repro            none     1492            992          978.8    66.49    65.60 0.510745
+unassigned6mA_repro   local_GC_only     1492            992          979.6    66.49    65.65 0.488756
+unassigned6mA_repro mean_depth_only     1492            992          585.4    66.49    39.23 0.001000
+unassigned6mA_repro      GC_x_depth     1492            992          715.4    66.49    47.95 0.001000
+  unassigned6mA_any            none     2675           1745         1754.0    65.23    65.57 0.719640
+  unassigned6mA_any   local_GC_only     2675           1745         1755.9    65.23    65.64 0.688656
+  unassigned6mA_any mean_depth_only     2675           1745         1015.7    65.23    37.97 0.001000
+  unassigned6mA_any      GC_x_depth     2675           1745         1256.8    65.23    46.98 0.001000
+  expression: unassigned6mA_repro_sites n=33
+  expression: motif:CAACC@3_all_occurrences n=425
+  expression: motif:AACC@2_all_occurrences n=1354
+  expression: motif:CAAC@3_all_occurrences n=1378
+  expression: motif:GTCAC@4_all_occurrences n=899
+  expression: motif:GCAA@4_all_occurrences n=1123
+  expression: motif:TCACC@3_all_occurrences n=1116
+  expression: motif:CACC@2_all_occurrences n=2615
+  expression: motif:ACCC@1_all_occurrences n=2289
+  expression: motif:GGAAC@3_all_occurrences n=721
+  expression: motif:ACCGG@1_all_occurrences n=1669
+                          set  n_positions  genes_with_position  genes_depth_ok  n_genes  genes_constant_methylation  obs_mean_rho  obs_sd_rho  null_mean_rho   ks_D     ks_p  n_fdr5_observed  crit_abs_rho_fdr5  min_attainable_two_sided_p  n_shifts
+    unassigned6mA_repro_sites         1492                  108              33       33                           0       -0.0155      0.3227        -0.0063 0.1070 0.822181                0             0.9167                    0.000006        32
+motif:CAACC@3_all_occurrences        11108                  928             426      425                           0       -0.0292      0.3674        -0.0212 0.0302 0.823371                0             0.9833                    0.000006       200
+ motif:AACC@2_all_occurrences        32020                 2004            1356     1354                           1       -0.0269      0.3637        -0.0182 0.0229 0.473688                0             1.0000                    0.000006       200
+ motif:CAAC@3_all_occurrences        39678                 1983            1379     1378                           0       -0.0283      0.3777        -0.0168 0.0285 0.211536                0             1.0000                    0.000006       200
+motif:GTCAC@4_all_occurrences        22741                 1632             900      899                           0       -0.0116      0.3585        -0.0188 0.0162 0.970015                1             0.9833                    0.000006       200
+ motif:GCAA@4_all_occurrences        25724                 1751            1125     1123                           1       -0.0271      0.3640        -0.0164 0.0232 0.578887                0             1.0000                    0.000006       200
+motif:TCACC@3_all_occurrences        37322                 1812            1118     1116                           1       -0.0159      0.3565        -0.0118 0.0230 0.591736                0             1.0000                    0.000006       200
+ motif:CACC@2_all_occurrences       165459                 2675            2617     2615                           1       -0.0151      0.3642        -0.0123 0.0087 0.987800                0             1.0000                    0.000006       200
+ motif:ACCC@1_all_occurrences        85773                 2576            2291     2289                           1       -0.0154      0.3643        -0.0156 0.0130 0.828612                0             1.0000                    0.000006       200
+motif:GGAAC@3_all_occurrences        18851                 1441             722      721                           0       -0.0090      0.3775        -0.0282 0.0393 0.211778                0             0.9833                    0.000006       200
+motif:ACCGG@1_all_occurrences        55829                 2164            1670     1669                           0       -0.0007      0.3726        -0.0151 0.0272 0.168372                0             1.0000                    0.000006       200

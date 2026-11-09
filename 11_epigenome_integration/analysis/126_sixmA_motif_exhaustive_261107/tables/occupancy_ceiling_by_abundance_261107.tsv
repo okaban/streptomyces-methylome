@@ -1,0 +1,10 @@
+min_genomic_instances	n_candidates	max_occupancy_pct	best_word	best_n_fg	best_n_bg	best_space
+20	4294290	32.258	AGGGGCGCGGGGAA@12	10	31	126 contiguous 12-16 / bipartite N11-N20 / three-block
+30	4294270	32.258	AGGGGCGCGGGGAA@12	10	31	126 contiguous 12-16 / bipartite N11-N20 / three-block
+50	4294157	21.154	GCGCGGGGAAC@8	11	52	125 bipartite N1-N10 / contiguous 9-11
+100	4293844	16.788	CGGCAACCCG@5	23	137	125 bipartite N1-N10 / contiguous 9-11
+200	4292447	11.468	GGCAACCCG@4	25	218	125 bipartite N1-N10 / contiguous 9-11
+500	4265626	6.322	GCARCCSG@3	55	870	126 IUPAC k=4-8, <=3 degenerate
+1000	4139133	6.034	GCAWCCSR@3	61	1011	126 IUPAC k=4-8, <=3 degenerate
+2000	3722460	4.053	KCAACCVG@3	83	2048	126 IUPAC k=4-8, <=3 degenerate
+5000	2616664	2.307	CNDMAACC@5	118	5115	126 IUPAC k=4-8, <=3 degenerate

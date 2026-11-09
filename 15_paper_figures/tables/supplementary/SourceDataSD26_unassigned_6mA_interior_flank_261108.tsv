@@ -1,0 +1,4 @@
+timepoint	n_called_6mA	n_unassigned	n_interior	n_flank	interior_bp	flank_bp	density_ratio
+T1	1947	1531	194	383	1128306	2209821	0.992
+T2	2150	1700	192	458	1128306	2209821	0.821
+T3	2308	1855	221	474	1128306	2209821	0.9132

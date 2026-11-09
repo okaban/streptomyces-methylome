@@ -1,0 +1,81 @@
+definition	cls	axis	level	n_hypo	n_bg	pct_bg	k_crit	min_detectable_OR
+strict_3of3	TGGCCGGC_C5_4mC	locus_class	gene_body	3	2088	87.64367816091954		inf
+strict_3of3	TGGCCGGC_C5_4mC	locus_class	intergenic	3	2088	3.8793103448275863	2.0	41.05316973415133
+strict_3of3	TGGCCGGC_C5_4mC	locus_class	promoter	3	2088	8.477011494252874	2.0	17.948356807511736
+strict_3of3	TGGCCGGC_C5_4mC	region_class	arm	3	2088	36.49425287356322	3.0	12.177704918032786
+strict_3of3	TGGCCGGC_C5_4mC	region_class	core	3	2088	63.50574712643678		inf
+strict_3of3	TGGCCGGC_C5_4mC	in_antismash	True	3	2088	13.362068965517242	2.0	10.79010137149672
+strict_3of3	TGGCCGGC_C5_4mC	in_island	True	3	2088	4.693486590038314	2.0	33.68020304568528
+strict_3of3	TGGCCGGC_C5_4mC	in_rrn_operon	True	3	2088	0.23946360153256704	1.0	227.29090909090908
+strict_3of3	AAGCCCG_C5_4mC	locus_class	gene_body	5	1325	80.15094339622641		inf
+strict_3of3	AAGCCCG_C5_4mC	locus_class	intergenic	5	1325	7.69811320754717	3.0	16.71121951219512
+strict_3of3	AAGCCCG_C5_4mC	locus_class	promoter	5	1325	12.150943396226415	3.0	10.094736842105263
+strict_3of3	AAGCCCG_C5_4mC	region_class	arm	5	1325	30.11320754716981	4.0	6.957446808510638
+strict_3of3	AAGCCCG_C5_4mC	region_class	core	5	1325	69.88679245283019		inf
+strict_3of3	AAGCCCG_C5_4mC	in_antismash	True	5	1325	11.773584905660377	3.0	10.461980830670926
+strict_3of3	AAGCCCG_C5_4mC	in_island	True	5	1325	6.716981132075472	2.0	9.8683160415004
+strict_3of3	AAGCCCG_C5_4mC	in_rrn_operon	True	5	1325	0.8301886792452831	1.0	38.10144927536232
+strict_3of3	AAGCCCG_A1_6mA	locus_class	gene_body	8	1322	80.40847201210288		inf
+strict_3of3	AAGCCCG_A1_6mA	locus_class	intergenic	8	1322	7.413010590015128	3.0	7.910936778957083
+strict_3of3	AAGCCCG_A1_6mA	locus_class	promoter	8	1322	12.178517397881997	4.0	7.191950464396285
+strict_3of3	AAGCCCG_A1_6mA	region_class	arm	8	1322	30.257186081694403	6.0	5.98876404494382
+strict_3of3	AAGCCCG_A1_6mA	region_class	core	8	1322	69.7428139183056		inf
+strict_3of3	AAGCCCG_A1_6mA	in_antismash	True	8	1322	11.800302571860817	4.0	7.453674121405751
+strict_3of3	AAGCCCG_A1_6mA	in_island	True	8	1322	6.732223903177005	3.0	8.770441848654139
+strict_3of3	AAGCCCG_A1_6mA	in_rrn_operon	True	8	1322	0.8320726172465961	2.0	43.862876254180605
+strict_3of3	ALL_4mC	locus_class	gene_body	8	3413	84.73483738646352		inf
+strict_3of3	ALL_4mC	locus_class	intergenic	8	3413	5.36185174333431	3.0	11.203121129551647
+strict_3of3	ALL_4mC	locus_class	promoter	8	3413	9.903310870202167	3.0	5.781791325365919
+strict_3of3	ALL_4mC	region_class	arm	8	3413	34.016993847055375	6.0	5.04218682737839
+strict_3of3	ALL_4mC	region_class	core	8	3413	65.98300615294463	8.0	8.766037735849057
+strict_3of3	ALL_4mC	in_antismash	True	8	3413	12.745385291532376	4.0	6.839265212399541
+strict_3of3	ALL_4mC	in_island	True	8	3413	5.479050688543803	3.0	10.950545454545454
+strict_3of3	ALL_4mC	in_rrn_operon	True	8	3413	0.46879578083797246	1.0	41.18181818181818
+strict_3of3	ALL_6mA	locus_class	gene_body	8	1322	80.40847201210288		inf
+strict_3of3	ALL_6mA	locus_class	intergenic	8	1322	7.413010590015128	3.0	7.910936778957083
+strict_3of3	ALL_6mA	locus_class	promoter	8	1322	12.178517397881997	4.0	7.191950464396285
+strict_3of3	ALL_6mA	region_class	arm	8	1322	30.257186081694403	6.0	5.98876404494382
+strict_3of3	ALL_6mA	region_class	core	8	1322	69.7428139183056		inf
+strict_3of3	ALL_6mA	in_antismash	True	8	1322	11.800302571860817	4.0	7.453674121405751
+strict_3of3	ALL_6mA	in_island	True	8	1322	6.732223903177005	3.0	8.770441848654139
+strict_3of3	ALL_6mA	in_rrn_operon	True	8	1322	0.8320726172465961	2.0	43.862876254180605
+relaxed_never_methylated	TGGCCGGC_C5_4mC	locus_class	gene_body	16	2075	87.66265060240964		inf
+relaxed_never_methylated	TGGCCGGC_C5_4mC	locus_class	intergenic	16	2075	3.9036144578313254	3.0	6.344694387639173
+relaxed_never_methylated	TGGCCGGC_C5_4mC	locus_class	promoter	16	2075	8.433734939759036	4.0	3.8984615384615386
+relaxed_never_methylated	TGGCCGGC_C5_4mC	region_class	arm	16	2075	36.48192771084337	10.0	2.811728865194212
+relaxed_never_methylated	TGGCCGGC_C5_4mC	region_class	core	16	2075	63.51807228915663	14.0	3.3321956769055747
+relaxed_never_methylated	TGGCCGGC_C5_4mC	in_antismash	True	16	2075	13.397590361445783	6.0	3.995468923655638
+relaxed_never_methylated	TGGCCGGC_C5_4mC	in_island	True	16	2075	4.72289156626506	3.0	5.204925737920662
+relaxed_never_methylated	TGGCCGGC_C5_4mC	in_rrn_operon	True	16	2075	0.24096385542168675	1.0	36.43108504398827
+relaxed_never_methylated	AAGCCCG_C5_4mC	locus_class	gene_body	21	1309	80.21390374331551	21.0	10.622084721561162
+relaxed_never_methylated	AAGCCCG_C5_4mC	locus_class	intergenic	21	1309	7.639419404125286	5.0	4.011608623548922
+relaxed_never_methylated	AAGCCCG_C5_4mC	locus_class	promoter	21	1309	12.146676852559205	6.0	3.0248761249873595
+relaxed_never_methylated	AAGCCCG_C5_4mC	region_class	arm	21	1309	30.099312452253628	11.0	2.541674210875732
+relaxed_never_methylated	AAGCCCG_C5_4mC	region_class	core	21	1309	69.90068754774637	19.0	3.3611141452758058
+relaxed_never_methylated	AAGCCCG_C5_4mC	in_antismash	True	21	1309	11.764705882352942	6.0	3.1363399102202734
+relaxed_never_methylated	AAGCCCG_C5_4mC	in_island	True	21	1309	6.722689075630252	5.0	4.60075329566855
+relaxed_never_methylated	AAGCCCG_C5_4mC	in_rrn_operon	True	21	1309	0.8403361344537815	2.0	14.47603121516165
+relaxed_never_methylated	AAGCCCG_A1_6mA	locus_class	gene_body	54	1276	80.87774294670847	49.0	2.131234866828087
+relaxed_never_methylated	AAGCCCG_A1_6mA	locus_class	intergenic	54	1276	7.2884012539184955	8.0	2.313782991202346
+relaxed_never_methylated	AAGCCCG_A1_6mA	locus_class	promoter	54	1276	11.83385579937304	12.0	2.18501261890895
+relaxed_never_methylated	AAGCCCG_A1_6mA	region_class	arm	54	1276	30.721003134796238	23.0	1.68118491557982
+relaxed_never_methylated	AAGCCCG_A1_6mA	region_class	core	54	1276	69.27899686520377	44.0	1.8806697353899162
+relaxed_never_methylated	AAGCCCG_A1_6mA	in_antismash	True	54	1276	11.755485893416928	12.0	2.201485245260895
+relaxed_never_methylated	AAGCCCG_A1_6mA	in_island	True	54	1276	6.504702194357367	8.0	2.6127744510978044
+relaxed_never_methylated	AAGCCCG_A1_6mA	in_rrn_operon	True	54	1276	0.8620689655172413	3.0	7.478682988602786
+relaxed_never_methylated	ALL_4mC	locus_class	gene_body	37	3384	84.78132387706856	36.0	4.371435209386072
+relaxed_never_methylated	ALL_4mC	locus_class	intergenic	37	3384	5.34869976359338	5.0	2.986946386946387
+relaxed_never_methylated	ALL_4mC	locus_class	promoter	37	3384	9.869976359338061	8.0	2.6276760153023737
+relaxed_never_methylated	ALL_4mC	region_class	arm	37	3384	34.013002364066196	18.0	1.8401750225458433
+relaxed_never_methylated	ALL_4mC	region_class	core	37	3384	65.9869976359338	30.0	2.0966047309902245
+relaxed_never_methylated	ALL_4mC	in_antismash	True	37	3384	12.76595744680851	9.0	2.275529865125241
+relaxed_never_methylated	ALL_4mC	in_island	True	37	3384	5.49645390070922	6.0	3.53891654964041
+relaxed_never_methylated	ALL_4mC	in_rrn_operon	True	37	3384	0.4728132387706856	2.0	14.376867264191208
+relaxed_never_methylated	ALL_6mA	locus_class	gene_body	54	1276	80.87774294670847	49.0	2.131234866828087
+relaxed_never_methylated	ALL_6mA	locus_class	intergenic	54	1276	7.2884012539184955	8.0	2.313782991202346
+relaxed_never_methylated	ALL_6mA	locus_class	promoter	54	1276	11.83385579937304	12.0	2.18501261890895
+relaxed_never_methylated	ALL_6mA	region_class	arm	54	1276	30.721003134796238	23.0	1.68118491557982
+relaxed_never_methylated	ALL_6mA	region_class	core	54	1276	69.27899686520377	44.0	1.8806697353899162
+relaxed_never_methylated	ALL_6mA	in_antismash	True	54	1276	11.755485893416928	12.0	2.201485245260895
+relaxed_never_methylated	ALL_6mA	in_island	True	54	1276	6.504702194357367	8.0	2.6127744510978044
+relaxed_never_methylated	ALL_6mA	in_rrn_operon	True	54	1276	0.8620689655172413	3.0	7.478682988602786

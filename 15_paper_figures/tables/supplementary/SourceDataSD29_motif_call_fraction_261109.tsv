@@ -1,0 +1,17 @@
+＃ 正準パイルアップ（recompute_261015/pileup_cache_261015）から 2026-11-09 に再計算。
+＃ 部位規則: 時点ごとに 3 ライブラリ併合、併合真深度 (Nvalid+Nfail) >= 30、pooled Nmod/Nvalid >= 0.5、参照塩基一致。
+＃ 文脈は修飾シトシンの位置で定義する: CCGG は内側の C（TGGCCGGC の C5 と同じ位置）、
+＃ GGCCGG はその C を含む六量体、TGGCCGGC は八量体。GGCCGG ⊂ CCGG、TGGCCGGC ⊂ GGCCGG。
+＃ 旧版（36 行、元表 CCGG_4mC_vs_5mC_detailed.csv の n_HC_sites_50pct 由来）は撤回。
+＃ 同列が CCGG 行と GGCCGG 行で同値のため、分子が文脈を区別しておらず、
+＃ 割合の差が分母比に一致していた（N127）。
+timepoint	context	n_measurable	n_called_4mC	pct_called_4mC	n_called_5mC
+T1	CCGG (inner C)	302207	1886	0.6241	0
+T1	GGCCGG	37813	1886	4.9877	0
+T1	TGGCCGGC (C5)	2091	1886	90.1961	0
+T2	CCGG (inner C)	302338	1892	0.6258	0
+T2	GGCCGG	37835	1892	5.0007	0
+T2	TGGCCGGC (C5)	2093	1892	90.3966	0
+T3	CCGG (inner C)	302322	1866	0.6172	0
+T3	GGCCGG	37834	1866	4.9321	0
+T3	TGGCCGGC (C5)	2093	1866	89.1543	0

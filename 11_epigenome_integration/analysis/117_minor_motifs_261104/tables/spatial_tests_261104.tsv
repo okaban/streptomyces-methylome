@@ -1,0 +1,421 @@
+site_set	test	n_sites	n_callable	statistic	p	note	q_BH
+unassigned6mA_repro	KS_coordinate_vs_callable	1492	2412468	0.0498	0.0011921096967528488		0.05563178584846627
+unassigned6mA_repro	window50kb_overdispersion_MC	1492	2412468	312.8	0.0004997501249375312	df=173; chi2 asymptotic p=4.03e-10	0.03498250874562719
+unassigned6mA_repro	core_vs_arm	1492	2412468	1.0402	0.4786255784114102	sites_in=992/1492 (66.49%), callable_in=1582656/2412468 (65.60%)	1.0
+unassigned6mA_repro	overlap:antiSMASH_29_regions	1492	2412468	0.8719	0.09765365842236975	sites_in=172/1492 (11.53%), callable_in=313674/2412468 (13.00%)	0.8370313579060265
+unassigned6mA_repro	overlap:IslandPath_DIMOB_islands	1492	2412468	0.4847	2.830953900496593e-07	sites_in=42/1492 (2.82%), callable_in=136046/2412468 (5.64%)	5.945003191042846e-05
+unassigned6mA_repro	overlap:rRNA_operons	1492	2412468	0.1883	0.003014185069480359	sites_in=2/1492 (0.13%), callable_in=17079/2412468 (0.71%)	0.10549647743181256
+unassigned6mA_any	KS_coordinate_vs_callable	2675	2413744	0.0377	0.0009904978610753652		0.052001137706456674
+unassigned6mA_any	window50kb_overdispersion_MC	2675	2413744	440.1	0.0004997501249375312	df=173; chi2 asymptotic p=3.28e-25	0.03498250874562719
+unassigned6mA_any	core_vs_arm	2675	2413744	0.9853	0.7140768847949097	sites_in=1745/2675 (65.23%), callable_in=1582677/2413744 (65.57%)	1.0
+unassigned6mA_any	overlap:antiSMASH_29_regions	2675	2413744	0.9515	0.42055135162800517	sites_in=333/2675 (12.45%), callable_in=313792/2413744 (13.00%)	1.0
+unassigned6mA_any	overlap:IslandPath_DIMOB_islands	2675	2413744	0.5353	7.984304726157342e-10	sites_in=83/2675 (3.10%), callable_in=136238/2413744 (5.64%)	3.353407984986084e-07
+unassigned6mA_any	overlap:rRNA_operons	2675	2413744	0.105	2.3702359036084726e-06	sites_in=2/2675 (0.07%), callable_in=17079/2413744 (0.71%)	0.0003318330265051862
+motif:CAACC@3	KS_coordinate_vs_callable	146	11108	0.0958	0.13287816665926944		0.8782354938706745
+motif:CAACC@3	window50kb_overdispersion_MC	146	11108	209.4	0.0399800099950025	df=173; chi2 asymptotic p=0.0307	0.5877317324247557
+motif:CAACC@3	core_vs_arm	146	11108	0.6338	0.008311030627501144	sites_in=80/146 (54.79%), callable_in=7294/11108 (65.66%)	0.232708857570032
+motif:CAACC@3	overlap:antiSMASH_29_regions	146	11108	1.1921	0.45630441581692593	sites_in=22/146 (15.07%), callable_in=1439/11108 (12.95%)	1.0
+motif:CAACC@3	overlap:IslandPath_DIMOB_islands	146	11108	0.2935	0.01854385151786358	sites_in=3/146 (2.05%), callable_in=741/11108 (6.67%)	0.4092953523238381
+motif:CAACC@3	overlap:rRNA_operons	146	11108	0.0	0.17712483222357336	sites_in=0/146 (0.00%), callable_in=170/11108 (1.53%)	0.9658280523648408
+motif:AACC@2	KS_coordinate_vs_callable	200	32020	0.0755	0.1964806525776679		0.9658280523648408
+motif:AACC@2	window50kb_overdispersion_MC	200	32020	211.2	0.028985507246376812	df=173; chi2 asymptotic p=0.0253	0.48695652173913045
+motif:AACC@2	core_vs_arm	200	32020	0.8901	0.4566413526928077	sites_in=125/200 (62.50%), callable_in=20873/32020 (65.19%)	1.0
+motif:AACC@2	overlap:antiSMASH_29_regions	200	32020	1.0395	0.833234887592996	sites_in=27/200 (13.50%), callable_in=4180/32020 (13.05%)	1.0
+motif:AACC@2	overlap:IslandPath_DIMOB_islands	200	32020	0.2227	0.001959953467679322	sites_in=3/200 (1.50%), callable_in=2049/32020 (6.40%)	0.07483458694775592
+motif:AACC@2	overlap:rRNA_operons	200	32020	0.0	0.12311143258292974	sites_in=0/200 (0.00%), callable_in=456/32020 (1.42%)	0.8782354938706745
+motif:CAAC@3	KS_coordinate_vs_callable	214	39678	0.0736	0.18947516304924827		0.9658280523648408
+motif:CAAC@3	window50kb_overdispersion_MC	214	39678	228.9	0.005497251374312844	df=173; chi2 asymptotic p=0.00284	0.16491754122938532
+motif:CAAC@3	core_vs_arm	214	39678	0.7524	0.043987766897525704	sites_in=125/214 (58.41%), callable_in=25837/39678 (65.12%)	0.5877317324247557
+motif:CAAC@3	overlap:antiSMASH_29_regions	214	39678	1.1472	0.4735533688949276	sites_in=31/214 (14.49%), callable_in=5105/39678 (12.87%)	1.0
+motif:CAAC@3	overlap:IslandPath_DIMOB_islands	214	39678	0.2062	0.0007028659141788204	sites_in=3/214 (1.40%), callable_in=2560/39678 (6.45%)	0.04217195485072923
+motif:CAAC@3	overlap:rRNA_operons	214	39678	0.0	0.28225894209322977	sites_in=0/214 (0.00%), callable_in=396/39678 (1.00%)	0.9926202928715462
+motif:GTCAC@4	KS_coordinate_vs_callable	170	22741	0.0583	0.5924486417618109		1.0
+motif:GTCAC@4	window50kb_overdispersion_MC	170	22741	168.5	0.567216391804098	df=173; chi2 asymptotic p=0.583	1.0
+motif:GTCAC@4	core_vs_arm	170	22741	1.1366	0.4703084194487152	sites_in=114/170 (67.06%), callable_in=14593/22741 (64.17%)	1.0
+motif:GTCAC@4	overlap:antiSMASH_29_regions	170	22741	0.8566	0.5739816088016093	sites_in=20/170 (11.76%), callable_in=3063/22741 (13.47%)	1.0
+motif:GTCAC@4	overlap:IslandPath_DIMOB_islands	170	22741	0.5962	0.3649426566422286	sites_in=5/170 (2.94%), callable_in=1100/22741 (4.84%)	1.0
+motif:GTCAC@4	overlap:rRNA_operons	170	22741	1.1642	0.5794175638132268	sites_in=1/170 (0.59%), callable_in=115/22741 (0.51%)	1.0
+motif:GCAA@4	KS_coordinate_vs_callable	176	25724	0.0644	0.4437476295908971		1.0
+motif:GCAA@4	window50kb_overdispersion_MC	176	25724	200.7	0.07496251874062969	df=173; chi2 asymptotic p=0.0731	0.7871064467766117
+motif:GCAA@4	core_vs_arm	176	25724	0.8264	0.22862339900705175	sites_in=110/176 (62.50%), callable_in=17197/25724 (66.85%)	0.9889970269102736
+motif:GCAA@4	overlap:antiSMASH_29_regions	176	25724	1.1283	0.5645965942346711	sites_in=24/176 (13.64%), callable_in=3158/25724 (12.28%)	1.0
+motif:GCAA@4	overlap:IslandPath_DIMOB_islands	176	25724	0.0696	3.6229016225127756e-05	sites_in=1/176 (0.57%), callable_in=1953/25724 (7.59%)	0.003804046703638414
+motif:GCAA@4	overlap:rRNA_operons	176	25724	0.0	0.4157575264122385	sites_in=0/176 (0.00%), callable_in=237/25724 (0.92%)	1.0
+motif:TCACC@3	KS_coordinate_vs_callable	200	37322	0.0413	0.8722025439702075		1.0
+motif:TCACC@3	window50kb_overdispersion_MC	200	37322	166.5	0.6231884057971014	df=173; chi2 asymptotic p=0.626	1.0
+motif:TCACC@3	core_vs_arm	200	37322	1.1903	0.2680006416104176	sites_in=136/200 (68.00%), callable_in=23922/37322 (64.10%)	0.9889970269102736
+motif:TCACC@3	overlap:antiSMASH_29_regions	200	37322	0.5946	0.037587817198354224	sites_in=17/200 (8.50%), callable_in=5043/37322 (13.51%)	0.5877317324247557
+motif:TCACC@3	overlap:IslandPath_DIMOB_islands	200	37322	0.8374	0.7397598271628757	sites_in=8/200 (4.00%), callable_in=1769/37322 (4.74%)	1.0
+motif:TCACC@3	overlap:rRNA_operons	200	37322	1.0728	0.6083795340730035	sites_in=1/200 (0.50%), callable_in=174/37322 (0.47%)	1.0
+motif:CACC@2	KS_coordinate_vs_callable	380	165459	0.0461	0.3845755578013007		1.0
+motif:CACC@2	window50kb_overdispersion_MC	380	165459	196.2	0.1054472763618191	df=173; chi2 asymptotic p=0.11	0.8516895398454619
+motif:CACC@2	core_vs_arm	380	165459	1.2903	0.024398051315721037	sites_in=265/380 (69.74%), callable_in=106067/165459 (64.10%)	0.465419464180953
+motif:CACC@2	overlap:antiSMASH_29_regions	380	165459	0.7832	0.1514820832917878	sites_in=41/380 (10.79%), callable_in=22134/165459 (13.38%)	0.9181643366886305
+motif:CACC@2	overlap:IslandPath_DIMOB_islands	380	165459	0.8428	0.6248987459309274	sites_in=15/380 (3.95%), callable_in=7693/165459 (4.65%)	1.0
+motif:CACC@2	overlap:rRNA_operons	380	165459	0.7004	1.0	sites_in=1/380 (0.26%), callable_in=621/165459 (0.38%)	1.0
+motif:ACCC@1	KS_coordinate_vs_callable	271	85773	0.0614	0.2509118648154811		0.9889970269102736
+motif:ACCC@1	window50kb_overdispersion_MC	271	85773	197.9	0.08395802098950525	df=173; chi2 asymptotic p=0.0946	0.8200550887347025
+motif:ACCC@1	core_vs_arm	271	85773	1.1229	0.4060751547167891	sites_in=184/271 (67.90%), callable_in=56026/85773 (65.32%)	1.0
+motif:ACCC@1	overlap:antiSMASH_29_regions	271	85773	1.0115	0.9282919326916578	sites_in=36/271 (13.28%), callable_in=11282/85773 (13.15%)	1.0
+motif:ACCC@1	overlap:IslandPath_DIMOB_islands	271	85773	0.4524	0.04500193371043132	sites_in=6/271 (2.21%), callable_in=4088/85773 (4.77%)	0.5877317324247557
+motif:ACCC@1	overlap:rRNA_operons	271	85773	0.0	0.42724945774435674	sites_in=0/271 (0.00%), callable_in=553/85773 (0.64%)	1.0
+motif:GGAAC@3	KS_coordinate_vs_callable	118	18851	0.076	0.4849848053767395		1.0
+motif:GGAAC@3	window50kb_overdispersion_MC	118	18851	181.6	0.31084457771114443	df=173; chi2 asymptotic p=0.311	1.0
+motif:GGAAC@3	core_vs_arm	118	18851	1.1291	0.5680724619174937	sites_in=77/118 (65.25%), callable_in=11773/18851 (62.45%)	1.0
+motif:GGAAC@3	overlap:antiSMASH_29_regions	118	18851	0.9303	0.8956161265322845	sites_in=16/118 (13.56%), callable_in=2720/18851 (14.43%)	1.0
+motif:GGAAC@3	overlap:IslandPath_DIMOB_islands	118	18851	0.9634	1.0	sites_in=6/118 (5.08%), callable_in=993/18851 (5.27%)	1.0
+motif:GGAAC@3	overlap:rRNA_operons	118	18851	0.0	1.0	sites_in=0/118 (0.00%), callable_in=120/18851 (0.64%)	1.0
+motif:ACCGG@1	KS_coordinate_vs_callable	150	55829	0.0765	0.32702323318860516		1.0
+motif:ACCGG@1	window50kb_overdispersion_MC	150	55829	206.3	0.04447776111944028	df=173; chi2 asymptotic p=0.0425	0.5877317324247557
+motif:ACCGG@1	core_vs_arm	150	55829	1.245	0.23395204560719385	sites_in=103/150 (68.67%), callable_in=35603/55829 (63.77%)	0.9889970269102736
+motif:ACCGG@1	overlap:antiSMASH_29_regions	150	55829	0.9727	1.0	sites_in=20/150 (13.33%), callable_in=7624/55829 (13.66%)	1.0
+motif:ACCGG@1	overlap:IslandPath_DIMOB_islands	150	55829	0.9478	1.0	sites_in=6/150 (4.00%), callable_in=2351/55829 (4.21%)	1.0
+motif:ACCGG@1	overlap:rRNA_operons	150	55829	0.0	1.0	sites_in=0/150 (0.00%), callable_in=213/55829 (0.38%)	1.0
+motif:ACCG@1	KS_coordinate_vs_callable	265	157601	0.0613	0.26107888146990377		0.9889970269102736
+motif:ACCG@1	window50kb_overdispersion_MC	265	157601	203.3	0.06296851574212893	df=173; chi2 asymptotic p=0.0573	0.6984228910414977
+motif:ACCG@1	core_vs_arm	265	157601	1.1847	0.22317175671850148	sites_in=180/265 (67.92%), callable_in=101062/157601 (64.13%)	0.9889970269102736
+motif:ACCG@1	overlap:antiSMASH_29_regions	265	157601	0.8477	0.4193697037391042	sites_in=31/265 (11.70%), callable_in=21302/157601 (13.52%)	1.0
+motif:ACCG@1	overlap:IslandPath_DIMOB_islands	265	157601	0.7317	0.4605269585728946	sites_in=9/265 (3.40%), callable_in=7225/157601 (4.58%)	1.0
+motif:ACCG@1	overlap:rRNA_operons	265	157601	0.0	0.6321118959028691	sites_in=0/265 (0.00%), callable_in=640/157601 (0.41%)	1.0
+motif:CGGCAC@5	KS_coordinate_vs_callable	87	22328	0.0891	0.46775913598217145		1.0
+motif:CGGCAC@5	window50kb_overdispersion_MC	87	22328	214.6	0.025487256371814093	df=173; chi2 asymptotic p=0.0173	0.465419464180953
+motif:CGGCAC@5	core_vs_arm	87	22328	1.5185	0.09188580065329387	sites_in=64/87 (73.56%), callable_in=14445/22328 (64.69%)	0.833232815555926
+motif:CGGCAC@5	overlap:antiSMASH_29_regions	87	22328	0.8316	0.7525702157493963	sites_in=10/87 (11.49%), callable_in=3016/22328 (13.51%)	1.0
+motif:CGGCAC@5	overlap:IslandPath_DIMOB_islands	87	22328	1.3951	0.41641556821129505	sites_in=5/87 (5.75%), callable_in=935/22328 (4.19%)	1.0
+motif:CGGCAC@5	overlap:rRNA_operons	87	22328	0.0	1.0	sites_in=0/87 (0.00%), callable_in=34/22328 (0.15%)	1.0
+motif:GGCAC@4	KS_coordinate_vs_callable	109	39944	0.0819	0.4342438005843965		1.0
+motif:GGCAC@4	window50kb_overdispersion_MC	109	39944	213.4	0.027486256871564217	df=173; chi2 asymptotic p=0.0197	0.4810094952523738
+motif:GGCAC@4	core_vs_arm	109	39944	1.4325	0.09085637577480601	sites_in=78/109 (71.56%), callable_in=25453/39944 (63.72%)	0.833232815555926
+motif:GGCAC@4	overlap:antiSMASH_29_regions	109	39944	0.8726	0.7782931250984272	sites_in=13/109 (11.93%), callable_in=5366/39944 (13.43%)	1.0
+motif:GGCAC@4	overlap:IslandPath_DIMOB_islands	109	39944	1.431	0.35216132997888266	sites_in=7/109 (6.42%), callable_in=1828/39944 (4.58%)	1.0
+motif:GGCAC@4	overlap:rRNA_operons	109	39944	0.0	1.0	sites_in=0/109 (0.00%), callable_in=121/39944 (0.30%)	1.0
+motif:CCGGGA@6	KS_coordinate_vs_callable	66	14904	0.1156	0.31609351957765264		1.0
+motif:CCGGGA@6	window50kb_overdispersion_MC	66	14904	180.8	0.32083958020989506	df=173; chi2 asymptotic p=0.327	1.0
+motif:CCGGGA@6	core_vs_arm	66	14904	0.6207	0.05404933045129937	sites_in=35/66 (53.03%), callable_in=9617/14904 (64.53%)	0.630575521931826
+motif:CCGGGA@6	overlap:antiSMASH_29_regions	66	14904	1.2519	0.47434918408014815	sites_in=11/66 (16.67%), callable_in=2053/14904 (13.77%)	1.0
+motif:CCGGGA@6	overlap:IslandPath_DIMOB_islands	66	14904	0.0	0.11596692439313844	sites_in=0/66 (0.00%), callable_in=619/14904 (4.15%)	0.8782354938706745
+motif:CCGGGA@6	overlap:rRNA_operons	66	14904	0.0	1.0	sites_in=0/66 (0.00%), callable_in=52/14904 (0.35%)	1.0
+motif:CGGGA@5	KS_coordinate_vs_callable	95	35645	0.1191	0.12468035824960055		0.8782354938706745
+motif:CGGGA@5	window50kb_overdispersion_MC	95	35645	182.3	0.271864067966017	df=173; chi2 asymptotic p=0.299	0.9889970269102736
+motif:CGGGA@5	core_vs_arm	95	35645	0.7252	0.13276586057298623	sites_in=54/95 (56.84%), callable_in=22988/35645 (64.49%)	0.8782354938706745
+motif:CGGGA@5	overlap:antiSMASH_29_regions	95	35645	1.2087	0.4540414198687589	sites_in=15/95 (15.79%), callable_in=4787/35645 (13.43%)	1.0
+motif:CGGGA@5	overlap:IslandPath_DIMOB_islands	95	35645	0.2227	0.13382636097076944	sites_in=1/95 (1.05%), callable_in=1625/35645 (4.56%)	0.8782354938706745
+motif:CGGGA@5	overlap:rRNA_operons	95	35645	0.0	1.0	sites_in=0/95 (0.00%), callable_in=179/35645 (0.50%)	1.0
+motif:CGGCA@5	KS_coordinate_vs_callable	118	53724	0.0795	0.4236354503246159		1.0
+motif:CGGCA@5	window50kb_overdispersion_MC	118	53724	215.3	0.017991004497751123	df=173; chi2 asymptotic p=0.0159	0.4092953523238381
+motif:CGGCA@5	core_vs_arm	118	53724	1.4445	0.08177045755810441	sites_in=86/118 (72.88%), callable_in=34943/53724 (65.04%)	0.8177045755810441
+motif:CGGCA@5	overlap:antiSMASH_29_regions	118	53724	0.8803	0.7856230195388885	sites_in=14/118 (11.86%), callable_in=7126/53724 (13.26%)	1.0
+motif:CGGCA@5	overlap:IslandPath_DIMOB_islands	118	53724	1.0354	0.8312628808317535	sites_in=6/118 (5.08%), callable_in=2643/53724 (4.92%)	1.0
+motif:CGGCA@5	overlap:rRNA_operons	118	53724	0.0	1.0	sites_in=0/118 (0.00%), callable_in=114/53724 (0.21%)	1.0
+motif:CCGAA@5	KS_coordinate_vs_callable	67	18812	0.0976	0.514343431916148		1.0
+motif:CCGAA@5	window50kb_overdispersion_MC	67	18812	161.8	0.7016491754122939	df=173; chi2 asymptotic p=0.719	1.0
+motif:CCGAA@5	core_vs_arm	67	18812	1.4456	0.19964099617555073	sites_in=49/67 (73.13%), callable_in=12287/18812 (65.31%)	0.9658280523648408
+motif:CCGAA@5	overlap:antiSMASH_29_regions	67	18812	0.6647	0.4632265498359478	sites_in=6/67 (8.96%), callable_in=2425/18812 (12.89%)	1.0
+motif:CCGAA@5	overlap:IslandPath_DIMOB_islands	67	18812	0.2543	0.18446267691207685	sites_in=1/67 (1.49%), callable_in=1058/18812 (5.62%)	0.9658280523648408
+motif:CCGAA@5	overlap:rRNA_operons	67	18812	0.0	1.0	sites_in=0/67 (0.00%), callable_in=195/18812 (1.04%)	1.0
+motif:GGGA@4	KS_coordinate_vs_callable	137	75633	0.0843	0.2686882419055343		0.9889970269102736
+motif:GGGA@4	window50kb_overdispersion_MC	137	75633	167.1	0.5987006496751625	df=173; chi2 asymptotic p=0.612	1.0
+motif:GGGA@4	core_vs_arm	137	75633	0.8305	0.28388783666275974	sites_in=83/137 (60.58%), callable_in=49103/75633 (64.92%)	0.9926202928715462
+motif:GGGA@4	overlap:antiSMASH_29_regions	137	75633	1.1345	0.6114141884796608	sites_in=20/137 (14.60%), callable_in=9904/75633 (13.09%)	1.0
+motif:GGGA@4	overlap:IslandPath_DIMOB_islands	137	75633	0.4227	0.16723523482781721	sites_in=3/137 (2.19%), callable_in=3804/75633 (5.03%)	0.9491729544281516
+motif:GGGA@4	overlap:rRNA_operons	137	75633	0.0	0.6304419357427947	sites_in=0/137 (0.00%), callable_in=550/75633 (0.73%)	1.0
+motif:CGGTCA@6	KS_coordinate_vs_callable	52	11950	0.0997	0.6426177027242375		1.0
+motif:CGGTCA@6	window50kb_overdispersion_MC	52	11950	160.7	0.7341329335332334	df=173; chi2 asymptotic p=0.739	1.0
+motif:CGGTCA@6	core_vs_arm	52	11950	1.1289	0.7720527844232689	sites_in=35/52 (67.31%), callable_in=7718/11950 (64.59%)	1.0
+motif:CGGTCA@6	overlap:antiSMASH_29_regions	52	11950	1.6608	0.1560752449836441	sites_in=11/52 (21.15%), callable_in=1662/11950 (13.91%)	0.9181643366886305
+motif:CGGTCA@6	overlap:IslandPath_DIMOB_islands	52	11950	0.0	0.17373821420808216	sites_in=0/52 (0.00%), callable_in=535/11950 (4.48%)	0.9658280523648408
+motif:CGGTCA@6	overlap:rRNA_operons	52	11950	6.872	0.14117232302528587	sites_in=1/52 (1.92%), callable_in=34/11950 (0.28%)	0.8983693283427283
+motif:TCAA@4	KS_coordinate_vs_callable	66	21265	0.1649	0.048977644368729645		0.5877317324247557
+motif:TCAA@4	window50kb_overdispersion_MC	66	21265	183.3	0.2773613193403298	df=173; chi2 asymptotic p=0.281	0.9889970269102736
+motif:TCAA@4	core_vs_arm	66	21265	0.785	0.3572480818091093	sites_in=41/66 (62.12%), callable_in=14381/21265 (67.63%)	1.0
+motif:TCAA@4	overlap:antiSMASH_29_regions	66	21265	1.2836	0.4506130499371229	sites_in=10/66 (15.15%), callable_in=2597/21265 (12.21%)	1.0
+motif:TCAA@4	overlap:IslandPath_DIMOB_islands	66	21265	0.3904	0.23756624127417336	sites_in=2/66 (3.03%), callable_in=1576/21265 (7.41%)	0.9889970269102736
+motif:TCAA@4	overlap:rRNA_operons	66	21265	0.0	1.0	sites_in=0/66 (0.00%), callable_in=302/21265 (1.42%)	1.0
+motif:GCCGTCA@7	KS_coordinate_vs_callable	31	3499	0.1969	0.15789720335403		0.9181643366886305
+motif:GCCGTCA@7	window50kb_overdispersion_MC	31	3499	181.7	0.27386306846576713	df=173; chi2 asymptotic p=0.309	0.9889970269102736
+motif:GCCGTCA@7	core_vs_arm	31	3499	0.6766	0.3467425523937101	sites_in=17/31 (54.84%), callable_in=2247/3499 (64.22%)	1.0
+motif:GCCGTCA@7	overlap:antiSMASH_29_regions	31	3499	1.351	0.5808630350937507	sites_in=5/31 (16.13%), callable_in=436/3499 (12.46%)	1.0
+motif:GCCGTCA@7	overlap:IslandPath_DIMOB_islands	31	3499	0.0	0.4074932164077363	sites_in=0/31 (0.00%), callable_in=186/3499 (5.32%)	1.0
+motif:GCCGTCA@7	overlap:rRNA_operons	31	3499	0.0	1.0	sites_in=0/31 (0.00%), callable_in=10/3499 (0.29%)	1.0
+motif:GGCA@4	KS_coordinate_vs_callable	156	100440	0.0676	0.45423771666605717		1.0
+motif:GGCA@4	window50kb_overdispersion_MC	156	100440	206.7	0.047476261869065464	df=173; chi2 asymptotic p=0.0407	0.5877317324247557
+motif:GGCA@4	core_vs_arm	156	100440	1.2218	0.2774822931348875	sites_in=107/156 (68.59%), callable_in=64405/100440 (64.12%)	0.9889970269102736
+motif:GGCA@4	overlap:antiSMASH_29_regions	156	100440	0.9629	1.0	sites_in=20/156 (12.82%), callable_in=13307/100440 (13.25%)	1.0
+motif:GGCA@4	overlap:IslandPath_DIMOB_islands	156	100440	1.1915	0.5931710393272324	sites_in=10/156 (6.41%), callable_in=5460/100440 (5.44%)	1.0
+motif:GGCA@4	overlap:rRNA_operons	156	100440	0.0	1.0	sites_in=0/156 (0.00%), callable_in=366/100440 (0.36%)	1.0
+motif:AAGA@2	KS_coordinate_vs_callable	62	26154	0.1936	0.016433436070581453		0.4060025382143653
+motif:AAGA@2	window50kb_overdispersion_MC	62	26154	160.1	0.7381309345327336	df=173; chi2 asymptotic p=0.749	1.0
+motif:AAGA@2	core_vs_arm	62	26154	0.9787	1.0	sites_in=43/62 (69.35%), callable_in=18258/26154 (69.81%)	1.0
+motif:AAGA@2	overlap:antiSMASH_29_regions	62	26154	0.3647	0.08048582996668538	sites_in=3/62 (4.84%), callable_in=3200/26154 (12.24%)	0.8177045755810441
+motif:AAGA@2	overlap:IslandPath_DIMOB_islands	62	26154	0.6811	0.8001844345407363	sites_in=3/62 (4.84%), callable_in=1817/26154 (6.95%)	1.0
+motif:AAGA@2	overlap:rRNA_operons	62	26154	0.0	1.0	sites_in=0/62 (0.00%), callable_in=181/26154 (0.69%)	1.0
+motif:GGAGC@3	KS_coordinate_vs_callable	68	35910	0.1022	0.44738654406920697		1.0
+motif:GGAGC@3	window50kb_overdispersion_MC	68	35910	194.3	0.12743628185907047	df=173; chi2 asymptotic p=0.128	0.8782354938706745
+motif:GGAGC@3	core_vs_arm	68	35910	1.0185	1.0	sites_in=45/68 (66.18%), callable_in=23616/35910 (65.76%)	1.0
+motif:GGAGC@3	overlap:antiSMASH_29_regions	68	35910	1.1393	0.718261193744496	sites_in=10/68 (14.71%), callable_in=4720/35910 (13.14%)	1.0
+motif:GGAGC@3	overlap:IslandPath_DIMOB_islands	68	35910	0.3051	0.37828999390163165	sites_in=1/68 (1.47%), callable_in=1675/35910 (4.66%)	1.0
+motif:GGAGC@3	overlap:rRNA_operons	68	35910	0.0	1.0	sites_in=0/68 (0.00%), callable_in=130/35910 (0.36%)	1.0
+motif:GCGTCA@6	KS_coordinate_vs_callable	26	5635	0.1006	0.9314449897099832		1.0
+motif:GCGTCA@6	window50kb_overdispersion_MC	26	5635	155.0	0.8290854572713643	df=173; chi2 asymptotic p=0.834	1.0
+motif:GCGTCA@6	core_vs_arm	26	5635	1.4084	0.5367644537265166	sites_in=19/26 (73.08%), callable_in=3710/5635 (65.84%)	1.0
+motif:GCGTCA@6	overlap:antiSMASH_29_regions	26	5635	0.0	0.040520515213421426	sites_in=0/26 (0.00%), callable_in=755/5635 (13.40%)	0.5877317324247557
+motif:GCGTCA@6	overlap:IslandPath_DIMOB_islands	26	5635	1.3795	0.6580650727005838	sites_in=2/26 (7.69%), callable_in=321/5635 (5.70%)	1.0
+motif:GCGTCA@6	overlap:rRNA_operons	26	5635	0.0	1.0	sites_in=0/26 (0.00%), callable_in=34/5635 (0.60%)	1.0
+motif:CGGCCAC@6	KS_coordinate_vs_callable	29	7670	0.1082	0.8502431212609034		1.0
+motif:CGGCCAC@6	window50kb_overdispersion_MC	29	7670	147.2	0.9445277361319341	df=173; chi2 asymptotic p=0.923	1.0
+motif:CGGCCAC@6	core_vs_arm	29	7670	0.8131	0.5685570136520464	sites_in=17/29 (58.62%), callable_in=4873/7670 (63.53%)	1.0
+motif:CGGCCAC@6	overlap:antiSMASH_29_regions	29	7670	1.6798	0.26992543635579935	sites_in=6/29 (20.69%), callable_in=1031/7670 (13.44%)	0.9889970269102736
+motif:CGGCCAC@6	overlap:IslandPath_DIMOB_islands	29	7670	0.0	0.6388807121822664	sites_in=0/29 (0.00%), callable_in=343/7670 (4.47%)	1.0
+motif:CGGCCAC@6	overlap:rRNA_operons	29	7670	0.0	1.0	sites_in=0/29 (0.00%), callable_in=17/7670 (0.22%)	1.0
+motif:CGAA@4	KS_coordinate_vs_callable	93	63278	0.0762	0.6248528798442164		1.0
+motif:CGAA@4	window50kb_overdispersion_MC	93	63278	177.8	0.3618190904547726	df=173; chi2 asymptotic p=0.385	1.0
+motif:CGAA@4	core_vs_arm	93	63278	1.3132	0.27631253527115573	sites_in=66/93 (70.97%), callable_in=41164/63278 (65.05%)	0.9889970269102736
+motif:CGAA@4	overlap:antiSMASH_29_regions	93	63278	0.7811	0.5433036934371259	sites_in=10/93 (10.75%), callable_in=8456/63278 (13.36%)	1.0
+motif:CGAA@4	overlap:IslandPath_DIMOB_islands	93	63278	0.179	0.06755502069072226	sites_in=1/93 (1.08%), callable_in=3622/63278 (5.72%)	0.7275156074385475
+motif:CGAA@4	overlap:rRNA_operons	93	63278	0.0	1.0	sites_in=0/93 (0.00%), callable_in=457/63278 (0.72%)	1.0
+motif:CCGGAA@5	KS_coordinate_vs_callable	24	5816	0.1749	0.4079044239393924		1.0
+motif:CCGGAA@5	window50kb_overdispersion_MC	24	5816	162.7	0.6611694152923538	df=173; chi2 asymptotic p=0.701	1.0
+motif:CCGGAA@5	core_vs_arm	24	5816	1.1472	0.8343110152716124	sites_in=16/24 (66.67%), callable_in=3696/5816 (63.55%)	1.0
+motif:CCGGAA@5	overlap:antiSMASH_29_regions	24	5816	1.5898	0.3738613475806551	sites_in=5/24 (20.83%), callable_in=826/5816 (14.20%)	1.0
+motif:CCGGAA@5	overlap:IslandPath_DIMOB_islands	24	5816	0.6749	1.0	sites_in=1/24 (4.17%), callable_in=352/5816 (6.05%)	1.0
+motif:CCGGAA@5	overlap:rRNA_operons	24	5816	0.0	1.0	sites_in=0/24 (0.00%), callable_in=50/5816 (0.86%)	1.0
+motif:AAGAAGCC@1	KS_coordinate_vs_callable	9	321	0.2825	0.3951743791006842		1.0
+motif:AAGAAGCC@1	window50kb_overdispersion_MC	9	321	151.2	0.32033983008495753	df=139; chi2 asymptotic p=0.226	1.0
+motif:AAGAAGCC@1	core_vs_arm	9	321	1.3013	1.0	sites_in=7/9 (77.78%), callable_in=234/321 (72.90%)	1.0
+motif:AAGAAGCC@1	overlap:antiSMASH_29_regions	9	321	0.0	0.3641537446143742	sites_in=0/9 (0.00%), callable_in=52/321 (16.20%)	1.0
+motif:AAGAAGCC@1	overlap:IslandPath_DIMOB_islands	9	321	0.0	1.0	sites_in=0/9 (0.00%), callable_in=25/321 (7.79%)	1.0
+motif:AAGAAGCC@1	overlap:rRNA_operons	9	321		1.0	sites_in=0/9 (0.00%), callable_in=0/321 (0.00%)	1.0
+motif:CAAG@3	KS_coordinate_vs_callable	64	37706	0.093	0.6035860166452625		1.0
+motif:CAAG@3	window50kb_overdispersion_MC	64	37706	165.7	0.6096951524237881	df=173; chi2 asymptotic p=0.642	1.0
+motif:CAAG@3	core_vs_arm	64	37706	1.3273	0.40779712942513513	sites_in=49/64 (76.56%), callable_in=26812/37706 (71.11%)	1.0
+motif:CAAG@3	overlap:antiSMASH_29_regions	64	37706	0.5113	0.23935125269431134	sites_in=4/64 (6.25%), callable_in=4349/37706 (11.53%)	0.9889970269102736
+motif:CAAG@3	overlap:IslandPath_DIMOB_islands	64	37706	0.4213	0.32573026288030066	sites_in=2/64 (3.12%), callable_in=2682/37706 (7.11%)	1.0
+motif:CAAG@3	overlap:rRNA_operons	64	37706	0.0	1.0	sites_in=0/64 (0.00%), callable_in=319/37706 (0.85%)	1.0
+motif:AGCCGGA@1	KS_coordinate_vs_callable	17	3079	0.1246	0.9254477115190866		1.0
+motif:AGCCGGA@1	window50kb_overdispersion_MC	17	3079	168.1	0.5357321339330335	df=173; chi2 asymptotic p=0.591	1.0
+motif:AGCCGGA@1	core_vs_arm	17	3079	0.7663	0.6147736693206256	sites_in=10/17 (58.82%), callable_in=2004/3079 (65.09%)	1.0
+motif:AGCCGGA@1	overlap:antiSMASH_29_regions	17	3079	1.3949	0.48747496226658693	sites_in=3/17 (17.65%), callable_in=410/3079 (13.32%)	1.0
+motif:AGCCGGA@1	overlap:IslandPath_DIMOB_islands	17	3079	1.4528	0.5130949164909653	sites_in=1/17 (5.88%), callable_in=127/3079 (4.12%)	1.0
+motif:AGCCGGA@1	overlap:rRNA_operons	17	3079	0.0	1.0	sites_in=0/17 (0.00%), callable_in=4/3079 (0.13%)	1.0
+motif:GCCAC@4	KS_coordinate_vs_callable	60	37358	0.1155	0.3718498843441016		1.0
+motif:GCCAC@4	window50kb_overdispersion_MC	60	37358	178.5	0.3698150924537731	df=173; chi2 asymptotic p=0.371	1.0
+motif:GCCAC@4	core_vs_arm	60	37358	0.7837	0.3489990201930275	sites_in=35/60 (58.33%), callable_in=23951/37358 (64.11%)	1.0
+motif:GCCAC@4	overlap:antiSMASH_29_regions	60	37358	1.2778	0.45061656599946176	sites_in=10/60 (16.67%), callable_in=5056/37358 (13.53%)	1.0
+motif:GCCAC@4	overlap:IslandPath_DIMOB_islands	60	37358	0.6518	0.7699778267753118	sites_in=2/60 (3.33%), callable_in=1877/37358 (5.02%)	1.0
+motif:GCCAC@4	overlap:rRNA_operons	60	37358	0.0	1.0	sites_in=0/60 (0.00%), callable_in=125/37358 (0.33%)	1.0
+motif:CGGCCA@6	KS_coordinate_vs_callable	41	21185	0.119	0.5665478240578554		1.0
+motif:CGGCCA@6	window50kb_overdispersion_MC	41	21185	156.4	0.8125937031484258	df=173; chi2 asymptotic p=0.813	1.0
+motif:CGGCCA@6	core_vs_arm	41	21185	0.8718	0.7447146742176969	sites_in=25/41 (60.98%), callable_in=13598/21185 (64.19%)	1.0
+motif:CGGCCA@6	overlap:antiSMASH_29_regions	41	21185	1.3716	0.4824319913230405	sites_in=7/41 (17.07%), callable_in=2765/21185 (13.05%)	1.0
+motif:CGGCCA@6	overlap:IslandPath_DIMOB_islands	41	21185	0.5009	1.0	sites_in=1/41 (2.44%), callable_in=1007/21185 (4.75%)	1.0
+motif:CGGCCA@6	overlap:rRNA_operons	41	21185	0.0	1.0	sites_in=0/41 (0.00%), callable_in=39/21185 (0.18%)	1.0
+motif:AAGGAC@2	KS_coordinate_vs_callable	18	4876	0.19	0.4768746160705388		1.0
+motif:AAGGAC@2	window50kb_overdispersion_MC	18	4876	144.9	0.9320339830084957	df=173; chi2 asymptotic p=0.941	1.0
+motif:AAGGAC@2	core_vs_arm	18	4876	0.6664	0.44030804190484485	sites_in=11/18 (61.11%), callable_in=3424/4876 (70.22%)	1.0
+motif:AAGGAC@2	overlap:antiSMASH_29_regions	18	4876	0.9277	1.0	sites_in=2/18 (11.11%), callable_in=579/4876 (11.87%)	1.0
+motif:AAGGAC@2	overlap:IslandPath_DIMOB_islands	18	4876	0.0	0.6224123720196982	sites_in=0/18 (0.00%), callable_in=296/4876 (6.07%)	1.0
+motif:AAGGAC@2	overlap:rRNA_operons	18	4876	0.0	1.0	sites_in=0/18 (0.00%), callable_in=20/4876 (0.41%)	1.0
+motif:GACCGTCA@8	KS_coordinate_vs_callable	8	758	0.4129	0.09526033959941227		0.8335279714948575
+motif:GACCGTCA@8	window50kb_overdispersion_MC	8	758	152.0	0.616191904047976	df=169; chi2 asymptotic p=0.822	1.0
+motif:GACCGTCA@8	core_vs_arm	8	758	0.8202	0.7234740502381709	sites_in=5/8 (62.50%), callable_in=508/758 (67.02%)	1.0
+motif:GACCGTCA@8	overlap:antiSMASH_29_regions	8	758	1.0471	1.0	sites_in=1/8 (12.50%), callable_in=91/758 (12.01%)	1.0
+motif:GACCGTCA@8	overlap:IslandPath_DIMOB_islands	8	758	1.9804	0.4316818922166866	sites_in=1/8 (12.50%), callable_in=51/758 (6.73%)	1.0
+motif:GACCGTCA@8	overlap:rRNA_operons	8	758	0.0	1.0	sites_in=0/8 (0.00%), callable_in=1/758 (0.13%)	1.0
+motif:CACGGAC@2	KS_coordinate_vs_callable	13	3052	0.3112	0.12898695047721231		0.8782354938706745
+motif:CACGGAC@2	window50kb_overdispersion_MC	13	3052	171.7	0.4192903548225887	df=173; chi2 asymptotic p=0.515	1.0
+motif:CACGGAC@2	core_vs_arm	13	3052	0.9132	1.0	sites_in=8/13 (61.54%), callable_in=1943/3052 (63.66%)	1.0
+motif:CACGGAC@2	overlap:antiSMASH_29_regions	13	3052	1.9223	0.403423896320781	sites_in=3/13 (23.08%), callable_in=412/3052 (13.50%)	1.0
+motif:CACGGAC@2	overlap:IslandPath_DIMOB_islands	13	3052	0.0	1.0	sites_in=0/13 (0.00%), callable_in=113/3052 (3.70%)	1.0
+motif:CACGGAC@2	overlap:rRNA_operons	13	3052	0.0	1.0	sites_in=0/13 (0.00%), callable_in=20/3052 (0.66%)	1.0
+motif:CGTCGTCA@8	KS_coordinate_vs_callable	9	1262	0.3407	0.19565429396270184		0.9658280523648408
+motif:CGTCGTCA@8	window50kb_overdispersion_MC	9	1262	171.9	0.4257871064467766	df=173; chi2 asymptotic p=0.509	1.0
+motif:CGTCGTCA@8	core_vs_arm	9	1262	3.822	0.28596917961299306	sites_in=8/9 (88.89%), callable_in=854/1262 (67.67%)	0.9926202928715462
+motif:CGTCGTCA@8	overlap:antiSMASH_29_regions	9	1262	0.0	0.6109677740116194	sites_in=0/9 (0.00%), callable_in=155/1262 (12.28%)	1.0
+motif:CGTCGTCA@8	overlap:IslandPath_DIMOB_islands	9	1262	2.4194	0.368100550887808	sites_in=1/9 (11.11%), callable_in=62/1262 (4.91%)	1.0
+motif:CGTCGTCA@8	overlap:rRNA_operons	9	1262		1.0	sites_in=0/9 (0.00%), callable_in=0/1262 (0.00%)	1.0
+motif:GAGCC@2	KS_coordinate_vs_callable	44	29966	0.1478	0.26460693705036054		0.9889970269102736
+motif:GAGCC@2	window50kb_overdispersion_MC	44	29966	164.7	0.656671664167916	df=173; chi2 asymptotic p=0.661	1.0
+motif:GAGCC@2	core_vs_arm	44	29966	1.0425	1.0	sites_in=29/44 (65.91%), callable_in=19468/29966 (64.97%)	1.0
+motif:GAGCC@2	overlap:antiSMASH_29_regions	44	29966	1.2345	0.654362228198597	sites_in=7/44 (15.91%), callable_in=3982/29966 (13.29%)	1.0
+motif:GAGCC@2	overlap:IslandPath_DIMOB_islands	44	29966	0.437	0.7261091730701661	sites_in=1/44 (2.27%), callable_in=1514/29966 (5.05%)	1.0
+motif:GAGCC@2	overlap:rRNA_operons	44	29966	0.0	1.0	sites_in=0/44 (0.00%), callable_in=92/29966 (0.31%)	1.0
+motif:GAAG@3	KS_coordinate_vs_callable	85	76415	0.0766	0.6713044449510261		1.0
+motif:GAAG@3	window50kb_overdispersion_MC	85	76415	141.1	0.9710144927536232	df=173; chi2 asymptotic p=0.964	1.0
+motif:GAAG@3	core_vs_arm	85	76415	1.0959	0.7300451128381048	sites_in=59/85 (69.41%), callable_in=51530/76415 (67.43%)	1.0
+motif:GAAG@3	overlap:antiSMASH_29_regions	85	76415	0.6087	0.255557836130055	sites_in=7/85 (8.24%), callable_in=9819/76415 (12.85%)	0.9889970269102736
+motif:GAAG@3	overlap:IslandPath_DIMOB_islands	85	76415	0.2005	0.09324271983602028	sites_in=1/85 (1.18%), callable_in=4282/76415 (5.60%)	0.833232815555926
+motif:GAAG@3	overlap:rRNA_operons	85	76415	0.0	1.0	sites_in=0/85 (0.00%), callable_in=427/76415 (0.56%)	1.0
+motif:AACG@2	KS_coordinate_vs_callable	54	41082	0.1322	0.27682593176991843		0.9889970269102736
+motif:AACG@2	window50kb_overdispersion_MC	54	41082	206.9	0.047476261869065464	df=173; chi2 asymptotic p=0.04	0.5877317324247557
+motif:AACG@2	core_vs_arm	54	41082	0.9394	0.8870585231665704	sites_in=34/54 (62.96%), callable_in=26460/41082 (64.41%)	1.0
+motif:AACG@2	overlap:antiSMASH_29_regions	54	41082	1.5183	0.2246503808947269	sites_in=10/54 (18.52%), callable_in=5349/41082 (13.02%)	0.9889970269102736
+motif:AACG@2	overlap:IslandPath_DIMOB_islands	54	41082	0.0	0.04892890297280944	sites_in=0/54 (0.00%), callable_in=2566/41082 (6.25%)	0.5877317324247557
+motif:AACG@2	overlap:rRNA_operons	54	41082	0.0	1.0	sites_in=0/54 (0.00%), callable_in=319/41082 (0.78%)	1.0
+motif:AGGACCG@1	KS_coordinate_vs_callable	12	2941	0.2269	0.49655352423246		1.0
+motif:AGGACCG@1	window50kb_overdispersion_MC	12	2941	177.7	0.33883058470764615	df=173; chi2 asymptotic p=0.387	1.0
+motif:AGGACCG@1	core_vs_arm	12	2941	0.396	0.13115448983428846	sites_in=5/12 (41.67%), callable_in=1892/2941 (64.33%)	0.8782354938706745
+motif:AGGACCG@1	overlap:antiSMASH_29_regions	12	2941	0.5457	1.0	sites_in=1/12 (8.33%), callable_in=420/2941 (14.28%)	1.0
+motif:AGGACCG@1	overlap:IslandPath_DIMOB_islands	12	2941	1.8607	0.4375261813825015	sites_in=1/12 (8.33%), callable_in=137/2941 (4.66%)	1.0
+motif:AGGACCG@1	overlap:rRNA_operons	12	2941	0.0	1.0	sites_in=0/12 (0.00%), callable_in=14/2941 (0.48%)	1.0
+motif:GAGTCCG@2	KS_coordinate_vs_callable	11	2662	0.281	0.29208347008655555		1.0
+motif:GAGTCCG@2	window50kb_overdispersion_MC	11	2662	187.5	0.21039480259870064	df=173; chi2 asymptotic p=0.214	0.9889970269102736
+motif:GAGTCCG@2	core_vs_arm	11	2662	0.8999	1.0	sites_in=7/11 (63.64%), callable_in=1758/2662 (66.04%)	1.0
+motif:GAGTCCG@2	overlap:antiSMASH_29_regions	11	2662	1.421	0.6519899742464194	sites_in=2/11 (18.18%), callable_in=360/2662 (13.52%)	1.0
+motif:GAGTCCG@2	overlap:IslandPath_DIMOB_islands	11	2662	0.0	1.0	sites_in=0/11 (0.00%), callable_in=124/2662 (4.66%)	1.0
+motif:GAGTCCG@2	overlap:rRNA_operons	11	2662	0.0	1.0	sites_in=0/11 (0.00%), callable_in=8/2662 (0.30%)	1.0
+motif:CCAC@3	KS_coordinate_vs_callable	110	111376	0.1084	0.1402846795936754		0.8983693283427283
+motif:CCAC@3	window50kb_overdispersion_MC	110	111376	170.1	0.55872063968016	df=173; chi2 asymptotic p=0.547	1.0
+motif:CCAC@3	core_vs_arm	110	111376	1.1523	0.5510290834159686	sites_in=74/110 (67.27%), callable_in=71369/111376 (64.08%)	1.0
+motif:CCAC@3	overlap:antiSMASH_29_regions	110	111376	0.9481	1.0	sites_in=14/110 (12.73%), callable_in=14848/111376 (13.33%)	1.0
+motif:CCAC@3	overlap:IslandPath_DIMOB_islands	110	111376	0.8807	1.0	sites_in=5/110 (4.55%), callable_in=5713/111376 (5.13%)	1.0
+motif:CCAC@3	overlap:rRNA_operons	110	111376	0.0	1.0	sites_in=0/110 (0.00%), callable_in=518/111376 (0.47%)	1.0
+motif:CACGGG@2	KS_coordinate_vs_callable	19	8354	0.414	0.0018406576896222715		0.07483458694775592
+motif:CACGGG@2	window50kb_overdispersion_MC	19	8354	183.2	0.2538730634682659	df=173; chi2 asymptotic p=0.283	0.9889970269102736
+motif:CACGGG@2	core_vs_arm	19	8354	10.1174	0.00335741411543854	sites_in=18/19 (94.74%), callable_in=5348/8354 (64.02%)	0.1084703021910913
+motif:CACGGG@2	overlap:antiSMASH_29_regions	19	8354	0.7783	1.0	sites_in=2/19 (10.53%), callable_in=1097/8354 (13.13%)	1.0
+motif:CACGGG@2	overlap:IslandPath_DIMOB_islands	19	8354	2.4219	0.22002157563991143	sites_in=2/19 (10.53%), callable_in=387/8354 (4.63%)	0.9889970269102736
+motif:CACGGG@2	overlap:rRNA_operons	19	8354	0.0	1.0	sites_in=0/19 (0.00%), callable_in=34/8354 (0.41%)	1.0
+motif:AGCCCGC@1	KS_coordinate_vs_callable	11	2816	0.1854	0.7806852724560154		1.0
+motif:AGCCCGC@1	window50kb_overdispersion_MC	11	2816	153.8	0.7941029485257372	df=173; chi2 asymptotic p=0.85	1.0
+motif:AGCCCGC@1	core_vs_arm	11	2816	1.5261	0.7556754759305976	sites_in=8/11 (72.73%), callable_in=1791/2816 (63.60%)	1.0
+motif:AGCCCGC@1	overlap:antiSMASH_29_regions	11	2816	1.4159	0.6526043373436079	sites_in=2/11 (18.18%), callable_in=382/2816 (13.57%)	1.0
+motif:AGCCCGC@1	overlap:IslandPath_DIMOB_islands	11	2816	0.0	1.0	sites_in=0/11 (0.00%), callable_in=140/2816 (4.97%)	1.0
+motif:AGCCCGC@1	overlap:rRNA_operons	11	2816	0.0	1.0	sites_in=0/11 (0.00%), callable_in=6/2816 (0.21%)	1.0
+motif:ACCAGC@1	KS_coordinate_vs_callable	23	11948	0.2309	0.14663671937310419		0.9181643366886305
+motif:ACCAGC@1	window50kb_overdispersion_MC	23	11948	158.5	0.7626186906546727	df=173; chi2 asymptotic p=0.778	1.0
+motif:ACCAGC@1	core_vs_arm	23	11948	0.5769	0.1927426043343109	sites_in=12/23 (52.17%), callable_in=7815/11948 (65.41%)	0.9658280523648408
+motif:ACCAGC@1	overlap:antiSMASH_29_regions	23	11948	0.3052	0.35025610077538216	sites_in=1/23 (4.35%), callable_in=1549/11948 (12.96%)	1.0
+motif:ACCAGC@1	overlap:IslandPath_DIMOB_islands	23	11948	0.0	0.6269145727474339	sites_in=0/23 (0.00%), callable_in=591/11948 (4.95%)	1.0
+motif:ACCAGC@1	overlap:rRNA_operons	23	11948	0.0	1.0	sites_in=0/23 (0.00%), callable_in=30/11948 (0.25%)	1.0
+motif:ACCAG@1	KS_coordinate_vs_callable	41	29781	0.1792	0.12668967775033602		0.8782354938706745
+motif:ACCAG@1	window50kb_overdispersion_MC	41	29781	172.7	0.46526736631684157	df=173; chi2 asymptotic p=0.491	1.0
+motif:ACCAG@1	core_vs_arm	41	29781	0.9212	0.8698107247216073	sites_in=26/41 (63.41%), callable_in=19446/29781 (65.30%)	1.0
+motif:ACCAG@1	overlap:antiSMASH_29_regions	41	29781	0.7124	0.6483664841114464	sites_in=4/41 (9.76%), callable_in=3924/29781 (13.18%)	1.0
+motif:ACCAG@1	overlap:IslandPath_DIMOB_islands	41	29781	0.0	0.26941601828768535	sites_in=0/41 (0.00%), callable_in=1494/29781 (5.02%)	0.9889970269102736
+motif:ACCAG@1	overlap:rRNA_operons	41	29781	0.0	1.0	sites_in=0/41 (0.00%), callable_in=121/29781 (0.41%)	1.0
+motif:AGCCC@1	KS_coordinate_vs_callable	33	22443	0.1158	0.7246323378553519		1.0
+motif:AGCCC@1	window50kb_overdispersion_MC	33	22443	151.2	0.8865567216391804	df=173; chi2 asymptotic p=0.883	1.0
+motif:AGCCC@1	core_vs_arm	33	22443	1.3966	0.46574903087747677	sites_in=24/33 (72.73%), callable_in=14729/22443 (65.63%)	1.0
+motif:AGCCC@1	overlap:antiSMASH_29_regions	33	22443	1.2164	0.6050997749500133	sites_in=5/33 (15.15%), callable_in=2873/22443 (12.80%)	1.0
+motif:AGCCC@1	overlap:IslandPath_DIMOB_islands	33	22443	0.0	0.4187540270470035	sites_in=0/33 (0.00%), callable_in=1187/22443 (5.29%)	1.0
+motif:AGCCC@1	overlap:rRNA_operons	33	22443	0.0	1.0	sites_in=0/33 (0.00%), callable_in=96/22443 (0.43%)	1.0
+motif:GTCAGGA@4	KS_coordinate_vs_callable	7	1130	0.2826	0.5390610171093766		1.0
+motif:GTCAGGA@4	window50kb_overdispersion_MC	7	1130	133.8	0.894552723638181	df=173; chi2 asymptotic p=0.988	1.0
+motif:GTCAGGA@4	core_vs_arm	7	1130	0.2175	0.1043010004324231	sites_in=2/7 (28.57%), callable_in=732/1130 (64.78%)	0.8516895398454619
+motif:GTCAGGA@4	overlap:antiSMASH_29_regions	7	1130	1.0329	1.0	sites_in=1/7 (14.29%), callable_in=157/1130 (13.89%)	1.0
+motif:GTCAGGA@4	overlap:IslandPath_DIMOB_islands	7	1130	2.6029	0.355600432860179	sites_in=1/7 (14.29%), callable_in=68/1130 (6.02%)	1.0
+motif:GTCAGGA@4	overlap:rRNA_operons	7	1130	0.0	1.0	sites_in=0/7 (0.00%), callable_in=1/1130 (0.09%)	1.0
+motif:AGCC@1	KS_coordinate_vs_callable	83	81345	0.0905	0.4769938371797837		1.0
+motif:AGCC@1	window50kb_overdispersion_MC	83	81345	171.9	0.49025487256371814	df=173; chi2 asymptotic p=0.508	1.0
+motif:AGCC@1	core_vs_arm	83	81345	1.1271	0.6472528587582216	sites_in=56/83 (67.47%), callable_in=52705/81345 (64.79%)	1.0
+motif:AGCC@1	overlap:antiSMASH_29_regions	83	81345	1.2285	0.5137688701257892	sites_in=13/83 (15.66%), callable_in=10682/81345 (13.13%)	1.0
+motif:AGCC@1	overlap:IslandPath_DIMOB_islands	83	81345	0.4153	0.3328335739658097	sites_in=2/83 (2.41%), callable_in=4565/81345 (5.61%)	1.0
+motif:AGCC@1	overlap:rRNA_operons	83	81345	0.0	1.0	sites_in=0/83 (0.00%), callable_in=439/81345 (0.54%)	1.0
+motif:CGTCAGG@5	KS_coordinate_vs_callable	8	1641	0.2972	0.40165325756003		1.0
+motif:CGTCAGG@5	window50kb_overdispersion_MC	8	1641	183.4	0.27786106946526734	df=173; chi2 asymptotic p=0.28	0.9889970269102736
+motif:CGTCAGG@5	core_vs_arm	8	1641	0.3467	0.1522902746943869	sites_in=3/8 (37.50%), callable_in=1040/1641 (63.38%)	0.9181643366886305
+motif:CGTCAGG@5	overlap:antiSMASH_29_regions	8	1641	0.7911	1.0	sites_in=1/8 (12.50%), callable_in=251/1641 (15.30%)	1.0
+motif:CGTCAGG@5	overlap:IslandPath_DIMOB_islands	8	1641	2.8626	0.32537916098787295	sites_in=1/8 (12.50%), callable_in=78/1641 (4.75%)	1.0
+motif:CGTCAGG@5	overlap:rRNA_operons	8	1641	0.0	1.0	sites_in=0/8 (0.00%), callable_in=4/1641 (0.24%)	1.0
+motif:CGTCAG@5	KS_coordinate_vs_callable	14	5453	0.1983	0.5734876208208559		1.0
+motif:CGTCAG@5	window50kb_overdispersion_MC	14	5453	170.3	0.45577211394302847	df=173; chi2 asymptotic p=0.545	1.0
+motif:CGTCAG@5	core_vs_arm	14	5453	0.4178	0.15958570613873815	sites_in=6/14 (42.86%), callable_in=3502/5453 (64.22%)	0.9181643366886305
+motif:CGTCAG@5	overlap:antiSMASH_29_regions	14	5453	0.4816	0.7080266039629683	sites_in=1/14 (7.14%), callable_in=751/5453 (13.77%)	1.0
+motif:CGTCAG@5	overlap:IslandPath_DIMOB_islands	14	5453	2.6823	0.19692164727333336	sites_in=2/14 (14.29%), callable_in=319/5453 (5.85%)	0.9658280523648408
+motif:CGTCAG@5	overlap:rRNA_operons	14	5453	0.0	1.0	sites_in=0/14 (0.00%), callable_in=29/5453 (0.53%)	1.0
+motif:GTCAGCTC@4	KS_coordinate_vs_callable	6	845	0.4219	0.17547804108642373		0.9658280523648408
+motif:GTCAGCTC@4	window50kb_overdispersion_MC	6	845	179.7	0.3458270864567716	df=171; chi2 asymptotic p=0.309	1.0
+motif:GTCAGCTC@4	core_vs_arm	6	845	0.203	0.06319064252280217	sites_in=2/6 (33.33%), callable_in=601/845 (71.12%)	0.6984228910414977
+motif:GTCAGCTC@4	overlap:antiSMASH_29_regions	6	845	0.0	1.0	sites_in=0/6 (0.00%), callable_in=115/845 (13.61%)	1.0
+motif:GTCAGCTC@4	overlap:IslandPath_DIMOB_islands	6	845	3.922	0.26258055323981516	sites_in=1/6 (16.67%), callable_in=41/845 (4.85%)	0.9889970269102736
+motif:GTCAGCTC@4	overlap:rRNA_operons	6	845	0.0	1.0	sites_in=0/6 (0.00%), callable_in=6/845 (0.71%)	1.0
+motif:GCAGCTCC@3	KS_coordinate_vs_callable	7	1320	0.1886	0.9273037357288758		1.0
+motif:GCAGCTCC@3	window50kb_overdispersion_MC	7	1320	145.8	0.7981009495252374	df=173; chi2 asymptotic p=0.934	1.0
+motif:GCAGCTCC@3	core_vs_arm	7	1320	1.1145	1.0	sites_in=5/7 (71.43%), callable_in=913/1320 (69.17%)	1.0
+motif:GCAGCTCC@3	overlap:antiSMASH_29_regions	7	1320	1.1429	1.0	sites_in=1/7 (14.29%), callable_in=168/1320 (12.73%)	1.0
+motif:GCAGCTCC@3	overlap:IslandPath_DIMOB_islands	7	1320	0.0	1.0	sites_in=0/7 (0.00%), callable_in=45/1320 (3.41%)	1.0
+motif:GCAGCTCC@3	overlap:rRNA_operons	7	1320		1.0	sites_in=0/7 (0.00%), callable_in=0/1320 (0.00%)	1.0
+motif:CAGCTCCG@2	KS_coordinate_vs_callable	7	1337	0.4435	0.09022048646928149		0.833232815555926
+motif:CAGCTCCG@2	window50kb_overdispersion_MC	7	1337	137.0	0.8655672163918041	df=173; chi2 asymptotic p=0.98	1.0
+motif:CAGCTCCG@2	core_vs_arm	7	1337	0.3818	0.23578130358763205	sites_in=3/7 (42.86%), callable_in=886/1337 (66.27%)	0.9889970269102736
+motif:CAGCTCCG@2	overlap:antiSMASH_29_regions	7	1337	1.0061	1.0	sites_in=1/7 (14.29%), callable_in=190/1337 (14.21%)	1.0
+motif:CAGCTCCG@2	overlap:IslandPath_DIMOB_islands	7	1337	0.0	1.0	sites_in=0/7 (0.00%), callable_in=36/1337 (2.69%)	1.0
+motif:CAGCTCCG@2	overlap:rRNA_operons	7	1337	0.0	1.0	sites_in=0/7 (0.00%), callable_in=1/1337 (0.07%)	1.0
+motif:GTCAG@4	KS_coordinate_vs_callable	26	16630	0.1528	0.5285214013815525		1.0
+motif:GTCAG@4	window50kb_overdispersion_MC	26	16630	158.4	0.777111444277861	df=173; chi2 asymptotic p=0.781	1.0
+motif:GTCAG@4	core_vs_arm	26	16630	0.5659	0.1552022033111912	sites_in=13/26 (50.00%), callable_in=10620/16630 (63.86%)	0.9181643366886305
+motif:GTCAG@4	overlap:antiSMASH_29_regions	26	16630	0.8168	1.0	sites_in=3/26 (11.54%), callable_in=2290/16630 (13.77%)	1.0
+motif:GTCAG@4	overlap:IslandPath_DIMOB_islands	26	16630	1.341	0.6629853304321212	sites_in=2/26 (7.69%), callable_in=973/16630 (5.85%)	1.0
+motif:GTCAG@4	overlap:rRNA_operons	26	16630	0.0	1.0	sites_in=0/26 (0.00%), callable_in=68/16630 (0.41%)	1.0
+motif:CGTCGAG@6	KS_coordinate_vs_callable	17	8334	0.1398	0.8497150143175969		1.0
+motif:CGTCGAG@6	window50kb_overdispersion_MC	17	8334	171.1	0.463768115942029	df=173; chi2 asymptotic p=0.527	1.0
+motif:CGTCGAG@6	core_vs_arm	17	8334	0.9236	1.0	sites_in=11/17 (64.71%), callable_in=5542/8334 (66.50%)	1.0
+motif:CGTCGAG@6	overlap:antiSMASH_29_regions	17	8334	0.3936	0.497367027023478	sites_in=1/17 (5.88%), callable_in=1142/8334 (13.70%)	1.0
+motif:CGTCGAG@6	overlap:IslandPath_DIMOB_islands	17	8334	0.0	1.0	sites_in=0/17 (0.00%), callable_in=332/8334 (3.98%)	1.0
+motif:CGTCGAG@6	overlap:rRNA_operons	17	8334	52.025	0.02217914111976265	sites_in=1/17 (5.88%), callable_in=10/8334 (0.12%)	0.44358282239525304
+motif:GGGAAA@5	KS_coordinate_vs_callable	6	982	0.2325	0.8364816217398059		1.0
+motif:GGGAAA@5	window50kb_overdispersion_MC	6	982	187.1	0.263368315842079	df=170; chi2 asymptotic p=0.175	0.9889970269102736
+motif:GGGAAA@5	core_vs_arm	6	982	0.2881	0.20006438227557416	sites_in=2/6 (33.33%), callable_in=623/982 (63.44%)	0.9658280523648408
+motif:GGGAAA@5	overlap:antiSMASH_29_regions	6	982	3.3359	0.18075049878300734	sites_in=2/6 (33.33%), callable_in=128/982 (13.03%)	0.9658280523648408
+motif:GGGAAA@5	overlap:IslandPath_DIMOB_islands	6	982	0.0	1.0	sites_in=0/6 (0.00%), callable_in=109/982 (11.10%)	1.0
+motif:GGGAAA@5	overlap:rRNA_operons	6	982	0.0	1.0	sites_in=0/6 (0.00%), callable_in=32/982 (3.26%)	1.0
+motif:CAAT@3	KS_coordinate_vs_callable	11	4090	0.2122	0.6317865276979209		1.0
+motif:CAAT@3	window50kb_overdispersion_MC	11	4090	149.2	0.7661169415292354	df=173; chi2 asymptotic p=0.904	1.0
+motif:CAAT@3	core_vs_arm	11	4090	0.438	0.20452656702946204	sites_in=5/11 (45.45%), callable_in=2681/4090 (65.55%)	0.976149524458796
+motif:CAAT@3	overlap:antiSMASH_29_regions	11	4090	0.7067	1.0	sites_in=1/11 (9.09%), callable_in=507/4090 (12.40%)	1.0
+motif:CAAT@3	overlap:IslandPath_DIMOB_islands	11	4090	0.0	0.3790337694204685	sites_in=0/11 (0.00%), callable_in=516/4090 (12.62%)	1.0
+motif:CAAT@3	overlap:rRNA_operons	11	4090	0.0	1.0	sites_in=0/11 (0.00%), callable_in=136/4090 (3.33%)	1.0
+motif:TCAGCTC@3	KS_coordinate_vs_callable	8	2130	0.2952	0.40971356765961164		1.0
+motif:TCAGCTC@3	window50kb_overdispersion_MC	8	2130	181.8	0.2958520739630185	df=173; chi2 asymptotic p=0.308	1.0
+motif:TCAGCTC@3	core_vs_arm	8	2130	0.4276	0.2513717931136359	sites_in=4/8 (50.00%), callable_in=1492/2130 (70.05%)	0.9889970269102736
+motif:TCAGCTC@3	overlap:antiSMASH_29_regions	8	2130	0.0	0.6065697749091168	sites_in=0/8 (0.00%), callable_in=266/2130 (12.49%)	1.0
+motif:TCAGCTC@3	overlap:IslandPath_DIMOB_islands	8	2130	2.9621	0.3160893272605604	sites_in=1/8 (12.50%), callable_in=98/2130 (4.60%)	1.0
+motif:TCAGCTC@3	overlap:rRNA_operons	8	2130	0.0	1.0	sites_in=0/8 (0.00%), callable_in=6/2130 (0.28%)	1.0
+motif:AGACGCC@1	KS_coordinate_vs_callable	7	1585	0.2673	0.6075149821356853		1.0
+motif:AGACGCC@1	window50kb_overdispersion_MC	7	1585	131.7	0.968015992003998	df=173; chi2 asymptotic p=0.992	1.0
+motif:AGACGCC@1	core_vs_arm	7	1585	0.6235	0.6864112001675984	sites_in=4/7 (57.14%), callable_in=1080/1585 (68.14%)	1.0
+motif:AGACGCC@1	overlap:antiSMASH_29_regions	7	1585	0.0	0.6036154933586709	sites_in=0/7 (0.00%), callable_in=212/1585 (13.38%)	1.0
+motif:AGACGCC@1	overlap:IslandPath_DIMOB_islands	7	1585	0.0	1.0	sites_in=0/7 (0.00%), callable_in=80/1585 (5.05%)	1.0
+motif:AGACGCC@1	overlap:rRNA_operons	7	1585	0.0	1.0	sites_in=0/7 (0.00%), callable_in=1/1585 (0.06%)	1.0
+motif:CGGGTAC@6	KS_coordinate_vs_callable	8	2208	0.216	0.7779866300157082		1.0
+motif:CGGGTAC@6	window50kb_overdispersion_MC	8	2208	144.4	0.9030484757621189	df=173; chi2 asymptotic p=0.944	1.0
+motif:CGGGTAC@6	core_vs_arm	8	2208	1.6	0.7215566405574143	sites_in=6/8 (75.00%), callable_in=1440/2208 (65.22%)	1.0
+motif:CGGGTAC@6	overlap:antiSMASH_29_regions	8	2208	0.0	0.6066490886801856	sites_in=0/8 (0.00%), callable_in=281/2208 (12.73%)	1.0
+motif:CGGGTAC@6	overlap:IslandPath_DIMOB_islands	8	2208	0.0	1.0	sites_in=0/8 (0.00%), callable_in=79/2208 (3.58%)	1.0
+motif:CGGGTAC@6	overlap:rRNA_operons	8	2208	0.0	1.0	sites_in=0/8 (0.00%), callable_in=18/2208 (0.82%)	1.0
+motif:AGGAC@1	KS_coordinate_vs_callable	37	30406	0.1441	0.3885831936201358		1.0
+motif:AGGAC@1	window50kb_overdispersion_MC	37	30406	164.9	0.6281859070464768	df=173; chi2 asymptotic p=0.658	1.0
+motif:AGGAC@1	core_vs_arm	37	30406	0.5856	0.11595186770394983	sites_in=20/37 (54.05%), callable_in=20301/30406 (66.77%)	0.8782354938706745
+motif:AGGAC@1	overlap:antiSMASH_29_regions	37	30406	0.5974	0.6202212174018077	sites_in=3/37 (8.11%), callable_in=3913/30406 (12.87%)	1.0
+motif:AGGAC@1	overlap:IslandPath_DIMOB_islands	37	30406	0.5768	1.0	sites_in=1/37 (2.70%), callable_in=1397/30406 (4.59%)	1.0
+motif:AGGAC@1	overlap:rRNA_operons	37	30406	0.0	1.0	sites_in=0/37 (0.00%), callable_in=120/30406 (0.39%)	1.0
+motif:CCAA@4	KS_coordinate_vs_callable	30	23051	0.1458	0.5007457346000892		1.0
+motif:CCAA@4	window50kb_overdispersion_MC	30	23051	154.0	0.8395802098950524	df=173; chi2 asymptotic p=0.847	1.0
+motif:CCAA@4	core_vs_arm	30	23051	0.7983	0.5587062317418126	sites_in=19/30 (63.33%), callable_in=15765/23051 (68.39%)	1.0
+motif:CCAA@4	overlap:antiSMASH_29_regions	30	23051	0.7767	1.0	sites_in=3/30 (10.00%), callable_in=2885/23051 (12.52%)	1.0
+motif:CCAA@4	overlap:IslandPath_DIMOB_islands	30	23051	0.8982	1.0	sites_in=2/30 (6.67%), callable_in=1698/23051 (7.37%)	1.0
+motif:CCAA@4	overlap:rRNA_operons	30	23051	0.0	1.0	sites_in=0/30 (0.00%), callable_in=233/23051 (1.01%)	1.0
+motif:AACTCGC@2	KS_coordinate_vs_callable	6	1340	0.6179	0.009763008784637553		0.25627898059673576
+motif:AACTCGC@2	window50kb_overdispersion_MC	6	1340	152.1	0.7006496751624188	df=173; chi2 asymptotic p=0.871	1.0
+motif:AACTCGC@2	core_vs_arm	6	1340	0.2605	0.18973103147558784	sites_in=2/6 (33.33%), callable_in=881/1340 (65.75%)	0.9658280523648408
+motif:AACTCGC@2	overlap:antiSMASH_29_regions	6	1340	1.1886	1.0	sites_in=1/6 (16.67%), callable_in=193/1340 (14.40%)	1.0
+motif:AACTCGC@2	overlap:IslandPath_DIMOB_islands	6	1340	0.0	1.0	sites_in=0/6 (0.00%), callable_in=55/1340 (4.10%)	1.0
+motif:AACTCGC@2	overlap:rRNA_operons	6	1340	0.0	1.0	sites_in=0/6 (0.00%), callable_in=20/1340 (1.49%)	1.0
+motif:CAGCTCC@2	KS_coordinate_vs_callable	11	4751	0.2904	0.25763370263141416		0.9889970269102736
+motif:CAGCTCC@2	window50kb_overdispersion_MC	11	4751	156.6	0.7456271864067966	df=173; chi2 asymptotic p=0.809	1.0
+motif:CAGCTCC@2	core_vs_arm	11	4751	0.3771	0.10866093977217314	sites_in=5/11 (45.45%), callable_in=3271/4751 (68.85%)	0.8610866925342022
+motif:CAGCTCC@2	overlap:antiSMASH_29_regions	11	4751	0.6565	1.0	sites_in=1/11 (9.09%), callable_in=628/4751 (13.22%)	1.0
+motif:CAGCTCC@2	overlap:IslandPath_DIMOB_islands	11	4751	0.0	1.0	sites_in=0/11 (0.00%), callable_in=163/4751 (3.43%)	1.0
+motif:CAGCTCC@2	overlap:rRNA_operons	11	4751	0.0	1.0	sites_in=0/11 (0.00%), callable_in=8/4751 (0.17%)	1.0
+motif:ACAA@4	KS_coordinate_vs_callable	23	16022	0.1963	0.29733201384194496		1.0
+motif:ACAA@4	window50kb_overdispersion_MC	23	16022	226.7	0.019490254872563718	df=173; chi2 asymptotic p=0.00384	0.4092953523238381
+motif:ACAA@4	core_vs_arm	23	16022	0.5843	0.2576614264106734	sites_in=13/23 (56.52%), callable_in=11054/16022 (68.99%)	0.9889970269102736
+motif:ACAA@4	overlap:antiSMASH_29_regions	23	16022	0.0	0.10181085095875878	sites_in=0/23 (0.00%), callable_in=1900/16022 (11.86%)	0.8516895398454619
+motif:ACAA@4	overlap:IslandPath_DIMOB_islands	23	16022	0.0	0.4002693964426066	sites_in=0/23 (0.00%), callable_in=1082/16022 (6.75%)	1.0
+motif:ACAA@4	overlap:rRNA_operons	23	16022	0.0	1.0	sites_in=0/23 (0.00%), callable_in=246/16022 (1.54%)	1.0
+motif:CAGGTGCC@2	KS_coordinate_vs_callable	5	885	0.3153	0.6037225541989863		1.0
+motif:CAGGTGCC@2	window50kb_overdispersion_MC	5	885	185.3	0.3148425787106447	df=172; chi2 asymptotic p=0.23	1.0
+motif:CAGGTGCC@2	core_vs_arm	5	885	2.7173	0.6534695018988239	sites_in=4/5 (80.00%), callable_in=527/885 (59.55%)	1.0
+motif:CAGGTGCC@2	overlap:antiSMASH_29_regions	5	885	0.0	1.0	sites_in=0/5 (0.00%), callable_in=118/885 (13.33%)	1.0
+motif:CAGGTGCC@2	overlap:IslandPath_DIMOB_islands	5	885	0.0	1.0	sites_in=0/5 (0.00%), callable_in=37/885 (4.18%)	1.0
+motif:CAGGTGCC@2	overlap:rRNA_operons	5	885	0.0	1.0	sites_in=0/5 (0.00%), callable_in=1/885 (0.11%)	1.0

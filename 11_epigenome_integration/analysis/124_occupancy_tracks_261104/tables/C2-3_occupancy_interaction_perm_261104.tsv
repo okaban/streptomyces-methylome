@@ -1,0 +1,4 @@
+motif	n_occ	n_unocc	mean_level_occupied	mean_level_unoccupied	diff	p_perm_GCstratified	mde_abs_diff
+4mC_TGGCCGGC	36	46	0.67626	0.62965	0.04661	0.03898	-0.0408 to 0.0436
+4mC_AAGCCCG	50	63	0.52177	0.49081	0.03096	0.54923	-0.0387 to 0.0653
+6mA_AAGCCCG	50	64	0.34799	0.32943	0.01856	0.37031	-0.0585 to 0.0470

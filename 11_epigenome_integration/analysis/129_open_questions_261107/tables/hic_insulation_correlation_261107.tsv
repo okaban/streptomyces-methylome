@@ -1,0 +1,10 @@
+tp	metric	n_bins	spearman_rho	p	partial_rho_GCdepth	partial_p	phase
+T1	unassigned 6mA site density per 10kb bin	847	0.0937	0.006377224018046015	-0.0123	0.7197073640119106	L
+T1	AAGCCCG A1 occupancy per 10kb bin	159	-0.0064	0.936239171187683			L
+T2	unassigned 6mA site density per 10kb bin	847	0.0523	0.12804592309847893	-0.0056	0.8706537585679059	L
+T2	AAGCCCG A1 occupancy per 10kb bin	159	0.0685	0.39097044035478695			L
+T3	unassigned 6mA site density per 10kb bin	847	0.0554	0.10687897955070699	-0.0107	0.755209762279691	L
+T3	AAGCCCG A1 occupancy per 10kb bin	159	0.0153	0.8482642570971796			L
+T1	unassigned 6mA site density per 10kb bin	847	0.0541	0.11584488097971907	-0.0272	0.4283654227732224	M
+T2	unassigned 6mA site density per 10kb bin	847	0.0306	0.3737093038007793	-0.0172	0.6175799749193911	M
+T3	unassigned 6mA site density per 10kb bin	847	0.0324	0.3461682761389219	-0.0322	0.34929004633379374	M

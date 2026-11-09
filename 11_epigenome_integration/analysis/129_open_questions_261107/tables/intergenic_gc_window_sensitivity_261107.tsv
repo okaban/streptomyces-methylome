@@ -1,0 +1,22 @@
+tp	contrast	gc_window	strata	MH_OR	lo	hi
+T1	divergent vs genic	+-25 bp	GC x depth (5x5)	1.206	0.888	1.637
+T1	convergent vs genic	+-25 bp	GC x depth (5x5)	2.223	1.735	2.849
+T1	tandem vs genic	+-25 bp	GC x depth (5x5)	2.236	1.906	2.624
+T1	convergent_vs_divergent	+-25 bp	GC x depth x gap-length x dist-to-edge (4 quartiles)	2.398	1.579	3.643
+T1	convergent_vs_tandem	+-25 bp	GC x depth x gap-length x dist-to-edge (4 quartiles)	1.058	0.791	1.414
+T1	convergent vs all other intergenic	+-25 bp	GC x depth (5x5)	1.209	0.915	1.598
+T1	convergent vs all other intergenic	+-250 bp	GC x depth (5x5)	1.582	1.191	2.101
+T2	divergent vs genic	+-25 bp	GC x depth (5x5)	1.128	0.834	1.525
+T2	convergent vs genic	+-25 bp	GC x depth (5x5)	2.432	1.938	3.053
+T2	tandem vs genic	+-25 bp	GC x depth (5x5)	2.082	1.779	2.436
+T2	convergent_vs_divergent	+-25 bp	GC x depth x gap-length x dist-to-edge (4 quartiles)	2.609	1.73	3.935
+T2	convergent_vs_tandem	+-25 bp	GC x depth x gap-length x dist-to-edge (4 quartiles)	1.199	0.912	1.576
+T2	convergent vs all other intergenic	+-25 bp	GC x depth (5x5)	1.429	1.1	1.855
+T2	convergent vs all other intergenic	+-250 bp	GC x depth (5x5)	1.818	1.395	2.368
+T3	divergent vs genic	+-25 bp	GC x depth (5x5)	1.261	0.961	1.653
+T3	convergent vs genic	+-25 bp	GC x depth (5x5)	2.482	2.002	3.078
+T3	tandem vs genic	+-25 bp	GC x depth (5x5)	2.019	1.734	2.351
+T3	convergent_vs_divergent	+-25 bp	GC x depth x gap-length x dist-to-edge (4 quartiles)	2.16	1.489	3.135
+T3	convergent_vs_tandem	+-25 bp	GC x depth x gap-length x dist-to-edge (4 quartiles)	1.249	0.96	1.624
+T3	convergent vs all other intergenic	+-25 bp	GC x depth (5x5)	1.463	1.142	1.875
+T3	convergent vs all other intergenic	+-250 bp	GC x depth (5x5)	1.877	1.461	2.411

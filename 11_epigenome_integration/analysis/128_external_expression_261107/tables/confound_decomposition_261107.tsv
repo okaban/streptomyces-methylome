@@ -1,0 +1,57 @@
+dataset	gene_set	exposure	covariates	n	rho	p	rho_floor
+GSE132487	all_chromosomal_genes	levelkb_4mC_T1	none	7532	0.0899888	5.09871e-15	0.0322763
+GSE132487	all_chromosomal_genes	levelkb_4mC_T1	gc	7532	0.0935908	3.98587e-16	0.0322785
+GSE132487	all_chromosomal_genes	levelkb_4mC_T1	length_bp	7532	0.0276215	0.0165188	0.0322785
+GSE132487	all_chromosomal_genes	levelkb_4mC_T1	dist_oriC	7532	0.0910674	2.40167e-15	0.0322785
+GSE132487	all_chromosomal_genes	levelkb_4mC_T1	gene_density	7532	0.0888645	1.10717e-14	0.0322785
+GSE132487	all_chromosomal_genes	levelkb_4mC_T1	length_bp+gc+dist_oriC+gene_density	7532	0.0201	0.0811054	0.0322849
+GSE132487	all_chromosomal_genes	levelkb_4mC_T1	[check] rho(length_bp, exposure)	7532	0.224448	1.23601e-86	
+GSE132487	all_chromosomal_genes	levelkb_4mC_T1	[check] rho(length_bp, expression)	7532	0.28602	8.95249e-142	
+GSE132487	all_chromosomal_genes	levelkb_4mC_T1	[check] rho(gc, exposure)	7532	0.0166484	0.148535	
+GSE132487	all_chromosomal_genes	levelkb_4mC_T1	[check] rho(gc, expression)	7532	-0.151066	1.08277e-39	
+GSE132487	all_chromosomal_genes	levelkb_4mC_T1	[check] rho(dist_oriC, exposure)	7532	-0.0116645	0.311444	
+GSE132487	all_chromosomal_genes	levelkb_4mC_T1	[check] rho(dist_oriC, expression)	7532	-0.320875	6.19712e-180	
+GSE132487	all_chromosomal_genes	levelkb_4mC_T1	[check] rho(gene_density, exposure)	7532	-0.039158	0.00067597	
+GSE132487	all_chromosomal_genes	levelkb_4mC_T1	[check] rho(gene_density, expression)	7532	-0.0315852	0.00611752	
+THIS_STUDY	all_chromosomal_genes	levelkb_4mC_T1	none	7395	0.0844528	3.4843e-13	0.0325739
+THIS_STUDY	all_chromosomal_genes	levelkb_4mC_T1	gc	7395	0.0865194	9.13233e-14	0.0325761
+THIS_STUDY	all_chromosomal_genes	levelkb_4mC_T1	length_bp	7395	0.0405941	0.000479954	0.0325761
+THIS_STUDY	all_chromosomal_genes	levelkb_4mC_T1	dist_oriC	7395	0.0866213	8.5417e-14	0.0325761
+THIS_STUDY	all_chromosomal_genes	levelkb_4mC_T1	gene_density	7395	0.0838112	5.24625e-13	0.0325761
+THIS_STUDY	all_chromosomal_genes	levelkb_4mC_T1	length_bp+gc+dist_oriC+gene_density	7395	0.0363574	0.00176581	0.0325827
+THIS_STUDY	all_chromosomal_genes	levelkb_4mC_T1	[check] rho(length_bp, exposure)	7395	0.221485	7.43352e-83	
+THIS_STUDY	all_chromosomal_genes	levelkb_4mC_T1	[check] rho(length_bp, expression)	7395	0.206422	5.57517e-72	
+THIS_STUDY	all_chromosomal_genes	levelkb_4mC_T1	[check] rho(gc, exposure)	7395	0.0166739	0.151654	
+THIS_STUDY	all_chromosomal_genes	levelkb_4mC_T1	[check] rho(gc, expression)	7395	-0.0981618	2.66562e-17	
+THIS_STUDY	all_chromosomal_genes	levelkb_4mC_T1	[check] rho(dist_oriC, exposure)	7395	-0.00765939	0.510178	
+THIS_STUDY	all_chromosomal_genes	levelkb_4mC_T1	[check] rho(dist_oriC, expression)	7395	-0.322866	5.37232e-179	
+THIS_STUDY	all_chromosomal_genes	levelkb_4mC_T1	[check] rho(gene_density, exposure)	7395	-0.0400604	0.000569449	
+THIS_STUDY	all_chromosomal_genes	levelkb_4mC_T1	[check] rho(gene_density, expression)	7395	-0.0180343	0.120971	
+GSE174192	regulatory_n1051	levelkb_6mA_T1	none	1003	-0.116312	0.000222891	0.0883628
+GSE174192	regulatory_n1051	levelkb_6mA_T1	gc	1003	-0.0563835	0.0742828	0.0884068
+GSE174192	regulatory_n1051	levelkb_6mA_T1	length_bp	1003	-0.0927728	0.00327353	0.0884068
+GSE174192	regulatory_n1051	levelkb_6mA_T1	dist_oriC	1003	-0.109992	0.000483555	0.0884068
+GSE174192	regulatory_n1051	levelkb_6mA_T1	gene_density	1003	-0.11536	0.000251104	0.0884068
+GSE174192	regulatory_n1051	levelkb_6mA_T1	length_bp+gc+dist_oriC+gene_density	1003	-0.0452777	0.151886	0.0885392
+GSE174192	regulatory_n1051	levelkb_6mA_T1	[check] rho(length_bp, exposure)	1003	0.191804	9.1345e-10	
+GSE174192	regulatory_n1051	levelkb_6mA_T1	[check] rho(length_bp, expression)	1003	-0.136122	1.52e-05	
+GSE174192	regulatory_n1051	levelkb_6mA_T1	[check] rho(gc, exposure)	1003	0.199268	1.92842e-10	
+GSE174192	regulatory_n1051	levelkb_6mA_T1	[check] rho(gc, expression)	1003	-0.321099	1.73197e-25	
+GSE174192	regulatory_n1051	levelkb_6mA_T1	[check] rho(dist_oriC, exposure)	1003	0.0404305	0.200767	
+GSE174192	regulatory_n1051	levelkb_6mA_T1	[check] rho(dist_oriC, expression)	1003	-0.234025	6.0572e-14	
+GSE174192	regulatory_n1051	levelkb_6mA_T1	[check] rho(gene_density, exposure)	1003	0.0199366	0.528255	
+GSE174192	regulatory_n1051	levelkb_6mA_T1	[check] rho(gene_density, expression)	1003	-0.0589675	0.0619287	
+THIS_STUDY	regulatory_n1051	levelkb_6mA_T1	none	994	-0.0273611	0.388847	0.0887611
+THIS_STUDY	regulatory_n1051	levelkb_6mA_T1	gc	994	-0.00578491	0.855459	0.0888057
+THIS_STUDY	regulatory_n1051	levelkb_6mA_T1	length_bp	994	-0.0611655	0.0538813	0.0888057
+THIS_STUDY	regulatory_n1051	levelkb_6mA_T1	dist_oriC	994	-0.0153714	0.628354	0.0888057
+THIS_STUDY	regulatory_n1051	levelkb_6mA_T1	gene_density	994	-0.0259203	0.414318	0.0888057
+THIS_STUDY	regulatory_n1051	levelkb_6mA_T1	length_bp+gc+dist_oriC+gene_density	994	-0.0223852	0.480837	0.0889398
+THIS_STUDY	regulatory_n1051	levelkb_6mA_T1	[check] rho(length_bp, exposure)	994	0.188879	1.95452e-09	
+THIS_STUDY	regulatory_n1051	levelkb_6mA_T1	[check] rho(length_bp, expression)	994	0.168593	8.94318e-08	
+THIS_STUDY	regulatory_n1051	levelkb_6mA_T1	[check] rho(gc, exposure)	994	0.19872	2.60785e-10	
+THIS_STUDY	regulatory_n1051	levelkb_6mA_T1	[check] rho(gc, expression)	994	-0.109327	0.000554673	
+THIS_STUDY	regulatory_n1051	levelkb_6mA_T1	[check] rho(dist_oriC, exposure)	994	0.0397114	0.21096	
+THIS_STUDY	regulatory_n1051	levelkb_6mA_T1	[check] rho(dist_oriC, expression)	994	-0.322951	1.459e-25	
+THIS_STUDY	regulatory_n1051	levelkb_6mA_T1	[check] rho(gene_density, exposure)	994	0.021792	0.492543	
+THIS_STUDY	regulatory_n1051	levelkb_6mA_T1	[check] rho(gene_density, expression)	994	-0.0692515	0.0290196	

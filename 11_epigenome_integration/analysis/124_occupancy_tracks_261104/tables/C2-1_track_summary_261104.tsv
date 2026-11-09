@@ -1,0 +1,23 @@
+track	protein	series	condition	n_peaks	median_width	total_bp	pct_genome	resolution	note
+Gbn_25h	Gbn (NAP)	GSE165795	25h culture	2825	245	852155	9.832	MACS2 peak	NC_003888.3 native; summit-called
+Gbn_48h	Gbn (NAP)	GSE165795	48h culture	2919	291	1057801	12.204	MACS2 peak	NC_003888.3 native; summit-called
+TF_SCO3632	SCO3632 (FLAG ChIP-seq)	GSE337352	M145 liquid culture	57	288	17192	0.198	MACS narrowPeak	AL645882 == NC_003888.3 (md5 identical)
+TF_SCO2243	SCO2243 (FLAG ChIP-seq)	GSE337352	M145 liquid culture	114	211	31524	0.364	MACS narrowPeak	AL645882 == NC_003888.3 (md5 identical)
+TF_SCO3320	SCO3320 (FLAG ChIP-seq)	GSE337352	M145 liquid culture	55	328	23533	0.272	MACS narrowPeak	AL645882 == NC_003888.3 (md5 identical)
+TF_SCO3699	SCO3699 (FLAG ChIP-seq)	GSE337352	M145 liquid culture	2	580	1160	0.013	MACS narrowPeak	AL645882 == NC_003888.3 (md5 identical)
+TF_SCO4158	SCO4158 (FLAG ChIP-seq)	GSE337352	M145 liquid culture	13	363	4872	0.056	MACS narrowPeak	AL645882 == NC_003888.3 (md5 identical)
+TF_SCO1145	SCO1145 (FLAG ChIP-seq)	GSE337352	M145 liquid culture	283	402	588391	6.788	MACS narrowPeak	AL645882 == NC_003888.3 (md5 identical)
+TF_SCO1186	SCO1186 (FLAG ChIP-seq)	GSE337352	M145 liquid culture	349	207	92092	1.062	MACS narrowPeak	AL645882 == NC_003888.3 (md5 identical)
+TF_SCO1262	SCO1262 (FLAG ChIP-seq)	GSE337352	M145 liquid culture	268	404	273227	3.152	MACS narrowPeak	AL645882 == NC_003888.3 (md5 identical)
+TF_SCO3668	SCO3668 (FLAG ChIP-seq)	GSE337352	M145 liquid culture	10	254	2389	0.028	MACS narrowPeak	AL645882 == NC_003888.3 (md5 identical)
+TF_SCO3696	SCO3696 (FLAG ChIP-seq)	GSE337352	M145 liquid culture	26	248	7965	0.092	MACS narrowPeak	AL645882 == NC_003888.3 (md5 identical)
+TF_SCO5231	SCO5231 (FLAG ChIP-seq)	GSE337352	M145 liquid culture	113	248	40386	0.466	MACS narrowPeak	AL645882 == NC_003888.3 (md5 identical)
+RokL6_M24	RokL6 (SCO1447)	GSE234438	M24	278	812	262890	3.033	MACS2 peak	NC_003888.3 native
+RokL6_M48	RokL6 (SCO1447)	GSE234438	M48	1	420	420	0.005	MACS2 peak	NC_003888.3 native
+RokL6_G24	RokL6 (SCO1447)	GSE234438	G24	1	436	436	0.005	MACS2 peak	NC_003888.3 native
+RokL6_G48	RokL6 (SCO1447)	GSE234438	G48	1	455	455	0.005	MACS2 peak	NC_003888.3 native
+ScbR_30h	ScbR	GSE64903	30h	144	2430	375481	4.332	MACS1 peak	NC_003888.3 (gi|32141095 header)
+ScbR2_42h	ScbR2	GSE64903	42h	491	1471	798609	9.214	MACS1 peak	NC_003888.3 (gi|32141095 header)
+TF_union_11	union of 11 FLAG-ChIP TFs	GSE337352	M145 liquid culture	680	235	238882	2.756	MACS narrowPeak (merged union)	derived; AL645882==NC_003888.3
+Gbn_union	Gbn (NAP), 25h+48h union	GSE165795	union	2974	261	926122	10.685	MACS2 peak (merged union)	derived
+HupA_thio0_1_PROV	HupA (NAP) — provisional, this lane	PRJEB50438 / E-MTAB-11369	thio0 rep1 vs untagged PS04 rep1	1955	412	1101630	12.71	MACS2 BAMPE q<0.01 (our call)	PROVISIONAL: 1 replicate, first 4M read pairs per mate, our own alignment+peak call

@@ -1,0 +1,67 @@
+timepoint	model	se	OR	CI_low	CI_high	p	n	n_genes	optimiser	converged	formula
+T1	M0_crude	plain	4.7983	3.3995	6.7728	4.728268352395217e-19	1156	1019	newton	True	modified ~ sense
+T1	M0_crude	cluster_gene	4.7983	3.384	6.8038	1.3453864347215074e-18	1156	1019	newton	True	modified ~ sense
+T1	M1_5prime_only	plain	1.7763	1.179	2.6761	0.0060069891513355395	1156	1019	newton	True	modified ~ sense + C(Lm1)
+T1	M1_5prime_only	cluster_gene	1.7763	1.173	2.6899	0.00665613355745951	1156	1019	newton	True	modified ~ sense + C(Lm1)
+T1	M3_flank9	plain	2.0443	1.2961	3.2245	0.002102388668006377	1156	1019	newton	True	modified ~ sense + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T1	M3_flank9	cluster_gene	2.0443	1.2685	3.2947	0.0033185251278158847	1156	1019	newton	True	modified ~ sense + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T1	M4_flank9_phase	plain	2.5497	1.3667	4.757	0.0032644271621928844	1156	1019	bfgs	True	modified ~ sense + C(codon_phase) + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T1	M4_flank9_phase	cluster_gene	2.5497	1.3713	4.7407	0.003097165958068945	1156	1019	bfgs	True	modified ~ sense + C(codon_phase) + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T1	M5_S8_adjusted	plain	2.8943	1.5115	5.5423	0.0013448510049766213	1156	1019	newton	True	modified ~ sense + C(codon_phase) + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T1	M5_S8_adjusted	cluster_gene	2.8943	1.4985	5.5905	0.0015555686761028543	1156	1019	newton	True	modified ~ sense + C(codon_phase) + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T1	M6_S8_plus_leading	plain	2.8338	1.4815	5.4205	0.0016455290932015103	1156	1019	bfgs	True	modified ~ sense + leading + C(codon_phase) + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T1	M6_S8_plus_leading	cluster_gene	2.8338	1.4753	5.4432	0.001762946051550073	1156	1019	bfgs	True	modified ~ sense + leading + C(codon_phase) + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T1	M7_S8_plus_lead_depth	plain	2.8189	1.4708	5.4025	0.001794158167005337	1156	1019	newton	True	modified ~ sense + leading + logdepth + C(codon_phase) + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T1	M7_S8_plus_lead_depth	cluster_gene	2.8189	1.4627	5.4324	0.0019607970913589224	1156	1019	newton	True	modified ~ sense + leading + logdepth + C(codon_phase) + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T1	M8_129lane	plain	1.9853	1.2956	3.0424	0.0016384013727533946	1156	1019	newton	True	modified ~ sense + leading + C(Lm1) + gc501 + logdepth
+T1	M8_129lane	cluster_gene	1.9853	1.2921	3.0504	0.0017508090856648475	1156	1019	newton	True	modified ~ sense + leading + C(Lm1) + gc501 + logdepth
+T1	M9_129_minus_leading	plain	2.0076	1.311	3.0742	0.0013486670678462594	1156	1019	newton	True	modified ~ sense + C(Lm1) + gc501 + logdepth
+T1	M9_129_minus_leading	cluster_gene	2.0076	1.3037	3.0913	0.0015546649906397223	1156	1019	newton	True	modified ~ sense + C(Lm1) + gc501 + logdepth
+T1	M5b_flank9_GC_nophase	plain	2.2256	1.3892	3.5657	0.0008776835328058186	1156	1019	newton	True	modified ~ sense + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T1	M5b_flank9_GC_nophase	cluster_gene	2.2256	1.349	3.672	0.0017373044212214653	1156	1019	newton	True	modified ~ sense + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T1	M5c_flank9_GC_nophase_lead	plain	2.2083	1.377	3.5416	0.0010117142602773957	1156	1019	newton	True	modified ~ sense + leading + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T1	M5c_flank9_GC_nophase_lead	cluster_gene	2.2083	1.3364	3.6492	0.0019919817991296126	1156	1019	newton	True	modified ~ sense + leading + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T2	M0_crude	plain	4.535	3.2712	6.287	1.1780388034003912e-19	1158	1021	newton	True	modified ~ sense
+T2	M0_crude	cluster_gene	4.535	3.2588	6.3111	3.068931147292399e-19	1158	1021	newton	True	modified ~ sense
+T2	M1_5prime_only	plain	1.8866	1.2856	2.7685	0.0011785950749803827	1158	1021	newton	True	modified ~ sense + C(Lm1)
+T2	M1_5prime_only	cluster_gene	1.8866	1.2821	2.7761	0.0012775272844479516	1158	1021	newton	True	modified ~ sense + C(Lm1)
+T2	M3_flank9	plain	2.0155	1.3148	3.0897	0.0013015266035120788	1158	1021	newton	True	modified ~ sense + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T2	M3_flank9	cluster_gene	2.0155	1.295	3.137	0.001900758564333658	1158	1021	newton	True	modified ~ sense + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T2	M4_flank9_phase	plain	2.5785	1.4083	4.721	0.0021448128986615977	1158	1021	bfgs	True	modified ~ sense + C(codon_phase) + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T2	M4_flank9_phase	cluster_gene	2.5785	1.3937	4.7703	0.0025476124298081434	1158	1021	bfgs	True	modified ~ sense + C(codon_phase) + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T2	M5_S8_adjusted	plain	2.9597	1.5751	5.5614	0.000747327021964384	1158	1021	newton	True	modified ~ sense + C(codon_phase) + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T2	M5_S8_adjusted	cluster_gene	2.9597	1.5731	5.5685	0.0007660033076971318	1158	1021	newton	True	modified ~ sense + C(codon_phase) + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T2	M6_S8_plus_leading	plain	2.913	1.5516	5.4689	0.0008784976587483003	1158	1021	bfgs	True	modified ~ sense + leading + C(codon_phase) + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T2	M6_S8_plus_leading	cluster_gene	2.913	1.5584	5.445	0.0008079953281749189	1158	1021	bfgs	True	modified ~ sense + leading + C(codon_phase) + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T2	M7_S8_plus_lead_depth	plain	2.894	1.5419	5.4319	0.0009401875080735271	1158	1021	bfgs	True	modified ~ sense + leading + logdepth + C(codon_phase) + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T2	M7_S8_plus_lead_depth	cluster_gene	2.894	1.5481	5.4102	0.000871641531256968	1158	1021	bfgs	True	modified ~ sense + leading + logdepth + C(codon_phase) + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T2	M8_129lane	plain	2.1493	1.443	3.2011	0.0001670413724590751	1158	1021	newton	True	modified ~ sense + leading + C(Lm1) + gc501 + logdepth
+T2	M8_129lane	cluster_gene	2.1493	1.4495	3.1867	0.00014045387210787202	1158	1021	newton	True	modified ~ sense + leading + C(Lm1) + gc501 + logdepth
+T2	M9_129_minus_leading	plain	2.1819	1.466	3.2476	0.00012046675125137386	1158	1021	newton	True	modified ~ sense + C(Lm1) + gc501 + logdepth
+T2	M9_129_minus_leading	cluster_gene	2.1819	1.4666	3.2462	0.00011841035013798116	1158	1021	newton	True	modified ~ sense + C(Lm1) + gc501 + logdepth
+T2	M5b_flank9_GC_nophase	plain	2.2007	1.4151	3.4223	0.0004634927439783307	1158	1021	newton	True	modified ~ sense + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T2	M5b_flank9_GC_nophase	cluster_gene	2.2007	1.3913	3.4809	0.0007476784942467711	1158	1021	newton	True	modified ~ sense + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T2	M5c_flank9_GC_nophase_lead	plain	2.1961	1.4103	3.4199	0.0004990095999419778	1158	1021	newton	True	modified ~ sense + leading + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T2	M5c_flank9_GC_nophase_lead	cluster_gene	2.1961	1.3888	3.4727	0.0007656193582124454	1158	1021	newton	True	modified ~ sense + leading + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T3	M0_crude	plain	4.4902	3.2146	6.2718	1.2668810124820683e-18	1157	1020	newton	True	modified ~ sense
+T3	M0_crude	cluster_gene	4.4902	3.1987	6.3031	3.977295822617985e-18	1157	1020	newton	True	modified ~ sense
+T3	M1_5prime_only	plain	2.0063	1.3584	2.9633	0.00046633350971773783	1157	1020	newton	True	modified ~ sense + C(Lm1)
+T3	M1_5prime_only	cluster_gene	2.0063	1.3498	2.9822	0.0005746444804711621	1157	1020	newton	True	modified ~ sense + C(Lm1)
+T3	M3_flank9	plain	2.2211	1.4311	3.4473	0.00037371436862084867	1157	1020	newton	True	modified ~ sense + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T3	M3_flank9	cluster_gene	2.2211	1.3912	3.5461	0.0008289174304294382	1157	1020	newton	True	modified ~ sense + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T3	M4_flank9_phase	plain	3.745	2.032	6.9022	2.3079537526351955e-05	1157	1020	newton	True	modified ~ sense + C(codon_phase) + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T3	M4_flank9_phase	cluster_gene	3.745	1.9871	7.0583	4.4364342877924184e-05	1157	1020	newton	True	modified ~ sense + C(codon_phase) + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T3	M5_S8_adjusted	plain	4.1838	2.2343	7.8343	7.756104270881068e-06	1157	1020	bfgs	True	modified ~ sense + C(codon_phase) + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T3	M5_S8_adjusted	cluster_gene	4.1838	2.1881	7.9997	1.5068440135212217e-05	1157	1020	bfgs	True	modified ~ sense + C(codon_phase) + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T3	M6_S8_plus_leading	plain	4.0877	2.1824	7.6564	1.0962401478584957e-05	1157	1020	newton	True	modified ~ sense + leading + C(codon_phase) + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T3	M6_S8_plus_leading	cluster_gene	4.0877	2.1474	7.781	1.8108103716586043e-05	1157	1020	newton	True	modified ~ sense + leading + C(codon_phase) + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T3	M7_S8_plus_lead_depth	plain	4.0904	2.1879	7.6472	1.02162839000539e-05	1157	1020	bfgs	True	modified ~ sense + leading + logdepth + C(codon_phase) + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T3	M7_S8_plus_lead_depth	cluster_gene	4.0904	2.1696	7.7117	1.3360857088982895e-05	1157	1020	bfgs	True	modified ~ sense + leading + logdepth + C(codon_phase) + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T3	M8_129lane	plain	2.2038	1.4759	3.2907	0.0001119999958401349	1157	1020	newton	True	modified ~ sense + leading + C(Lm1) + gc501 + logdepth
+T3	M8_129lane	cluster_gene	2.2038	1.4768	3.2889	0.0001095043009121055	1157	1020	newton	True	modified ~ sense + leading + C(Lm1) + gc501 + logdepth
+T3	M9_129_minus_leading	plain	2.2437	1.5038	3.3476	7.543188482333497e-05	1157	1020	newton	True	modified ~ sense + C(Lm1) + gc501 + logdepth
+T3	M9_129_minus_leading	cluster_gene	2.2437	1.4994	3.3574	8.505714380129078e-05	1157	1020	newton	True	modified ~ sense + C(Lm1) + gc501 + logdepth
+T3	M5b_flank9_GC_nophase	plain	2.3777	1.5178	3.7248	0.00015556844214476034	1157	1020	newton	True	modified ~ sense + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T3	M5b_flank9_GC_nophase	cluster_gene	2.3777	1.4708	3.8439	0.0004090107154157448	1157	1020	newton	True	modified ~ sense + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T3	M5c_flank9_GC_nophase_lead	plain	2.3668	1.5077	3.7157	0.00018098178929031592	1157	1020	newton	True	modified ~ sense + leading + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)
+T3	M5c_flank9_GC_nophase_lead	cluster_gene	2.3668	1.4617	3.8326	0.0004592948921314146	1157	1020	newton	True	modified ~ sense + leading + gc501 + C(Lm4) + C(Lm3) + C(Lm2) + C(Lm1) + C(Lp1) + C(Lp2) + C(Lp3) + C(Lp4) + C(Lp5)

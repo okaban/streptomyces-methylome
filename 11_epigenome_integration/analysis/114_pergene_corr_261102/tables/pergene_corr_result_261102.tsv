@@ -1,0 +1,7 @@
+region_set	region_label	mark	n_genes	obs_mean_rho	obs_sd_rho	null_mean_rho	null_sd_rho	ks_D	ks_p	n_fdr5_observed	n_fdr5_null_median	n_fdr5_null_max	n_shifts	crit_abs_rho_fdr5	min_attainable_two_sided_p
+prom_jeongtss	promoter -300..TSS, Jeong experimental TSS	4mC	87	0.0068	0.3419	0.0188	0.3631	0.0553	0.942	0	0.0	1	86	0.95	5.51e-06
+prom_jeongtss	promoter -300..TSS, Jeong experimental TSS	6mA	114	-0.0278	0.3331	-0.0204	0.3444	0.054	0.878	0	0.0	1	113	0.95	5.51e-06
+prom_genestart	promoter -300..TSS, annotated gene start	4mC	196	0.0072	0.3414	0.006	0.3616	0.0439	0.83	0	0.0	3	195	0.9667	5.51e-06
+prom_genestart	promoter -300..TSS, annotated gene start	6mA	308	-0.0304	0.3515	-0.0103	0.368	0.0489	0.442	0	0.0	1	200	0.9833	5.51e-06
+body	gene body	4mC	873	0.0076	0.3601	-0.0026	0.3595	0.023	0.737	0	0.0	2	200	0.9833	5.51e-06
+body	gene body	6mA	932	-0.0117	0.3584	-0.006	0.3643	0.0254	0.58	0	0.0	2	200	0.9833	5.51e-06

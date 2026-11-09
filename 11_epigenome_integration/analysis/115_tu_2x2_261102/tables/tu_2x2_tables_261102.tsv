@@ -1,0 +1,5 @@
+mark	criterion	n_TU	meth_moved_and_expr_moved	meth_moved_not_expr	expr_moved_not_meth	neither	chi2	chi2_p	fisher_OR	fisher_p	note
+4mC	FDR 5% one-way ANOVA (culture unit, n=9)	898	0	0	812	86					degenerate: a margin is zero, no test is defined
+4mC	descriptive cutoff (methylation range >= 10 pp; |log2FC| >= 1)	898	58	18	678	144	1.3961	0.23737469717143056	0.6844	0.21083994740651454	
+6mA	FDR 5% one-way ANOVA (culture unit, n=9)	851	0	0	765	86					degenerate: a margin is zero, no test is defined
+6mA	descriptive cutoff (methylation range >= 10 pp; |log2FC| >= 1)	851	81	20	602	148	0.0	1.0	0.9957	1.0	

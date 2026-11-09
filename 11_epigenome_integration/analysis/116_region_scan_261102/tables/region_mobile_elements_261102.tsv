@@ -1,0 +1,43 @@
+part	region	series	n_genes	region_bp	region_gc	region_pct_of_genome	motif_n_total	observed	expected_gcmatched	O_over_E	p_value	mde80_abs_dev_from_1	universe_n	n_near	n_distal	n_cultures	n_genes_with_positions	sd_log_ratio	mde80_ratio	mean_level_near	mean_level_distal	ratio	ci95_lo	ci95_hi	jackknife_min_ratio	jackknife_max_ratio	gc_quantiles	near_positions_per_gc_quintile	mean_local_gc_near	mean_local_gc_distal	timepoint	n_measurable	n_modified	pct_modified	n_measurable_all	pct_modified_all
+3a_motif_placement	mobile_body	4mC, TGGCCGGC C5	105.0	100535.0	0.6856	1.16	2093.0	21.0	19.28	1.089	0.647	0.635																								
+3a_motif_placement	mobile_body	4mC, AAGCCCG C5	105.0	100535.0	0.6856	1.16	1334.0	22.0	17.71	1.242	0.281	0.661																								
+3a_motif_placement	mobile_body	6mA, AAGCCCG A1/A2	105.0	100535.0	0.6856	1.16	2668.0	44.0	35.01	1.257	0.125	0.47																								
+3b_level_ratio	mobile_body	6mA, AAGCCCG A1/A2									1.47e-09		2664.0	44.0	2620.0	9.0	19.0	0.03532	1.0383	0.434846	0.345772	1.4311	1.3928	1.4705	1.3812	1.5095										
+3d_gcmatch_sensitivity	mobile_body	6mA, AAGCCCG A1/A2									2.66e-09			44.0								1.4614	1.4169	1.5074			10.0	32,2,8,0,2	0.6625	0.7137						
+3d_gcmatch_sensitivity	mobile_body	6mA, AAGCCCG A1/A2									2.25e-09			44.0								1.4867	1.4403	1.5346			20.0	32,2,8,0,2	0.6625	0.7137						
+3b_level_ratio	mobile_body	4mC, TGGCCGGC C5									0.00235		2093.0	21.0	2072.0	9.0	20.0	0.02337	1.0252	0.666783	0.639445	1.0347	1.0163	1.0534	1.0193	1.0488										
+3d_gcmatch_sensitivity	mobile_body	4mC, TGGCCGGC C5									0.00231			21.0								1.0333	1.0157	1.0512			10.0	13,2,2,1,3	0.711	0.7341						
+3d_gcmatch_sensitivity	mobile_body	4mC, TGGCCGGC C5									0.00183			21.0								1.0342	1.0168	1.0519			20.0	13,2,2,1,3	0.711	0.7341						
+3b_level_ratio	mobile_body	4mC, AAGCCCG C5									0.0012		1332.0	22.0	1310.0	9.0	19.0	0.01409	1.0151	0.542544	0.542444	0.9773	0.9667	0.9879	0.9642	1.0034										
+3d_gcmatch_sensitivity	mobile_body	4mC, AAGCCCG C5									0.000648			22.0								0.9706	0.9584	0.9831			10.0	16,4,1,0,1	0.6619	0.7137						
+3d_gcmatch_sensitivity	mobile_body	4mC, AAGCCCG C5									0.000257			22.0								0.9675	0.9557	0.9794			20.0	16,4,1,0,1	0.6619	0.7137						
+3a_motif_placement	mobile_body_flank2kb	4mC, TGGCCGGC C5	105.0	380781.0	0.6863	4.393	2093.0	84.0	75.59	1.111	0.319	0.316																								
+3a_motif_placement	mobile_body_flank2kb	4mC, AAGCCCG C5	105.0	380781.0	0.6863	4.393	1334.0	70.0	65.54	1.068	0.568	0.337																								
+3a_motif_placement	mobile_body_flank2kb	6mA, AAGCCCG A1/A2	105.0	380781.0	0.6863	4.393	2668.0	142.0	129.71	1.095	0.261	0.24																								
+3b_level_ratio	mobile_body_flank2kb	6mA, AAGCCCG A1/A2									3e-08		2664.0	142.0	2522.0	9.0	49.0	0.01969	1.0212	0.365611	0.346209	1.1462	1.129	1.1637	1.1092	1.1654										
+3d_gcmatch_sensitivity	mobile_body_flank2kb	6mA, AAGCCCG A1/A2									6.05e-08			142.0								1.1532	1.1334	1.1732			10.0	76,22,22,11,11	0.6789	0.7148						
+3d_gcmatch_sensitivity	mobile_body_flank2kb	6mA, AAGCCCG A1/A2									8.36e-08			142.0								1.155	1.1342	1.1762			20.0	76,22,22,11,11	0.6789	0.7148						
+3b_level_ratio	mobile_body_flank2kb	4mC, TGGCCGGC C5									0.00139		2093.0	84.0	2009.0	9.0	48.0	0.01556	1.0167	0.628728	0.640179	0.9755	0.9639	0.9872	0.9682	0.9817										
+3d_gcmatch_sensitivity	mobile_body_flank2kb	4mC, TGGCCGGC C5									0.000959			84.0								0.9742	0.9627	0.9859			10.0	41,12,11,13,7	0.7087	0.735						
+3d_gcmatch_sensitivity	mobile_body_flank2kb	4mC, TGGCCGGC C5									0.00106			84.0								0.9747	0.9632	0.9863			20.0	41,12,11,13,7	0.7087	0.735						
+3b_level_ratio	mobile_body_flank2kb	4mC, AAGCCCG C5									0.00214		1332.0	70.0	1262.0	9.0	49.0	0.0129	1.0138	0.5407	0.542542	0.981	0.9714	0.9908	0.9719	0.9907										
+3d_gcmatch_sensitivity	mobile_body_flank2kb	4mC, AAGCCCG C5									0.00105			70.0								0.9791	0.9696	0.9887			10.0	38,13,8,6,5	0.6777	0.7148						
+3d_gcmatch_sensitivity	mobile_body_flank2kb	4mC, AAGCCCG C5									0.000368			70.0								0.9756	0.9662	0.9851			20.0	38,13,8,6,5	0.6777	0.7148						
+3c_census_fraction	mobile_body	4mC, TGGCCGGC C5																													T1	21.0	20.0	95.24	2091.0	90.2
+3c_census_fraction	mobile_body_flank2kb	4mC, TGGCCGGC C5																													T1	82.0	71.0	86.59	2091.0	90.2
+3c_census_fraction	mobile_body	4mC, AAGCCCG C5																													T1	22.0	17.0	77.27	1330.0	76.92
+3c_census_fraction	mobile_body_flank2kb	4mC, AAGCCCG C5																													T1	70.0	56.0	80.0	1330.0	76.92
+3c_census_fraction	mobile_body	6mA, AAGCCCG A1/A2																													T1	44.0	17.0	38.64	2660.0	15.64
+3c_census_fraction	mobile_body_flank2kb	6mA, AAGCCCG A1/A2																													T1	142.0	30.0	21.13	2660.0	15.64
+3c_census_fraction	mobile_body	4mC, TGGCCGGC C5																													T2	21.0	21.0	100.0	2093.0	90.4
+3c_census_fraction	mobile_body_flank2kb	4mC, TGGCCGGC C5																													T2	84.0	74.0	88.1	2093.0	90.4
+3c_census_fraction	mobile_body	4mC, AAGCCCG C5																													T2	22.0	13.0	59.09	1332.0	73.35
+3c_census_fraction	mobile_body_flank2kb	4mC, AAGCCCG C5																													T2	70.0	48.0	68.57	1332.0	73.35
+3c_census_fraction	mobile_body	6mA, AAGCCCG A1/A2																													T2	44.0	15.0	34.09	2664.0	16.89
+3c_census_fraction	mobile_body_flank2kb	6mA, AAGCCCG A1/A2																													T2	142.0	33.0	23.24	2664.0	16.89
+3c_census_fraction	mobile_body	4mC, TGGCCGGC C5																													T3	21.0	21.0	100.0	2093.0	89.15
+3c_census_fraction	mobile_body_flank2kb	4mC, TGGCCGGC C5																													T3	84.0	72.0	85.71	2093.0	89.15
+3c_census_fraction	mobile_body	4mC, AAGCCCG C5																													T3	22.0	17.0	77.27	1331.0	73.1
+3c_census_fraction	mobile_body_flank2kb	4mC, AAGCCCG C5																													T3	70.0	52.0	74.29	1331.0	73.1
+3c_census_fraction	mobile_body	6mA, AAGCCCG A1/A2																													T3	44.0	17.0	38.64	2662.0	17.02
+3c_census_fraction	mobile_body_flank2kb	6mA, AAGCCCG A1/A2																													T3	142.0	33.0	23.24	2662.0	17.02
