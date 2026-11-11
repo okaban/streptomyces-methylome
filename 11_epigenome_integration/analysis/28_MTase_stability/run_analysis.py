@@ -1,3 +1,4 @@
+# 2026-11-04 V22: 手入力の SCO 番号 3 件を gene_annotation_basic.tsv の old_locus_tag に合わせて訂正。
 #!/usr/bin/env python3
 """
 Hypothesis H5: MTase Expression Stability vs Methylation-Expression Correlation
@@ -38,17 +39,17 @@ MTASES = {
         'color': '#E91E63'
     },
     'SC_RS36410': {
-        'sco': 'SCO7091', 'product': 'DNA cytosine methyltransferase',
+        'sco': 'SCO6844', 'product': 'DNA cytosine methyltransferase',
         'mod_type': '4mC', 'main_motif': 'CCGG/TGGCCGGC',
         'color': '#FF5722'
     },
     'SC_RS28835': {
-        'sco': 'SCO5333', 'product': 'BREX-2 PglX adenine MTase',
+        'sco': 'SCO5331', 'product': 'BREX-2 PglX adenine MTase',
         'mod_type': '6mA', 'main_motif': 'CCGKCA',
         'color': '#4CAF50'
     },
     'SC_RS35335': {
-        'sco': 'SCO6843', 'product': 'BREX-2 PglX adenine MTase',
+        'sco': 'SCO6627', 'product': 'BREX-2 PglX adenine MTase',
         'mod_type': '6mA', 'main_motif': 'CCGKCA',
         'color': '#8BC34A'
     },

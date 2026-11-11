@@ -1,0 +1,4 @@
+s6 exit=0
+s7 exit=0
+s2 exit=0
+s13 exit=1

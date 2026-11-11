@@ -1,0 +1,1018 @@
+locus_tag	old_locus_tag	gene_name	product	tf_family	region	nearest_methyl_distance	n_methyl_sites_2kb	baseMean	LFC_T2vsT1	LFC_T3vsT1	n_FIMO_hits	classification
+SC_RS02220			RNA polymerase sigma-70 factor	Sigma factor	1	554	3	189.421	0.774	1.247	9	shielded
+SC_RS02260	SCO0047		MarR family winged helix-turn-helix transcriptional regulator	MarR	1	1909	1	88.712	-0.217	-0.032	10	shielded
+SC_RS02325	SCO0062		LacI family DNA-binding transcriptional regulator	LacI	1	429	1	92.51	-1.482	-0.723	9	shielded
+SC_RS02330	SCO0063		ROK family protein	ROK	1	551	2	66.227	-1.209	-0.329	10	shielded
+SC_RS02455	SCO0089		LysR family transcriptional regulator	LysR	1	290	1	101.968	1.959	1.313	10	exposed
+SC_RS02530	SCO0110		helix-turn-helix transcriptional regulator	HTH (other)	1	1864	1	66.114	2.202	2.012	6	shielded
+SC_RS02550	SCO0116		TetR/AcrR family transcriptional regulator	TetR	1	1218	2	63.874	0.385	-0.205	7	shielded
+SC_RS02625	SCO0132		helix-turn-helix transcriptional regulator	HTH (other)	1	941	4	225.284	1.348	2.329	6	shielded
+SC_RS02660	SCO0140		MerR family transcriptional regulator	MerR	1	1130	1	32.632	-0.016	2.811	6	shielded
+SC_RS02680	SCO0143		TetR/AcrR family transcriptional regulator	TetR	1	405	2	27.676	-1.024	0.404	12	shielded
+SC_RS02705	SCO0148		helix-turn-helix domain-containing protein	HTH (other)	1	318	3	22.721	-1.025	-1.081	6	shielded
+SC_RS02735	SCO0155		TetR/AcrR family transcriptional regulator	TetR	1	1274	1	126.635	1.148	0.289	7	shielded
+SC_RS02745	SCO0159		sigma-70 family RNA polymerase sigma factor	Sigma factor	1	1452	2	27.292	-0.019	2.307	8	shielded
+SC_RS02750	SCO0160		helix-turn-helix domain-containing protein	HTH (other)	1	369	2	32.332	2.664	3.828	6	shielded
+SC_RS02915	SCO0193		MerR family transcriptional regulator	MerR	1	1665	1	1573.11	-1.02	-3.203	11	shielded
+SC_RS02920	SCO0194		sigma-70 family RNA polymerase sigma factor	Sigma factor	1	1504	1	625.808	-1.397	-0.619	10	shielded
+SC_RS02965	SCO0203		two-component system sensor histidine kinase	Sensor kinase	1	1309	1	1144.259	2.9	3.21	9	shielded
+SC_RS02970	SCO0204		response regulator	Response regulator	1	485	1	3430.033	6.294	7.534	6	shielded
+SC_RS03000	SCO0211		sensor histidine kinase	Sensor kinase	1	842	2	97.818	4.157	5.377	14	shielded
+SC_RS03080	SCO0230		TetR/AcrR family transcriptional regulator	TetR	1	2284	0	113.933	0.459	-0.933	10	shielded
+SC_RS03095	SCO0233		helix-turn-helix transcriptional regulator	HTH (other)	1	104	3	47.424	0.351	0.978	3	shielded
+SC_RS03110	SCO0236		helix-turn-helix transcriptional regulator	HTH (other)	1	1190	3	39.604	1.053	1.752	1	shielded
+SC_RS03135	SCO0241		TetR/AcrR family transcriptional regulator	TetR	1	299	3	36.138	0.297	1.292	11	shielded
+SC_RS03175	SCO0250		TetR/AcrR family transcriptional regulator	TetR	1	404	3	91.398	-1.117	-0.97	7	shielded
+SC_RS03185	SCO0253		TetR/AcrR family transcriptional regulator C-terminal domain-containing protein	TetR	1	125	4	73.2	-0.235	-0.721	6	shielded
+SC_RS03195	SCO0255		sigma-54-dependent Fis family transcriptional regulator	Other regulatory	1	388	2	48.265	-0.612	1.74	12	shielded
+SC_RS03230	SCO0262		LysR family transcriptional regulator	LysR	1	204	4	106.655	0.401	0.186	7	shielded
+SC_RS03240	SCO0264		MarR family winged helix-turn-helix transcriptional regulator	MarR	1	1584	3	59.186	0.928	0.295	6	shielded
+SC_RS03250	SCO0266		helix-turn-helix domain-containing protein	HTH (other)	1	293	2	34.686	0.181	1.052	6	exposed
+SC_RS03295	SCO0275		ROK family transcriptional regulator	ROK	1	3698	0	60.217	-0.501	-0.01	9	shielded
+SC_RS03330	SCO0282		DeoR/GlpR family DNA-binding transcription regulator	DeoR	1	1024	1	74.79	0.201	-0.412	7	shielded
+SC_RS03355	SCO0287		AraC-like ligand-binding domain-containing protein	AraC	1	867	2	86.487	0.611	0.605	6	shielded
+SC_RS03365	SCO0289		LacI family DNA-binding transcriptional regulator	LacI	1	189	3	113.251	-1.233	-0.823	7	shielded
+SC_RS03400	SCO0296		TetR/AcrR family transcriptional regulator	TetR	1	1454	2	63.74	-0.687	-0.477	7	shielded
+SC_RS03410	SCO0298		LysR family transcriptional regulator	LysR	1	917	2	466.692	2.163	0.692	3	shielded
+SC_RS03430	SCO0302		TetR/AcrR family transcriptional regulator	TetR	1	78	3	103.026	0.475	0.242	2	shielded
+SC_RS03450	SCO0307		helix-turn-helix domain-containing protein	HTH (other)	1	1583	1	53.451	1.024	1.021	5	shielded
+SC_RS03465	SCO0310		TetR/AcrR family transcriptional regulator	TetR	1	636	2	67.456	0.169	-0.374	4	shielded
+SC_RS03495	SCO0316		PucR family transcriptional regulator	Other regulatory	1	699	6	49.574	1.054	1.662	4	shielded
+SC_RS03575	SCO0332		TetR/AcrR family transcriptional regulator	TetR	1	522	3	50.252	0.126	-0.07	9	shielded
+SC_RS03600	SCO0337		TetR/AcrR family transcriptional regulator	TetR	1	268	1	80.772	-0.028	-0.261	6	shielded
+SC_RS03630	SCO0344		GntR family transcriptional regulator	GntR	1	351	2	73.68	-0.268	0.493	9	shielded
+SC_RS03635	SCO0345		IclR family transcriptional regulator	IclR	1	465	1	48.33	0.344	0.587	7	shielded
+SC_RS03695	SCO0357		FadR/GntR family transcriptional regulator	GntR	1	1447	3	160.394	-0.499	-1.137	6	shielded
+SC_RS03710	SCO0360		LacI family DNA-binding transcriptional regulator	LacI	1	133	4	158.05	0.145	-0.352	3	shielded
+SC_RS03790	SCO0376		helix-turn-helix domain-containing protein	HTH (other)	1	24	4	65.12	-0.401	-0.207	2	shielded
+SC_RS03945	SCO0407		MerR family transcriptional regulator	MerR	1	366	4	57.158	1.304	1.467	2	shielded
+SC_RS03980	SCO0414	sigJ	RNA polymerase sigma factor SigJ	Sigma factor	1	270	2	105.636	0.204	0.187	2	shielded
+SC_RS04015	SCO0421		response regulator transcription factor	Response regulator	1	1613	1	24.022	1.16	2.083	6	shielded
+SC_RS04020	SCO0422		sensor histidine kinase	Sensor kinase	1	423	3	38.523	1.291	2.701	3	shielded
+SC_RS04050	SCO0428		TetR/AcrR family transcriptional regulator	TetR	1	1431	3	63.105	-0.835	-1.669	5	shielded
+SC_RS04060	SCO0430		TetR/AcrR family transcriptional regulator	TetR	1	61	3	164.06	-1.25	-1.757	8	shielded
+SC_RS04075	SCO0433		helix-turn-helix domain-containing protein	HTH (other)	1	2199	0	70.32	-0.907	-0.429	2	shielded
+SC_RS04145	SCO0447		MarR family winged helix-turn-helix transcriptional regulator	MarR	1	480	4	26.373	-0.944	-0.011	8	shielded
+SC_RS04195	SCO0456		LacI family DNA-binding transcriptional regulator	LacI	1	975	2	22.662	0.436	2.033	4	shielded
+SC_RS04245	SCO0466		GlxA family transcriptional regulator	Other regulatory	1	878	2	36.113	0.657	1.877	2	shielded
+SC_RS04270	SCO0471		helix-turn-helix domain-containing protein	HTH (other)	1	239	5	54.117	1.173	1.792	4	exposed
+SC_RS04345	SCO0485		TetR/AcrR family transcriptional regulator	TetR	1	856	3	87.45	-1.166	-1.715	5	shielded
+SC_RS04355	SCO0487		MarR family winged helix-turn-helix transcriptional regulator	MarR	1	737	3	54.233	0.251	0.163	3	shielded
+SC_RS04460	SCO0508		acyl-CoA-like ligand-binding transcription factor	Other regulatory	1	272	3	42.023	-2.455	-1.471	2	shielded
+SC_RS04480	SCO0512		TetR/AcrR family transcriptional regulator	TetR	1	639	1	84.342	0.871	0.317	3	shielded
+SC_RS04515	SCO0520		TetR/AcrR family transcriptional regulator	TetR	1	1047	1	52.89	0.745	-0.041	2	shielded
+SC_RS04520	SCO0521		TetR/AcrR family transcriptional regulator	TetR	1	432	1	135.33	-0.727	-1.296	2	shielded
+SC_RS04530	SCO0523		Lrp/AsnC family transcriptional regulator	Lrp	1	1581	1	41.591	0.144	-0.095	4	shielded
+SC_RS04565	SCO0530		GntR family transcriptional regulator	GntR	1	397	3	104.763	-0.673	-0.549	3	shielded
+SC_RS04670	SCO0551		sensor histidine kinase	Sensor kinase	1	231	4	96.033	0.237	0.144	3	shielded
+SC_RS04675	SCO0552		response regulator transcription factor	Response regulator	1	455	6	30.993	0.343	0.63	3	shielded
+SC_RS04705	SCO0557		MerR family transcriptional regulator	MerR	1	571	3	302.905	-0.372	-0.583	2	shielded
+SC_RS04725	SCO0561		Fur family transcriptional regulator	Other regulatory	1	3727	0	626.036	4.717	2.984	14	shielded
+SC_RS04795	SCO0574		IclR family transcriptional regulator	IclR	1	1424	2	52.269	-1.01	-0.56	1	shielded
+SC_RS04835	SCO0582		FadR/GntR family transcriptional regulator	GntR	1	721	4	176.78	-0.918	-1.481	3	shielded
+SC_RS04865	SCO0588		sensor histidine kinase	Sensor kinase	1	105	3	1920.097	6.976	3.714	4	shielded
+SC_RS04870	SCO0589		LysR family transcriptional regulator	LysR	1	1086	1	52.589	1.054	0.866	6	shielded
+SC_RS04920	SCO0599		anti-sigma factor RsbA family regulatory protein	Sigma factor	1	126	3	476.526	0.62	0.131	6	shielded
+SC_RS04925	SCO0600		RNA polymerase sigma factor SigF	Sigma factor	1	932	2	554.69	-1.259	-1.262	1	shielded
+SC_RS04950	SCO0605		GlxA family transcriptional regulator	Other regulatory	1	278	4	32.198	-0.046	1.034	2	shielded
+SC_RS04965	SCO0608	slbR	gamma-butyrolactone-binding regulator SlbR	Other regulatory	1	347	16	1274.995	1.487	0.951	10	shielded
+SC_RS04975	SCO0610		GntR family transcriptional regulator	GntR	1	14	15	77.92	-1.795	-1.213	3	shielded
+SC_RS05020	SCO0620		metal-sensitive transcriptional regulator	Other regulatory	1	342	5	141.863	0.27	-0.111	4	shielded
+SC_RS05030	SCO0622		TetR/AcrR family transcriptional regulator	TetR	1	779	4	228.234	-1.367	-2.921	1	shielded
+SC_RS05065	SCO0629		LacI family DNA-binding transcriptional regulator	LacI	1	954	2	40.871	-1.218	0.607	5	shielded
+SC_RS05075	SCO0632		sigma-70 family RNA polymerase sigma factor	Sigma factor	1	52	1	16.63	-0.177	1.611	7	exposed
+SC_RS05120	SCO0640		BlaI/MecI/CopY family transcriptional regulator	Other regulatory	1	2131	0	238.063	-0.611	-1.249	2	shielded
+SC_RS05150	SCO0646		TetR/AcrR family transcriptional regulator	TetR	1	1516	1	32.582	-0.544	0.378	7	shielded
+SC_RS05265	SCO0669		TetR/AcrR family transcriptional regulator	TetR	1	5345	0	64.033	-1.151	-0.514	5	shielded
+SC_RS05410			GlxA family transcriptional regulator	Other regulatory	1	1527	2	79.933	1.03	1.706	2	shielded
+SC_RS05445			helix-turn-helix domain-containing protein	HTH (other)	1	880	1	1238.075	1.254	0.883	8	shielded
+SC_RS05480	SCO0711		PucR family transcriptional regulator	Other regulatory	1	392	6	26.904	-0.946	3.62	2	shielded
+SC_RS05485	SCO0712		helix-turn-helix transcriptional regulator	HTH (other)	1	114	4	51.094	-0.501	2.868	11	exposed
+SC_RS05490	SCO0713	bdeA	bis(hydroxyethyl) terephthalate hydrolase	HTH (other)	1	989	3	23.606	-1.537	2.09	9	shielded
+SC_RS05550	SCO0724		MurR/RpiR family transcriptional regulator	Other regulatory	1	741	6	148.49	0.431	0.118	5	shielded
+SC_RS05570	SCO0728		TetR family transcriptional regulator	TetR	1	396	4	41.69	-0.174	0.122	12	shielded
+SC_RS05600	SCO0734		ROK family transcriptional regulator	ROK	1	323	4	66.707	-0.173	0.532	10	shielded
+SC_RS05655	SCO0745		TetR/AcrR family transcriptional regulator	TetR	1	1805	1	26.924	1.404	2.671	1	shielded
+SC_RS05790	SCO0772		TetR/AcrR family transcriptional regulator	TetR	1	361	2	79.91	0.111	-0.487	5	shielded
+SC_RS05835	SCO0781		anti-sigma factor antagonist	Sigma factor	1	610	4	74.211	2.259	2.214	3	shielded
+SC_RS05845	SCO0783	otr(A)	tetracycline resistance ribosomal protection protein Otr(A)	TetR	1	501	2	89.089	-0.641	0.566	6	shielded
+SC_RS05900	SCO0794		ROK family transcriptional regulator	ROK	1	1216	1	181.994	-0.056	-0.56	1	shielded
+SC_RS05930	SCO0800		TetR/AcrR family transcriptional regulator	TetR	1	1603	2	79.016	0.157	-0.263	4	shielded
+SC_RS05945	SCO0803	sigJ	RNA polymerase sigma factor SigJ	Sigma factor	1	47	4	302.006	0.858	-0.054	7	shielded
+SC_RS05960	SCO0806		LacI family DNA-binding transcriptional regulator	LacI	1	1215	2	55.539	0.055	0.376	1	shielded
+SC_RS06040	SCO0822		helix-turn-helix transcriptional regulator	HTH (other)	1	140	2	54.902	-0.119	-0.266	4	shielded
+SC_RS06045	SCO0823		GntR family transcriptional regulator	GntR	1	247	2	79.412	-1.33	-1.469	4	exposed
+SC_RS06130	SCO0840		MarR family winged helix-turn-helix transcriptional regulator	MarR	1	1924	1	49.19	0.624	0.325	5	shielded
+SC_RS06215	SCO0857		TetR/AcrR family transcriptional regulator	TetR	1	1911	1	372.041	-0.005	-0.822	2	shielded
+SC_RS06250	SCO0864		sigma-70 family RNA polymerase sigma factor	Sigma factor	1	428	6	191.055	3.66	4.937	4	shielded
+SC_RS06260	SCO0866		sigma-70 family RNA polymerase sigma factor	Sigma factor	1	415	5	242.727	5.906	6.217	2	shielded
+SC_RS06280	SCO0870		response regulator	Response regulator	1	362	5	148.556	-1.235	-1.832	1	shielded
+SC_RS06285	SCO0871		sensor histidine kinase	Sensor kinase	1	188	4	585.569	-1.138	-2.348	7	shielded
+SC_RS06300	SCO0875		ArsR/SmtB family transcription factor	ArsR	1	322	2	22.809	1.443	1.111	5	shielded
+SC_RS06310	SCO0877		helix-turn-helix transcriptional regulator	HTH (other)	1	170	2	654.901	1.689	0.365	5	exposed
+SC_RS06345	SCO0882		tetratricopeptide repeat protein	TetR	1	874	3	18.384	1.744	1.553	4	shielded
+SC_RS06365	SCO0886		LacI family DNA-binding transcriptional regulator	LacI	1	183	4	713.368	3.031	0.843	1	shielded
+SC_RS06370	SCO0887		TetR/AcrR family transcriptional regulator	TetR	1	460	5	121.894	1.851	1.135	8	shielded
+SC_RS06380	SCO0889		LysR family transcriptional regulator	LysR	1	296	4	86.266	0.294	-0.019	3	shielded
+SC_RS06395	SCO0891		helix-turn-helix transcriptional regulator	HTH (other)	1	130	2	41.502	0.772	1.361	7	shielded
+SC_RS06415	SCO0895		sigma-70 family RNA polymerase sigma factor	Sigma factor	1	33	5	19.401	0.485	3.556	0	shielded
+SC_RS06430	SCO0897		PPC domain-containing DNA-binding protein	Other regulatory	1	172	4	30.621	0.803	1.914	7	shielded
+SC_RS06435	SCO0898		AfsR/SARP family transcriptional regulator	SARP	1	186	6	100.07	0.008	0.577	8	shielded
+SC_RS06575	SCO0925		LysR family transcriptional regulator	LysR	1	933	1	55.639	0.106	0.286	6	shielded
+SC_RS06585	SCO0927		LysR family transcriptional regulator	LysR	1	1063	1	411.813	1.031	0.064	7	shielded
+SC_RS06650	SCO0940		MarR family winged helix-turn-helix transcriptional regulator	MarR	1	2116	0	21.576	0.119	0.271	4	shielded
+SC_RS06660	SCO0942		sigma-70 family RNA polymerase sigma factor	Sigma factor	1	2707	0	18.49	1.507	2.933	3	shielded
+SC_RS06715	SCO0953		LacI family DNA-binding transcriptional regulator	LacI	1	990	4	62.181	-1.843	-0.363	5	shielded
+SC_RS06810	SCO0971		LysR family transcriptional regulator	LysR	1	2602	0	430.048	-0.468	-0.825	2	shielded
+SC_RS06865	SCO0981		short-chain fatty acyl-CoA regulator family protein	Other regulatory	1	738	3	86.295	-0.1	0.672	2	shielded
+SC_RS06885	SCO0985	metE	5-methyltetrahydropteroyltriglutamate--homocysteine S-methyltransferase	TetR	1	1332	1	1437.372	3.323	0.177	7	shielded
+SC_RS06975	SCO1003		TetR/AcrR family transcriptional regulator	TetR	1	2655	0	113.304	1.075	0.159	7	shielded
+SC_RS07000	SCO1008		ArsR/SmtB family transcription factor	ArsR	1	183	3	256.503	0.116	-1.354	4	exposed
+SC_RS07005			helix-turn-helix domain-containing protein	HTH (other)	1	342	3	33.526	-1.264	-0.553	3	shielded
+SC_RS07015	SCO1011		helix-turn-helix domain-containing protein	HTH (other)	1	1903	1	97.603	0.915	1.272	3	shielded
+SC_RS07085	SCO1026		DeoR/GlpR family DNA-binding transcription regulator	DeoR	1	1046	2	588.806	-1.509	-1.638	4	shielded
+SC_RS07125	SCO1034		TetR/AcrR family transcriptional regulator	TetR	1	134	4	69.647	-0.377	1.219	2	shielded
+SC_RS07150	SCO1039		ROK family protein	ROK	1	545	4	526.179	0.563	-0.633	4	shielded
+SC_RS07170	SCO1043		DeoR/GlpR family DNA-binding transcription regulator	DeoR	1	1111	1	89.877	-0.801	-0.668	10	shielded
+SC_RS07215	SCO1052		helix-turn-helix domain-containing protein	HTH (other)	1	216	8	17.842	0.347	2.365	9	exposed
+SC_RS07255	SCO1060		ROK family protein	ROK	1	3780	0	81.012	-0.358	-0.132	3	shielded
+SC_RS07285	SCO1066		LacI family DNA-binding transcriptional regulator	LacI	1	4	1	40.736	-0.372	0.735	7	shielded
+SC_RS07300	SCO1069		MarR family winged helix-turn-helix transcriptional regulator	MarR	1	147	4	37.894	1.309	0.985	5	shielded
+SC_RS07310	SCO1070		response regulator transcription factor	Response regulator	1	1133	2	49.093	0.809	1.033	5	shielded
+SC_RS07315	SCO1071		sensor histidine kinase	Sensor kinase	1	2377	0	173.663	-0.566	0.092	2	shielded
+SC_RS07340	SCO1077		ROK family protein	ROK	1	481	1	67.693	-1.454	-1.012	2	shielded
+SC_RS07345	SCO1078		LacI family DNA-binding transcriptional regulator	LacI	1	695	1	165.929	0.026	-0.041	4	shielded
+SC_RS07425	SCO1094		TetR/AcrR family transcriptional regulator	TetR	1	2920	0	155.009	-1.058	-1.329	0	shielded
+SC_RS07440	SCO1098		MarR family winged helix-turn-helix transcriptional regulator	MarR	1	574	7	124.465	-0.825	-1.236	3	shielded
+SC_RS07470	SCO1104		TetR/AcrR family transcriptional regulator	TetR	1	336	3	155.427	-0.959	-0.938	2	shielded
+SC_RS07490	SCO1108		ArsR/SmtB family transcription factor	ArsR	1	414	1	89.264	0.485	-0.753	6	shielded
+SC_RS07505	SCO1111		PaaX family transcriptional regulator C-terminal domain-containing protein	Other regulatory	1	130	6	56.175	-1.229	-0.316	2	shielded
+SC_RS07545	SCO1119		Lrp/AsnC family transcriptional regulator	Lrp	1	431	5	26.436	-1.815	-0.185	2	shielded
+SC_RS07560	SCO1122		LysR substrate-binding domain-containing protein	LysR	1	92	3	369.395	-0.214	-1.048	6	shielded
+SC_RS07625	SCO1135	xdhR	purine salvage operon transcriptional regulator XdhR	Other regulatory	1	1008	1	215.26	-0.018	-0.935	2	shielded
+SC_RS07630	SCO1136		response regulator	Response regulator	1	1070	1	44.79	-1.352	-0.565	7	shielded
+SC_RS07635	SCO1137		sensor histidine kinase	Sensor kinase	1	573	1	61.796	-1.192	0.648	6	shielded
+SC_RS07675	SCO1145		MarR family winged helix-turn-helix transcriptional regulator	MarR	1	3725	0	283.327	-2.209	-0.871	0	shielded
+SC_RS07750	SCO1160		sensor histidine kinase	Sensor kinase	1	86	4	769.54	6.812	5.575	2	exposed
+SC_RS07805	SCO1171		ROK family transcriptional regulator	ROK	1	249	2	92.09	-0.263	-0.11	4	shielded
+SC_RS07840	SCO1177		FadR/GntR family transcriptional regulator	GntR	1	109	1	111.343	-0.205	3.66	3	shielded
+SC_RS07885	SCO1186		LacI family DNA-binding transcriptional regulator	LacI	1	185	3	241.305	-0.747	-0.843	4	shielded
+SC_RS07910	SCO1191		MarR family winged helix-turn-helix transcriptional regulator	MarR	1	110	4	80.884	-2.825	-2.105	2	exposed
+SC_RS07920	SCO1193		TetR/AcrR family transcriptional regulator	TetR	1	204	6	106.728	-0.683	-1.568	3	shielded
+SC_RS07955	SCO1200		helix-turn-helix domain-containing protein	HTH (other)	1	704	1	123.021	0.265	0.084	8	shielded
+SC_RS07985	SCO1206		1,3,6,8-tetrahydroxynaphthalene synthase	TetR	1	320	4	63.554	2.426	1.769	2	shielded
+SC_RS08005	SCO1210		TetR family transcriptional regulator	TetR	1	650	7	369.963	-1.224	-1.446	2	shielded
+SC_RS08040	SCO1217		sensor histidine kinase	Sensor kinase	1	153	2	87.62	-0.141	0.153	2	shielded
+SC_RS08055	SCO1220		LytR/AlgR family response regulator transcription factor	Response regulator	1	1110	3	23.063	-0.193	1.692	2	shielded
+SC_RS08060	SCO1221		Lrp/AsnC family transcriptional regulator	Lrp	1	1032	3	55.737	1.455	0.192	0	shielded
+SC_RS08090	SCO1227		helix-turn-helix transcriptional regulator	HTH (other)	1	95	2	190.636	4.585	4.593	2	exposed
+SC_RS08165	SCO1242		helix-turn-helix domain-containing protein	HTH (other)	1	2220	0	141.134	1.099	0.24	1	shielded
+SC_RS08255	SCO1259		sensor histidine kinase	Sensor kinase	1	768	1	104.246	-0.743	-0.269	1	shielded
+SC_RS08260	SCO1260		response regulator transcription factor	Response regulator	1	401	1	120.322	-0.449	-1.112	7	shielded
+SC_RS08265	SCO1261		ROK family transcriptional regulator	ROK	1	1163	1	309.589	-0.344	-0.994	3	shielded
+SC_RS08270	SCO1262		GntR family transcriptional regulator	GntR	1	496	1	964.715	1.017	0.125	10	shielded
+SC_RS08275	SCO1263		RNA polymerase sigma-70 factor	Sigma factor	1	582	1	59.13	0.388	0.709	4	shielded
+SC_RS08340	SCO1276		RNA polymerase sigma factor	Sigma factor	1	860	5	38.95	0.838	4.537	5	shielded
+SC_RS08405	SCO1289	pdxR	MocR-like pyridoxine biosynthesis transcription factor PdxR	Other regulatory	1	62	2	388.018	2.128	2.111	1	shielded
+SC_RS08435	SCO1295		Lrp/AsnC family transcriptional regulator	Lrp	1	314	6	87.265	0.099	-1.171	3	shielded
+SC_RS08460	SCO1299		Lrp/AsnC family transcriptional regulator	Lrp	1	1121	4	36.606	-1.104	-0.487	2	shielded
+SC_RS08510	SCO1309		ArsR/SmtB family transcription factor	ArsR	1	591	1	18.603	-0.531	0.26	2	shielded
+SC_RS08525	SCO1312		helix-turn-helix domain-containing protein	HTH (other)	1	1483	2	47.027	-0.887	-0.55	3	shielded
+SC_RS08590	SCO1325		winged helix-turn-helix transcriptional regulator	HTH (other)	1	364	2	65.219	-0.52	-0.759	3	shielded
+SC_RS08620	SCO1331		LuxR C-terminal-related transcriptional regulator	Other regulatory	1	217	2	323.273	2.427	2.043	5	shielded
+SC_RS08625			RNA polymerase sigma factor	Sigma factor	1	1648	1	19.214	0.179	2.258	2	shielded
+SC_RS08660	SCO1339		TetR/AcrR family transcriptional regulator	TetR	1	1658	2	39.671	-0.938	-0.224	5	shielded
+SC_RS08720	SCO1351		helix-turn-helix transcriptional regulator	HTH (other)	1	169	4	85.062	-0.2	1.671	4	shielded
+SC_RS08730	SCO1353		helix-turn-helix domain-containing protein	HTH (other)	1	1777	2	51.174	0.464	0.495	4	shielded
+SC_RS08755	SCO1358		LysR family transcriptional regulator	LysR	1	546	2	71.484	-0.884	-0.011	4	shielded
+SC_RS08795	SCO1366		PadR family transcriptional regulator	PadR	1	126	2	815.778	-1.826	1.309	1	shielded
+SC_RS08810	SCO1369		sensor histidine kinase	Sensor kinase	1	692	2	49.895	0.137	1.391	6	shielded
+SC_RS08815	SCO1370		response regulator	Response regulator	1	519	2	18.302	0.318	1.433	3	shielded
+SC_RS08845	SCO1376		LacI family DNA-binding transcriptional regulator	LacI	1	2016	0	375.664	2.003	1.427	3	shielded
+SC_RS08870	SCO1381		MerR family transcriptional regulator	MerR	1	284	2	831.397	0.881	-0.271	0	shielded
+SC_RS08880	SCO1383	ftsR	transcriptional regulator FtsR	Other regulatory	1	1744	1	593.97	-0.928	-2.246	4	shielded
+SC_RS09025	SCO1410		GntR family transcriptional regulator	GntR	0	1591	1	88.763	-1.665	-1.569	4	shielded
+SC_RS09060	SCO1417		SCO1417 family PLP biosynthesis transcription factor	Other regulatory	0	630	4	367.249	-0.32	-1.731	1	shielded
+SC_RS09100	SCO1425		Lrp/AsnC family transcriptional regulator	Lrp	0	1098	3	80.059	-1.082	-1.104	5	shielded
+SC_RS09125	SCO1430		TetR/AcrR family transcriptional regulator	TetR	0	2012	0	143.134	0.029	-0.424	12	shielded
+SC_RS09210	SCO1447		ROK family transcriptional regulator	ROK	0	315	6	208.367	-1.866	-1.964	1	shielded
+SC_RS09265	SCO1458		Lrp/AsnC family transcriptional regulator	Lrp	0	1777	1	75.456	-2.675	-2.273	1	shielded
+SC_RS09290	SCO1463		sugar-binding transcriptional regulator	Other regulatory	0	420	3	3640.617	1.826	-0.657	4	shielded
+SC_RS09315	SCO1468		tetratricopeptide repeat protein	TetR	0	163	2	167.615	3.874	4.256	4	exposed
+SC_RS09415	SCO1488	pyrR	bifunctional pyr operon transcriptional regulator/uracil phosphoribosyltransferase PyrR	Other regulatory	0	1546	3	210.796	-2.693	-2.446	10	shielded
+SC_RS09420	SCO1489	bldD	transcriptional regulator BldD	Other regulatory	0	1248	3	2243.291	-1.055	-1.899	6	shielded
+SC_RS09425	SCO1490	nusB	transcription antitermination factor NusB	Other regulatory	0	113	4	1895.342	-1.885	-3.192	1	shielded
+SC_RS09575	SCO1521		YebC/PmpR family DNA-binding transcriptional regulator	Other regulatory	0	1273	2	1878.423	-0.167	-0.934	7	shielded
+SC_RS09690	SCO1541		SsgA family sporulation/cell division regulator	Other regulatory	0	375	3	171.746	1.312	2.908	2	shielded
+SC_RS09835	SCO1564		sigma-70 family RNA polymerase sigma factor	Sigma factor	0	267	2	74.921	3.559	1.106	6	exposed
+SC_RS09855	SCO1568		TetR/AcrR family transcriptional regulator	TetR	0	840	4	472.881	-2.473	-2.068	8	shielded
+SC_RS09895	SCO1576		arginine repressor	Repressor	0	1279	3	160.705	-0.618	0.043	4	shielded
+SC_RS09980	SCO1593		transcriptional regulator	Other regulatory	0	293	3	114.329	-1.652	-0.061	2	shielded
+SC_RS09995	SCO1596		sensor histidine kinase	Sensor kinase	0	828	1	303.037	-0.662	-1.045	5	shielded
+SC_RS10080	SCO1614		FadR/GntR family transcriptional regulator	GntR	0	415	8	59.923	-0.56	0.042	6	shielded
+SC_RS10090	SCO1616		LysR family transcriptional regulator	LysR	0	130	5	298.726	-2.333	-2.144	6	shielded
+SC_RS10105	SCO1619		helix-turn-helix domain-containing protein	HTH (other)	0	711	3	240.356	0.713	0.813	6	shielded
+SC_RS10160	SCO1630		sensor histidine kinase	Sensor kinase	0	66	3	5659.642	10.497	8.03	3	shielded
+SC_RS10190	SCO1636		helix-turn-helix transcriptional regulator	HTH (other)	0	388	5	784.155	0.8	-0.337	4	shielded
+SC_RS10195	SCO1637		helix-turn-helix transcriptional regulator	HTH (other)	0	242	5	709.457	0.554	-0.76	9	shielded
+SC_RS10220	SCO1642		LacI family DNA-binding transcriptional regulator	LacI	0	237	2	234.354	0.789	-0.221	3	shielded
+SC_RS10280	SCO1654		response regulator	Response regulator	0	47	2	782.102	-0.129	-1.392	3	shielded
+SC_RS10300	SCO1658		IclR family transcriptional regulator	IclR	0	4247	0	207.321	0.211	-0.38	9	shielded
+SC_RS10320	SCO1662	parJ	filament polymerization regulator ParJ	Other regulatory	0	892	1	1022.286	-0.133	-0.968	4	shielded
+SC_RS10405	SCO1678		FadR/GntR family transcriptional regulator	GntR	0	534	2	155.825	-0.324	-0.879	1	shielded
+SC_RS10435	SCO1684		tetratricopeptide repeat protein	TetR	0	39	7	41.042	1.729	2.6	6	exposed
+SC_RS10470	SCO1691		TetR/AcrR family transcriptional regulator	TetR	0	2302	0	143.722	-0.27	-1.308	1	shielded
+SC_RS10500	SCO1697	soxR	redox-sensitive transcriptional activator SoxR	Activator	0	615	2	145.824	0.624	-0.583	4	shielded
+SC_RS10510	SCO1699		TetR/AcrR family transcriptional regulator	TetR	0	615	2	656.174	-0.92	-0.747	6	shielded
+SC_RS10525	SCO1702		TetR/AcrR family transcriptional regulator	TetR	0	404	3	32.953	-0.04	0.832	2	shielded
+SC_RS10530	SCO1703		ArsR/SmtB family transcription factor	ArsR	0	247	9	54.31	0.42	0.17	1	shielded
+SC_RS10575	SCO1712		TetR/AcrR family transcriptional regulator	TetR	0	367	1	40.636	-0.526	0.378	5	shielded
+SC_RS10590	SCO1716		GntR family transcriptional regulator	GntR	0	1270	3	52.839	-0.272	0.461	2	shielded
+SC_RS10600	SCO1718		TetR/AcrR family transcriptional regulator C-terminal domain-containing protein	TetR	0	1182	3	86.716	0.297	0.133	4	shielded
+SC_RS10620	SCO1722		anti-sigma factor	Sigma factor	0	308	5	26.269	0.45	2.322	3	shielded
+SC_RS10625	SCO1723		sigma-70 family RNA polymerase sigma factor	Sigma factor	0	648	5	14.577	0.589	4.249	2	shielded
+SC_RS10650	SCO1728		GntR family transcriptional regulator	GntR	0	3291	0	35.655	0.317	-0.116	4	shielded
+SC_RS10690	SCO1736		MarR family winged helix-turn-helix transcriptional regulator	MarR	0	233	3	21.099	-0.925	0.151	3	shielded
+SC_RS10730	SCO1744		sensor histidine kinase	Sensor kinase	0	549	2	58.915	0.294	1.005	1	shielded
+SC_RS10735	SCO1745		response regulator	Response regulator	0	295	3	31.667	0.762	1.479	4	shielded
+SC_RS10880	SCO1774		tetratricopeptide repeat protein	TetR	0	45	6	261.129	0.259	-0.436	3	shielded
+SC_RS10900	SCO1778		PucR family transcriptional regulator	Other regulatory	0	1194	1	147.774	-0.525	-0.408	5	shielded
+SC_RS10960	SCO1790		tetratricopeptide repeat protein	TetR	0	783	1	401.914	-2.4	-2.569	5	shielded
+SC_RS11030	SCO1801		response regulator	Response regulator	0	134	4	159.683	-0.041	2.108	2	shielded
+SC_RS11035	SCO1802		GAF domain-containing sensor histidine kinase	Sensor kinase	0	910	4	199.576	-0.357	1.675	7	shielded
+SC_RS11090	SCO1813		FadR/GntR family transcriptional regulator	GntR	0	241	2	242.775	-2.442	-2.837	4	shielded
+SC_RS11225	SCO1839		helix-turn-helix domain-containing protein	HTH (other)	0	1038	3	3166.895	4.56	5.266	4	shielded
+SC_RS11390	SCO1872		IclR family transcriptional regulator	IclR	0	775	8	158.091	-1.594	-1.698	4	shielded
+SC_RS11410	SCO1876		SigE family RNA polymerase sigma factor	Sigma factor	0	57	7	41.199	-1.215	-0.458	1	shielded
+SC_RS11480	SCO1890		GntR family transcriptional regulator	GntR	0	1701	1	38.402	-0.586	0.09	3	shielded
+SC_RS11515	SCO1897		DeoR/GlpR family DNA-binding transcription regulator	DeoR	0	191	3	51.649	1.307	1.477	5	exposed
+SC_RS11550	SCO1904		TetR/AcrR family transcriptional regulator	TetR	0	847	3	552.405	-0.717	-1.537	7	shielded
+SC_RS11595	SCO1912	dapA	4-hydroxy-tetrahydrodipicolinate synthase	TetR	0	398	3	49.973	0.962	1.041	5	shielded
+SC_RS11615	SCO1916	dapD	2,3,4,5-tetrahydropyridine-2,6-dicarboxylate N-succinyltransferase	TetR	0	10	2	939.431	1.198	-0.9	4	shielded
+SC_RS11620	SCO1917		TetR/AcrR family transcriptional regulator	TetR	0	363	2	72.06	0.518	0.415	1	shielded
+SC_RS11665	SCO1926		helix-turn-helix transcriptional regulator	HTH (other)	0	2498	0	2556.061	0.393	0.774	4	shielded
+SC_RS11780	SCO1950	whiA	DNA-binding protein WhiA	Other regulatory	0	986	1	736.605	-0.315	-1.28	1	shielded
+SC_RS11810	SCO1956		LacI family DNA-binding transcriptional regulator	LacI	0	278	2	154.469	-0.159	-0.452	4	shielded
+SC_RS11925	SCO1979		helix-turn-helix domain-containing protein	HTH (other)	0	1570	1	238.147	-0.377	-0.875	3	shielded
+SC_RS12005	SCO1995		tetratricopeptide repeat protein	TetR	0	1043	2	137.946	2.342	1.299	4	shielded
+SC_RS12095	SCO2013		ANTAR domain-containing response regulator	Response regulator	0	2118	0	1191.014	-0.376	-2.065	5	shielded
+SC_RS12270	SCO2047		ArsR/SmtB family transcription factor	ArsR	0	607	1	58.185	-0.504	-0.529	2	shielded
+SC_RS12415	SCO2075		TraR/DksA family transcriptional regulator	Other regulatory	0	1218	1	108.888	0.15	1.152	9	shielded
+SC_RS12540	SCO2100		TetR/AcrR family transcriptional regulator	TetR	0	659	3	486.869	-1.59	-1.779	3	shielded
+SC_RS12550	SCO2102		SCO2102 family sporulation regulator	Other regulatory	0	1344	2	930.112	0.716	0.088	6	shielded
+SC_RS12555	SCO2103	metF	methylenetetrahydrofolate reductase [NAD(P)H]	TetR	0	364	2	919.704	1.171	-0.353	7	shielded
+SC_RS12565	SCO2105		Rv2175c family DNA-binding protein	Other regulatory	0	962	2	675.366	-0.32	-1.703	6	shielded
+SC_RS12645	SCO2120		response regulator	Response regulator	0	976	1	212.551	-0.451	-1.096	3	shielded
+SC_RS12650	SCO2121	macS	MacS family sensor histidine kinase	Sensor kinase	0	258	1	500.077	-1.083	-1.945	4	shielded
+SC_RS12675	SCO2126		ROK family glucokinase	ROK	0	1388	3	2519.675	-1.26	-2.109	2	shielded
+SC_RS12745	SCO2140		Lrp/AsnC family transcriptional regulator	Lrp	0	1045	2	383.91	0.496	-0.75	11	shielded
+SC_RS12755	SCO2142		sensor histidine kinase	Sensor kinase	0	1629	2	84.547	-0.281	0.098	4	shielded
+SC_RS12760	SCO2143		response regulator transcription factor	Response regulator	0	268	2	42.261	0.086	-0.018	6	shielded
+SC_RS12805	SCO2152		response regulator	Response regulator	0	321	7	724.263	2.194	0.881	1	shielded
+SC_RS12865	SCO2165		response regulator	Response regulator	0	522	2	150.668	-0.192	-0.821	4	shielded
+SC_RS12870	SCO2166		sensor histidine kinase	Sensor kinase	0	405	3	244.226	0.362	-0.111	2	shielded
+SC_RS12950	SCO2182		GntR family transcriptional regulator	GntR	0	565	3	653.085	0.13	-1.29	8	shielded
+SC_RS12960	SCO2184		helix-turn-helix transcriptional regulator	HTH (other)	0	621	2	120.941	-0.88	-0.792	3	shielded
+SC_RS13040	SCO2201		winged helix-turn-helix transcriptional regulator	HTH (other)	0	1855	2	131.229	1.118	0.54	7	shielded
+SC_RS13055	SCO2204		winged helix DNA-binding domain-containing protein	HTH (other)	0	90	1	409.247	-1.02	-0.905	4	shielded
+SC_RS13080	SCO2209		MarR family transcriptional regulator	MarR	0	246	3	34.702	-1.177	-0.238	3	shielded
+SC_RS13095	SCO2213		winged helix-turn-helix domain-containing protein	HTH (other)	0	1338	2	262.769	3.239	0.307	4	shielded
+SC_RS13105	SCO2215		sensor histidine kinase	Sensor kinase	0	224	3	83.34	0.174	0.118	4	shielded
+SC_RS13110	SCO2216		response regulator transcription factor	Response regulator	0	605	3	92.819	0.703	-0.65	4	shielded
+SC_RS13125	SCO2219		tetratricopeptide repeat protein	TetR	0	930	1	324.659	1.068	0.014	3	shielded
+SC_RS13145	SCO2223		TetR/AcrR family transcriptional regulator	TetR	0	288	2	90.328	-2.604	-1.974	6	exposed
+SC_RS13190	SCO2232		LacI family DNA-binding transcriptional regulator	LacI	0	343	2	692.332	-2.659	-3.015	9	shielded
+SC_RS13245	SCO2243		TetR/AcrR family transcriptional regulator	TetR	0	936	6	378.372	-2.213	-2.232	3	shielded
+SC_RS13260			helix-turn-helix domain-containing protein	HTH (other)	0	371	2	185.576	3.366	2.63	2	shielded
+SC_RS13290	SCO2253		helix-turn-helix domain-containing protein	HTH (other)	0	405	8	183.165	0.061	-0.834	8	shielded
+SC_RS13320	SCO2259		BTAD domain-containing putative transcriptional regulator	Other regulatory	0	943	6	551.122	-0.377	-0.539	1	shielded
+SC_RS13425	SCO2280		TetR/AcrR family transcriptional regulator	TetR	0	2758	0	105.052	-1.039	-0.987	5	shielded
+SC_RS13430	SCO2281		response regulator transcription factor	Response regulator	0	2033	0	120.608	-0.962	-1.573	5	shielded
+SC_RS13500	SCO2294		AraC family transcriptional regulator	AraC	0	1681	1	65.618	0.623	1.813	2	shielded
+SC_RS13505	SCO2295		MerR family transcriptional regulator	MerR	0	1792	1	45.631	0.934	0.747	5	shielded
+SC_RS13565	SCO2307		sensor histidine kinase	Sensor kinase	0	108	4	71.578	0.461	1.377	2	shielded
+SC_RS13570	SCO2308		response regulator transcription factor	Response regulator	0	695	7	93.523	-0.239	-0.234	6	shielded
+SC_RS13625	SCO2319		TetR family transcriptional regulator	TetR	0	550	1	379.733	-3.676	-3.639	1	shielded
+SC_RS13675	SCO2329		GlxA family transcriptional regulator	Other regulatory	0	371	1	82.941	-0.537	-0.451	3	shielded
+SC_RS13685	SCO2331		MarR family winged helix-turn-helix transcriptional regulator	MarR	0	1503	1	120.318	-0.342	-0.969	3	shielded
+SC_RS13825	SCO2358		response regulator transcription factor	Response regulator	0	1037	3	194.247	0.295	-0.586	3	shielded
+SC_RS13830	SCO2359		sensor histidine kinase	Sensor kinase	0	96	5	241.204	0.155	-0.677	1	shielded
+SC_RS13905	SCO2374		TetR family transcriptional regulator	TetR	0	10	8	173.378	-0.003	-1.037	4	shielded
+SC_RS13925	SCO2378		MerR family transcriptional regulator	MerR	0	85	7	138.7	2.098	-0.368	3	shielded
+SC_RS13940	SCO2381		helix-turn-helix domain-containing protein	HTH (other)	0	1491	3	214.371	1.933	1.745	7	shielded
+SC_RS13965	SCO2386	fasR	fatty acid biosynthesis transcriptional regulator FasR	Other regulatory	0	24	8	658.421	-1.346	-2.008	1	exposed
+SC_RS14025	SCO2398		MarR family winged helix-turn-helix transcriptional regulator	MarR	0	197	4	51.239	0.203	0.144	3	shielded
+SC_RS14165	SCO2426		helix-turn-helix domain-containing protein	HTH (other)	0	982	2	155.954	3.915	2.864	3	shielded
+SC_RS14235	SCO2440		IclR family transcriptional regulator	IclR	0	991	2	262.271	-0.879	-1.388	3	shielded
+SC_RS14245	SCO2442		FadR/GntR family transcriptional regulator	GntR	0	1598	1	292.1	-0.984	-2.611	2	shielded
+SC_RS14295	SCO2452		GAF domain-containing sensor histidine kinase	Sensor kinase	0	204	3	31.094	0.193	3.0	1	shielded
+SC_RS14375	SCO2465		RNA polymerase sigma factor	Sigma factor	0	734	1	180.011	-0.784	-1.023	10	shielded
+SC_RS14425	SCO2475		LysR family transcriptional regulator	LysR	0	178	2	273.365	-0.324	-0.973	7	shielded
+SC_RS14455	SCO2481		winged helix-turn-helix transcriptional regulator	HTH (other)	0	856	2	113.434	3.99	2.395	3	shielded
+SC_RS14495	SCO2489		TetR/AcrR family transcriptional regulator	TetR	0	524	1	128.27	0.217	-0.286	8	shielded
+SC_RS14555	SCO2501		helix-turn-helix transcriptional regulator	HTH (other)	0	1275	4	260.59	1.237	0.229	3	shielded
+SC_RS14590	SCO2508		Fur family transcriptional regulator	Other regulatory	0	1347	2	409.583	0.268	-1.253	5	shielded
+SC_RS14615	SCO2513		helix-turn-helix domain-containing protein	HTH (other)	0	833	1	422.179	6.093	5.878	2	shielded
+SC_RS14635	SCO2517		response regulator	Response regulator	0	154	2	567.429	3.934	4.707	1	shielded
+SC_RS14640	SCO2518		sensor histidine kinase	Sensor kinase	0	1120	1	1177.869	3.27	4.158	3	shielded
+SC_RS14725	SCO2535		MmcQ/YjbR family DNA-binding protein	Other regulatory	0	2001	0	111.69	-0.762	-1.461	1	shielded
+SC_RS14735	SCO2537		helix-turn-helix transcriptional regulator	HTH (other)	0	68	2	193.966	0.867	0.315	4	shielded
+SC_RS14770	SCO2544		IclR family transcriptional regulator	IclR	0	610	4	101.825	-0.152	-0.06	2	shielded
+SC_RS14825	SCO2555	hrcA	heat-inducible transcriptional repressor HrcA	Repressor	0	791	2	1822.453	-1.044	-1.901	7	shielded
+SC_RS14890	SCO2568		ComEA family DNA-binding protein	Other regulatory	0	1167	3	59.206	-2.011	-0.642	7	shielded
+SC_RS15140	SCO2614	folC	bifunctional tetrahydrofolate synthase/dihydrofolate synthase	TetR	0	228	1	1801.01	-1.063	-1.883	4	shielded
+SC_RS15270	SCO2639		RNA polymerase sigma factor	Sigma factor	0	113	7	57.656	-1.718	-1.285	2	exposed
+SC_RS15295	SCO2644		LysR family transcriptional regulator	LysR	0	692	2	215.893	-1.919	-1.982	3	shielded
+SC_RS15310	SCO2647		MarR family winged helix-turn-helix transcriptional regulator	MarR	0	478	1	99.633	-1.774	-1.271	8	shielded
+SC_RS15335	SCO2652		Rrf2 family transcriptional regulator	Other regulatory	0	687	1	230.367	-1.565	-2.244	1	shielded
+SC_RS15360	SCO2657		ROK family transcriptional regulator	ROK	0	149	4	132.913	-1.571	-0.893	3	shielded
+SC_RS15485	SCO2681	fxsT	FxSxx-COOH system tetratricopeptide repeat protein	TetR	0	120	7	170.069	-1.634	-0.811	1	exposed
+SC_RS15495	SCO2683		single-stranded DNA-binding protein	Other regulatory	0	82	5	24.552	-0.394	0.98	7	shielded
+SC_RS15515	SCO2686		helix-turn-helix domain-containing protein	HTH (other)	0	2162	0	125.453	-1.583	-1.377	2	shielded
+SC_RS15725			helix-turn-helix transcriptional regulator	HTH (other)	0	1177	1	6.831	0.032	2.605	8	shielded
+SC_RS15755	SCO2734		LysR family transcriptional regulator	LysR	0	210	1	106.96	0.415	0.448	5	shielded
+SC_RS15795	SCO2742		RNA polymerase sigma-70 factor	Sigma factor	0	1335	1	51.183	0.335	1.04	2	shielded
+SC_RS15810	SCO2745		LacI family DNA-binding transcriptional regulator	LacI	0	72	1	57.815	-1.371	0.785	7	shielded
+SC_RS15850	SCO2753		LacI family DNA-binding transcriptional regulator	LacI	0	235	4	185.998	-0.856	-1.227	8	shielded
+SC_RS15870	SCO2757		LysR family transcriptional regulator	LysR	0	593	2	112.509	-0.812	-0.687	3	shielded
+SC_RS15920	SCO2767		tetratricopeptide repeat protein	TetR	0	1542	2	431.076	1.72	1.594	4	shielded
+SC_RS15960	SCO2775		SACE_7040 family transcriptional regulator	Other regulatory	0	253	2	106.387	-1.456	-0.968	2	shielded
+SC_RS16045	SCO2792		helix-turn-helix domain-containing protein	HTH (other)	0	3720	0	3179.369	0.286	-0.975	4	shielded
+SC_RS16060	SCO2794		LacI family DNA-binding transcriptional regulator	LacI	0	37	2	548.893	-0.693	-1.636	6	shielded
+SC_RS16090	SCO2800		sensor histidine kinase	Sensor kinase	0	200	4	162.405	1.111	0.751	6	shielded
+SC_RS16095	SCO2801		response regulator transcription factor	Response regulator	0	501	3	74.663	1.229	0.867	4	shielded
+SC_RS16145	SCO2811		ArsR/SmtB family transcription factor	ArsR	0	952	1	111.046	-0.487	-0.882	3	shielded
+SC_RS16165	SCO2815		TetR/AcrR family transcriptional regulator	TetR	0	380	3	77.209	-1.453	-1.186	8	shielded
+SC_RS16255	SCO2832		IclR family transcriptional regulator	IclR	0	565	2	881.175	2.602	2.236	4	shielded
+SC_RS16305	SCO2840		LysR family transcriptional regulator	LysR	0	1275	2	67.204	0.594	0.511	4	shielded
+SC_RS16325			GntR family transcriptional regulator	GntR	0	203	2	18.524	-2.59	0.188	0	shielded
+SC_RS16330	SCO2846		ROK family transcriptional regulator	ROK	0	1082	2	113.207	-1.702	-1.237	4	shielded
+SC_RS16365	SCO2853		winged helix-turn-helix transcriptional regulator	HTH (other)	0	399	4	43.557	-0.613	-0.076	1	shielded
+SC_RS16395	SCO2859		PadR family transcriptional regulator	PadR	0	952	2	82.511	-1.741	-1.714	4	shielded
+SC_RS16420	SCO2865		helix-turn-helix domain-containing protein	HTH (other)	0	159	3	127.467	-0.638	-0.876	1	shielded
+SC_RS16445	SCO2869		helix-turn-helix domain-containing protein	HTH (other)	0	797	2	39.824	0.591	0.858	5	shielded
+SC_RS16475	SCO2875		MerR family transcriptional regulator	MerR	0	128	2	106.982	0.05	-0.259	3	shielded
+SC_RS16720	SCO2924		SsgA family sporulation/cell division regulator	Other regulatory	0	600	13	198.856	0.205	0.957	5	shielded
+SC_RS16730	SCO2926		tetratricopeptide repeat protein	TetR	0	151	3	40.533	-0.167	2.211	5	shielded
+SC_RS16740	SCO2928		Lrp/AsnC family transcriptional regulator	Lrp	0	1029	1	41.336	-1.215	0.025	5	shielded
+SC_RS16775	SCO2935		IclR family transcriptional regulator	IclR	0	385	3	126.712	-0.686	-0.43	10	shielded
+SC_RS16855	SCO2950		HU family DNA-binding protein	Other regulatory	0	265	2	10732.932	-1.654	-2.902	3	exposed
+SC_RS16870	SCO2953	rsuA	anti-sigma U factor RsuA	Anti-sigma	0	141	2	401.375	1.193	1.57	5	shielded
+SC_RS16875	SCO2954		sigma-70 family RNA polymerase sigma factor	Sigma factor	0	725	2	191.466	1.954	3.13	3	shielded
+SC_RS16920	SCO2964	stgR	LysR family transcriptional regulator StgR	LysR	0	137	4	49.028	-2.146	0.402	4	shielded
+SC_RS17040	SCO2987		MarR family winged helix-turn-helix transcriptional regulator	MarR	0	906	4	193.341	-0.897	-2.153	2	shielded
+SC_RS17075	SCO2994		TetR/AcrR family transcriptional regulator	TetR	0	1941	1	165.141	-2.853	-2.214	5	shielded
+SC_RS17135	SCO3007		winged helix-turn-helix domain-containing protein	HTH (other)	0	226	4	368.771	-1.71	-2.169	1	shielded
+SC_RS17140	SCO3008		response regulator	Response regulator	0	1013	4	1733.902	1.602	0.636	5	shielded
+SC_RS17160	SCO3012	mtrB	two-component system sensor histidine kinase MtrB	Sensor kinase	0	2245	0	1825.483	-0.67	-1.607	3	shielded
+SC_RS17165	SCO3013	mtrA	two-component system response regulator MtrA	Response regulator	0	1554	3	2928.866	-0.097	-1.203	10	shielded
+SC_RS17285	SCO3034		WhiB family transcriptional regulator	WhiB	0	1573	2	845.512	-0.995	-2.173	2	shielded
+SC_RS17425	SCO3062	draK	two-component system sensor histidine kinase DraK	Sensor kinase	0	1311	1	746.969	0.136	-1.132	3	shielded
+SC_RS17430	SCO3063		response regulator transcription factor	Response regulator	0	2023	0	1448.99	0.467	-0.651	5	shielded
+SC_RS17455	SCO3068		RNA polymerase sigma factor SigF	Sigma factor	0	117	3	1170.954	-1.188	-2.61	6	shielded
+SC_RS17490	SCO3075		MurR/RpiR family transcriptional regulator	Other regulatory	0	1271	2	140.11	-1.452	-0.951	2	shielded
+SC_RS17670	SCO3109	mfd	transcription-repair coupling factor	Other regulatory	0	131	1	715.464	-0.326	-1.079	2	exposed
+SC_RS17725	SCO3119		sensor histidine kinase	Sensor kinase	0	568	2	681.986	-0.209	0.143	2	shielded
+SC_RS17770	SCO3129		TetR/AcrR family transcriptional regulator	TetR	0	2374	0	350.82	0.035	-0.626	8	shielded
+SC_RS17790	SCO3133	tamR	MarR family transcriptional regulator TamR	MarR	0	314	5	428.664	-0.434	-0.699	6	shielded
+SC_RS17795	SCO3134		response regulator transcription factor	Response regulator	0	69	4	877.377	3.405	3.16	3	exposed
+SC_RS17830	SCO3144		helix-turn-helix transcriptional regulator	HTH (other)	0	198	5	35.383	-0.045	1.307	14	shielded
+SC_RS17900	SCO3158		SsgA family sporulation/cell division regulator	Other regulatory	0	74	2	200.387	-0.314	-0.412	0	shielded
+SC_RS17945	SCO3167		TetR/AcrR family transcriptional regulator	TetR	0	1482	6	487.889	-0.426	-1.195	2	shielded
+SC_RS17975	SCO3173		MerR family transcriptional regulator	MerR	0	46	3	98.664	-1.545	-1.086	4	shielded
+SC_RS18030	SCO3183		5-formyltetrahydrofolate cyclo-ligase	TetR	0	166	4	173.498	-1.547	-1.922	3	shielded
+SC_RS18105	SCO3198		DeoR/GlpR family DNA-binding transcription regulator	DeoR	0	981	2	1599.915	-0.198	1.01	3	shielded
+SC_RS18115	SCO3200		helix-turn-helix transcriptional regulator	HTH (other)	0	810	1	69.314	-1.209	-0.136	4	shielded
+SC_RS18120	SCO3201		TetR/AcrR family transcriptional regulator	TetR	0	850	2	355.21	-0.638	-0.303	4	shielded
+SC_RS18125	SCO3202		sigma-70 family RNA polymerase sigma factor	Sigma factor	0	465	3	1347.408	0.292	-0.482	6	shielded
+SC_RS18140	SCO3205		MarR family winged helix-turn-helix transcriptional regulator	MarR	0	746	4	75.864	-1.127	-1.266	3	shielded
+SC_RS18150	SCO3207		TetR/AcrR family transcriptional regulator	TetR	0	1077	3	2194.153	4.796	3.955	4	shielded
+SC_RS18160	SCO3209		IclR family transcriptional regulator domain-containing protein	IclR	0	207	2	199.697	0.699	1.154	9	shielded
+SC_RS18200	SCO3217		AfsR/SARP family transcriptional regulator	SARP	0	365	3	6864.439	6.85	5.759	6	shielded
+SC_RS18240	SCO3225		sensor histidine kinase	Sensor kinase	0	774	3	1107.611	2.2	2.725	3	shielded
+SC_RS18245	SCO3226	absA2	two component system response regulator	Response regulator	0	456	3	714.541	0.949	0.54	1	shielded
+SC_RS18410	SCO3258		SCO3933 family regulatory protein	Other regulatory	0	798	3	12.671	-3.282	0.154	4	shielded
+SC_RS18415	SCO3259		GntR family transcriptional regulator	GntR	0	95	3	197.298	-1.087	-1.157	3	shielded
+SC_RS18440	SCO3264		GntR family transcriptional regulator	GntR	0	3426	0	37.244	-3.578	-0.438	4	shielded
+SC_RS18455	SCO3269		GntR family transcriptional regulator	GntR	0	2305	0	89.369	-1.407	-1.33	1	shielded
+SC_RS18470			helix-turn-helix domain-containing protein	HTH (other)	0	93	1	18.028	0.364	0.967	1	shielded
+SC_RS18490	SCO3275		MerR family transcriptional regulator	MerR	0	529	4	111.812	-1.746	-1.775	2	shielded
+SC_RS18650	SCO3308		helix-turn-helix domain-containing protein	HTH (other)	0	2305	0	474.956	-1.291	-1.816	1	shielded
+SC_RS18680	SCO3315		TetR/AcrR family transcriptional regulator	TetR	0	73	2	68.158	-0.421	-0.537	6	shielded
+SC_RS18705	SCO3320		redox-sensing transcriptional repressor Rex	Repressor	0	404	4	1463.971	-1.29	-1.814	9	shielded
+SC_RS18720	SCO3323		ECF subfamily RNA polymerase sigma factor, BldN family	Sigma factor	0	1410	2	3804.503	7.55	6.632	4	shielded
+SC_RS18745	SCO3328		helix-turn-helix domain-containing protein	HTH (other)	0	4995	0	6597.952	5.485	6.94	7	shielded
+SC_RS18795	SCO3335		GlxA family transcriptional regulator	Other regulatory	0	433	5	42.538	-0.595	1.209	6	shielded
+SC_RS18850	SCO3346		TetR/AcrR family transcriptional regulator	TetR	0	538	2	104.357	1.101	-0.161	5	shielded
+SC_RS18895	SCO3356		SigE family RNA polymerase sigma factor	Sigma factor	0	533	5	3586.319	0.359	-0.683	5	shielded
+SC_RS18905	SCO3358	cseB	two-component system response regulator CseB	Response regulator	0	124	6	472.877	-0.365	-1.309	8	shielded
+SC_RS18910	SCO3359	cseC	two-component system sensor histidine kinase CseC	Sensor kinase	0	845	4	1036.835	0.045	-1.067	5	shielded
+SC_RS18920	SCO3361		Lrp/AsnC family transcriptional regulator	Lrp	0	1740	1	35.226	-0.295	0.188	4	shielded
+SC_RS18945	SCO3365		helix-turn-helix domain-containing protein	HTH (other)	0	236	2	235.232	3.42	3.744	4	shielded
+SC_RS18960	SCO3367		TetR/AcrR family transcriptional regulator	TetR	0	310	3	208.917	-0.921	-0.819	2	shielded
+SC_RS19010	SCO3377		BlaI/MecI/CopY family transcriptional regulator	Other regulatory	0	396	6	161.023	0.24	-0.575	3	shielded
+SC_RS19070	SCO3389		response regulator	Response regulator	0	841	2	168.332	-1.573	-0.603	4	shielded
+SC_RS19075	SCO3390		sensor histidine kinase	Sensor kinase	0	2112	0	500.76	-1.111	0.398	1	shielded
+SC_RS19190	SCO3413		MerR family transcriptional regulator	MerR	0	27	3	353.724	-0.154	0.176	8	shielded
+SC_RS19195	SCO3414		MarR family winged helix-turn-helix transcriptional regulator	MarR	0	501	3	180.812	-1.331	-1.379	7	shielded
+SC_RS19220	SCO3419		PadR family transcriptional regulator	PadR	0	115	3	197.325	0.445	-0.333	7	shielded
+SC_RS19230	SCO3421		helix-turn-helix domain-containing protein	HTH (other)	0	845	1	835.804	1.18	0.451	4	shielded
+SC_RS19300	SCO3435		LysR family transcriptional regulator	LysR	0	517	4	77.608	-1.419	-0.616	5	shielded
+SC_RS19360	SCO3447		Crp/Fnr family transcriptional regulator	CRP/FNR	0	1656	1	133.08	-0.732	-0.492	4	shielded
+SC_RS19370	SCO3449		anti-sigma factor family protein	Sigma factor	0	2401	0	41.351	0.847	0.489	5	shielded
+SC_RS19375	SCO3450		RNA polymerase sigma factor	Sigma factor	0	3006	0	121.822	0.621	-0.188	1	shielded
+SC_RS19380	SCO3451		anti-sigma factor family protein	Sigma factor	0	3164	0	17.132	0.677	1.354	1	shielded
+SC_RS19550	SCO3485		LacI family DNA-binding transcriptional regulator	LacI	0	3218	0	269.204	-0.786	-1.187	1	shielded
+SC_RS19650	SCO3506		LacI family DNA-binding transcriptional regulator	LacI	0	396	1	246.331	-0.695	-0.972	5	shielded
+SC_RS19730	SCO3522		ArsR/SmtB family transcription factor	ArsR	0	1742	1	30.944	0.499	1.092	0	shielded
+SC_RS19815			helix-turn-helix domain-containing protein	HTH (other)	0	1485	3	165.952	1.175	-0.122	3	shielded
+SC_RS19880	SCO3549	bldG	anti-sigma factor antagonist BldG	Sigma factor	0	2338	0	4491.199	1.534	0.546	3	shielded
+SC_RS19990	SCO3571		Crp/Fnr family transcriptional regulator	CRP/FNR	0	551	2	1899.308	-0.221	-1.334	2	shielded
+SC_RS20030	SCO3579	wblA	transcriptional regulator WblA	WhiB	0	552	5	5764.533	6.324	5.599	4	shielded
+SC_RS20070	SCO3587		TetR/AcrR family transcriptional regulator	TetR	0	1585	1	15.801	-1.079	3.17	3	shielded
+SC_RS20085	SCO3590	vanR-Sc	VanSc-type vancomycin resistance response regulator transcription factor VanR	Response regulator	0	785	3	72.188	0.175	1.009	5	shielded
+SC_RS20135	SCO3600		helix-turn-helix domain-containing protein	HTH (other)	0	116	4	54.475	-2.032	-0.665	4	shielded
+SC_RS20140	SCO3601		cation:proton antiporter regulatory subunit	Other regulatory	0	378	5	145.305	-2.405	-2.218	7	shielded
+SC_RS20165	SCO3606		PucR family transcriptional regulator	Other regulatory	0	107	2	518.793	-1.65	-2.493	8	shielded
+SC_RS20200	SCO3613		SigE family RNA polymerase sigma factor	Sigma factor	0	793	3	539.622	-1.124	-1.455	10	shielded
+SC_RS20215	SCO3616		LysR substrate-binding domain-containing protein	LysR	0	564	3	252.317	1.008	-0.475	8	shielded
+SC_RS20250	SCO3623		GntR family transcriptional regulator	GntR	0	85	3	94.299	-1.681	-1.335	10	shielded
+SC_RS20265	SCO3626		sigma-70 family RNA polymerase sigma factor	Sigma factor	0	267	4	160.502	-1.625	-1.427	4	shielded
+SC_RS20295	SCO3632		GbsR/MarR family transcriptional regulator	MarR	0	299	3	128.924	-1.252	-1.718	1	shielded
+SC_RS20330	SCO3638		response regulator	Response regulator	0	177	3	79.07	0.156	-0.126	4	shielded
+SC_RS20335	SCO3639		sensor histidine kinase	Sensor kinase	0	1238	2	163.67	-0.64	-0.565	5	shielded
+SC_RS20340	SCO3640		response regulator	Response regulator	0	761	4	48.324	-0.026	0.163	4	shielded
+SC_RS20345	SCO3641		sensor histidine kinase	Sensor kinase	0	112	4	142.101	-0.954	-0.702	3	shielded
+SC_RS20405	SCO3653		response regulator transcription factor	Response regulator	0	982	2	93.965	1.651	1.364	4	shielded
+SC_RS20410	SCO3654		sensor histidine kinase	Sensor kinase	0	175	2	44.97	0.318	1.882	0	shielded
+SC_RS20455	SCO3664		helix-turn-helix domain-containing protein	HTH (other)	0	3346	0	461.022	-0.272	-1.41	2	shielded
+SC_RS20460	SCO3665		helix-turn-helix transcriptional regulator	HTH (other)	0	4380	0	174.586	-0.513	-0.941	8	shielded
+SC_RS20465	SCO3666		helix-turn-helix transcriptional regulator	HTH (other)	0	6363	0	282.544	-0.584	-0.754	5	shielded
+SC_RS20475	SCO3668		heat shock protein transcriptional repressor HspR	Repressor	0	4681	0	640.353	-1.446	-1.714	3	shielded
+SC_RS20605	SCO3694		MerR family transcriptional regulator	MerR	0	1367	2	19.674	0.173	1.224	7	shielded
+SC_RS20615	SCO3696		ArsR/SmtB family transcription factor	ArsR	0	591	2	49.726	-0.148	0.163	5	shielded
+SC_RS20630	SCO3699		ArsR/SmtB family transcription factor	ArsR	0	244	6	13.258	0.391	0.841	4	shielded
+SC_RS20680	SCO3709		SigE family RNA polymerase sigma factor	Sigma factor	0	1917	1	50.506	-1.319	-0.174	4	shielded
+SC_RS20710			sigma-70 family RNA polymerase sigma factor	Sigma factor	0	1998	1	335.939	-0.646	-1.019	7	shielded
+SC_RS20740	SCO3722		ArsR/SmtB family transcription factor	ArsR	0	968	1	57.983	-0.814	-1.06	7	shielded
+SC_RS20775	SCO3729		helix-turn-helix domain-containing protein	HTH (other)	0	37	1	138.572	-0.697	-1.04	6	exposed
+SC_RS20810	SCO3736		RNA polymerase sigma factor	Sigma factor	0	585	3	48.396	-1.731	-1.224	3	shielded
+SC_RS20830	SCO3740		sensor histidine kinase	Sensor kinase	0	534	5	91.151	-0.693	-0.395	4	shielded
+SC_RS20835	SCO3741		response regulator transcription factor	Response regulator	0	371	5	80.015	-0.756	-0.518	4	shielded
+SC_RS20875	SCO3750		sensor histidine kinase	Sensor kinase	0	878	5	137.294	-0.579	-0.198	2	shielded
+SC_RS20905	SCO3756		response regulator	Response regulator	0	454	6	80.136	-0.954	-1.065	3	shielded
+SC_RS20910	SCO3757		sensor histidine kinase	Sensor kinase	0	430	6	230.951	-1.073	-1.801	5	shielded
+SC_RS20965	SCO3769		TetR/AcrR family transcriptional regulator	TetR	0	723	2	883.408	-2.256	-3.122	7	shielded
+SC_RS20985	SCO3773		LysR family transcriptional regulator	LysR	0	179	2	85.007	-2.688	-0.885	3	shielded
+SC_RS21030	SCO3782		helix-turn-helix domain-containing protein	HTH (other)	0	2404	0	157.097	0.192	-0.575	1	shielded
+SC_RS21145	SCO3804		GlxA family transcriptional regulator	Other regulatory	0	1795	1	51.982	-1.665	-0.152	7	shielded
+SC_RS21175	SCO3810		GntR family transcriptional regulator	GntR	0	1221	4	379.082	0.772	0.384	4	shielded
+SC_RS21185	SCO3812		GntR family transcriptional regulator	GntR	0	17	3	42.002	-1.441	-1.324	2	shielded
+SC_RS21215	SCO3818		response regulator	Response regulator	0	536	2	132.033	0.979	0.984	3	shielded
+SC_RS21235	SCO3822		bacterial proteasome activator family protein	Activator	0	380	3	2237.34	-0.57	-1.385	7	shielded
+SC_RS21290	SCO3832		Lrp/AsnC family transcriptional regulator	Lrp	0	1378	1	133.631	-0.078	-1.168	9	shielded
+SC_RS21295	SCO3833		TetR/AcrR family transcriptional regulator	TetR	0	2555	0	188.334	1.641	0.558	2	shielded
+SC_RS21350	SCO3843	fhaA	antibiotic biosynthesis regulator FhaA	Other regulatory	0	244	9	2123.187	-2.373	-2.64	3	shielded
+SC_RS21355	SCO3844	fhaB	antibiotic biosynthesis regulator FhaB	Other regulatory	0	322	9	795.535	-1.949	-2.659	2	shielded
+SC_RS21435	SCO3859		helix-turn-helix domain-containing protein	HTH (other)	0	809	1	304.786	-0.063	-0.911	4	shielded
+SC_RS21460	SCO3864		GntR family transcriptional regulator	GntR	0	349	2	146.693	-0.654	-0.937	1	shielded
+SC_RS21600	SCO3891		anti-sigma factor family protein	Sigma factor	0	133	3	134.137	-0.38	-0.53	3	shielded
+SC_RS21605	SCO3892	sigM	RNA polymerase sigma factor SigM	Sigma factor	0	314	3	251.204	-0.897	-1.378	4	shielded
+SC_RS21645	SCO3900		PadR family transcriptional regulator	PadR	0	2196	0	3234.682	-2.977	-3.141	8	shielded
+SC_RS21680	SCO3907		single-stranded DNA-binding protein	Other regulatory	0	206	1	12967.67	-2.529	-3.327	3	exposed
+SC_RS21715	SCO3914		MarR family winged helix-turn-helix transcriptional regulator	MarR	0	830	3	261.22	-0.815	-1.622	5	shielded
+SC_RS21740	SCO3919		LysR family transcriptional regulator	LysR	0	87	3	89.875	-0.118	0.662	5	shielded
+SC_RS21770	SCO3925		IclR family transcriptional regulator	IclR	0	892	2	171.457	-0.179	-0.413	3	shielded
+SC_RS21775	SCO3926		SsgA family sporulation/cell division regulator	Other regulatory	0	1718	2	134.28	1.614	1.293	1	shielded
+SC_RS21805	SCO3932		GntR family transcriptional regulator	GntR	0	878	4	167.605	-0.484	-0.276	2	shielded
+SC_RS21855	SCO3943		LacI family DNA-binding transcriptional regulator	LacI	0	481	4	147.767	0.357	2.321	4	shielded
+SC_RS21880	SCO3948		sensor histidine kinase	Sensor kinase	0	90	5	119.749	-1.982	-0.2	1	shielded
+SC_RS22035	SCO3979		TetR/AcrR family transcriptional regulator	TetR	0	1196	3	158.242	-0.712	-1.371	1	shielded
+SC_RS22050	SCO3981		GntR family transcriptional regulator	GntR	0	257	1	110.213	-1.455	-1.116	3	shielded
+SC_RS22070	SCO3986		GntR family transcriptional regulator	GntR	0	858	1	86.562	-1.689	-0.65	3	shielded
+SC_RS22135	SCO4005		SigE family RNA polymerase sigma factor	Sigma factor	0	52	4	473.005	0.265	3.232	4	exposed
+SC_RS22150	SCO4008		TetR family transcriptional regulator	TetR	0	501	5	200.745	-2.114	-1.888	2	shielded
+SC_RS22155	SCO4009		hybrid sensor histidine kinase/response regulator	Sensor kinase	0	1577	1	3167.978	-0.819	-1.745	7	shielded
+SC_RS22190	SCO4014		winged helix-turn-helix transcriptional regulator	HTH (other)	0	879	1	288.296	-0.92	-2.232	2	shielded
+SC_RS22205	SCO4017		metal-dependent transcriptional regulator	Other regulatory	0	2193	0	71.735	-1.59	-0.154	7	shielded
+SC_RS22215	SCO4019		GntR family transcriptional regulator	GntR	0	1549	3	91.271	-1.161	-0.884	7	shielded
+SC_RS22220	SCO4020		response regulator transcription factor	Response regulator	0	722	3	31.987	-1.578	-0.087	3	shielded
+SC_RS22225	SCO4021		sensor histidine kinase	Sensor kinase	0	11	4	46.255	-1.292	1.525	3	shielded
+SC_RS22245	SCO4025		TetR/AcrR family transcriptional regulator	TetR	0	375	3	205.725	-0.557	-1.356	5	shielded
+SC_RS22280	SCO4032		MarR family winged helix-turn-helix transcriptional regulator	MarR	0	1591	1	25.281	-0.551	0.704	5	shielded
+SC_RS22290	SCO4034		RNA polymerase sigma factor SigF	Sigma factor	0	1149	1	4666.849	1.455	0.924	2	shielded
+SC_RS22295	SCO4035		RNA polymerase sigma factor SigF	Sigma factor	0	6	1	23.572	-0.733	2.079	2	shielded
+SC_RS22420	SCO4059		ArsR/SmtB family transcription factor	ArsR	0	38	2	70.545	0.026	-0.505	6	shielded
+SC_RS22490	SCO4072		response regulator transcription factor	Response regulator	0	349	4	58.71	-0.985	-0.422	1	shielded
+SC_RS22495	SCO4073		sensor histidine kinase	Sensor kinase	0	507	2	238.2	-1.413	-1.006	1	shielded
+SC_RS22545	SCO4081		ArsR/SmtB family transcription factor	ArsR	0	1204	1	115.299	-1.03	-1.32	1	shielded
+SC_RS22590	SCO4091	bldC	developmental transcriptional regulator BldC	Other regulatory	0	428	3	6678.047	0.95	-0.143	4	shielded
+SC_RS22660	SCO4099		TetR/AcrR family transcriptional regulator	TetR	0	650	2	79.537	-1.034	-0.382	3	shielded
+SC_RS22675	SCO4102		MerR family transcriptional regulator	MerR	0	1805	1	46.298	0.383	1.272	8	shielded
+SC_RS22750	SCO4116		BTAD domain-containing putative transcriptional regulator	Other regulatory	0	489	4	411.992	-0.616	-0.513	2	shielded
+SC_RS22755	SCO4117		sigma-70 family RNA polymerase sigma factor	Sigma factor	0	1385	3	540.085	0.508	0.219	9	shielded
+SC_RS22760	SCO4118		TetR/AcrR family transcriptional regulator	TetR	0	1421	1	620.419	0.514	0.627	7	shielded
+SC_RS22780	SCO4122		MarR family winged helix-turn-helix transcriptional regulator	MarR	0	207	5	473.241	-3.8	-3.539	3	exposed
+SC_RS22800	SCO4123		response regulator	Response regulator	0	1361	1	106.843	-1.45	-1.659	2	shielded
+SC_RS22805	SCO4124		sensor histidine kinase	Sensor kinase	0	90	1	63.644	-1.725	0.317	2	shielded
+SC_RS22870	SCO4136		metal-sensitive transcriptional regulator	Other regulatory	0	993	4	324.637	0.674	-0.613	3	shielded
+SC_RS22920	SCO4146		RNA polymerase sigma factor	Sigma factor	0	684	2	32.659	-0.383	0.066	8	shielded
+SC_RS22955	SCO4153		winged helix-turn-helix transcriptional regulator	HTH (other)	0	3189	0	141.621	-0.338	-1.226	3	shielded
+SC_RS22965	SCO4155		sensor histidine kinase	Sensor kinase	0	1327	2	110.997	-0.602	-0.563	1	shielded
+SC_RS22970	SCO4156		response regulator transcription factor	Response regulator	0	584	3	91.329	-0.691	-0.649	3	shielded
+SC_RS22980	SCO4158		LacI family DNA-binding transcriptional regulator	LacI	0	172	4	1108.008	-0.026	-1.387	9	exposed
+SC_RS22985	SCO4159	glnR	two-component system response regulator GlnR	Response regulator	0	674	4	1057.795	-1.611	-2.406	8	shielded
+SC_RS23025	SCO4167		TetR family transcriptional regulator	TetR	0	293	2	115.329	-0.889	-1.669	9	shielded
+SC_RS23070	SCO4176		helix-turn-helix domain-containing protein	HTH (other)	0	69	4	128.207	0.728	1.639	3	shielded
+SC_RS23085	SCO4180		Fur family transcriptional regulator	Other regulatory	0	1946	2	876.097	-1.145	-2.239	2	shielded
+SC_RS23125	SCO4188		FadR/GntR family transcriptional regulator	GntR	0	3383	0	170.325	-1.339	-0.738	4	shielded
+SC_RS23135	SCO4190		winged helix-turn-helix domain-containing protein	HTH (other)	0	2133	0	426.799	-0.947	-1.274	4	shielded
+SC_RS23155	SCO4194		TetR family transcriptional regulator	TetR	0	886	2	75.626	-0.146	-0.453	3	shielded
+SC_RS23170	SCO4197		MarR family winged helix-turn-helix transcriptional regulator	MarR	0	1032	5	107.392	-1.302	-1.216	6	shielded
+SC_RS23175	SCO4198		helix-turn-helix domain-containing protein	HTH (other)	0	921	3	1426.431	2.189	0.672	9	shielded
+SC_RS23215	SCO4206		AraC family transcriptional regulator	AraC	0	714	1	164.285	0.414	-0.292	3	shielded
+SC_RS23260	SCO4215		GntR family transcriptional regulator	GntR	0	1873	1	475.407	-1.858	-2.341	1	shielded
+SC_RS23300	SCO4223		AraC family transcriptional regulator	AraC	0	872	2	182.505	-1.393	-1.428	8	shielded
+SC_RS23330	SCO4229		sensor histidine kinase	Sensor kinase	0	1093	2	2349.006	3.09	0.679	5	shielded
+SC_RS23335	SCO4230		response regulator transcription factor	Response regulator	0	848	2	2819.708	4.228	1.42	3	shielded
+SC_RS23345	SCO4232		CarD family transcriptional regulator	Other regulatory	0	998	3	11953.843	-1.122	-1.546	7	shielded
+SC_RS23495	SCO4261		helix-turn-helix transcriptional regulator	HTH (other)	0	1814	2	5444.477	3.062	-0.057	5	shielded
+SC_RS23500	SCO4263		helix-turn-helix transcriptional regulator	HTH (other)	0	1567	1	2663.617	-0.513	-1.63	5	shielded
+SC_RS23535	SCO4270		TetR family transcriptional regulator	TetR	0	3978	0	103.612	-2.344	-1.592	2	shielded
+SC_RS23560	SCO4275		sensor histidine kinase	Sensor kinase	0	3924	0	102.991	-2.442	-0.84	7	shielded
+SC_RS23565	SCO4276		response regulator	Response regulator	0	2641	0	208.915	-2.688	-1.947	1	shielded
+SC_RS23610	SCO4285		ROK family protein	ROK	0	507	3	99.268	-1.123	-0.608	4	shielded
+SC_RS23690	SCO4301		helix-turn-helix domain-containing protein	HTH (other)	0	434	1	308.826	4.006	4.058	3	shielded
+SC_RS23700	SCO4303		TetR/AcrR family transcriptional regulator	TetR	0	693	2	226.336	0.48	0.291	3	shielded
+SC_RS23710	SCO4305		TetR/AcrR family transcriptional regulator	TetR	0	226	2	122.408	-0.764	-1.192	5	exposed
+SC_RS23725	SCO4308		MurR/RpiR family transcriptional regulator	Other regulatory	0	67	3	158.23	-2.074	-0.44	3	shielded
+SC_RS23750	SCO4313		TetR/AcrR family transcriptional regulator	TetR	0	575	2	208.718	-2.668	-2.557	8	shielded
+SC_RS23810	SCO4326		1,4-dihydroxy-6-naphthoate synthase	HTH (other)	0	1108	2	498.508	-1.18	-2.428	4	shielded
+SC_RS23860	SCO4336		MarR family winged helix-turn-helix transcriptional regulator	MarR	0	2203	0	985.344	-2.215	-1.866	8	shielded
+SC_RS23960	SCO4358		TetR/AcrR family transcriptional regulator	TetR	0	2092	0	219.234	-1.612	-1.75	6	shielded
+SC_RS23980	SCO4362		sensor histidine kinase	Sensor kinase	0	676	1	62.215	-0.528	0.141	4	shielded
+SC_RS23985	SCO4363		response regulator transcription factor	Response regulator	0	532	1	88.727	-0.792	-0.802	7	shielded
+SC_RS24045	SCO4375		MarR family winged helix-turn-helix transcriptional regulator	MarR	0	738	4	59.696	-0.735	-0.002	3	shielded
+SC_RS24095	SCO4385		TetR/AcrR family transcriptional regulator	TetR	0	231	2	72.945	-2.742	-1.553	4	shielded
+SC_RS24125	SCO4391		winged helix-turn-helix transcriptional regulator	HTH (other)	0	466	5	69.114	1.23	0.559	4	shielded
+SC_RS24140	SCO4394		metal-dependent transcriptional regulator	Other regulatory	0	245	4	1521.103	0.108	-0.599	6	shielded
+SC_RS24185	SCO4403	purU	formyltetrahydrofolate deformylase	TetR	0	385	2	425.871	-0.712	-1.778	7	shielded
+SC_RS24205	SCO4407		GbsR/MarR family transcriptional regulator	MarR	0	1304	8	114.016	-0.61	-1.112	6	shielded
+SC_RS24215	SCO4409		sigma-70 family RNA polymerase sigma factor	Sigma factor	0	666	9	2622.672	2.448	1.891	4	shielded
+SC_RS24235	SCO4413		GlxA family transcriptional regulator	Other regulatory	0	771	4	166.316	1.328	0.857	5	shielded
+SC_RS24270	SCO4421		TetR family transcriptional regulator	TetR	0	804	4	246.438	-1.55	-1.878	5	shielded
+SC_RS24295	SCO4426	afsR	transcriptional regulator AfsR	Other regulatory	0	206	4	773.57	-0.261	-0.918	5	shielded
+SC_RS24335	SCO4434		LysR family transcriptional regulator	LysR	0	265	1	110.501	-0.566	-0.647	3	shielded
+SC_RS24370	SCO4441		helix-turn-helix domain-containing protein	HTH (other)	0	168	5	1334.775	3.689	2.477	4	shielded
+SC_RS24380	SCO4443		MerR family transcriptional regulator	MerR	0	49	5	717.317	2.123	0.6	4	exposed
+SC_RS24390	SCO4445		ArsR/SmtB family transcription factor	ArsR	0	1000	4	116.319	-1.575	-1.054	2	shielded
+SC_RS24415	SCO4450		TetR/AcrR family transcriptional regulator	TetR	0	326	3	28.179	-1.562	0.039	5	shielded
+SC_RS24425	SCO4452		RNA polymerase sigma factor	Sigma factor	0	128	3	143.539	0.44	0.595	4	shielded
+SC_RS24435	SCO4454		TetR/AcrR family transcriptional regulator	TetR	0	1237	3	135.07	-1.817	-1.673	5	shielded
+SC_RS24470	SCO4461		TetR/AcrR family transcriptional regulator	TetR	0	21	5	45.093	-0.323	0.002	0	shielded
+SC_RS24490	SCO4465		PadR family transcriptional regulator	PadR	0	805	5	48.392	-0.929	-0.543	1	shielded
+SC_RS24545	SCO4477		MerR family transcriptional regulator	MerR	0	1179	5	40.959	-0.936	0.436	4	shielded
+SC_RS24560	SCO4480		TetR/AcrR family transcriptional regulator	TetR	0	840	7	81.275	-1.797	-0.893	1	shielded
+SC_RS24570	SCO4482		LysR family transcriptional regulator	LysR	0	549	4	159.252	-1.571	-1.499	4	shielded
+SC_RS24585	SCO4485		helix-turn-helix transcriptional regulator	HTH (other)	0	1089	2	89.85	-1.348	-0.687	4	shielded
+SC_RS24625			Lrp/AsnC family transcriptional regulator	Lrp	0	1715	2	208.791	-1.322	-2.203	0	shielded
+SC_RS24635	SCO4495		UdgX family uracil-DNA binding protein	Other regulatory	0	82	3	66.49	-2.524	-1.294	8	exposed
+SC_RS24660	SCO4499		TetR/AcrR family transcriptional regulator	TetR	0	1006	1	774.906	-0.193	-2.717	1	shielded
+SC_RS24870	SCO4543	whiJ	transcriptional regulator WhiJ	Other regulatory	0	1595	2	377.047	-1.105	-1.903	4	shielded
+SC_RS24895	SCO4548		bacterial transcriptional activator domain-containing protein	Activator	0	3233	0	1192.356	-1.208	-2.357	1	shielded
+SC_RS25095	SCO4588		tetratricopeptide repeat protein	TetR	0	598	2	777.852	-2.727	-1.142	13	shielded
+SC_RS25135	SCO4596		response regulator transcription factor	Response regulator	0	2187	0	272.365	-0.632	-0.806	14	shielded
+SC_RS25140	SCO4597		sensor histidine kinase	Sensor kinase	0	1041	1	164.008	-0.102	-0.077	2	shielded
+SC_RS25145	SCO4598		sensor histidine kinase	Sensor kinase	0	296	2	141.53	0.602	0.397	0	shielded
+SC_RS25300	SCO4628		GntR family transcriptional regulator	GntR	0	1555	1	606.978	-2.065	-2.663	2	shielded
+SC_RS25320	SCO4632	fxsT	FxSxx-COOH system tetratricopeptide repeat protein	TetR	0	1569	1	622.942	1.37	0.863	2	shielded
+SC_RS25370	SCO4639		TetR/AcrR family transcriptional regulator	TetR	0	252	4	156.747	-1.206	-2.258	8	exposed
+SC_RS25375	SCO4640		TetR/AcrR family transcriptional regulator	TetR	0	923	3	424.646	-0.857	-2.446	4	shielded
+SC_RS25415	SCO4647	nusG	transcription termination/antitermination protein NusG	Other regulatory	0	1218	1	3011.874	-2.28	-3.32	6	shielded
+SC_RS25495	SCO4663		AfsR/SARP family transcriptional regulator	SARP	0	370	5	164.524	-1.4	-2.353	3	shielded
+SC_RS25510	SCO4667		sensor histidine kinase	Sensor kinase	0	439	3	48.553	0.049	1.354	5	shielded
+SC_RS25515	SCO4668		response regulator	Response regulator	0	674	3	188.333	-1.348	-1.682	2	shielded
+SC_RS25530	SCO4671		LysR family transcriptional regulator	LysR	0	1497	2	104.092	0.326	-0.07	6	shielded
+SC_RS25540	SCO4673		helix-turn-helix transcriptional regulator	HTH (other)	0	381	2	333.883	0.848	-0.072	8	shielded
+SC_RS25555	SCO4676		helix-turn-helix domain-containing protein	HTH (other)	0	1897	1	349.661	4.939	4.74	7	shielded
+SC_RS25565	SCO4678		helix-turn-helix domain-containing protein	HTH (other)	0	1305	1	379.808	2.002	1.872	5	shielded
+SC_RS25575	SCO4680		helix-turn-helix transcriptional regulator	HTH (other)	0	590	1	316.462	0.299	-0.019	9	shielded
+SC_RS25615	SCO4688		MerR family transcriptional regulator	MerR	0	1208	3	222.948	-0.21	-0.571	5	shielded
+SC_RS25875	SCO4743		helix-turn-helix domain-containing protein	HTH (other)	0	432	3	80.061	-0.967	-0.953	2	shielded
+SC_RS25930	SCO4754		LacI family DNA-binding transcriptional regulator	LacI	0	854	3	135.513	-1.458	-1.259	2	shielded
+SC_RS25945	SCO4757		RNA polymerase sigma factor	Sigma factor	0	210	5	76.02	-0.5	0.121	1	shielded
+SC_RS25990	SCO4766		LysR family transcriptional regulator	LysR	0	207	3	179.012	-0.561	-1.193	2	exposed
+SC_RS25995	SCO4767		WhiB family transcriptional regulator	WhiB	0	1531	2	33.517	0.337	1.041	4	shielded
+SC_RS26000	SCO4768		response regulator transcription factor	Response regulator	0	1913	2	3024.945	5.824	5.197	6	shielded
+SC_RS26005	SCO4769		sigma-70 family RNA polymerase sigma factor	Sigma factor	0	2806	0	770.797	1.475	0.906	2	shielded
+SC_RS26125	SCO4792		LuxR C-terminal-related transcriptional regulator	Other regulatory	0	505	3	444.8	0.327	-0.164	4	shielded
+SC_RS26210	SCO4810		helix-turn-helix domain-containing protein	HTH (other)	0	572	5	155.894	-2.171	-1.767	9	shielded
+SC_RS26275	SCO4822		single stranded DNA-binding domain-containing protein	Other regulatory	0	374	6	1304.742	-1.605	-4.157	1	shielded
+SC_RS26280	SCO4824		bifunctional methylenetetrahydrofolate dehydrogenase/methenyltetrahydrofolate cyclohydrolase	TetR	0	78	3	1112.196	-1.04	-2.653	3	shielded
+SC_RS26290	SCO4826		XRE family transcriptional regulator	XRE	0	407	5	1286.353	-1.388	-1.656	18	shielded
+SC_RS26340	SCO4836	pdxR	MocR-like pyridoxine biosynthesis transcription factor PdxR	Other regulatory	0	122	5	37.423	-0.483	1.696	1	shielded
+SC_RS26410	SCO4850		TetR/AcrR family transcriptional regulator	TetR	0	1098	2	108.812	-1.204	-1.676	2	shielded
+SC_RS26480	SCO4864		RNA polymerase sigma factor	Sigma factor	0	814	3	18.264	-1.025	0.115	1	shielded
+SC_RS26490	SCO4866		RNA polymerase sigma factor	Sigma factor	0	315	4	91.224	-2.383	-1.463	8	shielded
+SC_RS26515	SCO4871		TetR/AcrR family transcriptional regulator	TetR	0	763	2	155.952	0.451	-0.584	4	shielded
+SC_RS26620	SCO4892		winged helix-turn-helix domain-containing protein	HTH (other)	0	309	5	144.743	0.924	0.906	3	shielded
+SC_RS26635	SCO4895		sigma-70 family RNA polymerase sigma factor	Sigma factor	0	385	5	1651.943	-0.357	-0.468	1	shielded
+SC_RS26645	SCO4897		LysR family transcriptional regulator	LysR	0	1094	3	88.412	-0.263	-0.204	7	shielded
+SC_RS26650	SCO4898		TetR/AcrR family transcriptional regulator	TetR	0	1511	1	89.196	-0.39	-0.736	4	shielded
+SC_RS26690	SCO4906	afsQ2	two-component system sensor histidine kinase AfsQ2	Sensor kinase	0	519	3	1137.916	-1.258	-2.312	2	shielded
+SC_RS26695	SCO4907	afsQ1	two-component system response regulator AfsQ1	Response regulator	0	1167	4	1004.01	-1.445	-2.329	7	shielded
+SC_RS26700	SCO4908		SigE family RNA polymerase sigma factor	Sigma factor	0	958	4	2483.885	-2.845	-0.328	6	shielded
+SC_RS26760	SCO4920		DeoR/GlpR family DNA-binding transcription regulator	DeoR	0	811	4	10219.935	5.322	3.928	5	shielded
+SC_RS26855	SCO4938	sigJ	RNA polymerase sigma factor SigJ	Sigma factor	0	40	2	35.549	-1.018	1.336	6	exposed
+SC_RS26865	SCO4940		TetR/AcrR family transcriptional regulator	TetR	0	1046	2	64.897	-3.046	-2.197	9	shielded
+SC_RS26875	SCO4942		TetR family transcriptional regulator	TetR	0	717	2	79.145	-1.921	-0.968	0	shielded
+SC_RS26885	SCO4944		helix-turn-helix domain-containing protein	HTH (other)	0	217	4	425.696	-1.549	-2.02	2	shielded
+SC_RS26925	SCO4952		TetR/AcrR family transcriptional regulator	TetR	0	1040	4	144.483	-0.059	-1.591	3	shielded
+SC_RS26965	SCO4960		sigma factor-like helix-turn-helix DNA-binding protein	Sigma factor	0	94	5	154.977	-1.272	-1.515	5	exposed
+SC_RS26970	SCO4961		MarR family winged helix-turn-helix transcriptional regulator	MarR	0	540	5	193.814	0.229	-0.242	6	shielded
+SC_RS26990	SCO4965	greA	transcription elongation factor GreA	Other regulatory	0	965	1	892.561	-1.031	-1.186	5	shielded
+SC_RS27010	SCO4969		tetratricopeptide repeat protein	TetR	0	853	1	1077.266	-0.309	-0.82	2	shielded
+SC_RS27045	SCO4977		acyl-CoA-like ligand-binding transcription factor	Other regulatory	0	1725	1	112.949	-1.252	-1.006	1	shielded
+SC_RS27105	SCO4989		IclR family transcriptional regulator	IclR	0	197	6	277.783	-1.717	-2.392	7	exposed
+SC_RS27140	SCO4996		SigE family RNA polymerase sigma factor	Sigma factor	0	285	3	189.794	0.386	-0.117	6	shielded
+SC_RS27150	SCO4998		helix-turn-helix domain-containing protein	HTH (other)	0	738	3	68.517	0.227	0.588	0	shielded
+SC_RS27250	SCO5017		AraC-like ligand-binding domain-containing protein	AraC	0	134	3	60.351	1.835	3.05	3	shielded
+SC_RS27290	SCO5025		MerR family transcriptional regulator	MerR	0	96	1	117.494	0.281	-0.367	3	shielded
+SC_RS27300	SCO5027		winged helix DNA-binding domain-containing protein	HTH (other)	0	104	2	112.751	-2.254	-1.101	4	exposed
+SC_RS27330	SCO5033		LysR substrate-binding domain-containing protein	LysR	0	40	4	161.515	-0.752	-0.736	4	shielded
+SC_RS27345	SCO5036		PadR family transcriptional regulator	PadR	0	262	3	419.634	-2.478	-2.056	7	shielded
+SC_RS27395	SCO5046		WhiB family transcriptional regulator	WhiB	0	548	4	317.878	0.878	1.428	5	shielded
+SC_RS27485	SCO5065		helix-turn-helix transcriptional regulator	HTH (other)	0	2376	0	258.273	0.486	0.136	3	shielded
+SC_RS27500	SCO5068		TetR/AcrR family transcriptional regulator	TetR	0	2026	0	90.644	-0.202	-1.26	3	shielded
+SC_RS27570	SCO5082	actII	TetR family transcriptional regulator ActII	TetR	0	609	2	1530.571	-0.83	2.595	11	shielded
+SC_RS27585	SCO5085		AfsR/SARP family transcriptional regulator	SARP	0	777	2	2568.523	1.985	6.436	13	shielded
+SC_RS27635	SCO5095		helix-turn-helix domain-containing protein	HTH (other)	0	813	4	41.502	-1.088	0.309	2	shielded
+SC_RS27640	SCO5096		LysR family transcriptional regulator	LysR	0	523	4	63.287	-0.428	0.724	3	shielded
+SC_RS27660	SCO5100		GntR family transcriptional regulator	GntR	0	381	4	558.874	3.315	2.524	4	shielded
+SC_RS27785	SCO5125		helix-turn-helix domain-containing protein	HTH (other)	0	138	4	440.713	2.694	2.532	3	shielded
+SC_RS27815	SCO5131		sensor histidine kinase	Sensor kinase	0	968	6	78.81	-0.69	-0.043	5	shielded
+SC_RS27820	SCO5132		response regulator transcription factor	Response regulator	0	1202	1	149.263	-1.031	-1.707	3	shielded
+SC_RS27900	SCO5147	sigE	RNA polymerase sigma factor SigE	Sigma factor	0	617	1	4235.681	-0.767	0.761	7	shielded
+SC_RS27905	SCO5148		anti-sigma factor family protein	Sigma factor	0	1285	3	1758.893	-0.553	0.604	0	shielded
+SC_RS28015	SCO5170		TetR/AcrR family transcriptional regulator	TetR	0	886	2	1012.33	0.235	-0.825	4	shielded
+SC_RS28115	SCO5190		WhiB family transcriptional regulator	WhiB	0	1130	3	217.226	-2.611	-1.994	2	shielded
+SC_RS28200	SCO5205		tetratricopeptide repeat protein	TetR	0	2583	0	747.401	-0.61	-0.184	7	shielded
+SC_RS28210	SCO5206		Fur family transcriptional regulator	Other regulatory	0	894	1	463.236	0.048	-0.299	4	shielded
+SC_RS28225	SCO5209		TetR/AcrR family transcriptional regulator	TetR	0	826	1	134.698	-0.648	-0.653	2	shielded
+SC_RS28260	SCO5216	sigR	RNA polymerase sigma factor SigR	Sigma factor	0	2156	0	3873.606	1.688	0.1	9	shielded
+SC_RS28265	SCO5217	rsrA	mycothiol system anti-sigma-R factor	Anti-sigma	0	1476	1	855.398	1.644	0.116	1	shielded
+SC_RS28280	SCO5220		tetratricopeptide repeat protein	TetR	0	1402	2	1375.6	0.323	-0.59	0	shielded
+SC_RS28300	SCO5224		GlxA family transcriptional regulator	Other regulatory	0	1251	1	1044.089	0.173	-2.184	3	shielded
+SC_RS28335	SCO5231		GntR family transcriptional regulator	GntR	0	1358	2	158.78	-0.877	-1.183	11	shielded
+SC_RS28370	SCO5238		TetR/AcrR family transcriptional regulator	TetR	0	1061	2	249.73	0.904	0.095	4	shielded
+SC_RS28375	SCO5239		PAS domain-containing sensor histidine kinase	Sensor kinase	0	2134	0	370.591	-1.81	-1.769	6	shielded
+SC_RS28380	SCO5240		WhiB family transcriptional regulator	WhiB	0	4115	0	1868.121	-0.832	-1.333	6	shielded
+SC_RS28395	SCO5243		RNA polymerase sigma factor SigF	Sigma factor	0	3247	0	1614.067	1.029	0.157	5	shielded
+SC_RS28495			helix-turn-helix domain-containing protein	HTH (other)	0	1048	6	49.681	-0.572	-0.492	5	shielded
+SC_RS28505	SCO5264		PadR family transcriptional regulator	PadR	0	515	4	337.825	-1.88	-1.953	2	shielded
+SC_RS28560	SCO5275	fxsT	FxSxx-COOH system tetratricopeptide repeat protein	TetR	0	1485	2	1177.601	3.269	1.627	3	shielded
+SC_RS28585	SCO5280	fxsT	FxSxx-COOH system tetratricopeptide repeat protein	TetR	0	333	1	262.083	-1.238	-0.339	8	shielded
+SC_RS28595	SCO5282		sensor histidine kinase	Sensor kinase	0	1596	7	311.554	-1.126	-1.614	3	shielded
+SC_RS28600	SCO5283		response regulator transcription factor	Response regulator	0	2327	0	556.449	-1.045	-2.131	0	shielded
+SC_RS28620	SCO5287		MarR family winged helix-turn-helix transcriptional regulator	MarR	0	1670	1	94.955	-2.016	-1.794	2	shielded
+SC_RS28630	SCO5289		sensor histidine kinase	Sensor kinase	0	90	2	2509.053	-0.014	-2.415	0	exposed
+SC_RS28665	SCO5296		TetR/AcrR family transcriptional regulator	TetR	0	1085	3	63.599	-0.667	-0.511	4	shielded
+SC_RS28795	SCO5323		Lrp/AsnC family transcriptional regulator	Lrp	0	2003	0	84.02	-2.18	-1.481	3	shielded
+SC_RS28860	SCO5337		XRE family transcriptional regulator	XRE	0	628	1	94.163	-1.0	-0.825	8	shielded
+SC_RS28935	SCO5351		response regulator	Response regulator	0	1622	1	1757.245	4.13	4.037	7	shielded
+SC_RS28965	SCO5357	rho	transcription termination factor Rho	Other regulatory	0	647	3	6088.911	-0.571	-1.753	3	shielded
+SC_RS29065	SCO5377		response regulator	Response regulator	0	354	3	62.441	-0.034	0.168	3	shielded
+SC_RS29070	SCO5378		sensor histidine kinase	Sensor kinase	0	571	3	88.694	0.808	1.077	2	shielded
+SC_RS29100	SCO5384		TetR/AcrR family transcriptional regulator	TetR	0	2307	0	112.738	-0.863	-0.928	4	shielded
+SC_RS29195	SCO5403		response regulator transcription factor	Response regulator	0	2442	0	66.293	-1.145	-0.996	4	shielded
+SC_RS29200	SCO5404		sensor histidine kinase	Sensor kinase	0	2432	0	114.37	-0.836	-0.406	3	shielded
+SC_RS29205	SCO5405		MarR family winged helix-turn-helix transcriptional regulator	MarR	0	511	1	1210.46	2.892	1.236	2	shielded
+SC_RS29245	SCO5413		MarR family winged helix-turn-helix transcriptional regulator	MarR	0	4219	0	63.329	1.115	1.03	6	shielded
+SC_RS29260	SCO5416		GlxA family transcriptional regulator	Other regulatory	0	453	2	803.19	1.146	0.167	3	shielded
+SC_RS29270	SCO5418		TetR/AcrR family transcriptional regulator	TetR	0	1327	2	56.602	-2.058	-0.722	5	shielded
+SC_RS29275	SCO5419		tetratricopeptide repeat protein	TetR	0	1610	3	3298.29	0.311	-1.324	4	shielded
+SC_RS29315	SCO5427		helix-turn-helix domain-containing protein	HTH (other)	0	2698	0	214.717	-0.552	-1.554	4	shielded
+SC_RS29335			Scr1 family TA system antitoxin-like transcriptional regulator	Other regulatory	0	118	5	21.013	-0.025	0.926	4	shielded
+SC_RS29350	SCO5433	tcrA	AfsR-like transcriptional regulator TcrA	Other regulatory	0	166	4	110.759	1.04	1.492	11	exposed
+SC_RS29355	SCO5434		response regulator	Response regulator	0	76	2	67.799	-1.922	-1.116	3	exposed
+SC_RS29360	SCO5435		sensor histidine kinase	Sensor kinase	0	1251	6	154.708	-2.946	-1.127	6	shielded
+SC_RS29370	SCO5437		MerR family transcriptional regulator	MerR	0	288	5	65.818	0.167	-0.214	4	shielded
+SC_RS29455	SCO5454		sensor histidine kinase	Sensor kinase	0	1402	1	85.011	-0.256	0.337	7	shielded
+SC_RS29460	SCO5455		response regulator	Response regulator	0	2645	0	49.807	-0.558	-0.326	3	shielded
+SC_RS29500	SCO5463		MerR family transcriptional regulator	MerR	0	226	3	26.179	1.042	3.01	4	shielded
+SC_RS29600	SCO5483		TetR family transcriptional regulator	TetR	0	493	2	86.638	-1.927	-1.348	5	shielded
+SC_RS29715	SCO5506		helix-turn-helix transcriptional regulator	HTH (other)	0	374	1	361.35	0.063	-0.139	4	shielded
+SC_RS29770	SCO5517		TetR/AcrR family transcriptional regulator	TetR	0	273	3	208.363	-1.256	-1.705	1	shielded
+SC_RS29775	SCO5518		PucR family transcriptional regulator	Other regulatory	0	1046	1	178.686	-1.064	-1.083	5	shielded
+SC_RS29825	SCO5528		TetR/AcrR family transcriptional regulator	TetR	0	448	3	109.015	-0.825	-1.208	1	shielded
+SC_RS29845	SCO5532		TetR/AcrR family transcriptional regulator	TetR	0	252	4	70.949	-0.032	-0.753	3	shielded
+SC_RS29905	SCO5544		sensor histidine kinase	Sensor kinase	0	195	1	5945.254	-1.313	-3.053	5	shielded
+SC_RS29960	SCO5550		MerR family transcriptional regulator	MerR	0	455	2	104.106	-0.895	-1.541	5	shielded
+SC_RS29970	SCO5552	ndgR	IclR family transcriptional regulator NdgR	IclR	0	1891	1	449.724	0.798	-1.73	4	shielded
+SC_RS29990	SCO5556		HU family DNA-binding protein	Other regulatory	0	1358	2	985.811	-1.558	-2.142	3	shielded
+SC_RS30020	SCO5561		Lrp/AsnC family transcriptional regulator	Lrp	0	935	3	366.133	-0.954	-1.679	1	shielded
+SC_RS30085	SCO5574		winged helix-turn-helix transcriptional regulator	HTH (other)	0	621	1	410.623	0.763	-0.299	1	shielded
+SC_RS30130	SCO5582	nsdA	transcriptional repressor NsdA	Repressor	0	748	5	3246.287	6.638	6.056	5	shielded
+SC_RS30140	SCO5584		P-II family nitrogen regulator	Other regulatory	0	126	5	61.074	-0.58	-1.435	3	exposed
+SC_RS30255	SCO5607		GntR family transcriptional regulator	GntR	0	1988	1	100.04	0.93	0.821	4	shielded
+SC_RS30275	SCO5611		helix-turn-helix domain-containing protein	HTH (other)	0	762	3	18.109	1.127	1.87	2	shielded
+SC_RS30290	SCO5614		helix-turn-helix transcriptional regulator	HTH (other)	0	16	3	9.107	0.638	4.091	1	shielded
+SC_RS30330	SCO5621	whiG	RNA polymerase sigma factor WhiG	Sigma factor	0	1551	2	110.009	2.003	1.844	6	shielded
+SC_RS30335	SCO5622		TetR/AcrR family transcriptional regulator	TetR	0	580	3	428.454	1.021	-0.298	2	shielded
+SC_RS30340	SCO5623		murein hydrolase activator EnvC family protein	Activator	0	68	6	80.855	0.433	-0.16	6	shielded
+SC_RS30370	SCO5629	fxsT	FxSxx-COOH system tetratricopeptide repeat protein	TetR	0	91	9	343.412	2.649	2.653	5	shielded
+SC_RS30395			SCO3933 family regulatory protein	Other regulatory	0	2081	0	13.825	0.397	1.442	5	shielded
+SC_RS30400	SCO5636		GntR family transcriptional regulator	GntR	0	2403	0	389.734	0.421	0.315	7	shielded
+SC_RS30495	SCO5656		Lrp/AsnC family transcriptional regulator	Lrp	0	1871	1	1202.751	-2.1	-2.385	2	shielded
+SC_RS30590	SCO5675		tetratricopeptide repeat protein	TetR	0	1856	1	159.419	-1.868	-1.764	3	shielded
+SC_RS30605	SCO5678		PucR family transcriptional regulator	Other regulatory	0	529	3	259.675	-0.919	-1.129	3	shielded
+SC_RS30630	SCO5683		sensor histidine kinase	Sensor kinase	0	237	6	107.772	0.104	1.358	1	shielded
+SC_RS30635	SCO5684		response regulator	Response regulator	0	391	6	34.47	-0.144	0.921	5	shielded
+SC_RS30675	SCO5692		LacI family DNA-binding transcriptional regulator	LacI	0	724	4	78.828	-0.826	-0.069	5	shielded
+SC_RS30735	SCO5704	nusA	transcription termination factor NusA	Other regulatory	0	629	5	2995.983	-2.196	-3.145	2	shielded
+SC_RS30905	SCO5739	dapB	4-hydroxy-tetrahydrodipicolinate reductase	TetR	0	1265	2	565.424	-1.673	-2.787	2	shielded
+SC_RS30910	SCO5740		tetratricopeptide repeat protein	TetR	0	582	1	183.418	-2.016	-2.815	4	shielded
+SC_RS30930	SCO5744	dapA	4-hydroxy-tetrahydrodipicolinate synthase	TetR	0	305	1	904.128	-0.503	-1.581	6	shielded
+SC_RS30975	SCO5749		response regulator	Response regulator	0	1011	2	1630.257	1.186	-0.202	8	shielded
+SC_RS30985	SCO5751		helix-turn-helix domain-containing protein	HTH (other)	0	2589	0	2028.776	1.766	-1.032	3	shielded
+SC_RS31005	SCO5755		helix-turn-helix domain-containing protein	HTH (other)	0	3421	0	2343.648	0.099	0.512	2	shielded
+SC_RS31020	SCO5758		ArsR/SmtB family transcription factor	ArsR	0	2052	0	185.53	1.678	1.505	0	shielded
+SC_RS31040	SCO5762		AraC family transcriptional regulator	AraC	0	123	3	122.024	-0.117	-0.268	3	shielded
+SC_RS31080	SCO5770	recX	recombination regulator RecX	Other regulatory	0	2351	0	1474.995	-1.305	-1.735	2	shielded
+SC_RS31130	SCO5778		response regulator transcription factor	Response regulator	0	1386	2	66.681	-3.291	-1.178	5	shielded
+SC_RS31135	SCO5779		HAMP domain-containing sensor histidine kinase	Sensor kinase	0	1263	1	63.182	-1.975	0.105	0	shielded
+SC_RS31155	SCO5783		cation:proton antiporter regulatory subunit	Other regulatory	0	335	3	267.853	-0.654	-0.986	2	shielded
+SC_RS31160	SCO5784		HAMP domain-containing sensor histidine kinase	Sensor kinase	0	220	3	180.647	-0.878	-0.302	2	shielded
+SC_RS31165	SCO5785		response regulator	Response regulator	0	835	4	40.637	-0.818	0.336	1	shielded
+SC_RS31255	SCO5803	lexA	transcriptional repressor LexA	Repressor	0	811	1	2662.099	2.869	1.495	4	shielded
+SC_RS31260	SCO5804	nrdR	transcriptional regulator NrdR	Other regulatory	0	227	2	1707.053	0.074	-2.503	4	shielded
+SC_RS31295	SCO5811		TetR/AcrR family transcriptional regulator	TetR	0	3928	0	218.967	1.509	1.211	2	shielded
+SC_RS31335	SCO5819	whiH	sporulation transcriptional regulator WhiH	Other regulatory	0	945	3	429.722	5.447	3.464	5	shielded
+SC_RS31340	SCO5820		RNA polymerase sigma factor	Sigma factor	0	370	3	3030.302	-0.269	-0.788	8	shielded
+SC_RS31365	SCO5824		sensor histidine kinase	Sensor kinase	0	80	2	63.752	-0.374	0.116	2	shielded
+SC_RS31370	SCO5825		response regulator	Response regulator	0	1149	3	85.909	0.378	-0.168	5	shielded
+SC_RS31385	SCO5828		response regulator	Response regulator	0	48	3	219.227	3.201	1.091	8	exposed
+SC_RS31445	SCO5840		GntR family transcriptional regulator	GntR	0	220	1	188.8	0.219	-1.147	3	shielded
+SC_RS31480	SCO5847		GntR family transcriptional regulator	GntR	0	612	3	87.584	-0.565	-0.32	7	shielded
+SC_RS31555	SCO5862		response regulator transcription factor	Response regulator	0	675	7	441.093	-1.438	0.085	3	shielded
+SC_RS31560	SCO5863		sensor histidine kinase	Sensor kinase	0	449	6	508.467	-1.387	-0.034	3	shielded
+SC_RS31600	SCO5871		sensor histidine kinase	Sensor kinase	0	2514	0	307.032	-0.325	-0.356	4	shielded
+SC_RS31605	SCO5872		response regulator	Response regulator	0	1527	1	75.84	0.005	-0.108	2	shielded
+SC_RS31630	SCO5877		AfsR/SARP family transcriptional regulator	SARP	0	2423	0	925.548	5.789	4.999	3	shielded
+SC_RS31650	SCO5881		response regulator transcription factor	Response regulator	0	239	1	1128.952	0.907	0.966	4	shielded
+SC_RS31765			LuxR C-terminal-related transcriptional regulator	Other regulatory	0	2960	0	15.646	-2.754	0.496	5	shielded
+SC_RS31780	SCO5906		TetR/AcrR family transcriptional regulator	TetR	0	1614	1	183.567	0.447	-0.613	0	shielded
+SC_RS31810	SCO5914		LysR substrate-binding domain-containing protein	LysR	0	1172	2	381.3	-0.142	-0.318	1	shielded
+SC_RS31825	SCO5917		MerR family transcriptional regulator	MerR	0	114	5	52.385	0.445	0.91	2	shielded
+SC_RS31885			MerR family transcriptional regulator	MerR	0	552	1	6.303	-0.817	0.456	6	shielded
+SC_RS31920	SCO5934		RNA polymerase sigma factor	Sigma factor	0	2295	0	62.405	-0.402	0.087	5	shielded
+SC_RS31955	SCO5942		TetR/AcrR family transcriptional regulator	TetR	0	1318	1	93.094	-0.113	-0.499	7	shielded
+SC_RS32000	SCO5951		TetR-like C-terminal domain-containing protein	TetR	0	153	2	140.239	1.414	0.507	1	shielded
+SC_RS32025	SCO5956		TetR/AcrR family transcriptional regulator	TetR	0	5	4	64.323	-2.092	-1.036	2	exposed
+SC_RS32055	SCO5962		MerR family transcriptional regulator	MerR	0	598	2	23.276	0.062	1.564	1	shielded
+SC_RS32155	SCO5982		PaaX family transcriptional regulator	Other regulatory	0	391	3	274.024	-2.518	-3.227	9	shielded
+SC_RS32230	SCO5998		helix-turn-helix domain-containing protein	HTH (other)	0	2565	0	926.32	0.677	-0.571	2	shielded
+SC_RS32255	SCO6003		helix-turn-helix domain-containing protein	HTH (other)	0	2427	0	240.345	0.591	0.623	4	shielded
+SC_RS32280	SCO6008		ROK family transcriptional regulator	ROK	0	4387	0	912.876	1.949	0.339	3	shielded
+SC_RS32380	SCO6029		response regulator transcription factor	Response regulator	0	2646	0	46.018	2.009	2.347	3	shielded
+SC_RS32585	SCO6069		sensor histidine kinase	Sensor kinase	0	832	2	352.086	0.191	-0.101	9	shielded
+SC_RS32595	SCO6071	cprB	transcriptional regulator CprB	Other regulatory	0	440	2	161.882	-0.467	-0.981	3	shielded
+SC_RS32795	SCO6110		ROK family protein	ROK	0	296	3	108.95	1.008	-0.312	3	shielded
+SC_RS32820	SCO6115		ROK family protein	ROK	0	364	1	68.737	-0.837	0.215	2	shielded
+SC_RS32835	SCO6118		AraC family transcriptional regulator	AraC	0	294	5	113.851	0.751	0.406	5	shielded
+SC_RS32840	SCO6119		helix-turn-helix transcriptional regulator	HTH (other)	0	910	4	63.683	0.073	-0.158	9	shielded
+SC_RS32850	SCO6121		TetR/AcrR family transcriptional regulator	TetR	0	1049	3	211.035	-1.727	-2.189	4	shielded
+SC_RS32895	SCO6129		helix-turn-helix domain-containing protein	HTH (other)	0	1005	2	134.632	3.904	3.899	11	shielded
+SC_RS32945	SCO6139		sensor histidine kinase	Sensor kinase	0	510	1	230.058	0.67	-0.326	4	shielded
+SC_RS32950	SCO6140		response regulator	Response regulator	0	1127	3	115.474	0.511	-0.36	1	shielded
+SC_RS32970	SCO6144		TetR-like C-terminal domain-containing protein	TetR	0	67	7	158.104	-0.367	-0.66	6	shielded
+SC_RS33015	SCO6153		helix-turn-helix transcriptional regulator	HTH (other)	0	1072	3	233.033	-0.615	-0.602	3	shielded
+SC_RS33045	SCO6159		GntR family transcriptional regulator	GntR	0	619	7	423.898	-1.211	-1.304	7	shielded
+SC_RS33060	SCO6162		response regulator	Response regulator	0	847	4	44.788	-0.017	0.83	1	shielded
+SC_RS33065	SCO6163		HAMP domain-containing sensor histidine kinase	Sensor kinase	0	589	3	104.767	0.786	0.62	5	shielded
+SC_RS33075	SCO6165		TraR/DksA family transcriptional regulator	Other regulatory	0	144	4	7.929	0.923	4.398	6	exposed
+SC_RS33095	SCO6169		PucR family transcriptional regulator	Other regulatory	0	1398	2	644.464	-1.489	-2.251	7	shielded
+SC_RS33210	SCO6192		winged helix DNA-binding domain-containing protein	HTH (other)	0	1161	3	50.257	0.936	1.729	7	shielded
+SC_RS33220	SCO6194		helix-turn-helix transcriptional regulator	HTH (other)	0	638	2	133.164	0.901	1.787	10	shielded
+SC_RS33290	SCO6208		helix-turn-helix domain-containing protein	HTH (other)	0	484	4	237.475	2.347	0.712	6	shielded
+SC_RS33325			winged helix-turn-helix transcriptional regulator	HTH (other)	0	801	1	99.146	-1.042	-1.972	3	shielded
+SC_RS33365	SCO6223		winged helix-turn-helix transcriptional regulator	HTH (other)	0	537	1	44.175	-2.058	-0.56	5	shielded
+SC_RS33415	SCO6233		LacI family DNA-binding transcriptional regulator	LacI	0	677	4	156.609	0.21	0.199	3	shielded
+SC_RS33430	SCO6236		helix-turn-helix domain-containing protein	HTH (other)	0	1909	1	51.755	1.348	2.01	4	shielded
+SC_RS33445	SCO6239	sigJ	RNA polymerase sigma factor SigJ	Sigma factor	0	633	1	41.56	1.312	2.329	7	shielded
+SC_RS33480	SCO6246	allR	allantoin degradation transcriptional regulator AllR	Other regulatory	0	1271	1	185.145	-0.433	-1.072	7	shielded
+SC_RS33515	SCO6253		sensor histidine kinase	Sensor kinase	0	763	3	58.742	0.616	1.473	6	shielded
+SC_RS33520	SCO6254		response regulator transcription factor	Response regulator	0	2061	0	63.773	-0.202	-0.175	2	shielded
+SC_RS33530	SCO6256		myo-inositol degradation transcriptional regulator	Other regulatory	0	1054	3	84.551	0.256	0.057	5	shielded
+SC_RS33550	SCO6260		ROK family glucokinase	ROK	0	1325	1	259.231	-0.914	-1.799	3	shielded
+SC_RS33575	SCO6265		ScbR family autoregulator-binding transcription factor	Other regulatory	0	2295	0	646.155	2.804	0.537	4	shielded
+SC_RS33590	SCO6268		sensor histidine kinase	Sensor kinase	0	1858	1	88.047	3.763	3.641	1	shielded
+SC_RS33650	SCO6280		AfsR/SARP family transcriptional regulator	SARP	0	322	5	3910.959	7.178	5.21	5	shielded
+SC_RS33680	SCO6286		ScbR family autoregulator-binding transcription factor	Other regulatory	0	2850	0	1087.892	5.711	5.493	7	shielded
+SC_RS33690	SCO6288		AfsR/SARP family transcriptional regulator	SARP	0	2051	0	130.713	4.557	3.896	8	shielded
+SC_RS33720	SCO6294		GntR family transcriptional regulator	GntR	0	2782	0	218.185	-1.282	-1.11	3	shielded
+SC_RS33745	SCO6299		TetR/AcrR family transcriptional regulator	TetR	0	35	3	75.179	-1.411	-0.8	7	exposed
+SC_RS33790	SCO6309		LysR family transcriptional regulator	LysR	0	274	1	39.95	-1.252	0.769	4	shielded
+SC_RS33805	SCO6312		ScbR family autoregulator-binding transcription factor	Other regulatory	0	1134	2	667.536	-0.409	-0.717	4	shielded
+SC_RS33845	SCO6323		ScbR family autoregulator-binding transcription factor	Other regulatory	0	4214	0	297.614	5.126	2.526	2	shielded
+SC_RS33895	SCO6334		LuxR C-terminal-related transcriptional regulator	Other regulatory	0	30	4	99.459	1.079	2.625	4	exposed
+SC_RS33960	SCO6349		LacI family DNA-binding transcriptional regulator	LacI	0	139	3	152.021	0.688	0.03	5	shielded
+SC_RS33965	SCO6350		TetR/AcrR family transcriptional regulator	TetR	0	620	5	35.788	-0.05	0.255	1	shielded
+SC_RS33980	SCO6353		sensor histidine kinase	Sensor kinase	0	1606	1	69.293	0.253	1.222	9	shielded
+SC_RS33985	SCO6354		response regulator transcription factor	Response regulator	0	2265	0	30.924	0.039	0.65	4	shielded
+SC_RS34005	SCO6358		BlaI/MecI/CopY family transcriptional regulator	Other regulatory	0	1889	1	217.146	-1.384	-1.832	6	shielded
+SC_RS34025	SCO6362		sensor histidine kinase	Sensor kinase	0	1727	1	70.703	1.167	1.649	2	shielded
+SC_RS34030	SCO6363		response regulator	Response regulator	0	836	2	23.788	0.786	1.779	4	shielded
+SC_RS34035	SCO6364		response regulator transcription factor	Response regulator	0	448	6	18.233	0.022	1.905	1	shielded
+SC_RS34060	SCO6369		HAMP domain-containing sensor histidine kinase	Sensor kinase	0	264	3	38.948	1.425	2.574	8	exposed
+SC_RS34110			BlaI/MecI/CopY family transcriptional regulator	Other regulatory	0	638	2	80.139	0.32	-0.03	7	shielded
+SC_RS34245	SCO6410		helix-turn-helix domain-containing protein	HTH (other)	0	350	2	107.112	0.837	0.218	6	shielded
+SC_RS34260	SCO6413		PucR family transcriptional regulator	Other regulatory	0	1024	2	73.033	1.384	2.109	1	shielded
+SC_RS34300	SCO6421		sensor histidine kinase	Sensor kinase	0	333	4	210.873	1.197	3.394	6	shielded
+SC_RS34305	SCO6422		response regulator	Response regulator	0	529	5	172.552	1.763	2.469	1	shielded
+SC_RS34315	SCO6424		HAMP domain-containing sensor histidine kinase	Sensor kinase	0	926	1	28.688	0.059	2.562	5	shielded
+SC_RS34320	SCO6425		helix-turn-helix transcriptional regulator	HTH (other)	0	1101	1	30.491	-0.465	0.741	5	shielded
+SC_RS34435	SCO6448		AraC family transcriptional regulator	AraC	0	1618	1	243.759	2.211	0.842	4	shielded
+SC_RS34490	SCO6459		ArsR/SmtB family transcription factor	ArsR	0	1379	3	48.365	-0.167	-0.469	8	shielded
+SC_RS34565	SCO6474		TetR family transcriptional regulator	TetR	0	665	3	245.686	0.214	-0.82	2	shielded
+SC_RS34785	SCO6518		helix-turn-helix domain-containing protein	HTH (other)	1	630	8	100.591	1.45	0.627	1	shielded
+SC_RS34795	SCO6520		RNA polymerase sigma factor SigF	Sigma factor	1	91	10	218.929	-0.769	-0.253	7	shielded
+SC_RS34880	SCO6537		helix-turn-helix domain-containing protein	HTH (other)	1	144	4	177.745	0.283	-0.368	2	shielded
+SC_RS34890	SCO6539		helix-turn-helix domain-containing protein	HTH (other)	1	173	5	135.044	0.523	-0.042	3	shielded
+SC_RS34895	SCO6540		4a-hydroxytetrahydrobiopterin dehydratase	TetR	1	83	5	142.964	-0.122	-0.584	4	shielded
+SC_RS34960	SCO6554		Lrp/AsnC family transcriptional regulator	Lrp	1	1121	3	36.406	-1.073	0.397	1	shielded
+SC_RS34965	SCO6555		LysR substrate-binding domain-containing protein	LysR	1	366	3	46.936	-1.351	-0.55	1	shielded
+SC_RS35020	SCO6565		GntR family transcriptional regulator	GntR	1	740	3	438.766	-1.166	-1.968	7	shielded
+SC_RS35025	SCO6566		ROK family transcriptional regulator	ROK	1	140	3	565.389	-0.308	2.527	8	shielded
+SC_RS35190	SCO6598		LacI family DNA-binding transcriptional regulator	LacI	1	615	3	104.824	-0.953	-0.618	3	shielded
+SC_RS35195	SCO6599		TetR/AcrR family transcriptional regulator	TetR	1	236	2	108.071	-1.532	-1.55	1	exposed
+SC_RS35200	SCO6600		ROK family protein	ROK	1	1255	2	28.101	-0.553	2.784	1	shielded
+SC_RS35265	SCO6613		winged helix-turn-helix transcriptional regulator	HTH (other)	1	583	5	66.987	-1.014	-1.022	8	shielded
+SC_RS35300	SCO6620		MarR family winged helix-turn-helix transcriptional regulator	MarR	1	169	2	74.02	0.903	0.218	1	shielded
+SC_RS35345	SCO6629		helix-turn-helix domain-containing protein	HTH (other)	1	1134	1	187.527	3.597	2.371	3	shielded
+SC_RS35505	SCO6664		helix-turn-helix transcriptional regulator	HTH (other)	1	1373	1	42.578	-0.783	-0.001	3	shielded
+SC_RS35520	SCO6667		response regulator	Response regulator	1	636	4	24.744	2.272	2.669	4	shielded
+SC_RS35525	SCO6668		sensor histidine kinase	Sensor kinase	1	99	4	67.883	1.042	1.342	3	exposed
+SC_RS35530	SCO6669		IclR family transcriptional regulator	IclR	1	727	6	18.81	0.824	2.804	3	shielded
+SC_RS35560	SCO6675		helix-turn-helix domain-containing protein	HTH (other)	1	1631	1	348.858	1.049	0.619	6	shielded
+SC_RS35565	SCO6676		MmyB family transcriptional regulator	Other regulatory	1	1398	1	60.491	-1.402	-0.578	2	shielded
+SC_RS35610	SCO6685	ramR	two-component system response regulator RamR	Response regulator	1	286	6	55.327	6.604	7.902	3	exposed
+SC_RS35620	SCO6687		DNA-binding protein	Other regulatory	1	68	4	610.386	-0.373	-0.8	1	shielded
+SC_RS35655	SCO6694		TetR/AcrR family transcriptional regulator	TetR	1	470	3	641.71	0.777	0.396	8	shielded
+SC_RS35705	SCO6704		MarR family winged helix-turn-helix transcriptional regulator	MarR	1	1867	2	32.638	-0.904	0.153	5	shielded
+SC_RS35750	SCO6713		LacI family DNA-binding transcriptional regulator	LacI	1	364	2	181.108	0.226	-0.097	4	shielded
+SC_RS35760	SCO6715		WhiB family transcriptional regulator	WhiB	1	695	3	142.674	-1.166	-0.481	3	shielded
+SC_RS35800	SCO6722	ssgD	spore wall synthesis regulator SsgD	Other regulatory	1	28	5	855.052	1.646	0.288	16	shielded
+SC_RS35855	SCO6733		MerR family transcriptional regulator	MerR	1	876	5	86.506	-0.03	-0.0	3	shielded
+SC_RS35915	SCO6746		GlxA family transcriptional regulator	Other regulatory	1	261	2	44.356	0.638	1.035	1	shielded
+SC_RS36035	SCO6770		helix-turn-helix domain-containing protein	HTH (other)	1	2844	0	455.659	-0.067	-1.731	4	shielded
+SC_RS36060	SCO6775		TetR/AcrR family transcriptional regulator	TetR	1	297	4	623.038	1.403	-0.889	6	shielded
+SC_RS36075	SCO6778		TetR/AcrR family transcriptional regulator	TetR	1	569	1	396.507	-0.631	-1.563	1	shielded
+SC_RS36085	SCO6781		TetR/AcrR family transcriptional regulator	TetR	1	2024	0	177.806	0.699	0.529	4	shielded
+SC_RS36100	SCO6784		TetR/AcrR family transcriptional regulator	TetR	1	387	2	45.667	0.668	1.316	5	shielded
+SC_RS36140	SCO6792		TetR/AcrR family transcriptional regulator	TetR	1	939	3	164.403	-0.299	-0.882	2	shielded
+SC_RS36150	SCO6794		sensor histidine kinase	Sensor kinase	1	832	4	1508.067	7.132	5.126	5	shielded
+SC_RS36185	SCO6801		LysR family transcriptional regulator	LysR	1	281	6	179.726	-1.632	-2.281	4	shielded
+SC_RS36190	SCO6802		helix-turn-helix domain-containing protein	HTH (other)	1	668	3	62.396	-1.961	-1.995	5	shielded
+SC_RS36200	SCO6804		MmcQ/YjbR family DNA-binding protein	Other regulatory	1	575	3	73.214	-1.596	-1.864	2	shielded
+SC_RS36220			helix-turn-helix transcriptional regulator	HTH (other)	1	183	4	18.873	2.169	2.738	12	exposed
+SC_RS36230	SCO6808		ArsR/SmtB family transcription factor	ArsR	1	557	2	337.392	3.931	1.586	2	shielded
+SC_RS36250	SCO6812		ArsR/SmtB family transcription factor	ArsR	1	1351	1	117.924	1.708	2.549	4	shielded
+SC_RS36255	SCO6813		ArsR/SmtB family transcription factor	ArsR	1	1639	2	57.451	1.892	2.718	1	shielded
+SC_RS36305	SCO6823		ArsR/SmtB family transcription factor	ArsR	1	1235	5	527.163	1.334	-0.047	3	shielded
+SC_RS36340	SCO6830		ArsR/SmtB family transcription factor	ArsR	1	1791	1	59.109	1.13	0.643	8	shielded
+SC_RS36370	SCO6836		ArsR/SmtB family transcription factor	ArsR	1	1958	1	30.423	1.751	1.272	1	shielded
+SC_RS36670	SCO6894		winged helix-turn-helix transcriptional regulator	HTH (other)	1	2039	0	13.882	0.614	4.473	1	shielded
+SC_RS36810	SCO6922		WhiB family transcriptional regulator	WhiB	1	30	4	14.604	0.303	3.571	3	shielded
+SC_RS36820	SCO6924		helix-turn-helix domain-containing protein	HTH (other)	1	15	3	24.738	-2.543	1.172	2	exposed
+SC_RS36830	SCO6926		MmyB family transcriptional regulator	Other regulatory	1	1564	2	28.486	-0.937	-0.152	6	shielded
+SC_RS36895	SCO6937		LuxR C-terminal-related transcriptional regulator	Other regulatory	1	1961	1	34.558	0.074	4.176	4	shielded
+SC_RS36925	SCO6943		sensor histidine kinase	Sensor kinase	1	192	3	171.268	1.834	6.496	3	shielded
+SC_RS36955	SCO6950		helix-turn-helix domain-containing protein	HTH (other)	1	2108	0	639.658	5.044	3.809	3	shielded
+SC_RS37035			WhiB family transcriptional regulator	WhiB	1	34	8	11.799	1.235	1.747	3	exposed
+SC_RS37085	SCO6974		GntR family transcriptional regulator	GntR	1	2062	0	35.389	0.396	1.269	0	shielded
+SC_RS37145	SCO6986		LacI family DNA-binding transcriptional regulator	LacI	1	1324	3	45.001	0.794	1.172	4	shielded
+SC_RS37190	SCO6993		LuxR family transcriptional regulator AbsR2	Other regulatory	1	1686	1	200.847	0.845	4.919	4	shielded
+SC_RS37205	SCO6996		RNA polymerase sigma factor	Sigma factor	1	2147	0	262.581	-0.419	1.653	1	shielded
+SC_RS37295	SCO7014		LacI family DNA-binding transcriptional regulator	LacI	1	2173	0	136.049	-0.565	-1.639	6	shielded
+SC_RS37305	SCO7016		LacI family DNA-binding transcriptional regulator	LacI	1	720	3	105.025	0.02	-0.984	2	shielded
+SC_RS37350	SCO7025		LysR family transcriptional regulator	LysR	1	305	2	73.24	-0.362	-0.327	2	shielded
+SC_RS37360	SCO7027		LacI family DNA-binding transcriptional regulator	LacI	1	2027	0	37.3	-1.26	0.588	3	shielded
+SC_RS37390	SCO7033		PucR family transcriptional regulator	Other regulatory	1	1658	1	227.299	0.308	0.379	4	shielded
+SC_RS37435	SCO7042		MarR family winged helix-turn-helix transcriptional regulator	MarR	1	536	1	190.83	-0.065	0.261	4	shielded
+SC_RS37440	SCO7043		helix-turn-helix domain-containing protein	HTH (other)	1	666	1	124.877	3.73	3.818	4	shielded
+SC_RS37480	SCO7051	rho	transcription termination factor Rho	Other regulatory	1	5050	0	57.892	-1.805	0.535	3	shielded
+SC_RS37500	SCO7054		PadR family transcriptional regulator	PadR	1	4076	0	29.236	-0.41	0.122	2	shielded
+SC_RS37510	SCO7056		GntR family transcriptional regulator	GntR	1	1988	1	272.096	2.342	0.063	8	shielded
+SC_RS37535	SCO7061		MarR family winged helix-turn-helix transcriptional regulator	MarR	1	1026	4	41.307	-0.639	-0.435	6	shielded
+SC_RS37565	SCO7067		PadR family transcriptional regulator	PadR	1	1181	1	33.692	0.699	0.47	3	shielded
+SC_RS37610	SCO7075		response regulator transcription factor	Response regulator	1	194	4	73.939	-0.045	-0.063	6	shielded
+SC_RS37615	SCO7076		HAMP domain-containing sensor histidine kinase	Sensor kinase	1	311	4	117.213	0.287	0.427	2	shielded
+SC_RS37650			LysR family transcriptional regulator	LysR	1	1330	3	8.564	-1.502	0.384	3	shielded
+SC_RS37660	SCO7086		MerR family transcriptional regulator	MerR	1	190	2	38.084	-0.295	-0.776	4	shielded
+SC_RS37670	SCO7088		response regulator	Response regulator	1	1224	3	17.137	-0.718	2.353	3	shielded
+SC_RS37675	SCO7089		sensor histidine kinase	Sensor kinase	1	34	2	28.763	0.569	2.938	3	exposed
+SC_RS37710	SCO7097		MarR family winged helix-turn-helix transcriptional regulator	MarR	1	3161	0	11.152	-0.869	3.208	8	shielded
+SC_RS37720	SCO7099		sigma-70 family RNA polymerase sigma factor family protein	Sigma factor	1	1172	1	20.755	-0.361	3.121	3	shielded
+SC_RS37745	SCO7104		sigma-70 family RNA polymerase sigma factor family protein	Sigma factor	1	802	2	129.226	-0.253	-0.061	5	shielded
+SC_RS37750	SCO7105		RNA polymerase sigma-70 factor	Sigma factor	1	1045	2	30.893	-1.048	1.109	5	shielded
+SC_RS37755	SCO7106		WhiB family transcriptional regulator	WhiB	1	1005	2	9.682	0.311	3.264	3	shielded
+SC_RS37785	SCO7112		RNA polymerase sigma-70 factor	Sigma factor	1	513	2	168.18	-1.574	-1.3	2	shielded
+SC_RS37895	SCO7134		helix-turn-helix transcriptional regulator	HTH (other)	1	1257	2	319.025	-1.058	-0.936	2	shielded
+SC_RS37925	SCO7140		helix-turn-helix transcriptional regulator	HTH (other)	1	688	3	115.24	1.253	0.228	1	shielded
+SC_RS37935	SCO7142		winged helix-turn-helix transcriptional regulator	HTH (other)	1	340	4	89.291	0.312	-0.405	4	shielded
+SC_RS37940	SCO7143		helix-turn-helix transcriptional regulator	HTH (other)	1	262	4	234.953	0.605	0.207	8	shielded
+SC_RS37945	SCO7144		sigma-70 family RNA polymerase sigma factor	Sigma factor	1	1015	2	23.337	0.285	2.195	4	shielded
+SC_RS37950	SCO7145		MarR family winged helix-turn-helix transcriptional regulator	MarR	1	67	2	9.495	-0.039	3.902	5	shielded
+SC_RS37955	SCO7146		ArsR/SmtB family transcription factor	ArsR	1	425	2	124.297	0.121	-0.912	2	shielded
+SC_RS38065	SCO7168		GntR family transcriptional regulator	GntR	1	1165	2	400.661	-0.608	-1.14	2	shielded
+SC_RS38095	SCO7175		SsgA family sporulation/cell division regulator	Other regulatory	1	1745	1	13.806	0.287	3.445	1	shielded
+SC_RS38105	SCO7178		helix-turn-helix transcriptional regulator	HTH (other)	1	2590	0	14.09	0.12	4.482	3	shielded
+SC_RS38175	SCO7192		sigma factor-like helix-turn-helix DNA-binding protein	Sigma factor	1	3058	0	104.472	5.246	4.475	5	shielded
+SC_RS38220	SCO7201		MarR family winged helix-turn-helix transcriptional regulator	MarR	1	622	6	73.957	-0.288	-0.707	11	shielded
+SC_RS38325	SCO7222		TetR/AcrR family transcriptional regulator	TetR	1	481	5	64.479	-0.257	-0.211	7	shielded
+SC_RS38365	SCO7230		response regulator transcription factor	Response regulator	1	1455	2	98.699	0.258	-0.23	6	shielded
+SC_RS38475	SCO7252		DNA-binding protein NsdB	Other regulatory	1	46	4	9088.506	9.317	7.764	1	exposed
+SC_RS38565	SCO7270		LysR family transcriptional regulator	LysR	1	1794	1	97.952	-0.452	-0.091	3	shielded
+SC_RS38605	SCO7278		RNA polymerase sigma factor SigF	Sigma factor	1	233	4	371.917	0.758	0.344	9	shielded
+SC_RS38610	SCO7279		helix-turn-helix domain-containing protein	HTH (other)	1	25	4	213.166	1.512	1.437	8	exposed
+SC_RS38660	SCO7289		SsgA family sporulation/cell division regulator	Other regulatory	1	2095	0	19.637	-0.222	0.691	7	shielded
+SC_RS38730	SCO7303		TetR/AcrR family transcriptional regulator	TetR	1	919	2	43.0	-0.355	-0.255	3	shielded
+SC_RS38745	SCO7306		WhiB family transcriptional regulator	WhiB	1	711	1	20.739	1.36	1.243	8	shielded
+SC_RS38750	SCO7307		LysR family transcriptional regulator ArgP	LysR	1	1514	2	87.995	0.966	-0.222	7	shielded
+SC_RS38785	SCO7314		SigB/SigF/SigG family RNA polymerase sigma factor	Sigma factor	1	67	3	72.935	1.929	1.494	8	exposed
+SC_RS38825	SCO7322		anti-sigma regulatory factor	Anti-sigma	1	2951	0	166.72	0.162	-0.806	4	shielded
+SC_RS38920	SCO7341		SigB/SigF/SigG family RNA polymerase sigma factor	Sigma factor	1	1891	1	17.458	0.182	3.644	6	shielded
+SC_RS38950	SCO7347		TetR/AcrR family transcriptional regulator	TetR	1	686	5	152.872	-1.238	-1.576	4	shielded
+SC_RS38960	SCO7351		helix-turn-helix transcriptional regulator	HTH (other)	1	164	6	31.154	1.575	2.389	5	shielded
+SC_RS39010	SCO7361		helix-turn-helix domain-containing protein	HTH (other)	1	410	3	235.581	-0.703	-0.686	2	shielded
+SC_RS39025	SCO7364		TetR/AcrR family transcriptional regulator	TetR	1	849	3	80.713	-0.491	0.144	4	shielded
+SC_RS39260	SCO7411		LacI family DNA-binding transcriptional regulator	LacI	1	157	1	49.329	0.675	1.127	5	exposed
+SC_RS39325	SCO7424		MarR family winged helix-turn-helix transcriptional regulator	MarR	1	973	5	49.352	2.328	0.547	4	shielded
+SC_RS39340	SCO7427	nsrR	nitric oxide-sensing transcriptional repressor NsrR	Repressor	1	1270	2	565.458	2.076	0.167	7	shielded
+SC_RS39370	SCO7433		LysR family transcriptional regulator	LysR	1	437	2	28.759	-0.013	2.413	7	shielded
+SC_RS39395	SCO7438		LysR family transcriptional regulator	LysR	1	959	1	30.482	-0.608	0.522	12	shielded
+SC_RS39410	SCO7441		TetR/AcrR family transcriptional regulator	TetR	1	1803	1	68.197	0.097	-0.41	6	shielded
+SC_RS39630	SCO7486		ROK family transcriptional regulator	ROK	1	25	4	196.948	-0.762	-0.936	4	shielded
+SC_RS39685	SCO7497		AraC family transcriptional regulator	AraC	1	464	5	35.103	-0.638	0.188	13	shielded
+SC_RS39690	SCO7498		GntR family transcriptional regulator	GntR	1	696	2	92.822	-1.913	-1.716	9	shielded
+SC_RS39710	SCO7502		LacI family DNA-binding transcriptional regulator	LacI	1	156	3	161.126	0.015	-0.443	0	shielded
+SC_RS39760	SCO7512		GlxA family transcriptional regulator	Other regulatory	1	322	2	38.272	-0.01	0.714	2	shielded
+SC_RS39790	SCO7518		TetR/AcrR family transcriptional regulator	TetR	1	700	3	131.919	0.783	-1.492	2	shielded
+SC_RS39835	SCO7527		helix-turn-helix transcriptional regulator	HTH (other)	1	869	3	25.626	0.997	2.118	1	shielded
+SC_RS39845	SCO7529		winged helix DNA-binding domain-containing protein	HTH (other)	1	317	3	39.968	1.19	1.462	2	shielded
+SC_RS39850	SCO7530		MerR family transcriptional regulator	MerR	1	225	6	50.891	0.805	1.691	8	exposed
+SC_RS39865	SCO7533		response regulator transcription factor	Response regulator	1	799	2	64.665	1.261	2.189	3	shielded
+SC_RS39870	SCO7534		sensor histidine kinase	Sensor kinase	1	1497	2	49.228	2.251	3.577	3	shielded
+SC_RS39890	SCO7538		LysR family transcriptional regulator	LysR	1	596	2	95.849	0.924	0.184	2	shielded
+SC_RS39895	SCO7539		TetR/AcrR family transcriptional regulator	TetR	1	2291	0	107.243	1.905	0.263	5	shielded
+SC_RS39915	SCO7543		ROK family transcriptional regulator	ROK	1	283	2	38.769	0.317	1.669	6	shielded
+SC_RS39960	SCO7552		TetR/AcrR family transcriptional regulator	TetR	1	123	6	64.898	0.867	0.645	3	shielded
+SC_RS39970	SCO7554		LacI family DNA-binding transcriptional regulator	LacI	1	1047	2	461.493	-0.986	-1.778	11	shielded
+SC_RS40010	SCO7562		IclR family transcriptional regulator	IclR	1	1146	2	81.818	0.089	-0.344	3	shielded
+SC_RS40040	SCO7568		ROK family protein	ROK	1	51	3	75.521	-1.255	0.155	5	exposed
+SC_RS40095	SCO7579		helix-turn-helix domain-containing protein	HTH (other)	1	938	1	91.085	1.978	2.067	1	shielded
+SC_RS40120	SCO7584		TetR/AcrR family transcriptional regulator	TetR	1	236	1	133.004	0.325	-0.85	7	shielded
+SC_RS40125	SCO7585		MerR family transcriptional regulator	MerR	1	662	1	119.419	3.482	1.812	3	shielded
+SC_RS40155	SCO7591		LysR substrate-binding domain-containing protein	LysR	1	1105	1	42.631	0.024	0.841	7	shielded
+SC_RS40190	SCO7599		MurR/RpiR family transcriptional regulator	Other regulatory	1	2211	0	98.068	2.322	1.148	2	shielded
+SC_RS40205	SCO7602		TetR/AcrR family transcriptional regulator	TetR	1	280	3	76.456	0.173	-0.124	3	shielded
+SC_RS40210	SCO7603		LysR family transcriptional regulator	LysR	1	889	3	73.535	-0.105	0.202	5	shielded
+SC_RS40245	SCO7610		helix-turn-helix transcriptional regulator	HTH (other)	1	82	4	27.829	0.832	1.935	4	shielded
+SC_RS40270	SCO7615		helix-turn-helix domain-containing protein	HTH (other)	1	486	3	391.212	2.283	-0.812	1	shielded
+SC_RS40285	SCO7618		IclR family transcriptional regulator	IclR	1	2478	0	145.955	2.489	-0.013	3	shielded
+SC_RS40315	SCO7624		TetR/AcrR family transcriptional regulator	TetR	1	511	3	69.825	1.79	0.91	4	shielded
+SC_RS40390	SCO7639		MarR family winged helix-turn-helix transcriptional regulator	MarR	1	865	3	56.968	-1.968	-1.603	3	shielded
+SC_RS40395	SCO7640		LysR family transcriptional regulator	LysR	1	560	1	51.868	-0.99	-0.205	1	shielded
+SC_RS40420	SCO7645		TetR/AcrR family transcriptional regulator	TetR	1	2733	0	79.363	0.772	0.071	2	shielded
+SC_RS40435	SCO7648		response regulator transcription factor	Response regulator	1	32	1	120.995	2.439	2.048	4	exposed
+SC_RS40440	SCO7649		sensor histidine kinase	Sensor kinase	1	1306	3	134.334	0.832	0.894	1	shielded
+SC_RS40450	SCO7651		TetR/AcrR family transcriptional regulator	TetR	1	88	5	21.232	-0.07	0.755	2	shielded
+SC_RS40655	SCO7694		TetR/AcrR family transcriptional regulator	TetR	1	1696	2	85.195	-0.651	-0.83	1	shielded
+SC_RS40665	SCO7696		MarR family winged helix-turn-helix transcriptional regulator	MarR	1	626	7	29.458	-0.385	-0.22	14	shielded
+SC_RS40675	SCO7698		MerR family transcriptional regulator	MerR	1	1133	6	771.142	6.714	3.815	7	shielded
+SC_RS40695	SCO7702		FadR/GntR family transcriptional regulator	GntR	1	975	2	120.294	1.256	-0.053	5	shielded
+SC_RS40705	SCO7704		TetR/AcrR family transcriptional regulator	TetR	1	48	3	101.69	-0.038	-0.753	2	shielded
+SC_RS40715	SCO7706		helix-turn-helix transcriptional regulator	HTH (other)	1	811	1	49.609	-0.585	-0.406	2	shielded
+SC_RS40730	SCO7709		MarR family winged helix-turn-helix transcriptional regulator	MarR	1	396	4	42.323	-0.129	-0.305	1	shielded
+SC_RS40740	SCO7711		sensor histidine kinase	Sensor kinase	1	35	4	174.722	3.156	3.14	2	exposed
+SC_RS40745	SCO7712		response regulator	Response regulator	1	1194	4	96.038	1.2	0.408	3	shielded
+SC_RS40780	SCO7719		TetR/AcrR family transcriptional regulator	TetR	1	912	3	56.779	0.511	0.08	3	shielded
+SC_RS40805	SCO7724		transcriptional regulator	Other regulatory	1	426	2	100.476	-2.61	-0.431	3	shielded
+SC_RS40820	SCO7727		MarR family winged helix-turn-helix transcriptional regulator	MarR	1	1376	2	185.858	-0.851	-1.193	3	shielded
+SC_RS40860	SCO7735		AraC family transcriptional regulator	AraC	1	848	8	15.294	0.253	0.048	9	shielded
+SC_RS40895	SCO7742		MarR family winged helix-turn-helix transcriptional regulator	MarR	1	1609	1	50.915	0.926	0.455	3	shielded
+SC_RS40930	SCO7751		MarR family winged helix-turn-helix transcriptional regulator	MarR	1	338	2	32.739	-0.463	0.505	1	shielded
+SC_RS40940	SCO7753		helix-turn-helix transcriptional regulator	HTH (other)	1	1026	2	55.047	-1.917	-1.257	3	shielded
+SC_RS40985	SCO7765		MarR family winged helix-turn-helix transcriptional regulator	MarR	1	3695	0	185.556	0.596	0.566	7	shielded
+SC_RS40995	SCO7767		helix-turn-helix transcriptional regulator	HTH (other)	1	2227	0	70.439	0.115	0.271	2	shielded
+SC_RS41010	SCO7770		tetratricopeptide repeat protein	TetR	1	807	1	27.528	1.495	2.051	4	shielded
+SC_RS41050	SCO7778		IclR family transcriptional regulator	IclR	1	411	3	121.46	1.546	0.842	4	shielded
+SC_RS41060	SCO7780		helix-turn-helix domain-containing protein	HTH (other)	1	975	3	138.911	1.558	0.396	4	shielded
+SC_RS41085	SCO7785		TetR/AcrR family transcriptional regulator	TetR	1	492	3	275.002	2.862	1.132	7	shielded
+SC_RS41090			helix-turn-helix domain-containing protein	HTH (other)	1	2231	0	38.411	1.358	1.646	8	shielded
+SC_RS41130	SCO7794		TetR/AcrR family transcriptional regulator C-terminal domain-containing protein	TetR	1	1112	1	49.938	-1.171	-0.481	1	shielded
+SC_RS41190	SCO7809		TetR/AcrR family transcriptional regulator	TetR	1	1096	3	49.398	-0.338	-0.28	8	shielded
+SC_RS41225	SCO7815		TetR/AcrR family transcriptional regulator	TetR	1	15	2	80.178	-0.156	-0.823	4	shielded
+SC_RS41235	SCO7817		helix-turn-helix transcriptional regulator	HTH (other)	1	358	2	57.252	2.932	2.902	4	shielded
+SC_RS41270	SCO7824		TetR/AcrR family transcriptional regulator	TetR	1	1253	2	57.689	0.911	0.363	2	shielded

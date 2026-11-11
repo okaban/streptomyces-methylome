@@ -1,3 +1,4 @@
+# 2026-11-05 D188: 補足図 12→9 の削減。出荷名 SuppFigure11.png -> SuppFigure9.png。
 #!/usr/bin/env python3
 """Supplementary Figure 15 — duplex schematic of the two recognition sequences.
 
@@ -36,31 +37,40 @@ in the Figure 3a logo, which this drawing inherited when it was relocated out of
 Figure 3a on 2026-10-22.
 
 Run:  PYTHONPATH=. python suppfigure15_motif_duplex_schematic.py
-Out:  $SUPPFIG_OUT/SuppFigure15.png  (default Writing/fig_images/)
+Out:  $SUPPFIG_OUT/SuppFigure11.png  (default Writing/fig_images/)
 """
 import matplotlib.pyplot as plt
 from matplotlib.patches import Circle, Rectangle
 
 from _suppstyle import (BLUE, DPI, GREY, NAR_WIDTH_IN, RED, apply_figure_style,
-                        report, save, source_note)
+                        report, save)
 
-apply_figure_style(frame="open", sizes=(7.5, 6.5, 6.0))
+apply_figure_style(frame="boxed", sizes=(7.5, 6.5, 6.0))
 
 # ---------------------------------------------------------------------- canvas
 # 1 data unit == 1 px so the mark circles stay round and the measured-extent
 # placement below works in the same units the renderer reports.
-# 2026-10-24 (CA06): the note below gained a line defining filled vs open, and at
-# the old height of 690 px its top ran into the "4 bp, same strand" bracket label
-# (assert_no_text_collisions caught it).  One 6 pt line at linespacing 1.45 is
-# 36 px here, so the canvas grows by exactly that and every drawn y below rises
-# by the same amount: the note keeps its figure-fraction position, the content
-# keeps its distance from the top edge, and the new room opens where it is needed.
-NOTE_LINE_PX = 36
-W, H = int(NAR_WIDTH_IN * DPI), 690 + NOTE_LINE_PX
+# 2026-10-24 (CA06): the explanatory note then at the foot of the canvas gained a
+# line, and at the design height of 690 px its top ran into the "4 bp, same
+# strand" bracket label (assert_no_text_collisions caught it), so the canvas was
+# grown by one 6 pt line (36 px) and every drawn y raised by the same amount.
+# 2026-11-08 (author rule: no prose inside a figure): that note moved to the
+# legend.  The reserved band is reclaimed by the same one-line mechanism run
+# backwards -- every drawn y drops by Y_SHIFT_PX and the canvas loses the same
+# amount, so the schematic keeps its internal spacing and the foot margin comes
+# back to the ~22 px the rest of the supplementary set uses.
+Y_SHIFT_PX = -84
+# 2026-11-09: この図は版面を「300 dpi の画素」で直接書き、文字の実測幅（表示画素）を
+# データ座標として使い回している。両者が一致するのは図の dpi が 300 のときだけなので、
+# 作図は 300 で固定し、解像度は保存時のラスタ化（save_figure_raster の dpi）だけに効かせる。
+_GEO = 300
+# 2026-11-09: 版面を 174 mm 幅で取ると右に 60 mm の白が残る（図は左 2/3 しか使わない）。
+# 投稿規定は余白を詰めることを求めるので、内容の実測幅 114 mm に canvas を合わせる。
+W, H = 1400, 690 + Y_SHIFT_PX
 FS_SEQ = 13                      # sequence letters + mark identity (hero glyphs)
 FS_ANN = 7.0                     # stats annotations, polarity, bracket
 
-fig = plt.figure(figsize=(W / DPI, H / DPI), dpi=DPI)
+fig = plt.figure(figsize=(W / _GEO, H / _GEO), dpi=_GEO)
 ax = fig.add_axes([0, 0, 1, 1])
 ax.set_xlim(0, W)
 ax.set_ylim(0, H)
@@ -78,12 +88,12 @@ ANN_X = 900            # left edge of the stats annotations
 # the 5' end (column index 4 == position 5, the cytosine of both motifs).
 DUPLEX = [
     dict(top='TGGCCGGC', bot='ACCGGCCG',
-         y_top=530 + NOTE_LINE_PX, y_bot=448 + NOTE_LINE_PX,
+         y_top=530 + Y_SHIFT_PX, y_bot=448 + Y_SHIFT_PX,
          marks={4: ('4mC', RED)}, fallback={},
          stats='2,093 strand-oriented positions\n90.1% occupied',
          bracket=None),
     dict(top='AAGCCCG', bot='TTCGGGC',
-         y_top=278 + NOTE_LINE_PX, y_bot=196 + NOTE_LINE_PX,
+         y_top=278 + Y_SHIFT_PX, y_bot=196 + Y_SHIFT_PX,
          marks={0: ('6mA', BLUE), 4: ('4mC', RED)},
          # 2026-10-24 (CA06): the adenine mark also occupies position 2 when the
          # 5' base is G blocks position 1, and this figure marked position 1
@@ -190,16 +200,8 @@ for d, spec in enumerate(DUPLEX):
     ax.text((xa + xb) / 2, ybar - 7, lab, ha='center', va='top',
             fontsize=FS_ANN, color='0.15', zorder=4)
 
-source_note(fig,
-            "Schematic; no data input. Mark positions are 1-based from the 5\u2032 end of each "
-            "recognition sequence. A filled circle marks the principal\nmodified position; an "
-            "open circle marks the fallback position of the adenine mark, used when a 5\u2032 G "
-            "blocks position 1 (the same filled/open\nconvention as Figure 3a). Occupancy "
-            "annotations are the values registered in value_registry.csv. Relocated from "
-            "Figure 3a on 2026-10-22.",
-            y=0.030)
 
 if __name__ == "__main__":
     # The duplex base letters A/C/G/T are the content of the schematic; placing
     # them on the mark glyph is correct here, as in Supplementary Figure 1.
-    report(save(fig, "SuppFigure15.png", allow_over_data=("A", "C", "G", "T")))
+    report(save(fig, "SuppFigure2.png", allow_over_data=("A", "C", "G", "T")))

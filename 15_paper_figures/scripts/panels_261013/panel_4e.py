@@ -24,6 +24,8 @@ sys.path.insert(0, '/Users/okaban/bioinfo/rna-seq/15_paper_figures/scripts')
 import pandas as pd
 import matplotlib as mpl
 import matplotlib.pyplot as plt
+import os as _os
+_FD = int(_os.environ.get('FIG_DPI', 300))  # 2026-11-09 解像度上書き
 
 U = importlib.import_module('00_shared_utils')
 try:
@@ -49,7 +51,7 @@ FS_T, FS_L, FS_TK, FS_A = (U.FONT['panel_title'], U.FONT['axis_label'],
 C_EXPR = U.COL_DARK      # transcript: neutral near-black (not a methyl mark)
 C_OCC = U.COL_6mA        # occupancy: the 6mA mark colour
 
-fig = plt.figure(figsize=(2125 / 300, 519 / 300), dpi=300)
+fig = plt.figure(figsize=(2125 / 300, 519 / 300), dpi=_FD)
 ax = fig.add_subplot(111)
 ax2 = ax.twinx()
 fig.subplots_adjust(left=0.059, right=0.952, bottom=0.115, top=0.845)
@@ -74,7 +76,7 @@ ax.set_ylabel('Transcript level (TPM)', fontsize=FS_L, color=C_EXPR)
 ax2.set_ylabel('6mA occupancy (%)', fontsize=FS_L, color=C_OCC)
 ax2.yaxis.set_label_coords(1.038, 0.5)
 
-U.style_axes(ax)
+U.style_axes(ax, frame=True)
 for side in ('top', 'left', 'bottom'):
     ax2.spines[side].set_visible(False)
 ax2.spines['right'].set_visible(True)
@@ -125,7 +127,7 @@ fig.text(x0, 0.945, rest, fontsize=FS_T, color=U.COL_DARK, ha='left',
 # ── checks, then save at exactly 2125 x 519 px ──────────────────────────────
 U.assert_no_text_collisions(fig, 'Fig4e')
 OUT = str(Path(__file__).with_suffix('.png'))
-fig.savefig(OUT, dpi=300, transparent=True, bbox_inches=None, pad_inches=0)
+fig.savefig(OUT, dpi=_FD, transparent=True, bbox_inches=None, pad_inches=0)
 
 from PIL import Image
 size = Image.open(OUT).size

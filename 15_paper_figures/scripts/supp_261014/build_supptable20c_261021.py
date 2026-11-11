@@ -1,5 +1,20 @@
 # -*- coding: utf-8 -*-
-"""補足表 20c: クラスタ内部と隣接フランクの per-library 6mA レベル。
+"""SUPERSEDED 2026-11-02 — 後継 build_supptable20c_allread_261102.py を使うこと。
+
+このスクリプトは残してあるが実行は止めてある（下の raise SystemExit）。理由は 2 点:
+
+  1. 入力 `methyl/260102_M145/analysis/pileup/` が 2026-02 の追加フローセルを含まず
+     （3-2 / 3-4）、1-1 は不採用の復元版である。両方とも Writing/superseded_inputs.tsv
+     に severity BLOCKER で登録されており、check_data_freshness.py が :16 を検出していた。
+  2. 信頼度フィルタ版からレベル尺度の量を作っている（canon F7: LEVEL +15.5 pp）。
+
+実測した入力差（2026-11-02、Writing/supptable20c_lineage_diff_261102.tsv）:
+3-2 の level_6mA_interior_all は 0.066395 → 0.092847、3-4 は 0.068067 → 0.077040。
+追加フローセルの影響を受けない 6 ライブラリは全 8 セルがビット単位で一致する。
+
+--- 以下、旧版の元の説明 ---
+
+補足表 20c: クラスタ内部と隣接フランクの per-library 6mA レベル。
 
 凡例の宣言:
   「クラスタ内部とフランクの per-library 平均 6mA レベルを、全位置で、および
@@ -20,6 +35,12 @@
 レベルの定義: 区間内の測定可能アデニン位置（鎖別）について Nmod/Nvalid_cov を
 位置ごとに求め、その単純平均。分母は「その区間でその library が測定できた位置数」。
 """
+
+raise SystemExit(
+    "SUPERSEDED 2026-11-02: build_supptable20c_allread_261102.py "
+    "(all-read, canonical pileup lineage) wo tsukau koto."
+)
+
 import os
 import sys
 

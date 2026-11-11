@@ -1,0 +1,5 @@
+definition	n_genes	4mC_mean_genebody_level	4mC_n_genes_with_level	4mC_pct_genes_methylatable_promoter	4mC_rho_level_vs_TPM	4mC_p_level_vs_TPM	4mC_n_corr	6mA_mean_genebody_level	6mA_n_genes_with_level	6mA_pct_genes_methylatable_promoter	6mA_rho_level_vs_TPM	6mA_p_level_vs_TPM	6mA_n_corr
+P1 COG core metabolism (C,E,F,G,H,I)	1214	0.654	317	6.75	0.0429	0.446	317	0.3484	192	5.93	-0.0078	0.914	192
+P2 COG metabolism + transport/envelope (C,E,F,G,H,I,P,M)	1800	0.6534	440	6.61	0.025	0.601	440	0.3434	289	5.56	0.0214	0.717	289
+P3 all protein-coding genes outside antiSMASH regions	6965	0.6457	1435	5.9	0.0646	0.0143	1435	0.3433	921	5.43	-0.0261	0.428	921
+(comparator) genes inside antiSMASH regions	1031	0.6494	216	7.18	0.0891	0.192	216	0.3272	131	3.78	-0.0109	0.901	131

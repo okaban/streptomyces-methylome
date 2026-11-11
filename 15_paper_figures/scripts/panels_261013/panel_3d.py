@@ -28,6 +28,8 @@ import matplotlib as mpl
 mpl.rcParams['savefig.bbox'] = None          # the style helper sets 'tight',
                                              # which would resize the canvas
 import matplotlib.pyplot as plt
+import os as _os
+_FD = int(_os.environ.get('FIG_DPI', 300))  # 2026-11-09 解像度上書き
 
 # ── data ──────────────────────────────────────────────────────────────────────
 CSV = str(_DATA_DIR / "v9ce87d3e_F3d_rebase.csv")
@@ -42,9 +44,9 @@ LAB = ['Dual 4mC/6mA systems in REBASE',
 
 # ── figure ────────────────────────────────────────────────────────────────────
 F = U.FONT
-fig = plt.figure(figsize=(2.257, 2.047), dpi=300)
+fig = plt.figure(figsize=(2.257, 2.047), dpi=_FD)
 ax = fig.add_axes([0.045, 0.145, 0.945, 0.735])
-U.style_axes(ax)
+U.style_axes(ax, frame=True)
 
 XMAX = 58.0
 STUB = 0.95          # data-unit stub so the terminal zero is a visible mark
@@ -79,7 +81,7 @@ color=U.COL_DARK, linespacing=1.22)
 
 # ── save (collision assert first, then an exact-size check) ───────────────────
 U.assert_no_text_collisions(fig, 'Fig3d funnel')
-fig.savefig(str(Path(__file__).with_suffix('.png')), dpi=300, transparent=True,
+fig.savefig(str(Path(__file__).with_suffix('.png')), dpi=_FD, transparent=True,
             bbox_inches=None, pad_inches=0)
 
 from PIL import Image

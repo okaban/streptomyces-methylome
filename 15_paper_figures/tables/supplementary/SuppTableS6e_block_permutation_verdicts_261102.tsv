@@ -1,0 +1,6 @@
+Predictor	Site set	Partial statistic	Naive *p*	Block-permutation *p*	Verdict
+occupancy ±2 kb	superseded (T1 *n* = 1,289 first-appearance)	partial ρ = −0.0898	0.00413	0.0237	SURVIVES
+occupancy ±2 kb	canonical (T1 *n* = 1,886 pooled rule)	partial ρ = −0.0568	0.0702	0.0923	does NOT survive
+nearest-site distance (log10)	superseded (T1 *n* = 1,289)	partial ρ = +0.1280	4.15 × 10⁻⁵	0.0021	SURVIVES
+nearest-site distance (log10)	canonical (T1 *n* = 1,886)	partial ρ = +0.0824	0.00846	0.0126	SURVIVES
+nearest-site distance (log10)	SEQUENCE ONLY, all 2,093 TGGCCGGC, methylation ignored	partial ρ = +0.0723	0.0211	0.0392	SURVIVES

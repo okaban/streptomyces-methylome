@@ -25,6 +25,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from PIL import Image
+import os as _os
+_FD = int(_os.environ.get('FIG_DPI', 300))  # 2026-11-09 解像度上書き
 
 # --- project style module (name starts with a digit -> import_module) ----------
 sys.path.insert(0, '/Users/okaban/bioinfo/rna-seq/15_paper_figures/scripts')
@@ -73,10 +75,10 @@ YB, YT = -1.28, 1.42
 W_PX, H_PX = 2125, 543
 
 # --- figure -------------------------------------------------------------------
-fig = plt.figure(figsize=(W_PX / 300, H_PX / 300), dpi=300)
+fig = plt.figure(figsize=(W_PX / 300, H_PX / 300), dpi=_FD)
 ax = fig.add_subplot(111)
 fig.subplots_adjust(left=0.0565, right=0.9975, top=0.945, bottom=80 / H_PX)
-U.style_axes(ax)
+U.style_axes(ax, frame=True)
 ax.set_xlim(XL, XR)
 ax.set_ylim(YB, YT)
 
@@ -119,5 +121,5 @@ ax.yaxis.set_label_coords((39.4 - 120.1) / 1999.6, 0.5)
 fig.canvas.draw()
 U.assert_no_text_collisions(fig, 'Fig1c')
 OUT = str(Path(__file__).with_suffix('.png'))
-fig.savefig(OUT, dpi=300, transparent=True, bbox_inches=None, pad_inches=0)
-assert Image.open(OUT).size == (W_PX, H_PX), Image.open(OUT).size
+fig.savefig(OUT, dpi=_FD, transparent=True, bbox_inches=None, pad_inches=0)
+assert all(abs(a-round(b*_FD/300))<=2 for a,b in zip(Image.open(OUT).size, (W_PX, H_PX))), Image.open(OUT).size

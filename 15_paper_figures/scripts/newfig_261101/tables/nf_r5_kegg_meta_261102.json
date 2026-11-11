@@ -1,0 +1,18 @@
+{
+ "kegg_release": "brite 205 (2026/10/29); pathway 587 (2026/10/28)",
+ "retrieved_on": "2026-11-02",
+ "organism": "sco (Streptomyces coelicolor A3(2))",
+ "brite": "br:sco00001",
+ "excluded_B_categories": [
+  "09109",
+  "09110",
+  "09111",
+  "09112"
+ ],
+ "n_genes_A09100": 1124,
+ "n_primary_core": 1018,
+ "n_primary_core_mapped": 1013,
+ "n_bgc_genes": 926,
+ "n_other": 6057,
+ "kegg_core_inside_bgc": 105
+}

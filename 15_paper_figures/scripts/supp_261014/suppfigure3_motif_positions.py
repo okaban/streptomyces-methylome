@@ -15,11 +15,11 @@ from matplotlib.patches import FancyBboxPatch
 
 from _suppstyle import (BLUE, DATA_DIR, GREY, LIGHT, NAR_WIDTH_IN, RED,
                         apply_figure_style, figure_panel_letters, report,
-                        save, source_note)
+                        save)
 
 N = json.load(open(DATA_DIR / "numbers.json"))
 
-apply_figure_style(frame="open", sizes=(7.0, 6.2, 6.0))
+apply_figure_style(frame="boxed", sizes=(7.0, 6.2, 6.0))
 
 
 def schematic(ax, top, bottom, marks, title, groups=()):
@@ -85,74 +85,66 @@ def countpanel(ax, labels, values, colours, universe, title, nastr=None):
         else:
             ax.text(i, v + universe * 0.05, f"{v:,}", ha="center", va="bottom",
                     fontsize=6.2)
-    ax.axhline(universe, color="0.6", ls=":", lw=0.8)
-    # 左端に置くと最初の棒の値ラベルと重なる（1,886 と all 2,093）。右端へ。
-    ax.text(len(values) - 0.45, universe * 1.02, f"all {universe:,}", ha="right",
-            va="bottom", fontsize=6.0, color="0.55")
+    # 2026-10-28 著者指摘「点線と数字が重なっている」。母数の点線とその
+    # ラベル（all N）を削除した。ラベルを右端へ逃がしても、線が y=universe、
+    # 文字の基線が y=universe*1.02 なので、この文字サイズでは線が文字を貫く。
+    # 衝突検査は線を文字として見ないので素通りしていた。
+    # 母数はパネル題（"1,886 of 2,093 TGGCCGGC"）と凡例に書いてあるので、
+    # 図に線で引く必要がない。
     ax.set_xticks(list(xs))
     ax.set_xticklabels(labels)
     ax.set_xlim(-0.65, len(values) - 0.35)
-    ax.set_ylim(0, universe * 1.32)
+    ax.set_ylim(0, universe * 1.22)
     ax.set_title(title, loc="left", fontsize=6.6)
     ax.set_ylabel("Methylated positions (T1)")
 
 
 def build(path_name):
-    fig = plt.figure(figsize=(NAR_WIDTH_IN, 4.35))
-    gs = fig.add_gridspec(2, 3, width_ratios=[1.12, 1.0, 0.92],
-                          hspace=0.80, wspace=0.62,
-                          left=0.085, right=0.985, top=0.915, bottom=0.165)
+    # 2026-10-28 D122: 模式図パネル (a)(d) を削除し 2x3 から 2x2 に詰めた。
+    # 削除理由: 平面図では鎖の極性を描けず、「同一鎖に 2 つの化学種」という
+    # 本論文の中心主張を支えられない。両配列の二重鎖模式図は補足図 15 にあり、
+    # 5'/3' 極性・塩基対・主修飾塩基の塗り円・A2 の白円まで描いた上位互換である。
+    # 模式図が担っていた「どちらの配列の話か」は、各棒パネルの題で名指しする。
+    fig = plt.figure(figsize=(NAR_WIDTH_IN, 3.90))
+    gs = fig.add_gridspec(2, 2, width_ratios=[1.0, 0.92],
+                          hspace=0.80, wspace=0.52,
+                          left=0.095, right=0.985, top=0.8829, bottom=0.0687)
     axes = []
 
     ax_a = fig.add_subplot(gs[0, 0]); axes.append(ax_a)
-    schematic(ax_a, "TGGCCGGC", "ACCGGCCG", {4: ("4mC", RED)},
-              "TGGCCGGC — one 4mC,\non one strand only")
-
-    ax_b = fig.add_subplot(gs[0, 1]); axes.append(ax_b)
     t = N["perpos_T1_TGG"]
     # 表示は認識配列 TGGCCGGC の 1 起点位置。格納キー C1/C2/C5 は六塩基 GCCGGC の
     # 0 起点オフセットで、TGGCCGGC の位置 4 / 5 / 8 に対応する（位置 5 が修飾側）。
-    barpanel(ax_b, ["C4", "C5", "C8"], [t["C1"], t["C2"], t["C5"]],
-             [GREY, RED, GREY], "", 95)
+    barpanel(ax_a, ["C4", "C5", "C8"], [t["C1"], t["C2"], t["C5"]],
+             [GREY, RED, GREY], "TGGCCGGC", 95)
 
-    ax_c = fig.add_subplot(gs[0, 2]); axes.append(ax_c)
-    countpanel(ax_c, ["4mC\nat C5", "6mA"], [N["TGG_called"]["T1"], np.nan],
+    ax_b = fig.add_subplot(gs[0, 1]); axes.append(ax_b)
+    countpanel(ax_b, ["4mC\nat C5", "6mA"], [N["TGG_called"]["T1"], np.nan],
                [RED, BLUE], N["universe_TGG"],
                f"{N['TGG_called']['T1']:,} of {N['universe_TGG']:,}\nTGGCCGGC",
                nastr="n.a.\nno A in motif")
 
-    ax_d = fig.add_subplot(gs[1, 0]); axes.append(ax_d)
-    schematic(ax_d, "AAGCCCG", "TTCGGGC",
-              {0: ("6mA", BLUE), 1: ("6mA", BLUE), 4: ("4mC", RED)},
-              "AAGCCCG — two marks,\nsame strand",
-              groups=[((0, 1), "6mA", BLUE)])
-
-    ax_e = fig.add_subplot(gs[1, 1]); axes.append(ax_e)
+    ax_c = fig.add_subplot(gs[1, 0]); axes.append(ax_c)
     a = N["perpos_T1_AAG"]
-    barpanel(ax_e, ["A1", "A2", "C4", "C5", "C6"],
+    barpanel(ax_c, ["A1", "A2", "C4", "C5", "C6"],
              [a["A0"], a["A1"], a["C3"], a["C4"], a["C5"]],
              [BLUE, BLUE, GREY, RED, GREY],
-             "", 95)
+             "AAGCCCG", 95)
 
-    ax_f = fig.add_subplot(gs[1, 2]); axes.append(ax_f)
-    countpanel(ax_f, ["4mC\nat C5", "6mA\nat A1/A2"],
+    ax_d = fig.add_subplot(gs[1, 1]); axes.append(ax_d)
+    countpanel(ax_d, ["4mC\nat C5", "6mA\nat A1/A2"],
                [N["AAG_C4_called"]["T1"], N["AAG_6mA_union"]["T1"]],
                [RED, BLUE], N["universe_AAG"],
                f"{N['AAG_C4_called']['T1']:,} and {N['AAG_6mA_union']['T1']:,}\n"
                f"of {N['universe_AAG']:,} AAGCCCG")
 
-    figure_panel_letters(fig, axes, "abcdef",
-                         dx=[0.055, 0.105, 0.098, 0.055, 0.105, 0.098], dy=0.006)
-    source_note(fig,
-                "Source: deposited modkit pileups of the nine modified-base BAMs (T1 = libraries 1-1/1-2/1-3). Site rule: three libraries\n"
-                "pooled per timepoint, pre-pooling true depth (Nvalid_cov + Nfail) >= 30, pooled modified fraction >= 50 %. "
-                f"n = {N['universe_TGG']:,} strand-oriented\nTGGCCGGC and {N['universe_AAG']:,} AAGCCCG positions.",
-                y=0.010)
+    figure_panel_letters(fig, axes, "abcd",
+                         dx=[0.105, 0.098, 0.105, 0.098], dy=0.006)
     return fig
 
 
 if __name__ == "__main__":
     # 出荷名は SuppFigure1.png（補足図 3 -> 1 の改番、2026-10-24 に出力名を追随）。
-    fig = build("SuppFigure1.png")
+    fig = build("SuppFigure3.png")
     # 二本鎖模式図の塩基文字 A/C/G/T は模式図の内容そのもの（マーク上に置くのが正）。
-    report(save(fig, "SuppFigure1.png", allow_over_data=("A", "C", "G", "T")))
+    report(save(fig, "SuppFigure3.png", allow_over_data=("A", "C", "G", "T")))

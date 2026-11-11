@@ -1,0 +1,22 @@
+table	sample	threshold	mod	n_positions	n_measurable	median_depth	Nvalid_total	Nmod_total	per_read_FP_pct	n_sites_level_ge_0_5	max_level	p99_level	dataset	p50	p90	p99	p99_9	max	n_level_ge_0_5	rate_ge_0_5
+C_false_positive_rate	pooled	default	4mC	1691	1093.0	474	437553.0	269.0	0.0615	0.0	0.05	0.0078								
+C_false_positive_rate	rep1	default	4mC	1571	1038.0	235	219414.0	147.0	0.067	0.0	0.0252	0.0072								
+C_false_positive_rate	rep2	default	4mC	1414	1039.0	238	218139.0	122.0	0.0559	0.0	0.0168	0.0093								
+C_false_positive_rate	pooled	matched	4mC	1677	1093.0	474	428511.0	209.0	0.0488	0.0	0.0625	0.0068								
+C_false_positive_rate	rep1	matched	4mC	1549	1038.0	235	214909.0	114.0	0.053	0.0	0.0179	0.007								
+C_false_positive_rate	rep2	matched	4mC	1402	1039.0	238	213602.0	95.0	0.0445	0.0	0.0198	0.0076								
+C_false_positive_rate	pooled	default	5mC	1691	1093.0	474	437553.0	38.0	0.0087	0.0	0.0152	0.0024								
+C_false_positive_rate	rep1	default	5mC	1571	1038.0	235	219414.0	22.0	0.01	0.0	0.0064	0.0042								
+C_false_positive_rate	rep2	default	5mC	1414	1039.0	238	218139.0	16.0	0.0073	0.0	0.0303	0.0043								
+C_false_positive_rate	pooled	matched	5mC	1677	1093.0	474	428511.0	31.0	0.0072	0.0	0.0159	0.0024								
+C_false_positive_rate	rep1	matched	5mC	1549	1038.0	235	214909.0	18.0	0.0084	0.0	0.0065	0.0041								
+C_false_positive_rate	rep2	matched	5mC	1402	1039.0	238	213602.0	13.0	0.0061	0.0	0.0312	0.0026								
+C_false_positive_rate	pooled	default	6mA	1816	1195.0	470	463488.0	1648.0	0.3556	0.0	0.3333	0.064								
+C_false_positive_rate	rep1	default	6mA	1682	1121.0	233	232129.0	816.0	0.3515	0.0	0.375	0.0577								
+C_false_positive_rate	rep2	default	6mA	1512	1121.0	236	230776.0	806.0	0.3493	0.0	0.3	0.0862								
+C_false_positive_rate	pooled	matched	6mA	1851	1195.0	470	492035.0	5290.0	1.0751	0.0	0.3036	0.1606								
+C_false_positive_rate	rep1	matched	6mA	1719	1121.0	233	246536.0	2638.0	1.07	0.0	0.2679	0.1503								
+C_false_positive_rate	rep2	matched	6mA	1537	1121.0	236	245499.0	2652.0	1.0802	0.0	0.3571	0.1656								
+C_level_tail				2412520		131							study T1 non-motif A (pooled 3 libs)	0.025	0.0964	0.2518	0.4545	0.9458	1531.0	0.0006346061379802
+C_level_tail				1195		131							control pooled, depth-matched to study (500 draws)	0.0072	0.0432	0.1612	0.2547	0.3636	0.0	0.0
+C_level_tail				1195		470							control pooled, full depth (no thinning)	0.0066	0.0408	0.1606	0.2393	0.3036	0.0	0.0

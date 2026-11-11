@@ -20,8 +20,8 @@ OUT_DIR = Path(os.environ.get(
     "SUPPFIG_OUT", "/Users/okaban/obsidian/Research/rna-seq/Writing/fig_images"))
 
 NAR_WIDTH_MM = 174.0
-NAR_WIDTH_IN = 6.80          # 2040 px at 300 dpi = 172.7 mm, inside the 174 mm cap
-DPI = 300
+NAR_WIDTH_IN = 6.85          # 174.0 mm exactly; 4110 px at 600 dpi
+DPI = int(os.environ.get('FIG_DPI', 300))
 
 # 2026-10-22: the mark colours are now IMPORTED from 00_shared_utils rather than
 # restated here.  Until today the shipped set carried four different 4mC/6mA
@@ -50,8 +50,13 @@ META_GREY = "#888888"
 FONT_FLOOR = 6.0
 
 
-def apply_figure_style(*, frame="open", sizes=(7.5, 6.5, 6.0), grid=False):
-    """Publication rc for a column-width figure.  sizes = (base, secondary, tick)."""
+def apply_figure_style(*, frame="boxed", sizes=(7.5, 6.5, 6.0), grid=False):
+    """Publication rc for a column-width figure.  sizes = (base, secondary, tick).
+
+    frame の既定は 2026-10-28 に "open" から "boxed" に変えた（著者決定 D121:
+    補足図も本文図と同じく四辺の枠に揃える）。"open" を明示すれば従来の
+    上右なし体裁に戻せるが、投稿物の中で作図規約を混在させないこと。
+    """
     import glob
     import os
     import sys
@@ -160,7 +165,9 @@ def save(fig, name, allow_over_data=()):
     _collision_checker()(fig, name=name, allow_over_data=allow_over_data)
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     path = OUT_DIR / name
-    fig.savefig(path, dpi=DPI, bbox_inches=None, facecolor="white")
+    # 2026-11-09: 余白を 3 mm 以下に落とすため tight 描画→174 mm 幅に正規化する
+    # 経路（本文図と同じ save_figure_raster）に揃えた。幅は常に 174 mm 相当。
+    _U.save_figure_raster(fig, path, width_class="full", dpi=DPI)
     return path
 
 

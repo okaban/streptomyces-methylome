@@ -24,6 +24,8 @@ import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
 import pandas as pd
 from PIL import Image
+import os as _os
+_FD = int(_os.environ.get('FIG_DPI', 300))  # 2026-11-09 解像度上書き
 
 # ── style ────────────────────────────────────────────────────────────────────
 try:                      # figure-style skill helper, when a kernel provides it
@@ -51,7 +53,7 @@ XMAX = 9.72
 YMAX = 58.0
 
 # ── figure ───────────────────────────────────────────────────────────────────
-fig = plt.figure(figsize=(2125 / 300, 519 / 300), dpi=300)
+fig = plt.figure(figsize=(2125 / 300, 519 / 300), dpi=_FD)
 ax = fig.add_subplot(111)
 fig.subplots_adjust(left=0.058, right=0.997, bottom=0.162, top=0.925)
 
@@ -77,7 +79,7 @@ ax.set_xlabel('Position along chromosome (Mb)', labelpad=2)
 ax.set_ylabel('Sites per 100 kb', labelpad=2)
 ax.set_title('',
              loc='left', x=0.035, pad=3)
-U.style_axes(ax)
+U.style_axes(ax, frame=True)
 ax.tick_params(axis='both', pad=1.5, length=2.5, width=0.8)
 
 FS_ID = U.FONT['axis_label']
@@ -101,7 +103,7 @@ ax.text(8.78, s6[-1] + 1.2, f'mean {m6:.1f}', ha='left', va='center',
 # ── render-then-verify ───────────────────────────────────────────────────────
 # No panel letter: the composer stamps it in the clear top-left ~10 x 6 mm.
 U.assert_no_text_collisions(fig, 'Fig2 panel a')
-fig.savefig(OUT, dpi=300, transparent=True, bbox_inches=None, pad_inches=0)
+fig.savefig(OUT, dpi=_FD, transparent=True, bbox_inches=None, pad_inches=0)
 size = Image.open(OUT).size
 assert size == (2125, 519), size
 print('wrote', OUT, size)

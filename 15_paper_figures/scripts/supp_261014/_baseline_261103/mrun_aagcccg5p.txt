@@ -1,0 +1,10 @@
+panel f values (methylated, unmethylated): {'+-8 bp GC': (np.float64(0.72), np.float64(0.77)), 'G-run within +-10 bp': (np.float64(0.33), np.float64(0.47)), 'call-failure fraction': (np.float64(0.66), np.float64(0.76))}
+Traceback (most recent call last):
+  File "/Users/okaban/bioinfo/rna-seq/15_paper_figures/scripts/supp_261014/suppfigure_merged_aagcccg5p_261103.py", line 338, in <module>
+    report(save(build(), "SuppFigure_merged_AAGCCCG5p_261103.png",
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/okaban/bioinfo/rna-seq/15_paper_figures/scripts/supp_261014/_suppstyle.py", line 165, in save
+    _collision_checker()(fig, name=name, allow_over_data=allow_over_data)
+  File "/Users/okaban/bioinfo/rna-seq/15_paper_figures/scripts/00_shared_utils.py", line 1011, in assert_no_text_collisions
+    raise AssertionError(f"[{name}] " + " | ".join(msg))
+AssertionError: [SuppFigure_merged_AAGCCCG5p_261103.png] text overlaps text: [('AAGCCCG\nn=1330', 'Panels a-c: all-read calls f'), ('HAAGCCCG\nn=561', 'Panels a-c: all-read calls f'), ('+ −3 G\nn=246', 'Panels a-c: all-read calls f'), ('+ −5 C\nn=85', 'Panels a-c: all-read calls f'), ('Position relative to the mot', 'Panels a-c: all-read calls f')] | text outside the canvas: ['AAGCCCG  1330', 'HAAGCCCG  561', 'TGGCCGGC methylated, 1,886', 'TGGCCGGC unmethylated, 205']

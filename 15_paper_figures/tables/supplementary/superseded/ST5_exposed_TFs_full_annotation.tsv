@@ -1,0 +1,63 @@
+locus_tag	old_locus_tag	gene_name	product	tf_family	region	nearest_methyl_dist	bloc	module	phase_ratio	temporal_class	baseMean	LFC_T2vsT1	LFC_T3vsT1	T1_z	T2_z	T3_z
+SC_RS02455	SCO0089		LysR family transcriptional regulator	LysR	arm	290	activation	1.0	1.492	early	101.968	1.959	1.313	-1.238	1.211	0.027
+SC_RS03250	SCO0266		helix-turn-helix domain-containing protein	HTH (other)	arm	293	activation	2.0	0.172	late	34.686	0.181	1.052	-0.846	-0.559	1.404
+SC_RS04270	SCO0471		helix-turn-helix domain-containing protein	HTH (other)	arm	239	activation	2.0	0.655	early	54.117	1.173	1.792	-1.248	0.048	1.2
+SC_RS05075	SCO0632		sigma-70 family RNA polymerase sigma factor	Sigma factor	arm	52	unassigned		-0.11	late	16.63	-0.177	1.611	-0.649	-0.763	1.413
+SC_RS05485	SCO0712		helix-turn-helix transcriptional regulator	HTH (other)	arm	114	activation	3.0	-0.175	late	51.094	-0.501	2.868	-0.654	-0.759	1.413
+SC_RS06045	SCO0823		GntR family transcriptional regulator	GntR	arm	247	repression	4.0	0.905	early	79.412	-1.33	-1.469	1.412	-0.642	-0.77
+SC_RS06310	SCO0877		helix-turn-helix transcriptional regulator	HTH (other)	arm	170	activation	1.0		non-responder	654.901	1.689	0.365	-0.851	1.404	-0.553
+SC_RS07000	SCO1008		ArsR/SmtB family transcription factor	ArsR	arm	183	repression	4.0	-0.086	late	256.503	0.116	-1.354	0.56	0.845	-1.405
+SC_RS07215	SCO1052		helix-turn-helix domain-containing protein	HTH (other)	arm	216	activation	2.0	0.147	late	17.842	0.347	2.365	-0.795	-0.615	1.41
+SC_RS07750	SCO1160		sensor histidine kinase	Sensor kinase	arm	86	activation	1.0	1.222	early	769.54	6.812	5.575	-1.156	1.283	-0.127
+SC_RS07910	SCO1191		MarR family winged helix-turn-helix transcriptional regulator	MarR	arm	110	repression	4.0	1.342	early	80.884	-2.825	-2.105	1.408	-0.815	-0.594
+SC_RS08090	SCO1227		helix-turn-helix transcriptional regulator	HTH (other)	arm	95	activation	1.0	0.998	early	190.636	4.585	4.593	-1.414	0.699	0.715
+SC_RS09315	SCO1468		tetratricopeptide repeat protein	TetR	core	163	activation	2.0	0.91	early	167.615	3.874	4.256	-1.375	0.4	0.975
+SC_RS09835	SCO1564		sigma-70 family RNA polymerase sigma factor	Sigma factor	core	267	activation	1.0	3.219	early	74.921	3.559	1.106	-0.826	1.407	-0.581
+SC_RS10435	SCO1684		tetratricopeptide repeat protein	TetR	core	39	activation	2.0	0.665	early	41.042	1.729	2.6	-1.207	-0.035	1.242
+SC_RS11515	SCO1897		DeoR/GlpR family DNA-binding transcription regulator	DeoR	core	191	activation	2.0	0.885	early	51.649	1.307	1.477	-1.398	0.514	0.884
+SC_RS13145	SCO2223		TetR/AcrR family transcriptional regulator	TetR	core	288	repression	4.0	1.319	early	90.328	-2.604	-1.974	1.408	-0.821	-0.586
+SC_RS13965	SCO2386	fasR	fatty acid biosynthesis transcriptional regulator FasR	Other regulatory	core	24	repression	4.0	0.67	early	658.421	-1.346	-2.008	1.392	-0.478	-0.913
+SC_RS15270	SCO2639		RNA polymerase sigma factor	Sigma factor	core	113	repression	4.0	1.337	early	57.656	-1.718	-1.285	1.401	-0.867	-0.534
+SC_RS15485	SCO2681	fxsT	FxSxx-COOH system tetratricopeptide repeat protein	TetR	core	120	repression	4.0	2.014	early	170.069	-1.634	-0.811	1.33	-1.081	-0.25
+SC_RS16855	SCO2950		HU family DNA-binding protein	Other regulatory	core	265	repression	4.0	0.57	gradual	10732.932	-1.654	-2.902	1.388	-0.457	-0.93
+SC_RS17670	SCO3109	mfd	transcription-repair coupling factor	Other regulatory	core	131	repression	4.0	0.302	late	715.464	-0.326	-1.079	1.124	0.182	-1.305
+SC_RS17795	SCO3134		response regulator transcription factor	Response regulator	core	69	activation	1.0	1.077	early	877.377	3.405	3.16	-1.396	0.894	0.502
+SC_RS20775	SCO3729		helix-turn-helix domain-containing protein	HTH (other)	core	37	repression	4.0	0.67	early	138.572	-0.697	-1.04	1.376	-0.404	-0.972
+SC_RS21680	SCO3907		single-stranded DNA-binding protein	Other regulatory	core	206	repression	4.0	0.76	early	12967.67	-2.529	-3.327	1.411	-0.617	-0.793
+SC_RS22135	SCO4005		SigE family RNA polymerase sigma factor	Sigma factor	core	52	activation	2.0	0.082	late	473.005	0.265	3.232	-0.734	-0.68	1.414
+SC_RS22780	SCO4122		MarR family winged helix-turn-helix transcriptional regulator	MarR	core	207	repression	4.0	1.074	early	473.241	-3.8	-3.539	1.414	-0.724	-0.69
+SC_RS22980	SCO4158		LacI family DNA-binding transcriptional regulator	LacI	core	172	repression	4.0	0.019	late	1108.008	-0.026	-1.387	0.74	0.674	-1.414
+SC_RS23710	SCO4305		TetR/AcrR family transcriptional regulator	TetR	core	226	repression	4.0	0.641	early	122.408	-0.764	-1.192	1.371	-0.385	-0.986
+SC_RS24380	SCO4443		MerR family transcriptional regulator	MerR	core	49	activation	1.0	3.538	early	717.317	2.123	0.6	-0.879	1.399	-0.52
+SC_RS24635	SCO4495		UdgX family uracil-DNA binding protein	Other regulatory	core	82	repression	4.0	1.951	early	66.49	-2.524	-1.294	1.37	-0.988	-0.382
+SC_RS25370	SCO4639		TetR/AcrR family transcriptional regulator	TetR	core	252	repression	4.0	0.534	gradual	156.747	-1.206	-2.258	1.363	-0.354	-1.009
+SC_RS25990	SCO4766		LysR family transcriptional regulator	LysR	core	207	repression	4.0	0.47	gradual	179.012	-0.561	-1.193	1.284	-0.128	-1.156
+SC_RS26855	SCO4938	sigJ	RNA polymerase sigma factor SigJ	Sigma factor	core	40	activation	3.0	-0.762	late	35.549	-1.018	1.336	-0.393	-0.98	1.373
+SC_RS26965	SCO4960		sigma factor-like helix-turn-helix DNA-binding protein	Sigma factor	core	94	repression	4.0	0.84	early	154.977	-1.272	-1.515	1.409	-0.604	-0.805
+SC_RS27105	SCO4989		IclR family transcriptional regulator	IclR	core	197	repression	4.0	0.718	early	277.783	-1.717	-2.392	1.403	-0.549	-0.854
+SC_RS27300	SCO5027		winged helix DNA-binding domain-containing protein	HTH (other)	core	104	repression	4.0	2.047	early	112.751	-2.254	-1.101	1.348	-1.044	-0.303
+SC_RS28630	SCO5289		sensor histidine kinase	Sensor kinase	core	90	repression	4.0	0.006	late	2509.053	-0.014	-2.415	0.72	0.694	-1.414
+SC_RS29350	SCO5433	tcrA	AfsR-like transcriptional regulator TcrA	Other regulatory	core	166	activation	2.0	0.697	early	110.759	1.04	1.492	-1.296	0.159	1.137
+SC_RS29355	SCO5434		response regulator	Response regulator	core	76	repression	4.0	1.721	early	67.799	-1.922	-1.116	1.368	-0.995	-0.373
+SC_RS30140	SCO5584		P-II family nitrogen regulator	Other regulatory	core	126	repression	4.0	0.404	gradual	61.074	-0.58	-1.435	1.254	-0.061	-1.193
+SC_RS31385	SCO5828		response regulator	Response regulator	core	48	activation	1.0	2.933	early	219.227	3.201	1.091	-0.861	1.402	-0.541
+SC_RS32025	SCO5956		TetR/AcrR family transcriptional regulator	TetR	core	5	repression	4.0	2.02	early	64.323	-2.092	-1.036	1.349	-1.042	-0.307
+SC_RS33075	SCO6165		TraR/DksA family transcriptional regulator	Other regulatory	core	144	activation	2.0	0.21	late	7.929	0.923	4.398	-0.806	-0.603	1.409
+SC_RS33745	SCO6299		TetR/AcrR family transcriptional regulator	TetR	core	35	repression	4.0	1.763	early	75.179	-1.411	-0.8	1.347	-1.047	-0.3
+SC_RS33895	SCO6334		LuxR C-terminal-related transcriptional regulator	Other regulatory	core	30	activation	2.0	0.411	gradual	99.459	1.079	2.625	-0.955	-0.426	1.381
+SC_RS34060	SCO6369		HAMP domain-containing sensor histidine kinase	Sensor kinase	core	264	activation	2.0	0.554	gradual	38.948	1.425	2.574	-1.104	-0.213	1.317
+SC_RS35195	SCO6599		TetR/AcrR family transcriptional regulator	TetR	arm	236	repression	4.0	0.988	early	108.071	-1.532	-1.55	1.414	-0.7	-0.714
+SC_RS35525	SCO6668		sensor histidine kinase	Sensor kinase	arm	99	activation	2.0	0.776	early	67.883	1.042	1.342	-1.357	0.333	1.024
+SC_RS35610	SCO6685	ramR	two-component system response regulator RamR	Response regulator	arm	286	activation	2.0	0.836	early	55.327	6.604	7.902	-1.159	-0.122	1.281
+SC_RS36220			helix-turn-helix transcriptional regulator	HTH (other)	arm	183	activation	2.0	0.792	early	18.873	2.169	2.738	-1.331	0.251	1.08
+SC_RS36820	SCO6924		helix-turn-helix domain-containing protein	HTH (other)	arm	15	activation	3.0	-2.169	late	24.738	-2.543	1.172	-0.197	-1.114	1.311
+SC_RS37035			WhiB family transcriptional regulator	WhiB	arm	34	activation	2.0	0.707	early	11.799	1.235	1.747	-1.312	0.198	1.114
+SC_RS37675	SCO7089		sensor histidine kinase	Sensor kinase	arm	34	activation	2.0	0.194	late	28.763	0.569	2.938	-0.799	-0.611	1.41
+SC_RS38475	SCO7252		DNA-binding protein NsdB	Other regulatory	arm	46	activation	1.0	1.2	early	9088.506	9.317	7.764	-1.077	1.332	-0.255
+SC_RS38610	SCO7279		helix-turn-helix domain-containing protein	HTH (other)	arm	25	activation	1.0	1.052	early	213.166	1.512	1.437	-1.412	0.781	0.631
+SC_RS38785	SCO7314		SigB/SigF/SigG family RNA polymerase sigma factor	Sigma factor	arm	67	activation	1.0	1.291	early	72.935	1.929	1.494	-1.326	1.088	0.239
+SC_RS39260	SCO7411		LacI family DNA-binding transcriptional regulator	LacI	arm	157	activation	2.0	0.599	gradual	49.329	0.675	1.127	-1.238	0.027	1.211
+SC_RS39850	SCO7530		MerR family transcriptional regulator	MerR	arm	225	activation	2.0	0.476	gradual	50.891	0.805	1.691	-1.088	-0.239	1.327
+SC_RS40040	SCO7568		ROK family protein	ROK	arm	51	activation	3.0		non-responder	75.521	-1.255	0.155	0.503	-1.396	0.893
+SC_RS40435	SCO7648		response regulator transcription factor	Response regulator	arm	32	activation	1.0	1.191	early	120.995	2.439	2.048	-1.359	1.018	0.341
+SC_RS40740	SCO7711		sensor histidine kinase	Sensor kinase	arm	35	activation	1.0	1.005	early	174.722	3.156	3.14	-1.414	0.715	0.699

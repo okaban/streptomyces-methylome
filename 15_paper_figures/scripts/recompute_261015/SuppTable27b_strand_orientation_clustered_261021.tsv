@@ -1,34 +1,34 @@
 timepoint	estimator	OR	CI_low	CI_high	p	n_inst_sense	n_mod_sense	n_inst_anti	n_mod_anti	n_genes_sense	n_genes_anti	n_genes_total	occ_sense_pct	occ_anti_pct	optimiser_converged	note
-T1	A_unadjusted_instance_level	4.7983	3.3995	6.7728	4.728268352395217e-19	708	247	448	45	629	432	1019	34.887	10.0446	True	既報 SuppTable27 の再現（素の OR）
-T1	B_unadjusted_cluster_robust_gene	4.7983	3.384	6.8038	1.3453864347215074e-18	708	247	448	45	629	432	1019	34.887	10.0446	True	遺伝子クラスタ頑健 SE
-T1	C_adjusted_instance_level	2.8943	1.5115	5.5423	0.0013448510049766213	708	247	448	45	629	432	1019	34.887	10.0446	True	側方9塩基+コドン位相+GC501、クラスタリング未考慮
-T1	D_adjusted_cluster_robust_gene	2.8943	1.4985	5.5905	0.0015555686761028543	708	247	448	45	629	432	1019	34.887	10.0446	True	主解析: 遺伝子クラスタ頑健 SE; optimiser=newton; 収束 optimiser 間 OR 一致 2.8920-2.8951 (相対差 0.11%)
-T1	E_adjusted_GEE_exchangeable_gene	2.8929	1.5072	5.5525	0.0014062974896688262	708	247	448	45	629	432	1019	34.887	10.0446		作業相関 exchangeable, alpha=0.4364
-T1	F_adjusted_mixed_logit_gene_RI	3.0067	1.5175	5.9572	0.001602365435	708	247	448	45	629	432	1019	34.887	10.0446		gene 切片分散=0.3066; singular=FALSE
-T1	G_adjusted_gene_bootstrap_2000	2.9444	1.4435	6.5901	0.004	708	247	448	45	629	432	1019	34.887	10.0446		遺伝子を復元抽出 B=2000, 成功 2000, 失敗 0; パーセンタイル CI
-T1	H_gene_paired_sign_test				1.9073486328125e-06	708	247	448	45	629	432	1019	34.887	10.0446		両方向を持つ遺伝子 n=42、非同点 20 (コード鎖>鋳型鎖 20 / 逆 0)、中央値差=0.0000
-T1	I_gene_paired_wilcoxon				2.9259268029784584e-05	708	247	448	45	629	432	1019	34.887	10.0446		対応あり Wilcoxon 符号順位、n=42 遺伝子、平均差=0.4286
-T1	J_gene_level_mannwhitney				1.6327063749687478e-21	708	247	448	45	629	432	1019	34.887	10.0446		遺伝子を 1 単位にした修飾率の非対応比較 (コード鎖 629 遺伝子 平均 0.3423 / 鋳型鎖 432 遺伝子 平均 0.1019)
-T1	K_gene_unit_2x2_any_modified	5.1885	3.6516	7.3722	2.969643014069346e-24	708	247	448	45	629	432	1019	34.887	10.0446		遺伝子単位 2x2: コード鎖 233/629 遺伝子で 1 つ以上修飾 vs 鋳型鎖 44/432（Fisher）
-T2	A_unadjusted_instance_level	4.535	3.2712	6.287	1.1780388034003912e-19	710	265	448	52	631	432	1021	37.3239	11.6071	True	既報 SuppTable27 の再現（素の OR）
-T2	B_unadjusted_cluster_robust_gene	4.535	3.2588	6.3111	3.068931147292399e-19	710	265	448	52	631	432	1021	37.3239	11.6071	True	遺伝子クラスタ頑健 SE
-T2	C_adjusted_instance_level	2.9597	1.5751	5.5614	0.000747327021964384	710	265	448	52	631	432	1021	37.3239	11.6071	True	側方9塩基+コドン位相+GC501、クラスタリング未考慮
-T2	D_adjusted_cluster_robust_gene	2.9597	1.5731	5.5685	0.0007660033076971318	710	265	448	52	631	432	1021	37.3239	11.6071	True	主解析: 遺伝子クラスタ頑健 SE; optimiser=newton; 収束 optimiser 間 OR 一致 2.9569-2.9597 (相対差 0.09%)
-T2	E_adjusted_GEE_exchangeable_gene	2.9243	1.5837	5.3998	0.0006051074620371556	710	265	448	52	631	432	1021	37.3239	11.6071		作業相関 exchangeable, alpha=0.2696
-T2	F_adjusted_mixed_logit_gene_RI	3.167	1.5954	6.2869	0.0009831214569	710	265	448	52	631	432	1021	37.3239	11.6071		gene 切片分散=0.5120; singular=FALSE
-T2	G_adjusted_gene_bootstrap_2000	3.0329	1.53	6.0487	0.003	710	265	448	52	631	432	1021	37.3239	11.6071		遺伝子を復元抽出 B=2000, 成功 2000, 失敗 0; パーセンタイル CI
-T2	H_gene_paired_sign_test				0.00014495849609375	710	265	448	52	631	432	1021	37.3239	11.6071		両方向を持つ遺伝子 n=42、非同点 18 (コード鎖>鋳型鎖 17 / 逆 1)、中央値差=0.0000
-T2	I_gene_paired_wilcoxon				0.0004904538524843528	710	265	448	52	631	432	1021	37.3239	11.6071		対応あり Wilcoxon 符号順位、n=42 遺伝子、平均差=0.3452
-T2	J_gene_level_mannwhitney				1.6451479151889466e-21	710	265	448	52	631	432	1021	37.3239	11.6071		遺伝子を 1 単位にした修飾率の非対応比較 (コード鎖 631 遺伝子 平均 0.3676 / 鋳型鎖 432 遺伝子 平均 0.1181)
-T2	K_gene_unit_2x2_any_modified	4.8374	3.4671	6.7492	3.090725301995134e-24	710	265	448	52	631	432	1021	37.3239	11.6071		遺伝子単位 2x2: コード鎖 248/631 遺伝子で 1 つ以上修飾 vs 鋳型鎖 51/432（Fisher）
-T3	A_unadjusted_instance_level	4.4902	3.2146	6.2718	1.2668810124820683e-18	709	252	448	49	630	432	1020	35.543	10.9375	True	既報 SuppTable27 の再現（素の OR）
-T3	B_unadjusted_cluster_robust_gene	4.4902	3.1987	6.3031	3.977295822617985e-18	709	252	448	49	630	432	1020	35.543	10.9375	True	遺伝子クラスタ頑健 SE
-T3	C_adjusted_instance_level	4.1838	2.2343	7.8343	7.756104270881068e-06	709	252	448	49	630	432	1020	35.543	10.9375	True	側方9塩基+コドン位相+GC501、クラスタリング未考慮
-T3	D_adjusted_cluster_robust_gene	4.1838	2.1881	7.9997	1.5068440135212217e-05	709	252	448	49	630	432	1020	35.543	10.9375	True	主解析: 遺伝子クラスタ頑健 SE; optimiser=bfgs; 収束 optimiser 間 OR 一致 4.1838-4.1938 (相対差 0.24%)
-T3	E_adjusted_GEE_exchangeable_gene	4.1318	2.196	7.7738	1.085821463595328e-05	709	252	448	49	630	432	1020	35.543	10.9375		作業相関 exchangeable, alpha=0.4348
-T3	F_adjusted_mixed_logit_gene_RI	5.0025	2.4192	10.3444	1.403071332e-05	709	252	448	49	630	432	1020	35.543	10.9375		gene 切片分散=0.9668; singular=FALSE
-T3	G_adjusted_gene_bootstrap_2000	4.441	2.128	8.6971	0.0004997501249375312	709	252	448	49	630	432	1020	35.543	10.9375		遺伝子を復元抽出 B=2000, 成功 2000, 失敗 0; パーセンタイル CI
-T3	H_gene_paired_sign_test				0.00014495849609375	709	252	448	49	630	432	1020	35.543	10.9375		両方向を持つ遺伝子 n=42、非同点 18 (コード鎖>鋳型鎖 17 / 逆 1)、中央値差=0.0000
-T3	I_gene_paired_wilcoxon				0.0004904538524843528	709	252	448	49	630	432	1020	35.543	10.9375		対応あり Wilcoxon 符号順位、n=42 遺伝子、平均差=0.3452
-T3	J_gene_level_mannwhitney				2.5318583434565257e-20	709	252	448	49	630	432	1020	35.543	10.9375		遺伝子を 1 単位にした修飾率の非対応比較 (コード鎖 630 遺伝子 平均 0.3496 / 鋳型鎖 432 遺伝子 平均 0.1111)
-T3	K_gene_unit_2x2_any_modified	4.7595	3.3851	6.6918	7.560834213468425e-23	709	252	448	49	630	432	1020	35.543	10.9375		遺伝子単位 2x2: コード鎖 235/630 遺伝子で 1 つ以上修飾 vs 鋳型鎖 48/432（Fisher）
+T1	A_unadjusted_instance_level	4.7983	3.3995	6.7728	4.728268352395217e-19	708	247	448	45	629	432	1019	34.887	10.0446	True	reproduction of the previously reported Supplementary Table 27 (crude OR)
+T1	B_unadjusted_cluster_robust_gene	4.7983	3.384	6.8038	1.3453864347215074e-18	708	247	448	45	629	432	1019	34.887	10.0446	True	gene-cluster-robust SE
+T1	C_adjusted_instance_level	2.8943	1.5115	5.5423	0.0013448510049766213	708	247	448	45	629	432	1019	34.887	10.0446	True	9 bp flanking context + codon phase + GC over 501 bp; clustering not accounted for
+T1	D_adjusted_cluster_robust_gene	2.8943	1.4985	5.5905	0.0015555686761028543	708	247	448	45	629	432	1019	34.887	10.0446	True	main analysis: gene-cluster-robust SE; optimiser=newton; OR agrees across converged optimisers, 2.8920-2.8951 (relative difference 0.11%)
+T1	E_adjusted_GEE_exchangeable_gene	2.8929	1.5072	5.5525	0.0014062974896688262	708	247	448	45	629	432	1019	34.887	10.0446		working correlation exchangeable, alpha=0.4364
+T1	F_adjusted_mixed_logit_gene_RI	3.0067	1.5175	5.9572	0.001602365435	708	247	448	45	629	432	1019	34.887	10.0446		gene intercept variance=0.3066; singular=FALSE
+T1	G_adjusted_gene_bootstrap_2000	2.9444	1.4435	6.5901	0.004	708	247	448	45	629	432	1019	34.887	10.0446		genes resampled with replacement, B=2000, successes 2000, failures 0; percentile CI
+T1	H_gene_paired_sign_test				1.9073486328125e-06	708	247	448	45	629	432	1019	34.887	10.0446		genes carrying both orientations n=42, non-ties 20 (coding > template 20 / reverse 0), median difference=0.0000
+T1	I_gene_paired_wilcoxon				2.9259268029784584e-05	708	247	448	45	629	432	1019	34.887	10.0446		paired Wilcoxon signed-rank, n=42 genes, mean difference=0.4286
+T1	J_gene_level_mannwhitney				1.6327063749687478e-21	708	247	448	45	629	432	1019	34.887	10.0446		unpaired comparison of modification rate with the gene as the unit (coding strand 629 genes, mean 0.3423 / template strand 432 genes, mean 0.1019)
+T1	K_gene_unit_2x2_any_modified	5.1885	3.6516	7.3722	2.969643014069346e-24	708	247	448	45	629	432	1019	34.887	10.0446		gene-unit 2x2: coding strand 233/629 genes with at least one modification vs template strand 44/432 (Fisher)
+T2	A_unadjusted_instance_level	4.535	3.2712	6.287	1.1780388034003912e-19	710	265	448	52	631	432	1021	37.3239	11.6071	True	reproduction of the previously reported Supplementary Table 27 (crude OR)
+T2	B_unadjusted_cluster_robust_gene	4.535	3.2588	6.3111	3.068931147292399e-19	710	265	448	52	631	432	1021	37.3239	11.6071	True	gene-cluster-robust SE
+T2	C_adjusted_instance_level	2.9597	1.5751	5.5614	0.000747327021964384	710	265	448	52	631	432	1021	37.3239	11.6071	True	9 bp flanking context + codon phase + GC over 501 bp; clustering not accounted for
+T2	D_adjusted_cluster_robust_gene	2.9597	1.5731	5.5685	0.0007660033076971318	710	265	448	52	631	432	1021	37.3239	11.6071	True	main analysis: gene-cluster-robust SE; optimiser=newton; OR agrees across converged optimisers, 2.9569-2.9597 (relative difference 0.09%)
+T2	E_adjusted_GEE_exchangeable_gene	2.9243	1.5837	5.3998	0.0006051074620371556	710	265	448	52	631	432	1021	37.3239	11.6071		working correlation exchangeable, alpha=0.2696
+T2	F_adjusted_mixed_logit_gene_RI	3.167	1.5954	6.2869	0.0009831214569	710	265	448	52	631	432	1021	37.3239	11.6071		gene intercept variance=0.5120; singular=FALSE
+T2	G_adjusted_gene_bootstrap_2000	3.0329	1.53	6.0487	0.003	710	265	448	52	631	432	1021	37.3239	11.6071		genes resampled with replacement, B=2000, successes 2000, failures 0; percentile CI
+T2	H_gene_paired_sign_test				0.00014495849609375	710	265	448	52	631	432	1021	37.3239	11.6071		genes carrying both orientations n=42, non-ties 18 (coding > template 17 / reverse 1), median difference=0.0000
+T2	I_gene_paired_wilcoxon				0.0004904538524843528	710	265	448	52	631	432	1021	37.3239	11.6071		paired Wilcoxon signed-rank, n=42 genes, mean difference=0.3452
+T2	J_gene_level_mannwhitney				1.6451479151889466e-21	710	265	448	52	631	432	1021	37.3239	11.6071		unpaired comparison of modification rate with the gene as the unit (coding strand 631 genes, mean 0.3676 / template strand 432 genes, mean 0.1181)
+T2	K_gene_unit_2x2_any_modified	4.8374	3.4671	6.7492	3.090725301995134e-24	710	265	448	52	631	432	1021	37.3239	11.6071		gene-unit 2x2: coding strand 248/631 genes with at least one modification vs template strand 51/432 (Fisher)
+T3	A_unadjusted_instance_level	4.4902	3.2146	6.2718	1.2668810124820683e-18	709	252	448	49	630	432	1020	35.543	10.9375	True	reproduction of the previously reported Supplementary Table 27 (crude OR)
+T3	B_unadjusted_cluster_robust_gene	4.4902	3.1987	6.3031	3.977295822617985e-18	709	252	448	49	630	432	1020	35.543	10.9375	True	gene-cluster-robust SE
+T3	C_adjusted_instance_level	4.1838	2.2343	7.8343	7.756104270881068e-06	709	252	448	49	630	432	1020	35.543	10.9375	True	9 bp flanking context + codon phase + GC over 501 bp; clustering not accounted for
+T3	D_adjusted_cluster_robust_gene	4.1838	2.1881	7.9997	1.5068440135212217e-05	709	252	448	49	630	432	1020	35.543	10.9375	True	main analysis: gene-cluster-robust SE; optimiser=bfgs; OR agrees across converged optimisers, 4.1838-4.1938 (relative difference 0.24%)
+T3	E_adjusted_GEE_exchangeable_gene	4.1318	2.196	7.7738	1.085821463595328e-05	709	252	448	49	630	432	1020	35.543	10.9375		working correlation exchangeable, alpha=0.4348
+T3	F_adjusted_mixed_logit_gene_RI	5.0025	2.4192	10.3444	1.403071332e-05	709	252	448	49	630	432	1020	35.543	10.9375		gene intercept variance=0.9668; singular=FALSE
+T3	G_adjusted_gene_bootstrap_2000	4.441	2.128	8.6971	0.0004997501249375312	709	252	448	49	630	432	1020	35.543	10.9375		genes resampled with replacement, B=2000, successes 2000, failures 0; percentile CI
+T3	H_gene_paired_sign_test				0.00014495849609375	709	252	448	49	630	432	1020	35.543	10.9375		genes carrying both orientations n=42, non-ties 18 (coding > template 17 / reverse 1), median difference=0.0000
+T3	I_gene_paired_wilcoxon				0.0004904538524843528	709	252	448	49	630	432	1020	35.543	10.9375		paired Wilcoxon signed-rank, n=42 genes, mean difference=0.3452
+T3	J_gene_level_mannwhitney				2.5318583434565257e-20	709	252	448	49	630	432	1020	35.543	10.9375		unpaired comparison of modification rate with the gene as the unit (coding strand 630 genes, mean 0.3496 / template strand 432 genes, mean 0.1111)
+T3	K_gene_unit_2x2_any_modified	4.7595	3.3851	6.6918	7.560834213468425e-23	709	252	448	49	630	432	1020	35.543	10.9375		gene-unit 2x2: coding strand 235/630 genes with at least one modification vs template strand 48/432 (Fisher)

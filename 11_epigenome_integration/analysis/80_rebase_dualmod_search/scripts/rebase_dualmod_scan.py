@@ -48,16 +48,30 @@ def mods_strands(ms_lines):
     REBASE notation: m6A, m5C, and N4-methyl-C written as 'Nm4C' — so match the
     mod label as a substring inside the parens, not anchored to '('."""
     mods, strands = set(), set()
+    # 2026-10-26: 修飾ごとに位置が解決しているかを別に持つ。従来は strands 集合しか
+    # 返しておらず、片方の位置が '?' の記録（M2.Pae95I: 'MS 2(Nm4C),?(m6A)'）で
+    # strands == {'+'} となり same-strand と誤分類していた。'?' は未決定であって
+    # プラス鎖ではない。この 1 件は REBASE 二重 51 件の 51 件目で、原稿の新規性主張
+    # （短い連続モチーフで両マークを持つ系は無い）の分岐点だった。
+    resolved = {}
     for ms in ms_lines:
         for pos, label in re.findall(r"(-?\??\d*)\(([^)]*)\)", ms):
+            hit = None
             for canon in ("m4C", "m5C", "m6A"):
                 if canon in label:
                     mods.add(canon)
+                    hit = canon
+            if hit is not None:
+                resolved.setdefault(hit, False)
             if pos.startswith("-"):
                 strands.add("-")
+                if hit is not None:
+                    resolved[hit] = True
             elif pos and pos != "?":
                 strands.add("+")
-    return mods, strands
+                if hit is not None:
+                    resolved[hit] = True
+    return mods, strands, resolved
 
 motif_mods = defaultdict(set)            # motif -> set of mod types (across enzymes)
 motif_orgs = defaultdict(set)
@@ -66,15 +80,20 @@ for r in records:
     motif = motif_of(r["rs"])
     if not motif:
         continue
-    mods, strands = mods_strands(r["ms"])
+    mods, strands, resolved = mods_strands(r["ms"])
     if not mods:
         continue
     motif_mods[motif] |= mods
     motif_orgs[motif].add(r["os"])
     if "m4C" in mods and "m6A" in mods:
-        single_dual.append((r["id"], r["os"], motif, sorted(mods),
-                            "same-strand" if strands == {"+"} else
-                            ("opposite-strand" if "-" in strands else "ambiguous")))
+        both_resolved = resolved.get("m4C", False) and resolved.get("m6A", False)
+        if not both_resolved:
+            cls = "undetermined"
+        elif "-" in strands:
+            cls = "opposite-strand"
+        else:
+            cls = "same-strand"
+        single_dual.append((r["id"], r["os"], motif, sorted(mods), cls))
 
 dual_motifs = {m: mods for m, mods in motif_mods.items()
                if "m4C" in mods and "m6A" in mods}

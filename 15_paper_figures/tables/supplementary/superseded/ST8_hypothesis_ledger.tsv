@@ -1,0 +1,37 @@
+loop	hypothesis_id	verdict	description	key_statistic
+1	H1	Partially supported	4mC promoter-biased, 6mA gene-body-dispersed	Distribution differs (p=1.56e-14) but 6mA more promoter-proximal
+1	H2	Not tested	MTase expression stability causes 4mC/6mA difference	Deferred to H5
+1	H3	Premise rejected	absA de-repression compensates for redZ	36/37 locus_tag mapping errors; true redZ upregulated (LFC=+0.91)
+2	H4	Rejected	Literature TFs show methylation-expression coordination	3/37 methylated, 0/37 coordinated
+2	H5	Partially supported	MTase stability correlates with methylation-expression	Site-level confirmed, gene-level weak (|rho|<0.16)
+3	H6	Supported	Genome-wide regulator screen finds coordinated genes	62/1055 coordinated (all novel)
+3	H7	Rejected	GCCGGC 4mC decrease is passive dilution	Jaccard=0.000; active remodeling
+4	H8	Partially supported	Coordinated regulators arm-enriched, secondary metabolism	T3 discordant_gain_up 87% arm (OR=8.05)
+4	H9	Rejected	"GCCGGC ""4mC"" is misclassified 5mC"	5mC 0.01%; 4mC 82.7%; 91.4% in GCCGGC
+5	H10	Partially supported	REBASE identifies GCCGGC N4-C MTase	2/87 NaeI produce m4C; SC_RS24685 top by annotation
+6	H12	Rejected	BLAST identifies GCCGGC MTase as SC_RS24685	SC_RS19770 top hit (E=0.007)
+6	H13	Partially supported	AAGCCCG non-random, secondary metabolism-associated	Non-random confirmed; regulatory depleted (fold=0.43)
+7	H14	Partially supported	Defense island produces T3 arm GCCGGC methylation	Geographic shift (chi2=597); 1 T3 site in island
+7	H15	Supported	Cross-motif regulatory gene methylation avoidance	All motifs: fold=0.43-0.62, p<0.02
+8	H16	Partially supported	Expression dynamics reverse-ID GCCGGC MTase	SC_RS13615 top composite; no candidate satisfies all criteria
+8	H17	Rejected	GCCGGC and AAGCCCG show transcriptional division of labor	GCCGGC suppression = geographic confound (Simpson's paradox)
+9	H18	Partially supported	GCCGGC dose-response on expression	Threshold switch (0 vs >=1), not graded; geographic confound
+9	H19	Rejected	GCCGGC loss causes temporal de-repression	core-only p=0.87; Lost genes DOWN (median LFC=-0.253)
+10	H20	Supported	H15 regulatory avoidance survives geographic stratification	CMH-adjusted p<0.007, core+arm both significant
+10	H21	Rejected	AAGCCCG loss causes temporal de-repression	p=0.91, r=0.003; clean null
+11	H22	Partially supported	R-M motif sequences depleted from regulatory gene DNA	Gene body fold=0.74-0.76; promoter NOT depleted
+11	H23	Rejected	Methylation avoidance extends to all essential categories	Only regulatory genes; ribosomal, DNA repair NS
+12	H24	Partially supported	BGC methylation enrichment is geographic confound	core-only fold=1.07 (NS)
+12	H25	Supported	TSS methylation spatial gradient at regulatory genes	2,200 bp zone, +300 bp deepest (ratio=0.541)
+13	H26	Rejected	Individual TF binding sites show methylation depletion	Flat profiles; GCCGGC enriched at TFBS (fold=1.16)
+13	H27	Supported	62 coordinated regulators have absent protection zones	8.4x TSS enrichment, p=5.3e-28
+14	H28	Supported	Exposed regulators: low T1, 100% dynamic, high GC	constitutive=0% (OR=inf, p=5.3e-13)
+14	H29	Rejected	baseMean threshold separates shielded/exposed	baseMean AUC=0.547; distance AUC=0.917
+15	H30	Partially supported	TSS sequence features determine protection zone	AAGCCCG 5.0x enriched; combined CV AUC=0.712
+15	H31	Partially supported	Exposed TFs regulate downstream cascade	0/62 have FIMO motifs; coordination is intrinsic
+16	H32	Partially supported	Exposed TFs form self-regulatory module	Not physical module; within-type rho=0.500; 2 blocs
+16	H33	Rejected	Exposed TF neighborhoods show correlated expression	Permutation p=0.857; no distance decay
+16	H35-TF	Supported	TF family predicts bloc membership	TetR OR=0.16 (p=0.028)
+17	H34	Partially supported	Temporal phase separation between blocs	No separation (p=0.459); 63% early; simultaneous
+17	H35-causal	Rejected	AAGCCCG methylation mediates exposed TF regulation	2/62 have methylated AAGCCCG; sequence != methylation
+18	H36	Partially supported	Exposed TF evolutionary conservation	Equally conserved (composite p=0.276, AUC=0.459)

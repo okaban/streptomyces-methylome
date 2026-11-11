@@ -1,0 +1,7 @@
+stage	criterion	n_annotation_based	n_annotation_independent
+Entry	Annotated MTases	129	129
+S1	Translation present	128	128
+S2	Motif IV present	21	22
+S3	Motif IV in catalytic domain	12	13
+S4	DNA amino-MTase family	5	5
+S5	Length ≥ 348 aa	3	3

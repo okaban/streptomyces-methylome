@@ -1,0 +1,93 @@
+{
+ "panel_a": {
+  "True": {
+   "n": 310,
+   "w": 18,
+   "pct": 5.806451612903226
+  },
+  "False": {
+   "n": 2720,
+   "w": 127,
+   "pct": 4.669117647058823
+  }
+ },
+ "panel_b": {
+  "T1": {
+   "prom_pct": 79.55,
+   "rest_pct": 79.96,
+   "n_prom": 19,
+   "n_rest": 261
+  },
+  "T2": {
+   "prom_pct": 75.94,
+   "rest_pct": 79.88,
+   "n_prom": 19,
+   "n_rest": 261
+  },
+  "T3": {
+   "prom_pct": 76.59,
+   "rest_pct": 77.23,
+   "n_prom": 19,
+   "n_rest": 261
+  }
+ },
+ "panel_c": {
+  "n": 66,
+  "rho": -0.21281351185434746,
+  "p": 0.08623816741112779,
+  "ymin": 67.45,
+  "ymax": 90.69,
+  "cls_counts": {
+   "expressed": 39,
+   "low": 21,
+   "silent": 6
+  }
+ },
+ "panel_d": [
+  {
+   "mark": "TGGCCGGC 4mC",
+   "tp": "T1",
+   "ratio": 1.0036667294531298
+  },
+  {
+   "mark": "TGGCCGGC 4mC",
+   "tp": "T2",
+   "ratio": 1.0150989593960418
+  },
+  {
+   "mark": "TGGCCGGC 4mC",
+   "tp": "T3",
+   "ratio": 0.9906050260543675
+  },
+  {
+   "mark": "AAGCCCG C5 4mC",
+   "tp": "T1",
+   "ratio": 1.0205141099213157
+  },
+  {
+   "mark": "AAGCCCG C5 4mC",
+   "tp": "T2",
+   "ratio": 1.0266206403259164
+  },
+  {
+   "mark": "AAGCCCG C5 4mC",
+   "tp": "T3",
+   "ratio": 1.0063320899031378
+  },
+  {
+   "mark": "AAGCCCG 6mA",
+   "tp": "T1",
+   "ratio": 0.9909548737658208
+  },
+  {
+   "mark": "AAGCCCG 6mA",
+   "tp": "T2",
+   "ratio": 0.9506403083426582
+  },
+  {
+   "mark": "AAGCCCG 6mA",
+   "tp": "T3",
+   "ratio": 0.9707175157322202
+  }
+ ]
+}

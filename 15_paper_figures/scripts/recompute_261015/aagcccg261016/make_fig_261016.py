@@ -13,7 +13,7 @@ C4   = pd.read_csv(f'{D}/fiveprime_contrast_261016.tsv', sep='\t')
 
 apply_figure_style()
 fig, axes = plt.subplots(1, 3, figsize=(NAR_WIDTH_IN, 2.35))
-TPS = ['T1', 'T2', 'T3']; TPC = [BLUE, '#7aa0ba', '#b9ccd9']
+TPS = ['T1', 'T2', 'T3']; TPC = ['#2b2b2b', '#767676', '#b4b4b4']  # FIG23: 時点は中立グレー段
 
 # (a) extension ladder (horizontal: the definitions need room)
 ax = axes[0]

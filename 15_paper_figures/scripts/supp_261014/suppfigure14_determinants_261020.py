@@ -1,3 +1,5 @@
+# 2026-11-04 D175: この生成器は補足図の統合で役目を終えた。出荷名に書き込むと別の図を潰すため、
+# 出力名を SUPERSEDED_ 前置きに変更した。現行の図を作るのは suppfigure_merged_*_261103.py。
 import numpy as np
 import pandas as pd
 import matplotlib as mpl
@@ -23,8 +25,10 @@ def apply_figure_style(sizes=(8, 7, 6)):
         "axes.labelsize": sizes[1],
         "xtick.labelsize": sizes[2],
         "ytick.labelsize": sizes[2],
-        "axes.spines.top": False,
-        "axes.spines.right": False,
+        # 2026-10-28 D121: 補足図も四辺の枠に揃える。この生成器は _suppstyle を
+        # 使わず自前の style を持っていたので、ここで個別に boxed にする。
+        "axes.spines.top": True,
+        "axes.spines.right": True,
         "axes.linewidth": 0.8,
         "xtick.major.width": 0.8,
         "ytick.major.width": 0.8,
@@ -248,8 +252,7 @@ ax.set_ylabel("Odds ratio, most significant base")
 
 ax.legend(frameon=False, fontsize=6.0, loc="lower left", handlelength=1.1,
           bbox_to_anchor=(0.0, 0.0), ncol=1, labelspacing=0.3, borderpad=0.2)
-ax.annotate("ring: survives all\nthree timepoints", (0.97, 0.97), xycoords="axes fraction",
-            ha="right", va="top", fontsize=6, color=META_GREY)
+# [D119 で削除: ring: survives all three timepoints]
 
 # (c) detection control
 ax = axes[2]
@@ -262,14 +265,23 @@ mv = [ctl[c[1]].mean() for c in met]
 uv = [ctl[c[2]].mean() for c in met]
 ax.bar(x - w / 2, mv, w, color=C4, label="TGGCCGGC methylated, 1,886")
 ax.bar(x + w / 2, uv, w, color=META_GREY, label="TGGCCGGC unmethylated, 205")
-for xi, (a_, b_) in enumerate(zip(mv, uv)):
-    ax.text(xi - w / 2, a_ + 0.020, f"{a_:.2f}", ha="center", fontsize=6.0, color=C4)
-    ax.text(xi + w / 2, b_ + 0.020, f"{b_:.2f}", ha="center", fontsize=6.0, color="#555555")
+# 2026-10-28: 棒の上に焼いていた値ラベル 6 個を削除した。
+# 衝突検査が `text overlaps text: [('0.72', '0.77')]` と
+# `text over data marks: ['0.33', '0.66', '0.72']` を出しており、
+# 著者の報告（「グラフ内にテキストとグラフが重なっている」）と一致した。
+# 著者の標準的な指示は「図内のテキストは最小限にし、説明的なものは凡例に回す」なので、
+# 値は凡例本文に移した。棒の高さは y 軸の目盛りから読める。
+# 値を図に戻す必要が出た場合は、ax.bar_label(..., padding=) を使い
+# _suppstyle.save(..., allow_over_data=(...)) で明示宣言すること（黙認は不可）。
+_PANEL_C_VALUES = {met[i][0].replace(chr(10), " "): (round(mv[i], 2), round(uv[i], 2))
+                   for i in range(3)}
+print("panel c の値（凡例に記載する）:", _PANEL_C_VALUES)
 ax.set_xticks(x)
 ax.set_xticklabels(["±8 bp GC", "G-run,\n±10 bp", "call-failure\nfraction"], fontsize=6.0)
 ax.set_ylim(0, 1.30)
 ax.set_yticks([0, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2])
-ax.set_ylabel("Fraction of TGGCCGGC sites")
+ax.set_ylabel("Fraction of TGGCCGGC positions")  # 2026-10-28 D131: 分母は 1,886+205 の
+# 片鎖座標なので、規約 (position=片鎖上の 1 座標 / site=モチーフ 1 個が占める領域) では positions。
 
 ax.legend(frameon=False, fontsize=6, loc="upper center", ncol=1, handlelength=1.2,
           bbox_to_anchor=(0.5, 1.02))
@@ -278,13 +290,32 @@ for a_, L in zip(axes, "abc"):
     panel_letter(a_, L)
 
 fig.subplots_adjust(left=0.105, right=0.985, top=0.90, bottom=0.30, wspace=0.56)
-# 出荷名は SuppFigure14.png。2026-10-24 まではスクリプトの実行ディレクトリに
+# 出荷名は SUPERSEDED_SuppFigure13_pre261104.png。2026-10-24 まではスクリプトの実行ディレクトリに
 # SuppFigure14_determinants_261020.png を書いており、出荷物との対応が
 # ファイル名からは追えなかった。他の補足図と同じく SUPPFIG_OUT（既定は
 # Writing/fig_images）に出荷名で書く。
 _OUT_DIR = pathlib.Path(os.environ.get(
     "SUPPFIG_OUT", "/Users/okaban/obsidian/Research/rna-seq/Writing/fig_images"))
 _OUT_DIR.mkdir(parents=True, exist_ok=True)
-_out = _OUT_DIR / "SuppFigure14.png"
+_out = _OUT_DIR / "SUPERSEDED_SuppFigure13_pre261104.png"
+
+# 2026-10-28: 図内テキストの衝突検査を通してから保存する。
+# それまでこのスクリプトは fig.savefig で直接保存しており、figure_conventions.tsv の
+# FIG20（図内テキストが他のテキスト・データマーク・キャンバス外と重なってはならない）と
+# FIG21（保存経路は assert_no_text_collisions を呼ばなければならない）を
+# 迂回していた。補足図の生成器 12 本のうち検査を迂回していたのはこの 1 本で、
+# 著者が「グラフ内にテキストとグラフが重なっている。この指摘毎回している」と
+# 報告した図がまさにこれだった。他の 11 本は _suppstyle.save() を経由しており
+# 同じ検査を通っている。
+def _assert_no_text_collisions(figure, name):
+    import importlib.util
+    src = pathlib.Path(__file__).resolve().parent.parent / "00_shared_utils.py"
+    spec = importlib.util.spec_from_file_location("_shared_utils_for_sf14", src)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod.assert_no_text_collisions(figure, name=name)
+
+
+_assert_no_text_collisions(fig, "SUPERSEDED_SuppFigure13_pre261104.png")
 fig.savefig(_out, dpi=300)
 print("saved:", _out)

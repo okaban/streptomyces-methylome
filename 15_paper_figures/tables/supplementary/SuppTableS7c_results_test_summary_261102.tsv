@@ -1,0 +1,11 @@
+Results §	Test	Values	Statistic	Reading
+R5	Dynamic-site fraction against a read-sampling null	observed 29.24% versus null 28.71% (95% interval 26.08–31.29%)	*p* = 0.355	indistinguishable from the null
+R5	Core share of 4mC sites against a motif-conditioned null (T1/T2/T3)	63.73/63.64/63.67% versus 63.51/63.45/63.45%	binomial *p* = 0.848, 0.886, 0.866	no deviation
+R3	Coding-sequence occupancy of TGGCCGGC 4mC sites against a motif-conditioned null (T1/T2/T3)	94.86/94.71/94.96% (1,789/1,886, 1,792/1,892 and 1,772/1,866 modified positions) versus 94.74/94.74/94.74% (1,981/2,091, 1,983/2,093 and 1,983/2,093 measurable positions of the same motif)	two-sided exact binomial *p* = 0.877, 0.918, 0.717	no deviation from the motif’s own distribution; the genome-wide coding fraction (88.99% of strand-oriented cytosines) is not the appropriate null
+R5	Promoter-proximal availability, AAGCCCG (GC-matched)	ratio 0.9471 (95% CI 0.8438–1.0596)	CI spans 1	no depletion
+R5	Promoter-proximal availability, GGC/GCC trinucleotide (GC-matched)	ratio 0.9692 (95% CI 0.9642–0.9743)	composition largely explained by matching
+R5	Promoter-proximal 4mC level, windows and read sets matched to the 6mA test	culture-unit ratio 0.9472; TSS-unit median ratio 0.836	*p* = 0.0099; *p* = 0.0078	comparable to the 6mA deficit, so no mark contrast is drawn
+R5	Promoter-proximal 6mA level, per-TSS unit (117 TSSs)	median ratio 0.844, median deficit 4.93 percentage points	Wilcoxon signed-rank *p* = 0.0033	same sign as the culture-unit test
+R5	AAGCCCG methylated instances inside coding sequence	90.63% against the recognition sequence's own null	binomial *p* = 0.017; 0.010 folded into transcription units; 0.060 after Bonferroni	provisional; does not survive correction over six tests
+Discussion	Retention under the withdrawn Exposed/Shielded classification, against a motif-conditioned null	retention statistics at the centre of the null	*p* = 0.82 (T2), *p* = 1.00 (T3)	this null is why the classification was withdrawn: the labels are collinear with motif presence and carry no information beyond it
+R4	Local-GC effect on 6mA occupancy, depth as a confounder	ρ = −0.059 between depth and local GC	depth is not a confounder

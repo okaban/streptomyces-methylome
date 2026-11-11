@@ -1,0 +1,7 @@
+mark	timepoint	locus	n_positions	n_called	Nmod	Nvalid	level_pooled_pct
+TGGCCGGC 4mC (position 5)	T1	promoter (-300..-1)	19	18.0	634	797	79.55
+TGGCCGGC 4mC (position 5)	T1	rest of cluster	261	239.0	7477	9351	79.96
+TGGCCGGC 4mC (position 5)	T2	promoter (-300..-1)	19	17.0	647	852	75.94
+TGGCCGGC 4mC (position 5)	T2	rest of cluster	261	240.0	8737	10937	79.88
+TGGCCGGC 4mC (position 5)	T3	promoter (-300..-1)	19	17.0	507	662	76.59
+TGGCCGGC 4mC (position 5)	T3	rest of cluster	261	238.0	5957	7713	77.23

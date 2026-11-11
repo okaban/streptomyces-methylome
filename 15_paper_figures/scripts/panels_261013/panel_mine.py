@@ -1,4 +1,4 @@
-# TILES: panel_1a.png panel_1d.png panel_3b.png panel_3e.png panel_4d.png
+# TILES: panel_1a.png panel_1d.png panel_3b.png panel_3e.png
 # [FIG18] 複数タイルを変数経由で書き出すため、生成物を明示宣言する。
 # -*- coding: utf-8 -*-
 """Figure panels drawn directly for the 2026-10-13 four-figure set.
@@ -19,6 +19,8 @@ hardcoded palette hexes). Output sizes are the composed-grid tile sizes at
 """
 import sys, os, importlib
 import numpy as np, pandas as pd, matplotlib as mpl, matplotlib.pyplot as plt
+import os as _os
+_FD = int(_os.environ.get('FIG_DPI', 300))  # 2026-11-09 解像度上書き
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.dirname(HERE))
@@ -28,8 +30,8 @@ U.apply_unified_style()
 TTL = U.FONT["panel_title"]
 MK = ["o", "s", "^"]
 
-SIZES = {"1a": (2053, 543), "1d": (2053, 496), "3b": (653, 614),
-         "3e": (653, 614), "4d": (1003, 590)}
+SIZES = {"1a": (2053, 543), "1d": (2053, 496), "3b": (900, 614),
+         "3e": (653, 614)}
 
 lib  = pd.read_csv(os.path.join(DATA, "va92d64c2_library_depth_and_sites_261013.csv"))
 pos  = pd.read_csv(os.path.join(DATA, "vf7bc4cb9_F3b_positions.csv"))
@@ -60,10 +62,10 @@ rat = [round(100 * b / a, 1) for a, b in zip(o4, o6)]   # 6mA / 4mC、どちら�
 
 def tile(px, fn, draw):
     w, h = px
-    fig = plt.figure(figsize=(w / 300, h / 300), dpi=300)
+    fig = plt.figure(figsize=(w / 300, h / 300), dpi=_FD)
     draw(fig)
     U.assert_no_text_collisions(fig, fn)
-    fig.savefig(fn, dpi=300, transparent=True, bbox_inches=None, pad_inches=0)
+    fig.savefig(fn, dpi=_FD, transparent=True, bbox_inches=None, pad_inches=0)
     plt.close(fig)
     return fn
 
@@ -127,13 +129,19 @@ def draw1a(fig):
         ax.text(x + 2.4, 63, "\u00d7 3", ha="left", va="center",
                 fontsize=U.FONT["annot"], color=U.COL_DARK)
         ax.plot([x, x], [60.5, 44.0], color=U.COL_GRAY, lw=0.6, zorder=1)
-        ax.plot([x], [41], "s", ms=4.8, mfc=U.COL_4mC, mec="white", mew=0.6, zorder=4)
+        # 2026-11-11 (D215): この 2 行はかつて COL_4mC / COL_6mA で塗られていたが、
+        # 配色規約 D208 は赤を 4mC、青を 6mA に予約しており、同じ赤青が Figure 2b・3b・3d・4・
+        # 補足図 4 では化学種を指し分ける。ここでは赤がナノポア（4mC と 6mA の両方を含む行）、
+        # 青が RNA-seq を指していたため、読者が最初に誤った対応表を覚える経路になっていた。
+        # 2 行はすぐ左にテキストで名前が書いてあるので、マーカー側に識別の負担は無い。
+        # 明度差も付けず同一スタイルにする（著者判断 2026-11-11）。
+        ax.plot([x], [41], "s", ms=4.8, mfc=U.COL_DARK, mec="white", mew=0.6, zorder=4)
         ax.plot([x, x], [38.5, 21.0], color=U.COL_GRAY, lw=0.6, zorder=1)
-        ax.plot([x], [18], "s", ms=4.8, mfc=U.COL_6mA, mec="white", mew=0.6, zorder=4)
+        ax.plot([x], [18], "s", ms=4.8, mfc=U.COL_DARK, mec="white", mew=0.6, zorder=4)
     ax.text(LBL, 33.0, "9 libraries  →  4mC / 6mA occupancy per site",
-            fontsize=U.FONT["annot"], color=U.COL_4mC, ha="left", va="center")
+            fontsize=U.FONT["annot"], color=U.COL_DARK, ha="left", va="center")
     ax.text(LBL, 10.0, "9 libraries  →  transcript abundance (TPM)",
-            fontsize=U.FONT["annot"], color=U.COL_6mA, ha="left", va="center")
+            fontsize=U.FONT["annot"], color=U.COL_DARK, ha="left", va="center")
 
 
 def draw1d(fig):
@@ -156,7 +164,7 @@ def draw1d(fig):
     ax.set_ylabel("Median true depth (×)")
     ax.set_xlabel("Sequencing library;  number above bar = TGGCCGGC 4mC sites contributed",
                   fontsize=U.FONT["annot"], color=U.COL_GRAY, labelpad=4)
-    U.style_axes(ax)
+    U.style_axes(ax, frame=True)
     ax.set_title("Library 3-2 is a depth outlier at 15× and yields only 36 sites",
                  fontsize=TTL, loc="left", pad=6)
     ax = fig.axes[0]
@@ -166,24 +174,67 @@ def draw1d(fig):
             t_.set_position((-0.45, 46.0)); t_.set_ha("left"); t_.set_va("bottom")
 
 
+def _occ_row(key):
+    """正準の占有率表から 1 行取り、T1-T3 の占有率と Wilson 95% CI を返す。"""
+    row = occ[occ.motif_mark.str.strip() == key]
+    assert len(row) == 1, (key, len(row))
+    row = row.iloc[0]
+    vals, los, his = [], [], []
+    for tp in ("T1", "T2", "T3"):
+        vals.append(float(row[f"{tp}_occupancy_pct"]))
+        lo, hi = str(row[f"{tp}_occ_CI95"]).replace("\u2013", "-").split("-")
+        los.append(float(lo)); his.append(float(hi))
+    return vals, los, his
+
+
 def draw3b(fig):
-    ax = fig.add_axes([0.215, 0.285, 0.735, 0.525])
-    labs = ["A1\n5′ A/C/T", "A1\n5′ G", "A2", "pos. 5"]
-    cols = [U.COL_6mA, mpl.colors.to_rgba(U.COL_6mA,0.5), mpl.colors.to_rgba(U.COL_6mA,0.5), U.COL_4mC]
-    for i,(_,r) in enumerate(pos.iterrows()):
-        vals = [r.T1, r.T2, r.T3]
-        for j,v in enumerate(vals):
-            ax.plot(i+(j-1)*0.17, v, MK[j], ms=4.0, mfc=cols[i], mec="white", mew=0.5, zorder=3)
-        ax.plot([i-0.30,i+0.30],[np.mean(vals)]*2,
-                color=cols[i] if isinstance(cols[i],str) else U.COL_6mA, lw=1.4, zorder=2, solid_capstyle="butt")
-    ax.text(0.0, 56, "6mA\n46.2", color=U.COL_6mA, fontsize=U.FONT["annot"], ha="center", va="bottom")
-    ax.text(3.0, 84, "4mC\n74.3", color=U.COL_4mC, fontsize=U.FONT["annot"], ha="center", va="bottom")
-    ax.set_xticks(range(4)); ax.set_xticklabels(labs, fontsize=U.FONT["tick"])
-    ax.set_xlim(-0.55, 3.55); ax.set_ylim(0, 104); ax.set_yticks([0,20,40,60,80,100])
+    """Figure 3, panel a — occupancy of every mark-position pair across T1-T3.
+
+    2026-11-07 共著者コメント C14「fig3a があるので（旧 3d は）削除でいいのでは？
+    内容が重複しているし、fig3a の方が情報量が多い」。旧 (d) の 3 系列のうち
+    AAGCCCG の 2 つは本パネルと同じ量であり、TGGCCGGC 4mC だけが本パネルに無かった。
+    そこで TGGCCGGC を本パネルに取り込み、(d) は図から外した（情報は失われない）。
+    併せて C12「fig3a と e は似たようなグラフなのでグラフの示し方を統一してほしい」に
+    沿って、マーカー（●■▲ = T1/T2/T3）＋ Wilson 95% CI という 1 つの文法に揃えた。
+    同じ文法をパネル (c)（5′ 塩基）でも使う。
+    """
+    ax = fig.add_axes([0.160, 0.300, 0.800, 0.510])
+    SER = [("TGGCCGGC 4mC (C5)", "TGGCCGGC\npos. 5", U.COL_4mC),
+           ("AAGCCCG 4mC (C4)", "AAGCCCG\npos. 5", U.COL_4mC),
+           ("AAGCCCG 6mA (A0) \u2014 all instances", "AAGCCCG\nA1", U.COL_6mA),
+           ("AAGCCCG 6mA (A1) \u2014 fallback position", "AAGCCCG\nA2",
+            mpl.colors.to_rgba(U.COL_6mA, 0.5))]
+    # レジストリと一致しなければ描かない（撤回値の再混入を生成時に止める）。
+    EXPECT = {"AAGCCCG 6mA (A0) \u2014 all instances": (24.21, 26.24, 25.11),
+              "TGGCCGGC 4mC (C5)": (90.11, 90.40, 89.15),
+              "AAGCCCG 4mC (C4)": (76.69, 73.24, 72.94),
+              "AAGCCCG 6mA (A1) \u2014 fallback position": (6.97, 7.50, 8.85)}
+    # 2026-11-09 著者コメント [7]: 記号が重なるので棒に替える。時点は灰 3 段で、
+    # モチーフが変わっても同じ棒を使う。マークの識別は下段のラベルの色が担う。
+    BW = 0.26
+    for i, (key, lab, col) in enumerate(SER):
+        vals, los, his = _occ_row(key)
+        assert tuple(round(v, 2) for v in vals) == EXPECT[key], (key, vals)
+        for j, v in enumerate(vals):
+            xj = i + (j - 1) * BW
+            ax.bar(xj, v, width=BW * 0.88, color=U.TIME_RAMP[j], linewidth=0,
+                   zorder=2)
+            ax.plot([xj, xj], [los[j], his[j]], color=U.COL_DARK, lw=0.7,
+                    solid_capstyle="butt", zorder=3)
+    for j, tp in enumerate(("T1", "T2", "T3")):
+        ax.bar(np.nan, np.nan, color=U.TIME_RAMP[j], label=tp)
+    ax.legend(loc="upper right", frameon=False, handlelength=0.9,
+              handleheight=0.9, labelspacing=0.25, borderaxespad=0.1,
+              fontsize=U.FONT["annot"], ncol=3, columnspacing=0.8)
+    ax.set_xticks(range(4))
+    ax.set_xticklabels([s[1] for s in SER], fontsize=U.FONT["annot"])
+    ax.set_xlim(-0.55, 3.55); ax.set_ylim(0, 108); ax.set_yticks([0, 20, 40, 60, 80, 100])
     ax.set_ylabel("Occupancy (%)")
-    ax.set_xlabel("Position in AAGCCCG\n● T1  ■ T2  ▲ T3;  bar = mean", fontsize=U.FONT["annot"],
-                  color=U.COL_GRAY, labelpad=4)
-    U.style_axes(ax)
+    # 2026-11-09 [7]: 図中の散文（記号の凡例と母数）は凡例文に移した。
+    U.style_axes(ax, frame=True)
+    # style_axes が目盛ラベル色を上書きするので、マークの色付けはその後に行う。
+    for lab, (_k, _l, col) in zip(ax.get_xticklabels(), SER):
+        lab.set_color(U.COL_4mC if col is U.COL_4mC else U.COL_6mA)
 
 
 def draw3e(fig):
@@ -205,7 +256,7 @@ def draw3e(fig):
     ax.set_yticks([20,40,60,80,100]); ax.set_ylim(10,104); ax.set_ylabel("Occupancy (%)")
     ax.set_xlabel("n = 2,093 and 1,334; Wilson 95% CI",
                   fontsize=U.FONT["annot"], color=U.COL_GRAY, labelpad=4)
-    U.style_axes(ax)
+    U.style_axes(ax, frame=True)
 
 
 def draw4d(fig):
@@ -221,7 +272,7 @@ def draw4d(fig):
     ax.text(1.0, 2.9, "transcript falls 6.4×", ha="center", fontsize=U.FONT["annot"], color=U.COL_GRAY)
     ax2.text(2.32, 25.2, "occupancy\nholds at\n24.2–26.2%", fontsize=U.FONT["annot"],
              color=U.COL_6mA, va="center")
-    U.style_axes(ax)
+    U.style_axes(ax, frame=True)
     for s in ("top", "left"): ax2.spines[s].set_visible(False)
     ax2.spines["right"].set_color(U.COL_6mA); ax2.spines["right"].set_linewidth(0.8)
     ax.set_xlabel("n = 3 timepoints; no correlation claimed", fontsize=U.FONT["annot"],
@@ -236,7 +287,13 @@ def draw4d(fig):
 
 
 if __name__ == "__main__":
-    out = {"1a": draw1a, "1d": draw1d, "3b": draw3b, "3e": draw3e, "4d": draw4d}
+    # 2026-11-04: "4d" を外した。旧 Figure 4 のパネルで、D166（2026-11-02）で
+    # Figure 4 が nf_r3_figure_261101.py 由来に差し替わって以降どこからも合成されない。
+    # 死んだタイルなのに新設の侵入検査で落ちて、Figure 1–3 の再生成まで止めていた。
+    # draw4d は履歴のため残す。
+    # 2026-11-07 (C14): 旧 Figure 3d (draw3e) は Figure 3a に統合したので合成しない。
+    # 関数は履歴のため残す。
+    out = {"1a": draw1a, "1d": draw1d, "3b": draw3b}
     for key, fn in out.items():
         p = tile(SIZES[key], os.path.join(HERE, f"panel_{key}.png"), fn)
         print("wrote", os.path.basename(p))

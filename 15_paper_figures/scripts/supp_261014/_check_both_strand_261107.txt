@@ -1,0 +1,4 @@
+eligible duplex hexamers (T1): 16043
+both strands >= 50%: 40
+TGGCCGGCCA: 40
+  TGGCCGGCCA	40

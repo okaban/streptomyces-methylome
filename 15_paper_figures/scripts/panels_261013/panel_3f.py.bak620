@@ -1,0 +1,122 @@
+"""Figure 3, panel f — sequence context of the AAGCCCG 6mA mark.
+
+LEFT  : 6mA occupancy by the base immediately 5' of AAGCCCG.
+RIGHT : TGGCCGGC 4mC vs 6mA (5-prime base not G) occupancy across local GC quintiles
+        (T1 solid, T2/T3 pale behind).
+
+Renders a composer tile at exactly 2125 x 566 px, transparent background.
+Colour means the CHEMISTRY (project rule F2): 4mC -> U.COL_4mC, 6mA -> U.COL_6mA.
+Run in the `epi-rna` environment.
+"""
+import sys, importlib
+from pathlib import Path
+
+# [FIG18] タイルを再生成できるよう、artifact マーカーをローカルの入力表に解決しておく。
+_DATA_DIR = Path(__file__).resolve().parents[2] / 'data_261013'
+import pandas as pd, numpy as np
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+from matplotlib.colors import to_rgba
+import os as _os
+_FD = int(_os.environ.get('FIG_DPI', 300))  # 2026-11-09 解像度上書き
+
+# ---- shared project style module (name starts with a digit) -----------------
+sys.path.insert(0, '/Users/okaban/bioinfo/rna-seq/15_paper_figures/scripts')
+U = importlib.import_module('00_shared_utils')
+U.apply_unified_style()
+mpl.rcParams['savefig.bbox'] = None      # the style helper sets 'tight', which resizes
+
+MINUS = '\u2212'
+PRIME = '\u2032'
+ARROW = '\u2192'
+TIMES = '\u00d7'
+
+OUT_PNG = str(Path(__file__).with_suffix('.png'))
+
+# ---- data -------------------------------------------------------------------
+FLANK_CSV = str(_DATA_DIR / "v2d0505cc_F3f1_flank.csv")   # flank_base, occ_6mA_pct
+GC_CSV = str(_DATA_DIR / "va4cc78a0_gc_quintile_both_marks_261008.csv")      # timepoint, mark, gc_quintile, n, gc_median, meth_pct
+
+flank = pd.read_csv(FLANK_CSV)
+gc = pd.read_csv(GC_CSV)
+
+# 2026-11-07 共著者コメント C11「left と right でグラフのアルファベットを分けるべき。
+# right のグラフがあまり見慣れないので初見の人でも理解しやすいように工夫してほしい」。
+# 1 枚のタイルに左右 2 図を載せる形をやめ、独立したタイル 2 枚にして、合成側で
+# それぞれに別のパネル文字を振る。panel_3f1.png = 5′ 塩基、panel_3f2.png = 局所 GC。
+# 併せて C12「fig3a と e の示し方を統一」に従い、5′ 塩基の図を棒から
+# マーカー＋軸名 'Occupancy (%)' に替えてパネル (a) と同じ文法にした。
+OUT_L = str(Path(__file__).with_name('panel_3f1.png'))
+OUT_R = str(Path(__file__).with_name('panel_3f2.png'))
+
+# ============================ TILE 1: 5' flank base =========================
+figL = plt.figure(figsize=(700 / 300, 566 / 300), dpi=_FD)
+axL = figL.add_axes([0.200, 0.290, 0.760, 0.610])
+order = ['C', 'T', 'A', 'G']
+vals = [float(flank.loc[flank.flank_base == b, 'occ_6mA_pct'].iloc[0]) for b in order]
+xs = np.arange(len(order))
+# 2026-11-09 著者コメント [8]: 点ではなく棒にする。
+axL.bar(xs, vals, width=0.58, color=U.COL_6mA, linewidth=0, zorder=3)
+axL.set_xticks(xs)
+axL.set_xticklabels(order)
+axL.set_xlim(-0.65, len(order) - 0.35)
+axL.set_ylim(0, 58)
+axL.set_yticks([0, 20, 40])
+axL.set_ylabel('Occupancy (%)')
+# 2026-11-09 [8][10]: 母数と時点の注記は凡例文へ。軸名だけ残す。
+axL.set_xlabel(f'Base 5{PRIME} of AAGCCCG')
+U.style_axes(axL, frame=True)
+# 5′ 非 G 対 5′G の比の分解（5.51/3.00/1.84 倍）は本文 R3 にあるので図には置かない
+# （2026-11-07, C11: 図内の記号と文字を減らす）。
+U.assert_no_text_collisions(figL, 'panel_3f1')
+figL.savefig(OUT_L, dpi=_FD, transparent=True, bbox_inches=None, pad_inches=0)
+
+# ============================ TILE 2: GC quintiles ==========================
+fig = plt.figure(figsize=(1300 / 300, 566 / 300), dpi=_FD)
+BOT, TOP = 0.290, 0.900
+axR = fig.add_axes([0.105, BOT, 0.530, TOP - BOT])
+# 第 1 要素は入力表 'mark' 列との照合キー（変更不可）、第 2 要素が図に出す表示名。
+# 2026-10-15: 6mA 側の表示名を 'HAAGCCCG 6mA' から層の名前に変えた。認識配列は AAGCCCG
+# 一本に統一した（DECIDED.6mA.DENOMINATOR.261015）ため、図に第 2 のモチーフ名を出さない。
+# 層別自体は撤去できない: 5' の G はそれ自体が GC なので、両クラスを混ぜると局所 GC と
+# 5' 塩基が交絡する。本文はこの勾配が 5' 塩基で調整しても残ることを述べている。
+# 2026-11-07 (C11): T2/T3 の淡い複製線を外し、1 マークにつき 1 本の線にした。
+# 3 時点とも同じ勾配であることは本文と Supplementary Table に記載がある。
+series = [('TGGCCGGC 4mC', 'TGGCCGGC 4mC', U.COL_4mC, f'93.4 {ARROW} 84.9%', ''),
+          ('HAAGCCCG 6mA', f'6mA, 5{PRIME} base not G', U.COL_6mA, f'25.1 {ARROW} 83.3%', '')]
+q = np.arange(1, 6)
+for key, label, col, rng, beta in series:
+    sub = gc[gc['mark'] == key]
+    assert len(sub), f"GC 五分位表に mark='{key}' が無い。入力表のラベル変更の取り残し"
+    y1 = sub[sub.timepoint == 'T1'].sort_values('gc_quintile')['meth_pct'].to_numpy()
+    axR.plot(q, y1, '-', color=col, lw=1.4, marker='o', ms=3.4,
+             mfc=col, mec='white', mew=0.6, zorder=4)
+
+axR.set_xticks(q)
+axR.set_xticklabels([f'Q{i}' for i in q])
+axR.set_xlim(0.80, 5.20)
+axR.set_ylim(0, 104)
+axR.set_yticks([0, 25, 50, 75, 100])
+axR.set_ylabel('Occupancy (%)')
+axR.set_xlabel(f'Local GC quintile, motif excluded  (low {ARROW} high)')
+axR.set_title('',
+              loc='left', pad=4)
+U.style_axes(axR, frame=True)
+
+# 2026-11-09 著者コメント [10]: 右余白の直接ラベルは数値を抱えた散文になっていた。
+# 系列名だけの凡例に替え、始点と終点の占有率は本文と凡例文に置く。
+for key, label, col, rng, beta in series:
+    axR.plot([], [], '-', color=col, lw=1.4, marker='o', ms=3.4,
+             mfc=col, mec='white', mew=0.6, label=label)
+axR.legend(loc='center left', bbox_to_anchor=(0.02, 0.62), frameon=False,
+           fontsize=6.5, handlelength=1.4, labelspacing=0.35, borderaxespad=0.0)
+
+# ---- checks + save ----------------------------------------------------------
+U.assert_no_text_collisions(fig, 'panel_3f2')
+fig.savefig(OUT_R, dpi=_FD, transparent=True, bbox_inches=None, pad_inches=0)
+
+from PIL import Image
+for p_, want in ((OUT_L, (700, 566)), (OUT_R, (1300, 566))):
+    sz = Image.open(p_).size
+    assert sz == want, (p_, sz)
+    print('size', Path(p_).name, sz)

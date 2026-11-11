@@ -1,0 +1,4 @@
+sequence_space	cytosines_in_space	cytosines_total_both_strands	pct	observed_pisciotta_n	observed_pisciotta_total	observed_pct	fold_enrichment	note
+GCCGGC or GGCCGG hexamer	145989	6250890	2.335	186	572	32.52	13.93	Pisciotta 2023 の 572 位置のうち六量体内
+contains GCCCG	274881	6250890	4.397	300	572	52.45	11.93	同じく GCCCG を含むもの
+either	419590	6250890	6.712	486	572	84.97	12.66	いずれか（本文 L69 の 85.0%）

@@ -1,3 +1,5 @@
+# 2026-11-04 D175: この生成器は補足図の統合で役目を終えた。出荷名に書き込むと別の図を潰すため、
+# 出力名を SUPERSEDED_ 前置きに変更した。現行の図を作るのは suppfigure_merged_*_261103.py。
 #!/usr/bin/env python3
 """補足図 13 — 二次代謝産物遺伝子クラスタの染色体上の位置と、マーク別のメチル化密度。
 
@@ -38,12 +40,12 @@ from _suppstyle import (BLUE, DATA_DIR, META_GREY, NAR_WIDTH_IN, RED,  # noqa: E
 N = json.load(open(DATA_DIR / "numbers.json"))
 bgc = pd.read_csv(DATA_DIR / "bgc_regions_29.csv")
 
-apply_figure_style(frame="open", sizes=(7.0, 6.2, 6.0))
+apply_figure_style(frame="boxed", sizes=(7.0, 6.2, 6.0))
 
 BIN = 50_000
 CORE = (1.50e6, 7.17e6)
 ORIC = 4.270310e6
-TPC = {"T1": "#1b4965", "T2": "#5fa8d3", "T3": "#7fc7c4"}
+# 2026-11-03 FIG23: 時点の 3 色は使用箇所が無くなっていたので削除（意味色は 4mC/6mA/デュアルのみ）
 # 2026-10-22: 発現状態の 3 色のうち silent は "#9e4a4a" で、これは 2026-10-22 まで
 # この同じパイプラインで 4mC を指していた赤そのものだった。パネル a が正準の 4mC 赤に
 # なった以上、同じ図の中で赤が「4mC」と「silent クラスター」の二義になる。発現状態は
@@ -68,7 +70,7 @@ def motif_keys(g):
 
 
 def called(setname, tp, keys):
-    """プール規則: 時点内 3 ライブラリを位置・鎖で合算、プール前真深度 >= 30、
+    """プール規則: 時点内 3 ライブラリを位置・鎖で合算、プール後真深度 >= 30、
     プール後 Nmod/Nvalid >= 0.5。補足図 4・7 と同一の規則。"""
     acc = {}
     for lib in LIBS[tp]:
@@ -134,8 +136,8 @@ def spread(xs, sep, lo, hi):
 
 
 def shade(ax, glen):
-    for x0, x1, col in [(0, CORE[0], "#f4e6dd"), (CORE[0], CORE[1], "#e7eee8"),
-                        (CORE[1], glen, "#f4e6dd")]:
+    for x0, x1, col in [(0, CORE[0], "#f2f2f2"), (CORE[0], CORE[1], "#e6e6e6"),
+                        (CORE[1], glen, "#f2f2f2")]:
         ax.add_patch(Rectangle((x0 / 1e6, 0), (x1 - x0) / 1e6, 1,
                                transform=ax.get_xaxis_transform(),
                                fc=col, ec="none", zorder=0))
@@ -155,8 +157,7 @@ def track(ax, x, series, key, nkey, glen, ylab, colour):
     ax.set_ylim(0, hi.max() * 1.30)
     ax.set_ylabel(ylab)
     ns = "  ".join(f"{t} {series[t][nkey]:,}" for t in ("T1", "T2", "T3"))
-    ax.text(0.995, 0.93, f"sites called   {ns}", transform=ax.transAxes,
-            ha="right", va="top", fontsize=6.0, color=META_GREY)
+    # [D119 で削除: sites called の件数注記]
     ax.legend(frameon=False, loc="upper left", ncol=2, fontsize=6.0,
               handlelength=1.3, columnspacing=1.2, borderpad=0.0,
               handletextpad=0.5, labelspacing=0.2)
@@ -226,15 +227,15 @@ def build():
     for sp in ("left", "right", "top"):
         ax_c.spines[sp].set_visible(False)
     ax_c.set_xlabel("Chromosome position (Mb)")
-    for xt, lab, col in [(0.75, "left arm", "#9e7b5a"), (3.25, "core", "#5a7a62"),
-                         (7.92, "right arm", "#9e7b5a")]:
+    for xt, lab, col in [(0.75, "left arm", "#777777"), (3.25, "core", "#3a3a3a"),
+                         (7.92, "right arm", "#777777")]:
         ax_c.text(xt, -0.44, lab, ha="center", va="bottom", fontsize=6, color=col)
 
     figure_panel_letters(fig, [ax_a, ax_b, ax_c], "abc",
                          dx=[0.082, 0.082, 0.082], dy=0.006)
     source_note(fig,
                 "Source: deposited modkit pileups (canonical, 2026-10-15) and antiSMASH 7 regions. Site rule: three libraries pooled per\n"
-                "timepoint, pre-pooling true depth (Nvalid_cov + Nfail) >= 30, pooled modified fraction >= 50 %. 4mC pools TGGCCGGC position 5\n"
+                "timepoint, pooled true depth (Nvalid_cov + Nfail) >= 30, pooled modified fraction >= 50 %. 4mC pools TGGCCGGC position 5\n"
                 "with AAGCCCG position 5 (counts, not occupancies); 6mA is the AAGCCCG A1/A2 union. Per-recognition-sequence landscapes: Supplementary Figure 4.",
                 y=0.006)
     return fig, series
@@ -242,10 +243,10 @@ def build():
 
 if __name__ == "__main__":
     fig, series = build()
-    # 出荷名は SuppFigure7.png（補足図 13 -> 7 の改番、2026-10-24 に出力名を追随）。
+    # 出荷名は SUPERSEDED_SuppFigure6_pre261104.png（補足図 13 -> 7 の改番、2026-10-24 に出力名を追随）。
     # 旧版は拡張子なしの "SuppFigure13" に書いたうえ、report() が出荷側の
     # SuppFigure13.png（別の図＝AAGCCCG の 5' 延長）を読んでいた。
-    out = save(fig, "SuppFigure7.png")
+    out = save(fig, "SUPERSEDED_SuppFigure6_pre261104.png")
     for t in series:
         print(f"  {t}: 4mC {series[t]['n4']:,} sites, 6mA {series[t]['n6']:,} sites")
     report(out)

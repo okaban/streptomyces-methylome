@@ -1,3 +1,5 @@
+# 2026-11-04 D175: この生成器は補足図の統合で役目を終えた。出荷名に書き込むと別の図を潰すため、
+# 出力名を SUPERSEDED_ 前置きに変更した。現行の図を作るのは suppfigure_merged_*_261103.py。
 #!/usr/bin/env python3
 """Supplementary Figure 14 — why no cluster-level methylation/expression
 relationship is detectable.
@@ -44,7 +46,7 @@ FEATURECOUNTS = "/Users/okaban/bioinfo/rna-seq/03_quantification/data/featureCou
 TSS_CSV = "/Users/okaban/bioinfo/rna-seq/11_epigenome_integration/analysis/18_tss_analyses/jeong2016_all_tss.csv"
 CANON = pathlib.Path("/Users/okaban/bioinfo/rna-seq/15_paper_figures/scripts/"
                      "recompute_261015/suppfig8_panelbcd_canonical_261022.tsv")
-MIN_POS = 3             # panel c: regions with fewer measurable positions are not plotted
+MIN_POS = 5             # panel c: regions with fewer measurable positions are not plotted
 TPS = ("T1", "T2", "T3")
 
 # Canonical mark palette (00_shared_utils, author decision 2026-09-26): 4mC is the
@@ -150,7 +152,7 @@ dpan = dpan.sort_values(["mark_class", "timepoint"],
                         key=lambda s: s.map({m: i for i, m in enumerate(DCLASSES)})
                         if s.name == "mark_class" else s).reset_index(drop=True)
 
-apply_figure_style(frame="open", sizes=(7.0, 6.2, 6.0))
+apply_figure_style(frame="boxed", sizes=(7.0, 6.2, 6.0))
 
 
 def build():
@@ -254,7 +256,7 @@ def build():
 
 
 if __name__ == "__main__":
-    # 出荷名は SuppFigure8.png（補足図 14 -> 8 の改番、2026-10-24 に出力名を追随）。
+    # 出荷名は SUPERSEDED_SuppFigure7_pre261104.png（補足図 14 -> 8 の改番、2026-10-24 に出力名を追随）。
     # SuppFigure14.png は現在「アデニン側の決定因子」図
     # （suppfigure14_determinants_261020.py）が占めている。
-    report(save(build(), "SuppFigure8.png"))
+    report(save(build(), "SUPERSEDED_SuppFigure7_pre261104.png"))

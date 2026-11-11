@@ -42,6 +42,8 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import pandas as pd
 from PIL import Image
+import os as _os
+_FD = int(_os.environ.get('FIG_DPI', 300))  # 2026-11-09 解像度上書き
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.dirname(HERE))
@@ -83,6 +85,7 @@ LAB = ["TGGCCGGC\n4mC", "AAGCCCG\n4mC", "AAGCCCG\n6mA", "HAAGCCCG\n6mA"]
 
 def draw(fig):
     ax = fig.add_axes([0.155, 0.30, 0.815, 0.54])
+    _RANGES = []
     for i, (mk, c, tc) in enumerate(zip(ORDER, COLS, TCOLS)):
         sub = stab[stab["mark"] == mk]
         assert len(sub), f"保持率表に mark='{mk}' が無い。ラベル変更の取り残し"
@@ -91,8 +94,12 @@ def draw(fig):
         for j, (_, rr) in enumerate(sub.iterrows()):
             ax.plot(i + (j - 1) * 0.17, rr.retention_pct, "o", ms=4.2, mfc=c,
                     mec="white", mew=0.6, zorder=3)
-        ax.text(i, hi + 1.2, f"{lo:.1f}\u2013{hi:.1f}", ha="center", va="bottom",
-                fontsize=U.FONT["annot"], color=tc)
+        # 2026-10-28 著者指示により、範囲の値ラベルを図から外した。
+        # 4 本とも台帳の確定値（STAB.RETENTION.TGGCCGGC4mC 95.72-97.24 /
+        # AAGCCCG4mC 90.32-91.80 / AAGCCCG6mA 80.00-87.62 /
+        # HAAGCCCG6mA 83.33-88.80）なので、凡例で述べれば足りる。
+        # 系列色に合わせた 4 色の文字が図内に並ぶのを避ける目的も兼ねる。
+        _RANGES.append((mk, lo, hi))
     ax.set_xticks(range(len(ORDER)))
     ax.set_xticklabels(LAB, fontsize=U.FONT["tick"])
     ax.set_yticks([80, 85, 90, 95, 100])
@@ -104,17 +111,25 @@ def draw(fig):
     # three-denominator label under a four-series panel.
     ns = " / ".join(f"{int(stab[stab['mark'] == mk].motif_universe_n.iloc[0]):,}"
                     for mk in ORDER)
-    ax.set_xlabel("Three timepoint pairs per mark (T1\u2192T2, T2\u2192T3, T1\u2192T3)\n"
-                  f"n = {ns} motif positions",
-                  fontsize=U.FONT["annot"], color=U.COL_GRAY, labelpad=4)
-    U.style_axes(ax)
+    # 2026-10-28: 「3 時点対」の説明と分母 n は凡例へ移した。軸ラベルとして
+    # 図の下に 2 行の灰色文字を置く形はやめる。分母は読み取りを続け、
+    # 凡例に書くべき値として標準出力に出す（凡例と図のズレを検出するため）。
+    print("legend denominators: n =", ns, "motif positions;",
+          "ranges:", ", ".join(f"{m} {lo:.2f}-{hi:.2f}%" for m, lo, hi in _RANGES))
+    U.style_axes(ax, frame=True)
+    # 2026-10-28 著者指示: 四辺の枠を出す。style_axes(frame=True) だけでは
+    # 後続処理で消える経路があったので、保存直前に明示的に立てる。
+    for _s in ('top', 'right', 'left', 'bottom'):
+        ax.spines[_s].set_visible(True)
+        ax.spines[_s].set_edgecolor(U.COL_DARK)
+        ax.spines[_s].set_linewidth(0.8)
 
 
 if __name__ == "__main__":
-    fig = plt.figure(figsize=(W_PX / 300, H_PX / 300), dpi=300)
+    fig = plt.figure(figsize=(W_PX / 300, H_PX / 300), dpi=_FD)
     draw(fig)
     U.assert_no_text_collisions(fig, "Fig4 panel a")
-    fig.savefig(OUT, dpi=300, transparent=True, bbox_inches=None, pad_inches=0)
+    fig.savefig(OUT, dpi=_FD, transparent=True, bbox_inches=None, pad_inches=0)
     plt.close(fig)
     size = Image.open(OUT).size
     assert size == (W_PX, H_PX), size

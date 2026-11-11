@@ -1,0 +1,10 @@
+timepoint	read_set	recognition_contexts_on_duplex	duplexes	duplexes_measurable_both_strands	methylated_both_strands	methylated_one_strand	both_strand_pct
+T1	confidence-filtered	0	14021	14009	0	0	0.0
+T1	confidence-filtered	1	1983	1979	0	1793	0.0
+T1	confidence-filtered	2	55	55	40	13	72.73
+T2	confidence-filtered	0	14021	14020	0	0	0.0
+T2	confidence-filtered	1	1983	1983	0	1795	0.0
+T2	confidence-filtered	2	55	55	44	9	80.0
+T3	confidence-filtered	0	14021	14019	0	0	0.0
+T3	confidence-filtered	1	1983	1983	0	1770	0.0
+T3	confidence-filtered	2	55	55	42	12	76.36

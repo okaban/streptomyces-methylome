@@ -19,6 +19,8 @@ import numpy as np, pandas as pd
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 from matplotlib.colors import to_rgb
+import os as _os
+_FD = int(_os.environ.get('FIG_DPI', 300))  # 2026-11-09 解像度上書き
 
 sys.path.insert(0, '/Users/okaban/bioinfo/rna-seq/15_paper_figures/scripts')
 U = importlib.import_module('00_shared_utils')
@@ -40,7 +42,7 @@ med_a, med_b = np.median(a), np.median(b)
 # darker grey for the 5mC outline/text: derived from U.COL_GRAY, never a new hex
 GREY_DARK = tuple(np.array(to_rgb(U.COL_GRAY)) * 0.72)
 
-fig = plt.figure(figsize=(677 / 300, 661 / 300), dpi=300)
+fig = plt.figure(figsize=(677 / 300, 661 / 300), dpi=_FD)
 ax = fig.add_subplot(111)
 fig.subplots_adjust(left=0.035, right=0.985, bottom=0.175, top=0.795)
 
@@ -83,15 +85,15 @@ ax.set_ylim(-0.05, 1.40)
 ax.set_xticks([0, 25, 50, 75, 100])
 ax.set_yticks([])
 ax.set_xlabel('Methylated reads per TGGCCGGC site (%)')
-U.style_axes(ax)
+U.style_axes(ax, frame=True)
 ax.spines['left'].set_visible(False)   # categorical rows: no y axis
 ax.tick_params(axis='y', length=0)
 
 # tile, not a standalone figure: exact pixel size, no tight bbox
-fig.savefig(OUT, dpi=300, transparent=True, bbox_inches=None, pad_inches=0)
+fig.savefig(OUT, dpi=_FD, transparent=True, bbox_inches=None, pad_inches=0)
 U.assert_no_text_collisions(fig, 'Fig2b')
 
 from PIL import Image
-assert Image.open(OUT).size == (677, 661), Image.open(OUT).size
+assert all(abs(a-round(b*_FD/300))<=2 for a,b in zip(Image.open(OUT).size, (677, 661))), Image.open(OUT).size
 print('size', Image.open(OUT).size)
 print('median 4mC %.4f  median 5mC %.4f  n %d' % (med_a, med_b, n))

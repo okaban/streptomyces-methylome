@@ -1,0 +1,3 @@
+  [SuppFigure2.png] text-collision check: clean
+SuppFigure2.png: 2040x1560 px, 172.7 x 132.1 mm
+wrote s2 keys: ['CF', 'NULLT', 'NULL_allpos', 'n_pos', 'hist_max']

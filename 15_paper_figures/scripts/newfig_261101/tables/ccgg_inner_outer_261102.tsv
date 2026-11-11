@@ -1,0 +1,25 @@
+timepoint	motif	offset_0based	label	role	occurrence	measurable_dep30	modified_lvl50	pct_of_measurable	mean_level_pct
+T1	CCGG	0	CCGG C1 (outer, M.MspI position)	outer	302350	302208	329	0.1089	0.1029
+T1	CCGG	1	CCGG C2 (inner, M.HpaII position)	inner	302350	302207	1886	0.6241	0.5373
+T1	GCCGGC	1	GCCGGC C2 (outer of embedded CCGG)	outer	32118	32103	0	0.0	0.0077
+T1	GCCGGC	2	GCCGGC C3 (inner; the modified position)	inner	32118	32102	1886	5.875	4.9987
+T1	GCCGGC	5	GCCGGC C6 (outside CCGG frame)	control	32118	32103	0	0.0	0.0047
+T1	TGGCCGGC	3	TGGCCGGC C4 (outer of embedded CCGG)	outer	2093	2092	0	0.0	0.0602
+T1	TGGCCGGC	4	TGGCCGGC C5 (inner; the modified position)	inner	2093	2091	1886	90.1961	76.6389
+T1	TGGCCGGC	7	TGGCCGGC C8 (outside CCGG frame)	control	2093	2092	0	0.0	0.0043
+T2	CCGG	0	CCGG C1 (outer, M.MspI position)	outer	302350	302338	321	0.1062	0.1037
+T2	CCGG	1	CCGG C2 (inner, M.HpaII position)	inner	302350	302338	1892	0.6258	0.5328
+T2	GCCGGC	1	GCCGGC C2 (outer of embedded CCGG)	outer	32118	32117	0	0.0	0.0101
+T2	GCCGGC	2	GCCGGC C3 (inner; the modified position)	inner	32118	32117	1892	5.891	4.9484
+T2	GCCGGC	5	GCCGGC C6 (outside CCGG frame)	control	32118	32117	0	0.0	0.0062
+T2	TGGCCGGC	3	TGGCCGGC C4 (outer of embedded CCGG)	outer	2093	2093	0	0.0	0.0845
+T2	TGGCCGGC	4	TGGCCGGC C5 (inner; the modified position)	inner	2093	2093	1892	90.3966	75.7861
+T2	TGGCCGGC	7	TGGCCGGC C8 (outside CCGG frame)	control	2093	2093	0	0.0	0.0077
+T3	CCGG	0	CCGG C1 (outer, M.MspI position)	outer	302350	302325	316	0.1045	0.1056
+T3	CCGG	1	CCGG C2 (inner, M.HpaII position)	inner	302350	302322	1866	0.6172	0.5285
+T3	GCCGGC	1	GCCGGC C2 (outer of embedded CCGG)	outer	32118	32116	0	0.0	0.0104
+T3	GCCGGC	2	GCCGGC C3 (inner; the modified position)	inner	32118	32116	1866	5.8102	4.9036
+T3	GCCGGC	5	GCCGGC C6 (outside CCGG frame)	control	32118	32116	0	0.0	0.006
+T3	TGGCCGGC	3	TGGCCGGC C4 (outer of embedded CCGG)	outer	2093	2093	0	0.0	0.0881
+T3	TGGCCGGC	4	TGGCCGGC C5 (inner; the modified position)	inner	2093	2093	1866	89.1543	74.9866
+T3	TGGCCGGC	7	TGGCCGGC C8 (outside CCGG frame)	control	2093	2093	0	0.0	0.0045

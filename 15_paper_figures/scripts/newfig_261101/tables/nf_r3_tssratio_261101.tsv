@@ -1,0 +1,9 @@
+universe	universe_n	window_bp	tss_set	tss_n	read_set	gc_matching	gc_quantiles	coord_convention	n_near	n_distal	mean_level_near	mean_level_distal	ratio	ci95_lo	ci95_hi	p_value	n_cultures
+6mA, AAGCCCG A1/A2	2664	100	jeong_measured	3570	all reads	GC-matched	5	corrected	235	2429	0.294539	0.352342	0.9105	0.8955	0.9257	1.12e-06	9
+6mA, AAGCCCG A1/A2	2664	300	jeong_measured	3570	all reads	GC-matched	5	corrected	577	2087	0.325543	0.353242	0.9543	0.9441	0.9646	8.48e-06	9
+4mC, TGGCCGGC C5	2093	100	jeong_measured	3570	all reads	GC-matched	5	corrected	84	2009	0.648326	0.639359	1.0054	0.9934	1.0174	0.332	9
+4mC, TGGCCGGC C5	2093	300	jeong_measured	3570	all reads	GC-matched	5	corrected	318	1775	0.655399	0.63691	1.0232	1.0172	1.0291	1.77e-05	9
+4mC, AAGCCCG C5	1332	100	jeong_measured	3570	all reads	GC-matched	5	corrected	115	1217	0.50479	0.546004	0.905	0.8942	0.9159	5.57e-08	9
+4mC, AAGCCCG C5	1332	300	jeong_measured	3570	all reads	GC-matched	5	corrected	287	1045	0.531256	0.545519	0.9665	0.9621	0.9708	1.19e-07	9
+4mC, all GCCGGC C3	32116	100	jeong_measured	3570	all reads	GC-matched	5	corrected	1272	30844	0.045302	0.044262	0.9505	0.9394	0.9616	8.19e-06	9
+4mC, all GCCGGC C3	32116	300	jeong_measured	3570	all reads	GC-matched	5	corrected	5043	27073	0.043938	0.044371	0.9437	0.9381	0.9494	1.83e-08	9

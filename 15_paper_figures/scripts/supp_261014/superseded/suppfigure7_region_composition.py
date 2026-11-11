@@ -25,7 +25,7 @@ import sys as _sys  # noqa: E402
 _sys.path.insert(0, "/Users/okaban/bioinfo/rna-seq/15_paper_figures/scripts")
 _U = importlib.import_module("00_shared_utils")
 
-apply_figure_style(frame="open", sizes=(7.0, 6.2, 6.0))
+apply_figure_style(frame="boxed", sizes=(7.0, 6.2, 6.0))
 
 CSV = DATA_DIR / 'region261015' / 'region_composition_by_mark_261024.csv'
 ORDER = ['promoter', "5'UTR", 'CDS-internal', 'intergenic']

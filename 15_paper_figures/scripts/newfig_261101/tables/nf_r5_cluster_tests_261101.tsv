@@ -1,0 +1,5 @@
+test	n	statistic	p_value	median_ratio
+4mC interior vs flank, cluster unit	21	98.0	0.562	1.0161
+4mC cluster mean level vs mean TPM	66	-0.2842	0.0207	
+6mA interior vs flank, cluster unit	19	87.0	0.768	0.9869
+6mA cluster mean level vs mean TPM	63	0.2161	0.0889	

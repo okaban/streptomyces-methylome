@@ -1,0 +1,20 @@
+section	kind	word	n_architectures	n_instances	occupancy_pct	ci_lo_pct	ci_hi_pct	neglog10_p	note
+architecture_inventory	bipartite		119						pre-registered architectures of this class; whole space = 15,543,296 words
+architecture_inventory	contiguous		30						pre-registered architectures of this class; whole space = 15,543,296 words
+top_candidates_by_occupancy	contiguous	GGGAACCGCGC		26	26.92	13.7	46.08	16.65	
+top_candidates_by_occupancy	contiguous	CAACCGGTGC		21	23.81	10.63	45.09	11.74	
+top_candidates_by_occupancy	contiguous	GCGGCAACCGG		36	22.22	11.72	38.08	18.2	
+top_candidates_by_occupancy	contiguous	AAGAAGCCCGC		23	21.74	9.66	41.9	11.52	
+top_candidates_by_occupancy	contiguous	GCGCGGGGAAC		52	21.15	12.24	34.03	24.54	
+top_candidates_by_occupancy	contiguous	GGCAACCCGGC		38	21.05	11.07	36.35	18.0	
+top_candidates_by_occupancy	contiguous	CGGCAACCCGG		57	21.05	12.47	33.29	26.69	
+top_candidates_by_occupancy	contiguous	GCAACCCGGCG		24	20.83	9.24	40.47	11.42	
+top_candidates_by_occupancy	contiguous	GCGGGGAACC		34	20.59	10.35	36.8	15.74	
+detection_floor				20	15.0				smallest occupancy detectable at this instance count
+detection_floor				50	8.0				smallest occupancy detectable at this instance count
+detection_floor				100	4.0				smallest occupancy detectable at this instance count
+detection_floor				200	2.5				smallest occupancy detectable at this instance count
+detection_floor				500	1.2				smallest occupancy detectable at this instance count
+detection_floor				1000	0.8				smallest occupancy detectable at this instance count
+detection_floor				2000	0.5				smallest occupancy detectable at this instance count
+detection_floor				5000	0.3				smallest occupancy detectable at this instance count

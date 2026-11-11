@@ -1,0 +1,16 @@
+panel c の値（凡例に記載する）: {'±8 bp GC': (np.float64(0.72), np.float64(0.77)), 'G-run within ±10 bp': (np.float64(0.33), np.float64(0.47)), 'call-failure fraction': (np.float64(0.66), np.float64(0.76))}
+Traceback (most recent call last):
+  File "/Users/okaban/bioinfo/rna-seq/15_paper_figures/scripts/supp_261014/_baseline_261103/capture.py", line 62, in <module>
+    g = runpy.run_path(str(SCRIPTS / "supp_261014/suppfigure14_determinants_261020.py"), run_name="__main__")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/okaban/bioinfo/rna-seq/15_paper_figures/scripts/supp_261014/suppfigure14_determinants_261020.py", line 317, in <module>
+    _assert_no_text_collisions(fig, "SuppFigure13.png")
+  File "/Users/okaban/bioinfo/rna-seq/15_paper_figures/scripts/supp_261014/suppfigure14_determinants_261020.py", line 314, in _assert_no_text_collisions
+    return mod.assert_no_text_collisions(figure, name=name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/okaban/bioinfo/rna-seq/15_paper_figures/scripts/00_shared_utils.py", line 1011, in assert_no_text_collisions
+    raise AssertionError(f"[{name}] " + " | ".join(msg))
+AssertionError: [SuppFigure13.png] text over data marks: ['6mA (position 1)']

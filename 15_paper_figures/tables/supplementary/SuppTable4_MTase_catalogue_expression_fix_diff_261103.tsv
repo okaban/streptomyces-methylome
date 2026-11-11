@@ -1,0 +1,388 @@
+locus_tag	product	timepoint	old_value_normcount_s0	new_value_TPM	ratio_new_over_old	old_T2vsT1_log2FC_s0	new_T2vsT1_log2FC_s2	old_T3vsT1_log2FC_s0	new_T3vsT1_log2FC_s2
+SC_RS02900	class I SAM-dependent methyltransferase	T1	46.97	5.426	0.11553	0.5847	0.5133	0.0373	-0.3012
+SC_RS02900	class I SAM-dependent methyltransferase	T2	72.89	6.718	0.09216				
+SC_RS02900	class I SAM-dependent methyltransferase	T3	47.69	4.842	0.10154				
+SC_RS03870	class I SAM-dependent methyltransferase	T1	4.52	0.282	0.0625	10.2107	10.3936	9.247	9.6612
+SC_RS03870	class I SAM-dependent methyltransferase	T2	5494.77	323.17	0.05881				
+SC_RS03870	class I SAM-dependent methyltransferase	T3	2827.18	241.628	0.08547				
+SC_RS03935	SAM-dependent methyltransferase	T1	145.09	14.788	0.10192	3.2332	3.3146	2.2982	2.6125
+SC_RS03935	SAM-dependent methyltransferase	T2	1388.68	125.167	0.09013				
+SC_RS03935	SAM-dependent methyltransferase	T3	730.66	96.606	0.13222				
+SC_RS03950	class I SAM-dependent DNA methyltransferase	T1	130.19	16.166	0.12417	0.2877	0.2229	-0.3371	-0.3878
+SC_RS03950	class I SAM-dependent DNA methyltransferase	T2	160.94	15.99	0.09935				
+SC_RS03950	class I SAM-dependent DNA methyltransferase	T3	102.28	13.254	0.12958				
+SC_RS04540	SAM-dependent methyltransferase	T1	294.73	31.25	0.10603	1.3932	1.3818	0.3147	0.4789
+SC_RS04540	SAM-dependent methyltransferase	T2	788.46	69.509	0.08816				
+SC_RS04540	SAM-dependent methyltransferase	T3	370.67	46.931	0.12661				
+SC_RS04895	class I SAM-dependent methyltransferase	T1	15.99	1.793	0.11215	0.9015	0.8999	1.6711	1.6224
+SC_RS04895	class I SAM-dependent methyltransferase	T2	31.72	2.995	0.09443				
+SC_RS04895	class I SAM-dependent methyltransferase	T3	53.48	6.654	0.12443				
+SC_RS05160	class I SAM-dependent methyltransferase	T1	25.22	3.075	0.12194	2.1817	2.2011	2.5401	2.7227
+SC_RS05160	class I SAM-dependent methyltransferase	T2	119.54	12.463	0.10425				
+SC_RS05160	class I SAM-dependent methyltransferase	T3	153.18	22.56	0.14728				
+SC_RS05450	SAM-dependent methyltransferase	T1	1029.61	104.191	0.10119	2.7287	2.7424	1.6621	1.8967
+SC_RS05450	SAM-dependent methyltransferase	T2	6965.21	594.286	0.08532				
+SC_RS05450	SAM-dependent methyltransferase	T3	3340.47	410.868	0.123				
+SC_RS05730	HemK2/MTQ2 family protein methyltransferase	T1	37.33	4.394	0.1177	1.9715	0.2163	1.0154	0.4422
+SC_RS05730	HemK2/MTQ2 family protein methyltransferase	T2	153.7	4.384	0.02852				
+SC_RS05730	HemK2/MTQ2 family protein methyltransferase	T3	79.5	6.848	0.08614				
+SC_RS06060	class I SAM-dependent methyltransferase	T1	62.44	6.852	0.10973	-1.0067	-0.9615	-0.3093	-0.5618
+SC_RS06060	class I SAM-dependent methyltransferase	T2	29.82	2.794	0.09369				
+SC_RS06060	class I SAM-dependent methyltransferase	T3	49.01	5.042	0.10288				
+SC_RS06105	class I SAM-dependent methyltransferase	T1	11.03	1.394	0.12643	0.6262	0.5781	1.7226	1.4034
+SC_RS06105	class I SAM-dependent methyltransferase	T2	18.82	1.942	0.10321				
+SC_RS06105	class I SAM-dependent methyltransferase	T3	40.26	4.866	0.12085				
+SC_RS06515	L-histidine N(alpha)-methyltransferase	T1	58.66	5.18	0.08831	4.8958	4.9115	2.424	2.655
+SC_RS06515	L-histidine N(alpha)-methyltransferase	T2	1759.01	131.514	0.07477				
+SC_RS06515	L-histidine N(alpha)-methyltransferase	T3	320.94	35.144	0.1095				
+SC_RS06595	SAM-dependent methyltransferase	T1	79.19	8.153	0.10296	2.6581	2.7412	1.2415	1.4354
+SC_RS06595	SAM-dependent methyltransferase	T2	507.95	46.557	0.09166				
+SC_RS06595	SAM-dependent methyltransferase	T3	191.87	24.364	0.12698				
+SC_RS06885	5-methyltetrahydropteroyltriglutamate--homocysteine S-methyltransferase	T1	352.52	11.523	0.03269	3.3233	3.5263	0.1767	0.3978
+SC_RS06885	5-methyltetrahydropteroyltriglutamate--homocysteine S-methyltransferase	T2	3558.91	112.288	0.03155				
+SC_RS06885	5-methyltetrahydropteroyltriglutamate--homocysteine S-methyltransferase	T3	400.69	16.383	0.04089				
+SC_RS06935	class I SAM-dependent methyltransferase	T1	19.02	2.145	0.11277	6.7199	6.7245	5.2962	5.4975
+SC_RS06935	class I SAM-dependent methyltransferase	T2	2020.52	192.069	0.09506				
+SC_RS06935	class I SAM-dependent methyltransferase	T3	757.47	102.505	0.13533				
+SC_RS07160	methyltransferase	T1	758.3	61.434	0.08101	-1.7688	-1.7732	-2.4797	-2.5011
+SC_RS07160	methyltransferase	T2	219.59	14.842	0.06759				
+SC_RS07160	methyltransferase	T3	134.63	11.653	0.08656				
+SC_RS07760	class I SAM-dependent methyltransferase	T1	61.91	9.156	0.14788	1.1015	1.0236	0.4088	0.4209
+SC_RS07760	class I SAM-dependent methyltransferase	T2	135.27	15.952	0.11793				
+SC_RS07760	class I SAM-dependent methyltransferase	T3	82.93	13.612	0.16414				
+SC_RS08195	class I SAM-dependent methyltransferase	T1	371.13	47.689	0.1285	0.1323	0.0645	1.1593	1.3124
+SC_RS08195	class I SAM-dependent methyltransferase	T2	408.43	41.881	0.10254				
+SC_RS08195	class I SAM-dependent methyltransferase	T3	851.73	125.89	0.14781				
+SC_RS08355	class I SAM-dependent methyltransferase	T1	1.71	0.195	0.11383	1.3504	0.664	4.632	3.9852
+SC_RS08355	class I SAM-dependent methyltransferase	T2	5.99	0.348	0.05809				
+SC_RS08355	class I SAM-dependent methyltransferase	T3	48.89	4.236	0.08664				
+SC_RS09335	RsmB/NOP family class I SAM-dependent RNA methyltransferase	T1	1042.25	66.208	0.06352	-1.4895	-1.5609	-2.2541	-2.1812
+SC_RS09335	RsmB/NOP family class I SAM-dependent RNA methyltransferase	T2	366.71	18.554	0.0506				
+SC_RS09335	RsmB/NOP family class I SAM-dependent RNA methyltransferase	T3	217.5	15.455	0.07106				
+SC_RS09775	TrmH family RNA methyltransferase	T1	308.45	29.044	0.09416	-1.132	-0.9647	-1.8313	-1.7525
+SC_RS09775	TrmH family RNA methyltransferase	T2	138.55	12.252	0.08843				
+SC_RS09775	TrmH family RNA methyltransferase	T3	85.86	9.076	0.1057				
+SC_RS09780	uroporphyrinogen-III C-methyltransferase	T1	672.16	45.134	0.06715	-0.9109	-0.9257	-1.9931	-2.1092
+SC_RS09780	uroporphyrinogen-III C-methyltransferase	T2	353.87	19.656	0.05555				
+SC_RS09780	uroporphyrinogen-III C-methyltransferase	T3	166.78	11.216	0.06725				
+SC_RS09790	precorrin-6y C5%2C15-methyltransferase (decarboxylating) subunit CbiE	T1	146.5	10.139	0.06921	-1.1116	-1.1323	-0.6906	-0.8227
+SC_RS09790	precorrin-6y C5%2C15-methyltransferase (decarboxylating) subunit CbiE	T2	65.41	3.741	0.0572				
+SC_RS09790	precorrin-6y C5%2C15-methyltransferase (decarboxylating) subunit CbiE	T3	87.45	6.283	0.07185				
+SC_RS10000	TrmH family RNA methyltransferase	T1	913.46	89.352	0.09782	-3.0718	-3.1091	-2.7642	-2.7245
+SC_RS10000	TrmH family RNA methyltransferase	T2	106.75	8.514	0.07976				
+SC_RS10000	TrmH family RNA methyltransferase	T3	133.25	14.336	0.10759				
+SC_RS10265	tRNA (adenine-N1)-methyltransferase	T1	2358.0	236.419	0.10026	-1.4323	-1.5243	-2.2916	-2.2797
+SC_RS10265	tRNA (adenine-N1)-methyltransferase	T2	851.75	67.139	0.07882				
+SC_RS10265	tRNA (adenine-N1)-methyltransferase	T3	472.11	49.475	0.1048				
+SC_RS10665	class I SAM-dependent methyltransferase	T1	442.56	75.18	0.16987	-1.1621	-1.0854	-1.401	-1.3478
+SC_RS10665	class I SAM-dependent methyltransferase	T2	194.87	29.262	0.15016				
+SC_RS10665	class I SAM-dependent methyltransferase	T3	166.12	31.353	0.18874				
+SC_RS11295	precorrin-2 C(20)-methyltransferase	T1	1582.54	230.891	0.1459	-0.7227	-0.7332	-2.6711	-2.5042
+SC_RS11295	precorrin-2 C(20)-methyltransferase	T2	947.54	114.92	0.12128				
+SC_RS11295	precorrin-2 C(20)-methyltransferase	T3	246.66	42.52	0.17238				
+SC_RS11305	precorrin-4 C(11)-methyltransferase	T1	1981.04	220.193	0.11115	-0.5418	-0.5621	-2.7327	-2.5592
+SC_RS11305	precorrin-4 C(11)-methyltransferase	T2	1348.94	123.964	0.0919				
+SC_RS11305	precorrin-4 C(11)-methyltransferase	T3	296.42	39.422	0.13299				
+SC_RS11310	precorrin-6y C5%2C15-methyltransferase (decarboxylating) subunit CbiE	T1	3215.64	222.017	0.06904	-0.9062	-0.9311	-3.1276	-2.9836
+SC_RS11310	precorrin-6y C5%2C15-methyltransferase (decarboxylating) subunit CbiE	T2	1695.97	96.471	0.05688				
+SC_RS11310	precorrin-6y C5%2C15-methyltransferase (decarboxylating) subunit CbiE	T3	365.86	29.56	0.08079				
+SC_RS11315	precorrin-3B C(17)-methyltransferase	T1	6045.57	283.503	0.04689	-0.6049	-0.622	-3.0263	-2.8644
+SC_RS11315	precorrin-3B C(17)-methyltransferase	T2	3934.56	152.51	0.03876				
+SC_RS11315	precorrin-3B C(17)-methyltransferase	T3	734.83	40.768	0.05548				
+SC_RS11875	methylated-DNA--[protein]-cysteine S-methyltransferase	T1	398.48	70.313	0.17645	5.535	5.4678	2.2823	2.4595
+SC_RS11875	methylated-DNA--[protein]-cysteine S-methyltransferase	T2	18780.14	2642.438	0.1407				
+SC_RS11875	methylated-DNA--[protein]-cysteine S-methyltransferase	T3	2000.3	407.489	0.20371				
+SC_RS11895	methyltransferase domain-containing protein	T1	164.02	17.489	0.10663	0.3243	-0.1661	-0.626	-0.6477
+SC_RS11895	methyltransferase domain-containing protein	T2	206.88	12.988	0.06278				
+SC_RS11895	methyltransferase domain-containing protein	T3	104.24	12.116	0.11623				
+SC_RS11995	class I SAM-dependent methyltransferase	T1	48.64	5.022	0.10324	4.1356	4.3405	3.0684	3.5147
+SC_RS11995	class I SAM-dependent methyltransferase	T2	874.01	87.386	0.09998				
+SC_RS11995	class I SAM-dependent methyltransferase	T3	420.36	62.699	0.14916				
+SC_RS12025	class I SAM-dependent methyltransferase	T1	231.32	30.171	0.13043	-1.2367	-1.3351	-1.6788	-1.7703
+SC_RS12025	class I SAM-dependent methyltransferase	T2	96.05	9.741	0.10142				
+SC_RS12025	class I SAM-dependent methyltransferase	T3	71.13	9.276	0.13041				
+SC_RS12500	16S rRNA (cytosine(1402)-N(4))-methyltransferase RsmH	T1	839.04	76.412	0.09107	-2.5816	-2.5927	-2.7818	-2.8465
+SC_RS12500	16S rRNA (cytosine(1402)-N(4))-methyltransferase RsmH	T2	136.88	10.381	0.07584				
+SC_RS12500	16S rRNA (cytosine(1402)-N(4))-methyltransferase RsmH	T3	119.05	11.581	0.09728				
+SC_RS12530	methyltransferase	T1	733.35	81.933	0.11172	-1.356	-1.405	-2.2401	-2.267
+SC_RS12530	methyltransferase	T2	280.07	25.485	0.091				
+SC_RS12530	methyltransferase	T3	154.17	17.834	0.11568				
+SC_RS12890	class I SAM-dependent methyltransferase	T1	1461.69	182.832	0.12508	-1.9306	-1.9135	-3.2216	-3.0705
+SC_RS12890	class I SAM-dependent methyltransferase	T2	378.95	40.154	0.10596				
+SC_RS12890	class I SAM-dependent methyltransferase	T3	156.57	23.089	0.14747				
+SC_RS12910	class I SAM-dependent methyltransferase	T1	76.79	2.731	0.03557	-1.225	-1.158	-0.7627	0.6885
+SC_RS12910	class I SAM-dependent methyltransferase	T2	30.93	0.841	0.02719				
+SC_RS12910	class I SAM-dependent methyltransferase	T3	42.97	5.559	0.12937				
+SC_RS13305	3-methyl-2-oxobutanoate hydroxymethyltransferase	T1	453.34	45.849	0.10114	-1.8353	-1.8854	-0.3232	-0.2435
+SC_RS13305	3-methyl-2-oxobutanoate hydroxymethyltransferase	T2	124.43	10.181	0.08182				
+SC_RS13305	3-methyl-2-oxobutanoate hydroxymethyltransferase	T3	360.45	41.11	0.11405				
+SC_RS13590	class I SAM-dependent methyltransferase	T1	131.89	16.468	0.12487	1.0093	1.0731	0.0579	0.1115
+SC_RS13590	class I SAM-dependent methyltransferase	T2	272.66	29.864	0.10953				
+SC_RS13590	class I SAM-dependent methyltransferase	T3	138.37	18.92	0.13674				
+SC_RS13615	class I SAM-dependent methyltransferase	T1	410.33	49.389	0.12037	-1.3085	-1.3106	-2.1286	-2.1479
+SC_RS13615	class I SAM-dependent methyltransferase	T2	162.32	16.323	0.10056				
+SC_RS13615	class I SAM-dependent methyltransferase	T3	92.82	11.742	0.12651				
+SC_RS13720	O-methyltransferase	T1	183.9	19.313	0.10502	0.8919	0.7797	-0.0933	0.0164
+SC_RS13720	O-methyltransferase	T2	348.76	28.392	0.08141				
+SC_RS13720	O-methyltransferase	T3	173.24	20.859	0.12041				
+SC_RS14675	SCO2525 family SAM-dependent methyltransferase	T1	103.29	11.101	0.10747	2.3681	2.349	2.8783	3.0633
+SC_RS14675	SCO2525 family SAM-dependent methyltransferase	T2	545.17	48.55	0.08905				
+SC_RS14675	SCO2525 family SAM-dependent methyltransferase	T3	775.76	101.243	0.13051				
+SC_RS14810	16S rRNA (uracil(1498)-N(3))-methyltransferase	T1	548.63	62.081	0.11316	-1.6655	-1.6923	-2.2727	-2.2281
+SC_RS14810	16S rRNA (uracil(1498)-N(3))-methyltransferase	T2	170.6	15.813	0.09269				
+SC_RS14810	16S rRNA (uracil(1498)-N(3))-methyltransferase	T3	113.01	14.041	0.12425				
+SC_RS15340	class I SAM-dependent methyltransferase	T1	15.87	1.316	0.08291	0.372	-0.3706	1.5647	1.2674
+SC_RS15340	class I SAM-dependent methyltransferase	T2	21.42	0.762	0.03559				
+SC_RS15340	class I SAM-dependent methyltransferase	T3	49.84	4.231	0.0849				
+SC_RS15430	methyltransferase domain-containing protein	T1	786.73	18.932	0.02406	-0.662	0.2229	-0.9005	0.6652
+SC_RS15430	methyltransferase domain-containing protein	T2	487.43	18.627	0.03821				
+SC_RS15430	methyltransferase domain-containing protein	T3	414.12	32.321	0.07805				
+SC_RS16160	class I SAM-dependent methyltransferase	T1	77.85	7.378	0.09477	-0.0204	-0.3408	-0.3253	-0.4175
+SC_RS16160	class I SAM-dependent methyltransferase	T2	76.56	4.741	0.06193				
+SC_RS16160	class I SAM-dependent methyltransferase	T3	60.33	6.19	0.10261				
+SC_RS16460	ATP-grasp peptide maturase system methyltransferase	T1	69.92	1.859	0.02659	0.3535	1.0244	0.4228	1.4104
+SC_RS16460	ATP-grasp peptide maturase system methyltransferase	T2	90.97	3.353	0.03686				
+SC_RS16460	ATP-grasp peptide maturase system methyltransferase	T3	94.61	6.048	0.06393				
+SC_RS17580	SAM-dependent methyltransferase	T1	256.07	14.889	0.05814	5.0564	5.2415	0.8619	1.1698
+SC_RS17580	SAM-dependent methyltransferase	T2	8629.61	477.731	0.05536				
+SC_RS17580	SAM-dependent methyltransferase	T3	477.19	35.925	0.07528				
+SC_RS17645	N-6 DNA methylase	T1	245.11	9.947	0.04058	-2.1949	-2.3729	-0.7108	-1.0126
+SC_RS17645	N-6 DNA methylase	T2	51.74	1.557	0.0301				
+SC_RS17645	N-6 DNA methylase	T3	145.14	5.467	0.03767				
+SC_RS17785	trans-aconitate 2-methyltransferase	T1	43.07	2.22	0.05153	-0.1334	0.5754	2.4159	3.4284
+SC_RS17785	trans-aconitate 2-methyltransferase	T2	39.17	2.857	0.07293				
+SC_RS17785	trans-aconitate 2-methyltransferase	T3	235.34	26.235	0.11148				
+SC_RS17855	16S rRNA (adenine(1518)-N(6)/adenine(1519)-N(6))-dimethyltransferase RsmA	T1	539.93	54.873	0.10163	-2.2274	-2.3042	-2.3992	-2.3662
+SC_RS17855	16S rRNA (adenine(1518)-N(6)/adenine(1519)-N(6))-dimethyltransferase RsmA	T2	113.36	9.094	0.08022				
+SC_RS17855	16S rRNA (adenine(1518)-N(6)/adenine(1519)-N(6))-dimethyltransferase RsmA	T3	100.75	11.369	0.11285				
+SC_RS17875	16S rRNA (cytidine(1402)-2'-O)-methyltransferase	T1	481.88	48.401	0.10044	-1.5233	-1.5718	-1.8476	-1.7488
+SC_RS17875	16S rRNA (cytidine(1402)-2'-O)-methyltransferase	T2	165.21	13.435	0.08132				
+SC_RS17875	16S rRNA (cytidine(1402)-2'-O)-methyltransferase	T3	131.83	15.602	0.11835				
+SC_RS18190	class I SAM-dependent methyltransferase	T1	13.61	0.927	0.06814	6.7715	7.0003	6.06	6.4674
+SC_RS18190	class I SAM-dependent methyltransferase	T2	1500.78	101.272	0.06748				
+SC_RS18190	class I SAM-dependent methyltransferase	T3	919.53	89.281	0.09709				
+SC_RS18645	SAM-dependent methyltransferase	T1	308.04	29.747	0.09657	0.0908	0.059	-1.1069	-1.1105
+SC_RS18645	SAM-dependent methyltransferase	T2	328.6	25.988	0.07909				
+SC_RS18645	SAM-dependent methyltransferase	T3	142.14	14.459	0.10172				
+SC_RS18690	bifunctional uroporphyrinogen-III C-methyltransferase/uroporphyrinogen-III synthase	T1	8557.44	390.147	0.04559	-1.9811	-1.9519	-2.2818	-2.0532
+SC_RS18690	bifunctional uroporphyrinogen-III C-methyltransferase/uroporphyrinogen-III synthase	T2	2109.92	82.029	0.03888				
+SC_RS18690	bifunctional uroporphyrinogen-III C-methyltransferase/uroporphyrinogen-III synthase	T3	1715.87	95.044	0.05539				
+SC_RS18820	class I SAM-dependent methyltransferase	T1	38.36	3.456	0.09008	1.7301	1.941	1.523	1.6556
+SC_RS18820	class I SAM-dependent methyltransferase	T2	132.21	11.734	0.08875				
+SC_RS18820	class I SAM-dependent methyltransferase	T3	114.67	12.363	0.10781				
+SC_RS19080	SAM-dependent methyltransferase	T1	369.14	24.436	0.0662	-0.8701	-0.7118	-1.4147	-1.1561
+SC_RS19080	SAM-dependent methyltransferase	T2	198.67	12.332	0.06207				
+SC_RS19080	SAM-dependent methyltransferase	T3	136.23	11.788	0.08653				
+SC_RS19385	methyltransferase domain-containing protein	T1	49.44	2.563	0.05183	0.0592	0.3127	0.7683	1.2878
+SC_RS19385	methyltransferase domain-containing protein	T2	51.54	2.723	0.05282				
+SC_RS19385	methyltransferase domain-containing protein	T3	86.51	7.6	0.08785				
+SC_RS19420	methyltransferase domain-containing protein	T1	22.49	1.825	0.08113	-1.3719	-1.1283	1.1567	1.2334
+SC_RS19420	methyltransferase domain-containing protein	T2	7.82	0.605	0.07736				
+SC_RS19420	methyltransferase domain-containing protein	T3	52.64	5.305	0.10078				
+SC_RS19670	DNA-methyltransferase	T1	3.78	0.098	0.02604	-0.2147	0.8902	3.5077	4.9208
+SC_RS19670	DNA-methyltransferase	T2	2.93	0.273	0.09301				
+SC_RS19670	DNA-methyltransferase	T3	48.03	4.397	0.09154				
+SC_RS19765	DNA cytosine methyltransferase	T1		0.289					
+SC_RS19765	DNA cytosine methyltransferase	T2		0.328					
+SC_RS19765	DNA cytosine methyltransferase	T3		6.518					
+SC_RS19770	DNA cytosine methyltransferase	T1	11.04	0.372	0.03369	-0.9363		2.3188	
+SC_RS19770	DNA cytosine methyltransferase	T2	4.59	0.101	0.02207				
+SC_RS19770	DNA cytosine methyltransferase	T3	62.13	4.378	0.07047				
+SC_RS20850	class I SAM-dependent methyltransferase	T1	16.77	0.791	0.04719	-0.0278	-0.02	1.2183	1.7921
+SC_RS20850	class I SAM-dependent methyltransferase	T2	16.25	0.637	0.03921				
+SC_RS20850	class I SAM-dependent methyltransferase	T3	41.26	3.739	0.09062				
+SC_RS21310	TrmH family RNA methyltransferase	T1	358.61	42.853	0.1195	0.2739	-0.9063	-1.496	-1.9286
+SC_RS21310	TrmH family RNA methyltransferase	T2	436.62	18.818	0.0431				
+SC_RS21310	TrmH family RNA methyltransferase	T3	125.08	12.086	0.09663				
+SC_RS21470	FkbM family methyltransferase	T1	97.84	7.243	0.07403	0.5023	0.9206	1.4389	1.9592
+SC_RS21470	FkbM family methyltransferase	T2	141.08	11.861	0.08407				
+SC_RS21470	FkbM family methyltransferase	T3	274.24	30.801	0.11232				
+SC_RS21570	16S rRNA (guanine(527)-N(7))-methyltransferase RsmG	T1	460.87	53.903	0.11696	-1.1572	-1.1783	-1.9844	-2.1099
+SC_RS21570	16S rRNA (guanine(527)-N(7))-methyltransferase RsmG	T2	203.77	19.629	0.09633				
+SC_RS21570	16S rRNA (guanine(527)-N(7))-methyltransferase RsmG	T3	114.13	13.518	0.11845				
+SC_RS22725	tRNA (guanosine(46)-N7)-methyltransferase TrmB	T1	446.71	45.279	0.10136	-2.3816	-2.4344	-2.355	-2.3958
+SC_RS22725	tRNA (guanosine(46)-N7)-methyltransferase TrmB	T2	84.47	6.875	0.08139				
+SC_RS22725	tRNA (guanosine(46)-N7)-methyltransferase TrmB	T3	85.35	9.306	0.10904				
+SC_RS23200	class I SAM-dependent methyltransferase	T1	88.26	9.486	0.10747	-1.1866	-1.1605	-0.5187	-0.7917
+SC_RS23200	class I SAM-dependent methyltransferase	T2	36.82	3.35	0.09097				
+SC_RS23200	class I SAM-dependent methyltransferase	T3	58.92	6.04	0.10251				
+SC_RS23365	23S rRNA (guanosine(2251)-2'-O)-methyltransferase RlmB	T1	1873.48	164.925	0.08803	-1.9668	-1.9459	-2.8804	-2.752
+SC_RS23365	23S rRNA (guanosine(2251)-2'-O)-methyltransferase RlmB	T2	471.06	35.2	0.07472				
+SC_RS23365	23S rRNA (guanosine(2251)-2'-O)-methyltransferase RlmB	T3	251.93	25.603	0.10163				
+SC_RS24550	O-methyltransferase	T1	14.69	2.066	0.14062	-0.6436	-0.6023	1.219	1.4641
+SC_RS24550	O-methyltransferase	T2	8.76	1.032	0.1178				
+SC_RS24550	O-methyltransferase	T3	36.69	7.182	0.19574				
+SC_RS24685	class I SAM-dependent DNA methyltransferase	T1	324.81	50.762	0.15628	-3.2248	-3.2633	-2.2455	-2.3546
+SC_RS24685	class I SAM-dependent DNA methyltransferase	T2	33.85	4.325	0.12776				
+SC_RS24685	class I SAM-dependent DNA methyltransferase	T3	66.1	10.888	0.16472				
+SC_RS24935	demethylmenaquinone methyltransferase	T1	1107.39	175.36	0.15835	-1.0831	-1.171	-1.7898	-1.7354
+SC_RS24935	demethylmenaquinone methyltransferase	T2	509.24	63.762	0.12521				
+SC_RS24935	demethylmenaquinone methyltransferase	T3	313.52	53.591	0.17093				
+SC_RS25365	class I SAM-dependent methyltransferase	T1	434.22	20.657	0.04757	-0.6834	-0.7341	-1.5622	-1.4056
+SC_RS25365	class I SAM-dependent methyltransferase	T2	267.11	10.215	0.03824				
+SC_RS25365	class I SAM-dependent methyltransferase	T3	145.94	8.417	0.05767				
+SC_RS25950	class I SAM-dependent methyltransferase	T1	146.92	13.263	0.09028	-1.6164	-1.4569	-0.9135	-0.9706
+SC_RS25950	class I SAM-dependent methyltransferase	T2	45.88	3.929	0.08564				
+SC_RS25950	class I SAM-dependent methyltransferase	T3	74.82	7.354	0.09829				
+SC_RS26345	glycine hydroxymethyltransferase	T1	267.63	15.756	0.05887	0.8812	0.8832	0.0172	0.1396
+SC_RS26345	glycine hydroxymethyltransferase	T2	498.94	24.693	0.04949				
+SC_RS26345	glycine hydroxymethyltransferase	T3	271.63	18.69	0.06881				
+SC_RS26520	class I SAM-dependent methyltransferase	T1	173.25	5.567	0.03213	2.3676	3.6914	0.9854	2.471
+SC_RS26520	class I SAM-dependent methyltransferase	T2	914.5	61.44	0.06718				
+SC_RS26520	class I SAM-dependent methyltransferase	T3	352.66	33.221	0.0942				
+SC_RS26525	class I SAM-dependent methyltransferase	T1	32.32	1.725	0.05337	6.15	6.9251	3.9015	4.8511
+SC_RS26525	class I SAM-dependent methyltransferase	T2	2316.52	178.659	0.07712				
+SC_RS26525	class I SAM-dependent methyltransferase	T3	491.86	54.015	0.10982				
+SC_RS27295	class I SAM-dependent methyltransferase	T1	76.89	6.564	0.08537	0.1581	0.4794	-0.2684	0.0603
+SC_RS27295	class I SAM-dependent methyltransferase	T2	86.04	7.802	0.09068				
+SC_RS27295	class I SAM-dependent methyltransferase	T3	62.7	7.547	0.12037				
+SC_RS27630	class I SAM-dependent methyltransferase	T1	18.7	1.811	0.09683	0.7547	1.1096	5.1397	3.6524
+SC_RS27630	class I SAM-dependent methyltransferase	T2	33.1	3.513	0.10613				
+SC_RS27630	class I SAM-dependent methyltransferase	T3	675.47	26.057	0.03858				
+SC_RS27895	O-methyltransferase	T1	894.87	91.175	0.10189	-1.4637	-1.5159	-2.0258	-1.7735
+SC_RS27895	O-methyltransferase	T2	320.24	26.345	0.08227				
+SC_RS27895	O-methyltransferase	T3	218.3	28.514	0.13062				
+SC_RS28465	class I SAM-dependent methyltransferase	T1	332.83	31.197	0.09373	2.1571	2.3068	1.2947	1.6774
+SC_RS28465	class I SAM-dependent methyltransferase	T2	1525.43	132.5	0.08686				
+SC_RS28465	class I SAM-dependent methyltransferase	T3	842.27	105.753	0.12556				
+SC_RS28835	BREX-2 system adenine-specific DNA-methyltransferase PglX	T1	604.28	14.043	0.02324	-0.6011	-0.6313	-0.6457	-0.7675
+SC_RS28835	BREX-2 system adenine-specific DNA-methyltransferase PglX	T2	395.17	7.528	0.01905				
+SC_RS28835	BREX-2 system adenine-specific DNA-methyltransferase PglX	T3	381.69	9.071	0.02377				
+SC_RS28985	peptide chain release factor N(5)-glutamine methyltransferase	T1	896.34	93.408	0.10421	-2.2654	-2.2786	-2.6753	-2.7144
+SC_RS28985	peptide chain release factor N(5)-glutamine methyltransferase	T2	183.65	15.847	0.08629				
+SC_RS28985	peptide chain release factor N(5)-glutamine methyltransferase	T3	139.17	15.2	0.10922				
+SC_RS29000	serine hydroxymethyltransferase	T1	90.33	4.436	0.0491	-0.1208	0.2237	0.4222	0.6455
+SC_RS29000	serine hydroxymethyltransferase	T2	82.47	4.388	0.05321				
+SC_RS29000	serine hydroxymethyltransferase	T3	121.83	7.83	0.06427				
+SC_RS29535	serine hydroxymethyltransferase	T1	5658.91	403.954	0.07138	-0.6019	-0.6342	-3.002	-2.8542
+SC_RS29535	serine hydroxymethyltransferase	T2	3668.89	214.264	0.0584				
+SC_RS29535	serine hydroxymethyltransferase	T3	693.23	57.049	0.0823				
+SC_RS29545	glycine cleavage system aminomethyltransferase GcvT	T1	2738.36	208.097	0.07599	-1.1591	-1.152	-3.129	-3.0175
+SC_RS29545	glycine cleavage system aminomethyltransferase GcvT	T2	1194.62	76.466	0.06401				
+SC_RS29545	glycine cleavage system aminomethyltransferase GcvT	T3	307.53	26.257	0.08538				
+SC_RS30050	16S rRNA (guanine(966)-N(2))-methyltransferase RsmD	T1	408.38	61.789	0.1513	-1.2854	-1.3722	-1.8698	-1.8686
+SC_RS30050	16S rRNA (guanine(966)-N(2))-methyltransferase RsmD	T2	164.61	19.589	0.119				
+SC_RS30050	16S rRNA (guanine(966)-N(2))-methyltransferase RsmD	T3	110.97	17.808	0.16048				
+SC_RS30165	class I SAM-dependent methyltransferase	T1	36.63	3.386	0.09245	3.9788	4.0316	3.1437	3.3586
+SC_RS30165	class I SAM-dependent methyltransferase	T2	582.58	46.658	0.08009				
+SC_RS30165	class I SAM-dependent methyltransferase	T3	329.0	37.198	0.11306				
+SC_RS30190	tRNA (guanosine(37)-N1)-methyltransferase TrmD	T1	862.0	90.221	0.10467	-2.7015	-2.6787	-2.9605	-3.0564
+SC_RS30190	tRNA (guanosine(37)-N1)-methyltransferase TrmD	T2	130.88	11.622	0.0888				
+SC_RS30190	tRNA (guanosine(37)-N1)-methyltransferase TrmD	T3	109.75	11.457	0.10439				
+SC_RS30440	23S rRNA (adenine(2503)-C(2))-methyltransferase RlmN	T1	1694.63	134.912	0.07961	-0.6957	-0.7222	-1.9493	-1.829
+SC_RS30440	23S rRNA (adenine(2503)-C(2))-methyltransferase RlmN	T2	1035.34	67.803	0.06549				
+SC_RS30440	23S rRNA (adenine(2503)-C(2))-methyltransferase RlmN	T3	434.88	39.963	0.09189				
+SC_RS31720	SAM-dependent methyltransferase	T1	18.15	0.628	0.03463	3.939	5.1423	5.1865	6.5832
+SC_RS31720	SAM-dependent methyltransferase	T2	288.95	19.552	0.06767				
+SC_RS31720	SAM-dependent methyltransferase	T3	682.93	65.163	0.09542				
+SC_RS31750	class I SAM-dependent RNA methyltransferase	T1	1770.9	109.949	0.06209	-2.574	-2.5537	-2.9517	-2.9083
+SC_RS31750	class I SAM-dependent RNA methyltransferase	T2	295.0	15.535	0.05266				
+SC_RS31750	class I SAM-dependent RNA methyltransferase	T3	227.83	15.735	0.06906				
+SC_RS32105	3' terminal RNA ribose 2'-O-methyltransferase Hen1	T1	294.44	17.073	0.05798	-2.0084	-2.1248	-1.5244	-1.8647
+SC_RS32105	3' terminal RNA ribose 2'-O-methyltransferase Hen1	T2	71.59	3.176	0.04436				
+SC_RS32105	3' terminal RNA ribose 2'-O-methyltransferase Hen1	T3	99.01	5.043	0.05093				
+SC_RS32600	damage-control phosphatase ARMT1 family protein	T1	66.37	3.76	0.05665	0.3345	0.3933	0.5791	0.5805
+SC_RS32600	damage-control phosphatase ARMT1 family protein	T2	85.04	4.228	0.04972				
+SC_RS32600	damage-control phosphatase ARMT1 family protein	T3	100.48	6.547	0.06515				
+SC_RS32685	23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(O)	T1	9.82	0.924	0.09407	-0.5776	-0.784	2.01	1.6852
+SC_RS32685	23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(O)	T2	5.37	0.337	0.0627				
+SC_RS32685	23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(O)	T3	44.96	4.031	0.08965				
+SC_RS32935	homocysteine S-methyltransferase	T1	72.23	7.373	0.10207	-0.2389	-0.2818	0.0165	-0.2033
+SC_RS32935	homocysteine S-methyltransferase	T2	60.66	5.006	0.08253				
+SC_RS32935	homocysteine S-methyltransferase	T3	72.28	7.097	0.09819				
+SC_RS33005	methylated-DNA--[protein]-cysteine S-methyltransferase	T1	22.2	4.938	0.22242	2.3755	2.1341	2.0675	2.0209
+SC_RS33005	methylated-DNA--[protein]-cysteine S-methyltransferase	T2	119.42	18.813	0.15754				
+SC_RS33005	methylated-DNA--[protein]-cysteine S-methyltransferase	T3	97.18	22.024	0.22663				
+SC_RS34410	class I SAM-dependent methyltransferase	T1	3.29	0.107	0.03252	1.5267	2.5885	4.9161	6.1799
+SC_RS34410	class I SAM-dependent methyltransferase	T2	11.71	0.795	0.06792				
+SC_RS34410	class I SAM-dependent methyltransferase	T3	110.98	10.483	0.09446				
+SC_RS34505	methylated-DNA--[protein]-cysteine S-methyltransferase	T1	18.78	3.237	0.17239	1.3599	1.2796	1.7121	1.7888
+SC_RS34505	methylated-DNA--[protein]-cysteine S-methyltransferase	T2	50.78	6.968	0.13721				
+SC_RS34505	methylated-DNA--[protein]-cysteine S-methyltransferase	T3	64.84	12.747	0.19659				
+SC_RS34620	class I SAM-dependent methyltransferase	T1	6.43	0.741	0.11522	2.2432	2.2221	3.0575	2.7424
+SC_RS34620	class I SAM-dependent methyltransferase	T2	33.97	3.247	0.09559				
+SC_RS34620	class I SAM-dependent methyltransferase	T3	57.45	6.332	0.11022				
+SC_RS34745	methyltransferase domain-containing protein	T1	58.56	5.663	0.09671	6.3777	6.4466	2.1657	2.3848
+SC_RS34745	methyltransferase domain-containing protein	T2	4982.37	425.688	0.08544				
+SC_RS34745	methyltransferase domain-containing protein	T3	275.27	33.398	0.12133				
+SC_RS34875	SAM-dependent methyltransferase	T1	78.66	8.582	0.10911	0.2832	0.2686	0.1638	0.0263
+SC_RS34875	SAM-dependent methyltransferase	T2	97.05	8.793	0.0906				
+SC_RS34875	SAM-dependent methyltransferase	T3	88.03	9.808	0.11142				
+SC_RS34900	class I SAM-dependent methyltransferase	T1	74.69	8.763	0.11732	0.5635	0.6115	0.3936	0.5206
+SC_RS34900	class I SAM-dependent methyltransferase	T2	112.1	11.429	0.10196				
+SC_RS34900	class I SAM-dependent methyltransferase	T3	99.89	13.767	0.13782				
+SC_RS34935	class I SAM-dependent methyltransferase	T1	69.78	4.35	0.06235	1.0088	1.407	0.7105	1.0905
+SC_RS34935	class I SAM-dependent methyltransferase	T2	143.23	9.908	0.06917				
+SC_RS34935	class I SAM-dependent methyltransferase	T3	115.72	10.377	0.08967				
+SC_RS35230	SAM-dependent methyltransferase	T1	428.02	46.827	0.1094	1.6539	1.7156	0.0968	0.3627
+SC_RS35230	SAM-dependent methyltransferase	T2	1373.4	131.34	0.09563				
+SC_RS35230	SAM-dependent methyltransferase	T3	460.54	63.879	0.13871				
+SC_RS35235	SAM-dependent methyltransferase	T1	39.79	4.425	0.11121	1.1959	1.1629	0.7947	0.702
+SC_RS35235	SAM-dependent methyltransferase	T2	94.76	8.595	0.0907				
+SC_RS35235	SAM-dependent methyltransferase	T3	70.54	8.16	0.11568				
+SC_RS35335	BREX-2 system adenine-specific DNA-methyltransferase PglX	T1	1666.26	38.449	0.02307	0.25	0.2824	-0.7518	-0.6195
+SC_RS35335	BREX-2 system adenine-specific DNA-methyltransferase PglX	T2	1989.3	39.411	0.01981				
+SC_RS35335	BREX-2 system adenine-specific DNA-methyltransferase PglX	T3	979.84	26.266	0.02681				
+SC_RS36410	DNA cytosine methyltransferase	T1	1.35	0.059	0.04394	1.0602	0.6949	5.3353	5.3662
+SC_RS36410	DNA cytosine methyltransferase	T2	4.25	0.135	0.0318				
+SC_RS36410	DNA cytosine methyltransferase	T3	64.91	3.515	0.05416				
+SC_RS36625	DNA-methyltransferase	T1	2.72	0.09	0.03313	0.3076	-0.1883	3.8712	4.803
+SC_RS36625	DNA-methyltransferase	T2	3.95	0.049	0.01239				
+SC_RS36625	DNA-methyltransferase	T3	46.0	4.015	0.08728				
+SC_RS36850	methyltransferase%2C FxLD system	T1	62.73	2.4	0.03826	1.4712	1.549	4.1965	4.525
+SC_RS36850	methyltransferase%2C FxLD system	T2	179.2	6.039	0.0337				
+SC_RS36850	methyltransferase%2C FxLD system	T3	1171.57	58.846	0.05023				
+SC_RS36945	SAM-dependent methyltransferase	T1	150.74	27.239	0.1807	0.7808	0.724	1.5814	0.1085
+SC_RS36945	SAM-dependent methyltransferase	T2	265.26	38.44	0.14491				
+SC_RS36945	SAM-dependent methyltransferase	T3	464.5	31.738	0.06833				
+SC_RS37490	methyltransferase domain-containing protein	T1	9.21	0.386	0.04189	-0.9078		1.2962	
+SC_RS37490	methyltransferase domain-containing protein	T2	3.94	0.112	0.02833				
+SC_RS37490	methyltransferase domain-containing protein	T3	26.25	4.76	0.18135				
+SC_RS37505	class I SAM-dependent methyltransferase	T1	31.29	3.146	0.10053	1.5706	0.3287	0.5632	0.4179
+SC_RS37505	class I SAM-dependent methyltransferase	T2	96.24	3.385	0.03517				
+SC_RS37505	class I SAM-dependent methyltransferase	T3	46.86	4.906	0.1047				
+SC_RS37540	putative protein N(5)-glutamine methyltransferase	T1	53.01	6.613	0.12474	-0.9911	-1.097	-0.0933	-0.2813
+SC_RS37540	putative protein N(5)-glutamine methyltransferase	T2	25.48	2.45	0.09614				
+SC_RS37540	putative protein N(5)-glutamine methyltransferase	T3	48.78	6.081	0.12467				
+SC_RS37815	class I SAM-dependent methyltransferase	T1	0.0	0.0		1.7883	1.6445	8.2543	7.4939
+SC_RS37815	class I SAM-dependent methyltransferase	T2	1.83	0.188	0.1026				
+SC_RS37815	class I SAM-dependent methyltransferase	T3	38.96	3.807	0.09771				
+SC_RS38275	methyltransferase type 11	T1	47.2	27.278	0.57792	-1.0368	-1.209	-1.2671	-1.8184
+SC_RS38275	methyltransferase type 11	T2	21.72	9.151	0.42131				
+SC_RS38275	methyltransferase type 11	T3	17.96	8.113	0.45175				
+SC_RS38280	SAM-dependent methyltransferase	T1	100.84	12.836	0.12729	-0.2674	-0.3733	-0.9163	-1.2294
+SC_RS38280	SAM-dependent methyltransferase	T2	82.8	8.17	0.09867				
+SC_RS38280	SAM-dependent methyltransferase	T3	50.89	5.941	0.11675				
+SC_RS39225	SAM-dependent methyltransferase	T1	1441.9	181.913	0.12616	0.7176	0.7362	-1.3313	-1.1463
+SC_RS39225	SAM-dependent methyltransferase	T2	2409.83	257.889	0.10702				
+SC_RS39225	SAM-dependent methyltransferase	T3	563.77	84.624	0.1501				
+SC_RS39430	SAM-dependent methyltransferase	T1	9.11	1.1	0.12075	0.4351	0.3362	2.358	2.1405
+SC_RS39430	SAM-dependent methyltransferase	T2	13.4	1.254	0.09358				
+SC_RS39430	SAM-dependent methyltransferase	T3	50.82	6.054	0.11913				
+SC_RS39465	methyltransferase	T1	14.18	1.118	0.07882	2.1186	2.1794	2.0018	1.8867
+SC_RS39465	methyltransferase	T2	65.35	4.504	0.06891				
+SC_RS39465	methyltransferase	T3	59.35	4.958	0.08354				
+SC_RS40100	SAM-dependent methyltransferase	T1	76.97	8.964	0.11646	2.0102	2.15	1.3733	1.6244
+SC_RS40100	SAM-dependent methyltransferase	T2	314.95	33.876	0.10756				
+SC_RS40100	SAM-dependent methyltransferase	T3	203.4	30.247	0.14871				
+SC_RS40280	SAM-dependent methyltransferase	T1	130.17	14.117	0.10845	2.9473	2.9137	-0.0514	-0.0358
+SC_RS40280	SAM-dependent methyltransferase	T2	1019.78	90.831	0.08907				
+SC_RS40280	SAM-dependent methyltransferase	T3	126.98	14.339	0.11292				
+SC_RS40540	isoprenylcysteine carboxyl methyltransferase family protein	T1	0.78	0.15	0.19226	0.4805		4.5306	
+SC_RS40540	isoprenylcysteine carboxyl methyltransferase family protein	T2	1.64	0.195	0.11871				
+SC_RS40540	isoprenylcysteine carboxyl methyltransferase family protein	T3	23.38	4.103	0.17551				
+SC_RS40630	class I SAM-dependent methyltransferase	T1	3.81	0.482	0.12654	0.615	0.569	3.0455	2.6445
+SC_RS40630	class I SAM-dependent methyltransferase	T2	7.01	0.716	0.1021				
+SC_RS40630	class I SAM-dependent methyltransferase	T3	35.75	4.08	0.11411				
+SC_RS40690	geranyl diphosphate 2-C-methyltransferase	T1	4.63	0.327	0.07056	5.181	5.6601	4.3486	4.8142
+SC_RS40690	geranyl diphosphate 2-C-methyltransferase	T2	172.02	14.331	0.08331				
+SC_RS40690	geranyl diphosphate 2-C-methyltransferase	T3	97.06	10.526	0.10845				
+SC_RS40760	SAM-dependent methyltransferase	T1	22.24	1.959	0.0881	4.3367	4.103	3.8483	3.2219
+SC_RS40760	SAM-dependent methyltransferase	T2	461.02	29.527	0.06405				
+SC_RS40760	SAM-dependent methyltransferase	T3	330.53	20.738	0.06274				
+SC_RS41180	class I SAM-dependent methyltransferase	T1	85.18	9.267	0.10879	1.4492	1.4782	0.8832	1.0172
+SC_RS41180	class I SAM-dependent methyltransferase	T2	237.87	22.158	0.09315				
+SC_RS41180	class I SAM-dependent methyltransferase	T3	160.81	20.605	0.12813				
+SC_RS41210	class I SAM-dependent methyltransferase	T1	64.05	6.451	0.10072	2.5324	2.4793	1.398	1.4411
+SC_RS41210	class I SAM-dependent methyltransferase	T2	378.49	30.918	0.08169				
+SC_RS41210	class I SAM-dependent methyltransferase	T3	173.83	19.311	0.11109				

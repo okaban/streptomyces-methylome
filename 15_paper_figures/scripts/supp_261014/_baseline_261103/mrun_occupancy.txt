@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/okaban/bioinfo/rna-seq/15_paper_figures/scripts/supp_261014/suppfigure_merged_occupancy_261103.py", line 295, in <module>
+    report(save(build(), "SuppFigure_merged_occupancy_261103.png",
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/okaban/bioinfo/rna-seq/15_paper_figures/scripts/supp_261014/_suppstyle.py", line 165, in save
+    _collision_checker()(fig, name=name, allow_over_data=allow_over_data)
+  File "/Users/okaban/bioinfo/rna-seq/15_paper_figures/scripts/00_shared_utils.py", line 1011, in assert_no_text_collisions
+    raise AssertionError(f"[{name}] " + " | ".join(msg))
+AssertionError: [SuppFigure_merged_occupancy_261103.png] text overlaps text: [('Per-read probability (0–1)', 'Panels a-d site rule: three ')]

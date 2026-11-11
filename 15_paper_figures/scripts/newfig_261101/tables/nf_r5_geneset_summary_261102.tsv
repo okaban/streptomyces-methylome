@@ -1,0 +1,9 @@
+mark	group	n_genes_in_group	n_genes_with_level	mean_level	median_level	q1	q3
+4mC	Other protein-coding genes	6057	1204	0.6439	0.6578	0.5683	0.7422
+4mC	KEGG primary metabolism	1013	258	0.6558	0.6667	0.5779	0.7417
+4mC	antiSMASH BGC genes	926	189	0.6476	0.6535	0.5703	0.7394
+4mC	TEST KEGG vs BGC (Mann-Whitney U)	258	189	25086.5	0.601		
+6mA	Other protein-coding genes	6057	746	0.3886	0.3812	0.2679	0.4969
+6mA	KEGG primary metabolism	1013	193	0.3835	0.3734	0.2661	0.4842
+6mA	antiSMASH BGC genes	926	113	0.3756	0.3717	0.275	0.4684
+6mA	TEST KEGG vs BGC (Mann-Whitney U)	193	113	10966.5	0.934		

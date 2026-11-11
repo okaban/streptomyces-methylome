@@ -22,12 +22,12 @@ import numpy as np
 
 from _gccggc import DEPTH_MIN, eligible, genome, level, motif_positions, pooled
 from _suppstyle import (DATA_DIR, GREY, NAR_WIDTH_IN, RED, apply_figure_style,
-                        figure_panel_letters, report, save, source_note)
+                        figure_panel_letters, report, save)
 
 N = json.load(open(DATA_DIR / "numbers.json"))
 S = N["s13"]
 
-apply_figure_style(frame="open", sizes=(7.0, 6.2, 6.0))
+apply_figure_style(frame="boxed", sizes=(7.0, 6.2, 6.0))
 
 g = genome()
 duplex, _tgg = motif_positions(g)
@@ -41,9 +41,9 @@ assert len(fp) == S["occ_eligible"], f"{len(fp)} eligible duplexes, expected {S[
 
 
 def build():
-    fig = plt.figure(figsize=(NAR_WIDTH_IN, 3.05))
+    fig = plt.figure(figsize=(NAR_WIDTH_IN, 2.65))
     gs = fig.add_gridspec(1, 2, width_ratios=[0.74, 1.0], wspace=0.40,
-                          left=0.105, right=0.985, top=0.845, bottom=0.235)
+                          left=0.105, right=0.985, top=0.8216, bottom=0.1195)
 
     ax_a = fig.add_subplot(gs[0, 0])
     pct_nm = 100 * S["nonmotif_ge50"] / S["nonmotif_eligible"]
@@ -51,9 +51,7 @@ def build():
     ax_a.plot([-0.25, 0.25], [0, 0], color=GREY, lw=1.8, solid_capstyle="butt")
     ax_a.text(0, 0.22, f"{S['nonmotif_ge50']} of {S['nonmotif_eligible'] / 1e6:.2f} M\n({pct_nm:.3f} %)",
               ha="center", va="bottom", fontsize=6.2, linespacing=1.4)
-    ax_a.text(0, 1.55,
-              f"{S['nonmotif_ge25']} at $\\geq$ 25 %,\n{S['nonmotif_ge10']} at $\\geq$ 10 %",
-              ha="center", va="bottom", fontsize=6.0, color="0.45", linespacing=1.4)
+    # [D119 で削除: 25%/10% 閾値での件数注記]
     ax_a.text(1, S["motif_pct"] + 0.22,
               f"{S['motif_called']:,} of {S['motif_eligible']:,}\n({S['motif_pct']:.2f} %)",
               ha="center", va="bottom", fontsize=6.2, linespacing=1.4)
@@ -69,10 +67,15 @@ def build():
     ax_b.scatter(fp * 100, fm * 100, s=1.6, color=RED, alpha=0.30, lw=0, rasterized=True)
     ax_b.axhline(50, color="0.6", ls=":", lw=0.7)
     ax_b.axvline(50, color="0.6", ls=":", lw=0.7)
-    ax_b.text(99, 57, f"both strands\n{S['both']} ({S['both_pct']:.1f} %)",
-              ha="right", va="bottom", fontsize=6.2)
-    ax_b.text(99, 43, f"one strand only\n{S['one']:,} ({S['one_pct']:.1f} %)",
-              ha="right", va="top", fontsize=6.2)
+    # [D119 で削除: both strands の件数注記]
+    # [D119 で削除: one strand only の件数注記]
+    # 2026-11-07 補足図点検 6: 右上象限（両鎖とも >= 50%）に 40 点あり、パネルの主張
+    # 「片鎖に印を持つ」と見た目が食い違う。この 40 件は全件が回文 TGGCCGGCCA である
+    # ことを同じ入力・同じ規則で数え直して確認した（_check_both_strand_261107.py:
+    # eligible 16,043 / both >= 50% 40 / TGGCCGGCCA 40）。記号や色を足さず注記で示す
+    # （共著者コメント C31「グラフ内にいろんな記号と色の印があり極めて読み取りづらい」）。
+    assert S["both"] == 40, S["both"]
+    # 2026-11-09 著者コメント [15]: パネル b の説明文は凡例文に移した。
     ax_b.set_xlabel("+ strand 4mC frequency (%)")
     ax_b.set_ylabel("$-$ strand 4mC frequency (%)")
     ax_b.set_xlim(-3, 103)
@@ -82,12 +85,6 @@ def build():
     ax_b.set_title("", loc="left", fontsize=6.6)
 
     figure_panel_letters(fig, [ax_a, ax_b], "ab", dx=[0.088, 0.072], dy=0.010)
-    source_note(fig,
-                "Source: deposited modkit pileups of the nine modified-base BAMs (T1 = libraries 1-1/1-2/1-3). Site rule: three libraries pooled\n"
-                f"per timepoint, pre-pooling true depth (Nvalid_cov + Nfail) >= {DEPTH_MIN}, pooled modified fraction >= 50 %. "
-                f"n = {S['nonmotif_eligible']:,} eligible non-motif\ncytosines (both recognition sequences excluded) and "
-                f"{S['occ_eligible']:,} hexamer GCCGGC occurrences with both strands eligible.",
-                y=0.010)
     return fig
 
 
@@ -97,4 +94,4 @@ if __name__ == "__main__":
              f"one strand only\n{S['one']:,} ({S['one_pct']:.1f} %)")
     # 出荷名は SuppFigure3.png（補足図 6 -> 3 の改番、2026-10-24 に出力名を追随）。
     # SuppFigure6.png は現在 GC 統制図（suppfigure6b_gc_control_261022.py）が占める。
-    report(save(build(), "SuppFigure3.png", allow_over_data=inbar))
+    report(save(build(), "SuppFigure1.png", allow_over_data=inbar))

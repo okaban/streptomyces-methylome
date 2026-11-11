@@ -28,6 +28,8 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import to_rgb
 import pandas as pd
 from PIL import Image
+import os as _os
+_FD = int(_os.environ.get('FIG_DPI', 300))  # 2026-11-09 解像度上書き
 
 # ── style ───────────────────────────────────────────────────────────────────
 U.apply_unified_style()
@@ -58,9 +60,9 @@ PALE_6mA = tuple(0.45 * c + 0.55 for c in to_rgb(U.COL_6mA))
 # ── figure ──────────────────────────────────────────────────────────────────
 # 677/300 x 661/300 in, not the rounded 2.257 x 2.203 — the latter truncates to
 # 660 px of height and fails the composer's size check.
-fig = plt.figure(figsize=(677 / 300, 661 / 300), dpi=300)
+fig = plt.figure(figsize=(677 / 300, 661 / 300), dpi=_FD)
 ax = fig.add_subplot(111)
-fig.subplots_adjust(left=0.175, right=0.995, bottom=0.085, top=0.845)
+fig.subplots_adjust(left=0.195, right=0.995, bottom=0.175, top=0.930)
 
 XC, BW = 0.0, 0.76
 segs = [
@@ -87,28 +89,30 @@ xb = BW / 2 + 0.05
 ax.plot([xb - 0.045, xb, xb, xb - 0.045],
         [0.6, 0.6, p_inscope - 0.6, p_inscope - 0.6],
         color=U.COL_DARK, lw=0.8, solid_capstyle='butt', zorder=3, clip_on=False)
-ax.text(xb + 0.055, p_inscope / 2, f'{p_inscope:.1f}%\nin motif\nspace',
+ax.text(xb + 0.055, p_inscope / 2, f'{p_inscope:.1f}% in\n4mC motif\nspace',
         ha='left', va='center', color=U.COL_DARK,
         fontsize=U.FONT['annot'], linespacing=1.2, zorder=4)
 
-ax.set_xlim(-0.5, 0.80)
+ax.set_xlim(-0.5, 0.86)
 ax.set_ylim(0, 100)
 ax.set_yticks([0, 20, 40, 60, 80, 100])
 ax.set_xticks([XC])
-ax.set_xticklabels([f'n = {TOT}'])
+# 2026-11-07 共著者コメント C19「ぱっと見、なんの bar グラフかわからん」。
+# 何を数えた棒なのか（由来・単位・母数）を x 軸に置く。
+ax.set_xticklabels([f'Contexts reported as 5mC\n(bisulfite, Pisciotta 2023)\nn = {TOT}'])
 ax.tick_params(axis='x', length=0)
-ax.set_ylabel('% of reported 5mC sites', labelpad=2)
+ax.set_ylabel('Share of reported contexts (%)', labelpad=2)  # 2026-10-27: 572 は配列文脈数であって部位数ではない（部位単位なら 75.7%）。2026-11-07 C19: 由来は x 軸へ移したので軸名を短縮
 ax.set_title('',
              loc='left', x=0.075, linespacing=1.2)
-U.style_axes(ax)
+U.style_axes(ax, frame=True)
 
 # ── save + verify ───────────────────────────────────────────────────────────
-fig.savefig(OUT_PNG, dpi=300, transparent=True, bbox_inches=None, pad_inches=0)
+fig.savefig(OUT_PNG, dpi=_FD, transparent=True, bbox_inches=None, pad_inches=0)
 
 # The three in-segment texts are identity labels deliberately placed on a bar,
 # which is the sanctioned use of allow_over_data.
 U.assert_no_text_collisions(fig, 'Fig2d', allow_over_data=tuple(inside))
 
-assert Image.open(OUT_PNG).size == (677, 661), Image.open(OUT_PNG).size
+assert all(abs(a-round(b*_FD/300))<=2 for a,b in zip(Image.open(OUT_PNG).size, (677, 661))), Image.open(OUT_PNG).size
 print('size ok (677, 661)')
 print('pct', round(pf, 2), round(pg, 2), round(po, 2), round(p_inscope, 3))

@@ -1,0 +1,6 @@
+  [SuppFigure6.png] text-collision check: clean
+  T1: 4mC 2,909 sites, 6mA 416 sites
+  T2: 4mC 2,869 sites, 6mA 450 sites
+  T3: 4mC 2,839 sites, 6mA 453 sites
+SuppFigure6.png: 2040x2115 px, 172.7 x 179.1 mm
+wrote s6 keys: ['n4', 'n6', 'm4_bin_sums', 'm6_bin_sums', 'm4_bin_max', 'm6_bin_max', 'status_counts']

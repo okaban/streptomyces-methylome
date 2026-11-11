@@ -1,0 +1,5 @@
+test	unit_of_analysis	n	statistic	mde	design
+Promoter-proximal 6mA level (±100 bp of a TSS vs elsewhere)	culture units	9	Cohen's d	1.067	one-sample t, two-sided, alpha = 0.05, power = 0.80
+TSS-level ratio measurable in both windows	transcription start sites	117	Cohen's d	0.261	one-sample t, two-sided, alpha = 0.05, power = 0.80
+Gene-level methylation-expression correlation	regulatory genes with assignable TSS	1051	|r|	0.0863	Fisher z, two-sided, alpha = 0.05, power = 0.80
+Per-read co-modification contingency (4mC/6mA on the same read)	read-by-instance observations	39799	odds ratio	1.04	本文 L258 の記載値。周辺度数が本文に宣言されていないため再計算していない（著者確認）

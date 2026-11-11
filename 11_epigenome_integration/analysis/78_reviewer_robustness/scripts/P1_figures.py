@@ -10,8 +10,11 @@ import matplotlib.pyplot as plt
 
 BASE = os.path.expanduser("~/bioinfo/rna-seq/11_epigenome_integration/analysis/78_reviewer_robustness")
 T = os.path.join(BASE, "tables"); F = os.path.join(BASE, "figures")
-OK = dict(blue="#0072B2", vermillion="#D55E00", green="#009E73",
-          grey="#999999", purple="#CC79A7", orange="#E69F00")
+# 2026-11-03 FIG23（著者決定 2026-11-02）: 意味を持つのは 4mC 赤・6mA 青・デュアル紫だけ。
+# この図の区分（near/far、観測/帰無、感度曲線）はマークではないので中立グレー段に置き換える。
+# 名前は呼び出し側を変えないために残す。
+OK = dict(blue="#444444", vermillion="#2b2b2b", green="#c8c8c8",
+          grey="#b4b4b4", purple="#8c8c8c", orange="#d4d4d4")
 # 4mC / 6mA のマーク色は原稿共通の定数から取る（00_shared_utils、著者決定 2026-09-26）。
 import importlib.util as _ilu
 _spec = _ilu.spec_from_file_location("_su", os.path.expanduser(

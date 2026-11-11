@@ -1,3 +1,5 @@
+# 2026-11-05 D188: 補足図 12→9 の削減。出荷名 SuppFigure4.png -> SUPERSEDED_SuppFigure4_removed_D188.png。
+# 2026-11-04 著者決定: 区別は軸ラベル・パネル内表記・形が担っているので、色で重ねて符号化しない（中立グレー）。
 #!/usr/bin/env python3
 """補足図 6 — TSS 近傍のモチーフ枯渇に対する GC 含量の統制。
 
@@ -54,8 +56,8 @@ TSV = pathlib.Path("/Users/okaban/bioinfo/rna-seq/15_paper_figures/scripts/"
 # 表示名（2 行）と正準色。GCCGGC は六塩基コアであって 4mC 標的の 8 塩基 TGGCCGGC
 # ではない。ここで数えているのは配列 availability の分母なので六塩基で正しい。
 ROWS = [
-    ("GCCGGC hexamer", "GCCGGC\n(hexamer)", U.COL_4mC),
-    ("AAGCCCG both strands", "AAGCCCG\n(both strands)", U.COL_BOTH),
+    ("GCCGGC hexamer", "GCCGGC\n(hexamer)", "#2b2b2b"),
+    ("AAGCCCG both strands", "AAGCCCG\n(both strands)", "#6b6b6b"),
     ("GGC or GCC trinucleotide", "GGC or GCC\n(trinucleotide)", U.COL_GRAY),
 ]
 
@@ -67,7 +69,7 @@ for key, _, _ in ROWS:
     assert abs(r.ratio_unmatched - r.claimed_unmatched) < 5e-4, key
     assert int(r.observed) == int(r.claimed_observed), key
 
-apply_figure_style(frame="open", sizes=(7.5, 6.5, 6.5))
+apply_figure_style(frame="boxed", sizes=(7.5, 6.5, 6.5))
 
 
 def build():
@@ -117,4 +119,4 @@ def build():
 
 
 if __name__ == "__main__":
-    report(save(build(), "SuppFigure6.png"))
+    report(save(build(), "SUPERSEDED_SuppFigure4_removed_D188.png"))

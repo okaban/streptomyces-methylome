@@ -1,0 +1,23 @@
+theme	value_id	quantity	value	unit	denominator	universe_n	timepoint	rule
+5′ context ladder, adjusted effects	DET.6mA.M3G.OR.T2	offset -3 が G であることの効果（局所 GC・log 深度統制後）	14.5	OR	HAAGCCCG インスタンス	561	T2	565 の HAAGCCCG 集合内でのロジスティック回帰 called ~ -3 塩基 + 局所 GC(101 bp) + log10(深度)。-3=A を基準とするオッズ比
+Unassigned 6mA fraction	MOTIF.SECOND.BIPARTITE.BEST	未帰属 6mA に対する二分割モチーフ探索の最良ヒット率	10.2	%	GGCGGNNNNGTCAC のゲノム出現	147	T1	補正後 T1 未帰属 6mA 1,531 部位の ±25 bp 窓。左右ブロック 3-5 塩基、スペーサー 2-12 塩基、メチル化 A はブロック内。ヒット率 = そのパターンのゲノム出現のうち高信頼 6mA の割合
+Unassigned 6mA fraction	UNASG.6mA.REPRO.3TP	未帰属 6mA のうち 3 時点すべてで未帰属として呼ばれる割合	58.98	%	T1 の未帰属 6mA 部位	1531	T1	補正後の部位集合で T1 ∩ T2 ∩ T3
+Unassigned 6mA fraction	UNASG.6mA.NEARCOGNATE.OR	AAGCCCG からハミング距離 1 以内の文脈への偏り	2.17	OR	適格な非モチーフ参照アデニン（真深度>=30、呼ばれなかった位置を対照とする）	2412520	T1	局所 GC 十分位で層別した Cochran–Mantel–Haenszel。モチーフは既知 cognate で固定し、呼ばれた部位からは導出していない
+Unassigned 6mA fraction	UNASG.6mA.CRUN.OR	修飾鎖の読み枠で 3′ 側に C が 3 連続以上あることの効果	2.56	OR	適格な非モチーフ参照アデニン（真深度>=30、呼ばれなかった位置を対照とする）	2412520	T1	局所 GC 十分位で層別した CMH。同一 GC の G 連続を内部対照とする
+Other	MOTIF.SECOND.CONTIG.BEST	未帰属 6mA に対する連続 k-mer 探索の最良ヒット率	7.6	%	GGCAACCC のゲノム出現	368	T1	同上、連続 4-8 塩基
+Other	UNASG.6mA.NEARCOGNATE.GAP	近縁文脈と cognate の占有率の開き	57	倍	AACCCCG の修飾率	2114	T1	最良の近縁変異体 AACCCCG 0.804% に対する HAAGCCCG 45.84% の比
+Unassigned 6mA fraction	XTALK.NONMOTIF.N	対照に使った非モチーフ高信頼 6mA コール数	2101211	コール	なし（構成的カウント）			本文は 2.1 million と丸めて記載
+Other	AUDIT.G05.NINST.T1	共修飾インスタンス数	288	インスタンス	AAGCCCG インスタンス	1334	T1	共修飾（同一鎖 3-4 bp 離れた 4mC/6mA 対）インスタンスの最近傍距離を 一様帰無と比べる Clark–Evans R。帰無は同数のランダム配置 1,000 回
+Other	AUDIT.G05.NINST.T2	共修飾インスタンス数	296	インスタンス	AAGCCCG インスタンス	1334	T2	共修飾（同一鎖 3-4 bp 離れた 4mC/6mA 対）インスタンスの最近傍距離を 一様帰無と比べる Clark–Evans R。帰無は同数のランダム配置 1,000 回
+Other	AUDIT.G05.NINST.T3	共修飾インスタンス数	289	インスタンス	AAGCCCG インスタンス	1334	T3	共修飾（同一鎖 3-4 bp 離れた 4mC/6mA 対）インスタンスの最近傍距離を 一様帰無と比べる Clark–Evans R。帰無は同数のランダム配置 1,000 回
+Other	SITES.4mC.AAGCCCG.T3	AAGCCCG 位置 5 で 4mC と判定された部位数	973	部位	AAGCCCG インスタンス（両鎖）	1334	T3	時点ごとに 3 ライブラリをプール / プール後の真深度 (Nvalid_cov+Nfail) 合計 >= 30 / プール Nmod/Nvalid >= 0.5
+Other	REGION.CDS.TGGCCGGC.T3	TGGCCGGC 修飾部位のうち CDS 内の割合	93.7	%	TGGCCGGC 鎖指定位置の修飾部位	1866	T3	正準センサス（3 ライブラリ合算、真深度 >= 30、合算 Nmod/Nvalid >= 0.5）の部位を4 区分に優先順で割り当て
+Other	REGION.CDS.AAGCCCG4.T1	AAGCCCG4 修飾部位のうち CDS 内の割合	86.6	%	AAGCCCG 位置 5 の修飾部位	1023	T1	正準センサス（3 ライブラリ合算、真深度 >= 30、合算 Nmod/Nvalid >= 0.5）の部位を4 区分に優先順で割り当て
+Other	REGION.CDS.AAGCCCG4.T2	AAGCCCG4 修飾部位のうち CDS 内の割合	87.1	%	AAGCCCG 位置 5 の修飾部位	977	T2	正準センサス（3 ライブラリ合算、真深度 >= 30、合算 Nmod/Nvalid >= 0.5）の部位を4 区分に優先順で割り当て
+Other	REGION.CDS.AAGCCCG4.T3	AAGCCCG4 修飾部位のうち CDS 内の割合	86.9	%	AAGCCCG 位置 5 の修飾部位	973	T3	正準センサス（3 ライブラリ合算、真深度 >= 30、合算 Nmod/Nvalid >= 0.5）の部位を4 区分に優先順で割り当て
+Other	REGION.CDS.AAGCCCG6.T3	AAGCCCG6 修飾部位のうち CDS 内の割合	90.3	%	AAGCCCG 位置 1/2 の修飾部位（モチーフ総数 2,668 のうち）	453	T3	正準センサス（3 ライブラリ合算、真深度 >= 30、合算 Nmod/Nvalid >= 0.5）の部位を4 区分に優先順で割り当て
+Other	COLOC.SITE.T1.INSTANCES	両マークを持つ AAGCCCG インスタンス（T1 のみ）	288	インスタンス	AAGCCCG インスタンス	1334	T1	3 ライブラリ合算・真深度 (Nvalid_cov+Nfail) >= 30・合算 Nmod/Nvalid >= 0.5 で呼んだゲノム全体の 4mC / 6mA 部位。共修飾 = C が 4mC 部位かつ A が 6mA 部位（同一鎖）
+Local GC effect on occupancy	GC.6mA.BETA.T1	HAAGCCCG 6mA の局所 GC 効果（回帰係数）	13.4				T1	モチーフを除いた 50 bp 窓（両側 25 bp）の GC 含量を説明変数、部位のメチル化状態を応答とするロジスティック回帰。5′ 隣接塩基と真の深度を共変量に投入
+Local GC effect on occupancy	GC.4mC.BETA.T1	TGGCCGGC 4mC の局所 GC 効果（回帰係数）	-6.4				T1	モチーフを除いた 50 bp 窓（両側 25 bp）の GC 含量を説明変数、部位のメチル化状態を応答とするロジスティック回帰。5′ 隣接塩基と真の深度を共変量に投入
+Unassigned 6mA fraction	UNASG.6mA.INTERGENIC.OR	未帰属 6mA の遺伝子間領域への偏り（GC・深度調整後）	1.98	OR	適格な非モチーフ参照アデニン	2412520	T1	分母は同じ深度条件を満たしながら呼ばれなかった非モチーフ参照アデニン 2,412,520 箇所。ロジスティック回帰 called ~ GC + log10(深度) + 遺伝子間 + ホモポリマー + プロモーター + 反復
+5′ context ladder, adjusted effects	DET.6mA.M3G.OR.T3	offset -3 が G であることの効果（局所 GC・log 深度統制後）	17.0	OR	HAAGCCCG インスタンス	561	T3	565 の HAAGCCCG 集合内でのロジスティック回帰 called ~ -3 塩基 + 局所 GC(101 bp) + log10(深度)。-3=A を基準とするオッズ比

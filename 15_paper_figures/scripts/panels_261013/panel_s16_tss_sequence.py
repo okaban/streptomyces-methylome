@@ -1,6 +1,7 @@
-# 2026-10-24: 出力名を SuppFigure16.png から SuppFigure10.png へ修正。
+# 2026-11-05 D188: 補足図 12→9 の削減。出荷名 SuppFigure7.png -> SuppFigure6.png。
+# 2026-10-24: 出力名を SuppFigure16.png から SuppFigure7.png へ修正。
 # renumber_supp.py が PNG を 16 -> 10 に改番したとき、この生成器が追随して
-# いなかった。figure_manifest.tsv はこのスクリプトを SuppFigure10.png の
+# いなかった。figure_manifest.tsv はこのスクリプトを SuppFigure7.png の
 # 生成器として登録しているので、再実行すると出荷されない名前に書き、
 # 補足図 10 は作り直せないままだった。check_provenance.py の
 # check_figure_name_coverage が検出。
@@ -16,7 +17,7 @@ reference sequence only. No methylation call, no gene classification.
     core and in the flanks, with TSS-level bootstrap 95% CIs.
 
 Inputs : data_261013/s16_tss_sequence_profile.csv, s16_tss_sequence_oe.csv
-Output : figures_261013/SuppFigure10.png
+Output : figures_261013/SuppFigure7.png
 """
 import sys
 from pathlib import Path
@@ -66,7 +67,9 @@ def build(out_path=None):
 
     # ---- (b) motif density ----------------------------------------------
     fl = np.abs(prof.offset_bp) > 600
-    C4 = U.MOTIF_COLORS.get('TGGCCGGC', U.COL_BAR_DARK)
+    # 2026-11-09 (D208): MOTIF_COLORS は配列ロゴ用の塩基色で、ここは系列＝化学種なので
+    # 意味色を使う。従来は #B71C1C（ロゴの赤）が出ていて配色規約から外れていた。
+    C4 = U.COL_4mC
     for col, colour, lw, ls, lab in (
             ('tggccggc_per_kb', C4, 1.8, '-', 'TGGCCGGC (87.5% GC)'),
             ('aagcccg_per_kb', U.COL_BOTH, 1.5, '-', 'AAGCCCG (71.4% GC)')):
@@ -100,8 +103,15 @@ def build(out_path=None):
     for xc, lab in ((0.39, 'TGGCCGGC'), (2.34, 'AAGCCCG')):
         axc.annotate(lab, xy=(xc, -0.135), xycoords=('data', 'axes fraction'),
                      ha='center', va='top', fontsize=7.0, color=U.COL_DARK)
-    axc.annotate('*', xy=(0, d.loc['TGGCCGGC_core', 'ci_hi'] + 0.09), ha='center', va='bottom',
-                 fontsize=10, color=U.COL_DARK)
+    # 2026-10-27 [F15]: アスタリスクは TGGCCGGC_core だけに決め打ちしてあった。
+    # 4 本目の AAGCCCG_flank も CI が 1.0 を外れる（1.268、1.096-1.441、濃縮側）のに
+    # 無印で、「アスタリスクは CI が 1 を含まないことを示す」という凡例の規則に
+    # 反していた。以後は CI から機械的に判定する（depletion / enrichment の別を問わない）。
+    for xi, series in zip(xpos, order):
+        lo, hi = d.loc[series, 'ci_lo'], d.loc[series, 'ci_hi']
+        if lo > 1.0 or hi < 1.0:
+            axc.annotate('*', xy=(xi, hi + 0.09), ha='center', va='bottom',
+                         fontsize=10, color=U.COL_DARK)
     U.style_axes(axc, grid=True, grid_axis='y')
 
     # [FIG03] パネル記号は組版確定後に図座標の一定位置へ置く。軸ボックス左端からの
@@ -117,8 +127,10 @@ def build(out_path=None):
     # [FIG01] 図全体のタイトルは画像に焼き込まない（Supplementary Figure 16 の見出しは凡例側）。
     # n_tss は凡例本文に書くため、ここでは描画しない。
 
-    out = Path(out_path) if out_path else OUT / 'SuppFigure10.png'
-    U.save_figure_raster(fig, out, width_class='full', dpi=300)
+    out = Path(out_path) if out_path else OUT / 'SuppFigure6.png'
+    # 2026-11-04: この生成器だけ文字の幾何検査を一度も呼んでいなかった。
+    U.assert_no_text_collisions(fig, 'SuppFigure7')
+    U.save_figure_raster(fig, out, width_class="full", dpi=int(__import__("os").environ.get("FIG_DPI",300)))
     plt.close(fig)
     return out
 

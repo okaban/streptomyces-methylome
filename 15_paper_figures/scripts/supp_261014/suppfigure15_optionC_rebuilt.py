@@ -1,3 +1,4 @@
+# 2026-11-05 D188: 補足図 12→9 の削減。出荷名 SuppFigure6.png -> SuppFigure5.png。
 #!/usr/bin/env python3
 """Supplementary Figure 9 — rebuilt to lead with the molecule-level distribution.
 
@@ -43,8 +44,8 @@ BIST = six.bistable_pred.mean()
 WITHIN = PCd.excess.mean()
 BETWEEN = six.excess_conc.mean()
 
-C_OBS, C_STO, C_EPI = "#c0552b", "#1b4965", "#9aa7b0"
-C_BTW = "#e0a98f"
+C_OBS, C_STO, C_EPI = "#2b2b2b", "#6b6b6b", "#a8a8a8"  # FIG23: モデル区分は中立グレー
+C_BTW = "#d4d4d4"
 # データキー（CSV の mark 列）と表示ラベルは別物。キーを呼称規則に合わせて
 # 書き換えると照合が空になるので、表示だけ「hexamer」を付ける。
 # 2026-10-22: was 4mC navy / 6mA orange -- the canonical pair with the hues
@@ -55,13 +56,13 @@ MC = {"GCCGGC 4mC": RED, "AAGCCCG 6mA": BLUE}
 # 1.8 % にしかならないので、この量は 8 塩基のものである。キーは照合用なので据え置く。
 DISPLAY = {"GCCGGC 4mC": "TGGCCGGC 4mC", "AAGCCCG 6mA": "AAGCCCG 6mA"}
 
-apply_figure_style(frame="open", sizes=(7.0, 6.2, 6.0))
+apply_figure_style(frame="boxed", sizes=(7.0, 6.2, 6.0))
 
 
 def build():
-    fig = plt.figure(figsize=(NAR_WIDTH_IN, 3.30))
+    fig = plt.figure(figsize=(NAR_WIDTH_IN, 2.95))  # 2026-11-09: 図下の散文を削り 0.35 in 詰めた
     gs = fig.add_gridspec(1, 4, width_ratios=[1.46, 1.20, 1.00, 1.10], wspace=0.95,
-                          left=0.062, right=0.985, top=0.840, bottom=0.265)
+                          left=0.062, right=0.985, top=0.821, bottom=0.178)
 
     # (a) 1 分子が読めた 4 箇所のうち何箇所が 6mA か — 観測・独立配置・エピアレル
     ax_a = fig.add_subplot(gs[0, 0])
@@ -75,7 +76,8 @@ def build():
     ax_a.set_xticks(xs)
     ax_a.set_xlabel("Modified sites on one molecule\n(of the four AAGCCCG sites it covers)")
     ax_a.set_ylabel("Molecules (%)")
-    ax_a.set_ylim(0, 72)
+    # 2026-11-09 著者コメント [12]: 凡例が柱に重なっていた。上に凡例帯を確保する。
+    ax_a.set_ylim(0, 88)
     ax_a.set_xlim(-0.62, 4.62)
     ax_a.set_title("", loc="left")
     ax_a.legend(handles=[Patch(facecolor=C_OBS, edgecolor="none", label="observed"),
@@ -83,8 +85,9 @@ def build():
                                 label="independent placement"),
                          Patch(facecolor="none", edgecolor=C_EPI, lw=0.9, hatch="////",
                                label="epiallele prediction")],
-                frameon=False, fontsize=6.0, loc="upper center", handlelength=1.3,
-                borderpad=0.0, labelspacing=0.30, handletextpad=0.5)
+                frameon=False, fontsize=6.0, loc="upper left", handlelength=1.3,
+                borderpad=0.0, labelspacing=0.26, handletextpad=0.5,
+                bbox_to_anchor=(-0.02, 1.02))
 
     # (b) 残る連関を 2 つの参照点に対して置く — 水平棒にして軸側にラベル
     ax_b = fig.add_subplot(gs[0, 1])
@@ -94,12 +97,12 @@ def build():
     for i, (lab, v, col) in enumerate(rows):
         ax_b.barh(i, v, height=0.52, color=col, zorder=3)
         ax_b.text(v + 0.014, i, f"{v:.3f}", va="center", ha="left", fontsize=6.2,
-                  color=col if col != C_EPI else "#6f7c85", fontweight="bold")
+                  color="#4a4a4a", fontweight="bold")
     ax_b.axvline(0, color=META_GREY, lw=0.8)
     ax_b.set_yticks(range(len(rows)))
     ax_b.set_yticklabels([r[0] for r in rows], fontsize=6.0)
     ax_b.set_ylim(-0.60, len(rows) - 0.40)
-    ax_b.set_xlim(0, 0.63)
+    ax_b.set_xlim(0, 0.70)
     ax_b.set_xticks([0, 0.2, 0.4, 0.6])
     ax_b.set_xlabel("Excess concordance between\ntwo sites on one molecule")
     ax_b.set_title("", loc="left")
@@ -138,7 +141,7 @@ def build():
         handles.append(Line2D([0], [0], color=col, lw=1.6, label=f"{lab}  {m:.3f}"))
     ax_d.set_xticks([])
     ax_d.set_xlim(-0.62, 1.62)
-    ax_d.set_ylim(-0.03, 0.60)
+    ax_d.set_ylim(-0.03, 0.72)
     ax_d.set_yticks([0, 0.1, 0.2, 0.3, 0.4, 0.5])
     ax_d.set_ylabel("Excess within-molecule structure\n(\u0394H above permutation null)")
     ax_d.set_title("", loc="left")
@@ -147,16 +150,8 @@ def build():
 
     figure_panel_letters(fig, [ax_a, ax_b, ax_c, ax_d], "abcd",
                          dx=[0.055, 0.068, 0.062, 0.070], dy=0.022)
-    # 出所のみ。定義・検定・解釈は本文の図説（Figure-Legends.md）に置く。
-    note = (
-        "T1 reads covering exactly four AAGCCCG sites whose 5\u2032 base is not G (a, n = {n} molecules); per-read calls from the MM/ML "
-        "tags of the nine alignments, SD over libraries (b, c); canonical nine-library extraction restricted to those {i} instances, "
-        "selected because their per-read rate is near one half, against "
-        "sequence-matched non-motif triplets (d)."
-    ).format(n=NUM["n_mol"], i=NUM["n_inst"])
-    source_note(fig, textwrap.fill(note, 132), y=0.030)
     return fig
 
 
 if __name__ == "__main__":
-    report(save(build(), "SuppFigure9.png"))
+    report(save(build(), "SuppFigure5.png"))

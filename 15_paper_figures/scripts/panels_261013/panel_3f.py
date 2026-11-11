@@ -17,6 +17,8 @@ import pandas as pd, numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 from matplotlib.colors import to_rgba
+import os as _os
+_FD = int(_os.environ.get('FIG_DPI', 300))  # 2026-11-09 解像度上書き
 
 # ---- shared project style module (name starts with a digit) -----------------
 sys.path.insert(0, '/Users/okaban/bioinfo/rna-seq/15_paper_figures/scripts')
@@ -38,61 +40,54 @@ GC_CSV = str(_DATA_DIR / "va4cc78a0_gc_quintile_both_marks_261008.csv")      # t
 flank = pd.read_csv(FLANK_CSV)
 gc = pd.read_csv(GC_CSV)
 
-fig = plt.figure(figsize=(2125 / 300, 566 / 300), dpi=300)
+# 2026-11-07 共著者コメント C11「left と right でグラフのアルファベットを分けるべき。
+# right のグラフがあまり見慣れないので初見の人でも理解しやすいように工夫してほしい」。
+# 1 枚のタイルに左右 2 図を載せる形をやめ、独立したタイル 2 枚にして、合成側で
+# それぞれに別のパネル文字を振る。panel_3f1.png = 5′ 塩基、panel_3f2.png = 局所 GC。
+# 併せて C12「fig3a と e の示し方を統一」に従い、5′ 塩基の図を棒から
+# マーカー＋軸名 'Occupancy (%)' に替えてパネル (a) と同じ文法にした。
+OUT_L = str(Path(__file__).with_name('panel_3f1.png'))
+OUT_R = str(Path(__file__).with_name('panel_3f2.png'))
 
-# ---- geometry (figure fractions); top-left ~10x6 mm left clear for the
-#      composer's panel letter --------------------------------------------
-BOT, TOP = 0.247, 0.835
-H = TOP - BOT
-axL = fig.add_axes([0.065, BOT, 0.186, H])
-axR = fig.add_axes([0.468, BOT, 0.373, H])
-
-# ============================ LEFT: 5' flank base ===========================
+# ============================ TILE 1: 5' flank base =========================
+figL = plt.figure(figsize=(700 / 300, 566 / 300), dpi=_FD)
+axL = figL.add_axes([0.200, 0.290, 0.760, 0.610])
 order = ['C', 'T', 'A', 'G']
 vals = [float(flank.loc[flank.flank_base == b, 'occ_6mA_pct'].iloc[0]) for b in order]
 xs = np.arange(len(order))
-axL.bar(xs, vals, width=0.68, color=U.COL_6mA, edgecolor='none', zorder=3)
+# 2026-11-09 著者コメント [8]: 点ではなく棒にする。
+axL.bar(xs, vals, width=0.58, color=U.COL_6mA, linewidth=0, zorder=3)
 axL.set_xticks(xs)
 axL.set_xticklabels(order)
 axL.set_xlim(-0.65, len(order) - 0.35)
 axL.set_ylim(0, 58)
 axL.set_yticks([0, 20, 40])
-axL.set_ylabel('6mA occupancy (%)')
+axL.set_ylabel('Occupancy (%)')
+# 2026-11-09 [8][10]: 母数と時点の注記は凡例文へ。軸名だけ残す。
 axL.set_xlabel(f'Base 5{PRIME} of AAGCCCG')
-U.style_axes(axL)
+U.style_axes(axL, frame=True)
+# 5′ 非 G 対 5′G の比の分解（5.51/3.00/1.84 倍）は本文 R3 にあるので図には置かない
+# （2026-11-07, C11: 図内の記号と文字を減らす）。
+U.assert_no_text_collisions(figL, 'panel_3f1')
+figL.savefig(OUT_L, dpi=_FD, transparent=True, bbox_inches=None, pad_inches=0)
 
-# headline value on the mark that carries the claim
-axL.text(xs[-1], vals[-1] + 2.4, '8.3', ha='center', va='bottom',
-         fontsize=6.5, color=U.COL_6mA, zorder=4)
-
-# narrative annotation -> whitespace between the two sub-plots
-fig.text(0.262, TOP - 0.035,
-         # 2026-10-24: ラベルが対比を取り違えていた（整合性監査 CA08）。この 3 値は
-         # 5′ が G でないもの（H = A/C/T）対 5′ が G の対比であって、5′C 対 5′G ではない。
-         # 本文 R4 は「HAAGCCCG occupancy exceeds GAAGCCCG 5.55-fold」と書いており、
-         # 46.17 / 8.32 = 5.549 もレジストリもその読みを支持する。
-         f'5{PRIME} non-G : 5{PRIME}G ratio\n'
-         f'  in motif       5.55{TIMES}\n'
-         f'  non-motif      3.00{TIMES}\n'
-         f'  residual       1.85{TIMES}',
-         ha='left', va='top', fontsize=6.5, color=U.COL_DARK, linespacing=1.8)
-
-# ============================ RIGHT: GC quintiles ===========================
+# ============================ TILE 2: GC quintiles ==========================
+fig = plt.figure(figsize=(1300 / 300, 566 / 300), dpi=_FD)
+BOT, TOP = 0.290, 0.900
+axR = fig.add_axes([0.105, BOT, 0.530, TOP - BOT])
 # 第 1 要素は入力表 'mark' 列との照合キー（変更不可）、第 2 要素が図に出す表示名。
 # 2026-10-15: 6mA 側の表示名を 'HAAGCCCG 6mA' から層の名前に変えた。認識配列は AAGCCCG
 # 一本に統一した（DECIDED.6mA.DENOMINATOR.261015）ため、図に第 2 のモチーフ名を出さない。
 # 層別自体は撤去できない: 5' の G はそれ自体が GC なので、両クラスを混ぜると局所 GC と
 # 5' 塩基が交絡する。本文はこの勾配が 5' 塩基で調整しても残ることを述べている。
-series = [('TGGCCGGC 4mC', 'TGGCCGGC 4mC', U.COL_4mC, f'93.4 {ARROW} 84.9%', f'\u03b2 = {MINUS}6.4'),
-          ('HAAGCCCG 6mA', f'6mA, 5{PRIME} base not G', U.COL_6mA, f'25.1 {ARROW} 83.3%', '\u03b2 = +13.4')]
+# 2026-11-07 (C11): T2/T3 の淡い複製線を外し、1 マークにつき 1 本の線にした。
+# 3 時点とも同じ勾配であることは本文と Supplementary Table に記載がある。
+series = [('TGGCCGGC 4mC', 'TGGCCGGC 4mC', U.COL_4mC, f'93.4 {ARROW} 84.9%', ''),
+          ('HAAGCCCG 6mA', f'6mA, 5{PRIME} base not G', U.COL_6mA, f'25.1 {ARROW} 83.3%', '')]
 q = np.arange(1, 6)
 for key, label, col, rng, beta in series:
     sub = gc[gc['mark'] == key]
     assert len(sub), f"GC 五分位表に mark='{key}' が無い。入力表のラベル変更の取り残し"
-    for tp in ('T2', 'T3'):                      # pale replicates behind
-        y = sub[sub.timepoint == tp].sort_values('gc_quintile')['meth_pct'].to_numpy()
-        axR.plot(q, y, '-', color=to_rgba(col, 0.30), lw=2.4, zorder=2,
-                 solid_capstyle='round')
     y1 = sub[sub.timepoint == 'T1'].sort_values('gc_quintile')['meth_pct'].to_numpy()
     axR.plot(q, y1, '-', color=col, lw=1.4, marker='o', ms=3.4,
              mfc=col, mec='white', mew=0.6, zorder=4)
@@ -106,26 +101,22 @@ axR.set_ylabel('Occupancy (%)')
 axR.set_xlabel(f'Local GC quintile, motif excluded  (low {ARROW} high)')
 axR.set_title('',
               loc='left', pad=4)
-U.style_axes(axR)
+U.style_axes(axR, frame=True)
 
-# direct labels in the right margin, one short leader each
-LBLX = 5.62
-for (key, label, col, rng, beta), (yend, ylab) in zip(series, [(84.88, 97.0), (83.33, 48.0)]):
-    # leader carries no text of its own, so it cannot become a text-collision finding
-    axR.annotate('', xy=(5.04, yend), xytext=(LBLX - 0.06, ylab),
-                 annotation_clip=False,
-                 arrowprops=dict(arrowstyle='-', color=to_rgba(col, 0.55),
-                                 lw=0.7, shrinkA=2, shrinkB=2,
-                                 connectionstyle='arc3,rad=0'))
-    axR.text(LBLX, ylab, f'{label}\n{rng}\n{beta}',
-             ha='left', va='center', fontsize=6.5, color=col,
-             linespacing=1.6, clip_on=False)
+# 2026-11-09 著者コメント [10]: 右余白の直接ラベルは数値を抱えた散文になっていた。
+# 系列名だけの凡例に替え、始点と終点の占有率は本文と凡例文に置く。
+for key, label, col, rng, beta in series:
+    axR.plot([], [], '-', color=col, lw=1.4, marker='o', ms=3.4,
+             mfc=col, mec='white', mew=0.6, label=label)
+axR.legend(loc='center left', bbox_to_anchor=(0.02, 0.62), frameon=False,
+           fontsize=6.5, handlelength=1.4, labelspacing=0.35, borderaxespad=0.0)
 
 # ---- checks + save ----------------------------------------------------------
-U.assert_no_text_collisions(fig, 'panel_3f')
-fig.savefig(OUT_PNG, dpi=300, transparent=True, bbox_inches=None, pad_inches=0)
+U.assert_no_text_collisions(fig, 'panel_3f2')
+fig.savefig(OUT_R, dpi=_FD, transparent=True, bbox_inches=None, pad_inches=0)
 
 from PIL import Image
-sz = Image.open(OUT_PNG).size
-assert sz == (2125, 566), sz
-print('size', sz)
+for p_, want in ((OUT_L, (700, 566)), (OUT_R, (1300, 566))):
+    sz = Image.open(p_).size
+    assert all(abs(a-round(b*_FD/300))<=2 for a,b in zip(sz, want)), (p_, sz)
+    print('size', Path(p_).name, sz)

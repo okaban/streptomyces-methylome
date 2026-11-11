@@ -1,0 +1,49 @@
+tp	contrast	gc_window	strata	n_expo	n_site_expo	crude_OR	MH_OR	lo	hi	mark
+T1	divergent vs genic	+-250 bp	GC x depth (5x5)	111551.0	43.0	0.6	1.049	0.772	1.427	6mA_nonmotif
+T1	convergent vs genic	+-250 bp	GC x depth (5x5)	39551.0	66.0	2.602	2.568	2.004	3.29	6mA_nonmotif
+T1	tandem vs genic	+-250 bp	GC x depth (5x5)	171185.0	172.0	1.565	2.043	1.741	2.398	6mA_nonmotif
+T1	all_intergenic vs genic	+-250 bp	GC x depth (5x5)	322287.0	281.0	1.358	1.87	1.642	2.131	6mA_nonmotif
+T2	divergent vs genic	+-250 bp	GC x depth (5x5)	111552.0	44.0	0.55	0.972	0.718	1.315	6mA_nonmotif
+T2	convergent vs genic	+-250 bp	GC x depth (5x5)	39551.0	79.0	2.789	2.832	2.257	3.554	6mA_nonmotif
+T2	tandem vs genic	+-250 bp	GC x depth (5x5)	171235.0	176.0	1.434	1.893	1.618	2.215	6mA_nonmotif
+T2	all_intergenic vs genic	+-250 bp	GC x depth (5x5)	322338.0	299.0	1.294	1.812	1.599	2.054	6mA_nonmotif
+T3	divergent vs genic	+-250 bp	GC x depth (5x5)	111552.0	55.0	0.628	1.09	0.831	1.432	6mA_nonmotif
+T3	convergent vs genic	+-250 bp	GC x depth (5x5)	39551.0	88.0	2.838	2.892	2.333	3.587	6mA_nonmotif
+T3	tandem vs genic	+-250 bp	GC x depth (5x5)	171230.0	187.0	1.391	1.847	1.586	2.151	6mA_nonmotif
+T3	all_intergenic vs genic	+-250 bp	GC x depth (5x5)	322333.0	330.0	1.304	1.819	1.614	2.051	6mA_nonmotif
+T1	divergent vs genic	+-250 bp	GC x depth (5x5)	228964.0	0.0					4mC_nonmotif
+T1	convergent vs genic	+-250 bp	GC x depth (5x5)	118116.0	0.0					4mC_nonmotif
+T1	tandem vs genic	+-250 bp	GC x depth (5x5)	403948.0	0.0					4mC_nonmotif
+T1	all_intergenic vs genic	+-250 bp	GC x depth (5x5)	751028.0	0.0					4mC_nonmotif
+T2	divergent vs genic	+-250 bp	GC x depth (5x5)	228966.0	0.0					4mC_nonmotif
+T2	convergent vs genic	+-250 bp	GC x depth (5x5)	118116.0	0.0					4mC_nonmotif
+T2	tandem vs genic	+-250 bp	GC x depth (5x5)	404041.0	0.0					4mC_nonmotif
+T2	all_intergenic vs genic	+-250 bp	GC x depth (5x5)	751123.0	0.0					4mC_nonmotif
+T3	divergent vs genic	+-250 bp	GC x depth (5x5)	228962.0	0.0		0.0			4mC_nonmotif
+T3	convergent vs genic	+-250 bp	GC x depth (5x5)	118114.0	0.0		0.0			4mC_nonmotif
+T3	tandem vs genic	+-250 bp	GC x depth (5x5)	404025.0	0.0		0.0			4mC_nonmotif
+T3	all_intergenic vs genic	+-250 bp	GC x depth (5x5)	751101.0	0.0		0.0			4mC_nonmotif
+T1	divergent vs genic	+-25 bp	GC x depth (5x5)				1.206	0.888	1.637	6mA_nonmotif
+T1	convergent vs genic	+-25 bp	GC x depth (5x5)				2.223	1.735	2.849	6mA_nonmotif
+T1	tandem vs genic	+-25 bp	GC x depth (5x5)				2.236	1.906	2.624	6mA_nonmotif
+T1	convergent_vs_divergent	+-25 bp	GC x depth x gap-length x dist-to-edge (4 quartiles)				2.398	1.579	3.643	6mA_nonmotif
+T1	convergent_vs_tandem	+-25 bp	GC x depth x gap-length x dist-to-edge (4 quartiles)				1.058	0.791	1.414	6mA_nonmotif
+T1	convergent vs all other intergenic	+-25 bp	GC x depth (5x5)				1.209	0.915	1.598	6mA_nonmotif
+T1	convergent vs all other intergenic	+-250 bp	GC x depth (5x5)				1.582	1.191	2.101	6mA_nonmotif
+T2	divergent vs genic	+-25 bp	GC x depth (5x5)				1.128	0.834	1.525	6mA_nonmotif
+T2	convergent vs genic	+-25 bp	GC x depth (5x5)				2.432	1.938	3.053	6mA_nonmotif
+T2	tandem vs genic	+-25 bp	GC x depth (5x5)				2.082	1.779	2.436	6mA_nonmotif
+T2	convergent_vs_divergent	+-25 bp	GC x depth x gap-length x dist-to-edge (4 quartiles)				2.609	1.73	3.935	6mA_nonmotif
+T2	convergent_vs_tandem	+-25 bp	GC x depth x gap-length x dist-to-edge (4 quartiles)				1.199	0.912	1.576	6mA_nonmotif
+T2	convergent vs all other intergenic	+-25 bp	GC x depth (5x5)				1.429	1.1	1.855	6mA_nonmotif
+T2	convergent vs all other intergenic	+-250 bp	GC x depth (5x5)				1.818	1.395	2.368	6mA_nonmotif
+T3	divergent vs genic	+-25 bp	GC x depth (5x5)				1.261	0.961	1.653	6mA_nonmotif
+T3	convergent vs genic	+-25 bp	GC x depth (5x5)				2.482	2.002	3.078	6mA_nonmotif
+T3	tandem vs genic	+-25 bp	GC x depth (5x5)				2.019	1.734	2.351	6mA_nonmotif
+T3	convergent_vs_divergent	+-25 bp	GC x depth x gap-length x dist-to-edge (4 quartiles)				2.16	1.489	3.135	6mA_nonmotif
+T3	convergent_vs_tandem	+-25 bp	GC x depth x gap-length x dist-to-edge (4 quartiles)				1.249	0.96	1.624	6mA_nonmotif
+T3	convergent vs all other intergenic	+-25 bp	GC x depth (5x5)				1.463	1.142	1.875	6mA_nonmotif
+T3	convergent vs all other intergenic	+-250 bp	GC x depth (5x5)				1.877	1.461	2.411	6mA_nonmotif
+T1	convergent_vs_divergent	+-250 bp	GC x depth x gap-length x dist-to-gene-edge (4 quartiles each)	151102.0	109.0		3.146	2.05	4.829	6mA_nonmotif
+T2	convergent_vs_divergent	+-250 bp	GC x depth x gap-length x dist-to-gene-edge (4 quartiles each)	151103.0	123.0		3.198	2.131	4.799	6mA_nonmotif
+T3	convergent_vs_divergent	+-250 bp	GC x depth x gap-length x dist-to-gene-edge (4 quartiles each)	151103.0	143.0		2.907	2.011	4.203	6mA_nonmotif

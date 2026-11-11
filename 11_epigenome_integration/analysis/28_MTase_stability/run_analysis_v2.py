@@ -1,3 +1,7 @@
+# 2026-11-04 V22: SCO 番号は手入力で 3 件が誤っていた（SC_RS28835 SCO5333→SCO5331、SC_RS35335 SCO6843→SCO6627、
+# SC_RS36410 SCO7091→SCO6844）。正本は 05_annotation/.../gene_annotation_basic.tsv の old_locus_tag 列。
+# SC_RS19770 は同表に old_locus_tag を持たないので None にした（SCO3527 は裏が取れない）。
+# あわせて main_motif / mod_type の手入力を None にした。本稿はこれらのタンパク質に認識配列を割り当てない。
 #!/usr/bin/env python3
 """
 Hypothesis H5 v2: MTase Expression Stability vs Methylation-Expression Correlation
@@ -27,23 +31,23 @@ OUT_DIR = f'{BASE}/11_epigenome_integration/analysis/28_MTase_stability'
 MTASES = {
     'SC_RS17645': {
         'sco': 'SCO3104', 'product': 'N-6 DNA methylase (HsdM, Type I)',
-        'mod_type': '6mA+4mC', 'main_motif': 'AAGCCCG', 'color': '#2196F3'
+        'mod_type': None, 'main_motif': None, 'color': '#2196F3'
     },
     'SC_RS19770': {
-        'sco': 'SCO3527', 'product': 'DNA cytosine methyltransferase (Dcm-like)',
-        'mod_type': '4mC', 'main_motif': 'CCGG/TGGCCGGC', 'color': '#E91E63'
+        'sco': None, 'product': 'DNA cytosine methyltransferase (Dcm-like)',
+        'mod_type': None, 'main_motif': None, 'color': '#E91E63'
     },
     'SC_RS36410': {
-        'sco': 'SCO7091', 'product': 'DNA cytosine methyltransferase',
-        'mod_type': '4mC', 'main_motif': 'CCGG/TGGCCGGC', 'color': '#FF5722'
+        'sco': 'SCO6844', 'product': 'DNA cytosine methyltransferase',
+        'mod_type': None, 'main_motif': None, 'color': '#FF5722'
     },
     'SC_RS28835': {
-        'sco': 'SCO5333', 'product': 'BREX-2 PglX adenine MTase',
-        'mod_type': '6mA', 'main_motif': 'CCGKCA', 'color': '#4CAF50'
+        'sco': 'SCO5331', 'product': 'BREX-2 PglX adenine MTase',
+        'mod_type': None, 'main_motif': None, 'color': '#4CAF50'
     },
     'SC_RS35335': {
-        'sco': 'SCO6843', 'product': 'BREX-2 PglX adenine MTase',
-        'mod_type': '6mA', 'main_motif': 'CCGKCA', 'color': '#8BC34A'
+        'sco': 'SCO6627', 'product': 'BREX-2 PglX adenine MTase',
+        'mod_type': None, 'main_motif': None, 'color': '#8BC34A'
     },
 }
 

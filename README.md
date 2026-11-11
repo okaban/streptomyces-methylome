@@ -2,8 +2,7 @@
 
 Analysis code for the manuscript
 
-> *Two recognition sequences in the Streptomyces coelicolor M145 methylome,
-> one carrying 4mC and 6mA on the same DNA strand, with no transcriptome link*
+> *One recognition sequence carries 4mC and 6mA on the same DNA strand in Streptomyces coelicolor*
 
 (manuscript in review).
 

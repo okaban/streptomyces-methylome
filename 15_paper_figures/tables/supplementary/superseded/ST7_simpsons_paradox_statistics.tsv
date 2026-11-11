@@ -1,0 +1,5 @@
+instance	hypothesis	description	unstratified_p	unstratified_effect	core_only_p	core_only_effect	arm_only_p	arm_only_effect	confound	verdict
+GCCGGC_suppression	H17	GCCGGC proximity suppresses gene expression	4.1e-10	negative correlation	0.87	no effect			T1 GCCGGC 83% core; core genes lower LFC	ARTIFACT
+GCCGGC_derepression	H19	GCCGGC loss causes temporal de-repression	8.3e-08	Lost genes DOWN (median LFC = -0.259)	0.87	median LFC diff = +0.022 (no effect)			Lost genes enriched in core region	ARTIFACT
+BGC_methylation_enrichment	H24	Methylation enriched in biosynthetic gene clusters	4.4e-08	fold = 1.66		fold = 1.07 (NS)			100% co-localization of BGCs and T1 sites in core	ARTIFACT
+AAGCCCG_derepression	H21	AAGCCCG loss causes temporal de-repression	0.91	r = 0.003 (null)		No stratification needed (minimal geographic bias)			None (4.7 pp geographic shift only)	GENUINE_NULL

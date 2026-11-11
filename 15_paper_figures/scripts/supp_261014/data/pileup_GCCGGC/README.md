@@ -1,0 +1,17 @@
+# pileup_GCCGGC
+
+GCCGGC 六塩基のシトシン 32,118 位置（+ 鎖 start+2、− 鎖 start+3）での 4mC 行（コード 21839）を、**正準パイルアップ**から per-library で抽出したもの。
+
+    source  : /Users/okaban/bioinfo/methyl/260102_M145/analysis/pileup_canonical_261015/<lib>_pileup.bed
+    columns : pos (0-based), strand, Nvalid_cov, Nmod, Nfail
+    extracted_on : 2026-10-15
+
+## 2026-10-15 の再抽出について
+
+以前の抽出（2026-10-14）は `analysis/pileup/` を参照していた。そこは 3-2 と 3-4 が
+追加フローセル前のままで、どちらも T3 のライブラリであるため **T3 の部位数だけが
+過大**になっていた（TGGCCGGC で 1,877、正しくは 1,866）。T1 と T2 は影響を受けない。
+来歴は `methyl/260102_M145/analysis/DATA_PROVENANCE.md` を参照。
+
+判定規則（時点ごとに 3 ライブラリを合算、合算前の真の深度 Nvalid+Nfail >= 30、
+合算 Nmod/Nvalid >= 0.5）を適用すると TGGCCGGC 2,093 位置に絞ると 1,886 / 1,892 / 1,866 部位（T1/T2/T3）。

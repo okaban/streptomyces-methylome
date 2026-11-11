@@ -19,7 +19,7 @@ repository-code: "https://github.com/okaban/streptomyces-methylome"
 license: MIT
 preferred-citation:
   type: article
-  title: "Two recognition sequences in the Streptomyces coelicolor M145 methylome, one carrying 4mC and 6mA on the same DNA strand, with no transcriptome link"
+  title: "One recognition sequence carries 4mC and 6mA on the same DNA strand in Streptomyces coelicolor"
   status: submitted
   year: 2026
   authors:

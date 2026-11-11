@@ -1,3 +1,5 @@
+# 2026-11-04 D175: この生成器は補足図の統合で役目を終えた。出荷名に書き込むと別の図を潰すため、
+# 出力名を SUPERSEDED_ 前置きに変更した。現行の図を作るのは suppfigure_merged_*_261103.py。
 #!/usr/bin/env python3
 """Supplementary Figure 4 — chromosomal occupancy of both methylation systems
 against their own motif-conditioned nulls.
@@ -25,7 +27,7 @@ N = json.load(open(DATA_DIR / "numbers.json"))
 CORE = (1_500_000, 7_167_507)
 ORIC_MB = 4.27
 BINW = 50_000
-TPC = {"T1": "#1b4965", "T2": "#5fa8d3", "T3": "#bee9e8"}
+TPC = {"T1": "#b4b4b4", "T2": "#767676", "T3": "#2b2b2b"}  # FIG23: 時点は中立グレー段
 XLIM0 = -1.45          # room for the per-timepoint n labels
 
 G = genome()
@@ -81,6 +83,37 @@ for tp in ("T1", "T2", "T3"):
 
 NULL = {s: core_frac(SETS[s][2]) for s in SETS}
 
+# 2026-10-28: 帰無を「時点ごとの可測位置」に直した。
+# 旧実装は全モチーフ位置（時点非依存）を帰無にしており、T1 でのみ原稿・value_registry と
+# 食い違っていた（帰無 63.4496 % 対 63.5103 %、binomial p 0.8111 対 0.8483）。
+# T2/T3 は全 2,093 位置が可測なので差は出ない。原稿側の値が実データと一致することは
+# Writing/core_share_verification_261028.tsv で再計算して確認済み。
+# 破線は 1 本のままにする: 3 時点の帰無は 63.45-63.51 % と 0.06 ポイントしか離れておらず、
+# 3 本描いても判別できないため。算出法と範囲は source_note に書く。
+def measurable_positions(setname, timepoint):
+    """深度条件だけを課した位置集合（修飾レベルの条件は課さない）。"""
+    subdir, _code, _univ = SETS[setname]
+    acc = {}
+    for lib in LIBS[timepoint]:
+        d = pd.read_csv(DATA_DIR / subdir / f"{lib}.tsv", sep="\t", header=None,
+                        names=["pos", "strand", "Nvalid", "Nmod", "Nfail"])
+        for pos, strand, nv, nm, nf in d.itertuples(index=False):
+            key = (pos, strand)
+            if setname == "tgg" and key not in TGG_KEYS:
+                continue
+            cur = acc.get(key)
+            if cur is None:
+                acc[key] = [nv, nm, nf]
+            else:
+                cur[0] += nv
+                cur[1] += nm
+                cur[2] += nf
+    return sorted(p for (p, _s), v in acc.items() if (v[0] + v[2]) >= DEPTH_MIN)
+
+
+NULLT = {(s, tp): core_frac(measurable_positions(s, tp))
+         for s in SETS for tp in ("T1", "T2", "T3")}
+
 rows = []
 for s, lbl in [("tgg", "GCCGGC hexamer 4mC (TGGCCGGC)"), ("c4", "AAGCCCG 4mC (C5)"),
                ("a01", "AAGCCCG 6mA (A0/A1)")]:
@@ -88,12 +121,12 @@ for s, lbl in [("tgg", "GCCGGC hexamer 4mC (TGGCCGGC)"), ("c4", "AAGCCCG 4mC (C5
         ps = POS[(s, tp)]
         cp = core_frac(ps)
         k = int(round(len(ps) * cp / 100))
-        rows.append((s, lbl, tp, len(ps), cp, NULL[s],
-                     binomtest(k, len(ps), NULL[s] / 100).pvalue))
+        rows.append((s, lbl, tp, len(ps), cp, NULLT[(s, tp)],
+                     binomtest(k, len(ps), NULLT[(s, tp)] / 100).pvalue))
 CF = pd.DataFrame(rows, columns=["key", "mark", "tp", "n_sites", "core_pct",
                                  "null_pct", "p_binom"])
 
-apply_figure_style(frame="open", sizes=(7.0, 6.2, 6.0))
+apply_figure_style(frame="boxed", sizes=(7.0, 6.2, 6.0))
 
 
 def landscape(ax, key, title, col, headroom=1.0):
@@ -107,8 +140,8 @@ def landscape(ax, key, title, col, headroom=1.0):
         ax.text(-0.18, i * mx * 1.15 + mx * 0.45, f"{tp}  n={len(ps):,}", fontsize=6.0,
                 ha="right", va="center", color=col)
         lane_tops.append((i + 1) * mx * 1.15)
-    ax.axvspan(CORE[0] / 1e6, CORE[1] / 1e6, color="#2f6b4f", alpha=0.07, zorder=0)
-    ax.axvline(ORIC_MB, color="#2f6b4f", lw=0.9, ls="--", zorder=1)
+    ax.axvspan(CORE[0] / 1e6, CORE[1] / 1e6, color="#6b6b6b", alpha=0.07, zorder=0)
+    ax.axvline(ORIC_MB, color="#6b6b6b", lw=0.9, ls="--", zorder=1)
     ax.set_xlabel("Chromosome position (Mb)")
     ax.set_yticks([])
     ax.set_ylim(0, max(lane_tops) * headroom)
@@ -131,10 +164,10 @@ def corepanel(ax, keys, title):
     ax.bar(xs, hs, width=0.72, color=cs, edgecolor="none")
     for x, h in zip(xs, hs):
         ax.text(x, h + 3.4, f"{h:.1f}", ha="center", fontsize=6.0)
-    nulln = NULL[keys[0]]
+    # 3 時点の帰無は 0.06 ポイント差なので 1 本に畳む（範囲は source_note に明記）
+    nulln = float(np.mean([NULLT[(keys[0], tp)] for tp in ("T1", "T2", "T3")]))
     ax.axhline(nulln, color="#444444", lw=1.0, ls="--")
-    ax.text(0.0, 1.02, f"dashed: motif-conditioned null {nulln:.2f} %",
-            transform=ax.transAxes, fontsize=6.0, ha="left", va="bottom", color="#444444")
+    # [D119 で削除: 破線の凡例文]
     ax.set_xticks(xs)
     ax.set_xticklabels(xl)
     ax.set_ylabel("Sites in core (%)")
@@ -185,8 +218,8 @@ def build():
         ax_c.text(0.05, i * GROUP + 2 * LANE + HMAX + 1, nm, fontsize=6.0,
                   ha="left", va="bottom",
                   fontweight="bold", color=BLUE if i else RED)
-    ax_c.axvspan(CORE[0] / 1e6, CORE[1] / 1e6, color="#2f6b4f", alpha=0.07, zorder=0)
-    ax_c.axvline(ORIC_MB, color="#2f6b4f", lw=0.9, ls="--", zorder=1)
+    ax_c.axvspan(CORE[0] / 1e6, CORE[1] / 1e6, color="#6b6b6b", alpha=0.07, zorder=0)
+    ax_c.axvline(ORIC_MB, color="#6b6b6b", lw=0.9, ls="--", zorder=1)
     ax_c.set_xlabel("Chromosome position (Mb)")
     # 自動スケールはテキストを勘定しないので、最上段の群見出しが軸の外（表題の位置）に
     # 出てしまう。見出し 1 行ぶんの天井を明示する。
@@ -209,13 +242,17 @@ def build():
     figure_panel_letters(fig, [ax_a, ax_b, ax_c, ax_d], "abcd",
                          dx=[0.105, 0.085, 0.105, 0.085], dy=0.012)
     source_note(fig,
-                "Site rule: three libraries pooled per timepoint, pre-pooling true depth (Nvalid_cov + Nfail) >= 30, pooled modified fraction\n"
-                ">= 50 % (deposited pileups). Nulls are the core share of the positions each mark can occupy: "
-                f"{NULL['tgg']:.2f} % of {len(SETS['tgg'][2]):,} TGGCCGGC\npositions and {NULL['c4']:.2f} % of the AAGCCCG positions.",
+                "Site rule: three libraries pooled per timepoint, pooled true depth (Nvalid_cov + Nfail) >= 30, pooled modified fraction\n"
+                ">= 50 % (deposited pileups). The dashed null is the core share of the positions each mark can occupy that\n"
+                "clear the depth condition at that timepoint; one line is drawn because the three timepoints differ by\n"
+                f"less than 0.1 percentage point (TGGCCGGC {min(NULLT[('tgg', t)] for t in ('T1','T2','T3')):.2f}-"
+                f"{max(NULLT[('tgg', t)] for t in ('T1','T2','T3')):.2f} %, "
+                f"AAGCCCG {min(NULLT[('c4', t)] for t in ('T1','T2','T3')):.2f}-"
+                f"{max(NULLT[('c4', t)] for t in ('T1','T2','T3')):.2f} %).",
                 y=0.008)
     return fig
 
 
 if __name__ == "__main__":
-    # 出荷名は SuppFigure2.png（補足図 4 -> 2 の改番、2026-10-24 に出力名を追随）。
-    report(save(build(), "SuppFigure2.png"))
+    # 出荷名は SUPERSEDED_SuppFigure2_pre261104.png（補足図 4 -> 2 の改番、2026-10-24 に出力名を追随）。
+    report(save(build(), "SUPERSEDED_SuppFigure2_pre261104.png"))

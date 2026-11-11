@@ -68,7 +68,7 @@ YTOP, YBOT = -0.22, Brow[3][2] + 0.22
 
 fig = plt.figure(figsize=(PX[0] / DPI, PX[1] / DPI), dpi=DPI)
 ax = fig.add_subplot(111)
-U.style_axes(ax)
+U.style_axes(ax, frame=True)
 fig.subplots_adjust(left=0.040, right=0.985, bottom=0.215, top=0.860)
 
 # ---------------------------------------------------------------- bars
@@ -105,8 +105,12 @@ ax.annotate("1,886", xy=(counts[0, 0], Brow[0][0]), xytext=(3, 0),
             fontsize=6.5, color=U.COL_4mC)
 ax.annotate("n.d.", xy=(0, Brow[3][1]), xytext=(7, 0), textcoords='offset points',
             ha='left', va='center', fontsize=6.5, color=U.COL_GRAY)
-fig.text(0.5, 0.008, "modkit: C 0.9336\u22120.9375, A 0.6230\u22120.6387",
-         ha='center', va='bottom', fontsize=6.5, color=U.COL_GRAY)
+# 2026-11-07 共著者コメント C21「グラフの下に modkit~ とあるがこれは要らない」。
+# modkit の pass-threshold は Methods（High-confidence site calling）に
+# 「0.94 for cytosine and 0.64 for adenine」と記載済み。図内の実行ごとの範囲
+# （C 0.9336-0.9375 / A 0.6230-0.6387）は本タイルの入力表に残る。
+# 5mC バーの扱いは C22（Figure 2 再構成）の著者判断待ちで、ここでは外していない
+# （fig2_proposal_261107/ に案を置いた）。
 
 # ---------------------------------------------------------------- save + verify
 U.assert_no_text_collisions(fig, "panel_c")

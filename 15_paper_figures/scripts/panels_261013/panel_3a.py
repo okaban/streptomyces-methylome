@@ -58,6 +58,8 @@ U = importlib.import_module('00_shared_utils')   # module name starts with a dig
 import logomaker
 import matplotlib as mpl
 import matplotlib.pyplot as plt
+import os as _os
+_FD = int(_os.environ.get('FIG_DPI', 300))  # 2026-11-09 解像度上書き
 import pandas as pd
 from PIL import Image
 
@@ -144,14 +146,16 @@ def context_of(w, mod):
 
 
 # ---------------------------------------------------------------------- canvas
-W, H = 1039, 685                  # px, the composer's tile size for this slot
+W, H = 2125, 430                  # px, full-width tile (C10, 2026-11-02): the two
+                                  # logos sit side by side so the recognition
+                                  # sequences are shown before any panel uses them
 FS_ANN = U.FONT['annot']          # 6.5 - in-panel identity block
 FS_TICK = U.FONT['tick']          # 7   - tick labels
 FS_LAB = U.FONT['axis_label']     # 7.5 - axis labels
 YMAX = 2.45                       # 2 bits of logo plus headroom for the mark symbol
 
 # +0.3 px of slack: matplotlib floors the canvas, and the tile must be EXACT
-fig = plt.figure(figsize=((W + 0.3) / 300, (H + 0.3) / 300), dpi=300)
+fig = plt.figure(figsize=((W + 0.3) / 300, (H + 0.3) / 300), dpi=_FD)
 
 GEN = reference()
 WINS = windows(GEN)
@@ -173,8 +177,8 @@ WINS = windows(GEN)
 #          them.  `anchor` puts each identity block over its own logo's empty
 #          flank: the 4mC logo decays to the 3' side, the conditioned 6mA logo
 #          to the 5' side.
-ROWS = [('4mC', U.COL_4mC, [0.150, 0.635, 0.835, 0.240], None, 'right'),
-        ('6mA', U.COL_6mA, [0.150, 0.270, 0.835, 0.240], 'AAGCCCG', 'left')]
+ROWS = [('4mC', U.COL_4mC, [0.085, 0.370, 0.380, 0.505], None, 'right'),
+        ('6mA', U.COL_6mA, [0.585, 0.370, 0.380, 0.505], 'AAGCCCG', 'left')]
 
 axes, counts, matrices, drawn = [], {}, {}, {}
 for mod, colour, box, subset, anchor in ROWS:
@@ -187,7 +191,7 @@ for mod, colour, box, subset, anchor in ROWS:
     axes.append(ax)
     logomaker.Logo(mat, ax=ax, color_scheme=colour, font_name='Arial',
                    stack_order='big_on_top', vpad=0.02, show_spines=False)
-    U.style_axes(ax)
+    U.style_axes(ax, frame=True)
     ax.set_xlim(LO - 0.6, HI + 0.6)
     ax.set_ylim(0, YMAX)
     ax.set_yticks([0, 1, 2])
@@ -227,14 +231,16 @@ for mod, colour, box, subset, anchor in ROWS:
             ha=anchor, va='top', fontsize=FS_ANN, color=colour,
             linespacing=1.45, zorder=4)
 
-axes[-1].set_xlabel('Offset from the modified base (bp)', fontsize=FS_LAB,
-                    labelpad=2)
+for _ax in axes:
+    _ax.set_xlabel('Offset from the modified base (bp)', fontsize=FS_LAB,
+                   labelpad=2)
+
 
 # The conditioning of the lower row, spelled out under the axes so it is read as
 # a property of the site set rather than as a result. The in-panel block already
 # carries n and the percentage; this line names the denominator in words.
 _sub, _n, _N = ROWS[1][3], drawn['6mA'], counts['6mA']
-_note = (f'Lower row is conditioned on {_sub} context: {_n:,} of {_N:,} '
+_note = (f'The 6mA logo is conditioned on {_sub} context: {_n:,} of {_N:,} '
          f'high-confidence 6mA positions ({100 * _n / _N:.2f}%). The '
          f'conditioning presents the assignment; the legend gives the evidence.')
 
@@ -268,14 +274,18 @@ def wrap_to_canvas(text, x0, fontsize):
     return '\n'.join(lines)
 
 
-fig.text(0.038, 0.022, wrap_to_canvas(_note, 0.038, FS_ANN),
+fig.text(0.038, 0.012, wrap_to_canvas(_note, 0.038, FS_ANN),
          ha='left', va='bottom', fontsize=FS_ANN, color=U.COL_GRAY,
          linespacing=1.45)
-# One y-label for both rows: two per-axes labels at this tile height overlap each
-# other across the row gap, and the quantity is the same in both.
-fig.text(0.038, (ROWS[0][2][1] + ROWS[0][2][3] + ROWS[1][2][1]) / 2,
-         'Information content (bits)', rotation=90, ha='left', va='center',
-         fontsize=FS_LAB, color=U.COL_DARK)
+# 2026-11-02 (C10, side-by-side layout): one y-label per logo, placed as figure
+# text just left of each axes. set_ylabel() puts the rotated label outside the
+# 2125 x 430 canvas at this tile height, which the collision guard rejects, and
+# 'Information content (bits)' is itself too long to stand rotated on a 430 px
+# canvas (392 px of glyph against 217 px of axes), so it is shortened here.
+for _box in (ROWS[0][2], ROWS[1][2]):
+    fig.text(_box[0] - 0.034, _box[1] + _box[3] / 2,
+             'Information (bits)', rotation=90, ha='left', va='center',
+             fontsize=FS_LAB, color=U.COL_DARK)
 
 # ---------------------------------------------- recognition-context breakdown
 # Written for BOTH chemistries whatever each row is drawn on, because the two
@@ -304,9 +314,9 @@ with open(TABLE_OUT, 'w', newline='') as fh:
             wr.writerow(['context_counts', mod, counts[mod], drawn[mod], k,
                          f'{v} ({100 * v / counts[mod]:.2f}%)'] + [''] * len(BASES))
 
-U.assert_no_text_collisions(fig, 'Fig3 panel a')
+U.assert_no_text_collisions(fig, 'Fig2 panel a (recognition-sequence logos)')
 out = str(Path(__file__).with_suffix('.png'))
-fig.savefig(out, dpi=300, transparent=True, bbox_inches=None, pad_inches=0)
+fig.savefig(out, dpi=_FD, transparent=True, bbox_inches=None, pad_inches=0)
 
 sz = Image.open(out).size
 assert sz == (W, H), sz

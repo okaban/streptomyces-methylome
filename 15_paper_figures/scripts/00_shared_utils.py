@@ -71,6 +71,7 @@ COL_DUAL_SET = '#6E4B8E'   # medium purple — genes near BOTH motifs (a gene se
 COL_BAR_DARK = '#293039'   # T3 / late / single-category bars
 COL_BAR_MID = '#6B7783'    # T2 / mid
 COL_BAR_LIGHT = '#AAB3BB'  # T1 / early
+COL_BAR_PALE = '#DCE0E3'  # palest grey — a 4th bar step below COL_BAR_LIGHT (2026-11-02)
 COL_GRID = '#EAEAEA'       # gridlines
 BAR_RAMP = [COL_BAR_LIGHT, COL_BAR_MID, COL_BAR_DARK]  # T1→T2→T3
 
@@ -80,8 +81,14 @@ BAR_RAMP = [COL_BAR_LIGHT, COL_BAR_MID, COL_BAR_DARK]  # T1→T2→T3
 # sequential blue with wide luminance spacing, paired with distinct linestyles so
 # the tracks survive greyscale printing too. Blue is free here: this panel plots
 # GCCGGC only, so it cannot be confused with the 6mA mark colour.
-TIME_RAMP = ['#9FC3E0', '#4C86B8', '#1F3E5A']   # T1 → T2 → T3 (lines)
-TIME_STYLE = ['-', '--', '-']
+# 2026-11-09 著者コメント [7][10]：時点は色相を持たない。T1-T3 は灰階調に統一し、
+# 線で使う場合は TIME_LW の線幅差を必ず併用する（灰 3 段は線だけでは弱いため）。
+TIME_RAMP = ['#C4C9CD', '#7C868E', '#1E242A']   # T1 → T2 → T3 (greys)
+TIME_LW = [0.8, 1.15, 1.55]                      # 線で使うときの線幅差
+# 2026-11-07 共著者コメント C23「線の種類を変えすぎ」。T1-T3 は実線 1 種に統一し、
+# 識別は配色（TIME_RAMP の明度差）と線幅だけが担う。破線は oriC の縦ガイド、
+# 点線は各時点の中央値参照線という参照線 2 種だけに残す。利用箇所は panel_1c.py のみ。
+TIME_STYLE = ['-', '-', '-']
 
 COL_GRAY = '#9AA7B0'  # neutral grey (Shielded / unassigned)
 COL_DARK = '#22282E'  # axis / text near-black
@@ -189,12 +196,19 @@ def apply_unified_style():
     warnings.filterwarnings('ignore', category=UserWarning, module='matplotlib')
 
 
-def style_axes(ax, grid=False, grid_axis='both'):
+def style_axes(ax, grid=False, grid_axis='both', frame=False):
     """Normalise a single Axes to the unified look: hide top/right spines,
-    colour the remaining spines/ticks near-black, optional light gridlines."""
-    for side in ('top', 'right'):
+    colour the remaining spines/ticks near-black, optional light gridlines.
+
+    frame=True keeps all four spines (2026-10-28 著者指示「Figure 4 は
+    グラフの枠が欲しいかも」)。既定は False のまま: 補足図 19 枚は
+    上右を落とした体裁で確定しており、ここを既定で変えると全部動く。
+    """
+    _sides = () if frame else ('top', 'right')
+    for side in _sides:
         ax.spines[side].set_visible(False)
-    for side in ('left', 'bottom'):
+    for side in (('left', 'bottom', 'top', 'right') if frame
+                 else ('left', 'bottom')):
         ax.spines[side].set_edgecolor(COL_DARK)
         ax.spines[side].set_linewidth(0.8)
     ax.tick_params(colors=COL_DARK, labelcolor=COL_DARK)
@@ -291,7 +305,7 @@ def save_figure(fig, path, formats=('pdf', 'svg'), width_class='full', clamp=Tru
     plt.close(fig)
 
 
-def save_figure_raster(fig, path, width_class='full', dpi=300):
+def save_figure_raster(fig, path, width_class='full', dpi=None):
     """Guaranteed-no-clip PNG save at NAR width (raster-fit fallback).
 
     Renders with bbox_inches='tight' (full content preserved, no clipping), then
@@ -301,6 +315,10 @@ def save_figure_raster(fig, path, width_class='full', dpi=300):
     reflowed. PNG only — for vector output use save_figure() and fix the layout.
     """
     from PIL import Image
+    import os as _os
+    # 2026-11-09: 投稿規定（FIG30）に合わせ、既定解像度を FIG_DPI で持ち上げられるようにした。
+    if dpi is None:
+        dpi = int(_os.environ.get('FIG_DPI', 300))
     target_px = round(mm_to_inch(NAR_WIDTH_MM[width_class]) * dpi)
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -456,10 +474,13 @@ def load_tf_binding_sites():
     Returns:
         DataFrame with BS_source-based tier classification added.
     """
-    path = (BASE / '13_TF_binding-site' / 'analysis' /
-            '01_master_TF_list_260206_v1' /
-            'master_TF_binding_sites_M145_ARCHIVED_260224.tsv')
-    df = pd.read_csv(path, sep='\t')
+    # SUPERSEDED 2026-10-15: 参照先がファイル名に ARCHIVED を含む退避版である。
+    # 現行で転写因子結合部位を使う図は補足図 11 のみで、そちらは本スクリプトを経由しない。
+    # figure_manifest.tsv に載るスクリプトからの呼び出しは無い（2026-10-15 確認）。
+    raise RuntimeError(
+        'load_tf_binding_sites() は退避版 master_TF_binding_sites_M145_ARCHIVED_260224.tsv を'
+        '参照するため使用不可。')
+    df = pd.read_csv(path, sep='\t')  # noqa: F821  （到達不能）
 
     # Tier classification
     tier1_sources = ['RegPrecise', 'ZorroAranda2022_Curated_Strong', 'FIMO_curated_motif']
@@ -553,10 +574,14 @@ def load_all_genes_features():
         tss, region, is_exposed, baseMean, nearest_methyl_distance,
         n_methyl_sites_2kb, gene_length, LFC_T2vsT1, LFC_T3vsT1, n_FIMO_hits
     """
-    path = EPIGENOME / '52_shielded_exposed_boundary' / 'tables' / 'all_genes_features.tsv'
-    df = pd.read_csv(path, sep='\t')
-    print(f'  All genes features: {len(df)} genes ({df["is_exposed"].sum()} exposed)')
-    return df
+    # SUPERSEDED 2026-10-15: Exposed/Shielded 区分は本文で「認識配列の有無の言い換え」
+    # として否定結果に移した（Results 末尾の三つの否定結果の一つ目）。この表は旧世代で、
+    # 素の all_genes_features.tsv は Exposed 11 遺伝子、退避版 _unified_n57.tsv は
+    # 発現で選抜した 57 遺伝子であり、どちらも現行のサイト集合（Exposed 85 / Shielded 966）
+    # と一致しない。figure_manifest.tsv に載るスクリプトからの呼び出しは無い（2026-10-15 確認）。
+    raise RuntimeError(
+        'load_all_genes_features() は撤回済みの Exposed/Shielded 区分に依存するため使用不可。'
+        '必要なら現行サイト集合から再計算すること。')
 
 
 def load_exposed_regulators():
@@ -845,8 +870,36 @@ def text_collisions(fig, data_pad=1.0):
     r = _renderer(fig)
     ticks = {ax: set(ax.get_xticklabels(which="both") + ax.get_yticklabels(which="both"))
              for ax in fig.axes}
-    texts = [(t, t.get_window_extent(r)) for t in fig.findobj(mpl.text.Text)
-             if t.get_text().strip() and t.get_visible()]
+    # Annotation.get_window_extent() returns the UNION of the glyph box and the
+    # arrow patch, so a label with a leader line reports an extent that spans all
+    # the way to the point it annotates. Measured that way, three labels stacked
+    # in a legend-style column all "overlap" each other (their leader lines share
+    # the same target region) and every leader-line label sits "over data" by
+    # construction. A leader line is allowed to cross marks and other text -- that
+    # is its job -- so measure the glyphs only.
+    def _extent(t):
+        if isinstance(t, mpl.text.Annotation):
+            t.get_window_extent(r)          # refresh positions, then take the glyphs
+            return mpl.text.Text.get_window_extent(t, r)
+        return t.get_window_extent(r)
+
+    # 2026-11-04: 軸の表示範囲の外にある目盛のラベルは描かれないが、Text として
+    # 残り get_visible() も True を返す。補足図 7 で、表示されない y 目盛 '64' と
+    # '74' が「重なり」「キャンバス外」として報告された。描かれない文字は除く。
+    dead = set()
+    for ax in fig.axes:
+        for axis, lim in ((ax.xaxis, ax.get_xlim()), (ax.yaxis, ax.get_ylim())):
+            lo, hi = (min(lim), max(lim))
+            for tick in axis.get_major_ticks() + axis.get_minor_ticks():
+                try:
+                    v = tick.get_loc()
+                except Exception:
+                    continue
+                if v is None or not (lo - 1e-9 <= v <= hi + 1e-9):
+                    dead.add(tick.label1)
+                    dead.add(tick.label2)
+    texts = [(t, _extent(t)) for t in fig.findobj(mpl.text.Text)
+             if t.get_text().strip() and t.get_visible() and t not in dead]
     # Structural text — titles, axis labels, tick labels — is positioned by
     # matplotlib relative to its own axes. Two of them abutting is a layout
     # artefact, not a defect; only collisions that involve free-floating text
@@ -888,7 +941,14 @@ def text_collisions(fig, data_pad=1.0):
             # axis labels and tick labels are positioned by matplotlib, which
             # does not draw them on top of each other; their reported extents
             # can nominally intersect without any visible collision.
-            if a in structural and b in structural:
+            # Exception to the structural exemption: two TICK labels on the same
+            # axis. matplotlib spaces titles against axis labels, but it does not
+            # space category tick labels against each other — a label wider than
+            # its category slot is simply drawn over its neighbour. Skipping this
+            # pair passed a figure whose two x tick labels were visibly fused.
+            same_axis_ticks = (a in own and own[a] is own.get(b)
+                               and a in ticks.get(own[a], ()) and b in ticks.get(own[a], ()))
+            if a in structural and b in structural and not same_axis_ticks:
                 continue
             if a in legend_texts and b in legend_texts:
                 continue
@@ -900,26 +960,48 @@ def text_collisions(fig, data_pad=1.0):
         # Test against the actual drawn positions, not each artist's bounding box:
         # a scatter cloud's bbox is as wide as the axes, so a bbox test silently
         # passed text sitting on top of points.
+        # Transform with the ARTIST's own transform, not ax.transData. axhline and
+        # axvline use a blended transform (one axis in axes coordinates, the other
+        # in data coordinates); pushing their xydata through transData yields
+        # meaningless pixel positions, one of which landed inside a value label and
+        # reported a collision with a reference line the label was clearly below.
         pts = []
         for c in ax.collections:
             try:
                 off = c.get_offsets()
                 if off is not None and len(off):
-                    pts.extend(ax.transData.transform(off))
+                    pts.extend(c.get_offset_transform().transform(off))
             except Exception:
                 pass
         for l in ax.lines:
             try:
                 xy = l.get_xydata()
                 if xy is not None and len(xy):
-                    pts.extend(ax.transData.transform(xy))
+                    pts.extend(l.get_transform().transform(xy))
             except Exception:
                 pass
+        # An annotation's leader line is a FancyArrowPatch living in ax.patches.
+        # Counting it as a data mark makes every leader-line label "sit on data":
+        # the arrow runs from the label to the thing it points at, so the label's
+        # own glyph box necessarily touches its own arrow. Leader lines are not data.
+        leaders = set()
+        for t in fig.findobj(mpl.text.Annotation):
+            ap = getattr(t, "arrow_patch", None)
+            if ap is not None:
+                leaders.add(id(ap))
         boxes = []
         for m in ax.patches:
+            if id(m) in leaders:
+                continue
             try:
                 bb = m.get_window_extent(r)
-                if bb.width > 0 and bb.height > 0 and bb.width < ax.bbox.width * 0.98:
+                # A data mark is bounded in BOTH directions. A patch that spans the
+                # full axes height (a shaded region band) or full width (a reference
+                # span) is background, not a mark; the width-only test let a
+                # full-height shading band flag every label drawn inside it.
+                if (bb.width > 0 and bb.height > 0
+                        and bb.width < ax.bbox.width * 0.98
+                        and bb.height < ax.bbox.height * 0.98):
                     boxes.append(bb)
             except Exception:
                 pass
@@ -930,8 +1012,57 @@ def text_collisions(fig, data_pad=1.0):
             hit_point = any(bt.x0 - 1 <= px <= bt.x1 + 1 and bt.y0 - 1 <= py <= bt.y1 + 1
                             for px, py in pts)
             if hit_patch or hit_point:
-                over_data.append(t.get_text()[:28])
+                # FULL text: assert_no_text_collisions() filters this list against
+                # allow_over_data, so truncating here made any label longer than 28
+                # characters impossible to declare — it never matched its own entry.
+                over_data.append(t.get_text())
     return pairs, outside, sorted(set(over_data))
+
+
+def _text_into_other_axes(fig):
+    """各 Axes のテキスト（目盛ラベル・注記）が、自分以外の Axes の矩形に
+    入り込んでいたら [(text, 侵入先の index)] を返す。図座標で判定する。"""
+    try:
+        fig.canvas.draw()
+        r = fig.canvas.get_renderer()
+    except Exception:
+        return []
+    inv = fig.transFigure.inverted()
+    boxes = [(i, ax.get_position()) for i, ax in enumerate(fig.axes)]
+    hits = []
+    for i, ax in enumerate(fig.axes):
+        dead = set()
+        for axis, lim in ((ax.xaxis, ax.get_xlim()), (ax.yaxis, ax.get_ylim())):
+            lo, hi = (min(lim), max(lim))
+            for tk in axis.get_major_ticks() + axis.get_minor_ticks():
+                try:
+                    v = tk.get_loc()
+                except Exception:
+                    continue
+                if v is None or not (lo - 1e-9 <= v <= hi + 1e-9):
+                    dead.add(tk.label1); dead.add(tk.label2)
+        items = [t for t in list(ax.get_yticklabels()) + list(ax.get_xticklabels())
+                 if t not in dead] + list(ax.texts)
+        for t in items:
+            s = (t.get_text() or "").strip()
+            if not s or not t.get_visible():
+                continue
+            try:
+                bb = t.get_window_extent(renderer=r).transformed(inv)
+            except Exception:
+                continue
+            for j, p in boxes:
+                if j == i:
+                    continue
+                # twinx/twiny は同じ矩形を共有するので、本体軸の注記は必ず
+                # 相手の矩形に入る。これは侵入ではない（2026-11-04、補足図 8 で誤検出）。
+                q = ax.get_position()
+                if (abs(p.x0 - q.x0) < 1e-6 and abs(p.x1 - q.x1) < 1e-6
+                        and abs(p.y0 - q.y0) < 1e-6 and abs(p.y1 - q.y1) < 1e-6):
+                    continue
+                if bb.x1 > p.x0 and bb.x0 < p.x1 and bb.y1 > p.y0 and bb.y0 < p.y1:
+                    hits.append((s[:34], j))
+    return hits
 
 
 def assert_no_text_collisions(fig, name="figure", allow_over_data=()):
@@ -941,12 +1072,22 @@ def assert_no_text_collisions(fig, name="figure", allow_over_data=()):
     pairs, outside, over = text_collisions(fig)
     over = [o for o in over if o not in allow_over_data]
     msg = []
+    # 2026-11-04 追加: 他パネルの枠への侵入。
+    # 2026-11-04 に Figure 5 で実際に起きた型 — パネル b の y 目盛ラベル
+    # 「SC_RS35335 (SCO6627)」等が幅 0.165（図座標）あり、左隣のパネル a の
+    # 枠（右端 0.42）に 0.027 ぶん食い込んでいた。文字同士は重なっていないので
+    # text_collisions では捕まらず、ピクセル監査は sha しか見ず、作図規約ゲートは
+    # ソースの fontsize しか読まないため、どのゲートも検出していなかった。
+    intrude = _text_into_other_axes(fig)
+    if intrude:
+        msg.append("text intrudes into another panel: "
+                   + str([f"{t} -> axes[{j}]" for t, j in intrude[:6]]))
     if pairs:
         msg.append(f"text overlaps text: {pairs}")
     if outside:
         msg.append(f"text outside the canvas: {outside}")
     if over:
-        msg.append(f"text over data marks: {over}")
+        msg.append(f"text over data marks: {[o[:28] for o in over]}")
     if msg:
         raise AssertionError(f"[{name}] " + " | ".join(msg))
     print(f"  [{name}] text-collision check: clean")

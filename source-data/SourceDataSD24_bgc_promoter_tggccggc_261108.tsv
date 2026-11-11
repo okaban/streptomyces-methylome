@@ -1,0 +1,6 @@
+step	category	count	denominator	percent	definition
+TSS rows available	all Jeong et al. 2016 TSSs	3570	3570	100.0	rows of jeong2016_all_tss.csv
+TSS rows used	category P or S with a gene assignment	3030	3570	84.8739	tss.category in {P,S} and gene_id not null
+promoter windows	unique -300..-1 windows after de-duplication	3030	3030	100.0	(TSS-300..TSS-1) on + strand, (TSS+1..TSS+300) on - strand; de-duplication removed no row
+promoters carrying a TGGCCGGC position	genes outside clusters	127	2720	4.6691	>=1 TGGCCGGC strand-oriented position inside the window
+promoters carrying a TGGCCGGC position	genes inside clusters	18	310	5.8065	gene fully inside an antiSMASH region (1,022 genes)

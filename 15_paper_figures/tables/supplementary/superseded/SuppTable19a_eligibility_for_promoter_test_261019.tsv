@@ -1,0 +1,5 @@
+step	criterion	n	source
+Regulatory genes compiled from the annotation	Pfam DNA-binding/TF domain (hmmscan, HMMER 3.4, Pfam-A, domain E-value < 1e-5), curated regulator annotation, or two-component system	1055	Manuscript_EN L224
+With an assignable TSS	experimental TSS (Jeong 2016) assignable to the gene	1051	Manuscript_EN L224
+TSS with a measurable methylation ratio in both windows	≥1 eligible position in the ±100 bp window and in the comparison window	117	Manuscript_EN L258
+Culture units for the promoter-proximal level test	3 timepoints × 3 replicates, pooled per library	9	Manuscript_EN L258

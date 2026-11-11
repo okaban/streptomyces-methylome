@@ -1,0 +1,3 @@
+  [SuppFigure7.png] text-collision check: clean
+SuppFigure7.png: 2040x1380 px, 172.7 x 116.8 mm
+wrote s7 keys: ['panel_a', 'panel_b', 'panel_c', 'panel_d']

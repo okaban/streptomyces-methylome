@@ -1,3 +1,4 @@
+# 2026-11-05 D188: 補足図 12→9 の削減。出荷名 SuppFigure9.png -> SuppFigure8.png。
 #!/usr/bin/env python3
 """Supplementary Figure 18 — two negative controls that separate the mark from the sequence.
 
@@ -61,15 +62,15 @@ NUM = {
 assert not A.passes_bonferroni.any(), A[A.passes_bonferroni]
 assert NUM["min_p"] > NUM["alpha"], NUM
 
-C_MOD, C_ALL, C_REF = "#c0552b", "#9aa7b0", "#1b4965"
+C_MOD, C_ALL, C_REF = "#2b2b2b", "#b4b4b4", "#6b6b6b"  # FIG23: マーク色ではないので中立グレー
 
-apply_figure_style(frame="open", sizes=(7.0, 6.2, 6.0))
+apply_figure_style(frame="boxed", sizes=(7.0, 6.2, 6.0))
 
 
 def build():
-    fig = plt.figure(figsize=(NAR_WIDTH_IN, 4.15))
+    fig = plt.figure(figsize=(NAR_WIDTH_IN, 3.35))  # 2026-11-09: 図下の散文を凡例へ移し、空いた 0.80 in を詰めた
     gs = fig.add_gridspec(1, 2, width_ratios=[1.10, 1.00], wspace=0.95,
-                          left=0.205, right=0.985, top=0.870, bottom=0.430)
+                          left=0.205, right=0.985, top=0.839, bottom=0.294)
 
     # (a) 修飾部分集合の領域分布を、そのモチーフ自身の位置分布と比べる
     ax_a = fig.add_subplot(gs[0, 0])
@@ -121,24 +122,13 @@ def build():
                         Line2D([0], [0], color=C_REF, lw=0.9, ls=(0, (4, 2)),
                                label="no strand effect (panel b)")],
                frameon=False, fontsize=6.0, loc="lower center", ncol=3,
-               bbox_to_anchor=(0.5, 0.255), handlelength=1.2, handletextpad=0.4,
+               bbox_to_anchor=(0.5, 0.077), handlelength=1.2, handletextpad=0.4,
                columnspacing=1.4)
 
     figure_panel_letters(fig, [ax_a, ax_b], "ab", dx=[0.185, 0.150], dy=0.022)
-    source_note(
-        fig,
-        "T1, three libraries pooled. Panel a: chi-square of the modified subset against that motif's own measurable positions across four\n"
-        "region classes (promoter \u2212300 bp to TSS, 5\u2032 UTR TSS to +50 bp, CDS, intergenic); the promoter class is plotted because it is the one a\n"
-        "regulatory reading would predict. None of the %d testable motifs clears a Bonferroni threshold of %.5f (smallest p = %.3f, %s); GATC is\n"
-        "not testable at seven modified sites. Panel b: genes whose modified sites lie only on the coding strand against genes whose modified\n"
-        "sites lie only on the antisense strand, Mann-Whitney; the same contrast computed on all measurable positions of the same motif is\n"
-        "shown beside it. For AAGCCCG the contrast is larger without the mark (1.82 against 1.71); for TGGCCGGC the modified-only estimate is\n"
-        "larger (1.47 against 1.26) but neither test is significant, so in neither case is a strand effect attributable to the mark." % (NUM["n_motifs"], NUM["alpha"], NUM["min_p"],
-           DISPLAY_NAMES.get(NUM["min_p_motif"], NUM["min_p_motif"])),
-        y=0.012)
     return fig
 
 
 if __name__ == "__main__":
-    # 出荷名は SuppFigure12.png（補足図 18 -> 12 の改番、2026-10-24 に出力名を追随）。
-    report(save(build(), "SuppFigure12.png"))
+    # 出荷名は SuppFigure9.png（補足図 18 -> 12 の改番、2026-10-24 に出力名を追随）。
+    report(save(build(), "SuppFigure9.png"))
